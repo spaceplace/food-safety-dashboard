@@ -1,0 +1,25 @@
+---
+import Base from "../../layouts/Base.astro";
+import Notices from "../../components/Notices.astro";
+import AsOf from "../../components/AsOf.astro";
+import OutbreakTable from "../../components/OutbreakTable.astro";
+import { allOutbreaks, openOutbreaks, trailing12Outbreaks, sources, href } from "../../lib/data";
+
+const closed = allOutbreaks.filter((o) => o.status !== "active");
+---
+<Base title="Outbreaks" description="Every CDC multistate foodborne outbreak notice from the last two years, open and closed, with cases, hospitalizations, deaths, and states.">
+  <h1>CDC multistate outbreak notices</h1>
+  <p class="lede">Every outbreak notice CDC has posted since the start of last year. The headline numbers on the <a href={href("/")}>overview</a> sum the {trailing12Outbreaks.length} notices posted in the last 12 months.</p>
+  <Notices />
+  <AsOf source={sources["cdc-outbreaks"]} />
+
+  <section aria-labelledby="h-open">
+    <h2 id="h-open">Open ({openOutbreaks.length})</h2>
+    <OutbreakTable outbreaks={openOutbreaks} caption="Investigations CDC currently lists as open." />
+  </section>
+
+  <section aria-labelledby="h-closed">
+    <h2 id="h-closed">Closed or unclassified ({closed.length})</h2>
+    <OutbreakTable outbreaks={closed} showStatus caption="Notices CDC has declared over, plus any whose status could not be read from the page." />
+  </section>
+</Base>

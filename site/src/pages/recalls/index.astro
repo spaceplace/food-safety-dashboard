@@ -1,0 +1,53 @@
+---
+import Base from "../../layouts/Base.astro";
+import Notices from "../../components/Notices.astro";
+import AsOf from "../../components/AsOf.astro";
+import RecallTable from "../../components/RecallTable.astro";
+import { allRecalls, reasonLabel, sources } from "../../lib/data";
+
+const fda = allRecalls.filter((r) => r.agency === "FDA").length;
+const fsis = allRecalls.filter((r) => r.agency === "FSIS").length;
+---
+<Base title="Recalls" description="FDA and USDA FSIS food recalls with reason, classification, product, firm, and date, linking to the source.">
+  <h1>Food recalls</h1>
+  <p class="lede">{fda} FDA recall events from the last 120 days and {fsis} USDA FSIS recalls from the last 12 months. Dietary supplements are excluded; pet food is included and labeled.</p>
+  <Notices />
+  <AsOf source={sources["fda-openfda"]} label="FDA source" />
+  <AsOf source={sources["fsis-recalls"]} label="USDA source" />
+
+  <div class="filters" id="filters" hidden>
+    <label>Agency
+      <select id="f-agency"><option value="">All</option><option>FDA</option><option>FSIS</option></select>
+    </label>
+    <label>Reason
+      <select id="f-reason"><option value="">All</option>{Object.entries(reasonLabel).map(([k, v]) => <option value={k}>{v}</option>)}</select>
+    </label>
+    <label>Type
+      <select id="f-category"><option value="">All</option><option value="human-food">Food</option><option value="pet-food">Pet food</option></select>
+    </label>
+    <span class="small muted" id="f-count" aria-live="polite"></span>
+  </div>
+
+  <RecallTable recalls={allRecalls} filterable caption="Class I means a reasonable probability of serious health consequences or death; Class II means temporary or reversible effects; Class III means unlikely to cause harm. FDA rows link to FDA's recall list searched by firm; FSIS rows link to the recall notice." />
+
+  <script>
+    // Progressive enhancement: filters only appear when JavaScript runs. Without it, every row shows.
+    const filters = document.getElementById("filters")!;
+    const rows = Array.from(document.querySelectorAll<HTMLTableRowElement>("#recall-table tbody tr[data-agency]"));
+    const selects = ["agency", "reason", "category"].map((k) => document.getElementById(`f-${k}`) as HTMLSelectElement);
+    const count = document.getElementById("f-count")!;
+    const apply = () => {
+      const [agency, reason, category] = selects.map((s) => s.value);
+      let shown = 0;
+      for (const row of rows) {
+        const ok = (!agency || row.dataset.agency === agency) && (!reason || row.dataset.reason === reason) && (!category || row.dataset.category === category);
+        row.hidden = !ok;
+        if (ok) shown++;
+      }
+      count.textContent = `Showing ${shown} of ${rows.length}`;
+    };
+    selects.forEach((s) => s.addEventListener("change", apply));
+    filters.hidden = false;
+    apply();
+  </script>
+</Base>

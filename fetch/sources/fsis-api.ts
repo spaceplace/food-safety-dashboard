@@ -35,7 +35,9 @@ export interface FsisRecord {
 }
 
 function firmFromTitle(title: string): string {
-  // FSIS titles read "Acme Foods Inc. Recalls Ground Beef Products Due to ..."
+  // FSIS titles read "Acme Foods Inc. Recalls Ground Beef Products Due to ...".
+  // Public health alerts read "FSIS Issues Public Health Alert for ..." and name no firm.
+  if (/^FSIS\b/i.test(title)) return "";
   const m = title.match(/^(.+?)\s+(Recalls?|Issues|Announces|Expands)\b/i);
   return clean(m ? m[1] : title);
 }
@@ -45,8 +47,8 @@ export function mapFsisRecords(records: FsisRecord[], fetchedAt: string, sinceIs
   for (const r of records) {
     const recallDate = parseIsoDate(r.field_recall_date);
     if (!recallDate || recallDate < sinceIso) continue;
-    const title = clean(r.field_title);
-    const products = (r.field_product_items ?? []).map((p) => clean(p).replace(/^•\s*/, "")).filter(Boolean);
+    const title = stripHtml(r.field_title);
+    const products = (r.field_product_items ?? []).map((p) => stripHtml(p).replace(/^•\s*/, "")).filter(Boolean);
     const summary = stripHtml(r.field_summary);
     const reason = (r.field_recall_reason ?? []).map(clean).filter(Boolean).join("; ");
     const reasonText = `${reason} ${title} ${summary.slice(0, 400)}`;
@@ -57,7 +59,7 @@ export function mapFsisRecords(records: FsisRecord[], fetchedAt: string, sinceIs
       url,
       sourceRecordUrl: FSIS_API_URL,
       title,
-      firm: firmFromTitle(title),
+      firm: firmFromTitle(title) || stripHtml((r.field_establishment ?? [])[0] ?? "") || "Not named (public health alert)",
       product: truncate(products[0] ?? summary, 200),
       products,
       productCount: products.length,

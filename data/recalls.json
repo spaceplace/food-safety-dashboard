@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-16T23:33:17.546Z",
+  "generatedAt": "2026-09-16T23:48:24.336Z",
   "sources": {
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-16T23:33:21.622Z",
+      "fetchedAt": "2026-09-16T23:48:27.845Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-09",
@@ -13,7 +13,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-16T23:33:23.057Z",
+      "fetchedAt": "2026-09-16T23:48:28.859Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-10",
@@ -53,7 +53,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-13",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99548",
@@ -81,7 +81,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-30",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99508",
@@ -111,7 +111,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-28",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99368",
@@ -127,7 +127,6 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "dairy",
         "flour"
       ],
       "reason": "Undeclared milk.",
@@ -139,7 +138,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-06",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99638",
@@ -167,7 +166,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-06",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99615",
@@ -182,9 +181,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "dairy"
-      ],
+      "foodKeys": [],
       "reason": "Product tested positive for undeclared milk.",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -194,7 +191,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-05",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99582",
@@ -219,7 +216,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-07",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99656",
@@ -236,7 +233,6 @@
       "category": "human-food",
       "foodKeys": [
         "pork",
-        "dairy",
         "nuts",
         "seeds",
         "cereal",
@@ -252,7 +248,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-14",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99587",
@@ -268,9 +264,7 @@
       ],
       "productCount": 2,
       "category": "human-food",
-      "foodKeys": [
-        "peppers"
-      ],
+      "foodKeys": [],
       "reason": "Products were manufactured with jalapenos that have the potential to be contaminated with Salmonella",
       "reasonCategory": "salmonella",
       "classification": "Class I",
@@ -280,7 +274,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-06",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99644",
@@ -295,9 +289,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "dairy"
-      ],
+      "foodKeys": [],
       "reason": "Product tested positive for undeclared milk allergen.",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -307,7 +299,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-07",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:021-2026",
@@ -338,7 +330,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-09-09",
       "reportDate": "2026-09-09",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:019-020-2026",
@@ -380,7 +372,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-09-06",
       "reportDate": "2026-09-06",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:99571",
@@ -395,9 +387,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "fish"
-      ],
+      "foodKeys": [],
       "reason": "Soba sauce packet, which contains bonito, sardine, and mackerel (fish), was packed into Sura Tanmen Hot and Sour Flavor ramen noodle package kit, but fish species are not declared on finished product label.",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -407,7 +397,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-04",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99424",
@@ -424,7 +414,6 @@
       "productCount": 2,
       "category": "human-food",
       "foodKeys": [
-        "nuts",
         "seeds"
       ],
       "reason": "Undeclared peanuts.",
@@ -436,7 +425,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-13",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99716",
@@ -470,7 +459,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-18",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99690",
@@ -498,7 +487,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-11",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99493",
@@ -516,9 +505,6 @@
       "category": "human-food",
       "foodKeys": [
         "stone fruit",
-        "eggs",
-        "dairy",
-        "nuts",
         "chocolate",
         "baked goods"
       ],
@@ -531,7 +517,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-22",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99605",
@@ -558,7 +544,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-07",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99575",
@@ -574,8 +560,7 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "peppers",
-        "eggs"
+        "peppers"
       ],
       "reason": "Undeclared Egg Allergen",
       "reasonCategory": "undeclared-allergen",
@@ -586,7 +571,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-05",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99695",
@@ -613,7 +598,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-05",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99619",
@@ -640,7 +625,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-10",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99538",
@@ -656,7 +641,6 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "dairy",
         "nuts"
       ],
       "reason": "Product may be contaminated with Salmonella.",
@@ -668,7 +652,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-17",
       "reportDate": "2026-09-02",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99640",
@@ -694,7 +678,6 @@
       "category": "human-food",
       "foodKeys": [
         "tomatoes",
-        "peppers",
         "avocado",
         "turkey"
       ],
@@ -707,7 +690,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-07",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99434",
@@ -726,7 +709,6 @@
       "productCount": 4,
       "category": "human-food",
       "foodKeys": [
-        "dairy",
         "nuts",
         "chocolate"
       ],
@@ -739,7 +721,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-15",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99542",
@@ -769,7 +751,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-25",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99580",
@@ -798,7 +780,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-03",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99663",
@@ -825,7 +807,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-14",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99639",
@@ -852,7 +834,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-12",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99635",
@@ -879,7 +861,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-05",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99618",
@@ -904,7 +886,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-10",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99650",
@@ -931,7 +913,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-05",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99569",
@@ -958,7 +940,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-22",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:018-2026",
@@ -993,7 +975,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-08-26",
       "reportDate": "2026-08-26",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:99479",
@@ -1022,7 +1004,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-22",
       "reportDate": "2026-08-19",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99453",
@@ -1069,7 +1051,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-17",
       "reportDate": "2026-08-19",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99097",
@@ -1097,7 +1079,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-23",
       "reportDate": "2026-08-19",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99517",
@@ -1125,7 +1107,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-28",
       "reportDate": "2026-08-19",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99540",
@@ -1152,7 +1134,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-28",
       "reportDate": "2026-08-19",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99516",
@@ -1168,8 +1150,7 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "tomatoes",
-        "dairy"
+        "tomatoes"
       ],
       "reason": "Label declares cream and cheese, but Milk is not declared",
       "reasonCategory": "undeclared-allergen",
@@ -1180,7 +1161,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-23",
       "reportDate": "2026-08-19",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99519",
@@ -1195,9 +1176,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "eggs"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared Egg",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -1207,7 +1186,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-28",
       "reportDate": "2026-08-19",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99470",
@@ -1235,7 +1214,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-20",
       "reportDate": "2026-08-19",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:017-2026",
@@ -1266,7 +1245,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-08-17",
       "reportDate": "2026-08-17",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:016-2026",
@@ -1299,7 +1278,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-08-17",
       "reportDate": "2026-08-17",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:99325",
@@ -1329,7 +1308,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-04",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99211",
@@ -1375,7 +1354,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-01",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99458",
@@ -1393,7 +1372,6 @@
       "foodKeys": [
         "sprouts",
         "eggs",
-        "pork",
         "dairy",
         "ready-to-eat meals"
       ],
@@ -1406,7 +1384,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-18",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99448",
@@ -1433,7 +1411,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-13",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99539",
@@ -1449,7 +1427,6 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "eggs",
         "dairy"
       ],
       "reason": "Undeclared allergen (egg)",
@@ -1461,7 +1438,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-29",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99444",
@@ -1488,7 +1465,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-16",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98392",
@@ -1513,7 +1490,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-01-28",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99513",
@@ -1528,9 +1505,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "dairy"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared milk from lactose.",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class II",
@@ -1540,7 +1515,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-24",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99351",
@@ -1556,9 +1531,7 @@
       ],
       "productCount": 2,
       "category": "human-food",
-      "foodKeys": [
-        "seeds"
-      ],
+      "foodKeys": [],
       "reason": "Foreign Manufacturer label contains Undeclared allergen ingredients Wheat, Soy, Sesame, Yellow #5 and Blue #1 in Frozen Flounder Products.",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class II",
@@ -1568,7 +1541,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-01",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99560",
@@ -1583,10 +1556,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "eggs",
-        "dairy"
-      ],
+      "foodKeys": [],
       "reason": "undeclared egg",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -1596,7 +1566,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-08-01",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99460",
@@ -1612,7 +1582,6 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "fish",
         "beverages"
       ],
       "reason": "Allergen missing from contains statement: fish",
@@ -1624,7 +1593,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-09",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99451",
@@ -1651,7 +1620,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-18",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99358",
@@ -1666,9 +1635,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "fish"
-      ],
+      "foodKeys": [],
       "reason": "Product label allergen \"contains\" statement does not include anchovy(fish)",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class II",
@@ -1678,7 +1645,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-01",
       "reportDate": "2026-08-12",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:PHA-08082026-01",
@@ -1686,7 +1653,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-various-meat-and-poultry-products-containing-fda-0",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Various Meat and Poultry Products Containing FDA-Regulated Jalapeños That Have Been Recalled Due To Possible Salmonella Contamination",
-      "firm": "FSIS",
+      "firm": "Not named (public health alert)",
       "product": "WASHINGTON, Aug. 8, 2026 – The U.S. Department of Agriculture’s Food Safety and Inspection Service (FSIS) is issuing a public health alert for meat and poultry products containing FDA-regulated jalap…",
       "products": [],
       "productCount": 0,
@@ -1704,7 +1671,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-08-08",
       "reportDate": "2026-08-08",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:015-2026",
@@ -1735,7 +1702,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-08-08",
       "reportDate": "2026-08-08",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:014-2026",
@@ -1744,10 +1711,10 @@
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "Shan Distribution Network, Inc. Recalls Ineligible Frozen Siluriformes Breaded Fish Fillet and Stick Products Imported from the United Arab Emirates",
       "firm": "Shan Distribution Network, Inc.",
-      "product": "13.75-oz. boxes containing Al Kabeer spicy “Zing Fish Fillets Breaded Partially Cooke&quot;d Swai Fish Fillets”",
+      "product": "13.75-oz. boxes containing Al Kabeer spicy “Zing Fish Fillets Breaded Partially Cooke\"d Swai Fish Fillets”",
       "products": [
-        "13.75-oz. boxes containing Al Kabeer spicy “Zing Fish Fillets Breaded Partially Cooke&quot;d Swai Fish Fillets”",
-        "10.58-oz. boxes containing Al Kabeer “Fish Sticks Breaded Swai Fish&quot;",
+        "13.75-oz. boxes containing Al Kabeer spicy “Zing Fish Fillets Breaded Partially Cooke\"d Swai Fish Fillets”",
+        "10.58-oz. boxes containing Al Kabeer “Fish Sticks Breaded Swai Fish\"",
         "330-g boxes containing Al Kabeer “Breaded Fish Fillets”"
       ],
       "productCount": 3,
@@ -1774,7 +1741,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-08-07",
       "reportDate": "2026-08-07",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:013-2026",
@@ -1808,7 +1775,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-08-07",
       "reportDate": "2026-08-07",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:99081",
@@ -1836,7 +1803,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-21",
       "reportDate": "2026-08-05",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99142",
@@ -1861,21 +1828,21 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-05",
       "reportDate": "2026-08-05",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:012-2026",
       "agency": "FSIS",
       "url": "https://www.fsis.usda.gov/recalls-alerts/ukrops-homestyle-foods-recalls-spaghetti-and-chicken-products-due-possible-foreign",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "title": "Ukrop&#039;s Homestyle Foods Recalls Spaghetti and Chicken Products Due to Possible Foreign Matter Contamination",
-      "firm": "Ukrop&#039;s Homestyle Foods",
-      "product": "62.4-oz. ALUMINUM PAN WITH PLASTIC OVERWRAP containing &quot;Ukrop&#039;s Baked Spaghetti - Bulk&quot; and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number &qu…",
+      "title": "Ukrop's Homestyle Foods Recalls Spaghetti and Chicken Products Due to Possible Foreign Matter Contamination",
+      "firm": "Ukrop's Homestyle Foods",
+      "product": "62.4-oz. ALUMINUM PAN WITH PLASTIC OVERWRAP containing \"Ukrop's Baked Spaghetti - Bulk\" and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number \"EST. 19979\" in th…",
       "products": [
-        "62.4-oz. ALUMINUM PAN WITH PLASTIC OVERWRAP containing &quot;Ukrop&#039;s Baked Spaghetti - Bulk&quot; and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number &quot;EST. 19979&quot; in the mark of inspection.",
-        "14.8-oz. CARDBOARD TRAY WITH PLASTIC OVERWRAP containing &quot;Ukrop&#039;s Baked Spaghetti&quot; and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number &quot;EST. 19979&quot; in the mark of inspection.",
-        "48-oz. ALUMINUM PAN WITH PLASTIC OVERWRAP containing &quot;Ukrop&#039;s Chicken Cobbler - Bulk&quot; and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number &quot;P-19979&quot; in the mark of inspection.",
-        "11.6-oz. CARDBOARD TRAY WITH PLASTIC OVERWRAP containing &quot;Ukrop&#039;s Chicken Cobbler&quot; and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number &quot;P-19979&quot; in the mark of inspection."
+        "62.4-oz. ALUMINUM PAN WITH PLASTIC OVERWRAP containing \"Ukrop's Baked Spaghetti - Bulk\" and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number \"EST. 19979\" in the mark of inspection.",
+        "14.8-oz. CARDBOARD TRAY WITH PLASTIC OVERWRAP containing \"Ukrop's Baked Spaghetti\" and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number \"EST. 19979\" in the mark of inspection.",
+        "48-oz. ALUMINUM PAN WITH PLASTIC OVERWRAP containing \"Ukrop's Chicken Cobbler - Bulk\" and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number \"P-19979\" in the mark of inspection.",
+        "11.6-oz. CARDBOARD TRAY WITH PLASTIC OVERWRAP containing \"Ukrop's Chicken Cobbler\" and BEST BY dates from 07/08/26 through 08/05/26 on the label and bears establishment number \"P-19979\" in the mark of inspection."
       ],
       "productCount": 4,
       "category": "human-food",
@@ -1895,7 +1862,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-07-31",
       "reportDate": "2026-07-31",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-07302026-01",
@@ -1903,10 +1870,10 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-chicken-salad-product-may-be-contaminated-listeria",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Chicken Salad Product that May Be Contaminated with Listeria",
-      "firm": "FSIS",
-      "product": "8-oz. plastic packages containing portions of &quot;CURRY CHICKEN SALAD&quot; with a USE BY: 07/30/2026 date stamp on the lid.",
+      "firm": "Mary's Harvest Fresh Foods, Inc.",
+      "product": "8-oz. plastic packages containing portions of \"CURRY CHICKEN SALAD\" with a USE BY: 07/30/2026 date stamp on the lid.",
       "products": [
-        "8-oz. plastic packages containing portions of &quot;CURRY CHICKEN SALAD&quot; with a USE BY: 07/30/2026 date stamp on the lid."
+        "8-oz. plastic packages containing portions of \"CURRY CHICKEN SALAD\" with a USE BY: 07/30/2026 date stamp on the lid."
       ],
       "productCount": 1,
       "category": "human-food",
@@ -1926,7 +1893,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-07-30",
       "reportDate": "2026-07-30",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:99387",
@@ -1951,7 +1918,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-08",
       "reportDate": "2026-07-29",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99355",
@@ -1976,7 +1943,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-02",
       "reportDate": "2026-07-29",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99386",
@@ -2002,7 +1969,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-08",
       "reportDate": "2026-07-29",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99354",
@@ -2031,7 +1998,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-13",
       "reportDate": "2026-07-29",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99215",
@@ -2063,7 +2030,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-02",
       "reportDate": "2026-07-29",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99357",
@@ -2090,7 +2057,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-25",
       "reportDate": "2026-07-29",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:PHA-07292026-01",
@@ -2098,10 +2065,10 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-steak-burrito-product-due-misbranding-and-undeclared",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Steak Burrito Product Due to Misbranding and Undeclared Allergen",
-      "firm": "FSIS",
-      "product": "3-lb 2-oz. carton containing 10 individually wrapped &quot;RED&#039;S STEAK CILANTRO AND LIME BURRITO&quot; on the front package label with production lots, L1 SD6170 1503, L1 SD6170 1535, L1 SD6170…",
+      "firm": "RED'S ALL NATURAL, LLC.",
+      "product": "3-lb 2-oz. carton containing 10 individually wrapped \"RED'S STEAK CILANTRO AND LIME BURRITO\" on the front package label with production lots, L1 SD6170 1503, L1 SD6170 1535, L1 SD6170 1606, L1 SD6170…",
       "products": [
-        "3-lb 2-oz. carton containing 10 individually wrapped &quot;RED&#039;S STEAK CILANTRO AND LIME BURRITO&quot; on the front package label with production lots, L1 SD6170 1503, L1 SD6170 1535, L1 SD6170 1606, L1 SD6170 1639, L1 SD6170 1717, L1 SD6170 1750, L1 SD6170 1831, L"
+        "3-lb 2-oz. carton containing 10 individually wrapped \"RED'S STEAK CILANTRO AND LIME BURRITO\" on the front package label with production lots, L1 SD6170 1503, L1 SD6170 1535, L1 SD6170 1606, L1 SD6170 1639, L1 SD6170 1717, L1 SD6170 1750, L1 SD6170 1831, L"
       ],
       "productCount": 1,
       "category": "human-food",
@@ -2123,7 +2090,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-07-29",
       "reportDate": "2026-07-29",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:011-2026",
@@ -2132,10 +2099,10 @@
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "Maple Leaf Foods Inc. Recalls Not Ready-To-Eat (NRTE) Bacon Product Imported without the Benefit of Import Reinspection",
       "firm": "Maple Leaf Foods Inc.",
-      "product": "12-oz vacuum package of &quot;Royale Natural Applewood Smoked ALL NATURAL Uncured Bacon Product of Canada&quot; with sell by dates of &quot;SEP 01 2026&quot; and &quot;SEP 07 2026&quot; printed on th…",
+      "product": "12-oz vacuum package of \"Royale Natural Applewood Smoked ALL NATURAL Uncured Bacon Product of Canada\" with sell by dates of \"SEP 01 2026\" and \"SEP 07 2026\" printed on the side of the package",
       "products": [
-        "12-oz vacuum package of &quot;Royale Natural Applewood Smoked ALL NATURAL Uncured Bacon Product of Canada&quot; with sell by dates of &quot;SEP 01 2026&quot; and &quot;SEP 07 2026&quot; printed on the side of the package",
-        "12-oz vacuum package of &quot;TOP VALU Uncured Hardwood Smoked Bacon PRODUCT OF CANADA&quot; with various sell by dates of &quot;SEP 01 2026&quot;, &quot;SEP 02 2026&quot;, &quot;SEP 04 2026&quot;, &quot;SEP 05 2026&quot;, and &quot;SEP 07 2026&quot; printed on the side of the package"
+        "12-oz vacuum package of \"Royale Natural Applewood Smoked ALL NATURAL Uncured Bacon Product of Canada\" with sell by dates of \"SEP 01 2026\" and \"SEP 07 2026\" printed on the side of the package",
+        "12-oz vacuum package of \"TOP VALU Uncured Hardwood Smoked Bacon PRODUCT OF CANADA\" with various sell by dates of \"SEP 01 2026\", \"SEP 02 2026\", \"SEP 04 2026\", \"SEP 05 2026\", and \"SEP 07 2026\" printed on the side of the package"
       ],
       "productCount": 2,
       "category": "human-food",
@@ -2156,7 +2123,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-07-24",
       "reportDate": "2026-07-24",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:010-2026",
@@ -2165,9 +2132,9 @@
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "BCI Foods, Inc. Recalls Chicken Noodle Soup Product Imported without the Benefit of Import Reinspection",
       "firm": "BCI Foods, Inc.",
-      "product": "10.5-oz can of &quot;tasty KITCHEN Chicken Noodle Condensed Soup PRODUCT OF CANADA&quot; with best by date of &quot;2028 FE 04&quot; and lot code &quot;5 9 2 26 035&quot;",
+      "product": "10.5-oz can of \"tasty KITCHEN Chicken Noodle Condensed Soup PRODUCT OF CANADA\" with best by date of \"2028 FE 04\" and lot code \"5 9 2 26 035\"",
       "products": [
-        "10.5-oz can of &quot;tasty KITCHEN Chicken Noodle Condensed Soup PRODUCT OF CANADA&quot; with best by date of &quot;2028 FE 04&quot; and lot code &quot;5 9 2 26 035&quot;"
+        "10.5-oz can of \"tasty KITCHEN Chicken Noodle Condensed Soup PRODUCT OF CANADA\" with best by date of \"2028 FE 04\" and lot code \"5 9 2 26 035\""
       ],
       "productCount": 1,
       "category": "human-food",
@@ -2185,7 +2152,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-07-23",
       "reportDate": "2026-07-23",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:99040",
@@ -2216,7 +2183,6 @@
       "productCount": 16,
       "category": "human-food",
       "foodKeys": [
-        "dairy",
         "nuts",
         "baked goods"
       ],
@@ -2229,7 +2195,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-04",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99074",
@@ -2258,7 +2224,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-26",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99282",
@@ -2273,9 +2239,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "nuts"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared peanuts",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class II",
@@ -2285,7 +2249,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-19",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99055",
@@ -2310,7 +2274,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-15",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99373",
@@ -2337,7 +2301,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-07-03",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99306",
@@ -2362,7 +2326,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-22",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99238",
@@ -2387,7 +2351,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-04",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98931",
@@ -2403,7 +2367,6 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "dairy",
         "chocolate"
       ],
       "reason": "Undeclared milk allergen.",
@@ -2415,7 +2378,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-27",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99293",
@@ -2444,7 +2407,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-19",
       "reportDate": "2026-07-22",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98988",
@@ -2466,8 +2429,7 @@
       "foodKeys": [
         "lettuce",
         "chicken",
-        "pork",
-        "seeds"
+        "pork"
       ],
       "reason": "Undeclared Sesame allergen",
       "reasonCategory": "undeclared-allergen",
@@ -2478,7 +2440,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-12",
       "reportDate": "2026-07-15",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99327",
@@ -2508,7 +2470,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-24",
       "reportDate": "2026-07-15",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99124",
@@ -2535,7 +2497,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-28",
       "reportDate": "2026-07-15",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99314",
@@ -2560,7 +2522,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-24",
       "reportDate": "2026-07-15",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99253",
@@ -2585,7 +2547,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-28",
       "reportDate": "2026-07-15",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99335",
@@ -2603,9 +2565,7 @@
       "category": "human-food",
       "foodKeys": [
         "chicken",
-        "pork",
-        "baked goods",
-        "ready-to-eat meals"
+        "pork"
       ],
       "reason": "Raw breaded chicken patties were inadvertently used in the ready to eat Burger Chicken Fillet sandwich. Raw breaded chicken patties pose a risk of foodborne illness due to the potential presence of Salmonella.",
       "reasonCategory": "salmonella",
@@ -2616,7 +2576,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-25",
       "reportDate": "2026-07-15",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99235",
@@ -2641,7 +2601,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-11",
       "reportDate": "2026-07-15",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99324",
@@ -2658,7 +2618,6 @@
       "category": "human-food",
       "foodKeys": [
         "dairy",
-        "nuts",
         "chocolate"
       ],
       "reason": "Undeclared Peanut. High Valley Orchard Chocolate Covered Raisins contains unintended undeclared peanut due to mis-packaging.",
@@ -2670,7 +2629,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-24",
       "reportDate": "2026-07-15",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99292",
@@ -2698,7 +2657,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-18",
       "reportDate": "2026-07-08",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99275",
@@ -2713,9 +2672,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "dairy"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared allergen (milk) and process deviation (product not held under refrigeration as required)",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class II",
@@ -2725,7 +2682,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-10",
       "reportDate": "2026-07-08",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99255",
@@ -2756,7 +2713,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-15",
       "reportDate": "2026-07-08",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99242",
@@ -2784,7 +2741,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-13",
       "reportDate": "2026-07-08",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99231",
@@ -2811,7 +2768,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-10",
       "reportDate": "2026-07-08",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:PHA-07032026-01",
@@ -2819,7 +2776,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-a-ready-eat-beef-jerky-product-due-misbranding-and",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for A Ready-To-Eat Beef Jerky Product Due to Misbranding and Undeclared Allergen",
-      "firm": "FSIS",
+      "firm": "GoodTimes Beef Jerky",
       "product": "2.5-oz. plastic bag packages of “STREET’S BEEF Jerky TERIYAKI FLAVOR” with lot codes 0701271, 0520271, 04014271, 0415271, 0211271, 1015261, 1016261, 1029261, 0909261, 0806261, and 0820261 shown on a…",
       "products": [
         "2.5-oz. plastic bag packages of “STREET’S BEEF Jerky TERIYAKI FLAVOR” with lot codes 0701271, 0520271, 04014271, 0415271, 0211271, 1015261, 1016261, 1029261, 0909261, 0806261, and 0820261 shown on a sticker on the packaging."
@@ -2841,7 +2798,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-07-03",
       "reportDate": "2026-07-03",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:98975",
@@ -2882,7 +2839,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-23",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99147",
@@ -2909,7 +2866,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-02",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98864",
@@ -2942,7 +2899,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-28",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99082",
@@ -2977,7 +2934,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-22",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99120",
@@ -3005,7 +2962,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-29",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98281",
@@ -3044,7 +3001,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-01-09",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98867",
@@ -3077,7 +3034,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-29",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99099",
@@ -3106,7 +3063,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-27",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99198",
@@ -3133,7 +3090,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-21",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99118",
@@ -3148,9 +3105,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "dairy"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared allergens: Milk and Soy",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -3160,7 +3115,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-13",
       "reportDate": "2026-07-01",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:PHA-06252026-02",
@@ -3168,7 +3123,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-boneless-chicken-breast-product-due-misbranding-and",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Boneless Chicken Breast Product Due to Misbranding and Undeclared Allergens",
-      "firm": "FSIS",
+      "firm": "FW Farms LLC.",
       "product": "21-oz. vacuum-packed packages of “PRIVATE SELECTION Honey Dijon Boneless Skinless Chicken Breasts with Rib Meat” with “BEST IF USED BY: JUN 28 2026” and lot code “15326A” printed on the packaging.",
       "products": [
         "21-oz. vacuum-packed packages of “PRIVATE SELECTION Honey Dijon Boneless Skinless Chicken Breasts with Rib Meat” with “BEST IF USED BY: JUN 28 2026” and lot code “15326A” printed on the packaging."
@@ -3197,7 +3152,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-06-25",
       "reportDate": "2026-06-25",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:009-2026",
@@ -3233,7 +3188,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-06-25",
       "reportDate": "2026-06-25",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-06252026-01",
@@ -3241,7 +3196,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-chicken-caesar-wrap-products-may-be",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Ready-To-Eat Chicken Caesar Wrap Products That May Be Contaminated With Listeria",
-      "firm": "FSIS",
+      "firm": "Taher, Inc.",
       "product": "8.7-oz. clear plastic wrapped packages of “FRESH SEASONS Kitchen Chicken Caesar Wrap” with “Sell By:6/24/2026” printed on the back label above the ingredients.",
       "products": [
         "8.7-oz. clear plastic wrapped packages of “FRESH SEASONS Kitchen Chicken Caesar Wrap” with “Sell By:6/24/2026” printed on the back label above the ingredients."
@@ -3264,7 +3219,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-06-25",
       "reportDate": "2026-06-25",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:98926",
@@ -3290,7 +3245,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-06",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99018",
@@ -3320,7 +3275,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-18",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98984",
@@ -3345,7 +3300,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-12",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99208",
@@ -3372,7 +3327,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-09",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99020",
@@ -3399,7 +3354,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-15",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99117",
@@ -3414,9 +3369,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "fish"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared fish.",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -3426,7 +3379,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-28",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99009",
@@ -3451,7 +3404,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-14",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99056",
@@ -3476,7 +3429,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-21",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98973",
@@ -3504,7 +3457,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-04",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99218",
@@ -3531,7 +3484,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-13",
       "reportDate": "2026-06-24",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:008-2026",
@@ -3560,7 +3513,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-06-18",
       "reportDate": "2026-06-18",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:98732",
@@ -3611,7 +3564,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-03",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99037",
@@ -3638,7 +3591,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-19",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99155",
@@ -3665,7 +3618,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-06-03",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99017",
@@ -3690,7 +3643,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-15",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99022",
@@ -3717,7 +3670,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-19",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98993",
@@ -3744,7 +3697,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-11",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98850",
@@ -3759,9 +3712,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "nuts"
-      ],
+      "foodKeys": [],
       "reason": "The ingredient, Pista, currently declared on our label should be corrected to the standard American nomenclature, Pistachio.",
       "reasonCategory": "other",
       "classification": "Class III",
@@ -3771,7 +3722,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-02-25",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99038",
@@ -3786,9 +3737,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "seafood"
-      ],
+      "foodKeys": [],
       "reason": "Contains undeclared allergen (shrimp).",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -3798,7 +3747,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-19",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98714",
@@ -3826,7 +3775,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-03-23",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98369",
@@ -3842,7 +3791,6 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "eggs",
         "baked goods"
       ],
       "reason": "Undeclared Egg Allergen",
@@ -3854,7 +3802,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-01-30",
       "reportDate": "2026-06-17",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98965",
@@ -3869,9 +3817,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "seeds"
-      ],
+      "foodKeys": [],
       "reason": "Sesame Seeds White were labeled as Curry Powder Sweet.",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class II",
@@ -3881,7 +3827,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-08",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98953",
@@ -4048,7 +3994,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-06",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98982",
@@ -4083,7 +4029,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-12",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98902",
@@ -4122,7 +4068,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-01",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98925",
@@ -4152,7 +4098,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-06",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98908",
@@ -4180,7 +4126,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-04",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98923",
@@ -4207,7 +4153,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-30",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98943",
@@ -4236,7 +4182,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-05",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99015",
@@ -4261,7 +4207,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2025-12-15",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98989",
@@ -4276,9 +4222,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "fish"
-      ],
+      "foodKeys": [],
       "reason": "Un-eviscerated fish may be contaminated with clostridium botulinum",
       "reasonCategory": "other-pathogen",
       "classification": "Class I",
@@ -4288,7 +4232,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-13",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98889",
@@ -4303,10 +4247,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "stone fruit",
-        "nuts"
-      ],
+      "foodKeys": [],
       "reason": "The product may contain undeclared allergens (cashews, pistachios), and dried cherries.",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class II",
@@ -4316,7 +4257,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-01",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98949",
@@ -4343,7 +4284,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-05",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99030",
@@ -4358,9 +4299,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "eggs"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared egg",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -4370,7 +4309,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-20",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98857",
@@ -4387,7 +4326,6 @@
       "category": "human-food",
       "foodKeys": [
         "berries",
-        "nuts",
         "baked goods"
       ],
       "reason": "Undeclared walnuts",
@@ -4399,7 +4337,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-27",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98887",
@@ -4427,7 +4365,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-01",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99001",
@@ -4454,7 +4392,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-14",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99070",
@@ -4481,7 +4419,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-22",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:99057",
@@ -4508,7 +4446,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-18",
       "reportDate": "2026-06-10",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98928",
@@ -4538,7 +4476,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-05",
       "reportDate": "2026-06-03",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98713",
@@ -4556,9 +4494,7 @@
       ],
       "productCount": 4,
       "category": "human-food",
-      "foodKeys": [
-        "dairy"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared Milk Allergen,",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class I",
@@ -4568,7 +4504,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-02",
       "reportDate": "2026-06-03",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98841",
@@ -4595,7 +4531,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-21",
       "reportDate": "2026-06-03",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98961",
@@ -4611,7 +4547,6 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "nuts",
         "seeds"
       ],
       "reason": "Possible cross-contamination resulting in undeclared allergen ingredient (Peanut)",
@@ -4623,7 +4558,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-08",
       "reportDate": "2026-06-03",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:007-2026",
@@ -4632,10 +4567,10 @@
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "Synear Foods USA, LLC Recalls Frozen Pork and Crab Soup Dumpling Products Due to Misbranding and Undeclared Allergens",
       "firm": "Synear Foods USA, LLC",
-      "product": "13.23-oz. plastic bag packages containing “Synear SUPREME SOUP DUMPLING PORK &amp; CRAB” and “BEST BY” dates 15 OCT 2026, 10 NOV 2026, 23 DEC 2026, 26 JAN 2027, or 23 FEB 2027.",
+      "product": "13.23-oz. plastic bag packages containing “Synear SUPREME SOUP DUMPLING PORK & CRAB” and “BEST BY” dates 15 OCT 2026, 10 NOV 2026, 23 DEC 2026, 26 JAN 2027, or 23 FEB 2027.",
       "products": [
-        "13.23-oz. plastic bag packages containing “Synear SUPREME SOUP DUMPLING PORK &amp; CRAB” and “BEST BY” dates 15 OCT 2026, 10 NOV 2026, 23 DEC 2026, 26 JAN 2027, or 23 FEB 2027.",
-        "375-g. plastic bag packages containing “Synear SUPREME SOUP DUMPLING DUMPLINGS À LA SOUPE SUPRÊME PORK &amp; CRAB PORC ET CRABE” with “Product of USA/Produit des E.-U” and best by dates 2026 OC 15 or 2027 JA 26."
+        "13.23-oz. plastic bag packages containing “Synear SUPREME SOUP DUMPLING PORK & CRAB” and “BEST BY” dates 15 OCT 2026, 10 NOV 2026, 23 DEC 2026, 26 JAN 2027, or 23 FEB 2027.",
+        "375-g. plastic bag packages containing “Synear SUPREME SOUP DUMPLING DUMPLINGS À LA SOUPE SUPRÊME PORK & CRAB PORC ET CRABE” with “Product of USA/Produit des E.-U” and best by dates 2026 OC 15 or 2027 JA 26."
       ],
       "productCount": 2,
       "category": "human-food",
@@ -4656,7 +4591,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-05-31",
       "reportDate": "2026-05-31",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:98822",
@@ -4690,7 +4625,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-22",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98919",
@@ -4722,7 +4657,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-05",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98851",
@@ -4759,7 +4694,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-26",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98765",
@@ -4798,7 +4733,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-06",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98844",
@@ -4836,7 +4771,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-24",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98816",
@@ -4866,7 +4801,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-22",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98832",
@@ -4904,7 +4839,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-23",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98879",
@@ -4933,7 +4868,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-23",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98934",
@@ -4961,7 +4896,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-05",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98886",
@@ -4986,7 +4921,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-28",
       "reportDate": "2026-05-27",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:PHA-05242026-01",
@@ -4994,7 +4929,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-beef-kofta-products-served-kebab-shop-restaurant",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Beef Kofta Products Served at The Kebab Shop Restaurant Locations Due to Possible E. Coli O157:H7 Contamination",
-      "firm": "FSIS",
+      "firm": "Olympia Food Industries, Inc.",
       "product": "Editor's Note - June 1, 2026: Whole genome sequencing results show that the beef kofta samples collected by FSIS and produced at Olympia Food Industries (Est. 18743) matched the outbreak strain of E.…",
       "products": [],
       "productCount": 0,
@@ -5015,7 +4950,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-05-24",
       "reportDate": "2026-05-24",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fda:98743",
@@ -5046,7 +4981,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-04",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98727",
@@ -5071,7 +5006,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-03-26",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98807",
@@ -5087,7 +5022,6 @@
       "productCount": 1,
       "category": "human-food",
       "foodKeys": [
-        "dairy",
         "nuts",
         "chocolate"
       ],
@@ -5100,7 +5034,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-20",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98769",
@@ -5128,7 +5062,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-13",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98836",
@@ -5153,7 +5087,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-08",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98811",
@@ -5178,7 +5112,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-21",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98839",
@@ -5205,7 +5139,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-27",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98825",
@@ -5236,7 +5170,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-04-28",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fda:98900",
@@ -5251,9 +5185,7 @@
       ],
       "productCount": 1,
       "category": "human-food",
-      "foodKeys": [
-        "fish"
-      ],
+      "foodKeys": [],
       "reason": "Undeclared allergen ingredient (fish)",
       "reasonCategory": "undeclared-allergen",
       "classification": "Class II",
@@ -5263,7 +5195,7 @@
       "relatedToOutbreak": null,
       "recallDate": "2026-05-01",
       "reportDate": "2026-05-20",
-      "fetchedAt": "2026-09-16T23:33:21.622Z"
+      "fetchedAt": "2026-09-16T23:48:27.845Z"
     },
     {
       "id": "fsis:PHA-05092026-01",
@@ -5271,7 +5203,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-headcheese-deli-meat-products-may-be-contaminated",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Headcheese Deli Meat Products That May Be Contaminated With Listeria",
-      "firm": "FSIS",
+      "firm": "Crawford Sausage Co., Inc.",
       "product": "Various weight packages packed or sliced in retail delis, containing “DAISY BRAND Meat Products HEADCHEESE,” with a “USE BY” date of “MAR 26 2026.”",
       "products": [
         "Various weight packages packed or sliced in retail delis, containing “DAISY BRAND Meat Products HEADCHEESE,” with a “USE BY” date of “MAR 26 2026.”",
@@ -5294,7 +5226,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-05-09",
       "reportDate": "2026-05-09",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-05042026-01",
@@ -5302,10 +5234,10 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ravioli-pasta-beef-sauce-due-misbranding-and",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Ravioli Pasta With Beef Sauce Due to Misbranding and Undeclared Allergens",
-      "firm": "FSIS",
-      "product": "32-oz. plastic bag packages containing “Giovanni Rana RANA Rustic Beef Sauce &amp; Creamy Burrata Cheese Ravioli” with “use by” dates ranging 05/14/2026 – 06/25/2026",
+      "firm": "Rana Meal Solutions, LLC",
+      "product": "32-oz. plastic bag packages containing “Giovanni Rana RANA Rustic Beef Sauce & Creamy Burrata Cheese Ravioli” with “use by” dates ranging 05/14/2026 – 06/25/2026",
       "products": [
-        "32-oz. plastic bag packages containing “Giovanni Rana RANA Rustic Beef Sauce &amp; Creamy Burrata Cheese Ravioli” with “use by” dates ranging 05/14/2026 – 06/25/2026"
+        "32-oz. plastic bag packages containing “Giovanni Rana RANA Rustic Beef Sauce & Creamy Burrata Cheese Ravioli” with “use by” dates ranging 05/14/2026 – 06/25/2026"
       ],
       "productCount": 1,
       "category": "human-food",
@@ -5325,7 +5257,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-05-04",
       "reportDate": "2026-05-04",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-04302026-01",
@@ -5333,7 +5265,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-various-meat-and-poultry-products-containing-fda",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Various Meat and Poultry Products Containing FDA-Regulated Dairy Products That Have Been Recalled Due to Possible Salmonella Contamination",
-      "firm": "FSIS",
+      "firm": "Not named (public health alert)",
       "product": "Last Updated: This release was last updated on May 15, 2026, to reflect additional affected products and their corresponding labels. WASHINGTON, APRIL 30, 2026 – The U.S. Department of Agriculture’s…",
       "products": [],
       "productCount": 0,
@@ -5351,7 +5283,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-04-30",
       "reportDate": "2026-04-30",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-04092026-01",
@@ -5359,7 +5291,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-beef-and-pork-products-due-misbranding-and",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Beef and Pork Products Due to Misbranding and Undeclared Allergen",
-      "firm": "FSIS",
+      "firm": "Sky Ranch Meat LLC",
       "product": "1.5-lb. clear plastic containers with safety lids containing “QUALITY MEAT SKY RANCH PREMIUM PROVISIONS MARINATED BEEF RIBEYE ROLL /BULGOGI” with “SELL BY” dates of “DEC.11.25” through “APR.16.26”.",
       "products": [
         "1.5-lb. clear plastic containers with safety lids containing “QUALITY MEAT SKY RANCH PREMIUM PROVISIONS MARINATED BEEF RIBEYE ROLL /BULGOGI” with “SELL BY” dates of “DEC.11.25” through “APR.16.26”.",
@@ -5387,7 +5319,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-04-09",
       "reportDate": "2026-04-09",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-04012026-01",
@@ -5395,7 +5327,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-frozen-dinosaur-shaped-ready-eat-chicken-nuggets-due",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Retracts Public Health Alert for Frozen, Ready-to-Eat Chicken Nuggets Due to Updated Laboratory Result",
-      "firm": "FSIS Retracts Public Health Alert for Frozen, Ready-to-Eat Chicken Nuggets Due to Updated Laboratory Result",
+      "firm": "Dorada Foods",
       "product": "29-oz. plastic bags containing approx. 36 “GREAT VALUE FULLY COOKED DINO SHAPED CHICKEN BREAST NUGGETS” with “BEST IF USED BY” date “FEB 10 2027,” lot code” 0416DPO1215,” and establishment number “P4…",
       "products": [
         "29-oz. plastic bags containing approx. 36 “GREAT VALUE FULLY COOKED DINO SHAPED CHICKEN BREAST NUGGETS” with “BEST IF USED BY” date “FEB 10 2027,” lot code” 0416DPO1215,” and establishment number “P44164” printed on the back of the bag."
@@ -5415,7 +5347,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-04-06",
       "reportDate": "2026-04-06",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-03252026-01",
@@ -5423,16 +5355,16 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-beef-and-pork-products-produced-without-benefit",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Beef and Pork Products Produced Without the Benefit of Inspection",
-      "firm": "FSIS",
-      "product": "5-lb. box of 8-oz. packages containing a VACUUM-PACKED piece of &quot;BLACKWING ORGANIC MEATS ORGANIC BEEF NEW YORK STRIP STEAK,&quot; with &quot;EST. 1996&quot; inside the USDA mark of inspection.",
+      "firm": "Not named (public health alert)",
+      "product": "5-lb. box of 8-oz. packages containing a VACUUM-PACKED piece of \"BLACKWING ORGANIC MEATS ORGANIC BEEF NEW YORK STRIP STEAK,\" with \"EST. 1996\" inside the USDA mark of inspection.",
       "products": [
-        "5-lb. box of 8-oz. packages containing a VACUUM-PACKED piece of &quot;BLACKWING ORGANIC MEATS ORGANIC BEEF NEW YORK STRIP STEAK,&quot; with &quot;EST. 1996&quot; inside the USDA mark of inspection.",
-        "10-lb. box of 16-oz. packages containing a VACUUM-PACKED package of &quot;BLACKWING ORGANIC MEATS ORGANIC GROUND BEEF.&quot;",
-        "5-lb. box of 8-oz. packages containing a VACUUM-PACKED package of &quot;BLACKWING ORGANIC MEATS GRASS FED ORGANIC BEEF STEW MEAT,&quot; with &quot;EST. 1996&quot; inside the USDA mark of inspection.",
-        "5-lb. box of 8-oz. packages containing a VACUUM-PACKED piece of &quot;BLACKWING ORGANIC MEATS ORGANIC BEEF STEAK STRIPS,&quot; with &quot;EST. 1996&quot; inside the USDA mark of inspection.",
-        "1-lb. VACUUM-PACKED package of &quot;BLACKWING MEATS BLACKWING BEEF GROUND FROM ORGANIC BEEF,&quot; without USDA mark of inspection.",
-        "12-oz. VACUUM-PACKED package of &quot;BLACKWING MEATS PORK GROUND MADE FROM ORGANIC PORK,&quot; without USDA mark of inspection.",
-        "12-oz. VACUUM-PACKED package of &quot;BLACKWING MEATS Boneless Center Cut Pork Chops 2-6oz Made from Organic Pork,&quot; without the USDA mark of inspection."
+        "5-lb. box of 8-oz. packages containing a VACUUM-PACKED piece of \"BLACKWING ORGANIC MEATS ORGANIC BEEF NEW YORK STRIP STEAK,\" with \"EST. 1996\" inside the USDA mark of inspection.",
+        "10-lb. box of 16-oz. packages containing a VACUUM-PACKED package of \"BLACKWING ORGANIC MEATS ORGANIC GROUND BEEF.\"",
+        "5-lb. box of 8-oz. packages containing a VACUUM-PACKED package of \"BLACKWING ORGANIC MEATS GRASS FED ORGANIC BEEF STEW MEAT,\" with \"EST. 1996\" inside the USDA mark of inspection.",
+        "5-lb. box of 8-oz. packages containing a VACUUM-PACKED piece of \"BLACKWING ORGANIC MEATS ORGANIC BEEF STEAK STRIPS,\" with \"EST. 1996\" inside the USDA mark of inspection.",
+        "1-lb. VACUUM-PACKED package of \"BLACKWING MEATS BLACKWING BEEF GROUND FROM ORGANIC BEEF,\" without USDA mark of inspection.",
+        "12-oz. VACUUM-PACKED package of \"BLACKWING MEATS PORK GROUND MADE FROM ORGANIC PORK,\" without USDA mark of inspection.",
+        "12-oz. VACUUM-PACKED package of \"BLACKWING MEATS Boneless Center Cut Pork Chops 2-6oz Made from Organic Pork,\" without the USDA mark of inspection."
       ],
       "productCount": 7,
       "category": "human-food",
@@ -5449,7 +5381,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-03-25",
       "reportDate": "2026-03-25",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-03232026-01",
@@ -5457,10 +5389,10 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ground-beef-products-due-possible-foreign-material",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Ground Beef Products Due to Possible Foreign Material Contamination",
-      "firm": "FSIS",
-      "product": "16oz (1 lb.) PLASTIC, VACUUM-PACKED, packages containing &quot;WHITE OAK PASTURES, RADICALLY TRADITIONAL FARMING, GRASSFED GROUND BEEF&quot;.",
+      "firm": "White Oak Pastures",
+      "product": "16oz (1 lb.) PLASTIC, VACUUM-PACKED, packages containing \"WHITE OAK PASTURES, RADICALLY TRADITIONAL FARMING, GRASSFED GROUND BEEF\".",
       "products": [
-        "16oz (1 lb.) PLASTIC, VACUUM-PACKED, packages containing &quot;WHITE OAK PASTURES, RADICALLY TRADITIONAL FARMING, GRASSFED GROUND BEEF&quot;."
+        "16oz (1 lb.) PLASTIC, VACUUM-PACKED, packages containing \"WHITE OAK PASTURES, RADICALLY TRADITIONAL FARMING, GRASSFED GROUND BEEF\"."
       ],
       "productCount": 1,
       "category": "human-food",
@@ -5483,7 +5415,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-03-23",
       "reportDate": "2026-03-23",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-03132026-01",
@@ -5491,10 +5423,10 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-frozen-ready-eat-turkey-stuffed-pastry-products-due",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert For Frozen Ready-To-Eat Turkey Stuffed Pastry Products Due To Misbranding",
-      "firm": "FSIS",
-      "product": "25.4-oz. boxes containing eight pieces of “LA BOULANGERIE TURKEY PESTO &amp; SWISS CHEESE POCKETS” with lot code 04926 and “best by” date 02/18/27 printed on the packaging.",
+      "firm": "Shaw Bakers LLC",
+      "product": "25.4-oz. boxes containing eight pieces of “LA BOULANGERIE TURKEY PESTO & SWISS CHEESE POCKETS” with lot code 04926 and “best by” date 02/18/27 printed on the packaging.",
       "products": [
-        "25.4-oz. boxes containing eight pieces of “LA BOULANGERIE TURKEY PESTO &amp; SWISS CHEESE POCKETS” with lot code 04926 and “best by” date 02/18/27 printed on the packaging."
+        "25.4-oz. boxes containing eight pieces of “LA BOULANGERIE TURKEY PESTO & SWISS CHEESE POCKETS” with lot code 04926 and “best by” date 02/18/27 printed on the packaging."
       ],
       "productCount": 1,
       "category": "human-food",
@@ -5513,7 +5445,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-03-13",
       "reportDate": "2026-03-13",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:005-2026-EXP",
@@ -5539,7 +5471,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-03-03",
       "reportDate": "2026-03-03",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-03012026-01",
@@ -5547,12 +5479,12 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-beef-jerky-products-due-misbranding-and",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Ready-To-Eat Beef Jerky Products Due to Misbranding and Undeclared Allergen",
-      "firm": "FSIS",
-      "product": "6-oz. plastic packages containing &quot;DRIED HAWAIIAN STYLE BEEF CRISPS, ORIGINAL SALT &amp;amp; PEPPER FLAVOR&quot;, and bearing establishment number &quot;EST. 2625&quot; inside the USDA mark of i…",
+      "firm": "Punahele Jerky Company, Inc.",
+      "product": "6-oz. plastic packages containing \"DRIED HAWAIIAN STYLE BEEF CRISPS, ORIGINAL SALT & PEPPER FLAVOR\", and bearing establishment number \"EST. 2625\" inside the USDA mark of inspection.",
       "products": [
-        "6-oz. plastic packages containing &quot;DRIED HAWAIIAN STYLE BEEF CRISPS, ORIGINAL SALT &amp;amp; PEPPER FLAVOR&quot;, and bearing establishment number &quot;EST. 2625&quot; inside the USDA mark of inspection.",
-        "4-oz. plastic packages containing &quot;PUNAHELE JERKY COMPANY INC UNCLE K&#039;S BEEF CRISPS&quot;.",
-        "4-oz. plastic packages containing &quot;PUNAHELE JERKY COMPANY INC KILAUEA FIRE SPICY BEEF CRISPS&quot;."
+        "6-oz. plastic packages containing \"DRIED HAWAIIAN STYLE BEEF CRISPS, ORIGINAL SALT & PEPPER FLAVOR\", and bearing establishment number \"EST. 2625\" inside the USDA mark of inspection.",
+        "4-oz. plastic packages containing \"PUNAHELE JERKY COMPANY INC UNCLE K'S BEEF CRISPS\".",
+        "4-oz. plastic packages containing \"PUNAHELE JERKY COMPANY INC KILAUEA FIRE SPICY BEEF CRISPS\"."
       ],
       "productCount": 3,
       "category": "human-food",
@@ -5570,7 +5502,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-03-01",
       "reportDate": "2026-03-01",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:006-2026",
@@ -5597,7 +5529,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-02-22",
       "reportDate": "2026-02-22",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:005-2026",
@@ -5626,7 +5558,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-02-19",
       "reportDate": "2026-02-19",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:004-2026",
@@ -5660,7 +5592,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-02-19",
       "reportDate": "2026-02-19",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:003-2026",
@@ -5693,7 +5625,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-02-11",
       "reportDate": "2026-02-11",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:002-2026",
@@ -5722,7 +5654,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-02-03",
       "reportDate": "2026-02-03",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:001-2026",
@@ -5758,7 +5690,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2026-01-16",
       "reportDate": "2026-01-16",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:042-2025",
@@ -5792,7 +5724,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-12-27",
       "reportDate": "2025-12-27",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:041-2025",
@@ -5820,7 +5752,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-12-19",
       "reportDate": "2025-12-19",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:040-2025",
@@ -5853,7 +5785,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-12-19",
       "reportDate": "2025-12-19",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:039-2025",
@@ -5886,7 +5818,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-12-14",
       "reportDate": "2025-12-14",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:038-2025",
@@ -5914,7 +5846,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-12-12",
       "reportDate": "2025-12-12",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:037-2025",
@@ -5947,7 +5879,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-12-09",
       "reportDate": "2025-12-09",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:036-2025",
@@ -5977,7 +5909,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-11-04",
       "reportDate": "2025-11-04",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:035-2025",
@@ -6007,7 +5939,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-10-27",
       "reportDate": "2025-10-27",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:034-2025",
@@ -6039,7 +5971,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-10-25",
       "reportDate": "2025-10-25",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:033-2025",
@@ -6064,7 +5996,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-10-24",
       "reportDate": "2025-10-24",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:032-2025",
@@ -6089,7 +6021,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-10-18",
       "reportDate": "2025-10-18",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-10072025-01",
@@ -6097,10 +6029,10 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-meals-containing-riced-cauliflower-may-be",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert For Ready-To-Eat Meals Containing Riced Cauliflower That May Be Contaminated With Listeria",
-      "firm": "FSIS",
-      "product": "Sold by Blue Apron: 13.05-oz. plastic tray packages labeled &quot;DISH by Blue Apron Cheesy Chicken Mac with Vegetables&quot; with lot codes 25240 and 25247. The product bears establishment number &q…",
+      "firm": "Freshrealm",
+      "product": "Sold by Blue Apron: 13.05-oz. plastic tray packages labeled \"DISH by Blue Apron Cheesy Chicken Mac with Vegetables\" with lot codes 25240 and 25247. The product bears establishment number \"P-3081.\"",
       "products": [
-        "Sold by Blue Apron: 13.05-oz. plastic tray packages labeled &quot;DISH by Blue Apron Cheesy Chicken Mac with Vegetables&quot; with lot codes 25240 and 25247. The product bears establishment number &quot;P-3081.&quot;",
+        "Sold by Blue Apron: 13.05-oz. plastic tray packages labeled \"DISH by Blue Apron Cheesy Chicken Mac with Vegetables\" with lot codes 25240 and 25247. The product bears establishment number \"P-3081.\"",
         "Sold by Marley Spoon: 10.5-oz. packages labeled “BALANCE by Marley Spoon BBQ Sauce Beef Meatballs with Cheesy Cauliflower” with lot code 25255. The product bears establishment number “Est. 47718.”"
       ],
       "productCount": 2,
@@ -6119,7 +6051,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-10-07",
       "reportDate": "2025-10-07",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-10062025-01",
@@ -6127,7 +6059,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-meals-containing-spinach-may-be",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert For Ready-To-Eat Meals Containing Spinach That May Be Contaminated With Listeria",
-      "firm": "FSIS",
+      "firm": "FreshRealm",
       "product": "10.1-oz. containers of “HELLO FRESH READY MADE MEALS CHEESY PULLED PORK PEPPER PASTA” with establishment number “Est. 47718” and lot code 49107 or establishment number “Est. 2937” and lot codes 48158…",
       "products": [
         "10.1-oz. containers of “HELLO FRESH READY MADE MEALS CHEESY PULLED PORK PEPPER PASTA” with establishment number “Est. 47718” and lot code 49107 or establishment number “Est. 2937” and lot codes 48158 or 48840. This item was shipped directly to consumers",
@@ -6151,7 +6083,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-10-06",
       "reportDate": "2025-10-06",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:031-2025",
@@ -6178,7 +6110,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-10-04",
       "reportDate": "2025-10-04",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:030-2025",
@@ -6203,7 +6135,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-09-27",
       "reportDate": "2025-09-27",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-09252025-01",
@@ -6211,10 +6143,10 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-meals-containing-pasta-may-be-contaminated",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert For Ready-To-Eat Meals Containing Pasta That May Be Contaminated with Listeria",
-      "firm": "FSIS",
-      "product": "12-oz. clear plastic tray packages labeled “MARKETSIDE LINGUINE WITH BEEF MEATBALLS &amp; MARINARA SAUCE” with “best if used by” dates SEP 22, 2025; SEP 24, 2025; SEP 25, 2025; SEP 29, 2025; SEP 30,…",
+      "firm": "Freshrealm",
+      "product": "12-oz. clear plastic tray packages labeled “MARKETSIDE LINGUINE WITH BEEF MEATBALLS & MARINARA SAUCE” with “best if used by” dates SEP 22, 2025; SEP 24, 2025; SEP 25, 2025; SEP 29, 2025; SEP 30, 2025…",
       "products": [
-        "12-oz. clear plastic tray packages labeled “MARKETSIDE LINGUINE WITH BEEF MEATBALLS &amp; MARINARA SAUCE” with “best if used by” dates SEP 22, 2025; SEP 24, 2025; SEP 25, 2025; SEP 29, 2025; SEP 30, 2025; and OCT 01, 2025.",
+        "12-oz. clear plastic tray packages labeled “MARKETSIDE LINGUINE WITH BEEF MEATBALLS & MARINARA SAUCE” with “best if used by” dates SEP 22, 2025; SEP 24, 2025; SEP 25, 2025; SEP 29, 2025; SEP 30, 2025; and OCT 01, 2025.",
         "16-oz. plastic tray packages labeled “TRADER JOE’S CAJUN STYLE BLACKENED CHICKEN BREAST FETTUCINE ALFREDO” with “best if used by” dates 9/20/2025, 9/24/2025, or 9/27/2025 printed on the front label of the packaging. The product bears establishment number"
       ],
       "productCount": 2,
@@ -6233,7 +6165,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-09-25",
       "reportDate": "2025-09-25",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     },
     {
       "id": "fsis:PHA-09192025-01",
@@ -6241,7 +6173,7 @@
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-turkey-wrap-product-due-possible-listeria",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "title": "FSIS Issues Public Health Alert for Ready-To-Eat Turkey Wrap Product Due To Possible Listeria Contamination",
-      "firm": "FSIS",
+      "firm": "WCD Kitchen - Minooka",
       "product": "10-oz. clear plastic clamshell packages containing “TRADER JOE’S TURKEY GOBBLER WRAP” with “BEST BY SEP 16, 2025.”",
       "products": [
         "10-oz. clear plastic clamshell packages containing “TRADER JOE’S TURKEY GOBBLER WRAP” with “BEST BY SEP 16, 2025.”"
@@ -6261,7 +6193,7 @@
       "relatedToOutbreak": false,
       "recallDate": "2025-09-19",
       "reportDate": "2025-09-19",
-      "fetchedAt": "2026-09-16T23:33:23.057Z"
+      "fetchedAt": "2026-09-16T23:48:28.859Z"
     }
   ]
 }

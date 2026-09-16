@@ -1,0 +1,46 @@
+---
+import { categoryLabel, formatDate, reasonLabel } from "../lib/data";
+import type { Recall } from "../../../fetch/types";
+interface Props { recalls: Recall[]; caption: string; filterable?: boolean }
+const { recalls, caption, filterable = false } = Astro.props;
+// Agency product descriptions can run to hundreds of characters of label text; keep the link readable.
+const short = (s: string, max = 110) => (s.length <= max ? s : s.slice(0, max - 1).trimEnd() + "…");
+---
+<div class="table-wrap">
+  <table id={filterable ? "recall-table" : undefined}>
+    <caption>{caption}</caption>
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Agency</th>
+        <th scope="col">Product</th>
+        <th scope="col">Firm</th>
+        <th scope="col">Reason</th>
+        <th scope="col">Class</th>
+        <th scope="col">Where</th>
+      </tr>
+    </thead>
+    <tbody>
+      {recalls.length === 0 && <tr><td colspan="7">None.</td></tr>}
+      {recalls.map((r) => (
+        <tr data-agency={r.agency} data-reason={r.reasonCategory} data-category={r.category}>
+          <td class="nowrap">{formatDate(r.reportDate)}</td>
+          <td class="nowrap">{r.agency}</td>
+          <td>
+            <a href={r.url} rel="noopener" title={r.product || r.title}>{short(r.product || r.title)}</a>
+            {r.productCount > 1 && <span class="muted small"> +{r.productCount - 1} more product{r.productCount > 2 ? "s" : ""}</span>}
+            {r.category !== "human-food" && <span class="badge plain"> {categoryLabel[r.category]}</span>}
+            {/alert/i.test(r.status) && <span class="badge plain"> Public health alert</span>}
+          </td>
+          <td>{r.firm}</td>
+          <td>
+            <span class="badge plain">{reasonLabel[r.reasonCategory]}</span>
+            {r.reason && <div class="small muted">{r.reason.length > 160 ? r.reason.slice(0, 159) + "…" : r.reason}</div>}
+          </td>
+          <td class="nowrap">{r.classification ?? "—"}</td>
+          <td class="small">{r.states && r.states.length > 0 ? r.states.join(", ") : (r.distributionPattern ?? "—")}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

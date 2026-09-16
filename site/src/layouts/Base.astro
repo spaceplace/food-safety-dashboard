@@ -1,0 +1,58 @@
+---
+import "../styles/global.css";
+import { SITE_NAME, REPO_URL } from "../lib/constants";
+import { href, formatDateTime, statusFile } from "../lib/data";
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const current = Astro.url.pathname.replace(/\/$/, "");
+const nav = [
+  ["/", "Overview"],
+  ["/outbreaks/", "Outbreaks"],
+  ["/recalls/", "Recalls"],
+  ["/methods/", "Data and methods"],
+];
+const isCurrent = (path: string) => href(path).replace(/\/$/, "") === current;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title === SITE_NAME ? title : `${title} · ${SITE_NAME}`}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={href("/favicon.svg")} type="image/svg+xml" />
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href={href("/")}>{SITE_NAME}</a>
+        <nav aria-label="Main">
+          {nav.map(([path, label]) => (
+            <a href={href(path)} aria-current={isCurrent(path) ? "page" : undefined}>{label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <p>
+          Data last refreshed {formatDateTime(statusFile.generatedAt)} from CDC, FDA, and USDA FSIS.
+          See <a href={href("/methods/")}>Data and methods</a> for what every number means.
+        </p>
+        <p>
+          This site sets no cookies and runs no analytics. It is an independent project, not affiliated with any government agency.
+          Source code: <a href={REPO_URL}>GitHub</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

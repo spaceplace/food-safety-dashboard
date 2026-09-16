@@ -1,0 +1,12 @@
+---
+// "As of" line: when the data was fetched and where it came from.
+import { formatDateTime } from "../lib/data";
+import type { SourceStatus } from "../../../fetch/types";
+interface Props { source: SourceStatus; label?: string }
+const { source, label } = Astro.props;
+---
+<p class="asof">
+  {label ?? "Source"}: <a href={source.url} rel="noopener">{source.name}</a>,
+  fetched {formatDateTime(source.fetchedAt)}{source.upstreamUpdated ? ` (agency data dated ${source.upstreamUpdated})` : ""}.
+  {!source.ok && <strong> Last refresh failed; showing previous data.</strong>}
+</p>

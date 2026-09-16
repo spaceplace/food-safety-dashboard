@@ -39,6 +39,10 @@ describe("openFDA mapping", () => {
     expect(recalls.find((r) => r.id === "fda:11")?.category).toBe("pet-food");
     expect(recalls.find((r) => r.id === "fda:12")?.category).toBe("human-food");
   });
+  it("does not turn an allergen reason into a food key", () => {
+    const { recalls } = mapOpenFdaRecords([rec({ event_id: "30", product_description: "Granola bars", reason_for_recall: "Undeclared milk" })], "t");
+    expect(recalls[0].foodKeys).not.toContain("dairy");
+  });
   it("categorizes reasons", () => {
     const { recalls } = mapOpenFdaRecords([
       rec({ event_id: "20", reason_for_recall: "Product may be contaminated with Listeria monocytogenes" }),

@@ -24,6 +24,10 @@ describe("FSIS recall API mapping", () => {
     const items = mapFsisRecords(records, "t", "2020-01-01");
     expect(items.find((r) => r.id === "fsis:021-2026")?.reasonCategory).toBe("regulatory");
   });
+  it("does not treat FSIS itself as the firm on public health alerts", () => {
+    const items = mapFsisRecords(records, "t", "2020-01-01");
+    for (const r of items) expect(r.firm).not.toBe("FSIS");
+  });
   it("respects the since date", () => {
     expect(mapFsisRecords(records, "t", "2099-01-01")).toEqual([]);
   });

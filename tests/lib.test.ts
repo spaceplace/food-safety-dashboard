@@ -24,6 +24,9 @@ describe("food keys", () => {
     expect(foodKeys("Broccoli Sprouts")).toEqual(["sprouts"]);
     expect(foodKeys("Ready-to-eat pork guanciale")).toEqual(expect.arrayContaining(["pork", "ready-to-eat meals"]));
     expect(foodKeys("")).toEqual([]);
+    expect(foodKeys("bettergoods Pistachio Nut Butter")).not.toContain("dairy");
+    expect(foodKeys("Milk Chocolate Bridge Mix")).not.toContain("dairy");
+    expect(foodKeys("Whole Milk Organic Infant Formula")).toEqual(expect.arrayContaining(["dairy", "infant formula"]));
   });
 });
 

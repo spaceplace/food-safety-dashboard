@@ -50,7 +50,6 @@ export function mapOpenFdaRecords(records: OpenFdaRecord[], fetchedAt: string): 
     recs.sort((a, b) => (b.report_date ?? "").localeCompare(a.report_date ?? ""));
     const head = recs[0];
     const products = recs.map((r) => clean(r.product_description)).filter(Boolean);
-    const allText = [head.reason_for_recall, ...products].join(" ");
     const categories = recs.map((r) => recallCategory(r.product_description));
     // If every product is a supplement, drop the event. Mixed events stay, labeled by the majority.
     if (categories.every((c) => c === "dietary-supplement")) { excludedSupplements++; continue; }
@@ -70,7 +69,8 @@ export function mapOpenFdaRecords(records: OpenFdaRecord[], fetchedAt: string): 
       products,
       productCount: products.length,
       category,
-      foodKeys: foodKeys(allText),
+      // Product descriptions only: the reason text says things like "undeclared milk", which is not a dairy recall.
+      foodKeys: foodKeys(products.join(" ")),
       reason: clean(head.reason_for_recall),
       reasonCategory: reasonCategory(head.reason_for_recall),
       classification: classification(head.classification),

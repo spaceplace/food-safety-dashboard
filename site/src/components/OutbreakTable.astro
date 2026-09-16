@@ -1,0 +1,46 @@
+---
+import { formatDate, formatNumber } from "../lib/data";
+import StatusBadge from "./StatusBadge.astro";
+import type { Outbreak } from "../../../fetch/types";
+interface Props { outbreaks: Outbreak[]; caption: string; showStatus?: boolean }
+const { outbreaks, caption, showStatus = false } = Astro.props;
+---
+<div class="table-wrap">
+  <table>
+    <caption>{caption}</caption>
+    <thead>
+      <tr>
+        <th scope="col">Food</th>
+        <th scope="col">Germ</th>
+        {showStatus && <th scope="col">Status</th>}
+        <th scope="col" class="num">Cases</th>
+        <th scope="col" class="num">Hospitalized</th>
+        <th scope="col" class="num">Deaths</th>
+        <th scope="col">States</th>
+        <th scope="col">Posted</th>
+        <th scope="col">Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      {outbreaks.length === 0 && (
+        <tr><td colspan={showStatus ? 9 : 8}>None.</td></tr>
+      )}
+      {outbreaks.map((o) => (
+        <tr>
+          <td><a href={o.url} rel="noopener">{o.food}</a></td>
+          <td>{o.pathogen}</td>
+          {showStatus && <td><StatusBadge status={o.status} /></td>}
+          <td class="num">{formatNumber(o.cases)}</td>
+          <td class="num">{formatNumber(o.hospitalizations)}</td>
+          <td class="num">{formatNumber(o.deaths)}</td>
+          <td>
+            {o.stateCount !== null ? o.stateCount : "—"}
+            {o.states.length > 0 && <span class="muted small"> ({o.states.map((s) => s.state).join(", ")})</span>}
+          </td>
+          <td class="nowrap">{formatDate(o.postedAt)}</td>
+          <td class="nowrap">{formatDate(o.updatedAt)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

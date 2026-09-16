@@ -1,0 +1,9 @@
+---
+import { statusLabel } from "../lib/data";
+import type { OutbreakStatus } from "../../../fetch/types";
+interface Props { status: OutbreakStatus }
+const { status } = Astro.props;
+const cls = status === "active" ? "open" : status === "over" ? "over" : "unknown";
+const icon = status === "active" ? "●" : status === "over" ? "✓" : "?";
+---
+<span class={`badge ${cls}`}><span aria-hidden="true">{icon} </span>{statusLabel[status]}</span>

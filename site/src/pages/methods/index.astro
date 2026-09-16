@@ -1,0 +1,85 @@
+---
+import Base from "../../layouts/Base.astro";
+import { CDC_BURDEN, REPO_URL, SOURCE_LINKS } from "../../lib/constants";
+import { formatDateTime, sources, statusFile } from "../../lib/data";
+---
+<Base title="Data and methods" description="Every source behind the Food Safety Dashboard, how often it refreshes, and what the numbers do and do not mean.">
+  <h1>Data and methods</h1>
+  <p class="lede">Where every number on this site comes from, how often it refreshes, and what it does and does not mean. Last refresh: {formatDateTime(statusFile.generatedAt)}.</p>
+
+  <section aria-labelledby="h-how">
+    <h2 id="h-how">How the site works</h2>
+    <p>A scheduled job runs every six hours. It fetches each source below, converts it to a plain data file, and rebuilds this site from those files. Nothing is fetched while you are viewing a page, and no page ever calls an agency website directly. Each source is fetched independently: if one fails, its previous data stays on the site with a visible warning, and no value is ever estimated or filled in.</p>
+    <p>The data files, their full history, and the code are public in the <a href={REPO_URL}>project repository</a>.</p>
+  </section>
+
+  <section aria-labelledby="h-sources">
+    <h2 id="h-sources">Sources</h2>
+    <dl class="sources">
+      <dt>CDC multistate foodborne outbreak notices</dt>
+      <dd>
+        <a href={SOURCE_LINKS.cdcOutbreaks} rel="noopener">CDC's outbreak list</a> is read from the data file behind its table, then each outbreak's own pages are read for the case, hospitalization, death, and state counts, the investigation status, the dates CDC posted and updated the notice, and the illness onset range. Refreshes every 6 hours. Only outbreaks from the current and previous calendar year are read in detail.
+        <br />An outbreak is <strong>open</strong> when CDC's notice says "Investigation status: Open". It is <strong>over</strong> when the notice says "Closed", "This outbreak is over", or "This outbreak has ended". Notices with neither are shown as unknown and left out of the open list.
+      </dd>
+
+      <dt>CDC active investigation counts</dt>
+      <dd>The same CDC page states how many multistate investigations CDC is working for Campylobacter, E. coli, Listeria, and Salmonella, with a "last updated" date. Most of these never become public notices. Refreshes every 6 hours.</dd>
+
+      <dt>CDC burden estimates</dt>
+      <dd>The comparison figures ({CDC_BURDEN.illnesses.toLocaleString("en-US")} illnesses, {CDC_BURDEN.hospitalizations.toLocaleString("en-US")} hospitalizations, {CDC_BURDEN.deaths} deaths per year) are CDC's published estimates of total annual illness from the seven major foodborne pathogens, based on 2019 data and published in 2025. They are fixed numbers cited from <a href={CDC_BURDEN.url} rel="noopener">CDC's foodborne burden page</a> and are not computed by this site.</dd>
+
+      <dt>FDA food recalls</dt>
+      <dd>
+        The <a href={SOURCE_LINKS.openFda} rel="noopener">openFDA food enforcement API</a>, which FDA updates weekly and which reports its own data date (shown next to the recall tables). FDA lists one record per product; this site groups them into one row per recall event, showing the first product and the count of others. Recalls from the last 120 days are kept. Dietary supplements are excluded. Pet food is included and labeled, because FDA files it under food.
+        <br />FDA warns that openFDA should not be relied on for public alerts, and enforcement reports can lag a firm's own announcement by days or weeks. For the newest FDA recall press releases, see <a href={SOURCE_LINKS.fdaRecalls} rel="noopener">FDA's recalls page</a>.
+      </dd>
+
+      <dt>USDA FSIS recalls</dt>
+      <dd>The <a href={SOURCE_LINKS.fsisApi} rel="noopener">FSIS recall API</a>, covering meat, poultry, and egg products, refreshed every 6 hours, with recalls from the last 12 months kept. If the API is unavailable the FSIS RSS feed is used instead, which gives only the title, link, and date; a note appears on the site when that happens. Each row links to the FSIS recall notice.</dd>
+
+      <dt>Recall reason categories</dt>
+      <dd>The "Reason" label on each recall is assigned by this site from the agency's free-text reason using keyword rules (for example, any mention of Listeria becomes "Listeria"; "not declared" or "allergen" becomes "Undeclared allergen"; import violations and products made without inspection become "Regulatory"). The agency's original wording is shown under the label. Recalls that match no rule are labeled "Other".</dd>
+
+      <dt>Recently implicated foods</dt>
+      <dd>Food names from outbreak notices and recall product descriptions are matched against a fixed list of food types (lettuce, eggs, sprouts, and so on) by keyword. A product can match several types or none. Grouping covers items posted or updated in the last 90 days.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="h-mean">
+    <h2 id="h-mean">What the headline numbers mean</h2>
+    <p>The illnesses, hospitalizations, and deaths on the overview are sums of the figures CDC reports on every multistate outbreak notice first posted in the trailing 12 months, whether the outbreak is now open or closed. Figures are CDC's latest for each outbreak, so they change as investigations update. A notice missing a figure counts as zero and a note says so.</p>
+    <p>These sums are a small fraction of true foodborne illness. They include only outbreaks that crossed state lines, were investigated by CDC, and were announced publicly. Single-state outbreaks, outbreaks investigated without a public notice, and the great majority of illnesses that are never linked to any outbreak are not included. CDC estimates the true annual burden at about {(CDC_BURDEN.illnesses / 1_000_000).toFixed(1)} million illnesses. The two figures are shown side by side so that neither is mistaken for the other.</p>
+    <p>A single very large outbreak can dominate the 12-month total for a year. When one outbreak accounts for 40% or more of the illnesses, the overview names it.</p>
+  </section>
+
+  <section aria-labelledby="h-not">
+    <h2 id="h-not">What this site is not</h2>
+    <p>It is not a government site and not a substitute for agency alerts. It summarizes public data and links to the original notice for every item. If you think you have food poisoning, contact a health care provider; to report a food safety problem, contact your local health department, FDA, or USDA.</p>
+    <p>Historical outbreak data going back to 1998 is available in <a href={SOURCE_LINKS.cdcNors} rel="noopener">CDC's National Outbreak Reporting System</a>, which lags by one to two years and is therefore not used for any current figure here.</p>
+  </section>
+
+  <section aria-labelledby="h-status">
+    <h2 id="h-status">Current source status</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Source</th><th scope="col">Last successful fetch</th><th scope="col">Agency data date</th><th scope="col">Items</th><th scope="col">Status</th></tr></thead>
+        <tbody>
+          {Object.values(sources).map((s) => (
+            <tr>
+              <td><a href={s.url} rel="noopener">{s.name}</a></td>
+              <td class="nowrap">{formatDateTime(s.fetchedAt)}</td>
+              <td class="nowrap">{s.upstreamUpdated ?? "—"}</td>
+              <td class="num">{s.itemCount ?? "—"}</td>
+              <td>{s.ok ? "OK" : `Failed: ${s.error}`}{s.ok && s.error ? ` (note: ${s.error})` : ""}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-privacy">
+    <h2 id="h-privacy">Privacy</h2>
+    <p>No cookies, no analytics, no third-party scripts. The recalls page uses a small amount of JavaScript to filter the table; without it, every row is shown.</p>
+  </section>
+</Base>

@@ -8,8 +8,10 @@ export function clean(s: string | null | undefined): string {
 /** Strip HTML tags and entities, collapse whitespace. */
 export function stripHtml(html: string | null | undefined): string {
   if (!html) return "";
-  const $ = cheerio.load(`<div>${html}</div>`);
-  return clean($("div").first().text());
+  // Some agency fields are double-encoded ("&amp;amp;"), so decode until stable (at most twice).
+  let text = clean(cheerio.load(`<div>${html}</div>`)("div").first().text());
+  if (/&(#\d+|[a-z]+);/i.test(text)) text = clean(cheerio.load(`<div>${text}</div>`)("div").first().text());
+  return text;
 }
 
 /** First integer found in a string, or null. Handles "1,234". */

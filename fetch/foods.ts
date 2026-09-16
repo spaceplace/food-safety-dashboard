@@ -26,7 +26,7 @@ const FOOD_RULES: Array<[key: string, pattern: RegExp]> = [
   ["deli meat", /\b(deli|charcuterie|lunch ?meat|cold cuts|hot dogs?|frankfurters?)\b/i],
   ["seafood", /\b(oysters?|shellfish|clams?|mussels?|scallops?|shrimp|crab|lobster|seafood)\b/i],
   ["fish", /\b(fish|salmon|tuna|tilapia|cod|sushi)\b/i],
-  ["dairy", /\b(milk|cheese|queso|yogurt|ice cream|dairy|cream|butter|kefir)\b/i],
+  ["dairy", /(?<!peanut |almond |cashew |nut |seed |cocoa |apple |coconut |oat |soy |non-|non )\b(milk(?! chocolate)|cheese|queso|yogurt|ice cream|sour cream|cream cheese|whipped cream|dairy(?![ -]free)|kefir|butter)\b/i],
   ["raw milk", /\braw (milk|dairy)\b/i],
   ["infant formula", /\b(infant formula|baby formula|formula)\b/i],
   ["flour", /\b(flour|dough|cake mix|baking mix)\b/i],

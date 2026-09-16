@@ -1,0 +1,10 @@
+---
+import { dataWarnings } from "../lib/data";
+const warnings = dataWarnings();
+---
+{warnings.map((w) => (
+  <div class={`notice ${w.level}`} role={w.level === "warning" ? "alert" : "status"}>
+    <span class="icon" aria-hidden="true">{w.level === "warning" ? "⚠" : "ℹ"}</span>
+    <span>{w.text}</span>
+  </div>
+))}

@@ -1,0 +1,130 @@
+---
+import Base from "../layouts/Base.astro";
+import Notices from "../components/Notices.astro";
+import AsOf from "../components/AsOf.astro";
+import OutbreakTable from "../components/OutbreakTable.astro";
+import RecallTable from "../components/RecallTable.astro";
+import { CDC_BURDEN, SITE_NAME } from "../lib/constants";
+import {
+  headline, openOutbreaks, outbreaksFile, recallsFile, recentRecalls, implicatedFoods, splitFoodGroups,
+  formatNumber, formatCompact, formatDate, href, sources,
+} from "../lib/data";
+
+const counts = outbreaksFile.activeInvestigationCounts;
+const foods = implicatedFoods(90);
+const { cards: foodCards, rest: foodRest } = splitFoodGroups(foods);
+const recalls30 = recentRecalls(30);
+const shownRecalls = recalls30.slice(0, 15);
+const largest = headline.largest;
+const largestShare = largest && headline.illnesses > 0 ? Math.round(((largest.cases ?? 0) / headline.illnesses) * 100) : 0;
+---
+<Base title={SITE_NAME} description="An always-current view of food safety in the US: open CDC outbreak investigations, FDA and USDA recalls, and the foods in the news right now.">
+  <h1>Food safety in the US right now</h1>
+  <p class="lede">Open multistate outbreak investigations, recent recalls, and the foods currently implicated, built from CDC, FDA, and USDA data and refreshed every six hours.</p>
+  <Notices />
+
+  <section aria-labelledby="h-headline">
+    <div class="section-head">
+      <h2 id="h-headline">Reported in CDC multistate outbreak investigations, last 12 months</h2>
+    </div>
+    <AsOf source={sources["cdc-outbreaks"]} />
+    <div class="stats">
+      <div class="stat hero">
+        <div class="label">Illnesses</div>
+        <div class="value">{formatNumber(headline.illnesses)}</div>
+        <div class="sub">across {headline.outbreakCount} outbreak notices posted since {formatDate(new Date(Date.now() - 365 * 86_400_000).toISOString())}</div>
+      </div>
+      <div class="stat">
+        <div class="label">Hospitalizations</div>
+        <div class="value">{formatNumber(headline.hospitalizations)}</div>
+      </div>
+      <div class="stat">
+        <div class="label">Deaths</div>
+        <div class="value">{formatNumber(headline.deaths)}</div>
+      </div>
+    </div>
+    {largest && largestShare >= 40 && (
+      <p class="small muted">
+        {largestShare}% of these illnesses come from one outbreak: <a href={largest.url} rel="noopener">{largest.pathogenFamily} linked to {largest.food}</a> ({formatNumber(largest.cases)} cases, posted {formatDate(largest.postedAt)}).
+      </p>
+    )}
+    {headline.missingCounts > 0 && (
+      <p class="small muted">{headline.missingCounts} notice(s) were missing a figure, which counts as zero here.</p>
+    )}
+
+    <div class="compare">
+      <div class="panel">
+        <h3>What these numbers are</h3>
+        <p class="small">Sums of the case, hospitalization, and death counts on every CDC multistate outbreak notice first posted in the last 12 months, open or closed. They count only outbreaks that CDC investigated across state lines and chose to announce publicly. Most foodborne illness never appears here.</p>
+      </div>
+      <div class="panel">
+        <h3>For scale: CDC's estimate of the true annual burden</h3>
+        <div class="stats" style="margin:8px 0">
+          <div class="stat"><div class="label">Illnesses per year</div><div class="value">{formatCompact(CDC_BURDEN.illnesses)}</div></div>
+          <div class="stat"><div class="label">Hospitalizations</div><div class="value">{formatNumber(CDC_BURDEN.hospitalizations)}</div></div>
+          <div class="stat"><div class="label">Deaths</div><div class="value">{formatNumber(CDC_BURDEN.deaths)}</div></div>
+        </div>
+        <p class="small muted">Estimated illness from the seven major foodborne pathogens, mostly sporadic cases that are never linked to an outbreak. <a href={CDC_BURDEN.url} rel="noopener">CDC burden estimates</a> (2019 data, published 2025).</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-open">
+    <div class="section-head">
+      <h2 id="h-open">Open outbreak investigations</h2>
+      <a href={href("/outbreaks/")}>All outbreaks from the last 12 months</a>
+    </div>
+    <AsOf source={sources["cdc-outbreaks"]} />
+    {counts && (
+      <p class="small muted">
+        CDC also reports it is actively working {counts.total} multistate investigations that may never become public notices
+        ({Object.entries(counts.counts).map(([g, n]) => `${g} ${n}`).join(", ")}), as of {formatDate(counts.asOf)}.
+      </p>
+    )}
+    <OutbreakTable outbreaks={openOutbreaks} caption={`${openOutbreaks.length} outbreak notice(s) CDC currently lists as open. Counts are CDC's latest reported figures. Click a food to open the CDC investigation page.`} />
+  </section>
+
+  <section aria-labelledby="h-foods">
+    <h2 id="h-foods">Recently implicated foods</h2>
+    <p class="lede small">Foods named in outbreak notices or recalls in the last 90 days, grouped by food type. A food appearing here does not mean all of it is unsafe; follow the link for the specific products.</p>
+    {foods.length === 0 && <p>No foods were named in the last 90 days.</p>}
+    <div class="foods">
+      {foodCards.map((g) => {
+        const shownRecalls = g.recalls.slice(0, Math.max(1, 4 - g.outbreaks.length));
+        const more = g.outbreaks.length + g.recalls.length - g.outbreaks.length - shownRecalls.length;
+        return (
+        <div class="food">
+          <div class="name">{g.key}</div>
+          <div class="small muted">
+            {g.outbreaks.length > 0 && `${g.outbreaks.length} outbreak${g.outbreaks.length > 1 ? "s" : ""}`}
+            {g.outbreaks.length > 0 && g.recalls.length > 0 && " · "}
+            {g.recalls.length > 0 && `${g.recalls.length} recall${g.recalls.length > 1 ? "s" : ""}`}
+          </div>
+          <ul>
+            {g.outbreaks.map((o) => (
+              <li><a href={o.url} rel="noopener">{o.pathogenFamily} outbreak: {o.food}</a> {o.status === "active" ? "(open)" : "(over)"}</li>
+            ))}
+            {shownRecalls.map((r) => (
+              <li><a href={r.url} rel="noopener">{r.agency}: {r.firm}</a></li>
+            ))}
+            {more > 0 && <li class="muted">and {more} more recall{more > 1 ? "s" : ""}</li>}
+          </ul>
+        </div>
+        );
+      })}
+    </div>
+    {foodRest.length > 0 && (
+      <p class="small muted">Also named in recent recalls: {foodRest.map((g) => `${g.key} (${g.recalls.length})`).join(", ")}. See <a href={href("/recalls/")}>all recalls</a>.</p>
+    )}
+  </section>
+
+  <section aria-labelledby="h-recalls">
+    <div class="section-head">
+      <h2 id="h-recalls">Recent recalls</h2>
+      <a href={href("/recalls/")}>All recalls ({recallsFile.items.length})</a>
+    </div>
+    <AsOf source={sources["fda-openfda"]} label="FDA source" />
+    <AsOf source={sources["fsis-recalls"]} label="USDA source" />
+    <RecallTable recalls={shownRecalls} caption={`Newest ${shownRecalls.length} of ${recalls30.length} recalls posted in the last 30 days. FDA covers most foods; USDA FSIS covers meat, poultry, and egg products.`} />
+  </section>
+</Base>

@@ -11,9 +11,13 @@
     "fetch": "tsx fetch/run.ts",
     "check:live": "tsx fetch/check-live.ts",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
+    "astro": "^7.3.3",
     "cheerio": "^1.2.0",
     "csv-parse": "^7.0.2"
   },
