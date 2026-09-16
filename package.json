@@ -1,0 +1,26 @@
+{
+  "name": "food-safety-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An always-current public view of US food safety, built from CDC, FDA, and USDA data.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "fetch": "tsx fetch/run.ts",
+    "check:live": "tsx fetch/check-live.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "csv-parse": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
+  }
+}

@@ -1,0 +1,2021 @@
+{
+  "generatedAt": "2026-09-16T23:33:17.546Z",
+  "sources": {
+    "cdc-outbreaks": {
+      "name": "CDC multistate foodborne outbreak notices",
+      "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "ok": true,
+      "error": null,
+      "upstreamUpdated": null,
+      "itemCount": 24
+    },
+    "cdc-active-counts": {
+      "name": "CDC active multistate investigation counts",
+      "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
+      "fetchedAt": "2026-09-16T23:33:21.517Z",
+      "ok": true,
+      "error": null,
+      "upstreamUpdated": "2026-09-16",
+      "itemCount": 4
+    }
+  },
+  "activeInvestigationCounts": {
+    "asOf": "2026-09-16",
+    "counts": {
+      "Campylobacter": 3,
+      "E. coli": 6,
+      "Listeria": 6,
+      "Salmonella": 23
+    },
+    "total": 38
+  },
+  "items": [
+    {
+      "id": "cdc:salmonella/outbreaks/broccoli-sprouts-09-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/broccoli-sprouts-09-26/index.html",
+      "title": "Salmonella Outbreak Linked to Broccoli Sprouts",
+      "food": "Broccoli Sprouts",
+      "foodKeys": [
+        "sprouts"
+      ],
+      "pathogen": "Salmonella Bovismorbificans",
+      "pathogenFamily": "Salmonella",
+      "status": "active",
+      "cases": 22,
+      "hospitalizations": 2,
+      "deaths": 0,
+      "stateCount": 4,
+      "states": [
+        {
+          "state": "ID",
+          "cases": 1
+        },
+        {
+          "state": "MT",
+          "cases": 4
+        },
+        {
+          "state": "UT",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 16
+        }
+      ],
+      "illnessOnsetFrom": "2026-07-07",
+      "illnessOnsetTo": "2026-08-26",
+      "postedAt": "2026-09-09",
+      "updatedAt": "2026-09-11",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:ecoli/outbreaks/alfalfa-sprouts-08-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/ecoli/outbreaks/alfalfa-sprouts-08-26/index.html",
+      "title": "E. coli and Salmonella Outbreak Linked to Alfalfa Sprouts",
+      "food": "Alfalfa Sprouts",
+      "foodKeys": [
+        "sprouts"
+      ],
+      "pathogen": "E. coli O26:H11, O103:H25, and O168:H8 and Salmonella Agona",
+      "pathogenFamily": "E. coli",
+      "status": "active",
+      "cases": 55,
+      "hospitalizations": 4,
+      "deaths": 0,
+      "stateCount": 15,
+      "states": [
+        {
+          "state": "FL",
+          "cases": 2
+        },
+        {
+          "state": "IA",
+          "cases": 1
+        },
+        {
+          "state": "IN",
+          "cases": 1
+        },
+        {
+          "state": "KS",
+          "cases": 1
+        },
+        {
+          "state": "MI",
+          "cases": 1
+        },
+        {
+          "state": "MN",
+          "cases": 21
+        },
+        {
+          "state": "NC",
+          "cases": 2
+        },
+        {
+          "state": "ND",
+          "cases": 2
+        },
+        {
+          "state": "NH",
+          "cases": 1
+        },
+        {
+          "state": "NY",
+          "cases": 2
+        },
+        {
+          "state": "PA",
+          "cases": 1
+        },
+        {
+          "state": "SC",
+          "cases": 1
+        },
+        {
+          "state": "SD",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 1
+        },
+        {
+          "state": "WI",
+          "cases": 17
+        }
+      ],
+      "illnessOnsetFrom": "2026-05-31",
+      "illnessOnsetTo": "2026-08-08",
+      "postedAt": "2026-08-21",
+      "updatedAt": "2026-09-01",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/javiana-08-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/javiana-08-26/index.html",
+      "title": "Salmonella Outbreak Linked to Jalapeños",
+      "food": "Jalapenos",
+      "foodKeys": [
+        "peppers"
+      ],
+      "pathogen": "Salmonella",
+      "pathogenFamily": "Salmonella",
+      "status": "active",
+      "cases": 431,
+      "hospitalizations": 57,
+      "deaths": 0,
+      "stateCount": 32,
+      "states": [
+        {
+          "state": "AL",
+          "cases": 2
+        },
+        {
+          "state": "AR",
+          "cases": 1
+        },
+        {
+          "state": "CA",
+          "cases": 1
+        },
+        {
+          "state": "CO",
+          "cases": 118
+        },
+        {
+          "state": "FL",
+          "cases": 1
+        },
+        {
+          "state": "GA",
+          "cases": 28
+        },
+        {
+          "state": "IL",
+          "cases": 33
+        },
+        {
+          "state": "IN",
+          "cases": 6
+        },
+        {
+          "state": "KS",
+          "cases": 14
+        },
+        {
+          "state": "KY",
+          "cases": 1
+        },
+        {
+          "state": "LA",
+          "cases": 1
+        },
+        {
+          "state": "MI",
+          "cases": 5
+        },
+        {
+          "state": "MN",
+          "cases": 129
+        },
+        {
+          "state": "MO",
+          "cases": 8
+        },
+        {
+          "state": "MT",
+          "cases": 8
+        },
+        {
+          "state": "NC",
+          "cases": 3
+        },
+        {
+          "state": "ND",
+          "cases": 2
+        },
+        {
+          "state": "NE",
+          "cases": 6
+        },
+        {
+          "state": "NJ",
+          "cases": 1
+        },
+        {
+          "state": "NM",
+          "cases": 4
+        },
+        {
+          "state": "OH",
+          "cases": 3
+        },
+        {
+          "state": "OK",
+          "cases": 9
+        },
+        {
+          "state": "PA",
+          "cases": 2
+        },
+        {
+          "state": "SC",
+          "cases": 8
+        },
+        {
+          "state": "TN",
+          "cases": 8
+        },
+        {
+          "state": "TX",
+          "cases": 4
+        },
+        {
+          "state": "UT",
+          "cases": 1
+        },
+        {
+          "state": "VA",
+          "cases": 2
+        },
+        {
+          "state": "WA",
+          "cases": 1
+        },
+        {
+          "state": "WI",
+          "cases": 12
+        },
+        {
+          "state": "WV",
+          "cases": 2
+        },
+        {
+          "state": "WY",
+          "cases": 7
+        }
+      ],
+      "illnessOnsetFrom": "2026-06-19",
+      "illnessOnsetTo": "2026-08-02",
+      "postedAt": "2026-08-05",
+      "updatedAt": "2026-08-21",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/shell-eggs-07-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/shell-eggs-07-26/index.html",
+      "title": "Salmonella Outbreak Linked to Shell Eggs",
+      "food": "Shell Eggs",
+      "foodKeys": [
+        "eggs"
+      ],
+      "pathogen": "Salmonella",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 134,
+      "hospitalizations": 34,
+      "deaths": 0,
+      "stateCount": 18,
+      "states": [
+        {
+          "state": "AR",
+          "cases": 5
+        },
+        {
+          "state": "AZ",
+          "cases": 4
+        },
+        {
+          "state": "CA",
+          "cases": 1
+        },
+        {
+          "state": "CO",
+          "cases": 1
+        },
+        {
+          "state": "GA",
+          "cases": 2
+        },
+        {
+          "state": "IL",
+          "cases": 1
+        },
+        {
+          "state": "LA",
+          "cases": 8
+        },
+        {
+          "state": "MI",
+          "cases": 1
+        },
+        {
+          "state": "MO",
+          "cases": 1
+        },
+        {
+          "state": "MS",
+          "cases": 1
+        },
+        {
+          "state": "NC",
+          "cases": 1
+        },
+        {
+          "state": "NM",
+          "cases": 3
+        },
+        {
+          "state": "NV",
+          "cases": 1
+        },
+        {
+          "state": "NY",
+          "cases": 1
+        },
+        {
+          "state": "OK",
+          "cases": 2
+        },
+        {
+          "state": "SC",
+          "cases": 1
+        },
+        {
+          "state": "TX",
+          "cases": 99
+        },
+        {
+          "state": "WV",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": "2025-11-21",
+      "illnessOnsetTo": "2026-08-12",
+      "postedAt": "2026-07-24",
+      "updatedAt": "2026-09-03",
+      "declaredOverAt": "2026-09-03",
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:cyclosporiasis/outbreaks/07-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/cyclosporiasis/outbreaks/07-26/index.html",
+      "title": "Cyclospora Outbreak Linked to Iceberg Lettuce",
+      "food": "Iceberg Lettuce",
+      "foodKeys": [
+        "lettuce"
+      ],
+      "pathogen": "Cyclospora",
+      "pathogenFamily": "Cyclospora",
+      "status": "over",
+      "cases": 12883,
+      "hospitalizations": 570,
+      "deaths": 2,
+      "stateCount": 21,
+      "states": [
+        {
+          "state": "AR",
+          "cases": 87
+        },
+        {
+          "state": "GA",
+          "cases": 3
+        },
+        {
+          "state": "IA",
+          "cases": 138
+        },
+        {
+          "state": "IL",
+          "cases": 292
+        },
+        {
+          "state": "IN",
+          "cases": 870
+        },
+        {
+          "state": "KS",
+          "cases": 373
+        },
+        {
+          "state": "KY",
+          "cases": 366
+        },
+        {
+          "state": "MA",
+          "cases": 18
+        },
+        {
+          "state": "ME",
+          "cases": 26
+        },
+        {
+          "state": "MI",
+          "cases": 5762
+        },
+        {
+          "state": "MO",
+          "cases": 1071
+        },
+        {
+          "state": "NC",
+          "cases": 3
+        },
+        {
+          "state": "NE",
+          "cases": 207
+        },
+        {
+          "state": "NH",
+          "cases": 43
+        },
+        {
+          "state": "OH",
+          "cases": 2871
+        },
+        {
+          "state": "OK",
+          "cases": 269
+        },
+        {
+          "state": "PA",
+          "cases": 271
+        },
+        {
+          "state": "TN",
+          "cases": 7
+        },
+        {
+          "state": "TX",
+          "cases": 24
+        },
+        {
+          "state": "VA",
+          "cases": 12
+        },
+        {
+          "state": "WV",
+          "cases": 170
+        }
+      ],
+      "illnessOnsetFrom": "2026-05-13",
+      "illnessOnsetTo": "2026-07-13",
+      "postedAt": "2026-07-14",
+      "updatedAt": "2026-09-11",
+      "declaredOverAt": "2026-09-11",
+      "recallIssued": null,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:ecoli/outbreaks/blueberries-07-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/ecoli/outbreaks/blueberries-07-26/index.html",
+      "title": "E. coli Outbreak Linked to Frozen Blueberries",
+      "food": "Frozen Blueberries",
+      "foodKeys": [
+        "berries"
+      ],
+      "pathogen": "E. coli O145",
+      "pathogenFamily": "E. coli",
+      "status": "active",
+      "cases": 17,
+      "hospitalizations": 6,
+      "deaths": 0,
+      "stateCount": 2,
+      "states": [
+        {
+          "state": "FL",
+          "cases": 13
+        },
+        {
+          "state": "GA",
+          "cases": 4
+        }
+      ],
+      "illnessOnsetFrom": "2026-05-11",
+      "illnessOnsetTo": "2026-08-02",
+      "postedAt": "2026-07-06",
+      "updatedAt": "2026-09-11",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:botulism/outbreaks-investigations/infant-formula-june-2026",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/botulism/outbreaks-investigations/infant-formula-june-2026/index.html",
+      "title": "Infant Botulism Outbreak Linked to Powdered Infant Formula, June 2026",
+      "food": "Powdered Infant Formula",
+      "foodKeys": [
+        "infant formula"
+      ],
+      "pathogen": "Clostridium botulinum",
+      "pathogenFamily": "Botulism",
+      "status": "over",
+      "cases": 4,
+      "hospitalizations": 4,
+      "deaths": 0,
+      "stateCount": 3,
+      "states": [
+        {
+          "state": "CA",
+          "cases": 2
+        },
+        {
+          "state": "PA",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": null,
+      "illnessOnsetTo": null,
+      "postedAt": "2026-06-13",
+      "updatedAt": "2026-08-27",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:listeria/outbreaks/soft-cheese-06-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/listeria/outbreaks/soft-cheese-06-26/index.html",
+      "title": "Listeria Outbreak Linked to Soft Cheese",
+      "food": "Requeson/Soft Ricotta Cheese",
+      "foodKeys": [
+        "dairy"
+      ],
+      "pathogen": "Listeria monocytogenes",
+      "pathogenFamily": "Listeria",
+      "status": "over",
+      "cases": 15,
+      "hospitalizations": 14,
+      "deaths": 1,
+      "stateCount": 4,
+      "states": [
+        {
+          "state": "IL",
+          "cases": 1
+        },
+        {
+          "state": "MD",
+          "cases": 4
+        },
+        {
+          "state": "NY",
+          "cases": 6
+        },
+        {
+          "state": "VA",
+          "cases": 4
+        }
+      ],
+      "illnessOnsetFrom": "2023-03-06",
+      "illnessOnsetTo": "2026-07-08",
+      "postedAt": "2026-06-04",
+      "updatedAt": "2026-08-26",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/moringa-05-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/moringa-05-26/index.html",
+      "title": "Salmonella Outbreak Linked to Moringa Capsules",
+      "food": "Moringa Capsules",
+      "foodKeys": [
+        "supplements"
+      ],
+      "pathogen": "Salmonella Typhimurium",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 34,
+      "hospitalizations": 11,
+      "deaths": 0,
+      "stateCount": 22,
+      "states": [
+        {
+          "state": "CA",
+          "cases": 1
+        },
+        {
+          "state": "FL",
+          "cases": 2
+        },
+        {
+          "state": "GA",
+          "cases": 1
+        },
+        {
+          "state": "IA",
+          "cases": 1
+        },
+        {
+          "state": "ID",
+          "cases": 1
+        },
+        {
+          "state": "IL",
+          "cases": 1
+        },
+        {
+          "state": "MA",
+          "cases": 1
+        },
+        {
+          "state": "MD",
+          "cases": 1
+        },
+        {
+          "state": "MI",
+          "cases": 1
+        },
+        {
+          "state": "MN",
+          "cases": 2
+        },
+        {
+          "state": "NC",
+          "cases": 4
+        },
+        {
+          "state": "ND",
+          "cases": 1
+        },
+        {
+          "state": "NE",
+          "cases": 1
+        },
+        {
+          "state": "NH",
+          "cases": 1
+        },
+        {
+          "state": "OK",
+          "cases": 1
+        },
+        {
+          "state": "OR",
+          "cases": 2
+        },
+        {
+          "state": "PA",
+          "cases": 3
+        },
+        {
+          "state": "SC",
+          "cases": 2
+        },
+        {
+          "state": "TN",
+          "cases": 2
+        },
+        {
+          "state": "TX",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 3
+        },
+        {
+          "state": "WI",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": "2025-08-27",
+      "illnessOnsetTo": "2026-06-21",
+      "postedAt": "2026-05-27",
+      "updatedAt": "2026-07-17",
+      "declaredOverAt": "2026-07-16",
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:ecoli/outbreaks/rawcheese-03-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/ecoli/outbreaks/rawcheese-03-26/index.html",
+      "title": "E. coli Outbreak Linked to Raw Dairy",
+      "food": "Raw Dairy",
+      "foodKeys": [
+        "dairy",
+        "raw milk"
+      ],
+      "pathogen": "E. coli O157:H7",
+      "pathogenFamily": "E. coli",
+      "status": "over",
+      "cases": 9,
+      "hospitalizations": 3,
+      "deaths": 0,
+      "stateCount": 3,
+      "states": [
+        {
+          "state": "CA",
+          "cases": 7
+        },
+        {
+          "state": "FL",
+          "cases": 1
+        },
+        {
+          "state": "TX",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": "2025-09-01",
+      "illnessOnsetTo": "2026-02-20",
+      "postedAt": "2026-03-15",
+      "updatedAt": "2026-04-30",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/moringacapsules-02-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/moringacapsules-02-26/index.html",
+      "title": "Extensively Drug-Resistant Salmonella Outbreak Linked to Moringa Powder Capsules",
+      "food": "Moringa Powder Capsules",
+      "foodKeys": [
+        "supplements"
+      ],
+      "pathogen": "Salmonella Newport",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 10,
+      "hospitalizations": 3,
+      "deaths": 0,
+      "stateCount": 8,
+      "states": [
+        {
+          "state": "AZ",
+          "cases": 1
+        },
+        {
+          "state": "FL",
+          "cases": 1
+        },
+        {
+          "state": "IA",
+          "cases": 1
+        },
+        {
+          "state": "IL",
+          "cases": 1
+        },
+        {
+          "state": "IN",
+          "cases": 2
+        },
+        {
+          "state": "TN",
+          "cases": 1
+        },
+        {
+          "state": "VA",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 2
+        }
+      ],
+      "illnessOnsetFrom": null,
+      "illnessOnsetTo": null,
+      "postedAt": "2026-02-13",
+      "updatedAt": "2026-04-01",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/supergreenssupplementpowders-1-26",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/supergreenssupplementpowders-1-26/index.html",
+      "title": "Salmonella Outbreak Linked to Moringa Leaf Powder",
+      "food": "Super Greens Supplement Powders",
+      "foodKeys": [
+        "supplements"
+      ],
+      "pathogen": "Salmonella Typhimurium",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 131,
+      "hospitalizations": 36,
+      "deaths": 0,
+      "stateCount": 38,
+      "states": [
+        {
+          "state": "AK",
+          "cases": 1
+        },
+        {
+          "state": "AL",
+          "cases": 1
+        },
+        {
+          "state": "AR",
+          "cases": 1
+        },
+        {
+          "state": "CA",
+          "cases": 5
+        },
+        {
+          "state": "CO",
+          "cases": 1
+        },
+        {
+          "state": "CT",
+          "cases": 3
+        },
+        {
+          "state": "DE",
+          "cases": 1
+        },
+        {
+          "state": "FL",
+          "cases": 2
+        },
+        {
+          "state": "GA",
+          "cases": 3
+        },
+        {
+          "state": "IA",
+          "cases": 2
+        },
+        {
+          "state": "ID",
+          "cases": 1
+        },
+        {
+          "state": "IL",
+          "cases": 5
+        },
+        {
+          "state": "KY",
+          "cases": 5
+        },
+        {
+          "state": "MA",
+          "cases": 5
+        },
+        {
+          "state": "ME",
+          "cases": 3
+        },
+        {
+          "state": "MI",
+          "cases": 6
+        },
+        {
+          "state": "MN",
+          "cases": 9
+        },
+        {
+          "state": "MO",
+          "cases": 3
+        },
+        {
+          "state": "NC",
+          "cases": 2
+        },
+        {
+          "state": "ND",
+          "cases": 1
+        },
+        {
+          "state": "NE",
+          "cases": 2
+        },
+        {
+          "state": "NJ",
+          "cases": 3
+        },
+        {
+          "state": "NM",
+          "cases": 1
+        },
+        {
+          "state": "NY",
+          "cases": 9
+        },
+        {
+          "state": "OH",
+          "cases": 7
+        },
+        {
+          "state": "OK",
+          "cases": 3
+        },
+        {
+          "state": "OR",
+          "cases": 1
+        },
+        {
+          "state": "PA",
+          "cases": 8
+        },
+        {
+          "state": "RI",
+          "cases": 1
+        },
+        {
+          "state": "SC",
+          "cases": 3
+        },
+        {
+          "state": "SD",
+          "cases": 1
+        },
+        {
+          "state": "TN",
+          "cases": 2
+        },
+        {
+          "state": "TX",
+          "cases": 3
+        },
+        {
+          "state": "UT",
+          "cases": 1
+        },
+        {
+          "state": "VA",
+          "cases": 4
+        },
+        {
+          "state": "VT",
+          "cases": 3
+        },
+        {
+          "state": "WA",
+          "cases": 1
+        },
+        {
+          "state": "WI",
+          "cases": 18
+        }
+      ],
+      "illnessOnsetFrom": "2025-08-22",
+      "illnessOnsetTo": "2026-06-14",
+      "postedAt": "2026-01-14",
+      "updatedAt": "2026-07-22",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2026,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/oysters-12-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/oysters-12-25/index.html",
+      "title": "Salmonella Outbreak Linked to Raw Oysters",
+      "food": "Raw Oysters",
+      "foodKeys": [
+        "seafood"
+      ],
+      "pathogen": "Salmonella Telelkebir",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 80,
+      "hospitalizations": 34,
+      "deaths": 0,
+      "stateCount": 23,
+      "states": [
+        {
+          "state": "AZ",
+          "cases": 3
+        },
+        {
+          "state": "CA",
+          "cases": 3
+        },
+        {
+          "state": "CO",
+          "cases": 3
+        },
+        {
+          "state": "CT",
+          "cases": 2
+        },
+        {
+          "state": "DE",
+          "cases": 4
+        },
+        {
+          "state": "FL",
+          "cases": 5
+        },
+        {
+          "state": "GA",
+          "cases": 5
+        },
+        {
+          "state": "IA",
+          "cases": 1
+        },
+        {
+          "state": "IL",
+          "cases": 2
+        },
+        {
+          "state": "KY",
+          "cases": 1
+        },
+        {
+          "state": "MA",
+          "cases": 4
+        },
+        {
+          "state": "MD",
+          "cases": 3
+        },
+        {
+          "state": "ME",
+          "cases": 1
+        },
+        {
+          "state": "MO",
+          "cases": 1
+        },
+        {
+          "state": "NC",
+          "cases": 1
+        },
+        {
+          "state": "NJ",
+          "cases": 7
+        },
+        {
+          "state": "NY",
+          "cases": 10
+        },
+        {
+          "state": "PA",
+          "cases": 11
+        },
+        {
+          "state": "SC",
+          "cases": 3
+        },
+        {
+          "state": "SD",
+          "cases": 1
+        },
+        {
+          "state": "TN",
+          "cases": 1
+        },
+        {
+          "state": "TX",
+          "cases": 2
+        },
+        {
+          "state": "VA",
+          "cases": 6
+        }
+      ],
+      "illnessOnsetFrom": "2025-06-21",
+      "illnessOnsetTo": "2025-12-22",
+      "postedAt": "2025-12-23",
+      "updatedAt": "2026-02-24",
+      "declaredOverAt": "2026-02-24",
+      "recallIssued": false,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:botulism/outbreaks-investigations/infant-formula-nov-2025",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/botulism/outbreaks-investigations/infant-formula-nov-2025/index.html",
+      "title": "Infant Botulism Outbreak Linked to Infant Formula, November 2025",
+      "food": "Infant Formula",
+      "foodKeys": [
+        "infant formula"
+      ],
+      "pathogen": "Clostridium botulinum",
+      "pathogenFamily": "Botulism",
+      "status": "over",
+      "cases": 48,
+      "hospitalizations": 48,
+      "deaths": 0,
+      "stateCount": 17,
+      "states": [
+        {
+          "state": "AZ",
+          "cases": 5
+        },
+        {
+          "state": "CA",
+          "cases": 12
+        },
+        {
+          "state": "ID",
+          "cases": 2
+        },
+        {
+          "state": "IL",
+          "cases": 2
+        },
+        {
+          "state": "KY",
+          "cases": 1
+        },
+        {
+          "state": "MA",
+          "cases": 2
+        },
+        {
+          "state": "MI",
+          "cases": 1
+        },
+        {
+          "state": "MN",
+          "cases": 3
+        },
+        {
+          "state": "NC",
+          "cases": 2
+        },
+        {
+          "state": "NJ",
+          "cases": 1
+        },
+        {
+          "state": "OR",
+          "cases": 3
+        },
+        {
+          "state": "PA",
+          "cases": 1
+        },
+        {
+          "state": "RI",
+          "cases": 1
+        },
+        {
+          "state": "TX",
+          "cases": 8
+        },
+        {
+          "state": "VA",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 2
+        },
+        {
+          "state": "WI",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": null,
+      "illnessOnsetTo": null,
+      "postedAt": "2025-11-08",
+      "updatedAt": "2026-03-05",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/supplement-10-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/supplement-10-25/index.html",
+      "title": "Salmonella Outbreak Linked to Moringa Leaf Powder",
+      "food": "Moringa Leaf Powder",
+      "foodKeys": [],
+      "pathogen": "Salmonella Richmond",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 11,
+      "hospitalizations": 3,
+      "deaths": 0,
+      "stateCount": 7,
+      "states": [
+        {
+          "state": "FL",
+          "cases": 2
+        },
+        {
+          "state": "KS",
+          "cases": 2
+        },
+        {
+          "state": "MI",
+          "cases": 1
+        },
+        {
+          "state": "NC",
+          "cases": 1
+        },
+        {
+          "state": "NY",
+          "cases": 1
+        },
+        {
+          "state": "SC",
+          "cases": 1
+        },
+        {
+          "state": "VA",
+          "cases": 3
+        }
+      ],
+      "illnessOnsetFrom": "2025-05-12",
+      "illnessOnsetTo": "2025-09-04",
+      "postedAt": "2025-10-31",
+      "updatedAt": "2025-12-04",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/homedeliverymeals-09-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/homedeliverymeals-09-25/index.html",
+      "title": "Salmonella Outbreak Linked to Home Delivery Meals",
+      "food": "Home Delivery Meals",
+      "foodKeys": [],
+      "pathogen": "Salmonella Enteritidis",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 21,
+      "hospitalizations": 8,
+      "deaths": 0,
+      "stateCount": 13,
+      "states": [
+        {
+          "state": "AR",
+          "cases": 1
+        },
+        {
+          "state": "CA",
+          "cases": 3
+        },
+        {
+          "state": "CT",
+          "cases": 1
+        },
+        {
+          "state": "GA",
+          "cases": 2
+        },
+        {
+          "state": "IL",
+          "cases": 2
+        },
+        {
+          "state": "MN",
+          "cases": 3
+        },
+        {
+          "state": "MO",
+          "cases": 3
+        },
+        {
+          "state": "MS",
+          "cases": 1
+        },
+        {
+          "state": "NY",
+          "cases": 1
+        },
+        {
+          "state": "PA",
+          "cases": 1
+        },
+        {
+          "state": "TX",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 1
+        },
+        {
+          "state": "WI",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": "2025-07-24",
+      "illnessOnsetTo": "2025-10-03",
+      "postedAt": "2025-09-05",
+      "updatedAt": "2025-11-21",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/eggs-08-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/eggs-08-25/index.html",
+      "title": "Salmonella Outbreak Linked to Eggs",
+      "food": "Eggs",
+      "foodKeys": [
+        "eggs"
+      ],
+      "pathogen": "Salmonella Enteritidis",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 105,
+      "hospitalizations": 19,
+      "deaths": 0,
+      "stateCount": 14,
+      "states": [
+        {
+          "state": "AZ",
+          "cases": 1
+        },
+        {
+          "state": "CA",
+          "cases": 82
+        },
+        {
+          "state": "FL",
+          "cases": 1
+        },
+        {
+          "state": "GA",
+          "cases": 1
+        },
+        {
+          "state": "HI",
+          "cases": 1
+        },
+        {
+          "state": "IA",
+          "cases": 1
+        },
+        {
+          "state": "MN",
+          "cases": 4
+        },
+        {
+          "state": "NC",
+          "cases": 2
+        },
+        {
+          "state": "NE",
+          "cases": 1
+        },
+        {
+          "state": "NM",
+          "cases": 1
+        },
+        {
+          "state": "NV",
+          "cases": 4
+        },
+        {
+          "state": "NY",
+          "cases": 2
+        },
+        {
+          "state": "PA",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 3
+        }
+      ],
+      "illnessOnsetFrom": "2025-01-07",
+      "illnessOnsetTo": "2025-08-14",
+      "postedAt": "2025-08-28",
+      "updatedAt": "2025-11-20",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/sproutedbeans-07-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/sproutedbeans-07-25/index.html",
+      "title": "Salmonella Outbreak Linked to Deep Brand Frozen Foods",
+      "food": "Frozen Sprouted Beans",
+      "foodKeys": [],
+      "pathogen": "Salmonella Anatum",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 12,
+      "hospitalizations": 4,
+      "deaths": 0,
+      "stateCount": 11,
+      "states": [
+        {
+          "state": "CT",
+          "cases": 1
+        },
+        {
+          "state": "FL",
+          "cases": 1
+        },
+        {
+          "state": "IL",
+          "cases": 1
+        },
+        {
+          "state": "MA",
+          "cases": 2
+        },
+        {
+          "state": "MN",
+          "cases": 1
+        },
+        {
+          "state": "NJ",
+          "cases": 1
+        },
+        {
+          "state": "PA",
+          "cases": 1
+        },
+        {
+          "state": "TN",
+          "cases": 1
+        },
+        {
+          "state": "TX",
+          "cases": 1
+        },
+        {
+          "state": "VA",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": "2024-10-22",
+      "illnessOnsetTo": "2025-06-24",
+      "postedAt": "2025-07-17",
+      "updatedAt": "2025-09-25",
+      "declaredOverAt": "2025-09-25",
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:listeria/outbreaks/chicken-fettuccine-alfredo-06-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/listeria/outbreaks/chicken-fettuccine-alfredo-06-25/index.html",
+      "title": "Listeria Outbreak Linked to Prepared Pasta Meals",
+      "food": "Prepared Pasta Meals",
+      "foodKeys": [],
+      "pathogen": "Listeria monocytogenes",
+      "pathogenFamily": "Listeria",
+      "status": "over",
+      "cases": 28,
+      "hospitalizations": 27,
+      "deaths": 7,
+      "stateCount": 19,
+      "states": [
+        {
+          "state": "AZ",
+          "cases": 1
+        },
+        {
+          "state": "CA",
+          "cases": 3
+        },
+        {
+          "state": "FL",
+          "cases": 1
+        },
+        {
+          "state": "HI",
+          "cases": 2
+        },
+        {
+          "state": "IL",
+          "cases": 1
+        },
+        {
+          "state": "IN",
+          "cases": 1
+        },
+        {
+          "state": "LA",
+          "cases": 2
+        },
+        {
+          "state": "MI",
+          "cases": 2
+        },
+        {
+          "state": "MN",
+          "cases": 1
+        },
+        {
+          "state": "MO",
+          "cases": 1
+        },
+        {
+          "state": "NC",
+          "cases": 1
+        },
+        {
+          "state": "NV",
+          "cases": 1
+        },
+        {
+          "state": "OH",
+          "cases": 1
+        },
+        {
+          "state": "OR",
+          "cases": 3
+        },
+        {
+          "state": "SC",
+          "cases": 1
+        },
+        {
+          "state": "TX",
+          "cases": 3
+        },
+        {
+          "state": "UT",
+          "cases": 1
+        },
+        {
+          "state": "VA",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": "2024-07-24",
+      "illnessOnsetTo": "2025-05-10",
+      "postedAt": "2025-06-18",
+      "updatedAt": "2026-02-12",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/pistachiocream-06-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/pistachiocream-06-25/index.html",
+      "title": "Salmonella Outbreak Linked to Pistachio Cream",
+      "food": "Pistachio Cream",
+      "foodKeys": [
+        "dairy",
+        "nuts"
+      ],
+      "pathogen": "Salmonella Oranienburg",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 4,
+      "hospitalizations": 1,
+      "deaths": 0,
+      "stateCount": 2,
+      "states": [
+        {
+          "state": "MN",
+          "cases": 3
+        },
+        {
+          "state": "NJ",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": "2025-03-10",
+      "illnessOnsetTo": "2025-05-19",
+      "postedAt": "2025-06-13",
+      "updatedAt": "2025-08-21",
+      "declaredOverAt": "2025-08-21",
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/eggs-06-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/eggs-06-25/index.html",
+      "title": "Salmonella Outbreak Linked to Eggs",
+      "food": "Eggs",
+      "foodKeys": [
+        "eggs"
+      ],
+      "pathogen": "Salmonella Enteritidis",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 134,
+      "hospitalizations": 38,
+      "deaths": 1,
+      "stateCount": 10,
+      "states": [
+        {
+          "state": "AZ",
+          "cases": 8
+        },
+        {
+          "state": "CA",
+          "cases": 109
+        },
+        {
+          "state": "CO",
+          "cases": 2
+        },
+        {
+          "state": "KS",
+          "cases": 1
+        },
+        {
+          "state": "KY",
+          "cases": 1
+        },
+        {
+          "state": "NE",
+          "cases": 2
+        },
+        {
+          "state": "NJ",
+          "cases": 2
+        },
+        {
+          "state": "NV",
+          "cases": 4
+        },
+        {
+          "state": "UT",
+          "cases": 1
+        },
+        {
+          "state": "WA",
+          "cases": 4
+        }
+      ],
+      "illnessOnsetFrom": "2025-02-24",
+      "illnessOnsetTo": "2025-06-06",
+      "postedAt": "2025-06-06",
+      "updatedAt": "2025-07-10",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:salmonella/outbreaks/whole-cucumbers-05-25",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/whole-cucumbers-05-25/index.html",
+      "title": "Salmonella Outbreak Linked to Whole Cucumbers",
+      "food": "Whole Cucumbers",
+      "foodKeys": [
+        "cucumbers"
+      ],
+      "pathogen": "Salmonella Montevideo",
+      "pathogenFamily": "Salmonella",
+      "status": "over",
+      "cases": 69,
+      "hospitalizations": 22,
+      "deaths": 0,
+      "stateCount": 21,
+      "states": [
+        {
+          "state": "AL",
+          "cases": 1
+        },
+        {
+          "state": "CA",
+          "cases": 1
+        },
+        {
+          "state": "CO",
+          "cases": 1
+        },
+        {
+          "state": "FL",
+          "cases": 7
+        },
+        {
+          "state": "GA",
+          "cases": 10
+        },
+        {
+          "state": "IL",
+          "cases": 5
+        },
+        {
+          "state": "IN",
+          "cases": 1
+        },
+        {
+          "state": "KS",
+          "cases": 1
+        },
+        {
+          "state": "KY",
+          "cases": 1
+        },
+        {
+          "state": "MA",
+          "cases": 3
+        },
+        {
+          "state": "MD",
+          "cases": 1
+        },
+        {
+          "state": "MI",
+          "cases": 2
+        },
+        {
+          "state": "MS",
+          "cases": 1
+        },
+        {
+          "state": "NC",
+          "cases": 4
+        },
+        {
+          "state": "NJ",
+          "cases": 3
+        },
+        {
+          "state": "NY",
+          "cases": 4
+        },
+        {
+          "state": "OH",
+          "cases": 6
+        },
+        {
+          "state": "PA",
+          "cases": 7
+        },
+        {
+          "state": "SC",
+          "cases": 6
+        },
+        {
+          "state": "TN",
+          "cases": 1
+        },
+        {
+          "state": "VA",
+          "cases": 3
+        }
+      ],
+      "illnessOnsetFrom": "2025-04-02",
+      "illnessOnsetTo": "2025-05-29",
+      "postedAt": "2025-05-19",
+      "updatedAt": "2025-06-30",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:listeria/outbreaks/ready-to-eat-foods-may-2025",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/listeria/outbreaks/ready-to-eat-foods-may-2025/index.html",
+      "title": "Listeria Outbreak Linked to Ready-to-Eat Foods",
+      "food": "Ready-to-Eat Foods",
+      "foodKeys": [
+        "ready-to-eat meals"
+      ],
+      "pathogen": "Listeria monocytogenes",
+      "pathogenFamily": "Listeria",
+      "status": "over",
+      "cases": 10,
+      "hospitalizations": 10,
+      "deaths": 1,
+      "stateCount": 2,
+      "states": [
+        {
+          "state": "CA",
+          "cases": 8
+        },
+        {
+          "state": "NV",
+          "cases": 2
+        }
+      ],
+      "illnessOnsetFrom": null,
+      "illnessOnsetTo": null,
+      "postedAt": "2025-05-11",
+      "updatedAt": "2025-07-24",
+      "declaredOverAt": null,
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    },
+    {
+      "id": "cdc:listeria/outbreaks/shakes-022025",
+      "agency": "CDC",
+      "url": "https://www.cdc.gov/listeria/outbreaks/shakes-022025/index.html",
+      "title": "Listeria Outbreak Linked to Supplement Shakes",
+      "food": "Supplement Shakes",
+      "foodKeys": [
+        "supplements"
+      ],
+      "pathogen": "Listeria monocytogenes",
+      "pathogenFamily": "Listeria",
+      "status": "over",
+      "cases": 42,
+      "hospitalizations": 41,
+      "deaths": 14,
+      "stateCount": 21,
+      "states": [
+        {
+          "state": "AL",
+          "cases": 1
+        },
+        {
+          "state": "CA",
+          "cases": 4
+        },
+        {
+          "state": "CO",
+          "cases": 1
+        },
+        {
+          "state": "CT",
+          "cases": 2
+        },
+        {
+          "state": "FL",
+          "cases": 2
+        },
+        {
+          "state": "IL",
+          "cases": 5
+        },
+        {
+          "state": "IN",
+          "cases": 3
+        },
+        {
+          "state": "MD",
+          "cases": 1
+        },
+        {
+          "state": "MI",
+          "cases": 2
+        },
+        {
+          "state": "MN",
+          "cases": 1
+        },
+        {
+          "state": "MO",
+          "cases": 1
+        },
+        {
+          "state": "NC",
+          "cases": 2
+        },
+        {
+          "state": "NV",
+          "cases": 1
+        },
+        {
+          "state": "NY",
+          "cases": 3
+        },
+        {
+          "state": "OH",
+          "cases": 1
+        },
+        {
+          "state": "OK",
+          "cases": 1
+        },
+        {
+          "state": "PA",
+          "cases": 1
+        },
+        {
+          "state": "TN",
+          "cases": 2
+        },
+        {
+          "state": "TX",
+          "cases": 6
+        },
+        {
+          "state": "WA",
+          "cases": 1
+        },
+        {
+          "state": "WV",
+          "cases": 1
+        }
+      ],
+      "illnessOnsetFrom": "2018-08-17",
+      "illnessOnsetTo": "2025-03-13",
+      "postedAt": "2025-02-24",
+      "updatedAt": "2025-05-16",
+      "declaredOverAt": "2025-05-16",
+      "recallIssued": true,
+      "year": 2025,
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "parseWarnings": []
+    }
+  ]
+}

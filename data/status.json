@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-09-16T23:33:17.546Z",
+  "sources": {
+    "cdc-outbreaks": {
+      "name": "CDC multistate foodborne outbreak notices",
+      "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
+      "fetchedAt": "2026-09-16T23:33:17.551Z",
+      "ok": true,
+      "error": null,
+      "upstreamUpdated": null,
+      "itemCount": 24
+    },
+    "cdc-active-counts": {
+      "name": "CDC active multistate investigation counts",
+      "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
+      "fetchedAt": "2026-09-16T23:33:21.517Z",
+      "ok": true,
+      "error": null,
+      "upstreamUpdated": "2026-09-16",
+      "itemCount": 4
+    },
+    "fda-openfda": {
+      "name": "FDA food recalls (openFDA enforcement reports)",
+      "url": "https://api.fda.gov/food/enforcement.json",
+      "fetchedAt": "2026-09-16T23:33:21.622Z",
+      "ok": true,
+      "error": null,
+      "upstreamUpdated": "2026-09-09",
+      "itemCount": 152
+    },
+    "fsis-recalls": {
+      "name": "USDA FSIS recalls (recall API)",
+      "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "fetchedAt": "2026-09-16T23:33:23.057Z",
+      "ok": true,
+      "error": null,
+      "upstreamUpdated": "2026-09-10",
+      "itemCount": 54
+    }
+  }
+}

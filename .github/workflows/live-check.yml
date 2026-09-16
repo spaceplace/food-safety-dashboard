@@ -1,0 +1,24 @@
+# Runs the parsers against the live CDC, FDA, and USDA sites once a day (and on every push).
+# It writes nothing. If a site changes shape or blocks us, this job fails and GitHub emails the repo owner.
+name: Live source check
+
+on:
+  schedule:
+    - cron: "17 13 * * *" # 13:17 UTC daily (odd minute avoids the top-of-hour rush)
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  live-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run check:live
