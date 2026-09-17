@@ -2,7 +2,7 @@
 
 An always-current public view of the state of food safety in the US, built from CDC, FDA, and USDA data plus food-safety news. Nothing is fetched while a visitor is on the site: a scheduled job pulls every source, saves plain JSON files into `data/`, and the website is rebuilt from those files.
 
-**Live site: https://foodsafetybrief.org (moving from https://spaceplace.github.io/food-safety-dashboard/)**
+**Live site: https://foodsafetybrief.org**
 
 **Status: Phases 1 to 4 complete. The site is deployed and refreshes itself every 6 hours.**
 
@@ -106,11 +106,16 @@ To run any job by hand: Actions tab, pick the job on the left, "Run workflow". T
 
 ### Where the site lives
 
-GitHub Pages serves the built site at https://spaceplace.github.io/food-safety-dashboard/. The repository setting "Pages, Source: GitHub Actions" must stay on.
+GitHub Pages serves the built site at https://foodsafetybrief.org. The old address https://spaceplace.github.io/food-safety-dashboard/ redirects there. Two things keep this working:
 
-### Moving to your own domain later
+- The repository setting "Pages, Source: GitHub Actions" stays on, and "Custom domain" says `foodsafetybrief.org` with "Enforce HTTPS" ticked.
+- The DNS records at the registrar (GoDaddy) stay as set on 2026-09-17: four `A` records for `@` pointing at `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; four `AAAA` records for `@` pointing at `2606:50c0:8000::153` through `2606:50c0:8003::153`; and a `CNAME` for `www` pointing at `spaceplace.github.io`. No other `A` record for `@` (GoDaddy's "WebsiteBuilder Site" record must stay deleted).
 
-1. Buy the domain anywhere. 2. In the repository, Settings, Pages, enter the domain under "Custom domain" and follow GitHub's instructions to add DNS records at your registrar (an `A`/`ALIAS` record for the root, or a `CNAME` for `www`). 3. In `astro.config.mjs`, set `SITE_URL` and `SITE_BASE` in the fetch-and-deploy workflow (`SITE_URL=https://yourdomain.com`, `SITE_BASE=/`) so links stop including `/food-safety-dashboard`. 4. Turn on "Enforce HTTPS". GitHub's guide: https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site
+The file `site/public/CNAME` holds the domain name and is published with every deploy; do not delete it.
+
+### Changing domain later
+
+Buy the domain, add the same DNS records at the new registrar, change the name in `site/public/CNAME` and in `astro.config.mjs`, and update "Custom domain" in the Pages settings. GitHub's guide: https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site
 
 ### Secrets
 
