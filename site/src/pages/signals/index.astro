@@ -4,11 +4,11 @@ import Notices from "../../components/Notices.astro";
 import AsOf from "../../components/AsOf.astro";
 import { formatDate, formatDateTime, formatNumber, href, sources } from "../../lib/data";
 import {
-  compactSignals, signalsFile, countBy, monthsSince, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, statusClass, topHazard, signals,
+  compactSignals, signalsFile, countBy, monthsSince, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, topHazard, signals,
 } from "../../lib/signals";
 import { renderLegendHtml, renderMonthTableHtml, renderRankHtml, renderTrendSvg } from "../../lib/explorer-chart";
 import {
-  CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, KINDS, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, STATUSES, labelOf,
+  CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, KINDS, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, labelOf,
 } from "../../../../fetch/signals/taxonomy";
 
 const items = compactSignals;
@@ -26,7 +26,7 @@ const breakdowns = [
   { id: "hazard", title: "Hazard type", html: rank(countBy(items, (s) => s.hz), HAZARD_TYPES, "hazard") },
   { id: "agent", title: "Organism, allergen, or material", html: rank(countBy(items, (s) => s.ag), null, "agent", 10) },
   { id: "product", title: "Product category", html: rank(countBy(items, (s) => s.pc), PRODUCT_CATEGORIES, "product", 10) },
-  { id: "source", title: "Source and status", html: rank(countBy(items, (s) => s.source), SOURCES, "source") + rank(countBy(items, (s) => s.status), STATUSES, "status") },
+  { id: "source", title: "Source", html: rank(countBy(items, (s) => s.source), SOURCES, "source") },
   { id: "cause", title: "Root cause", html: rank(countBy(items, (s) => s.rc), ROOT_CAUSES, "cause") },
   { id: "detection", title: "How it was found", html: rank(countBy(items, (s) => s.det), DETECTIONS, "detection") },
   { id: "action", title: "Corrective action", html: rank(countBy(items, (s) => s.ca), CORRECTIVE_ACTIONS, "action") },
@@ -39,9 +39,10 @@ const firstRows = items.slice(0, 50);
 const trendSvg = renderTrendSvg(months, trend.series, { slots: HAZARD_SLOTS });
 const legend = renderLegendHtml(trend.series, HAZARD_SLOTS);
 const monthTable = renderMonthTableHtml(months, trend.series);
+const newest = items.reduce((a, s) => (s.date && s.date > a ? s.date : a), "");
 const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.prior30) / metrics.prior30) * 100) : null;
 ---
-<Base title="Signal Explorer" description="Three years of FDA and USDA recalls, FSIS public health alerts, and CDC outbreak notices, classified by hazard, organism or allergen, product, geography, root cause, corrective action, and status, with filters, trends, and a record page for every incident.">
+<Base title="Signal Explorer" description="Three years of FDA and USDA recalls, FSIS public health alerts, and CDC outbreak notices, classified by hazard, organism or allergen, product, geography, root cause, and corrective action, with filters, trends, and a record page for every incident.">
   <h1>Signal Explorer</h1>
   <p class="lede">
     Every FDA recall, USDA FSIS recall and public health alert, and CDC multistate outbreak notice since {formatDate(signalsFile.windowStart)}, turned into one structured dataset with consistent categories that grows as new records arrive.
@@ -84,9 +85,6 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
       <label>Product category
         <select name="product" id="f-product"><option value="">All</option>{PRODUCT_CATEGORIES.map((t) => <option value={t.key}>{t.label}</option>)}</select>
       </label>
-      <label>Status
-        <select name="status" id="f-status"><option value="">All</option>{STATUSES.map((t) => <option value={t.key}>{t.label}</option>)}</select>
-      </label>
       <label>Class
         <select name="class" id="f-class"><option value="">All</option><option>Class I</option><option>Class II</option><option>Class III</option></select>
       </label>
@@ -120,7 +118,7 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
     <p class="small muted">For the records currently shown. "Last 30 days" is compared with the 30 days before it.</p>
     <div class="stats" id="metrics">
       <div class="stat"><div class="label">Records</div><div class="value" data-m="total">{formatNumber(metrics.total)}</div><div class="sub" data-m="total-sub">across {SOURCES.length} agencies</div></div>
-      <div class="stat"><div class="label">Currently open</div><div class="value" data-m="open">{formatNumber(metrics.open)}</div><div class="sub">ongoing recalls, active alerts, open investigations</div></div>
+      <div class="stat"><div class="label">Most recent record</div><div class="value" data-m="newest" style="font-size:1.4rem">{formatDate(newest)}</div><div class="sub">newest record in the current view</div></div>
       <div class="stat"><div class="label">Last 30 days</div><div class="value" data-m="last30">{formatNumber(metrics.last30)}</div><div class="sub" data-m="last30-sub">{change30 === null ? `${metrics.prior30} in the 30 days before` : `${change30 >= 0 ? "+" : ""}${change30}% vs the 30 days before (${metrics.prior30})`}</div></div>
       <div class="stat"><div class="label">Class I, last 12 months</div><div class="value" data-m="classI12">{formatNumber(metrics.classI12)}</div><div class="sub">reasonable probability of serious harm</div></div>
       <div class="stat"><div class="label">Outbreak notices, last 12 months</div><div class="value" data-m="outbreaks12">{formatNumber(metrics.outbreaks12)}</div><div class="sub" data-m="illnesses12">{formatNumber(metrics.illnesses12)} reported illnesses</div></div>
@@ -172,8 +170,8 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
             <th scope="col">Source</th>
             <th scope="col">Record</th>
             <th scope="col">Hazard</th>
+            <th scope="col">Class</th>
             <th scope="col">Product</th>
-            <th scope="col">Status</th>
             <th scope="col">Where</th>
           </tr>
         </thead>
@@ -184,8 +182,8 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
               <td class="nowrap">{s.source}{s.kind === "public-health-alert" ? <div class="sub">Alert</div> : s.kind === "outbreak" ? <div class="sub">Outbreak</div> : null}</td>
               <td class="title"><a href={href(`/signals/${s.slug}/`)}>{s.title}</a>{s.firm && s.kind !== "outbreak" && <div class="sub">{s.firm}</div>}</td>
               <td><span class={`chip hz-${s.hz}`}>{labelOf(HAZARD_TYPES, s.hz)}</span>{s.ag.length > 0 && <div class="sub">{s.ag.join(", ")}</div>}</td>
+              <td class="nowrap">{s.cls ?? "—"}</td>
               <td>{labelOf(PRODUCT_CATEGORIES, s.pc)}</td>
-              <td><span class={`badge ${statusClass(s.status)}`}>{labelOf(STATUSES, s.status)}</span>{s.cls && <div class="sub">{s.cls}</div>}</td>
               <td class="small">{labelOf(GEO_SCOPES, s.geo)}{s.st.length > 0 && <div class="sub">{s.st.length > 8 ? `${s.st.slice(0, 8).join(", ")} +${s.st.length - 8}` : s.st.join(", ")}</div>}</td>
             </tr>
           ))}
@@ -198,11 +196,11 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
   <script>
     import { renderLegendHtml, renderMonthTableHtml, renderPieHtml, renderRankHtml, renderTrendSvg } from "../../lib/explorer-chart";
     import { countBy, monthsSince, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, type CompactSignal } from "../../lib/signal-aggregate";
-    import { CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, STATUSES, labelOf } from "../../../../fetch/signals/taxonomy";
+    import { CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, labelOf } from "../../../../fetch/signals/taxonomy";
 
     const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
     const base = location.pathname.replace(/\/$/, "");
-    const FIELDS = ["q", "period", "source", "kind", "hazard", "agent", "product", "status", "class", "geo", "state", "cause", "detection", "action"] as const;
+    const FIELDS = ["q", "period", "source", "kind", "hazard", "agent", "product", "class", "geo", "state", "cause", "detection", "action"] as const;
     type Field = (typeof FIELDS)[number];
     const controls = Object.fromEntries(FIELDS.map((f) => [f, $(`f-${f}`) as HTMLInputElement | HTMLSelectElement])) as Record<Field, HTMLInputElement | HTMLSelectElement>;
     let months: string[] = [];
@@ -255,7 +253,6 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
         if (state.hazard && s.hz !== state.hazard) return false;
         if (state.agent && !s.ag.includes(state.agent)) return false;
         if (state.product && s.pc !== state.product) return false;
-        if (state.status && s.status !== state.status) return false;
         if (state.class && s.cls !== state.class) return false;
         if (state.geo && s.geo !== state.geo) return false;
         if (state.state && !s.st.includes(state.state)) return false;
@@ -278,7 +275,7 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
       hazard: [{ rows: () => countBy(shown, (s) => s.hz), terms: HAZARD_TYPES, param: "hazard", slots: HAZARD_SLOTS }],
       agent: [{ rows: () => countBy(shown, (s) => s.ag), terms: null, param: "agent", limit: 10 }],
       product: [{ rows: () => countBy(shown, (s) => s.pc), terms: PRODUCT_CATEGORIES, param: "product", limit: 10 }],
-      source: [{ rows: () => countBy(shown, (s) => s.source), terms: SOURCES, param: "source" }, { rows: () => countBy(shown, (s) => s.status), terms: STATUSES, param: "status" }],
+      source: [{ rows: () => countBy(shown, (s) => s.source), terms: SOURCES, param: "source" }],
       cause: [{ rows: () => countBy(shown, (s) => s.rc), terms: ROOT_CAUSES, param: "cause" }],
       detection: [{ rows: () => countBy(shown, (s) => s.det), terms: DETECTIONS, param: "detection" }],
       action: [{ rows: () => countBy(shown, (s) => s.ca), terms: CORRECTIVE_ACTIONS, param: "action" }],
@@ -306,7 +303,8 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
       const set = (k: string, v: string) => { const el = document.querySelector<HTMLElement>(`[data-m="${k}"]`); if (el) el.textContent = v; };
       set("total", num(m.total));
       set("total-sub", `of ${num(all.length)} in the dataset`);
-      set("open", num(m.open));
+      const newest = shown.reduce((a, s) => (s.date && s.date > a ? s.date : a), "");
+      set("newest", newest ? fmtDate(newest) : "—");
       set("last30", num(m.last30));
       const change = m.prior30 > 0 ? Math.round(((m.last30 - m.prior30) / m.prior30) * 100) : null;
       set("last30-sub", change === null ? `${m.prior30} in the 30 days before` : `${change >= 0 ? "+" : ""}${change}% vs the 30 days before (${m.prior30})`);
@@ -343,15 +341,14 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
 
     function rowHtml(s: CompactSignal): string {
       const kindSub = s.kind === "public-health-alert" ? `<div class="sub">Alert</div>` : s.kind === "outbreak" ? `<div class="sub">Outbreak</div>` : "";
-      const statusCls = s.status === "open" ? "open" : s.status === "closed" ? "over" : "unknown";
       const states = s.st.length > 8 ? `${s.st.slice(0, 8).join(", ")} +${s.st.length - 8}` : s.st.join(", ");
       return `<tr>
         <td class="nowrap">${fmtDate(s.date)}</td>
         <td class="nowrap">${s.source}${kindSub}</td>
         <td class="title"><a href="${base}/${s.slug}/">${esc(s.title)}</a>${s.firm && s.kind !== "outbreak" ? `<div class="sub">${esc(s.firm)}</div>` : ""}</td>
         <td><span class="chip hz-${s.hz}">${esc(labelOf(HAZARD_TYPES, s.hz))}</span>${s.ag.length ? `<div class="sub">${esc(s.ag.join(", "))}</div>` : ""}</td>
+        <td class="nowrap">${s.cls ?? "—"}</td>
         <td>${esc(labelOf(PRODUCT_CATEGORIES, s.pc))}</td>
-        <td><span class="badge ${statusCls}">${esc(labelOf(STATUSES, s.status))}</span>${s.cls ? `<div class="sub">${s.cls}</div>` : ""}</td>
         <td class="small">${esc(labelOf(GEO_SCOPES, s.geo))}${states ? `<div class="sub">${states}</div>` : ""}</td>
       </tr>`;
     }

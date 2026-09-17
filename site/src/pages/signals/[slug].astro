@@ -23,7 +23,7 @@ const title = s.title.length > 90 ? s.title.slice(0, 89) + "…" : s.title;
   <p class="small"><a href={explorer}>Signal Explorer</a> › {labelOf(SOURCES, s.source)} {labelOf(KINDS, s.kind).toLowerCase()}</p>
   <h1>{s.title}</h1>
   <p class="lede">
-    <span class={`badge ${statusClass(s.status.normalized)}`}>{labelOf(STATUSES, s.status.normalized)}</span>
+    <span class={`badge ${statusClass(s.status.normalized)}`}>{s.status.agency}</span>
     {" "}<span class="badge plain">{labelOf(SOURCES, s.source)}</span>
     {" "}<span class="badge plain">{labelOf(KINDS, s.kind)}</span>
     {s.classification && <span class="badge plain"> {s.classification}</span>}
@@ -99,8 +99,13 @@ const title = s.title.length > 90 ? s.title.slice(0, 89) + "…" : s.title;
       </div>
       <div class="fact">
         <div class="k">Status</div>
-        <div class="v"><a href={q("status", s.status.normalized)}>{labelOf(STATUSES, s.status.normalized)}</a></div>
-        <div class="basis">Agency wording: {s.status.agency}</div>
+        <div class="v">{s.status.agency}</div>
+        <div class="basis">{labelOf(STATUSES, s.status.normalized)} in this dataset's terms</div>
+        <div class="detail">
+          {s.kind === "outbreak"
+            ? "Whether CDC still lists the investigation as open."
+            : "An administrative status: it tracks whether the agency has formally closed the record, not whether the product is still on shelves. Recalls often stay open for years after the food is gone."}
+        </div>
       </div>
       <div class="fact">
         <div class="k">Dates</div>
