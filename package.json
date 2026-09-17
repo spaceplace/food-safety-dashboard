@@ -2,7 +2,7 @@
   "name": "food-safety-dashboard",
   "version": "0.1.0",
   "private": true,
-  "description": "An always-current public view of US food safety, built from CDC, FDA, and USDA data.",
+  "description": "Food Safety Brief: an always-current public view of US food safety, built from CDC, FDA, and USDA data.",
   "type": "module",
   "engines": {
     "node": ">=22"

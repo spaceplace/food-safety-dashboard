@@ -1,4 +1,4 @@
-export const SITE_NAME = "Food Safety Dashboard";
+export const SITE_NAME = "Food Safety Brief";
 export const REPO_URL = "https://github.com/spaceplace/food-safety-dashboard";
 
 /** CDC's official estimate of annual foodborne illness burden from the seven major pathogens (2019 estimates, published 2025). */

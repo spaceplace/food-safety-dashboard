@@ -1,8 +1,8 @@
-# Food Safety Dashboard
+# Food Safety Brief
 
 An always-current public view of the state of food safety in the US, built from CDC, FDA, and USDA data plus food-safety news. Nothing is fetched while a visitor is on the site: a scheduled job pulls every source, saves plain JSON files into `data/`, and the website is rebuilt from those files.
 
-**Live site: https://spaceplace.github.io/food-safety-dashboard/**
+**Live site: https://foodsafetybrief.org (moving from https://spaceplace.github.io/food-safety-dashboard/)**
 
 **Status: Phases 1 to 4 complete. The site is deployed and refreshes itself every 6 hours.**
 
