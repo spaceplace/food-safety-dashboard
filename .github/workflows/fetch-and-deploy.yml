@@ -1,0 +1,81 @@
+# The main scheduled job. Every 6 hours: fetch all sources, refresh the weekly summary if it is
+# older than 6 days, commit any changed data files, build the site, and publish it to GitHub Pages.
+# Also runs on every push to main (so code changes go live) and can be started by hand.
+name: Fetch data and deploy site
+
+on:
+  schedule:
+    - cron: "23 */6 * * *" # 00:23, 06:23, 12:23, 18:23 UTC
+  push:
+    branches: [main]
+    paths-ignore:
+      - "data/**" # the bot's own data commits must not retrigger this job
+  workflow_dispatch:
+    inputs:
+      force_summary:
+        description: "Regenerate the weekly summary even if it is fresh"
+        type: boolean
+        default: false
+
+# Never run two of these at once: they both commit data and deploy.
+concurrency:
+  group: fetch-and-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  fetch-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm test
+
+      - name: Fetch all sources
+        run: npm run fetch
+
+      - name: Refresh the weekly summary (only calls the API if the current one is over 6 days old)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ "${{ inputs.force_summary }}" = "true" ]; then npm run summarize -- --force; else npm run summarize; fi
+
+      - name: Commit changed data files
+        run: |
+          git config user.name "food-safety-dashboard-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Build the site
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/dist
+
+  deploy:
+    needs: fetch-and-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

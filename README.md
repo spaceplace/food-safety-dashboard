@@ -2,7 +2,9 @@
 
 An always-current public view of the state of food safety in the US, built from CDC, FDA, and USDA data plus food-safety news. Nothing is fetched while a visitor is on the site: a scheduled job pulls every source, saves plain JSON files into `data/`, and the website is rebuilt from those files.
 
-**Status: Phases 1 to 3 complete (data fetchers, the website, news and the weekly AI summary). Deployment is next.**
+**Live site: https://spaceplace.github.io/food-safety-dashboard/**
+
+**Status: Phases 1 to 4 complete. The site is deployed and refreshes itself every 6 hours.**
 
 ## What is here
 
@@ -13,7 +15,7 @@ An always-current public view of the state of food safety in the US, built from 
 | `fixtures/` | Saved copies of the real CDC, FDA, and USDA responses, used by the tests. |
 | `tests/` | One test file per parser. They run against the fixtures, so they work offline and catch layout changes when we refresh a fixture. |
 | `site/` | The website, built with [Astro](https://astro.build). It reads `data/*.json` at build time and produces plain HTML. |
-| `.github/workflows/` | GitHub Actions: the daily live check and the fetch-strategy probe (now), the 6-hourly data fetch and site deploy (Phase 4). |
+| `.github/workflows/` | GitHub Actions: the 6-hourly fetch-and-deploy job, the weekly summary job, the daily live check, and the fetch-strategy probe. |
 | `PLAN.md` | The build plan, schemas, and what we learned about each source. |
 
 ## Data sources
@@ -89,6 +91,27 @@ If the key is missing, the job still runs; it just leaves the previous summary i
 
 Each source is fetched independently. If one fails, its previous items are kept, and `data/status.json` records `ok: false` with the error and the time of the last good fetch. The website shows that as a warning banner and marks the affected section "last refresh failed; showing previous data" rather than showing nothing or a made-up value.
 
-## Deploying
+## How it runs on its own
 
-Coming in Phase 4. The plan is GitHub Pages, rebuilt automatically by GitHub Actions after every data fetch.
+Everything automatic happens in GitHub Actions (the "Actions" tab of the repository). You do not need to keep your computer on.
+
+| Job | When | What it does |
+|---|---|---|
+| Fetch data and deploy site | Every 6 hours, and after every code change | Runs the tests, fetches every source, refreshes the summary only if it is over 6 days old, commits changed data files, builds the site, publishes it to GitHub Pages. |
+| Weekly news summary | Mondays, early morning US time | Forces a fresh AI summary, commits it, then starts the job above to publish it. |
+| Live source check | Daily | Runs the parsers against the real CDC, FDA, and USDA sites and fails loudly if a site changed shape. GitHub emails you when a scheduled job fails. |
+| Probe fetch strategies | By hand only | Diagnostic for when CDC or USDA start returning "403 Forbidden" to GitHub's servers. |
+
+To run any job by hand: Actions tab, pick the job on the left, "Run workflow". The fetch-and-deploy job has a checkbox to force a new summary.
+
+### Where the site lives
+
+GitHub Pages serves the built site at https://spaceplace.github.io/food-safety-dashboard/. The repository setting "Pages, Source: GitHub Actions" must stay on.
+
+### Moving to your own domain later
+
+1. Buy the domain anywhere. 2. In the repository, Settings, Pages, enter the domain under "Custom domain" and follow GitHub's instructions to add DNS records at your registrar (an `A`/`ALIAS` record for the root, or a `CNAME` for `www`). 3. In `astro.config.mjs`, set `SITE_URL` and `SITE_BASE` in the fetch-and-deploy workflow (`SITE_URL=https://yourdomain.com`, `SITE_BASE=/`) so links stop including `/food-safety-dashboard`. 4. Turn on "Enforce HTTPS". GitHub's guide: https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site
+
+### Secrets
+
+The only secret is `ANTHROPIC_API_KEY`, stored under Settings, Secrets and variables, Actions. Rotate it there if it ever leaks. Nothing else needs credentials.

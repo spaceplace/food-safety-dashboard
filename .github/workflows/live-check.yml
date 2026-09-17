@@ -1,12 +1,11 @@
 # Runs the parsers against the live CDC, FDA, and USDA sites once a day (and on every push).
 # It writes nothing. If a site changes shape or blocks us, this job fails and GitHub emails the repo owner.
+# (Tests also run at the start of every fetch-and-deploy run, so a push is covered there.)
 name: Live source check
 
 on:
   schedule:
     - cron: "17 13 * * *" # 13:17 UTC daily (odd minute avoids the top-of-hour rush)
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
