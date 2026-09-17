@@ -348,3 +348,24 @@ describe("build and change log", () => {
     expect(slugify("cdc:salmonella/outbreaks/x-09-26")).toBe("cdc-salmonella-outbreaks-x-09-26");
   });
 });
+
+describe("window expansion", () => {
+  it("logs one backfill entry instead of one added entry per historical record", () => {
+    const first = buildSignals({ ...base, outbreaks: [], recalls: [recall()], previous: null, now: "2026-09-17T00:00:00Z", windowStart: "2023-09-17" });
+    const second = buildSignals({
+      ...base,
+      outbreaks: [],
+      recalls: [recall(), recall({ id: "fda:old1", reportDate: "2021-03-01" }), recall({ id: "fda:old2", reportDate: "2022-06-01" }), recall({ id: "fda:new", reportDate: "2026-09-16" })],
+      previous: first.file,
+      previousLog: first.log,
+      now: "2026-09-18T00:00:00Z",
+      windowStart: "2021-01-01",
+    });
+    const kinds = second.log.entries.map((e) => e.change);
+    expect(kinds.filter((k) => k === "added")).toHaveLength(1);
+    expect(second.log.entries.find((e) => e.change === "backfill")).toMatchObject({ count: 2 });
+    expect(second.file.items.find((s) => s.id === "fda:old1")?.record.backfilled).toBe(true);
+    expect(second.file.items.find((s) => s.id === "fda:new")?.record.backfilled).toBe(false);
+    expect(second.file.windowStart).toBe("2021-01-01");
+  });
+});

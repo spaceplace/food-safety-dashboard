@@ -43,12 +43,13 @@ const tables: Array<{ id: string; title: string; terms: Term<string>[]; note: st
 
   <section aria-labelledby="h-scope">
     <h2 id="h-scope">What is in the dataset</h2>
-    <p>Records reported since {formatDate(signalsFile.windowStart)} (a rolling three years), from:</p>
+    <p>Records reported since {formatDate(signalsFile.windowStart)}, from:</p>
+    <p class="small muted">The dataset starts on January 1, 2021 and keeps growing. Once it holds 15 years, the oldest records age out so it never exceeds that span.</p>
     <dl class="sources">
       {SOURCES.map((t) => <><dt>{t.label}</dt><dd>{t.description} Currently {formatNumber(bySource.find(([k]) => k === t.key)?.[1] ?? 0)} records.</dd></>)}
     </dl>
     <p>Record types: {KINDS.map((k, i) => <>{i > 0 && "; "}<strong>{k.label}</strong>: {k.description.toLowerCase()}</>)}.</p>
-    <p>Not included: dietary supplements (excluded from FDA records by product wording), drugs, cosmetics, and medical devices (never fetched), single-state outbreaks (CDC does not publish notices for them), and anything older than the window. Pet food is included and labeled. FDA records are grouped so that one recall event with many products is one record.</p>
+    <p>Not included: dietary supplements (excluded from FDA records by product wording), drugs, cosmetics, and medical devices (never fetched), single-state outbreaks (CDC does not publish notices for them), and anything before the start date. Pet food is included and labeled. FDA records are grouped so that one recall event with many products is one record.</p>
   </section>
 
   <section aria-labelledby="h-record">
@@ -134,7 +135,8 @@ const tables: Array<{ id: string; title: string; terms: Term<string>[]; note: st
       <li><strong>Added</strong>: a record seen for the first time.</li>
       <li><strong>Updated</strong>: a tracked field changed, with old and new values.</li>
       <li><strong>Closed</strong> and <strong>Reopened</strong>: status changes, with the other field changes that came with them.</li>
-      <li><strong>Removed by source</strong>: a record inside the window that the agency no longer returns (rare; usually a withdrawn entry). Records that simply age out of the three-year window are not logged.</li>
+      <li><strong>Removed by source</strong>: a record inside the window that the agency no longer returns (rare; usually a withdrawn entry). Records that simply age out of the window are not logged.</li>
+      <li><strong>Backfilled history</strong>: one entry when the start date is moved earlier, counting the older records loaded from the agencies' history.</li>
       <li><strong>Initial load</strong>: one entry for the first build. Records loaded then are marked "backfilled": their first-seen time is the load time, not the agency's posting date. {backfilled > 0 && `${formatNumber(backfilled)} of the current records are backfilled.`}</li>
     </ul>
     <p>Each record carries the version of the rules it was classified under. When the rules change, the version is bumped, every record is reclassified on the next build, and each record whose labels moved gets an "updated" entry that names the rule change. Log entries are kept for 400 days; older history remains in the repository.</p>
@@ -152,6 +154,7 @@ const tables: Array<{ id: string; title: string; terms: Term<string>[]; note: st
       <li>Keyword rules are approximate. The explorer shows how often they fall short (undetermined, other, unspecified), and every record can be checked against the original wording.</li>
       <li>Root cause is rarely stated in public notices. The large "not stated" share is a fact about the notices, not a gap this site could fill responsibly.</li>
       <li>A record with several products or several hazards is one record. The hazard breakdown counts a record under each agent it names.</li>
+      <li>CDC has removed some older outbreak notices from cdc.gov, and a few are not in its archive either. Those keep a minimal record (food, germ, and the month encoded in CDC's notice id) with no case counts, status, or states, all marked as not stated, and they link to CDC's outbreak list instead of a notice.</li>
     </ul>
   </section>
 

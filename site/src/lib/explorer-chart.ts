@@ -72,11 +72,13 @@ export function renderTrendSvg(months: string[], series: Series[], opts: TrendOp
     hits += `<rect class="hit" x="${(pad.left + i * slotW).toFixed(1)}" y="${pad.top}" width="${slotW.toFixed(1)}" height="${plotH}" data-month="${esc(monthLabel(mo))}" data-total="${totals[i]}" data-rows="${esc(rows)}"><title>${esc(monthLabel(mo))}: ${totals[i]}</title></rect>`;
   });
 
+  // Label every January and July for short spans, only January for long ones, so labels never collide.
+  const everyJuly = months.length <= 48;
   let labels = "";
   months.forEach((mo, i) => {
     const m = Number(mo.slice(5));
     const showYear = m === 1 || i === 0;
-    if (m === 1 || m === 7 || i === 0) {
+    if (m === 1 || (everyJuly && m === 7) || i === 0) {
       const x = pad.left + i * slotW + slotW / 2;
       labels += `<text x="${x.toFixed(1)}" y="${height - 8}" text-anchor="middle">${showYear ? esc(monthLabel(mo)) : monthLabel(mo, true)}</text>`;
     }

@@ -29,6 +29,21 @@ export function monthKeys(n: number, end: Date = new Date()): string[] {
   return out;
 }
 
+/** Every calendar month from `startIso` through the month of `end`, as "YYYY-MM". */
+export function monthsSince(startIso: string, end: Date = new Date()): string[] {
+  const out: string[] = [];
+  let y = Number(startIso.slice(0, 4));
+  let m = Number(startIso.slice(5, 7)) - 1;
+  const endY = end.getUTCFullYear();
+  const endM = end.getUTCMonth();
+  while (y < endY || (y === endY && m <= endM)) {
+    out.push(`${y}-${String(m + 1).padStart(2, "0")}`);
+    m++;
+    if (m > 11) { m = 0; y++; }
+  }
+  return out;
+}
+
 export const HAZARD_ORDER: HazardType[] = HAZARD_TYPES.map((t) => t.key);
 /** Which chart color slot each hazard type uses. Fixed, so a filter never repaints the survivors. */
 export const HAZARD_SLOTS: Record<string, number> = Object.fromEntries(HAZARD_ORDER.map((k, i) => [k, i + 1]));

@@ -100,6 +100,8 @@ export function mapOpenFdaRecords(records: OpenFdaRecord[], fetchedAt: string): 
 
 export interface FetchOpenFdaOptions {
   days?: number;
+  /** ISO day; overrides days. */
+  since?: string;
   log?: (msg: string) => void;
 }
 
@@ -107,7 +109,7 @@ export async function fetchOpenFda(opts: FetchOpenFdaOptions = {}): Promise<{ it
   const fetchedAt = new Date().toISOString();
   const days = opts.days ?? 120;
   const log = opts.log ?? (() => {});
-  const from = compactDate(daysAgo(days));
+  const from = opts.since ? opts.since.replace(/-/g, "") : compactDate(daysAgo(days));
   const to = compactDate(daysAgo(-1)); // tomorrow, to be safe about time zones
   const search = `product_type:"Food"+AND+report_date:[${from}+TO+${to}]`;
   const limit = 1000;

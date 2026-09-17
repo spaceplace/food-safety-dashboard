@@ -9,7 +9,7 @@
 
 import * as cheerio from "cheerio";
 import { parse as parseCsv } from "csv-parse/sync";
-import { fetchText, fetchJson, mapLimit } from "../lib/http.js";
+import { fetchText, fetchJson, mapLimit, HttpError } from "../lib/http.js";
 import { parseLongDate } from "../lib/dates.js";
 import { clean, firstInt } from "../lib/text.js";
 import { toStateCode } from "../lib/states.js";
@@ -19,6 +19,8 @@ import type { Outbreak, OutbreakStatus, PathogenFamily, SourceStatus, StateCount
 export const CDC_BASE = "https://www.cdc.gov";
 export const CDC_OUTBREAKS_PAGE = `${CDC_BASE}/foodborne-outbreaks/outbreaks/`;
 export const CDC_LIST_CSV = `${CDC_BASE}/foodborne-outbreaks/media/files/2024/04/full-outbreak-list.csv`;
+/** CDC removed most notices from before 2024 from www.cdc.gov; they live on in its archive at the same path. */
+export const CDC_ARCHIVE_BASE = "https://archive.cdc.gov/www_cdc_gov";
 
 export interface ListRow {
   path: string; // e.g. /salmonella/outbreaks/broccoli-sprouts-09-26/index.html
@@ -105,6 +107,16 @@ export function parseOutbreakIndex(html: string): IndexPageData {
 
   const facts = factPairs($);
   const bodyText = clean($("main, #content").text() || $("body").text());
+  // Notices from 2023 and earlier (now served from archive.cdc.gov) use an older template where the
+  // Fast Facts box is one run of text: "Illnesses: 16 Hospitalizations: 7 Deaths: 0 States: 12 Recall: No Investigation status: Closed".
+  if (Object.keys(facts).length === 0) {
+    const box = $(".card").filter((_, el) => /fast facts/i.test($(el).text())).first();
+    const t = clean(box.text() || (bodyText.match(/Fast Facts.{0,200}/i)?.[0] ?? ""));
+    for (const [label, key] of [["illnesses", "cases"], ["cases", "cases"], ["hospitalizations", "hospitalizations"], ["deaths", "deaths"], ["states", "states"], ["recall", "recall issued"], ["investigation status", "investigation status"]] as const) {
+      const m = t.match(new RegExp(`${label}:\\s*([A-Za-z0-9,]+)`, "i"));
+      if (m && !(key in facts)) facts[key] = m[1];
+    }
+  }
 
   let status: OutbreakStatus = "unknown";
   const statusText = (facts["investigation status"] ?? "").toLowerCase();
@@ -223,18 +235,50 @@ export async function fetchCdcOutbreaks(opts: FetchCdcOptions = {}): Promise<Fet
     const url = CDC_BASE + row.path;
     // Modern notices live in a folder with index/investigation/locations pages. A few very old
     // notices are single flat pages with no sub-pages to fetch.
-    const base = /\/index\.html$/.test(url) ? url.replace(/index\.html$/, "") : null;
+    let base = /\/index\.html$/.test(url) ? url.replace(/index\.html$/, "") : null;
     const warnings: string[] = [];
     let index: IndexPageData | null = null;
     let inv: InvestigationPageData | null = null;
     let states: StateCount[] = [];
+    let pageUrl = url;
 
-    try {
-      index = parseOutbreakIndex(await fetchText(url));
-      warnings.push(...index.warnings);
-    } catch (e) {
-      warnings.push(`index page: ${(e as Error).message}`);
+    // CDC has moved older notices twice: newer paths insert "/outbreaks/" after the germ, and
+    // pages removed from www.cdc.gov survive at the same path on archive.cdc.gov. Try each in turn,
+    // but only on 404; any other failure (such as bot protection) is reported as is.
+    const candidates = [url];
+    const moved = row.path.replace(/^\/(salmonella|listeria|ecoli|norovirus|hepatitis|campylobacter|cyclosporiasis|vibrio|botulism)\/(?!outbreaks\/)/, "/$1/outbreaks/");
+    if (moved !== row.path) candidates.push(CDC_BASE + moved);
+    candidates.push(CDC_ARCHIVE_BASE + row.path);
+    if (moved !== row.path) candidates.push(CDC_ARCHIVE_BASE + moved);
+    for (let i = 0; i < candidates.length; i++) {
+      try {
+        index = parseOutbreakIndex(await fetchText(candidates[i]));
+        pageUrl = candidates[i];
+        warnings.push(...index.warnings);
+        if (pageUrl.startsWith(CDC_ARCHIVE_BASE)) {
+          warnings.push("served from archive.cdc.gov");
+          base = null; // archived notices are single pages; their sub-pages are not archived
+        } else if (pageUrl !== url) {
+          base = pageUrl.replace(/index\.html$/, "");
+        }
+        break;
+      } catch (e) {
+        const status = e instanceof HttpError ? e.status : 0;
+        if (status !== 404) {
+          warnings.push(`index page: ${(e as Error).message}`);
+          break;
+        }
+        if (i === candidates.length - 1) {
+          // Gone everywhere. CDC's list still names the food, germ, and year, and the notice id
+          // carries the month ("thompson-10-23" = October 2023), so keep a minimal record.
+          warnings.push("notice removed from cdc.gov");
+          pageUrl = CDC_OUTBREAKS_PAGE;
+          base = null;
+        }
+      }
     }
+    const slugDate = row.path.match(/-(\d{2})-(\d{2})\/(?:index\.html?)?$/);
+    const approxPosted = slugDate && Number(slugDate[1]) >= 1 && Number(slugDate[1]) <= 12 ? `20${slugDate[2]}-${slugDate[1]}-01` : null;
     if (base) {
       try {
         inv = parseInvestigationPage(await fetchText(base + "investigation.html"));
@@ -256,7 +300,7 @@ export async function fetchCdcOutbreaks(opts: FetchCdcOptions = {}): Promise<Fet
     return {
       id: outbreakId(row.path),
       agency: "CDC",
-      url,
+      url: pageUrl,
       title: index?.title ?? `${row.pathogen} outbreak linked to ${row.food}`,
       food: row.food,
       foodKeys: foodKeys(row.food),
@@ -270,7 +314,7 @@ export async function fetchCdcOutbreaks(opts: FetchCdcOptions = {}): Promise<Fet
       states,
       illnessOnsetFrom: inv?.illnessOnsetFrom ?? null,
       illnessOnsetTo: inv?.illnessOnsetTo ?? null,
-      postedAt: index?.postedAt ?? null,
+      postedAt: index?.postedAt ?? (warnings.includes("notice removed from cdc.gov") ? approxPosted : null),
       updatedAt: index?.updatedAt ?? null,
       declaredOverAt: index?.declaredOverAt ?? inv?.declaredOverAt ?? null,
       recallIssued: index?.recallIssued ?? null,

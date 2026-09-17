@@ -4,7 +4,7 @@ import Notices from "../../components/Notices.astro";
 import AsOf from "../../components/AsOf.astro";
 import { formatDate, formatDateTime, formatNumber, href, sources } from "../../lib/data";
 import {
-  compactSignals, signalsFile, countBy, monthKeys, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, statusClass, topHazard, signals,
+  compactSignals, signalsFile, countBy, monthsSince, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, statusClass, topHazard, signals,
 } from "../../lib/signals";
 import { renderLegendHtml, renderMonthTableHtml, renderRankHtml, renderTrendSvg } from "../../lib/explorer-chart";
 import {
@@ -12,7 +12,7 @@ import {
 } from "../../../../fetch/signals/taxonomy";
 
 const items = compactSignals;
-const months = monthKeys(36);
+const months = monthsSince(signalsFile.windowStart);
 const trend = monthlyByHazard(items, months);
 const metrics = compactMetrics(items);
 const top12 = topHazard(signals, isoDaysAgo(365));
@@ -44,7 +44,7 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
 <Base title="Signal Explorer" description="Three years of FDA and USDA recalls, FSIS public health alerts, and CDC outbreak notices, classified by hazard, organism or allergen, product, geography, root cause, corrective action, and status, with filters, trends, and a record page for every incident.">
   <h1>Signal Explorer</h1>
   <p class="lede">
-    Every FDA recall, USDA FSIS recall and public health alert, and CDC multistate outbreak notice since {formatDate(signalsFile.windowStart)}, turned into one structured dataset with consistent categories.
+    Every FDA recall, USDA FSIS recall and public health alert, and CDC multistate outbreak notice since {formatDate(signalsFile.windowStart)}, turned into one structured dataset with consistent categories that grows as new records arrive.
     Filter it, watch the trends, and open any record to see exactly what the agency said and how it was classified.
     <a href={href("/signals/methodology/")}>How records are classified and verified</a> · <a href={href("/signals/changelog/")}>Change log</a>.
   </p>
@@ -62,7 +62,7 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
       </label>
       <label>Period
         <select name="period" id="f-period">
-          <option value="">All (3 years)</option>
+          <option value="">All (since {formatDate(signalsFile.windowStart)})</option>
           <option value="30d">Last 30 days</option>
           <option value="90d">Last 90 days</option>
           <option value="12m">Last 12 months</option>
@@ -191,7 +191,7 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
 
   <script>
     import { renderLegendHtml, renderMonthTableHtml, renderRankHtml, renderTrendSvg } from "../../lib/explorer-chart";
-    import { countBy, monthKeys, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, type CompactSignal } from "../../lib/signal-aggregate";
+    import { countBy, monthsSince, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, type CompactSignal } from "../../lib/signal-aggregate";
     import { CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, STATUSES, labelOf } from "../../../../fetch/signals/taxonomy";
 
     const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -199,7 +199,7 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
     const FIELDS = ["q", "period", "source", "kind", "hazard", "agent", "product", "status", "class", "geo", "state", "cause", "detection", "action"] as const;
     type Field = (typeof FIELDS)[number];
     const controls = Object.fromEntries(FIELDS.map((f) => [f, $(`f-${f}`) as HTMLInputElement | HTMLSelectElement])) as Record<Field, HTMLInputElement | HTMLSelectElement>;
-    const months = monthKeys(36);
+    let months: string[] = [];
     const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
     const fmtDate = (iso: string | null) => (iso ? new Date(iso + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) : "—");
     const num = (n: number) => n.toLocaleString("en-US");
@@ -391,8 +391,9 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
 
     fetch(`${base}/data.json`)
       .then((r) => r.json())
-      .then((d: { items: CompactSignal[] }) => {
+      .then((d: { items: CompactSignal[]; windowStart: string }) => {
         all = d.items;
+        months = monthsSince(d.windowStart);
         $("filters").hidden = false;
         $("toolbar").hidden = false;
         apply(false);

@@ -1,6 +1,384 @@
 {
-  "generatedAt": "2026-09-17T14:49:13.331Z",
+  "generatedAt": "2026-09-17T15:08:28.150Z",
   "entries": [
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "added",
+      "id": "cdc:salmonella/senftenberg-05-22",
+      "slug": "cdc-salmonella-senftenberg-05-22",
+      "title": "Salmonella Outbreak Linked to Peanut Butter - May 2022",
+      "source": "CDC",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "closed",
+      "id": "cdc:salmonella/africana-06-24",
+      "slug": "cdc-salmonella-africana-06-24",
+      "title": "Salmonella Outbreak Linked to Cucumbers - June 2024",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "status",
+          "from": "unknown",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Status not stated",
+          "to": "Outbreak over"
+        },
+        {
+          "field": "corrective action",
+          "from": "investigation",
+          "to": "investigation-with-recall"
+        },
+        {
+          "field": "geography",
+          "from": "unspecified",
+          "to": "multi-state"
+        },
+        {
+          "field": "states",
+          "from": null,
+          "to": "AL, AR, CA, CT, DC, DE, FL, GA, IA, IL, IN, KY, MA, MD, ME, MI, MN, MO, MS, NC, NJ, NV, NY, OH, OK, PA, RI, SC, TN, TX, VA, VT, WA, WI, WV"
+        },
+        {
+          "field": "updated date",
+          "from": null,
+          "to": "2024-10-01"
+        },
+        {
+          "field": "cases",
+          "from": null,
+          "to": "551"
+        },
+        {
+          "field": "hospitalizations",
+          "from": null,
+          "to": "155"
+        },
+        {
+          "field": "deaths",
+          "from": null,
+          "to": "0"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "closed",
+      "id": "cdc:salmonella/basil-04-24",
+      "slug": "cdc-salmonella-basil-04-24",
+      "title": "Salmonella Outbreak Linked to Fresh Basil, April 2024",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "status",
+          "from": "unknown",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Status not stated",
+          "to": "Outbreak over"
+        },
+        {
+          "field": "corrective action",
+          "from": "investigation",
+          "to": "investigation-with-recall"
+        },
+        {
+          "field": "geography",
+          "from": "unspecified",
+          "to": "multi-state"
+        },
+        {
+          "field": "states",
+          "from": null,
+          "to": "CT, FL, GA, IL, KS, MA, MI, MN, MO, NC, NJ, RI, TX, WI"
+        },
+        {
+          "field": "updated date",
+          "from": null,
+          "to": "2024-06-18"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2024-06-18"
+        },
+        {
+          "field": "cases",
+          "from": null,
+          "to": "36"
+        },
+        {
+          "field": "hospitalizations",
+          "from": null,
+          "to": "4"
+        },
+        {
+          "field": "deaths",
+          "from": null,
+          "to": "0"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "closed",
+      "id": "cdc:salmonella/saintpaul-07-23",
+      "slug": "cdc-salmonella-saintpaul-07-23",
+      "title": "Salmonella Outbreak Linked to Ground Beef - July 2023",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "status",
+          "from": "unknown",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Status not stated",
+          "to": "Outbreak over"
+        },
+        {
+          "field": "corrective action",
+          "from": "investigation",
+          "to": "investigation-without-recall"
+        },
+        {
+          "field": "geography",
+          "from": "unspecified",
+          "to": "multi-state"
+        },
+        {
+          "field": "states",
+          "from": null,
+          "to": "CT, MA, NJ, NY"
+        },
+        {
+          "field": "updated date",
+          "from": null,
+          "to": "2024-09-06"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2023-08-23"
+        },
+        {
+          "field": "cases",
+          "from": null,
+          "to": "18"
+        },
+        {
+          "field": "hospitalizations",
+          "from": null,
+          "to": "7"
+        },
+        {
+          "field": "deaths",
+          "from": null,
+          "to": "0"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "closed",
+      "id": "cdc:salmonella/enteritidis-05-23",
+      "slug": "cdc-salmonella-enteritidis-05-23",
+      "title": "Salmonella Outbreak Linked to Raw Cookie Dough - May 2023",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "status",
+          "from": "unknown",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Status not stated",
+          "to": "Outbreak over"
+        },
+        {
+          "field": "corrective action",
+          "from": "investigation",
+          "to": "investigation-without-recall"
+        },
+        {
+          "field": "geography",
+          "from": "unspecified",
+          "to": "multi-state"
+        },
+        {
+          "field": "states",
+          "from": null,
+          "to": "CA, ID, MO, OR, UT, WA"
+        },
+        {
+          "field": "updated date",
+          "from": null,
+          "to": "2024-09-09"
+        },
+        {
+          "field": "cases",
+          "from": null,
+          "to": "26"
+        },
+        {
+          "field": "hospitalizations",
+          "from": null,
+          "to": "4"
+        },
+        {
+          "field": "deaths",
+          "from": null,
+          "to": "0"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "closed",
+      "id": "cdc:salmonella/infantis-03-23",
+      "slug": "cdc-salmonella-infantis-03-23",
+      "title": "Salmonella Outbreak Linked to Flour - March 2023",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "status",
+          "from": "unknown",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Status not stated",
+          "to": "Outbreak over"
+        },
+        {
+          "field": "corrective action",
+          "from": "investigation",
+          "to": "investigation-with-recall"
+        },
+        {
+          "field": "geography",
+          "from": "unspecified",
+          "to": "multi-state"
+        },
+        {
+          "field": "states",
+          "from": null,
+          "to": "CA, IA, IL, MN, MO, NE, NJ, NY, OH, OR, TN, VA, WA"
+        },
+        {
+          "field": "updated date",
+          "from": null,
+          "to": "2024-09-09"
+        },
+        {
+          "field": "cases",
+          "from": null,
+          "to": "14"
+        },
+        {
+          "field": "hospitalizations",
+          "from": null,
+          "to": "3"
+        },
+        {
+          "field": "deaths",
+          "from": null,
+          "to": "0"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "added",
+      "id": "cdc:salmonella/typhimurium-12-22",
+      "slug": "cdc-salmonella-typhimurium-12-22",
+      "title": "Salmonella Outbreak Linked to Alfalfa Sprouts - December 2022",
+      "source": "CDC",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "added",
+      "id": "cdc:listeria/outbreaks/enoki-11-22",
+      "slug": "cdc-listeria-outbreaks-enoki-11-22",
+      "title": "Listeria Outbreak Linked to Enoki Mushrooms - November 2022",
+      "source": "CDC",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "added",
+      "id": "cdc:listeria/outbreaks/monocytogenes-09-22",
+      "slug": "cdc-listeria-outbreaks-monocytogenes-09-22",
+      "title": "Listeria Outbreak Linked to Brie and Camembert Cheese - September 2022",
+      "source": "CDC",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "added",
+      "id": "cdc:listeria/outbreaks/monocytogenes-06-22",
+      "slug": "cdc-listeria-outbreaks-monocytogenes-06-22",
+      "title": "Listeria Outbreak Linked to Ice Cream - June 2022",
+      "source": "CDC",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "updated",
+      "id": "cdc:environmental-health-studies/outbreak-investigation-diamond-shruumz-products",
+      "slug": "cdc-environmental-health-studies-outbreak-investigation-diamond-shruumz-products",
+      "title": "Severe Illness Potentially Associated with Consuming Diamond ShruumzTM Brand Chocolate Bars, Cones, and Gummies",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "cases",
+          "from": null,
+          "to": "180"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-17T15:08:28.150Z",
+      "change": "backfill",
+      "id": null,
+      "slug": null,
+      "title": null,
+      "source": null,
+      "fields": [],
+      "count": 1407,
+      "note": "The dataset's start date moved from 2023-09-18 to 2021-01-01. Records reported before 2023-09-18 were loaded from the agencies' history and are marked as backfilled."
+    },
     {
       "at": "2026-09-17T14:29:54.165Z",
       "change": "initial-load",

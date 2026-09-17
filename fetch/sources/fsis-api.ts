@@ -139,13 +139,15 @@ export function parseFsisRss(xml: string, fetchedAt: string, sinceIso: string): 
 
 export interface FetchFsisOptions {
   days?: number;
+  /** ISO day; overrides days. */
+  since?: string;
   log?: (msg: string) => void;
 }
 
 export async function fetchFsis(opts: FetchFsisOptions = {}): Promise<{ items: Recall[]; source: SourceStatus }> {
   const fetchedAt = new Date().toISOString();
   const log = opts.log ?? (() => {});
-  const since = toIsoDay(daysAgo(opts.days ?? 365));
+  const since = opts.since ?? toIsoDay(daysAgo(opts.days ?? 365));
   try {
     const records = await fetchJson<FsisRecord[]>(FSIS_API_URL, { timeoutMs: 90_000 });
     if (!Array.isArray(records) || records.length === 0) throw new Error("FSIS API returned no records");

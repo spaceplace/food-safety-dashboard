@@ -16,7 +16,7 @@ for (const e of shown) {
   if (!byBuild.has(e.at)) byBuild.set(e.at, []);
   byBuild.get(e.at)!.push(e);
 }
-const kindClass: Record<ChangeLogEntry["change"], string> = { added: "over", updated: "plain", closed: "unknown", reopened: "open", removed: "open", "initial-load": "plain" };
+const kindClass: Record<ChangeLogEntry["change"], string> = { added: "over", updated: "plain", closed: "unknown", reopened: "open", removed: "open", "initial-load": "plain", backfill: "plain" };
 ---
 <Base title="Signal Explorer change log" description="Every addition, update, closure, and removal in Food Safety Brief's signal dataset, with old and new values, plus the history of the classification rules.">
   <p class="small"><a href={href("/signals/")}>Signal Explorer</a> › Change log</p>

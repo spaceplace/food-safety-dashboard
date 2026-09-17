@@ -95,6 +95,7 @@ export const sameFirm = (s: Signal): Signal[] => (s.firm ? (byFirm.get(s.firm.to
 
 export const changeLabel: Record<ChangeLogEntry["change"], string> = {
   "initial-load": "Initial load",
+  backfill: "Backfilled history",
   added: "Added",
   updated: "Updated",
   closed: "Closed",

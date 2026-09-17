@@ -98,6 +98,12 @@ export function signalFromOutbreak(o: Outbreak): Signal {
   if (o.recallIssued === null) missing.push("recallIssued");
   if (status.normalized === "closed" && !o.declaredOverAt) missing.push("closedDate");
   missing.push("rootCause (CDC notices describe the contaminated food, not why it was contaminated)");
+  const removed = o.parseWarnings.includes("notice removed from cdc.gov");
+  const inferred = ["productCategory"];
+  if (removed) {
+    missing.push("notice page (CDC has removed this notice from cdc.gov; the food, germ, and month come from CDC's outbreak list)");
+    inferred.push("reportedDate (month from CDC's notice id; day set to the 1st)");
+  }
   return {
     id: o.id,
     slug: slugify(o.id),
@@ -137,7 +143,7 @@ export function signalFromOutbreak(o: Outbreak): Signal {
     relatedToOutbreak: true,
     reasonText: null,
     missing,
-    inferred: ["productCategory"],
+    inferred,
     rulesVersion: RULES_VERSION,
     record: { firstSeen: "", lastChanged: "", revisions: 0, backfilled: false },
   };
@@ -205,6 +211,11 @@ export function buildSignals(input: BuildInput): { file: SignalsFile; log: Chang
   const carried = input.carryOver.filter(inWindow);
   const prevById = new Map((input.previous?.items ?? []).map((s) => [s.id, s]));
   const initial = input.previous === null;
+  // When the window start moves earlier, records older than the previous start are history being
+  // backfilled, not news: they get one summary entry instead of one "added" entry each.
+  const prevStart = input.previous?.windowStart ?? null;
+  const isBackfill = (s: Signal) => prevStart !== null && windowStart < prevStart && (s.dates.reported ?? s.dates.event ?? "") < prevStart;
+  let backfilled = 0;
   const entries: ChangeLogEntry[] = [];
 
   const items: Signal[] = [];
@@ -214,8 +225,10 @@ export function buildSignals(input: BuildInput): { file: SignalsFile; log: Chang
     seen.add(s.id);
     const prev = prevById.get(s.id);
     if (!prev) {
-      s.record = { firstSeen: now, lastChanged: now, revisions: 0, backfilled: initial };
-      if (!initial) entries.push(entry(now, "added", s, []));
+      const backfill = initial || isBackfill(s);
+      s.record = { firstSeen: now, lastChanged: now, revisions: 0, backfilled: backfill };
+      if (!initial && backfill) backfilled++;
+      else if (!initial) entries.push(entry(now, "added", s, []));
       items.push(s);
       continue;
     }
@@ -243,6 +256,9 @@ export function buildSignals(input: BuildInput): { file: SignalsFile; log: Chang
   for (const prev of prevById.values()) {
     if (seen.has(prev.id) || carriedSources.has(prev.source) || !inWindow(prev)) continue;
     entries.push(entry(now, "removed", prev, [], "No longer returned by the source"));
+  }
+  if (backfilled > 0) {
+    entries.push({ at: now, change: "backfill", id: null, slug: null, title: null, source: null, fields: [], count: backfilled, note: `The dataset's start date moved from ${prevStart} to ${windowStart}. Records reported before ${prevStart} were loaded from the agencies' history and are marked as backfilled.` });
   }
   if (initial) {
     entries.push({ at: now, change: "initial-load", id: null, slug: null, title: null, source: null, fields: [], count: items.length, note: `First build of the signals dataset from records reported since ${windowStart}. Records loaded here are marked as backfilled: their first-seen time is the load time, not the agency's posting date.` });

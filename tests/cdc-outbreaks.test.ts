@@ -96,3 +96,18 @@ describe("helpers", () => {
     expect(pathogenFamily("Mystery germ")).toBe("Other");
   });
 });
+
+describe("archived (pre-2024 template) notice pages", () => {
+  it("reads the one-line Fast Facts box, dates, and closed status", () => {
+    const d = parseOutbreakIndex(fixture("cdc/archived-cake-mix-index.html"));
+    expect(d).toMatchObject({ cases: 16, hospitalizations: 7, deaths: 0, stateCount: 12, recallIssued: false, status: "over", postedAt: "2021-07-28", updatedAt: "2021-09-16" });
+    expect(d.warnings).toEqual([]);
+  });
+});
+
+describe("notice id dates", () => {
+  it("reads the month and year CDC encodes in notice ids", () => {
+    const m = "/salmonella/thompson-10-23/index.html".match(/-(\d{2})-(\d{2})\/(?:index\.html?)?$/)!;
+    expect(`20${m[2]}-${m[1]}-01`).toBe("2023-10-01");
+  });
+});

@@ -281,7 +281,7 @@ export interface SignalsFile {
   items: Signal[];
 }
 
-export type ChangeKind = "initial-load" | "added" | "updated" | "closed" | "reopened" | "removed";
+export type ChangeKind = "initial-load" | "backfill" | "added" | "updated" | "closed" | "reopened" | "removed";
 
 export interface FieldChange {
   field: string;
@@ -297,7 +297,7 @@ export interface ChangeLogEntry {
   title: string | null;
   source: SignalSource | null;
   fields: FieldChange[];
-  /** For initial-load: how many records were loaded. */
+  /** For initial-load and backfill: how many records were loaded. */
   count: number | null;
   note: string | null;
 }
