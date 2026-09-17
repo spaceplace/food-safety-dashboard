@@ -134,5 +134,10 @@ dl.sources dd { margin: 4px 0 0; color: var(--ink-2); }
 .news-list .meta { color: var(--ink-3); font-size: 0.85rem; }
 .news-list .excerpt { margin: 2px 0 0; color: var(--ink-2); font-size: 0.95rem; }
 
+/* About page */
+.about { display: flex; gap: 28px; align-items: flex-start; margin-top: 16px; max-width: 78ch; }
+.about .headshot { flex: none; width: 220px; height: 220px; object-fit: cover; border-radius: 12px; border: 1px solid var(--border); }
+@media (max-width: 640px) { .about { flex-direction: column; } .about .headshot { width: 160px; height: 160px; } }
+
 footer.site { border-top: 1px solid var(--border); padding: 20px 0 32px; color: var(--ink-3); font-size: 0.875rem; }
 footer.site a { color: inherit; }

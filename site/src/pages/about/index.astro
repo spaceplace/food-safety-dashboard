@@ -1,0 +1,28 @@
+---
+// About the creator. The headshot is optional: drop a file named alex-black.jpg
+// into site/public/ and it appears; until then the page renders without it.
+import { existsSync } from "node:fs";
+import Base from "../../layouts/Base.astro";
+import { href } from "../../lib/data";
+import { REPO_URL } from "../../lib/constants";
+
+const headshot = existsSync(new URL("../../../public/alex-black.jpg", import.meta.url)) ? href("/alex-black.jpg") : null;
+---
+<Base title="About the creator" description="Who makes Food Safety Brief: Alex Black, a food safety professional based in Chicago.">
+  <h1>About the creator</h1>
+
+  <div class="about">
+    {headshot && <img class="headshot" src={headshot} alt="Alex Black" width="220" height="220" loading="lazy" />}
+    <div>
+      <p>Alex Black is a food safety professional based in Chicago, with experience at the intersection of food microbiology, laboratory testing, and the day-to-day challenges faced by food manufacturers.</p>
+
+      <p>In his current role as a Technical Sales Manager with Matrix Sciences, Alex works closely with food safety and quality teams across the Midwest, helping manufacturers navigate microbial testing, environmental monitoring, laboratory investigations, and other technical food safety needs.</p>
+
+      <p>He created Food Safety Brief as a personal project to stay engaged with developments across the industry and make important food safety topics easier to follow and understand. His interests include food microbiology, root-cause investigation, emerging risks, and the ways strong quality systems can turn technical information into better decisions.</p>
+
+      <p>He is also interested in what open public data and AI tools can do for food safety when they are used carefully. Food Safety Brief is an experiment in both: every number on the site comes from CDC, FDA, and USDA data that anyone can check, the code is <a href={REPO_URL}>open source</a>, and the weekly news summary is written by an AI model under rules that require a source for every sentence. How that works, and what it does not do, is spelled out on the <a href={href("/methods/")}>Data and methods</a> page.</p>
+
+      <p class="small muted">Food Safety Brief is an independent personal project. The views here are Alex's own and do not represent Matrix Sciences or any other employer or organization.</p>
+    </div>
+  </div>
+</Base>
