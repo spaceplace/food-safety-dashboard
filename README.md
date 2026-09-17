@@ -15,7 +15,7 @@ An always-current public view of the state of food safety in the US, built from 
 | `fixtures/` | Saved copies of the real CDC, FDA, and USDA responses, used by the tests. |
 | `tests/` | One test file per parser. They run against the fixtures, so they work offline and catch layout changes when we refresh a fixture. |
 | `site/` | The website, built with [Astro](https://astro.build). It reads `data/*.json` at build time and produces plain HTML. |
-| `.github/workflows/` | GitHub Actions: the 6-hourly fetch-and-deploy job, the weekly summary job, the daily live check, and the fetch-strategy probe. |
+| `.github/workflows/` | GitHub Actions: the 6-hourly fetch-and-deploy job, the daily summary job, the daily live check, and the fetch-strategy probe. |
 | `PLAN.md` | The build plan, schemas, and what we learned about each source. |
 
 ## Data sources
@@ -27,7 +27,7 @@ An always-current public view of the state of food safety in the US, built from 
 | FDA food recalls | openFDA enforcement API, grouped one row per recall event. Dietary supplements are excluded; pet food is included and labeled. | Every 6 hours (openFDA itself updates weekly) |
 | USDA FSIS recalls | FSIS recall API (full JSON), with the FSIS RSS feed as an automatic fallback. | Every 6 hours |
 | News | Five RSS feeds: Food Safety News, FDA recalls, FDA outbreaks, FDA press releases (food topics only), Google News search. Title, link, date, and excerpt only. | Every 6 hours |
-| Weekly AI summary | Claude Haiku 4.5 writes a short brief from the last 7 days of items above. Every sentence must cite a numbered source or the draft is rejected. | Weekly |
+| Daily AI summary | Claude Haiku 4.5 writes a short brief from the last 7 days of items above. Every sentence must cite a numbered source or the draft is rejected. | Every morning at 7:30 AM US Eastern |
 
 Note: CDC and FSIS sit behind bot protection that returns HTTP 403 to anything that does not look like a real browser. From GitHub's servers only a request carrying the full set of Chrome browser headers gets through (tested with `fetch/experiments/probe.mjs`, which you can rerun any time from the "Probe fetch strategies" workflow on GitHub). All fetching goes through `fetch/lib/http.ts`, which sends those headers.
 
@@ -51,7 +51,7 @@ Run the tests (offline, uses the saved fixtures):
 npm test
 ```
 
-Generate the weekly AI summary (needs an Anthropic API key, see below; costs about one cent per run; reuses a summary younger than 6 days unless you add `-- --force`):
+Generate the daily AI summary (needs an Anthropic API key, see below; costs about one cent per run; reuses a summary younger than a day unless you add `-- --force`):
 
 ```bash
 npm run summarize
@@ -97,8 +97,8 @@ Everything automatic happens in GitHub Actions (the "Actions" tab of the reposit
 
 | Job | When | What it does |
 |---|---|---|
-| Fetch data and deploy site | Every 6 hours, and after every code change | Runs the tests, fetches every source, refreshes the summary only if it is over 6 days old, commits changed data files, builds the site, publishes it to GitHub Pages. |
-| Weekly news summary | Mondays, early morning US time | Forces a fresh AI summary, commits it, then starts the job above to publish it. |
+| Fetch data and deploy site | Every 6 hours, and after every code change | Runs the tests, fetches every source, regenerates the summary only if it is over a day old (a backstop in case the morning job failed), commits changed data files, builds the site, publishes it to GitHub Pages. |
+| Daily news summary | Every morning at 7:30 AM US Eastern (adjusts for daylight saving time) | Forces a fresh AI summary, commits it, then starts the job above to publish it. |
 | Live source check | Daily | Runs the parsers against the real CDC, FDA, and USDA sites and fails loudly if a site changed shape. GitHub emails you when a scheduled job fails. |
 | Probe fetch strategies | By hand only | Diagnostic for when CDC or USDA start returning "403 Forbidden" to GitHub's servers. |
 

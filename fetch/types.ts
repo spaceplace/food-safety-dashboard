@@ -150,7 +150,7 @@ export interface NewsItem {
 
 export type NewsFile = DataFile<NewsItem>;
 
-// ---------- Weekly AI summary ----------
+// ---------- Daily AI summary ----------
 
 export interface SummarySource {
   n: number;

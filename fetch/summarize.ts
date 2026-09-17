@@ -1,8 +1,9 @@
-// Weekly "this week in food safety" summary, written by Claude from the last 7 days of
-// news items, agency notices, outbreak updates, and recalls. Runs inside the scheduled job,
+// Daily "this week in food safety" summary, written by Claude from the last 7 days of
+// news items, agency notices, outbreak updates, and recalls. Regenerated every morning by the
+// scheduled job (the 6-hourly job only regenerates it if that morning run was missed),
 // never per visitor. Every sentence must cite a numbered source or the summary is rejected.
 //
-// Usage: npm run summarize            (reuses a summary younger than 6 days)
+// Usage: npm run summarize            (reuses a summary younger than 1 day)
 //        npm run summarize -- --force (always regenerate)
 // Needs ANTHROPIC_API_KEY in the environment or in a local .env file (never committed).
 
@@ -18,7 +19,7 @@ import type { NewsFile, Outbreak, OutbreaksFile, Recall, RecallsFile, SummaryFil
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA_DIR = path.join(ROOT, "data");
 export const SUMMARY_MODEL = "claude-haiku-4-5";
-const MAX_AGE_DAYS = 6;
+const MAX_AGE_DAYS = 1;
 
 const log = (msg: string) => console.log(`[${new Date().toISOString().slice(11, 19)}] ${msg}`);
 

@@ -1,0 +1,71 @@
+# Every morning at 7:30 AM US Eastern, force a fresh AI summary, then hand off to the normal
+# fetch-and-deploy job so the new summary is published. Can also be started by hand.
+#
+# GitHub schedules run in UTC and cannot follow daylight saving time, so this runs at both
+# 11:30 and 12:30 UTC and the "clock" job lets only the one that lands in the 7 AM Eastern hour
+# continue (11:30 UTC in summer, 12:30 UTC in winter).
+name: Daily news summary
+
+on:
+  schedule:
+    - cron: "30 11 * * *" # 7:30 AM Eastern Daylight Time (March to November)
+    - cron: "30 12 * * *" # 7:30 AM Eastern Standard Time (November to March)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: fetch-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  clock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - id: check
+        run: |
+          now=$(TZ=America/New_York date +%H:%M)
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "${now%%:*}" = "07" ]; then
+            echo "It is $now US Eastern; running."
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "It is $now US Eastern, not the 7 AM hour; this is the other season's schedule, skipping."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  summarize:
+    needs: clock
+    if: needs.clock.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - name: Fetch fresh inputs
+        run: npm run fetch
+      - name: Generate the summary
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run summarize -- --force
+      - name: Commit data
+        run: |
+          git config user.name "food-safety-dashboard-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "No changes."; else
+            git commit -m "data: daily summary $(date -u +'%Y-%m-%d')"
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
+          fi
+      - name: Publish (start the fetch-and-deploy job)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run fetch-and-deploy.yml --ref main

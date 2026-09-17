@@ -1,5 +1,6 @@
-# The main scheduled job. Every 6 hours: fetch all sources, refresh the weekly summary if it is
-# older than 6 days, commit any changed data files, build the site, and publish it to GitHub Pages.
+# The main scheduled job. Every 6 hours: fetch all sources, regenerate the news summary only if the
+# daily 7:30 AM job missed it (the summary is over a day old), commit any changed data files, build the
+# site, and publish it to GitHub Pages.
 # Also runs on every push to main (so code changes go live) and can be started by hand.
 name: Fetch data and deploy site
 
@@ -13,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       force_summary:
-        description: "Regenerate the weekly summary even if it is fresh"
+        description: "Regenerate the news summary even if it is fresh"
         type: boolean
         default: false
 
@@ -42,7 +43,7 @@ jobs:
       - name: Fetch all sources
         run: npm run fetch
 
-      - name: Refresh the weekly summary (only calls the API if the current one is over 6 days old)
+      - name: Refresh the news summary (a backstop that only calls the API if the current one is over a day old)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |

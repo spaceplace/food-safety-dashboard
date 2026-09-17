@@ -1,5 +1,5 @@
 ---
-// The AI-written weekly brief. Every sentence carries a numbered citation that links to
+// The AI-written daily brief covering the last 7 days. Every sentence carries a numbered citation that links to
 // the source list below it. Shows honest status when the summary is missing or stale.
 import { formatDate, formatDateTime, href, renderCitations, summaryFile } from "../lib/data";
 interface Props { compact?: boolean }
@@ -8,7 +8,7 @@ const s = summaryFile;
 const has = s.paragraphs.length > 0;
 ---
 {!has ? (
-  <p class="muted">The weekly summary is not available yet.{!compact && s.note ? ` (${s.note})` : ""} {compact ? <a href={href("/news/")}>See this week's news items.</a> : "The news items below are still current."}</p>
+  <p class="muted">The news summary is not available yet.{!compact && s.note ? ` (${s.note})` : ""} {compact ? <a href={href("/news/")}>See this week's news items.</a> : "The news items below are still current."}</p>
 ) : (
   <div class="summary">
     <p class="asof">

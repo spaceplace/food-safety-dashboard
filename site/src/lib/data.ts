@@ -99,7 +99,7 @@ export function splitFoodGroups(groups: FoodGroup[], maxCards = 12): { cards: Fo
   return { cards, rest };
 }
 
-// ---------- News and the weekly summary ----------
+// ---------- News and the daily summary ----------
 
 export const recentNews = (days: number): NewsItem[] =>
   newsFile.items.filter((i) => i.publishedAt >= new Date(Date.now() - days * DAY).toISOString());
@@ -145,9 +145,9 @@ export function dataWarnings(): Warning[] {
   }
   const age = summaryAgeDays();
   if (summaryFile.status === "failed" && summaryFile.note) {
-    out.push({ level: "info", text: `The weekly news summary could not be regenerated (${summaryFile.note}).${summaryFile.paragraphs.length ? " Showing the previous one." : ""}` });
-  } else if (age !== null && age > 10) {
-    out.push({ level: "info", text: `The weekly news summary is ${Math.floor(age)} days old.` });
+    out.push({ level: "info", text: `The news summary could not be regenerated (${summaryFile.note}).${summaryFile.paragraphs.length ? " Showing the previous one." : ""}` });
+  } else if (age !== null && age > 2) {
+    out.push({ level: "info", text: `The news summary is ${Math.floor(age)} days old. It is normally rewritten every morning, so the scheduled update may have failed.` });
   }
   if (unknownStatusOutbreaks.length > 0) {
     out.push({ level: "info", text: `${unknownStatusOutbreaks.length} CDC outbreak notice(s) could not be classified as open or closed and are left out of the open outbreaks list.` });
