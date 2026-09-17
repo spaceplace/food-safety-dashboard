@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-17T22:53:48.310Z",
+  "generatedAt": "2026-09-17T23:00:29.989Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-17T22:53:48.390Z",
+      "fetchedAt": "2026-09-17T23:00:30.059Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-17T22:54:16.056Z",
+      "fetchedAt": "2026-09-17T23:00:56.682Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-09",
@@ -24,10 +24,10 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-17T22:54:21.437Z",
+      "fetchedAt": "2026-09-17T23:01:01.809Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-09-17",
+      "upstreamUpdated": "2026-09-10",
       "itemCount": 494
     }
   },
@@ -962,16 +962,12 @@
       "geography": {
         "scope": "multi-state",
         "states": [
-          "CT",
-          "IL",
-          "MA",
           "NJ",
-          "NY",
           "UT"
         ],
-        "stateCount": 6,
+        "stateCount": 2,
         "international": false,
-        "description": "NJ, UT, MA, NY, CT, IL"
+        "description": "NJ, UT"
       },
       "rootCause": {
         "category": "import-or-inspection-violation",
@@ -994,7 +990,7 @@
       "dates": {
         "event": "2026-09-09",
         "reported": "2026-09-09",
-        "updated": "2026-09-17",
+        "updated": "2026-09-09",
         "closed": null
       },
       "outbreak": null,
@@ -1010,8 +1006,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T22:53:48.310Z",
-        "revisions": 1,
+        "lastChanged": "2026-09-17T23:00:29.989Z",
+        "revisions": 2,
         "backfilled": true
       }
     },
