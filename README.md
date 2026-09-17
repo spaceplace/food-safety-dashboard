@@ -4,13 +4,14 @@ An always-current public view of the state of food safety in the US, built from 
 
 **Live site: https://foodsafetybrief.org**
 
-**Status: Phases 1 to 4 complete. The site is deployed and refreshes itself every 6 hours.**
+**Status: Phases 1 to 5 complete. The site is deployed and refreshes itself every 6 hours. Phase 5 added the Signal Explorer.**
 
 ## What is here
 
 | Folder | What it is |
 |---|---|
 | `fetch/` | The scheduled job. `run.ts` calls every source and writes `data/*.json`. One file per source lives in `fetch/sources/`. |
+| `fetch/signals/` | The Signal Explorer's classifier: `taxonomy.ts` (the fixed categories and their definitions, plus the rules version history), `classify.ts` (the keyword rules), `build.ts` (turns outbreaks and recalls into signal records and diffs them against the previous build to write the change log). |
 | `data/` | The JSON the website reads. Committed to the repo so its history is an audit trail of every number the agencies published. |
 | `fixtures/` | Saved copies of the real CDC, FDA, and USDA responses, used by the tests. |
 | `tests/` | One test file per parser. They run against the fixtures, so they work offline and catch layout changes when we refresh a fixture. |
@@ -28,6 +29,7 @@ An always-current public view of the state of food safety in the US, built from 
 | USDA FSIS recalls | FSIS recall API (full JSON), with the FSIS RSS feed as an automatic fallback. | Every 6 hours |
 | News | Five RSS feeds: Food Safety News, FDA recalls, FDA outbreaks, FDA press releases (food topics only), Google News search. Title, link, date, and excerpt only. | Every 6 hours |
 | Daily AI summary | Claude Haiku 4.5 writes a short brief from the last 7 days of items above. Every sentence must cite a numbered source or the draft is rejected. | Every morning at 7:30 AM US Eastern |
+| Signal Explorer dataset | Built from the three feeds above, but over a rolling three years (FDA and FSIS recalls, FSIS public health alerts, CDC notices). Each record is classified by hazard type, organism or allergen, product category, geography, root cause, detection, corrective action, and status; fields the agency did not give are marked "not stated", and fields our rules assigned are marked "inferred". Every build is compared with the previous one and the differences go to `data/signals-changelog.json`. | Every 6 hours |
 
 Note: CDC and FSIS sit behind bot protection that returns HTTP 403 to anything that does not look like a real browser. From GitHub's servers only a request carrying the full set of Chrome browser headers gets through (tested with `fetch/experiments/probe.mjs`, which you can rerun any time from the "Probe fetch strategies" workflow on GitHub). All fetching goes through `fetch/lib/http.ts`, which sends those headers.
 
@@ -39,7 +41,7 @@ You need [Node.js](https://nodejs.org) version 22 or newer. Then, in a terminal,
 npm install
 ```
 
-Fetch fresh data from all sources (takes about 15 seconds, writes `data/outbreaks.json`, `data/recalls.json`, `data/status.json`):
+Fetch fresh data from all sources (takes about 30 seconds, writes `data/outbreaks.json`, `data/recalls.json`, `data/news.json`, `data/signals.json`, `data/signals-changelog.json`, `data/status.json`):
 
 ```bash
 npm run fetch
@@ -87,9 +89,15 @@ That file is listed in `.gitignore`, so it is never uploaded to GitHub. On GitHu
 
 If the key is missing, the job still runs; it just leaves the previous summary in place and records "skipped" in `data/summary.json`.
 
+## The Signal Explorer
+
+The page at `/signals/` is a client-side explorer over `site/dist/signals/data.json`, a compact copy of `data/signals.json` that the build writes. Filters, key figures, the monthly trend chart, breakdowns, and the table all update in the browser; the URL carries the filter state so a view can be shared, and any view can be downloaded as CSV. Every record also has its own static page at `/signals/<slug>/`, and `/signals/methodology/` and `/signals/changelog/` are generated from the same code and data.
+
+To change how records are classified, edit `fetch/signals/classify.ts` (rules) or `fetch/signals/taxonomy.ts` (category names and definitions), then bump `RULES_VERSION` and add a line to `RULES_HISTORY` in `taxonomy.ts`. On the next fetch every record is reclassified, records whose labels moved get a change log entry naming the rule change, and the methodology page shows the new version. Add a test in `tests/signals.test.ts` for any new rule.
+
 ## When a source fails
 
-Each source is fetched independently. If one fails, its previous items are kept, and `data/status.json` records `ok: false` with the error and the time of the last good fetch. The website shows that as a warning banner and marks the affected section "last refresh failed; showing previous data" rather than showing nothing or a made-up value.
+Each source is fetched independently. If one fails, its previous items are kept, and `data/status.json` records `ok: false` with the error and the time of the last good fetch. The website shows that as a warning banner and marks the affected section "last refresh failed; showing previous data" rather than showing nothing or a made-up value. The signals dataset keeps that source's previous records unchanged and writes no "removed" entries for it.
 
 ## How it runs on its own
 

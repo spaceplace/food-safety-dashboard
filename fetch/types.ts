@@ -120,10 +120,192 @@ export interface Recall {
   recallDate: string | null;
   /** Date the agency posted it (FDA report_date; same as recallDate for FSIS). */
   reportDate: string | null;
+  /** Who started the recall, as the agency words it (FDA "Voluntary: Firm initiated" / "FDA Mandated"). FSIS recalls are voluntary; null there. */
+  initiatedBy: string | null;
+  /** How the firm first told its customers (FDA initial_firm_notification: "Press Release", "E-Mail", ...). Null for FSIS. */
+  notificationMethod: string | null;
+  /** FSIS press-release text, HTML stripped and truncated; it says how the problem was found. Null for FDA. */
+  summary: string | null;
+  /** FDA termination_date. FSIS gives only a closed year, kept in closedYear. */
+  closedDate: string | null;
+  closedYear: string | null;
+  /** When the agency last touched the record (FSIS last modified date, FDA center classification date). */
+  agencyUpdatedAt: string | null;
+  /** FSIS processing category ("Fully Cooked - Not Shelf Stable"). Null for FDA. */
+  processing: string[] | null;
+  /** Recalling firm's city and state when given. */
+  firmLocation: string | null;
   fetchedAt: string;
 }
 
 export type RecallsFile = DataFile<Recall>;
+
+// ---------- Signals (the Signal Explorer dataset) ----------
+// One record per recall, public health alert, or outbreak notice, classified with a fixed
+// set of categories. Built from the outbreak and recall items above by fetch/signals/build.ts.
+// Every derived label carries the agency's own wording next to it and a note of whether it
+// was stated by the agency, coded by the agency, or inferred by our rules.
+
+export type SignalKind = "recall" | "public-health-alert" | "outbreak";
+export type SignalSource = "CDC" | "FDA" | "FSIS";
+
+export type HazardType = "biological" | "allergen" | "physical" | "chemical" | "labeling-regulatory" | "other" | "undetermined";
+export type AgentGroup = "organism" | "allergen" | "physical" | "chemical";
+export interface SignalAgent {
+  name: string;
+  group: AgentGroup;
+}
+
+export type ProductCategory =
+  | "produce"
+  | "meat"
+  | "poultry"
+  | "seafood"
+  | "dairy"
+  | "eggs"
+  | "nuts-and-seeds"
+  | "grains-and-bakery"
+  | "snacks-and-confectionery"
+  | "prepared-foods"
+  | "condiments-and-spices"
+  | "beverages"
+  | "infant-and-baby"
+  | "pet-food"
+  | "other";
+
+export type GeoScope = "nationwide" | "multi-state" | "single-state" | "international" | "unspecified";
+
+export type RootCause =
+  | "labeling-or-packaging-error"
+  | "supplier-ingredient"
+  | "process-deviation"
+  | "equipment-failure"
+  | "sanitation-or-facility"
+  | "import-or-inspection-violation"
+  | "not-stated";
+
+/** How a classification was arrived at. "agency-coded" = the agency supplies a coded value; "inferred" = our keyword rules on free text. */
+export type Basis = "agency-coded" | "inferred" | "not-stated";
+
+export type Detection =
+  | "consumer-complaint"
+  | "illness-report-or-outbreak"
+  | "firm-self-reported"
+  | "other-agency-or-partner"
+  | "agency-sampling-or-inspection"
+  | "not-stated";
+
+export type CorrectiveAction =
+  | "voluntary-recall"
+  | "mandated-recall"
+  | "public-health-alert"
+  | "investigation-with-recall"
+  | "investigation-without-recall"
+  | "investigation"
+  | "unknown";
+
+export type NormalizedStatus = "open" | "closed" | "unknown";
+
+export interface Signal {
+  /** Same id as the outbreak or recall it was built from ("fda:99646", "fsis:021-2026", "cdc:..."). */
+  id: string;
+  /** URL-safe form of the id, used for the record's page. */
+  slug: string;
+  kind: SignalKind;
+  source: SignalSource;
+  /** The agency's own identifier: openFDA event id, FSIS recall number, or CDC notice path. */
+  sourceId: string;
+  title: string;
+  url: string;
+  sourceRecordUrl: string | null;
+  firm: string | null;
+  product: string;
+  productCategory: ProductCategory;
+  foodKeys: string[];
+  hazardType: HazardType;
+  agents: SignalAgent[];
+  classification: "Class I" | "Class II" | "Class III" | null;
+  geography: {
+    scope: GeoScope;
+    states: string[];
+    stateCount: number | null;
+    international: boolean;
+    /** The agency's own distribution wording, when it gives one. */
+    description: string | null;
+  };
+  rootCause: { category: RootCause; basis: Basis; detail: string | null };
+  detection: { category: Detection; basis: Basis; detail: string | null };
+  correctiveAction: { category: CorrectiveAction; detail: string | null };
+  status: { normalized: NormalizedStatus; agency: string };
+  dates: {
+    /** When the event began: recall initiation date, or the date CDC posted the outbreak notice. */
+    event: string | null;
+    /** When the agency published it. */
+    reported: string | null;
+    /** When the agency last updated it, if it says. */
+    updated: string | null;
+    closed: string | null;
+  };
+  outbreak: {
+    pathogen: string;
+    cases: number | null;
+    hospitalizations: number | null;
+    deaths: number | null;
+    illnessOnsetFrom: string | null;
+    illnessOnsetTo: string | null;
+  } | null;
+  relatedToOutbreak: boolean | null;
+  /** The agency's own reason wording, unchanged. */
+  reasonText: string | null;
+  /** Fields the source did not provide. */
+  missing: string[];
+  /** Fields whose value was assigned by our rules rather than stated by the agency. */
+  inferred: string[];
+  rulesVersion: string;
+  record: {
+    /** First time our job saw this record. On the initial load this is the load time, and backfilled is true. */
+    firstSeen: string;
+    lastChanged: string;
+    /** How many times a tracked field has changed since first seen. */
+    revisions: number;
+    backfilled: boolean;
+  };
+}
+
+export interface SignalsFile {
+  generatedAt: string;
+  rulesVersion: string;
+  /** Records reported before this date are not kept. */
+  windowStart: string;
+  sources: Record<string, SourceStatus>;
+  items: Signal[];
+}
+
+export type ChangeKind = "initial-load" | "added" | "updated" | "closed" | "reopened" | "removed";
+
+export interface FieldChange {
+  field: string;
+  from: string | null;
+  to: string | null;
+}
+
+export interface ChangeLogEntry {
+  at: string;
+  change: ChangeKind;
+  id: string | null;
+  slug: string | null;
+  title: string | null;
+  source: SignalSource | null;
+  fields: FieldChange[];
+  /** For initial-load: how many records were loaded. */
+  count: number | null;
+  note: string | null;
+}
+
+export interface ChangeLogFile {
+  generatedAt: string;
+  entries: ChangeLogEntry[];
+}
 
 export interface StatusFile {
   generatedAt: string;

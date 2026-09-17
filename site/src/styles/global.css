@@ -141,3 +141,71 @@ dl.sources dd { margin: 4px 0 0; color: var(--ink-2); }
 
 footer.site { border-top: 1px solid var(--border); padding: 20px 0 32px; color: var(--ink-3); font-size: 0.875rem; }
 footer.site a { color: inherit; }
+
+/* ---------- Signal Explorer ---------- */
+/* Chart series colors: a fixed categorical order, validated for color-vision deficiency on both surfaces. */
+:root {
+  --viz-1: #2a78d6; --viz-2: #eb6834; --viz-3: #1baf7a; --viz-4: #eda100;
+  --viz-5: #e87ba4; --viz-6: #008300; --viz-7: #4a3aa7; --viz-8: #e34948;
+  --viz-grid: #e1e0d9; --viz-axis: #c3c2b7; --viz-muted: #898781;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --viz-1: #3987e5; --viz-2: #d95926; --viz-3: #199e70; --viz-4: #c98500;
+    --viz-5: #d55181; --viz-6: #008300; --viz-7: #9085e9; --viz-8: #e66767;
+    --viz-grid: #2c2c2a; --viz-axis: #383835; --viz-muted: #898781;
+  }
+}
+.explorer-filters { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px 12px; margin: 12px 0; align-items: end; }
+.explorer-filters label { display: flex; flex-direction: column; gap: 3px; font-size: 0.85rem; color: var(--ink-2); }
+.explorer-filters select, .explorer-filters input { font: inherit; padding: 5px 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--ink); min-width: 0; }
+.explorer-filters .span2 { grid-column: span 2; }
+.explorer-toolbar { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 8px 0 4px; font-size: 0.9rem; }
+.explorer-toolbar button, .btn { font: inherit; font-size: 0.875rem; padding: 5px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--ink); cursor: pointer; }
+.explorer-toolbar button:hover, .btn:hover { border-color: var(--ink-3); }
+.chart { position: relative; margin: 8px 0; }
+.chart svg { width: 100%; height: auto; display: block; font-family: inherit; }
+.chart .axis text { fill: var(--viz-muted); font-size: 11px; }
+.chart .grid line { stroke: var(--viz-grid); stroke-width: 1; }
+.chart .baseline { stroke: var(--viz-axis); stroke-width: 1; }
+.chart rect.seg { stroke: var(--bg); stroke-width: 2; }
+.chart rect.hit { fill: transparent; cursor: default; }
+.chart rect.hit:hover { fill: color-mix(in srgb, var(--ink) 6%, transparent); }
+.chart .rank-bar { fill: var(--viz-1); }
+.tooltip { position: absolute; pointer-events: none; background: var(--bg); color: var(--ink); border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 0.8rem; box-shadow: 0 2px 8px rgba(0,0,0,0.12); z-index: 5; max-width: 260px; display: none; }
+.tooltip.show { display: block; }
+.tooltip .tt-row { display: flex; justify-content: space-between; gap: 12px; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; list-style: none; padding: 0; margin: 4px 0; font-size: 0.85rem; color: var(--ink-2); }
+.legend .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.breakdowns { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 12px 0; }
+.breakdown { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+.breakdown h3 { margin: 0 0 8px; font-size: 0.95rem; }
+.bars { list-style: none; padding: 0; margin: 0; font-size: 0.85rem; }
+.bars li { display: grid; grid-template-columns: minmax(120px, 52%) 1fr auto; gap: 8px; align-items: center; padding: 2px 0; }
+.bars .name { color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bars .name a { color: inherit; text-decoration: none; }
+.bars .name a:hover { text-decoration: underline; }
+.bars .track { height: 10px; background: color-mix(in srgb, var(--border) 60%, transparent); border-radius: 4px; overflow: hidden; }
+.bars .fill { height: 100%; background: var(--viz-1); border-radius: 4px; }
+.bars .n { font-variant-numeric: tabular-nums; color: var(--ink); min-width: 2.5em; text-align: right; }
+.signal-table td { font-size: 0.9rem; }
+.signal-table .title a { font-weight: 500; }
+.signal-table .sub { color: var(--ink-3); font-size: 0.8rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { display: inline-block; border-radius: 999px; padding: 0 8px; font-size: 0.75rem; background: var(--surface); border: 1px solid var(--border); color: var(--ink-2); white-space: nowrap; }
+.chip.hz-biological { border-color: var(--viz-1); } .chip.hz-allergen { border-color: var(--viz-2); } .chip.hz-physical { border-color: var(--viz-3); }
+.chip.hz-chemical { border-color: var(--viz-4); } .chip.hz-labeling-regulatory { border-color: var(--viz-5); } .chip.hz-other { border-color: var(--viz-6); } .chip.hz-undetermined { border-color: var(--viz-7); }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin: 12px 0; }
+.fact { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; }
+.fact .k { font-size: 0.8rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.03em; }
+.fact .v { font-weight: 600; margin-top: 2px; }
+.fact .basis { font-size: 0.8rem; color: var(--ink-3); margin-top: 2px; }
+.fact .detail { font-size: 0.85rem; color: var(--ink-2); margin-top: 4px; }
+.quote { border-left: 3px solid var(--border); padding: 4px 12px; margin: 8px 0; color: var(--ink-2); }
+.history li { margin: 6px 0; }
+.history .when { color: var(--ink-3); font-size: 0.85rem; }
+.history .changes { font-size: 0.875rem; color: var(--ink-2); }
+.changelog-kinds { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 0.9rem; margin: 8px 0; }
+.taxonomy td:first-child { white-space: nowrap; font-weight: 600; }
+.quality td.num { font-variant-numeric: tabular-nums; }
+@media (max-width: 720px) { .explorer-filters .span2 { grid-column: span 1; } }

@@ -171,3 +171,20 @@ Headline numbers = sum of `cases`, `hospitalizations`, `deaths` over items with 
 - **Phase 3 (news + AI summary).** News fetchers (FSN, FDA feeds, Google News), the weekly Claude summary with enforced citations, summary section on the home page. *Stop for review.*
 - **Phase 4 (deploy + schedule).** GitHub repo, Pages, the two workflows, secrets, README. *Stop for review.*
 - **Phase 5 (nice-to-haves)** in this order: 12-month trend chart, pathogen breakdown, US map, "is [food] safe right now" search (client-side over the same JSON), RSS feed for new outbreaks, then email signup (this one needs an outside service, decide later).
+
+
+## 6. Phase 5: Signal Explorer (built 2026-09-17)
+
+Turns the recall and outbreak feeds into one classified dataset with filters, trends, per-record pages, a methodology page, and a change log. The earlier "Phase 5 nice-to-haves" list (trend chart, pathogen breakdown, US map, food search, RSS, email signup) becomes Phase 6; the explorer already covers the trend chart, the pathogen breakdown, and a food search.
+
+**Data.** `fetch/run.ts` now fetches three years from openFDA and FSIS and three calendar years of CDC notices in one pass; `recalls.json` and `outbreaks.json` are filtered from that to their previous windows (FDA 120 days, FSIS 12 months, CDC current and previous year), so those pages did not change. The wide set feeds `fetch/signals/build.ts`, which writes `data/signals.json` (about 1,700 records) and `data/signals-changelog.json`.
+
+**Record schema.** See `Signal` in `fetch/types.ts`. Each record has: source and agency id; title, firm, product; hazard type; agents (organism, allergen, material, or chemical, each with a group); product category; class; geography (scope, states, international flag, agency wording); root cause, detection, and corrective action, each with a `basis` of agency-coded, inferred, or not-stated and the wording it was read from; normalized status with the agency's word; dates; outbreak figures; `missing` and `inferred` field lists; rules version; and record history (first seen, last changed, revisions, backfilled).
+
+**Classification.** Pure keyword rules in `fetch/signals/classify.ts`, vocabularies and definitions in `fetch/signals/taxonomy.ts` (the methodology page renders from it, so docs and code cannot drift). Root cause is deliberately conservative: a pathogen finding or an undeclared allergen alone is "not stated" unless the text explains why. Current data quality: about 4% of records have an undetermined hazard, 7% an unclassified product, 8% an unspecified geography; root cause is not stated for 85% and detection for 84% (FDA enforcement reports never say).
+
+**Change log.** Each build diffs every record against the previous build on 20 tracked fields and writes added / updated / closed / reopened / removed entries with old and new values; the first build wrote one "initial load" entry and marked all records backfilled. Entries are kept 400 days; git history keeps the rest. A source that failed keeps its previous records and produces no "removed" entries.
+
+**Site.** `/signals/` (explorer: filters in the URL, key figures, 36-month stacked chart by hazard type with tooltip, legend and table view, eight breakdowns with click-to-filter, paged table, CSV download), `/signals/<slug>/` (one static page per record, 1,677 pages, build time about 2 s), `/signals/methodology/`, `/signals/changelog/`, and `/signals/data.json` (1 MB compact dataset, gzipped by GitHub Pages). Chart colors are a fixed categorical order validated for color-vision deficiency on both the light and dark surfaces.
+
+**Tests.** `tests/signals.test.ts`: every classifier, the mapping of real FSIS and FDA fixture records, and the build/diff logic (initial load, stable rerun, add/close/remove, carry-over on failure, window filtering).

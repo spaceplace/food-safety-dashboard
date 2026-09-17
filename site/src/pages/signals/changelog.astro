@@ -1,0 +1,63 @@
+---
+import Base from "../../layouts/Base.astro";
+import { formatDate, formatDateTime, formatNumber, href } from "../../lib/data";
+import { changelogFile, changeLabel, countBy, signalsFile } from "../../lib/signals";
+import { RULES_HISTORY } from "../../../../fetch/signals/taxonomy";
+import type { ChangeLogEntry } from "../../../../fetch/types";
+
+const entries = changelogFile.entries;
+const since30 = new Date(Date.now() - 30 * 86_400_000).toISOString();
+const recent = entries.filter((e) => e.at >= since30);
+const kinds30 = countBy(recent, (e) => e.change);
+const shown = entries.slice(0, 300);
+// Group by build time so one fetch reads as one block.
+const byBuild = new Map<string, ChangeLogEntry[]>();
+for (const e of shown) {
+  if (!byBuild.has(e.at)) byBuild.set(e.at, []);
+  byBuild.get(e.at)!.push(e);
+}
+const kindClass: Record<ChangeLogEntry["change"], string> = { added: "over", updated: "plain", closed: "unknown", reopened: "open", removed: "open", "initial-load": "plain" };
+---
+<Base title="Signal Explorer change log" description="Every addition, update, closure, and removal in Food Safety Brief's signal dataset, with old and new values, plus the history of the classification rules.">
+  <p class="small"><a href={href("/signals/")}>Signal Explorer</a> › Change log</p>
+  <h1>Change log</h1>
+  <p class="lede">What changed in the signal dataset, build by build. Each entry names the record, the kind of change, and the old and new values of every tracked field. Generated automatically; see the <a href={href("/signals/methodology/")}>methodology</a> for how changes are detected.</p>
+  <p class="asof">Log updated {formatDateTime(changelogFile.generatedAt)}. Dataset rules version {signalsFile.rulesVersion}. {formatNumber(entries.length)} entries kept (400 days).</p>
+
+  <section aria-labelledby="h-30">
+    <h2 id="h-30">Last 30 days</h2>
+    {recent.length === 0 ? <p>No changes logged in the last 30 days.</p> : (
+      <div class="changelog-kinds">
+        {kinds30.map(([k, n]) => <span><span class={`badge ${kindClass[k as ChangeLogEntry["change"]]}`}>{changeLabel[k as ChangeLogEntry["change"]]}</span> {formatNumber(n)}</span>)}
+      </div>
+    )}
+  </section>
+
+  <section aria-labelledby="h-rules">
+    <h2 id="h-rules">Classification rules history</h2>
+    <ul>
+      {RULES_HISTORY.map((r) => <li><strong>Version {r.version}</strong> ({formatDate(r.date)}): {r.summary}</li>)}
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-entries">
+    <h2 id="h-entries">Entries{entries.length > shown.length && ` (newest ${shown.length} of ${formatNumber(entries.length)})`}</h2>
+    {[...byBuild.entries()].map(([at, group]) => (
+      <>
+        <h3>{formatDateTime(at)} <span class="small muted">({group.length} change{group.length === 1 ? "" : "s"})</span></h3>
+        <ul class="history">
+          {group.map((e) => (
+            <li>
+              <span class={`badge ${kindClass[e.change]}`}>{changeLabel[e.change]}</span>{" "}
+              {e.slug ? <a href={href(`/signals/${e.slug}/`)}>{e.title}</a> : null}
+              {e.source && <span class="small muted"> · {e.source}</span>}
+              {e.count !== null && <span> {formatNumber(e.count)} records</span>}
+              {e.note && <div class="changes">{e.note}</div>}
+              {e.fields.length > 0 && <div class="changes">{e.fields.map((f) => <div>{f.field}: {f.from ?? "—"} → {f.to ?? "—"}</div>)}</div>}
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </section>
+</Base>

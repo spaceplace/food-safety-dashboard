@@ -135,5 +135,6 @@ const largestShare = largest && headline.illnesses > 0 ? Math.round(((largest.ca
     <AsOf source={sources["fda-openfda"]} label="FDA source" />
     <AsOf source={sources["fsis-recalls"]} label="USDA source" />
     <RecallTable recalls={shownRecalls} caption={`Newest ${shownRecalls.length} of ${recalls30.length} recalls posted in the last 30 days. FDA covers most foods; USDA FSIS covers meat, poultry, and egg products.`} />
+    <p class="small">Looking for patterns? The <a href={href("/signals/")}>Signal Explorer</a> classifies three years of recalls, alerts, and outbreak notices by hazard, product, geography, root cause, and status, with trends and a page for every record.</p>
   </section>
 </Base>

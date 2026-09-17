@@ -1,0 +1,162 @@
+---
+import Base from "../../layouts/Base.astro";
+import { REPO_URL } from "../../lib/constants";
+import { formatDate, formatDateTime, formatNumber, href } from "../../lib/data";
+import { signals, signalsFile, dataQuality, countBy } from "../../lib/signals";
+import {
+  CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, KINDS, PRODUCT_CATEGORIES, ROOT_CAUSES, RULES_HISTORY, RULES_VERSION, SOURCES, STATUSES, type Term,
+} from "../../../../fetch/signals/taxonomy";
+
+const quality = dataQuality(signals);
+const total = signals.length;
+const pct = (n: number) => (total ? `${Math.round((n / total) * 100)}%` : "—");
+const bySource = countBy(signals, (s) => s.source);
+const backfilled = signals.filter((s) => s.record.backfilled).length;
+const tables: Array<{ id: string; title: string; terms: Term<string>[]; note: string }> = [
+  { id: "hazard", title: "Hazard type", terms: HAZARD_TYPES, note: "Follows from the organism, allergen, material, or chemical named in the reason. Organisms take precedence, then allergens, foreign material, chemicals. Only when none is named do the regulatory and other rules apply." },
+  { id: "product", title: "Product category", terms: PRODUCT_CATEGORIES, note: "One category per record from the product description and title. Rules are ordered from most specific (infant, prepared foods) to most general (beverages); the first match wins. The finer food tags used elsewhere on the site are kept too." },
+  { id: "geo", title: "Geography", terms: GEO_SCOPES, note: "FSIS lists states explicitly. FDA gives free text (\"Nationwide\", \"CA, NV, and OR\", \"Distributed in WA only\"), which is read for state names and codes; in all-capitals text, two-letter codes are only trusted inside a list, so words like IN and OR are not mistaken for states. CDC per-state case counts give the states for outbreaks." },
+  { id: "cause", title: "Root cause", terms: ROOT_CAUSES, note: "FSIS codes each recall with a reason; the codes that describe a cause (Misbranding, Processing Defect, Insanitary Conditions, Import Violation, Produced Without Benefit of Inspection) are used directly and marked \"coded by the agency\". Otherwise keyword rules read the free text. A pathogen finding or an undeclared allergen on its own is a hazard, not a cause, so those records say \"not stated\" unless the text explains why it happened." },
+  { id: "detection", title: "How it was found", terms: DETECTIONS, note: "FSIS press releases usually contain a sentence beginning \"The problem was discovered when…\"; that sentence is read. FDA enforcement reports rarely say, and are marked \"not stated\". CDC notices are illness investigations by definition." },
+  { id: "action", title: "Corrective action", terms: CORRECTIVE_ACTIONS, note: "From coded fields: FDA's \"voluntary/mandated\" and \"initial firm notification\", FSIS's record type (recall or public health alert), and CDC's \"Recall issued\" line." },
+  { id: "status", title: "Status", terms: STATUSES, note: "The agency's own status word is kept next to the normalized value. FSIS gives only a closing year, not a date; that is recorded as a missing closed date." },
+];
+---
+<Base title="Signal Explorer methodology" description="How Food Safety Brief's Signal Explorer classifies, verifies, and updates every recall, alert, and outbreak record: sources, categories, rules, handling of missing data, the change log, and current data quality.">
+  <p class="small"><a href={href("/signals/")}>Signal Explorer</a> › Methodology</p>
+  <h1>How signal records are classified, verified, and updated</h1>
+  <p class="lede">The Signal Explorer turns public recall and outbreak notices into one dataset with fixed categories, so recurring risks can be counted and compared. This page is the full method. It is generated from the same code that classifies the records, so it cannot describe rules the site does not actually use.</p>
+
+  <section aria-labelledby="h-principles">
+    <h2 id="h-principles">Four principles</h2>
+    <dl class="sources">
+      <dt>Accuracy</dt>
+      <dd>Every number comes from an agency record, fetched by code that is tested against saved copies of the real responses and checked daily against the live sites. Nothing is estimated or filled in. A field the agency did not provide is shown as "not stated".</dd>
+      <dt>Consistency</dt>
+      <dd>Every record, from all three agencies, is classified with the same fixed vocabularies below, by the same rules, at the same time. When a rule changes, every record is reclassified and the change log shows what moved.</dd>
+      <dt>Traceability</dt>
+      <dd>Every record links to the agency's notice and keeps the agency's original wording next to each derived label, with a note saying whether the label was stated by the agency, coded by the agency, or inferred by our rules. Every version of the dataset is kept in the project's public history.</dd>
+      <dt>Useful reporting</dt>
+      <dd>The explorer answers practical questions: which hazards recur, in which products, from which sources, whether the rate is changing, and how often causes are actually known. Any filtered view can be shared as a link or downloaded as a CSV.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="h-scope">
+    <h2 id="h-scope">What is in the dataset</h2>
+    <p>Records reported since {formatDate(signalsFile.windowStart)} (a rolling three years), from:</p>
+    <dl class="sources">
+      {SOURCES.map((t) => <><dt>{t.label}</dt><dd>{t.description} Currently {formatNumber(bySource.find(([k]) => k === t.key)?.[1] ?? 0)} records.</dd></>)}
+    </dl>
+    <p>Record types: {KINDS.map((k, i) => <>{i > 0 && "; "}<strong>{k.label}</strong>: {k.description.toLowerCase()}</>)}.</p>
+    <p>Not included: dietary supplements (excluded from FDA records by product wording), drugs, cosmetics, and medical devices (never fetched), single-state outbreaks (CDC does not publish notices for them), and anything older than the window. Pet food is included and labeled. FDA records are grouped so that one recall event with many products is one record.</p>
+  </section>
+
+  <section aria-labelledby="h-record">
+    <h2 id="h-record">What a record contains</h2>
+    <div class="table-wrap">
+      <table class="taxonomy">
+        <thead><tr><th scope="col">Field</th><th scope="col">Meaning</th><th scope="col">Where it comes from</th></tr></thead>
+        <tbody>
+          <tr><td>Source and agency id</td><td>Which agency, and the agency's own identifier</td><td>openFDA event id, FSIS recall number, CDC notice path</td></tr>
+          <tr><td>Title, firm, product</td><td>What was affected and who recalled it</td><td>Agency fields; FDA titles are built from firm and first product</td></tr>
+          <tr><td>Hazard type</td><td>The kind of danger</td><td>Inferred from the reason wording (rules below)</td></tr>
+          <tr><td>Organism, allergen, or material</td><td>The specific agent(s) named</td><td>Inferred from the reason wording; CDC names the pathogen directly</td></tr>
+          <tr><td>Product category</td><td>One food category</td><td>Inferred from product wording</td></tr>
+          <tr><td>Class</td><td>FDA/FSIS risk class (I is most serious)</td><td>Agency field; outbreaks have no class</td></tr>
+          <tr><td>Geography</td><td>Distribution scope and named states</td><td>FSIS state list (stated); FDA free text (inferred); CDC per-state counts (stated)</td></tr>
+          <tr><td>Root cause</td><td>Why the problem happened</td><td>FSIS reason codes (coded) or free text (inferred); otherwise "not stated"</td></tr>
+          <tr><td>How it was found</td><td>What triggered the action</td><td>FSIS "problem was discovered" sentence (inferred); CDC (coded); FDA usually "not stated"</td></tr>
+          <tr><td>Corrective action</td><td>What was done</td><td>Agency coded fields</td></tr>
+          <tr><td>Status</td><td>Open, closed, or unknown, with the agency's word</td><td>Agency field, normalized</td></tr>
+          <tr><td>Dates</td><td>Event, reported, last agency update, closed</td><td>Agency fields; "not stated" when absent</td></tr>
+          <tr><td>Outbreak figures</td><td>Cases, hospitalizations, deaths, onset range</td><td>CDC notice (outbreaks only)</td></tr>
+          <tr><td>Missing and inferred</td><td>Lists of fields the source lacked, and fields our rules assigned</td><td>Computed for every record</td></tr>
+          <tr><td>Record history</td><td>First seen, last changed, revision count</td><td>Computed by comparing each build with the previous one</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-rules">
+    <h2 id="h-rules">The categories and rules (version {RULES_VERSION})</h2>
+    {tables.map((t) => (
+      <>
+        <h3 id={`h-${t.id}`}>{t.title}</h3>
+        <p class="small muted">{t.note}</p>
+        <div class="table-wrap">
+          <table class="taxonomy">
+            <thead><tr><th scope="col">Value</th><th scope="col">Definition</th></tr></thead>
+            <tbody>{t.terms.map((term) => <tr><td>{term.label}</td><td>{term.description}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </>
+    ))}
+    <p class="small muted">Organisms recognized: Listeria monocytogenes, Salmonella, E. coli (STEC), Hepatitis A, Norovirus, Clostridium botulinum, Cyclospora, Cronobacter, Campylobacter, Vibrio, Shigella, Staphylococcus, Bacillus cereus, Clostridium perfringens, mold or yeast, and "unspecified microbial" when the reason describes conditions for growth (underprocessing, temperature abuse) without naming one. Allergens: the nine US major allergens plus sulfites and mustard, recognized only when the reason is about declaration, so "raw milk tested positive for Salmonella" is not a milk-allergen record. Foreign materials: metal, plastic or rubber, glass, wood, bone or pit fragments, pests. Chemicals: lead, other heavy metals, pesticide residue, unapproved additives or colors, cleaning chemicals, mycotoxins, histamine, ethylene oxide, drug residues, radioactive contamination. The exact patterns are in <a href={`${REPO_URL}/blob/main/fetch/signals/classify.ts`} rel="noopener">classify.ts</a>.</p>
+  </section>
+
+  <section aria-labelledby="h-missing">
+    <h2 id="h-missing">Missing and inferred information</h2>
+    <ul>
+      <li><strong>Missing</strong> means the agency did not provide it. The record shows "not stated" and lists the field under "What is missing or inferred". It is never estimated, and a missing value never counts toward any figure (for example, a missing closed date does not make a record open).</li>
+      <li><strong>Inferred</strong> means our rules assigned the value from the agency's wording. Every inferred label is marked as such on the record, and the wording it was read from is shown beside it so a reader can check it.</li>
+      <li><strong>Undetermined / other / unspecified</strong> are real values, not gaps to hide: they mean the wording matched no rule. They are counted and shown in the explorer like any other value, so you can see how often the rules fall short.</li>
+      <li><strong>Updated</strong> information replaces the old value in the record, and the old value is written to the change log with the date. Agencies update recalls (status changes, terminations) and CDC updates outbreak counts; the record always shows the agency's latest.</li>
+    </ul>
+    <h3>Data quality right now</h3>
+    <p class="small muted">Of {formatNumber(total)} records built {formatDateTime(signalsFile.generatedAt)}. "Stated" includes values coded or written explicitly by the agency.</p>
+    <div class="table-wrap">
+      <table class="quality">
+        <thead><tr><th scope="col">Field</th><th scope="col" class="num">Stated by agency</th><th scope="col" class="num">Inferred by rules</th><th scope="col" class="num">Not stated / no match</th></tr></thead>
+        <tbody>
+          {quality.map((r) => (
+            <tr><td>{r.label}</td><td class="num">{formatNumber(r.stated)} ({pct(r.stated)})</td><td class="num">{formatNumber(r.inferred)} ({pct(r.inferred)})</td><td class="num">{formatNumber(r.missing)} ({pct(r.missing)})</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-verify">
+    <h2 id="h-verify">How records are verified</h2>
+    <ol>
+      <li><strong>Parser tests.</strong> Every fetcher and every classification rule has automated tests that run against saved copies of real agency responses before any deploy. A deploy is blocked if a test fails.</li>
+      <li><strong>Daily live check.</strong> Once a day the parsers run against the live CDC, FDA, and USDA sites without writing anything, and fail loudly if a site has changed shape.</li>
+      <li><strong>Source links on every record.</strong> Each record links to the agency notice and, for FDA, to the exact machine-readable record. The agency's own reason, status, and distribution wording are shown unchanged.</li>
+      <li><strong>Independent failure.</strong> If a source cannot be fetched, its previous records are kept unchanged, the site shows a warning, and no "removed" entries are written for that source.</li>
+      <li><strong>Public history.</strong> The dataset files are committed to the <a href={REPO_URL} rel="noopener">public repository</a> on every change, so any past state can be inspected.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-updates">
+    <h2 id="h-updates">How records are updated and logged</h2>
+    <p>The dataset is rebuilt every six hours from a fresh fetch. Each new build is compared with the previous one, record by record, on these fields: status, agency status, class, hazard type, agents, product category, root cause, detection, corrective action, geography, states, updated date, closed date, outbreak cases, hospitalizations, deaths, firm, product, reason, and rules version. The <a href={href("/signals/changelog/")}>change log</a> records:</p>
+    <ul>
+      <li><strong>Added</strong>: a record seen for the first time.</li>
+      <li><strong>Updated</strong>: a tracked field changed, with old and new values.</li>
+      <li><strong>Closed</strong> and <strong>Reopened</strong>: status changes, with the other field changes that came with them.</li>
+      <li><strong>Removed by source</strong>: a record inside the window that the agency no longer returns (rare; usually a withdrawn entry). Records that simply age out of the three-year window are not logged.</li>
+      <li><strong>Initial load</strong>: one entry for the first build. Records loaded then are marked "backfilled": their first-seen time is the load time, not the agency's posting date. {backfilled > 0 && `${formatNumber(backfilled)} of the current records are backfilled.`}</li>
+    </ul>
+    <p>Each record carries the version of the rules it was classified under. When the rules change, the version is bumped, every record is reclassified on the next build, and each record whose labels moved gets an "updated" entry that names the rule change. Log entries are kept for 400 days; older history remains in the repository.</p>
+    <h3>Rules history</h3>
+    <ul>
+      {RULES_HISTORY.map((r) => <li><strong>Version {r.version}</strong> ({formatDate(r.date)}): {r.summary}</li>)}
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-limits">
+    <h2 id="h-limits">Limitations to keep in mind</h2>
+    <ul>
+      <li>Counts reflect agency reporting, not the true rate of contamination. A change in how an agency reports can look like a trend.</li>
+      <li>FDA enforcement reports appear in openFDA days to weeks after a firm's announcement, so the most recent month is always incomplete and fills in later. openFDA itself updates weekly.</li>
+      <li>Keyword rules are approximate. The explorer shows how often they fall short (undetermined, other, unspecified), and every record can be checked against the original wording.</li>
+      <li>Root cause is rarely stated in public notices. The large "not stated" share is a fact about the notices, not a gap this site could fill responsibly.</li>
+      <li>A record with several products or several hazards is one record. The hazard breakdown counts a record under each agent it names.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-reuse">
+    <h2 id="h-reuse">Reusing the data</h2>
+    <p>The full dataset with every field is <a href={`${REPO_URL}/blob/main/data/signals.json`} rel="noopener">data/signals.json</a> in the repository, and the change log is <a href={`${REPO_URL}/blob/main/data/signals-changelog.json`} rel="noopener">data/signals-changelog.json</a>. The compact version the explorer loads is at <a href={href("/signals/data.json")}>signals/data.json</a>. Any filtered view in the explorer can be downloaded as CSV. All of it is derived from public US government data; please cite the agency notice for anything that matters.</p>
+  </section>
+</Base>

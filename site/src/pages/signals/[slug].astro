@@ -1,0 +1,158 @@
+---
+import Base from "../../layouts/Base.astro";
+import { formatDate, formatDateTime, formatNumber, href } from "../../lib/data";
+import { signals, historyFor, sameFirm, changeLabel, statusClass } from "../../lib/signals";
+import {
+  BASIS_LABEL, CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, KINDS, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, STATUSES, labelOf,
+} from "../../../../fetch/signals/taxonomy";
+import type { Signal } from "../../../../fetch/types";
+
+export function getStaticPaths() {
+  return signals.map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+const { s } = Astro.props as { s: Signal };
+const history = historyFor(s.id);
+const related = sameFirm(s).slice(0, 6);
+const groupLabel: Record<string, string> = { organism: "Organism", allergen: "Allergen", physical: "Foreign material", chemical: "Chemical" };
+const explorer = href("/signals/");
+const q = (k: string, v: string) => `${explorer}?${k}=${encodeURIComponent(v)}`;
+const missingNote = (field: string) => s.missing.find((m) => m === field || m.startsWith(field + " "));
+const title = s.title.length > 90 ? s.title.slice(0, 89) + "…" : s.title;
+---
+<Base title={title} description={`${labelOf(SOURCES, s.source)} ${labelOf(KINDS, s.kind).toLowerCase()}: ${s.title}. Hazard: ${labelOf(HAZARD_TYPES, s.hazardType)}. Status: ${labelOf(STATUSES, s.status.normalized)}.`}>
+  <p class="small"><a href={explorer}>Signal Explorer</a> › {labelOf(SOURCES, s.source)} {labelOf(KINDS, s.kind).toLowerCase()}</p>
+  <h1>{s.title}</h1>
+  <p class="lede">
+    <span class={`badge ${statusClass(s.status.normalized)}`}>{labelOf(STATUSES, s.status.normalized)}</span>
+    {" "}<span class="badge plain">{labelOf(SOURCES, s.source)}</span>
+    {" "}<span class="badge plain">{labelOf(KINDS, s.kind)}</span>
+    {s.classification && <span class="badge plain"> {s.classification}</span>}
+    {" "}<span class={`chip hz-${s.hazardType}`}>{labelOf(HAZARD_TYPES, s.hazardType)}</span>
+  </p>
+  <p>
+    <a href={s.url} rel="noopener"><strong>Read the agency's notice</strong></a>
+    {s.sourceRecordUrl && <> · <a href={s.sourceRecordUrl} rel="noopener">machine-readable source record</a></>}
+    {" "}· Agency id: <code>{s.sourceId}</code>
+  </p>
+
+  <section aria-labelledby="h-said">
+    <h2 id="h-said">What the agency said</h2>
+    <div class="facts">
+      <div class="fact"><div class="k">Product</div><div class="v">{s.product}</div>{s.firm && <div class="detail">Firm: {s.firm}</div>}</div>
+      {s.reasonText && <div class="fact"><div class="k">Reason, as written</div><div class="v" style="font-weight:400">{s.reasonText}</div></div>}
+      <div class="fact"><div class="k">Status, as written</div><div class="v">{s.status.agency}</div></div>
+      {s.geography.description && <div class="fact"><div class="k">Distribution, as written</div><div class="v" style="font-weight:400">{s.geography.description}</div></div>}
+      {s.outbreak && (
+        <div class="fact"><div class="k">Outbreak figures (CDC's latest)</div>
+          <div class="v">{formatNumber(s.outbreak.cases)} cases · {formatNumber(s.outbreak.hospitalizations)} hospitalized · {formatNumber(s.outbreak.deaths)} deaths</div>
+          <div class="detail">{s.outbreak.pathogen}{s.outbreak.illnessOnsetFrom && ` · illnesses began ${formatDate(s.outbreak.illnessOnsetFrom)} to ${formatDate(s.outbreak.illnessOnsetTo)}`}</div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section aria-labelledby="h-class">
+    <h2 id="h-class">How this record is classified</h2>
+    <p class="small muted">Each label says whether the agency stated it, coded it, or whether our <a href={href("/signals/methodology/")}>rules inferred it</a> from the agency's wording. Click a value to see every record that shares it.</p>
+    <div class="facts">
+      <div class="fact">
+        <div class="k">Hazard type</div>
+        <div class="v"><a href={q("hazard", s.hazardType)}>{labelOf(HAZARD_TYPES, s.hazardType)}</a></div>
+        <div class="basis">{s.kind === "outbreak" ? "Stated by CDC" : BASIS_LABEL.inferred}</div>
+        {s.hazardType === "undetermined" && <div class="detail">No rule matched the agency's reason. Read the reason above.</div>}
+      </div>
+      <div class="fact">
+        <div class="k">Organism, allergen, or material</div>
+        <div class="v">{s.agents.length === 0 ? "None named" : s.agents.map((a, i) => <>{i > 0 && ", "}<a href={q("agent", a.name)}>{a.name}</a></>)}</div>
+        <div class="basis">{s.agents.length === 0 ? "Not stated by the agency" : s.kind === "outbreak" ? "Stated by CDC" : `${BASIS_LABEL.inferred} (${[...new Set(s.agents.map((a) => groupLabel[a.group]))].join(", ")})`}</div>
+      </div>
+      <div class="fact">
+        <div class="k">Product category</div>
+        <div class="v"><a href={q("product", s.productCategory)}>{labelOf(PRODUCT_CATEGORIES, s.productCategory)}</a></div>
+        <div class="basis">{BASIS_LABEL.inferred}{s.foodKeys.length > 0 && ` · food tags: ${s.foodKeys.join(", ")}`}</div>
+      </div>
+      <div class="fact">
+        <div class="k">Geography</div>
+        <div class="v"><a href={q("geo", s.geography.scope)}>{labelOf(GEO_SCOPES, s.geography.scope)}</a>{s.geography.international && s.geography.scope !== "international" && " (also outside the US)"}</div>
+        <div class="basis">{s.inferred.includes("geography") ? BASIS_LABEL.inferred : s.geography.scope === "unspecified" ? BASIS_LABEL["not-stated"] : "Stated by the agency"}</div>
+        {s.geography.states.length > 0 && <div class="detail">{s.geography.stateCount && s.geography.stateCount !== s.geography.states.length ? `${s.geography.stateCount} states; named: ` : ""}{s.geography.states.map((st, i) => <>{i > 0 && ", "}<a href={q("state", st)}>{st}</a></>)}</div>}
+      </div>
+      <div class="fact">
+        <div class="k">Root cause</div>
+        <div class="v"><a href={q("cause", s.rootCause.category)}>{labelOf(ROOT_CAUSES, s.rootCause.category)}</a></div>
+        <div class="basis">{BASIS_LABEL[s.rootCause.basis]}</div>
+        {s.rootCause.detail && <div class="detail">“{s.rootCause.detail}”</div>}
+        {s.rootCause.category === "not-stated" && missingNote("rootCause") && <div class="detail">{missingNote("rootCause")!.replace(/^rootCause\s*/, "")}</div>}
+      </div>
+      <div class="fact">
+        <div class="k">How it was found</div>
+        <div class="v"><a href={q("detection", s.detection.category)}>{labelOf(DETECTIONS, s.detection.category)}</a></div>
+        <div class="basis">{BASIS_LABEL[s.detection.basis]}</div>
+        {s.detection.detail && <div class="detail">“{s.detection.detail}”</div>}
+      </div>
+      <div class="fact">
+        <div class="k">Corrective action</div>
+        <div class="v"><a href={q("action", s.correctiveAction.category)}>{labelOf(CORRECTIVE_ACTIONS, s.correctiveAction.category)}</a></div>
+        <div class="basis">Stated by the agency</div>
+        {s.correctiveAction.detail && <div class="detail">{s.correctiveAction.detail}</div>}
+        {s.relatedToOutbreak === true && s.kind !== "outbreak" && <div class="detail">The agency links this recall to an outbreak.</div>}
+      </div>
+      <div class="fact">
+        <div class="k">Status</div>
+        <div class="v"><a href={q("status", s.status.normalized)}>{labelOf(STATUSES, s.status.normalized)}</a></div>
+        <div class="basis">Agency wording: {s.status.agency}</div>
+      </div>
+      <div class="fact">
+        <div class="k">Dates</div>
+        <div class="v" style="font-weight:400">
+          {s.kind === "outbreak" ? "Posted" : "Recall began"}: {formatDate(s.dates.event)}<br />
+          {s.kind === "outbreak" ? "" : `Reported by agency: ${formatDate(s.dates.reported)}`}{s.kind !== "outbreak" && <br />}
+          Last agency update: {formatDate(s.dates.updated)}<br />
+          {s.status.normalized === "closed" && <>Closed: {s.dates.closed ? formatDate(s.dates.closed) : "date not given"}</>}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-gaps">
+    <h2 id="h-gaps">What is missing or inferred</h2>
+    {s.missing.length === 0 ? <p>The source provided every field.</p> : (
+      <>
+        <p class="small muted">Fields the source did not provide. They are shown as "not stated", never estimated.</p>
+        <ul class="small">{s.missing.map((m) => <li>{m}</li>)}</ul>
+      </>
+    )}
+    <p class="small muted">Fields assigned by our rules from the agency's wording: {s.inferred.join(", ") || "none"}. Rules version {s.rulesVersion}.</p>
+  </section>
+
+  <section aria-labelledby="h-history">
+    <h2 id="h-history">Record history</h2>
+    <p class="small">
+      First seen by this site {formatDateTime(s.record.firstSeen)}{s.record.backfilled && " (loaded from the agency's history when the dataset was first built)"}.
+      Last changed {formatDateTime(s.record.lastChanged)}. {s.record.revisions === 0 ? "No tracked field has changed since." : `${s.record.revisions} revision${s.record.revisions === 1 ? "" : "s"} since.`}
+    </p>
+    {history.length > 0 && (
+      <ul class="history">
+        {history.map((e) => (
+          <li>
+            <span class="badge plain">{changeLabel[e.change]}</span> <span class="when">{formatDateTime(e.at)}</span>
+            {e.note && <div class="changes">{e.note}</div>}
+            {e.fields.length > 0 && <div class="changes">{e.fields.map((f) => <div>{f.field}: {f.from ?? "—"} → {f.to ?? "—"}</div>)}</div>}
+          </li>
+        ))}
+      </ul>
+    )}
+    <p class="small muted">Every version of the underlying data file is kept in the <a href="https://github.com/spaceplace/food-safety-dashboard/commits/main/data/signals.json" rel="noopener">project's public history</a>.</p>
+  </section>
+
+  {related.length > 0 && (
+    <section aria-labelledby="h-related">
+      <h2 id="h-related">Other records from {s.firm}</h2>
+      <ul>
+        {related.map((r) => (
+          <li><a href={href(`/signals/${r.slug}/`)}>{r.title}</a> <span class="small muted">({formatDate(r.dates.reported)}, {labelOf(HAZARD_TYPES, r.hazardType)}, {labelOf(STATUSES, r.status.normalized).toLowerCase()})</span></li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Base>

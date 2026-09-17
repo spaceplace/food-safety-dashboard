@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { CDC_BURDEN, REPO_URL, SOURCE_LINKS } from "../../lib/constants";
-import { formatDateTime, sources, statusFile } from "../../lib/data";
+import { formatDateTime, href, sources, statusFile } from "../../lib/data";
 ---
 <Base title="Data and methods" description="Every source behind Food Safety Brief, how often it refreshes, and what the numbers do and do not mean.">
   <h1>Data and methods</h1>
@@ -46,6 +46,9 @@ import { formatDateTime, sources, statusFile } from "../../lib/data";
       <dt>Recall reason categories</dt>
       <dd>The "Reason" label on each recall is assigned by this site from the agency's free-text reason using keyword rules (for example, any mention of Listeria becomes "Listeria"; "not declared" or "allergen" becomes "Undeclared allergen"; import violations and products made without inspection become "Regulatory"). The agency's original wording is shown under the label. Recalls that match no rule are labeled "Other".</dd>
 
+      <dt>Signal Explorer</dt>
+      <dd>Three years of FDA and FSIS recalls, FSIS public health alerts, and CDC outbreak notices, classified with fixed categories for hazard type, organism or allergen, product, geography, root cause, detection, corrective action, and status. Its <a href={href("/signals/methodology/")}>own methodology page</a> lists every category, the rules, how missing and inferred values are handled, and how the change log is produced.</dd>
+
       <dt>Recently implicated foods</dt>
       <dd>Food names from outbreak notices and recall product descriptions are matched against a fixed list of food types (lettuce, eggs, sprouts, and so on) by keyword. A product can match several types or none. Grouping covers items posted or updated in the last 90 days.</dd>
     </dl>
@@ -86,6 +89,6 @@ import { formatDateTime, sources, statusFile } from "../../lib/data";
 
   <section aria-labelledby="h-privacy">
     <h2 id="h-privacy">Privacy</h2>
-    <p>No cookies, no analytics, no third-party scripts. The recalls page uses a small amount of JavaScript to filter the table; without it, every row is shown.</p>
+    <p>No cookies, no analytics, no third-party scripts. The recalls page and the Signal Explorer use JavaScript to filter tables; without it, every row is shown.</p>
   </section>
 </Base>

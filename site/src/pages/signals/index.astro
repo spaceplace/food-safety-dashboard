@@ -1,0 +1,402 @@
+---
+import Base from "../../layouts/Base.astro";
+import Notices from "../../components/Notices.astro";
+import AsOf from "../../components/AsOf.astro";
+import { formatDate, formatDateTime, formatNumber, href, sources } from "../../lib/data";
+import {
+  compactSignals, signalsFile, countBy, monthKeys, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, statusClass, topHazard, signals,
+} from "../../lib/signals";
+import { renderLegendHtml, renderMonthTableHtml, renderRankHtml, renderTrendSvg } from "../../lib/explorer-chart";
+import {
+  CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, KINDS, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, STATUSES, labelOf,
+} from "../../../../fetch/signals/taxonomy";
+
+const items = compactSignals;
+const months = monthKeys(36);
+const trend = monthlyByHazard(items, months);
+const metrics = compactMetrics(items);
+const top12 = topHazard(signals, isoDaysAgo(365));
+const base = href("/signals/");
+const total = items.length;
+
+const rank = (rows: Array<[string, number]>, terms: { key: string; label: string }[] | null, param: string, limit = 8) =>
+  renderRankHtml(rows.slice(0, limit).map(([key, count]) => ({ key, label: terms ? labelOf(terms, key) : key, count, filter: `${param}=${encodeURIComponent(key)}` })), total, base);
+
+const breakdowns = [
+  { id: "hazard", title: "Hazard type", html: rank(countBy(items, (s) => s.hz), HAZARD_TYPES, "hazard") },
+  { id: "agent", title: "Organism, allergen, or material", html: rank(countBy(items, (s) => s.ag), null, "agent", 10) },
+  { id: "product", title: "Product category", html: rank(countBy(items, (s) => s.pc), PRODUCT_CATEGORIES, "product", 10) },
+  { id: "source", title: "Source and status", html: rank(countBy(items, (s) => s.source), SOURCES, "source") + rank(countBy(items, (s) => s.status), STATUSES, "status") },
+  { id: "cause", title: "Root cause", html: rank(countBy(items, (s) => s.rc), ROOT_CAUSES, "cause") },
+  { id: "detection", title: "How it was found", html: rank(countBy(items, (s) => s.det), DETECTIONS, "detection") },
+  { id: "action", title: "Corrective action", html: rank(countBy(items, (s) => s.ca), CORRECTIVE_ACTIONS, "action") },
+  { id: "geo", title: "Geography", html: rank(countBy(items, (s) => s.geo), GEO_SCOPES, "geo") + rank(countBy(items, (s) => s.st), null, "state", 8) },
+];
+
+const agentOptions = countBy(items, (s) => s.ag).map(([k]) => k);
+const stateOptions = countBy(items, (s) => s.st).map(([k]) => k).sort();
+const firstRows = items.slice(0, 50);
+const trendSvg = renderTrendSvg(months, trend.series, { slots: HAZARD_SLOTS });
+const legend = renderLegendHtml(trend.series, HAZARD_SLOTS);
+const monthTable = renderMonthTableHtml(months, trend.series);
+const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.prior30) / metrics.prior30) * 100) : null;
+---
+<Base title="Signal Explorer" description="Three years of FDA and USDA recalls, FSIS public health alerts, and CDC outbreak notices, classified by hazard, organism or allergen, product, geography, root cause, corrective action, and status, with filters, trends, and a record page for every incident.">
+  <h1>Signal Explorer</h1>
+  <p class="lede">
+    Every FDA recall, USDA FSIS recall and public health alert, and CDC multistate outbreak notice since {formatDate(signalsFile.windowStart)}, turned into one structured dataset with consistent categories.
+    Filter it, watch the trends, and open any record to see exactly what the agency said and how it was classified.
+    <a href={href("/signals/methodology/")}>How records are classified and verified</a> · <a href={href("/signals/changelog/")}>Change log</a>.
+  </p>
+  <Notices />
+  <AsOf source={sources["cdc-outbreaks"]} label="CDC" />
+  <AsOf source={sources["fda-openfda"]} label="FDA" />
+  <AsOf source={sources["fsis-recalls"]} label="USDA" />
+  <p class="asof">Dataset built {formatDateTime(signalsFile.generatedAt)} under classification rules {signalsFile.rulesVersion}. Records: {formatNumber(total)}.</p>
+
+  <section aria-labelledby="h-filters">
+    <h2 id="h-filters" class="visually-hidden">Filters</h2>
+    <form class="explorer-filters" id="filters" hidden>
+      <label class="span2">Search title, firm, product
+        <input type="search" name="q" id="f-q" placeholder="e.g. lettuce, Listeria, Acme" />
+      </label>
+      <label>Period
+        <select name="period" id="f-period">
+          <option value="">All (3 years)</option>
+          <option value="30d">Last 30 days</option>
+          <option value="90d">Last 90 days</option>
+          <option value="12m">Last 12 months</option>
+          {[...new Set(months.map((m) => m.slice(0, 4)))].reverse().map((y) => <option value={`y${y}`}>{y}</option>)}
+        </select>
+      </label>
+      <label>Source
+        <select name="source" id="f-source"><option value="">All</option>{SOURCES.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+      <label>Record type
+        <select name="kind" id="f-kind"><option value="">All</option>{KINDS.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+      <label>Hazard type
+        <select name="hazard" id="f-hazard"><option value="">All</option>{HAZARD_TYPES.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+      <label>Organism, allergen, material
+        <select name="agent" id="f-agent"><option value="">All</option>{agentOptions.map((a) => <option value={a}>{a}</option>)}</select>
+      </label>
+      <label>Product category
+        <select name="product" id="f-product"><option value="">All</option>{PRODUCT_CATEGORIES.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+      <label>Status
+        <select name="status" id="f-status"><option value="">All</option>{STATUSES.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+      <label>Class
+        <select name="class" id="f-class"><option value="">All</option><option>Class I</option><option>Class II</option><option>Class III</option></select>
+      </label>
+      <label>Geography
+        <select name="geo" id="f-geo"><option value="">All</option>{GEO_SCOPES.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+      <label>State
+        <select name="state" id="f-state"><option value="">All</option>{stateOptions.map((s) => <option value={s}>{s}</option>)}</select>
+      </label>
+      <label>Root cause
+        <select name="cause" id="f-cause"><option value="">All</option>{ROOT_CAUSES.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+      <label>How it was found
+        <select name="detection" id="f-detection"><option value="">All</option>{DETECTIONS.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+      <label>Corrective action
+        <select name="action" id="f-action"><option value="">All</option>{CORRECTIVE_ACTIONS.map((t) => <option value={t.key}>{t.label}</option>)}</select>
+      </label>
+    </form>
+    <div class="explorer-toolbar" id="toolbar" hidden>
+      <span id="count" aria-live="polite"></span>
+      <button type="button" id="reset">Clear filters</button>
+      <button type="button" id="csv">Download shown records as CSV</button>
+      <button type="button" id="share">Copy link to this view</button>
+    </div>
+    <noscript><p class="small muted">Filters need JavaScript. Without it this page shows the whole dataset and the newest 50 records.</p></noscript>
+  </section>
+
+  <section aria-labelledby="h-metrics">
+    <h2 id="h-metrics">Key figures</h2>
+    <p class="small muted">For the records currently shown. "Last 30 days" is compared with the 30 days before it.</p>
+    <div class="stats" id="metrics">
+      <div class="stat"><div class="label">Records</div><div class="value" data-m="total">{formatNumber(metrics.total)}</div><div class="sub" data-m="total-sub">across {SOURCES.length} agencies</div></div>
+      <div class="stat"><div class="label">Currently open</div><div class="value" data-m="open">{formatNumber(metrics.open)}</div><div class="sub">ongoing recalls, active alerts, open investigations</div></div>
+      <div class="stat"><div class="label">Last 30 days</div><div class="value" data-m="last30">{formatNumber(metrics.last30)}</div><div class="sub" data-m="last30-sub">{change30 === null ? `${metrics.prior30} in the 30 days before` : `${change30 >= 0 ? "+" : ""}${change30}% vs the 30 days before (${metrics.prior30})`}</div></div>
+      <div class="stat"><div class="label">Class I, last 12 months</div><div class="value" data-m="classI12">{formatNumber(metrics.classI12)}</div><div class="sub">reasonable probability of serious harm</div></div>
+      <div class="stat"><div class="label">Outbreak notices, last 12 months</div><div class="value" data-m="outbreaks12">{formatNumber(metrics.outbreaks12)}</div><div class="sub" data-m="illnesses12">{formatNumber(metrics.illnesses12)} reported illnesses</div></div>
+      <div class="stat"><div class="label">Most common hazard, last 12 months</div><div class="value" data-m="tophz" style="font-size:1.4rem">{top12 ? labelOf(HAZARD_TYPES, top12[0]) : "—"}</div><div class="sub" data-m="tophz-sub">{top12 ? `${top12[1]} records` : ""}</div></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-trend">
+    <h2 id="h-trend">Records per month, by hazard type</h2>
+    <p class="small muted">Counted by the date the agency reported each record. The current month is incomplete. FDA enforcement reports can lag a firm's announcement by weeks, so the newest months fill in over time.</p>
+    <div class="chart" id="trend">
+      <Fragment set:html={trendSvg} />
+      <div class="tooltip" id="tooltip" role="status"></div>
+    </div>
+    <div id="legend"><Fragment set:html={legend} /></div>
+    <details>
+      <summary class="small">View these counts as a table</summary>
+      <div id="month-table"><Fragment set:html={monthTable} /></div>
+    </details>
+  </section>
+
+  <section aria-labelledby="h-breakdowns">
+    <h2 id="h-breakdowns">Breakdowns</h2>
+    <p class="small muted">Click any row to filter by it. Counts are records; a record with two allergens counts once under each.</p>
+    <div class="breakdowns">
+      {breakdowns.map((b) => (
+        <div class="breakdown">
+          <h3>{b.title}</h3>
+          <div id={`bd-${b.id}`}><Fragment set:html={b.html} /></div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="h-records">
+    <h2 id="h-records">Records</h2>
+    <div class="table-wrap">
+      <table class="signal-table" id="records">
+        <caption id="records-caption">Newest first. Open a record for the agency's wording, every classification with its basis, and the record's history.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Reported</th>
+            <th scope="col">Source</th>
+            <th scope="col">Record</th>
+            <th scope="col">Hazard</th>
+            <th scope="col">Product</th>
+            <th scope="col">Status</th>
+            <th scope="col">Where</th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+          {firstRows.map((s) => (
+            <tr>
+              <td class="nowrap">{formatDate(s.date)}</td>
+              <td class="nowrap">{s.source}{s.kind === "public-health-alert" ? <div class="sub">Alert</div> : s.kind === "outbreak" ? <div class="sub">Outbreak</div> : null}</td>
+              <td class="title"><a href={href(`/signals/${s.slug}/`)}>{s.title}</a>{s.firm && s.kind !== "outbreak" && <div class="sub">{s.firm}</div>}</td>
+              <td><span class={`chip hz-${s.hz}`}>{labelOf(HAZARD_TYPES, s.hz)}</span>{s.ag.length > 0 && <div class="sub">{s.ag.join(", ")}</div>}</td>
+              <td>{labelOf(PRODUCT_CATEGORIES, s.pc)}</td>
+              <td><span class={`badge ${statusClass(s.status)}`}>{labelOf(STATUSES, s.status)}</span>{s.cls && <div class="sub">{s.cls}</div>}</td>
+              <td class="small">{labelOf(GEO_SCOPES, s.geo)}{s.st.length > 0 && <div class="sub">{s.st.length > 8 ? `${s.st.slice(0, 8).join(", ")} +${s.st.length - 8}` : s.st.join(", ")}</div>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="explorer-toolbar"><button type="button" id="more" hidden>Show 50 more</button><span class="small muted" id="shown"></span></p>
+  </section>
+
+  <script>
+    import { renderLegendHtml, renderMonthTableHtml, renderRankHtml, renderTrendSvg } from "../../lib/explorer-chart";
+    import { countBy, monthKeys, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, type CompactSignal } from "../../lib/signal-aggregate";
+    import { CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, STATUSES, labelOf } from "../../../../fetch/signals/taxonomy";
+
+    const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+    const base = location.pathname.replace(/\/$/, "");
+    const FIELDS = ["q", "period", "source", "kind", "hazard", "agent", "product", "status", "class", "geo", "state", "cause", "detection", "action"] as const;
+    type Field = (typeof FIELDS)[number];
+    const controls = Object.fromEntries(FIELDS.map((f) => [f, $(`f-${f}`) as HTMLInputElement | HTMLSelectElement])) as Record<Field, HTMLInputElement | HTMLSelectElement>;
+    const months = monthKeys(36);
+    const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    const fmtDate = (iso: string | null) => (iso ? new Date(iso + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) : "—");
+    const num = (n: number) => n.toLocaleString("en-US");
+
+    let all: CompactSignal[] = [];
+    let shown: CompactSignal[] = [];
+    let page = 1;
+
+    function readState(): Record<Field, string> {
+      const p = new URLSearchParams(location.search);
+      return Object.fromEntries(FIELDS.map((f) => [f, p.get(f) ?? ""])) as Record<Field, string>;
+    }
+    function setControls(state: Record<Field, string>) {
+      for (const f of FIELDS) {
+        const c = controls[f];
+        // A value that is not one of the options (e.g. an agent name no longer present) is ignored.
+        c.value = state[f];
+        if (c instanceof HTMLSelectElement && c.value !== state[f]) c.value = "";
+      }
+    }
+    function stateFromControls(): Record<Field, string> {
+      return Object.fromEntries(FIELDS.map((f) => [f, controls[f].value.trim()])) as Record<Field, string>;
+    }
+    function writeUrl(state: Record<Field, string>) {
+      const p = new URLSearchParams();
+      for (const f of FIELDS) if (state[f]) p.set(f, state[f]);
+      const qs = p.toString();
+      history.replaceState(null, "", qs ? `${location.pathname}?${qs}` : location.pathname);
+    }
+
+    function periodStart(period: string): [string | null, string | null] {
+      if (period === "30d") return [isoDaysAgo(30), null];
+      if (period === "90d") return [isoDaysAgo(90), null];
+      if (period === "12m") return [isoDaysAgo(365), null];
+      if (/^y\d{4}$/.test(period)) return [`${period.slice(1)}-01-01`, `${period.slice(1)}-12-31`];
+      return [null, null];
+    }
+
+    function filter(state: Record<Field, string>): CompactSignal[] {
+      const q = state.q.toLowerCase();
+      const [from, to] = periodStart(state.period);
+      return all.filter((s) => {
+        if (from && (!s.date || s.date < from)) return false;
+        if (to && (!s.date || s.date > to)) return false;
+        if (state.source && s.source !== state.source) return false;
+        if (state.kind && s.kind !== state.kind) return false;
+        if (state.hazard && s.hz !== state.hazard) return false;
+        if (state.agent && !s.ag.includes(state.agent)) return false;
+        if (state.product && s.pc !== state.product) return false;
+        if (state.status && s.status !== state.status) return false;
+        if (state.class && s.cls !== state.class) return false;
+        if (state.geo && s.geo !== state.geo) return false;
+        if (state.state && !s.st.includes(state.state)) return false;
+        if (state.cause && s.rc !== state.cause) return false;
+        if (state.detection && s.det !== state.detection) return false;
+        if (state.action && s.ca !== state.action) return false;
+        if (q && !`${s.title} ${s.firm ?? ""} ${s.product} ${s.ag.join(" ")} ${s.foods.join(" ")}`.toLowerCase().includes(q)) return false;
+        return true;
+      });
+    }
+
+    const rank = (rows: Array<[string, number]>, terms: { key: string; label: string }[] | null, param: string, limit = 8) =>
+      renderRankHtml(rows.slice(0, limit).map(([key, count]) => ({ key, label: terms ? labelOf(terms, key) : key, count, filter: `${param}=${encodeURIComponent(key)}` })), shown.length, base + "/");
+
+    function renderMetrics() {
+      const m = compactMetrics(shown);
+      const set = (k: string, v: string) => { const el = document.querySelector<HTMLElement>(`[data-m="${k}"]`); if (el) el.textContent = v; };
+      set("total", num(m.total));
+      set("total-sub", `of ${num(all.length)} in the dataset`);
+      set("open", num(m.open));
+      set("last30", num(m.last30));
+      const change = m.prior30 > 0 ? Math.round(((m.last30 - m.prior30) / m.prior30) * 100) : null;
+      set("last30-sub", change === null ? `${m.prior30} in the 30 days before` : `${change >= 0 ? "+" : ""}${change}% vs the 30 days before (${m.prior30})`);
+      set("classI12", num(m.classI12));
+      set("outbreaks12", num(m.outbreaks12));
+      set("illnesses12", `${num(m.illnesses12)} reported illnesses`);
+      const top = countBy(shown.filter((s) => (s.date ?? "") >= isoDaysAgo(365)), (s) => s.hz)[0] ?? null;
+      set("tophz", top ? labelOf(HAZARD_TYPES, top[0]) : "—");
+      set("tophz-sub", top ? `${top[1]} records` : "");
+    }
+
+    function renderChart() {
+      const trend = monthlyByHazard(shown, months);
+      const chart = $("trend");
+      chart.querySelector("svg")?.remove();
+      chart.insertAdjacentHTML("afterbegin", renderTrendSvg(months, trend.series, { slots: HAZARD_SLOTS }));
+      $("legend").innerHTML = renderLegendHtml(trend.series, HAZARD_SLOTS);
+      $("month-table").innerHTML = renderMonthTableHtml(months, trend.series);
+    }
+
+    function renderBreakdowns() {
+      $("bd-hazard").innerHTML = rank(countBy(shown, (s) => s.hz), HAZARD_TYPES, "hazard");
+      $("bd-agent").innerHTML = rank(countBy(shown, (s) => s.ag), null, "agent", 10);
+      $("bd-product").innerHTML = rank(countBy(shown, (s) => s.pc), PRODUCT_CATEGORIES, "product", 10);
+      $("bd-source").innerHTML = rank(countBy(shown, (s) => s.source), SOURCES, "source") + rank(countBy(shown, (s) => s.status), STATUSES, "status");
+      $("bd-cause").innerHTML = rank(countBy(shown, (s) => s.rc), ROOT_CAUSES, "cause");
+      $("bd-detection").innerHTML = rank(countBy(shown, (s) => s.det), DETECTIONS, "detection");
+      $("bd-action").innerHTML = rank(countBy(shown, (s) => s.ca), CORRECTIVE_ACTIONS, "action");
+      $("bd-geo").innerHTML = rank(countBy(shown, (s) => s.geo), GEO_SCOPES, "geo") + rank(countBy(shown, (s) => s.st), null, "state", 8);
+    }
+
+    function rowHtml(s: CompactSignal): string {
+      const kindSub = s.kind === "public-health-alert" ? `<div class="sub">Alert</div>` : s.kind === "outbreak" ? `<div class="sub">Outbreak</div>` : "";
+      const statusCls = s.status === "open" ? "open" : s.status === "closed" ? "over" : "unknown";
+      const states = s.st.length > 8 ? `${s.st.slice(0, 8).join(", ")} +${s.st.length - 8}` : s.st.join(", ");
+      return `<tr>
+        <td class="nowrap">${fmtDate(s.date)}</td>
+        <td class="nowrap">${s.source}${kindSub}</td>
+        <td class="title"><a href="${base}/${s.slug}/">${esc(s.title)}</a>${s.firm && s.kind !== "outbreak" ? `<div class="sub">${esc(s.firm)}</div>` : ""}</td>
+        <td><span class="chip hz-${s.hz}">${esc(labelOf(HAZARD_TYPES, s.hz))}</span>${s.ag.length ? `<div class="sub">${esc(s.ag.join(", "))}</div>` : ""}</td>
+        <td>${esc(labelOf(PRODUCT_CATEGORIES, s.pc))}</td>
+        <td><span class="badge ${statusCls}">${esc(labelOf(STATUSES, s.status))}</span>${s.cls ? `<div class="sub">${s.cls}</div>` : ""}</td>
+        <td class="small">${esc(labelOf(GEO_SCOPES, s.geo))}${states ? `<div class="sub">${states}</div>` : ""}</td>
+      </tr>`;
+    }
+
+    function renderTable() {
+      const slice = shown.slice(0, page * 50);
+      $("rows").innerHTML = slice.length ? slice.map(rowHtml).join("") : `<tr><td colspan="7">No records match these filters.</td></tr>`;
+      $("more").hidden = slice.length >= shown.length;
+      $("shown").textContent = shown.length ? `Showing ${num(slice.length)} of ${num(shown.length)}` : "";
+    }
+
+    function apply(fromControls = true) {
+      const state = fromControls ? stateFromControls() : readState();
+      if (!fromControls) setControls(state);
+      writeUrl(stateFromControls());
+      shown = filter(stateFromControls());
+      page = 1;
+      $("count").textContent = `${num(shown.length)} of ${num(all.length)} records match`;
+      renderMetrics();
+      renderChart();
+      renderBreakdowns();
+      renderTable();
+    }
+
+    function toCsv(rows: CompactSignal[]): string {
+      const cols = ["date", "source", "kind", "title", "firm", "product", "product_category", "hazard_type", "agents", "class", "status", "geography", "states", "root_cause", "detection", "corrective_action", "record_url"];
+      const cell = (v: unknown) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+      const lines = rows.map((s) => [
+        s.date, s.source, s.kind, s.title, s.firm, s.product, s.pc, s.hz, s.ag.join("; "), s.cls, s.status, s.geo, s.st.join("; "), s.rc, s.det, s.ca, `${location.origin}${base}/${s.slug}/`,
+      ].map(cell).join(","));
+      return [cols.join(","), ...lines].join("\r\n");
+    }
+
+    // Tooltip for the trend chart.
+    const tooltip = $("tooltip");
+    const chartEl = $("trend");
+    chartEl.addEventListener("mousemove", (e) => {
+      const hit = (e.target as Element).closest?.("rect.hit") as SVGRectElement | null;
+      if (!hit) { tooltip.classList.remove("show"); return; }
+      const rows = (hit.dataset.rows ?? "").split("|").filter(Boolean).map((r) => r.split("="));
+      tooltip.innerHTML = `<strong>${esc(hit.dataset.month ?? "")}</strong> · ${hit.dataset.total} records` + rows.map(([k, v]) => `<div class="tt-row"><span>${esc(k)}</span><span>${v}</span></div>`).join("");
+      const rect = chartEl.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      tooltip.style.left = `${Math.min(x + 12, rect.width - 270)}px`;
+      tooltip.style.top = `${e.clientY - rect.top + 12}px`;
+      tooltip.classList.add("show");
+    });
+    chartEl.addEventListener("mouseleave", () => tooltip.classList.remove("show"));
+
+    // Breakdown rows set a single filter.
+    document.querySelector(".breakdowns")!.addEventListener("click", (e) => {
+      const a = (e.target as Element).closest?.("a[data-filter]") as HTMLAnchorElement | null;
+      if (!a) return;
+      e.preventDefault();
+      const [k, v] = (a.dataset.filter ?? "").split("=");
+      const c = controls[k as Field];
+      if (c) { c.value = decodeURIComponent(v); if (c.value !== decodeURIComponent(v)) return; }
+      apply();
+      $("records").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    for (const f of FIELDS) controls[f].addEventListener(f === "q" ? "input" : "change", () => apply());
+    $("filters").addEventListener("submit", (e) => e.preventDefault());
+    $("reset").addEventListener("click", () => { for (const f of FIELDS) controls[f].value = ""; apply(); });
+    $("more").addEventListener("click", () => { page++; renderTable(); });
+    $("csv").addEventListener("click", () => {
+      const blob = new Blob([toCsv(shown)], { type: "text/csv;charset=utf-8" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `food-safety-signals-${new Date().toISOString().slice(0, 10)}.csv`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    $("share").addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(location.href); ($("share") as HTMLButtonElement).textContent = "Link copied"; } catch { prompt("Copy this link", location.href); }
+    });
+
+    fetch(`${base}/data.json`)
+      .then((r) => r.json())
+      .then((d: { items: CompactSignal[] }) => {
+        all = d.items;
+        $("filters").hidden = false;
+        $("toolbar").hidden = false;
+        apply(false);
+      })
+      .catch(() => { $("count").textContent = "The dataset could not be loaded; showing the newest 50 records."; });
+  </script>
+</Base>

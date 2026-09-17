@@ -28,6 +28,9 @@ export interface OpenFdaRecord {
   city?: string;
   state?: string;
   voluntary_mandated?: string;
+  initial_firm_notification?: string;
+  center_classification_date?: string;
+  termination_date?: string;
 }
 
 export interface OpenFdaResponse {
@@ -80,6 +83,14 @@ export function mapOpenFdaRecords(records: OpenFdaRecord[], fetchedAt: string): 
       relatedToOutbreak: null,
       recallDate: parseCompactDate(head.recall_initiation_date),
       reportDate: parseCompactDate(head.report_date),
+      initiatedBy: clean(head.voluntary_mandated) || null,
+      notificationMethod: clean(head.initial_firm_notification) || null,
+      summary: null,
+      closedDate: parseCompactDate(head.termination_date),
+      closedYear: parseCompactDate(head.termination_date)?.slice(0, 4) ?? null,
+      agencyUpdatedAt: parseCompactDate(head.center_classification_date),
+      processing: null,
+      firmLocation: [clean(head.city), clean(head.state)].filter(Boolean).join(", ") || null,
       fetchedAt,
     });
   }
@@ -103,7 +114,8 @@ export async function fetchOpenFda(opts: FetchOpenFdaOptions = {}): Promise<{ it
   const records: OpenFdaRecord[] = [];
   let lastUpdated: string | null = null;
   let total = Infinity;
-  for (let skip = 0; skip < total && skip < 5000; skip += limit) {
+  // openFDA allows skip up to 25,000; three years of food records is about 5,000.
+  for (let skip = 0; skip < total && skip < 25_000; skip += limit) {
     const url = `${OPENFDA_URL}?search=${search}&limit=${limit}&skip=${skip}`;
     const res = await fetchJson<OpenFdaResponse>(url);
     lastUpdated = res.meta?.last_updated ?? lastUpdated;

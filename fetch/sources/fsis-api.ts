@@ -32,6 +32,8 @@ export interface FsisRecord {
   field_summary: string;
   field_product_items: string[];
   field_establishment?: string[];
+  field_closed_year?: string;
+  field_processing?: string[];
 }
 
 function firmFromTitle(title: string): string {
@@ -74,6 +76,14 @@ export function mapFsisRecords(records: FsisRecord[], fetchedAt: string, sinceIs
       relatedToOutbreak: r.field_related_to_outbreak === "True" ? true : r.field_related_to_outbreak === "False" ? false : null,
       recallDate,
       reportDate: recallDate,
+      initiatedBy: null,
+      notificationMethod: null,
+      summary: truncate(summary, 2000) || null,
+      closedDate: null,
+      closedYear: clean(r.field_closed_year) || null,
+      agencyUpdatedAt: parseIsoDate(r.field_last_modified_date),
+      processing: (r.field_processing ?? []).map(clean).filter(Boolean),
+      firmLocation: null,
       fetchedAt,
     });
   }
@@ -113,6 +123,14 @@ export function parseFsisRss(xml: string, fetchedAt: string, sinceIso: string): 
       relatedToOutbreak: null,
       recallDate,
       reportDate: recallDate,
+      initiatedBy: null,
+      notificationMethod: null,
+      summary: summary || null,
+      closedDate: null,
+      closedYear: null,
+      agencyUpdatedAt: null,
+      processing: null,
+      firmLocation: null,
       fetchedAt,
     });
   });

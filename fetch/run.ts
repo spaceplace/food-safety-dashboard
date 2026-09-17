@@ -10,10 +10,18 @@ import { fetchCdcCounts } from "./sources/cdc-counts.js";
 import { fetchOpenFda } from "./sources/fda-openfda.js";
 import { fetchFsis } from "./sources/fsis-api.js";
 import { FEEDS, dedupe, fetchNews } from "./sources/news.js";
-import type { NewsFile, OutbreaksFile, Recall, RecallsFile, SourceStatus, StatusFile } from "./types.js";
+import { buildSignals } from "./signals/build.js";
+import type { ChangeLogFile, NewsFile, OutbreaksFile, Recall, RecallsFile, SignalsFile, SourceStatus, StatusFile } from "./types.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const DATA_DIR = path.join(ROOT, "data");
+
+// How much history each file keeps. The fetchers pull the widest window once; the narrower
+// files are filtered from that, so nothing is fetched twice.
+const SIGNAL_DAYS = 3 * 365; // the Signal Explorer dataset (FDA and FSIS recalls; CDC uses SIGNAL_YEARS)
+const SIGNAL_YEARS = 3; // CDC notices from this many calendar years back, plus the current year
+const RECALLS_FDA_DAYS = 120; // recalls.json, as shown on the recalls page
+const RECALLS_FSIS_DAYS = 365;
 
 const log = (msg: string) => console.log(`[${new Date().toISOString().slice(11, 19)}] ${msg}`);
 
@@ -51,11 +59,16 @@ export async function run(): Promise<StatusFile> {
   const prevRecalls = await readJson<RecallsFile>("recalls.json");
   const sources: Record<string, SourceStatus> = {};
 
+  const thisYear = new Date(generatedAt).getUTCFullYear();
+  const isoDaysAgo = (days: number) => new Date(Date.parse(generatedAt) - days * 86_400_000).toISOString().slice(0, 10);
+
   // --- CDC outbreaks ---
   let outbreakItems = prevOutbreaks?.items ?? [];
+  let cdcAll: OutbreaksFile["items"] | null = null; // the wider set for the signals dataset; null when the fetch failed
   try {
-    const r = await fetchCdcOutbreaks({ log });
-    outbreakItems = r.items;
+    const r = await fetchCdcOutbreaks({ log, minYear: thisYear - SIGNAL_YEARS });
+    cdcAll = r.items;
+    outbreakItems = r.items.filter((o) => o.year !== null && o.year >= thisYear - 1);
     sources["cdc-outbreaks"] = r.source;
   } catch (e) {
     sources["cdc-outbreaks"] = failedStatus("CDC multistate foodborne outbreak notices", "https://www.cdc.gov/foodborne-outbreaks/outbreaks/", e, prevOutbreaks?.sources["cdc-outbreaks"]);
@@ -82,17 +95,21 @@ export async function run(): Promise<StatusFile> {
   // --- Recalls: FDA + FSIS, independently ---
   const prevByAgency = (agency: Recall["agency"]) => (prevRecalls?.items ?? []).filter((r) => r.agency === agency);
   let fdaItems = prevByAgency("FDA");
+  let fdaAll: Recall[] | null = null;
   try {
-    const r = await fetchOpenFda({ log });
-    fdaItems = r.items;
+    const r = await fetchOpenFda({ log, days: SIGNAL_DAYS });
+    fdaAll = r.items;
+    fdaItems = r.items.filter((x) => x.reportDate && x.reportDate >= isoDaysAgo(RECALLS_FDA_DAYS));
     sources["fda-openfda"] = r.source;
   } catch (e) {
     sources["fda-openfda"] = failedStatus("FDA food recalls (openFDA enforcement reports)", "https://api.fda.gov/food/enforcement.json", e, prevRecalls?.sources["fda-openfda"]);
   }
   let fsisItems = prevByAgency("FSIS");
+  let fsisAll: Recall[] | null = null;
   try {
-    const r = await fetchFsis({ log });
-    fsisItems = r.items;
+    const r = await fetchFsis({ log, days: SIGNAL_DAYS });
+    fsisAll = r.items;
+    fsisItems = r.items.filter((x) => x.recallDate && x.recallDate >= isoDaysAgo(RECALLS_FSIS_DAYS));
     sources["fsis-recalls"] = r.source;
   } catch (e) {
     sources["fsis-recalls"] = failedStatus("USDA FSIS recalls", "https://www.fsis.usda.gov/recalls", e, prevRecalls?.sources["fsis-recalls"]);
@@ -128,11 +145,34 @@ export async function run(): Promise<StatusFile> {
   };
   await writeJson("news.json", news);
 
+  // --- Signals: the classified dataset behind the Signal Explorer, plus its change log ---
+  // Built from the wide fetches above. A source that failed keeps its previous signals unchanged.
+  const prevSignals = await readJson<SignalsFile>("signals.json");
+  const prevLog = await readJson<ChangeLogFile>("signals-changelog.json");
+  const failedSources = new Set<"CDC" | "FDA" | "FSIS">();
+  if (cdcAll === null) failedSources.add("CDC");
+  if (fdaAll === null) failedSources.add("FDA");
+  if (fsisAll === null) failedSources.add("FSIS");
+  const { file: signals, log: changelog } = buildSignals({
+    outbreaks: cdcAll ?? [],
+    recalls: [...(fdaAll ?? []), ...(fsisAll ?? [])],
+    carryOver: (prevSignals?.items ?? []).filter((s) => failedSources.has(s.source)),
+    previous: prevSignals,
+    previousLog: prevLog,
+    sources: { "cdc-outbreaks": sources["cdc-outbreaks"], "fda-openfda": sources["fda-openfda"], "fsis-recalls": sources["fsis-recalls"] },
+    now: generatedAt,
+    windowStart: isoDaysAgo(SIGNAL_DAYS),
+  });
+  await writeJson("signals.json", signals);
+  await writeJson("signals-changelog.json", changelog);
+  const newEntries = changelog.entries.filter((e) => e.at === generatedAt);
+  log(`signals: ${signals.items.length} records, ${newEntries.length} change log entr${newEntries.length === 1 ? "y" : "ies"} this run${failedSources.size ? ` (carried over: ${[...failedSources].join(", ")})` : ""}`);
+
   const status: StatusFile = { generatedAt, sources };
   await writeJson("status.json", status);
 
   const failed = Object.values(sources).filter((s) => !s.ok);
-  log(`done: ${outbreakItems.length} outbreaks, ${recallItems.length} recalls, ${news.items.length} news items, ${failed.length} source failure(s)`);
+  log(`done: ${outbreakItems.length} outbreaks, ${recallItems.length} recalls, ${news.items.length} news items, ${signals.items.length} signals, ${failed.length} source failure(s)`);
   return status;
 }
 
