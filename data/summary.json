@@ -1,11 +1,74 @@
 {
-  "generatedAt": null,
-  "model": null,
-  "windowFrom": null,
-  "windowTo": null,
-  "paragraphs": [],
-  "sources": [],
-  "status": "skipped",
-  "note": "ANTHROPIC_API_KEY not set; summary not generated this run",
-  "usage": null
+  "generatedAt": "2026-09-17T00:23:53.416Z",
+  "model": "claude-haiku-4-5",
+  "windowFrom": "2026-09-10",
+  "windowTo": "2026-09-17",
+  "paragraphs": [
+    "An outbreak of Salmonella Bovismorbificans linked to broccoli sprouts remains under investigation, with 22 cases and 2 hospitalizations reported across 4 states [1]. Evergreen Fresh Sprouts LLC of Idaho is recalling 215 cases of broccoli sprouts due to potential Salmonella contamination [9]. A separate outbreak of E. coli O145 linked to frozen blueberries is also ongoing, with 17 cases and 6 hospitalizations in 2 states [3]. A previous Cyclospora outbreak linked to iceberg lettuce has ended, though it affected 12,883 people across 21 states with 570 hospitalizations and 2 deaths [2].",
+    "Danone USA is voluntarily recalling So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on or before April 3, 2028, due to potential foreign materials such as small stones in the cashew inclusions [4][16]. Whole Foods Market of Austin, Texas is recalling Fromagerie Coop de Mean Cabricharme cheese because it contains undeclared egg lysozyme, an egg white protein [7]. People with egg allergies or sensitivities should avoid this product [7]."
+  ],
+  "sources": [
+    {
+      "n": 1,
+      "kind": "outbreak",
+      "title": "Salmonella Outbreak Linked to Broccoli Sprouts",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/broccoli-sprouts-09-26/index.html",
+      "publishedAt": "2026-09-11"
+    },
+    {
+      "n": 2,
+      "kind": "outbreak",
+      "title": "Cyclospora Outbreak Linked to Iceberg Lettuce",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/cyclosporiasis/outbreaks/07-26/index.html",
+      "publishedAt": "2026-09-11"
+    },
+    {
+      "n": 3,
+      "kind": "outbreak",
+      "title": "E. coli Outbreak Linked to Frozen Blueberries",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/ecoli/outbreaks/blueberries-07-26/index.html",
+      "publishedAt": "2026-09-11"
+    },
+    {
+      "n": 4,
+      "kind": "agency-notice",
+      "title": "So Delicious Dairy Free® Issues Voluntary Recall of Salted Caramel Cluster Non-Dairy Frozen Dessert Pints Due to Potential Presence of Foreign Material",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
+      "publishedAt": "2026-09-15T20:31:00.000Z"
+    },
+    {
+      "n": 7,
+      "kind": "agency-notice",
+      "title": "Whole Foods Market Issues Allergy Alert on Undeclared Egg in Cabricharme Cheese",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/whole-foods-market-issues-allergy-alert-undeclared-egg-cabricharme-cheese",
+      "publishedAt": "2026-09-11T22:15:00.000Z"
+    },
+    {
+      "n": 9,
+      "kind": "agency-notice",
+      "title": "Evergreen Fresh Sprouts LLC Recalls Broccoli Sprouts Because of Possible Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/evergreen-fresh-sprouts-llc-recalls-broccoli-sprouts-because-possible-health-risk",
+      "publishedAt": "2026-09-10T20:37:00.000Z"
+    },
+    {
+      "n": 16,
+      "kind": "news",
+      "title": "So Delicious frozen dessert product recalled because of foreign objects",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/so-delicious-frozen-dessert-product-recalled-because-of-foreign-objects/",
+      "publishedAt": "2026-09-16T02:07:55.000Z"
+    }
+  ],
+  "status": "ok",
+  "note": null,
+  "usage": {
+    "inputTokens": 2655,
+    "outputTokens": 300
+  }
 }
