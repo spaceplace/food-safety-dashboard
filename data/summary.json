@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-17T00:23:53.416Z",
+  "generatedAt": "2026-09-17T13:38:26.556Z",
   "model": "claude-haiku-4-5",
   "windowFrom": "2026-09-10",
   "windowTo": "2026-09-17",
   "paragraphs": [
-    "An outbreak of Salmonella Bovismorbificans linked to broccoli sprouts remains under investigation, with 22 cases and 2 hospitalizations reported across 4 states [1]. Evergreen Fresh Sprouts LLC of Idaho is recalling 215 cases of broccoli sprouts due to potential Salmonella contamination [9]. A separate outbreak of E. coli O145 linked to frozen blueberries is also ongoing, with 17 cases and 6 hospitalizations in 2 states [3]. A previous Cyclospora outbreak linked to iceberg lettuce has ended, though it affected 12,883 people across 21 states with 570 hospitalizations and 2 deaths [2].",
-    "Danone USA is voluntarily recalling So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on or before April 3, 2028, due to potential foreign materials such as small stones in the cashew inclusions [4][16]. Whole Foods Market of Austin, Texas is recalling Fromagerie Coop de Mean Cabricharme cheese because it contains undeclared egg lysozyme, an egg white protein [7]. People with egg allergies or sensitivities should avoid this product [7]."
+    "An outbreak of Salmonella linked to broccoli sprouts remains ongoing, with 22 cases and 2 hospitalizations across 4 states [1]. Evergreen Fresh Sprouts LLC of Moyie Springs, Idaho is recalling 215 cases of broccoli sprouts due to potential Salmonella contamination [9]. A separate outbreak of E. coli O145 linked to frozen blueberries is also active, with 17 cases and 6 hospitalizations across 2 states [3].",
+    "The Cyclospora outbreak linked to iceberg lettuce that affected thousands is now over; it caused 12,883 cases, 570 hospitalizations, and 2 deaths across 21 states [2]. Danone USA is voluntarily recalling So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on and before April 3, 2028, due to potential foreign materials such as small stones in the cashew inclusions [4][20]. Whole Foods Market is recalling Fromagerie Coop de Mean Cabricharme cheese because it contains egg lysozyme, an egg white protein not declared on the label, which poses a risk to people with egg allergies or sensitivities [7][26]."
   ],
   "sources": [
     {
@@ -57,18 +57,26 @@
       "publishedAt": "2026-09-10T20:37:00.000Z"
     },
     {
-      "n": 16,
+      "n": 20,
       "kind": "news",
       "title": "So Delicious frozen dessert product recalled because of foreign objects",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/09/so-delicious-frozen-dessert-product-recalled-because-of-foreign-objects/",
       "publishedAt": "2026-09-16T02:07:55.000Z"
+    },
+    {
+      "n": 26,
+      "kind": "news",
+      "title": "Whole Foods recalls cheese because of undeclared eggs",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/whole-foods-recalls-cheese-because-of-undeclared-eggs/",
+      "publishedAt": "2026-09-14T23:54:12.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 2655,
-    "outputTokens": 300
+    "inputTokens": 5759,
+    "outputTokens": 612
   }
 }
