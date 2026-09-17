@@ -2,7 +2,7 @@
 
 An always-current public view of the state of food safety in the US, built from CDC, FDA, and USDA data plus food-safety news. Nothing is fetched while a visitor is on the site: a scheduled job pulls every source, saves plain JSON files into `data/`, and the website is rebuilt from those files.
 
-**Status: Phase 1 (data fetchers) complete. The website itself is not built yet.**
+**Status: Phases 1 and 2 complete (data fetchers and the website). News, the AI summary, and deployment are next.**
 
 ## What is here
 
@@ -12,7 +12,8 @@ An always-current public view of the state of food safety in the US, built from 
 | `data/` | The JSON the website reads. Committed to the repo so its history is an audit trail of every number the agencies published. |
 | `fixtures/` | Saved copies of the real CDC, FDA, and USDA responses, used by the tests. |
 | `tests/` | One test file per parser. They run against the fixtures, so they work offline and catch layout changes when we refresh a fixture. |
-| `.github/workflows/` | GitHub Actions: the daily live check (now), the 6-hourly data fetch and site deploy (Phase 4). |
+| `site/` | The website, built with [Astro](https://astro.build). It reads `data/*.json` at build time and produces plain HTML. |
+| `.github/workflows/` | GitHub Actions: the daily live check and the fetch-strategy probe (now), the 6-hourly data fetch and site deploy (Phase 4). |
 | `PLAN.md` | The build plan, schemas, and what we learned about each source. |
 
 ## Data sources
@@ -24,7 +25,7 @@ An always-current public view of the state of food safety in the US, built from 
 | FDA food recalls | openFDA enforcement API, grouped one row per recall event. Dietary supplements are excluded; pet food is included and labeled. | Every 6 hours (openFDA itself updates weekly) |
 | USDA FSIS recalls | FSIS recall API (full JSON), with the FSIS RSS feed as an automatic fallback. | Every 6 hours |
 
-Note: CDC and FSIS reject plain command-line requests (`curl` gets HTTP 403). Node's built-in `fetch` with normal browser headers gets through. All fetching goes through `fetch/lib/http.ts` for that reason.
+Note: CDC and FSIS sit behind bot protection that returns HTTP 403 to anything that does not look like a real browser. From GitHub's servers only a request carrying the full set of Chrome browser headers gets through (tested with `fetch/experiments/probe.mjs`, which you can rerun any time from the "Probe fetch strategies" workflow on GitHub). All fetching goes through `fetch/lib/http.ts`, which sends those headers.
 
 ## Run it on your own computer
 
@@ -52,9 +53,21 @@ Check the parsers against the live websites without writing anything (this is wh
 npm run check:live
 ```
 
+Preview the website on your own computer (then open http://localhost:4321/food-safety-dashboard/ in a browser; press Ctrl+C in the terminal to stop it):
+
+```bash
+npm run dev
+```
+
+Build the finished website into `site/dist/` (this is what gets published):
+
+```bash
+npm run build
+```
+
 ## When a source fails
 
-Each source is fetched independently. If one fails, its previous items are kept, and `data/status.json` records `ok: false` with the error and the time of the last good fetch. The website (Phase 2) will show that as a warning next to the affected numbers rather than showing nothing or a made-up value.
+Each source is fetched independently. If one fails, its previous items are kept, and `data/status.json` records `ok: false` with the error and the time of the last good fetch. The website shows that as a warning banner and marks the affected section "last refresh failed; showing previous data" rather than showing nothing or a made-up value.
 
 ## Deploying
 
