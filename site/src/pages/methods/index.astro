@@ -37,6 +37,12 @@ import { formatDateTime, sources, statusFile } from "../../lib/data";
       <dt>USDA FSIS recalls</dt>
       <dd>The <a href={SOURCE_LINKS.fsisApi} rel="noopener">FSIS recall API</a>, covering meat, poultry, and egg products, refreshed every 6 hours, with recalls from the last 12 months kept. If the API is unavailable the FSIS RSS feed is used instead, which gives only the title, link, and date; a note appears on the site when that happens. Each row links to the FSIS recall notice.</dd>
 
+      <dt>News and agency notices</dt>
+      <dd>Five RSS feeds, refreshed every 6 hours, keeping 30 days: Food Safety News; FDA's food safety recall, outbreak investigation, and press release feeds (press releases filtered to food topics by keyword); and a Google News search for "foodborne outbreak" or "food recall". Only the title, link, publisher, date, and a short excerpt are stored. Duplicate links are removed, preferring the agency's own notice over a news story about it.</dd>
+
+      <dt>The weekly AI summary</dt>
+      <dd>Once a week, the last 7 days of news items, agency notices, CDC outbreak updates, and recalls are numbered and given to an AI model (Claude Haiku 4.5, via the Anthropic API) with instructions to write a short brief using only those sources and to cite a source number at the end of every sentence. Before publishing, the code checks every sentence: any sentence without a citation, or citing a number not on the list, causes the draft to be rejected and rewritten once; if it fails again, the previous week's summary stays up with a notice. The model runs inside the scheduled job, never when you load a page, and no visitor data is sent anywhere. The summary is not reviewed by a person before publishing; treat it as a reading guide and follow the cited links for anything that matters to you.</dd>
+
       <dt>Recall reason categories</dt>
       <dd>The "Reason" label on each recall is assigned by this site from the agency's free-text reason using keyword rules (for example, any mention of Listeria becomes "Listeria"; "not declared" or "allergen" becomes "Undeclared allergen"; import violations and products made without inspection become "Regulatory"). The agency's original wording is shown under the label. Recalls that match no rule are labeled "Other".</dd>
 

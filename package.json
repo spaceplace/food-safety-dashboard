@@ -10,6 +10,7 @@
   "scripts": {
     "fetch": "tsx fetch/run.ts",
     "check:live": "tsx fetch/check-live.ts",
+    "summarize": "tsx fetch/summarize.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "dev": "astro dev",
@@ -17,6 +18,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.126.0",
     "astro": "^7.3.3",
     "cheerio": "^1.2.0",
     "csv-parse": "^7.0.2"

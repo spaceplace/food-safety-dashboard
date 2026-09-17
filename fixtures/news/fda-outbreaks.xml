@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="http://www.fda.gov/">
+  <channel>
+    <title>FDA Outbreaks RSS Feed</title>
+    <link>http://www.fda.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Cyclospora Prevention, Response and Research Action Plan </title>
+  <link>http://www.fda.gov/food/foodborne-pathogens/cyclospora-prevention-response-and-research-action-plan</link>
+  <description>A plan to reducing the public health burden of foodborne illness caused by Cyclospora in fresh produce. </description>
+  <pubDate>Fri, 11 Sep 2026 10:01:50 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/foodborne-pathogens/cyclospora-prevention-response-and-research-action-plan</guid>
+    </item>
+<item>
+  <title>CORE Annual Reports</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/core-annual-reports</link>
+  <description>CORE Annual Reports summarize the adverse events and outbreaks linked to FDA-regulated foods investigated by the CORE Network by calendar year, and highlight any public health actions that were taken as a result of those investigations.</description>
+  <pubDate>Tue, 17 Mar 2026 13:07:09 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/core-annual-reports</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Salmonella Newport: Red Onions (July 2020) </title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-newport-red-onions-july-2020</link>
+  <description>Outbreak Investigation of Salmonella Newport: Red Onions (July 2020) </description>
+  <pubDate>Tue, 03 Feb 2026 08:34:34 EST</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-newport-red-onions-july-2020</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of E. coli - Leafy Greens (December 2020)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-leafy-greens-december-2020</link>
+  <description>Outbreak Investigation of E. coli - Leafy Greens (December 2020) </description>
+  <pubDate>Tue, 03 Feb 2026 07:48:29 EST</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-leafy-greens-december-2020</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of E. coli O157:H7: Unknown Food (Fall 2020)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-unknown-food-fall-2020</link>
+  <description>The FDA and CDC, in collaboration with state and local partners, is investigating illnesses in a third multistate outbreak of E.coli O157:H7 infections this Fall.</description>
+  <pubDate>Tue, 03 Feb 2026 07:46:43 EST</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-unknown-food-fall-2020</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of E. coli O103: Clover Sprouts (February 2020)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o103-clover-sprouts-february-2020</link>
+  <description>FDA, along with CDC and state and local partners, are investigating an outbreak of 14 illnesses caused by E. coli O103 in Iowa, Illinois, Missouri, Texas and Utah. </description>
+  <pubDate>Mon, 02 Feb 2026 14:07:11 EST</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o103-clover-sprouts-february-2020</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Salmonella: Cucumbers (June 2024)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-cucumbers-june-2024</link>
+  <description>Outbreak Investigation of Salmonella: Cucumbers (June 2024)</description>
+  <pubDate>Tue, 23 Dec 2025 11:57:02 EST</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-cucumbers-june-2024</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Listeria: Ice Cream (August 2023)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-ice-cream-august-2023</link>
+  <description>The FDA and CDC, in collaboration with state and local partners, are investigating an outbreak of Listeria monocytogenes infections potentially linked to Soft Serve On The Go cups produced by Real Kosher Ice Cream of Brooklyn, NY. </description>
+  <pubDate>Thu, 27 Mar 2025 10:19:22 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-ice-cream-august-2023</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Listeria monocytogenes – Hispanic-style Fresh and Soft Cheeses (February 2021)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-hispanic-style-fresh-and-soft-cheeses-february-2021</link>
+  <description>The FDA, along with CDC and state and local partners, are investigating a multistate outbreak of Listeria monocytogenes infections potentially linked to Hispanic-style fresh and soft cheeses. </description>
+  <pubDate>Wed, 26 Mar 2025 11:47:45 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-hispanic-style-fresh-and-soft-cheeses-february-2021</guid>
+    </item>
+<item>
+  <title>Investigation of Acute Non-viral Hepatitis Illnesses – “Real Water” Brand Alkaline Water (March 2021)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/investigation-acute-non-viral-hepatitis-illnesses-real-water-brand-alkaline-water-march-2021</link>
+  <description>The FDA, along with the CDC and the Southern Nevada Health District is investigating a number of reports of acute non-viral hepatitis in the state of Nevada. </description>
+  <pubDate>Wed, 26 Mar 2025 11:47:44 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/investigation-acute-non-viral-hepatitis-illnesses-real-water-brand-alkaline-water-march-2021</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Salmonella Typhimurium: BrightFarms Packaged Salad Greens (July 2021)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-typhimurium-brightfarms-packaged-salad-greens-july-2021</link>
+  <description>FDA is investigating a multistate outbreak of Salmonella Typhimurium infections linked to the consumption of BrightFarms packaged salad greens.</description>
+  <pubDate>Wed, 26 Mar 2025 11:47:38 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-typhimurium-brightfarms-packaged-salad-greens-july-2021</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Salmonella Thompson: Seafood (October 2021)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-thompson-seafood-october-2021</link>
+  <description>The FDA, along with CDC and state and local partners, investigated a multistate outbreak of Salmonella Thompson infections linked to seafood manufactured or processed by Northeast Seafood Products, Inc. of Denver, CO. </description>
+  <pubDate>Wed, 26 Mar 2025 11:47:35 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-thompson-seafood-october-2021</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of E. Coli O157:H7 - Spinach (November 2021)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-spinach-november-2021</link>
+  <description>Outbreak Investigation of E. Coli O157:H7 - Spinach (November 2021)</description>
+  <pubDate>Wed, 26 Mar 2025 11:47:30 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-spinach-november-2021</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Listeria monocytogenes: Dole Packaged Salad (December 2021)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-dole-packaged-salad-december-2021</link>
+  <description>The FDA, along with CDC and state and local partners, investigated a multistate outbreak of Listeria monocytogenes infections potentially linked to Dole packaged leafy greens.</description>
+  <pubDate>Wed, 26 Mar 2025 11:47:27 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-dole-packaged-salad-december-2021</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Listeria monocytogenes: Enoki Mushrooms (November 2022)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-enoki-mushrooms-november-2022</link>
+  <description>FDA, along with CDC and state and local partners, is investigating an outbreak of Listeria monocytogenes infections linked to enoki mushrooms.</description>
+  <pubDate>Wed, 26 Mar 2025 11:44:27 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-enoki-mushrooms-november-2022</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of E. coli O157:H7: Power Greens Packaged Salad (January 2022)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-power-greens-packaged-salad-january-2022</link>
+  <description>The FDA and CDC, in collaboration with state and local partners, investigated illnesses in a multistate outbreak of E. coli O157:H7.</description>
+  <pubDate>Wed, 26 Mar 2025 11:44:11 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-power-greens-packaged-salad-january-2022</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Salmonella: Peanut Butter (May 2022)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-peanut-butter-may-2022</link>
+  <description>Outbreak Investigation of Salmonella in Peanut Butter</description>
+  <pubDate>Wed, 26 Mar 2025 11:44:07 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-peanut-butter-may-2022</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Listeria monocytogenes: Brie and Camembert Soft Cheese Products (September 2022)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-brie-and-camembert-soft-cheese-products-september-2022</link>
+  <description>The FDA, along with CDC and state and local partners, is investigating a multistate outbreak of Listeria monocytogenes infections linked to Brie and Camembert soft cheese products manufactured by Old Europe Cheese, Inc. of Benton Harbor, MI</description>
+  <pubDate>Wed, 26 Mar 2025 11:43:58 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-brie-and-camembert-soft-cheese-products-september-2022</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Salmonella: Flour (April 2023)</title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-flour-april-2023</link>
+  <description>Outbreak Investigation of Salmonella: Flour (April 2023)</description>
+  <pubDate>Wed, 26 Mar 2025 11:40:00 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-flour-april-2023</guid>
+    </item>
+<item>
+  <title>Outbreak Investigation of Salmonella: Raw Cookie Dough (May 2023) </title>
+  <link>http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-raw-cookie-dough-may-2023</link>
+  <description>Do not eat, sell, or serve Papa Murphy’s Chocolate Chip Cookie and S’mores Bars dough. FDA’s investigation is ongoing.</description>
+  <pubDate>Wed, 26 Mar 2025 11:39:56 EDT</pubDate>
+    <dc:creator>FDA</dc:creator>
+    <guid isPermaLink="true">http://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-raw-cookie-dough-may-2023</guid>
+    </item>
+
+  </channel>
+</rss>

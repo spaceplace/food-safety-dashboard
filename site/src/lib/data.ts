@@ -4,11 +4,15 @@
 import outbreaksJson from "../../../data/outbreaks.json";
 import recallsJson from "../../../data/recalls.json";
 import statusJson from "../../../data/status.json";
-import type { Outbreak, OutbreaksFile, Recall, RecallsFile, SourceStatus, StatusFile } from "../../../fetch/types";
+import newsJson from "../../../data/news.json";
+import summaryJson from "../../../data/summary.json";
+import type { NewsFile, NewsItem, Outbreak, OutbreaksFile, Recall, RecallsFile, SourceStatus, StatusFile, SummaryFile } from "../../../fetch/types";
 
 export const outbreaksFile = outbreaksJson as unknown as OutbreaksFile;
 export const recallsFile = recallsJson as unknown as RecallsFile;
 export const statusFile = statusJson as unknown as StatusFile;
+export const newsFile = newsJson as unknown as NewsFile;
+export const summaryFile = summaryJson as unknown as SummaryFile;
 
 export const BUILD_TIME = new Date().toISOString();
 const DAY = 86_400_000;
@@ -95,6 +99,25 @@ export function splitFoodGroups(groups: FoodGroup[], maxCards = 12): { cards: Fo
   return { cards, rest };
 }
 
+// ---------- News and the weekly summary ----------
+
+export const recentNews = (days: number): NewsItem[] =>
+  newsFile.items.filter((i) => i.publishedAt >= new Date(Date.now() - days * DAY).toISOString());
+
+/** Age of the current summary in days, or null if none exists. */
+export function summaryAgeDays(): number | null {
+  if (!summaryFile.generatedAt) return null;
+  return (Date.now() - new Date(summaryFile.generatedAt).getTime()) / DAY;
+}
+
+/** Turn "[3]" and "[2, 5]" in summary text into HTML links to the numbered source list. */
+export function renderCitations(text: string): string {
+  const esc = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return esc.replace(/\[(\d+(?:\s*,\s*\d+)*)\]/g, (_m, nums: string) =>
+    nums.split(",").map((n) => n.trim()).map((n) => `<a class="cite" href="#source-${n}" aria-label="Source ${n}">[${n}]</a>`).join(""),
+  );
+}
+
 // ---------- Source status and warnings ----------
 
 export const sources: Record<string, SourceStatus> = statusFile.sources;
@@ -119,6 +142,12 @@ export function dataWarnings(): Warning[] {
   const ageHours = (Date.now() - new Date(statusFile.generatedAt).getTime()) / 3_600_000;
   if (ageHours > 30) {
     out.push({ level: "warning", text: `The data on this page was last refreshed ${formatDateTime(statusFile.generatedAt)}, more than a day ago. The scheduled update may have failed.` });
+  }
+  const age = summaryAgeDays();
+  if (summaryFile.status === "failed" && summaryFile.note) {
+    out.push({ level: "info", text: `The weekly news summary could not be regenerated (${summaryFile.note}).${summaryFile.paragraphs.length ? " Showing the previous one." : ""}` });
+  } else if (age !== null && age > 10) {
+    out.push({ level: "info", text: `The weekly news summary is ${Math.floor(age)} days old.` });
   }
   if (unknownStatusOutbreaks.length > 0) {
     out.push({ level: "info", text: `${unknownStatusOutbreaks.length} CDC outbreak notice(s) could not be classified as open or closed and are left out of the open outbreaks list.` });

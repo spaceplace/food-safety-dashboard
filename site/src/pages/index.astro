@@ -4,6 +4,7 @@ import Notices from "../components/Notices.astro";
 import AsOf from "../components/AsOf.astro";
 import OutbreakTable from "../components/OutbreakTable.astro";
 import RecallTable from "../components/RecallTable.astro";
+import WeeklySummary from "../components/WeeklySummary.astro";
 import { CDC_BURDEN, SITE_NAME } from "../lib/constants";
 import {
   headline, openOutbreaks, outbreaksFile, recallsFile, recentRecalls, implicatedFoods, splitFoodGroups,
@@ -116,6 +117,14 @@ const largestShare = largest && headline.illnesses > 0 ? Math.round(((largest.ca
     {foodRest.length > 0 && (
       <p class="small muted">Also named in recent recalls: {foodRest.map((g) => `${g.key} (${g.recalls.length})`).join(", ")}. See <a href={href("/recalls/")}>all recalls</a>.</p>
     )}
+  </section>
+
+  <section aria-labelledby="h-news">
+    <div class="section-head">
+      <h2 id="h-news">This week's food safety news</h2>
+      <a href={href("/news/")}>All news and notices</a>
+    </div>
+    <WeeklySummary compact />
   </section>
 
   <section aria-labelledby="h-recalls">

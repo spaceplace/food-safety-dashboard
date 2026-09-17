@@ -1,0 +1,11 @@
+{
+  "generatedAt": null,
+  "model": null,
+  "windowFrom": null,
+  "windowTo": null,
+  "paragraphs": [],
+  "sources": [],
+  "status": "skipped",
+  "note": "ANTHROPIC_API_KEY not set; summary not generated this run",
+  "usage": null
+}

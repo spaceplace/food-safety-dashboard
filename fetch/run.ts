@@ -9,7 +9,8 @@ import { fetchCdcOutbreaks } from "./sources/cdc-outbreaks.js";
 import { fetchCdcCounts } from "./sources/cdc-counts.js";
 import { fetchOpenFda } from "./sources/fda-openfda.js";
 import { fetchFsis } from "./sources/fsis-api.js";
-import type { OutbreaksFile, Recall, RecallsFile, SourceStatus, StatusFile } from "./types.js";
+import { FEEDS, dedupe, fetchNews } from "./sources/news.js";
+import type { NewsFile, OutbreaksFile, Recall, RecallsFile, SourceStatus, StatusFile } from "./types.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const DATA_DIR = path.join(ROOT, "data");
@@ -104,11 +105,34 @@ export async function run(): Promise<StatusFile> {
   };
   await writeJson("recalls.json", recalls);
 
+  // --- News: each feed independently; a failed feed keeps its previous items ---
+  const prevNews = await readJson<NewsFile>("news.json");
+  const newsResult = await fetchNews({ log });
+  const newsItems = [];
+  for (const feed of FEEDS) {
+    const key = `news-${feed.key}`;
+    if (newsResult.sources[key]?.ok) {
+      newsItems.push(...(newsResult.byFeed[feed.key] ?? []));
+      sources[key] = newsResult.sources[key];
+    } else {
+      const prevStatus = prevNews?.sources[key];
+      sources[key] = { ...newsResult.sources[key], fetchedAt: prevStatus?.fetchedAt ?? null, itemCount: prevStatus?.itemCount ?? null };
+      newsItems.push(...(prevNews?.items ?? []).filter((i) => i.feed === feed.key));
+    }
+  }
+  const cutoff = new Date(Date.now() - 30 * 86_400_000).toISOString();
+  const news: NewsFile = {
+    generatedAt,
+    sources: Object.fromEntries(Object.entries(sources).filter(([k]) => k.startsWith("news-"))),
+    items: dedupe(newsItems).filter((i) => i.publishedAt >= cutoff),
+  };
+  await writeJson("news.json", news);
+
   const status: StatusFile = { generatedAt, sources };
   await writeJson("status.json", status);
 
   const failed = Object.values(sources).filter((s) => !s.ok);
-  log(`done: ${outbreakItems.length} outbreaks, ${recallItems.length} recalls, ${failed.length} source failure(s)`);
+  log(`done: ${outbreakItems.length} outbreaks, ${recallItems.length} recalls, ${news.items.length} news items, ${failed.length} source failure(s)`);
   return status;
 }
 

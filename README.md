@@ -2,7 +2,7 @@
 
 An always-current public view of the state of food safety in the US, built from CDC, FDA, and USDA data plus food-safety news. Nothing is fetched while a visitor is on the site: a scheduled job pulls every source, saves plain JSON files into `data/`, and the website is rebuilt from those files.
 
-**Status: Phases 1 and 2 complete (data fetchers and the website). News, the AI summary, and deployment are next.**
+**Status: Phases 1 to 3 complete (data fetchers, the website, news and the weekly AI summary). Deployment is next.**
 
 ## What is here
 
@@ -24,6 +24,8 @@ An always-current public view of the state of food safety in the US, built from 
 | CDC active investigation counts | Parsed from the outbreaks page text. | Every 6 hours |
 | FDA food recalls | openFDA enforcement API, grouped one row per recall event. Dietary supplements are excluded; pet food is included and labeled. | Every 6 hours (openFDA itself updates weekly) |
 | USDA FSIS recalls | FSIS recall API (full JSON), with the FSIS RSS feed as an automatic fallback. | Every 6 hours |
+| News | Five RSS feeds: Food Safety News, FDA recalls, FDA outbreaks, FDA press releases (food topics only), Google News search. Title, link, date, and excerpt only. | Every 6 hours |
+| Weekly AI summary | Claude Haiku 4.5 writes a short brief from the last 7 days of items above. Every sentence must cite a numbered source or the draft is rejected. | Weekly |
 
 Note: CDC and FSIS sit behind bot protection that returns HTTP 403 to anything that does not look like a real browser. From GitHub's servers only a request carrying the full set of Chrome browser headers gets through (tested with `fetch/experiments/probe.mjs`, which you can rerun any time from the "Probe fetch strategies" workflow on GitHub). All fetching goes through `fetch/lib/http.ts`, which sends those headers.
 
@@ -47,6 +49,12 @@ Run the tests (offline, uses the saved fixtures):
 npm test
 ```
 
+Generate the weekly AI summary (needs an Anthropic API key, see below; costs about one cent per run; reuses a summary younger than 6 days unless you add `-- --force`):
+
+```bash
+npm run summarize
+```
+
 Check the parsers against the live websites without writing anything (this is what GitHub runs daily):
 
 ```bash
@@ -64,6 +72,18 @@ Build the finished website into `site/dist/` (this is what gets published):
 ```bash
 npm run build
 ```
+
+## The API key for the summary
+
+The summary needs an Anthropic API key. It is read from an environment variable named `ANTHROPIC_API_KEY`. On your own computer the easiest way is a file named `.env` in this folder containing one line:
+
+```
+ANTHROPIC_API_KEY=sk-ant-...your key...
+```
+
+That file is listed in `.gitignore`, so it is never uploaded to GitHub. On GitHub, the same key is stored as a repository secret (Settings, then Secrets and variables, then Actions) and the workflow passes it to the job. Never paste the key into any file that is committed, and never share it in chat.
+
+If the key is missing, the job still runs; it just leaves the previous summary in place and records "skipped" in `data/summary.json`.
 
 ## When a source fails
 

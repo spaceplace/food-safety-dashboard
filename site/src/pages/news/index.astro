@@ -1,0 +1,43 @@
+---
+import Base from "../../layouts/Base.astro";
+import Notices from "../../components/Notices.astro";
+import WeeklySummary from "../../components/WeeklySummary.astro";
+import { formatDate, formatDateTime, newsFile, recentNews } from "../../lib/data";
+
+const items = recentNews(14);
+const byDay = new Map<string, typeof items>();
+for (const i of items) {
+  const day = i.publishedAt.slice(0, 10);
+  if (!byDay.has(day)) byDay.set(day, []);
+  byDay.get(day)!.push(i);
+}
+---
+<Base title="News" description="This week's food safety news summary with cited sources, and the last two weeks of food safety news and agency notices.">
+  <h1>This week in food safety</h1>
+  <Notices />
+  <section aria-labelledby="h-summary">
+    <h2 id="h-summary" class="visually-hidden">Weekly summary</h2>
+    <WeeklySummary />
+  </section>
+
+  <section aria-labelledby="h-items">
+    <h2 id="h-items">News and notices, last 14 days ({items.length})</h2>
+    <p class="asof">
+      From {Object.values(newsFile.sources).map((s) => s.name).join(", ")}. Last fetched {formatDateTime(newsFile.generatedAt)}. Only titles, links, and short excerpts are stored.
+    </p>
+    {[...byDay.entries()].map(([day, dayItems]) => (
+      <>
+        <h3>{formatDate(day)}</h3>
+        <ul class="news-list">
+          {dayItems.map((i) => (
+            <li>
+              <a href={i.url} rel="noopener">{i.title}</a>
+              <div class="meta">{i.source}{i.kind === "agency-notice" ? " · agency notice" : ""}</div>
+              {i.excerpt && <p class="excerpt">{i.excerpt}</p>}
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </section>
+</Base>

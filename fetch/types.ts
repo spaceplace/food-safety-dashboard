@@ -129,3 +129,47 @@ export interface StatusFile {
   generatedAt: string;
   sources: Record<string, SourceStatus>;
 }
+
+// ---------- News ----------
+
+export type NewsKind = "news" | "agency-notice";
+
+export interface NewsItem {
+  id: string;
+  /** Which feed this came from (stable key, e.g. "foodsafetynews"). */
+  feed: string;
+  /** Human-readable publisher, e.g. "Food Safety News" or "FDA recall notice". */
+  source: string;
+  kind: NewsKind;
+  title: string;
+  url: string;
+  publishedAt: string; // ISO timestamp
+  excerpt: string;
+  fetchedAt: string;
+}
+
+export type NewsFile = DataFile<NewsItem>;
+
+// ---------- Weekly AI summary ----------
+
+export interface SummarySource {
+  n: number;
+  kind: "news" | "agency-notice" | "outbreak" | "recall";
+  title: string;
+  source: string;
+  url: string;
+  publishedAt: string | null;
+}
+
+export interface SummaryFile {
+  generatedAt: string | null;
+  model: string | null;
+  windowFrom: string | null;
+  windowTo: string | null;
+  paragraphs: string[];
+  sources: SummarySource[];
+  /** ok = generated fresh; cached = reused an earlier summary; skipped = no API key; failed = generation or validation failed. */
+  status: "ok" | "cached" | "skipped" | "failed";
+  note: string | null;
+  usage: { inputTokens: number; outputTokens: number } | null;
+}

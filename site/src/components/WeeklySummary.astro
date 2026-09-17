@@ -1,0 +1,35 @@
+---
+// The AI-written weekly brief. Every sentence carries a numbered citation that links to
+// the source list below it. Shows honest status when the summary is missing or stale.
+import { formatDate, formatDateTime, href, renderCitations, summaryFile } from "../lib/data";
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+const s = summaryFile;
+const has = s.paragraphs.length > 0;
+---
+{!has ? (
+  <p class="muted">The weekly summary is not available yet.{!compact && s.note ? ` (${s.note})` : ""} {compact ? <a href={href("/news/")}>See this week's news items.</a> : "The news items below are still current."}</p>
+) : (
+  <div class="summary">
+    <p class="asof">
+      Written by an AI model ({s.model}) on {formatDateTime(s.generatedAt)} from sources dated {formatDate(s.windowFrom)} to {formatDate(s.windowTo)}.
+      Each bracketed number links to the source for that sentence. Not reviewed by a person before publishing.
+    </p>
+    {s.paragraphs.map((p) => <p set:html={renderCitations(p)} />)}
+    {compact ? (
+      <p class="small"><a href={href("/news/#sources")}>Sources for this summary ({s.sources.length})</a></p>
+    ) : (
+      <>
+        <h3 id="sources">Sources cited</h3>
+        <ol class="sources">
+          {s.sources.map((src) => (
+            <li id={`source-${src.n}`} value={src.n}>
+              <a href={src.url} rel="noopener">{src.title}</a>
+              <span class="muted"> — {src.source}, {formatDate(src.publishedAt)}</span>
+            </li>
+          ))}
+        </ol>
+      </>
+    )}
+  </div>
+)}
