@@ -147,8 +147,14 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
     <p class="small muted">Click any row to filter by it. Counts are records; a record with two allergens counts once under each.</p>
     <div class="breakdowns">
       {breakdowns.map((b) => (
-        <div class="breakdown">
-          <h3>{b.title}</h3>
+        <div class="breakdown" data-tile={b.id}>
+          <div class="tile-head">
+            <h3>{b.title}</h3>
+            <span class="view-toggle" role="group" aria-label={`${b.title}: chart type`} hidden>
+              <button type="button" data-view="bars" aria-pressed="true">Bars</button>
+              <button type="button" data-view="pie" aria-pressed="false">Pie</button>
+            </span>
+          </div>
           <div id={`bd-${b.id}`}><Fragment set:html={b.html} /></div>
         </div>
       ))}
@@ -190,7 +196,7 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
   </section>
 
   <script>
-    import { renderLegendHtml, renderMonthTableHtml, renderRankHtml, renderTrendSvg } from "../../lib/explorer-chart";
+    import { renderLegendHtml, renderMonthTableHtml, renderPieHtml, renderRankHtml, renderTrendSvg } from "../../lib/explorer-chart";
     import { countBy, monthsSince, monthlyByHazard, HAZARD_SLOTS, compactMetrics, isoDaysAgo, type CompactSignal } from "../../lib/signal-aggregate";
     import { CORRECTIVE_ACTIONS, DETECTIONS, GEO_SCOPES, HAZARD_TYPES, PRODUCT_CATEGORIES, ROOT_CAUSES, SOURCES, STATUSES, labelOf } from "../../../../fetch/signals/taxonomy";
 
@@ -261,8 +267,39 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
       });
     }
 
-    const rank = (rows: Array<[string, number]>, terms: { key: string; label: string }[] | null, param: string, limit = 8) =>
-      renderRankHtml(rows.slice(0, limit).map(([key, count]) => ({ key, label: terms ? labelOf(terms, key) : key, count, filter: `${param}=${encodeURIComponent(key)}` })), shown.length, base + "/");
+    type Terms = { key: string; label: string }[] | null;
+    const toRows = (rows: Array<[string, number]>, terms: Terms, param: string, limit: number) =>
+      rows.slice(0, limit).map(([key, count]) => ({ key, label: terms ? labelOf(terms, key) : key, count, filter: `${param}=${encodeURIComponent(key)}` }));
+    const rank = (rows: Array<[string, number]>, terms: Terms, param: string, limit = 8) => renderRankHtml(toRows(rows, terms, param, limit), shown.length, base + "/");
+
+    // Each tile can show bars (default) or a pie. The choice is remembered per tile in this browser.
+    type Part = { rows: () => Array<[string, number]>; terms: Terms; param: string; limit?: number; slots?: Record<string, number> };
+    const TILES: Record<string, Part[]> = {
+      hazard: [{ rows: () => countBy(shown, (s) => s.hz), terms: HAZARD_TYPES, param: "hazard", slots: HAZARD_SLOTS }],
+      agent: [{ rows: () => countBy(shown, (s) => s.ag), terms: null, param: "agent", limit: 10 }],
+      product: [{ rows: () => countBy(shown, (s) => s.pc), terms: PRODUCT_CATEGORIES, param: "product", limit: 10 }],
+      source: [{ rows: () => countBy(shown, (s) => s.source), terms: SOURCES, param: "source" }, { rows: () => countBy(shown, (s) => s.status), terms: STATUSES, param: "status" }],
+      cause: [{ rows: () => countBy(shown, (s) => s.rc), terms: ROOT_CAUSES, param: "cause" }],
+      detection: [{ rows: () => countBy(shown, (s) => s.det), terms: DETECTIONS, param: "detection" }],
+      action: [{ rows: () => countBy(shown, (s) => s.ca), terms: CORRECTIVE_ACTIONS, param: "action" }],
+      geo: [{ rows: () => countBy(shown, (s) => s.geo), terms: GEO_SCOPES, param: "geo" }, { rows: () => countBy(shown, (s) => s.st), terms: null, param: "state", limit: 8 }],
+    };
+    const viewKey = (id: string) => `explorer-view-${id}`;
+    const viewOf = (id: string): "bars" | "pie" => { try { return localStorage.getItem(viewKey(id)) === "pie" ? "pie" : "bars"; } catch { return "bars"; } };
+    function renderTile(id: string) {
+      const view = viewOf(id);
+      const parts = TILES[id];
+      const html = parts.map((p) => {
+        const all = p.rows();
+        // The pie shows every value (folding the long tail into "Other"); bars keep the ranked top list.
+        return view === "pie"
+          ? renderPieHtml(toRows(all, p.terms, p.param, all.length), shown.length, base + "/", { slots: p.slots, centerLabel: p.param === "agent" || p.param === "state" ? "mentions" : "records" })
+          : rank(all, p.terms, p.param, p.limit ?? 8);
+      }).join("");
+      $(`bd-${id}`).innerHTML = html;
+      const tile = document.querySelector<HTMLElement>(`[data-tile="${id}"]`)!;
+      tile.querySelectorAll<HTMLButtonElement>(".view-toggle button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
+    }
 
     function renderMetrics() {
       const m = compactMetrics(shown);
@@ -291,15 +328,18 @@ const change30 = metrics.prior30 > 0 ? Math.round(((metrics.last30 - metrics.pri
     }
 
     function renderBreakdowns() {
-      $("bd-hazard").innerHTML = rank(countBy(shown, (s) => s.hz), HAZARD_TYPES, "hazard");
-      $("bd-agent").innerHTML = rank(countBy(shown, (s) => s.ag), null, "agent", 10);
-      $("bd-product").innerHTML = rank(countBy(shown, (s) => s.pc), PRODUCT_CATEGORIES, "product", 10);
-      $("bd-source").innerHTML = rank(countBy(shown, (s) => s.source), SOURCES, "source") + rank(countBy(shown, (s) => s.status), STATUSES, "status");
-      $("bd-cause").innerHTML = rank(countBy(shown, (s) => s.rc), ROOT_CAUSES, "cause");
-      $("bd-detection").innerHTML = rank(countBy(shown, (s) => s.det), DETECTIONS, "detection");
-      $("bd-action").innerHTML = rank(countBy(shown, (s) => s.ca), CORRECTIVE_ACTIONS, "action");
-      $("bd-geo").innerHTML = rank(countBy(shown, (s) => s.geo), GEO_SCOPES, "geo") + rank(countBy(shown, (s) => s.st), null, "state", 8);
+      for (const id of Object.keys(TILES)) renderTile(id);
     }
+    document.querySelectorAll<HTMLElement>(".view-toggle").forEach((t) => {
+      t.hidden = false;
+      t.addEventListener("click", (e) => {
+        const b = (e.target as Element).closest?.("button[data-view]") as HTMLButtonElement | null;
+        if (!b) return;
+        const id = (t.closest("[data-tile]") as HTMLElement).dataset.tile!;
+        try { localStorage.setItem(viewKey(id), b.dataset.view!); } catch { /* private mode: the choice just is not remembered */ }
+        renderTile(id);
+      });
+    });
 
     function rowHtml(s: CompactSignal): string {
       const kindSub = s.kind === "public-health-alert" ? `<div class="sub">Alert</div>` : s.kind === "outbreak" ? `<div class="sub">Outbreak</div>` : "";

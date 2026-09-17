@@ -127,3 +127,68 @@ export function renderMonthTableHtml(months: string[], series: Series[]): string
     .join("");
   return `<div class="table-wrap"><table><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
 }
+
+export interface PieOptions {
+  /** Fixed color slot per key (identity colors, e.g. hazard types). Keys not listed take the next free slot by rank. */
+  slots?: Record<string, number>;
+  /** Slices beyond this many are folded into "Other". */
+  maxSlices?: number;
+  /** Label for the ring's center. */
+  centerLabel?: string;
+}
+
+/**
+ * A donut chart. Slices are links carrying data-filter so a click filters the explorer; every
+ * slice is also listed in the legend with its count, so identity never depends on color alone.
+ */
+export function renderPieHtml(rows: RankRow[], total: number, hrefBase: string, opts: PieOptions = {}): string {
+  const maxSlices = opts.maxSlices ?? 7;
+  const sorted = [...rows].sort((a, b) => b.count - a.count);
+  const head = sorted.slice(0, maxSlices);
+  const tail = sorted.slice(maxSlices);
+  const slices: RankRow[] = tail.length > 0 ? [...head, { key: "__other", label: `Other (${tail.length})`, count: tail.reduce((a, r) => a + r.count, 0) }] : head;
+  const sum = slices.reduce((a, r) => a + r.count, 0);
+  if (sum === 0) return `<p class="small muted">Nothing to chart.</p>`;
+
+  const cx = 100, cy = 100, r = 88, inner = 52;
+  const used = new Set(Object.values(opts.slots ?? {}).filter((n) => slices.some((s) => (opts.slots ?? {})[s.key] === n)));
+  let nextSlot = 1;
+  const slotFor = (key: string) => {
+    const fixed = opts.slots?.[key];
+    if (fixed) return fixed;
+    while (used.has(nextSlot) && nextSlot < 8) nextSlot++;
+    const s = Math.min(nextSlot, 8);
+    used.add(s);
+    return s;
+  };
+  const point = (angle: number, radius: number) => [cx + radius * Math.cos(angle), cy + radius * Math.sin(angle)];
+  let angle = -Math.PI / 2;
+  let paths = "";
+  let labels = "";
+  const legend: string[] = [];
+  for (const s of slices) {
+    const frac = s.count / sum;
+    const sweep = frac * 2 * Math.PI;
+    const a0 = angle, a1 = angle + sweep;
+    angle = a1;
+    const slot = slotFor(s.key);
+    const large = sweep > Math.PI ? 1 : 0;
+    const [x0, y0] = point(a0, r), [x1, y1] = point(a1, r), [ix0, iy0] = point(a0, inner), [ix1, iy1] = point(a1, inner);
+    const d = slices.length === 1
+      ? `M ${cx + r} ${cy} A ${r} ${r} 0 1 1 ${cx - r} ${cy} A ${r} ${r} 0 1 1 ${cx + r} ${cy} M ${cx + inner} ${cy} A ${inner} ${inner} 0 1 0 ${cx - inner} ${cy} A ${inner} ${inner} 0 1 0 ${cx + inner} ${cy}`
+      : `M ${x0.toFixed(2)} ${y0.toFixed(2)} A ${r} ${r} 0 ${large} 1 ${x1.toFixed(2)} ${y1.toFixed(2)} L ${ix1.toFixed(2)} ${iy1.toFixed(2)} A ${inner} ${inner} 0 ${large} 0 ${ix0.toFixed(2)} ${iy0.toFixed(2)} Z`;
+    const pct = Math.round(frac * 100);
+    const title = `${s.label}: ${s.count} (${pct}%)`;
+    const filter = s.key === "__other" ? null : (s.filter ?? null);
+    const path = `<path d="${d}" fill="var(--viz-${slot})" fill-rule="evenodd"><title>${esc(title)}</title></path>`;
+    paths += filter ? `<a href="${esc(hrefBase)}?${esc(filter)}" data-filter="${esc(filter)}" aria-label="${esc(title)}">${path}</a>` : `<g aria-label="${esc(title)}">${path}</g>`;
+    if (frac >= 0.07) {
+      const [lx, ly] = point((a0 + a1) / 2, (r + inner) / 2);
+      labels += `<text x="${lx.toFixed(1)}" y="${(ly + 3.5).toFixed(1)}" text-anchor="middle">${pct}%</text>`;
+    }
+    const name = filter ? `<a href="${esc(hrefBase)}?${esc(filter)}" data-filter="${esc(filter)}">${esc(s.label)}</a>` : esc(s.label);
+    legend.push(`<li><span class="swatch" style="background:var(--viz-${slot})"></span><span class="name">${name}</span><span class="n">${s.count}</span></li>`);
+  }
+  const center = `<text class="center-n" x="${cx}" y="${cy + 2}" text-anchor="middle">${sum.toLocaleString("en-US")}</text><text class="center-l" x="${cx}" y="${cy + 18}" text-anchor="middle">${esc(opts.centerLabel ?? "records")}</text>`;
+  return `<div class="pie"><svg viewBox="0 0 200 200" role="img" aria-label="Share of records by category">${paths}<g class="pie-labels">${labels}</g>${center}</svg><ul class="pie-legend">${legend.join("")}</ul></div>`;
+}
