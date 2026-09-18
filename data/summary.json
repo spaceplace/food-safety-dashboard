@@ -74,7 +74,7 @@
     }
   ],
   "status": "failed",
-  "note": "Generated text failed the citation check twice: paragraph 2: uncited sentence: \"Saratoga Potato Chips is recalling J.\"",
+  "note": "Generated text failed the citation check twice: paragraph 2: uncited sentence: \"Saratoga Potato Chips of Fort Wayne, IN, is recalling two Best if USED BY codes \"",
   "usage": {
     "inputTokens": 5759,
     "outputTokens": 612
