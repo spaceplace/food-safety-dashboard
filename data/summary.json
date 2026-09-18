@@ -73,8 +73,8 @@
       "publishedAt": "2026-09-14T23:54:12.000Z"
     }
   ],
-  "status": "cached",
-  "note": null,
+  "status": "failed",
+  "note": "Generated text failed the citation check twice: paragraph 2: uncited sentence: \"Saratoga Potato Chips is recalling J.\"",
   "usage": {
     "inputTokens": 5759,
     "outputTokens": 612
