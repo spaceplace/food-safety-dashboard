@@ -74,7 +74,7 @@
     }
   ],
   "status": "failed",
-  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"Saratoga Potato Chips is recalling two best-if-used-by codes of 7.75-ounce packa\"; paragraph 1: uncited sentence: \"GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G\"",
+  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G\"; paragraph 1: uncited sentence: \"Saratoga Potato Chips is recalling two best-if-used-by codes of 7.75-ounce packa\"",
   "usage": {
     "inputTokens": 5759,
     "outputTokens": 612
