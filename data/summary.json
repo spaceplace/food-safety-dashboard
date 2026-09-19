@@ -1,36 +1,28 @@
 {
-  "generatedAt": "2026-09-17T13:38:26.556Z",
+  "generatedAt": "2026-09-19T16:11:14.233Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-10",
-  "windowTo": "2026-09-17",
+  "windowFrom": "2026-09-12",
+  "windowTo": "2026-09-19",
   "paragraphs": [
-    "An outbreak of Salmonella linked to broccoli sprouts remains ongoing, with 22 cases and 2 hospitalizations across 4 states [1]. Evergreen Fresh Sprouts LLC of Moyie Springs, Idaho is recalling 215 cases of broccoli sprouts due to potential Salmonella contamination [9]. A separate outbreak of E. coli O145 linked to frozen blueberries is also active, with 17 cases and 6 hospitalizations across 2 states [3].",
-    "The Cyclospora outbreak linked to iceberg lettuce that affected thousands is now over; it caused 12,883 cases, 570 hospitalizations, and 2 deaths across 21 states [2]. Danone USA is voluntarily recalling So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on and before April 3, 2028, due to potential foreign materials such as small stones in the cashew inclusions [4][20]. Whole Foods Market is recalling Fromagerie Coop de Mean Cabricharme cheese because it contains egg lysozyme, an egg white protein not declared on the label, which poses a risk to people with egg allergies or sensitivities [7][26]."
+    "Gias Foods is recalling bettergoods Authentic Italian Lemon Alfredo Fettuccine sold at Walmart nationwide due to potential Listeria monocytogenes contamination, which can cause serious and sometimes fatal infections in young children, frail or elderly people, and others [5][18]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix because they may contain undeclared wheat gluten [1]. Saratoga Potato Chips is recalling two best-if-used-by codes of 7.75-ounce packages of J. HIGGS Loaded Bacon and Cheddar Potato Chips due to potential undeclared soy allergen [3].",
+    "Additional recalls include So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on and before April 3, 2028 due to potential foreign materials [4]. A&P Creations LLC has issued a nationwide recall of biQ-FEL because it contains undeclared Sildenafil and Tadalafil, active ingredients in prescription drugs Viagra and Cialis [7]."
   ],
   "sources": [
     {
       "n": 1,
-      "kind": "outbreak",
-      "title": "Salmonella Outbreak Linked to Broccoli Sprouts",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/salmonella/outbreaks/broccoli-sprouts-09-26/index.html",
-      "publishedAt": "2026-09-11"
-    },
-    {
-      "n": 2,
-      "kind": "outbreak",
-      "title": "Cyclospora Outbreak Linked to Iceberg Lettuce",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/cyclosporiasis/outbreaks/07-26/index.html",
-      "publishedAt": "2026-09-11"
+      "kind": "agency-notice",
+      "title": "GF Blends Recalls Truly AIP All Purpose Flour and Bread Mix, and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix Due to Potential Undeclared Wheat Gluten",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix",
+      "publishedAt": "2026-09-18T21:48:00.000Z"
     },
     {
       "n": 3,
-      "kind": "outbreak",
-      "title": "E. coli Outbreak Linked to Frozen Blueberries",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/ecoli/outbreaks/blueberries-07-26/index.html",
-      "publishedAt": "2026-09-11"
+      "kind": "agency-notice",
+      "title": "Saratoga Potato Chips Issues Allergy Alert on Undeclared Soy in J. HIGGS Loaded Bacon and Cheddar Potato Chips",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
+      "publishedAt": "2026-09-16T15:21:00.000Z"
     },
     {
       "n": 4,
@@ -41,42 +33,34 @@
       "publishedAt": "2026-09-15T20:31:00.000Z"
     },
     {
+      "n": 5,
+      "kind": "agency-notice",
+      "title": "Gias Foods, Inc. Recalls Bettergoods Authentic Italian Lemon Alfredo Fettuccine Because of Possible Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible",
+      "publishedAt": "2026-09-15T18:52:00.000Z"
+    },
+    {
       "n": 7,
       "kind": "agency-notice",
-      "title": "Whole Foods Market Issues Allergy Alert on Undeclared Egg in Cabricharme Cheese",
+      "title": "A&P Creations LLC Issues Nationwide Recall of biQ-FEL Due to Undeclared Sildenafil and Tadalafil",
       "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/whole-foods-market-issues-allergy-alert-undeclared-egg-cabricharme-cheese",
-      "publishedAt": "2026-09-11T22:15:00.000Z"
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
+      "publishedAt": "2026-09-14T19:55:00.000Z"
     },
     {
-      "n": 9,
-      "kind": "agency-notice",
-      "title": "Evergreen Fresh Sprouts LLC Recalls Broccoli Sprouts Because of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/evergreen-fresh-sprouts-llc-recalls-broccoli-sprouts-because-possible-health-risk",
-      "publishedAt": "2026-09-10T20:37:00.000Z"
-    },
-    {
-      "n": 20,
+      "n": 18,
       "kind": "news",
-      "title": "So Delicious frozen dessert product recalled because of foreign objects",
+      "title": "Pasta sold at Walmart stores nationwide recalled because of Listeria",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/so-delicious-frozen-dessert-product-recalled-because-of-foreign-objects/",
-      "publishedAt": "2026-09-16T02:07:55.000Z"
-    },
-    {
-      "n": 26,
-      "kind": "news",
-      "title": "Whole Foods recalls cheese because of undeclared eggs",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/whole-foods-recalls-cheese-because-of-undeclared-eggs/",
-      "publishedAt": "2026-09-14T23:54:12.000Z"
+      "url": "https://www.foodsafetynews.com/2026/09/pasta-sold-at-walmart-stores-nationwide-recalled-because-of-listeria/",
+      "publishedAt": "2026-09-18T01:13:26.000Z"
     }
   ],
-  "status": "failed",
-  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"Saratoga Potato Chips is recalling two Best if USED BY codes of 7.75-ounce packa\"; paragraph 1: uncited sentence: \"GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G\"",
+  "status": "ok",
+  "note": null,
   "usage": {
-    "inputTokens": 5759,
-    "outputTokens": 612
+    "inputTokens": 5916,
+    "outputTokens": 605
   }
 }

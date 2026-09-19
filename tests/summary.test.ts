@@ -25,6 +25,19 @@ describe("citation check", () => {
     expect(splitSentences("About 3.5 million pounds were recalled [1]. The U.S. firm said so [2].")).toHaveLength(2);
     expect(citationsIn("[2][7] and [1, 4]")).toEqual([2, 7, 1, 4]);
   });
+  it("does not split a brand name that contains initials or a dotted acronym", () => {
+    const paragraph =
+      "Saratoga Potato Chips of Fort Wayne, IN, is recalling 7.75-ounce packages of J. HIGGS Loaded Bacon and Cheddar Potato Chips because they may contain undeclared soy [1]. " +
+      "GF Blends is recalling EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix due to potential undeclared wheat gluten [2]. " +
+      "Smith Bros. Dairy is not affected [2].";
+    expect(splitSentences(paragraph)).toHaveLength(3);
+    expect(checkCitations([paragraph], 2).ok).toBe(true);
+  });
+  it("still catches an uncited sentence that follows a brand name with initials", () => {
+    const r = checkCitations(["J. HIGGS chips were recalled [1]. Shoppers should be very worried."], 1);
+    expect(r.ok).toBe(false);
+    expect(r.problems[0]).toMatch(/uncited sentence: "Shoppers should be very worried\."/);
+  });
 });
 
 describe("summary inputs", () => {
