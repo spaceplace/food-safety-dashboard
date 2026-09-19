@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T20:57:34.583Z",
+  "generatedAt": "2026-09-19T04:42:47.283Z",
   "sources": {
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-18T20:58:08.891Z",
+      "fetchedAt": "2026-09-19T04:43:14.146Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-09",
@@ -13,7 +13,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-18T20:58:13.005Z",
+      "fetchedAt": "2026-09-19T04:43:17.885Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-17",
@@ -61,7 +61,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Bronx, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99548",
@@ -97,7 +97,7 @@
       "agencyUpdatedAt": "2026-09-02",
       "processing": null,
       "firmLocation": "North Chesterfield, VA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99508",
@@ -135,7 +135,7 @@
       "agencyUpdatedAt": "2026-09-02",
       "processing": null,
       "firmLocation": "Brooklyn, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99368",
@@ -170,7 +170,7 @@
       "agencyUpdatedAt": "2026-09-02",
       "processing": null,
       "firmLocation": "Sacramento, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99638",
@@ -206,7 +206,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Sunbury, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99615",
@@ -239,7 +239,7 @@
       "agencyUpdatedAt": "2026-09-02",
       "processing": null,
       "firmLocation": "Laval, N/A",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99582",
@@ -272,7 +272,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Brooklyn, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99656",
@@ -312,7 +312,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Montauk, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99587",
@@ -346,7 +346,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Houston, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99644",
@@ -379,7 +379,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Batavia, OH",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:021-2026",
@@ -424,7 +424,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:019-020-2026",
@@ -476,7 +476,7 @@
         "Products with Secondary Inhibitors - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:99571",
@@ -509,7 +509,7 @@
       "agencyUpdatedAt": "2026-08-21",
       "processing": null,
       "firmLocation": "Honolulu, HI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99424",
@@ -545,7 +545,7 @@
       "agencyUpdatedAt": "2026-08-21",
       "processing": null,
       "firmLocation": "Union City, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99716",
@@ -587,7 +587,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Laurel, MD",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99690",
@@ -623,7 +623,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Savage, MD",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99493",
@@ -661,7 +661,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Arlington, VA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99605",
@@ -696,7 +696,7 @@
       "agencyUpdatedAt": "2026-09-08",
       "processing": null,
       "firmLocation": "Broomfield, CO",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99575",
@@ -731,7 +731,7 @@
       "agencyUpdatedAt": "2026-08-27",
       "processing": null,
       "firmLocation": "Austin, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99695",
@@ -766,7 +766,7 @@
       "agencyUpdatedAt": "2026-08-21",
       "processing": null,
       "firmLocation": "Ravenna, OH",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99619",
@@ -801,7 +801,7 @@
       "agencyUpdatedAt": "2026-09-04",
       "processing": null,
       "firmLocation": "Lancaster, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99538",
@@ -836,7 +836,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Hauppauge, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99640",
@@ -882,7 +882,7 @@
       "agencyUpdatedAt": "2026-08-20",
       "processing": null,
       "firmLocation": "Austin, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99434",
@@ -921,7 +921,7 @@
       "agencyUpdatedAt": "2026-08-14",
       "processing": null,
       "firmLocation": "Ridgefield, CT",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99542",
@@ -959,7 +959,7 @@
       "agencyUpdatedAt": "2026-08-18",
       "processing": null,
       "firmLocation": "Lakeland, FL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99580",
@@ -996,7 +996,7 @@
       "agencyUpdatedAt": "2026-08-14",
       "processing": null,
       "firmLocation": "Reno, NV",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99663",
@@ -1031,7 +1031,7 @@
       "agencyUpdatedAt": "2026-08-19",
       "processing": null,
       "firmLocation": "Skowhegan, ME",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99639",
@@ -1066,7 +1066,7 @@
       "agencyUpdatedAt": "2026-08-19",
       "processing": null,
       "firmLocation": "Portland, OR",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99635",
@@ -1101,7 +1101,7 @@
       "agencyUpdatedAt": "2026-08-20",
       "processing": null,
       "firmLocation": "Dallas, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99618",
@@ -1134,7 +1134,7 @@
       "agencyUpdatedAt": "2026-08-18",
       "processing": null,
       "firmLocation": "Arlington, VA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99650",
@@ -1169,7 +1169,7 @@
       "agencyUpdatedAt": "2026-08-20",
       "processing": null,
       "firmLocation": "Bartlett, IL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99569",
@@ -1204,7 +1204,7 @@
       "agencyUpdatedAt": "2026-08-18",
       "processing": null,
       "firmLocation": "San Diego, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:018-2026",
@@ -1249,7 +1249,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:99479",
@@ -1286,7 +1286,7 @@
       "agencyUpdatedAt": "2026-08-12",
       "processing": null,
       "firmLocation": "N Manchester, IN",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99453",
@@ -1341,7 +1341,7 @@
       "agencyUpdatedAt": "2026-08-27",
       "processing": null,
       "firmLocation": "Doctor Mora",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99097",
@@ -1377,7 +1377,7 @@
       "agencyUpdatedAt": "2026-08-12",
       "processing": null,
       "firmLocation": "Allentown, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99517",
@@ -1413,7 +1413,7 @@
       "agencyUpdatedAt": "2026-08-07",
       "processing": null,
       "firmLocation": "White Salmon, WA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99540",
@@ -1448,7 +1448,7 @@
       "agencyUpdatedAt": "2026-08-07",
       "processing": null,
       "firmLocation": "Diamond Bar, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99516",
@@ -1483,7 +1483,7 @@
       "agencyUpdatedAt": "2026-08-07",
       "processing": null,
       "firmLocation": "Venice, FL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99519",
@@ -1516,7 +1516,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Parkland, FL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99470",
@@ -1552,7 +1552,7 @@
       "agencyUpdatedAt": "2026-08-27",
       "processing": null,
       "firmLocation": "Noblesville, IN",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:017-2026",
@@ -1593,7 +1593,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:016-2026",
@@ -1636,7 +1636,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:99325",
@@ -1674,7 +1674,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Rockville, MD",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99211",
@@ -1728,7 +1728,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Mechanicsville, MD",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99458",
@@ -1766,7 +1766,7 @@
       "agencyUpdatedAt": "2026-08-03",
       "processing": null,
       "firmLocation": "Charlotte, NC",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99448",
@@ -1801,7 +1801,7 @@
       "agencyUpdatedAt": "2026-08-06",
       "processing": null,
       "firmLocation": "Lake Oswego, OR",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99539",
@@ -1836,7 +1836,7 @@
       "agencyUpdatedAt": "2026-08-18",
       "processing": null,
       "firmLocation": "Beloit, WI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99444",
@@ -1871,7 +1871,7 @@
       "agencyUpdatedAt": "2026-08-03",
       "processing": null,
       "firmLocation": "West Bridgewater, MA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98392",
@@ -1904,7 +1904,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Lorton, VA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99513",
@@ -1937,7 +1937,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Pomona, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99351",
@@ -1971,7 +1971,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Gangseo",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99560",
@@ -2004,7 +2004,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Ann Arbor, MI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99460",
@@ -2039,7 +2039,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Grand Prairie, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99451",
@@ -2074,7 +2074,7 @@
       "agencyUpdatedAt": "2026-08-17",
       "processing": null,
       "firmLocation": "Metairie, LA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99358",
@@ -2107,7 +2107,7 @@
       "agencyUpdatedAt": "2026-08-05",
       "processing": null,
       "firmLocation": "Gyeongju",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:PHA-08082026-01",
@@ -2143,7 +2143,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:015-2026",
@@ -2184,7 +2184,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:014-2026",
@@ -2233,7 +2233,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:013-2026",
@@ -2277,7 +2277,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:99081",
@@ -2313,7 +2313,7 @@
       "agencyUpdatedAt": "2026-07-28",
       "processing": null,
       "firmLocation": "Altoona, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99142",
@@ -2346,7 +2346,7 @@
       "agencyUpdatedAt": "2026-07-27",
       "processing": null,
       "firmLocation": "Bay Shore, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:012-2026",
@@ -2390,7 +2390,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-07302026-01",
@@ -2431,7 +2431,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:99387",
@@ -2464,7 +2464,7 @@
       "agencyUpdatedAt": "2026-07-21",
       "processing": null,
       "firmLocation": "Cerritos, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99355",
@@ -2497,7 +2497,7 @@
       "agencyUpdatedAt": "2026-07-21",
       "processing": null,
       "firmLocation": "Brooklyn, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99386",
@@ -2531,7 +2531,7 @@
       "agencyUpdatedAt": "2026-07-23",
       "processing": null,
       "firmLocation": "San Gabriel, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99354",
@@ -2568,7 +2568,7 @@
       "agencyUpdatedAt": "2026-07-17",
       "processing": null,
       "firmLocation": "Conrad, MT",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99215",
@@ -2608,7 +2608,7 @@
       "agencyUpdatedAt": "2026-07-21",
       "processing": null,
       "firmLocation": "Rizhao, N/A",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99357",
@@ -2643,7 +2643,7 @@
       "agencyUpdatedAt": "2026-07-23",
       "processing": null,
       "firmLocation": "Elizabeth, NJ",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:PHA-07292026-01",
@@ -2686,7 +2686,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:011-2026",
@@ -2729,7 +2729,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:010-2026",
@@ -2768,7 +2768,7 @@
         "Thermally Processed - Commercially Sterile"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:99040",
@@ -2819,7 +2819,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "Paterson, NJ",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99074",
@@ -2856,7 +2856,7 @@
       "agencyUpdatedAt": "2026-07-13",
       "processing": null,
       "firmLocation": "White Plains, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99282",
@@ -2889,7 +2889,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "Sacramento, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99055",
@@ -2922,7 +2922,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "Elizabeth, NJ",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99373",
@@ -2957,7 +2957,7 @@
       "agencyUpdatedAt": "2026-07-21",
       "processing": null,
       "firmLocation": "San Carlos",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99306",
@@ -2990,7 +2990,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "Petaluma, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99238",
@@ -3023,7 +3023,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "North Bergen, NJ",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98931",
@@ -3058,7 +3058,7 @@
       "agencyUpdatedAt": "2026-07-13",
       "processing": null,
       "firmLocation": "Houston, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99293",
@@ -3095,7 +3095,7 @@
       "agencyUpdatedAt": "2026-07-13",
       "processing": null,
       "firmLocation": "Golden Valley, MN",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98988",
@@ -3136,7 +3136,7 @@
       "agencyUpdatedAt": "2026-07-06",
       "processing": null,
       "firmLocation": "Gonzales, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99327",
@@ -3174,7 +3174,7 @@
       "agencyUpdatedAt": "2026-07-06",
       "processing": null,
       "firmLocation": "Chicago, IL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99124",
@@ -3209,7 +3209,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Berwick, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99314",
@@ -3242,7 +3242,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Chicopee, MA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99253",
@@ -3275,7 +3275,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Marysville, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99335",
@@ -3312,7 +3312,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Renton, WA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99235",
@@ -3345,7 +3345,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Sanford, FL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99324",
@@ -3381,7 +3381,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Mesa, AZ",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99292",
@@ -3417,7 +3417,7 @@
       "agencyUpdatedAt": "2026-07-01",
       "processing": null,
       "firmLocation": "Chicago, IL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99275",
@@ -3450,7 +3450,7 @@
       "agencyUpdatedAt": "2026-07-01",
       "processing": null,
       "firmLocation": "Lancaster, OH",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99255",
@@ -3489,7 +3489,7 @@
       "agencyUpdatedAt": "2026-06-26",
       "processing": null,
       "firmLocation": "Ontario, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99242",
@@ -3525,7 +3525,7 @@
       "agencyUpdatedAt": "2026-07-01",
       "processing": null,
       "firmLocation": "New York, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99231",
@@ -3560,7 +3560,7 @@
       "agencyUpdatedAt": "2026-07-13",
       "processing": null,
       "firmLocation": "Le Mars, IA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:PHA-07032026-01",
@@ -3600,7 +3600,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:98975",
@@ -3649,7 +3649,7 @@
       "agencyUpdatedAt": "2026-06-23",
       "processing": null,
       "firmLocation": "Maspeth, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99147",
@@ -3684,7 +3684,7 @@
       "agencyUpdatedAt": "2026-06-22",
       "processing": null,
       "firmLocation": "Brooklyn, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98864",
@@ -3725,7 +3725,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Hanover, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99082",
@@ -3768,7 +3768,7 @@
       "agencyUpdatedAt": "2026-07-01",
       "processing": null,
       "firmLocation": "Berkeley, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99120",
@@ -3804,7 +3804,7 @@
       "agencyUpdatedAt": "2026-06-23",
       "processing": null,
       "firmLocation": "New Boston, MI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98281",
@@ -3851,7 +3851,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Raleigh, NC",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98867",
@@ -3892,7 +3892,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Grove City, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99099",
@@ -3929,7 +3929,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Norwalk, IA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99198",
@@ -3964,7 +3964,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Bronx, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99118",
@@ -3997,7 +3997,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Santo Domingo, N/A",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:PHA-06252026-02",
@@ -4044,7 +4044,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:009-2026",
@@ -4090,7 +4090,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-06252026-01",
@@ -4131,7 +4131,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:98926",
@@ -4165,7 +4165,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "Belpasso",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99018",
@@ -4203,7 +4203,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Hazelwood, MO",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98984",
@@ -4236,7 +4236,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Sheridan, WY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99208",
@@ -4271,7 +4271,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "Taylor, MI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99020",
@@ -4306,7 +4306,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "Eugene, OR",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99117",
@@ -4339,7 +4339,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Hayward, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99009",
@@ -4372,7 +4372,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Houston, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99056",
@@ -4405,7 +4405,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Fairhope, AL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98973",
@@ -4441,7 +4441,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Milwaukee, WI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99218",
@@ -4476,7 +4476,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "Fort Washington, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:008-2026",
@@ -4515,7 +4515,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:98732",
@@ -4574,7 +4574,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "Miami, FL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99037",
@@ -4609,7 +4609,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "Bayamon, PR",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99155",
@@ -4644,7 +4644,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "New Orleans, LA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99017",
@@ -4677,7 +4677,7 @@
       "agencyUpdatedAt": "2026-06-10",
       "processing": null,
       "firmLocation": "Hayward, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99022",
@@ -4712,7 +4712,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "Buffalo, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98993",
@@ -4747,7 +4747,7 @@
       "agencyUpdatedAt": "2026-06-10",
       "processing": null,
       "firmLocation": "Los Angeles, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98850",
@@ -4780,7 +4780,7 @@
       "agencyUpdatedAt": "2026-06-08",
       "processing": null,
       "firmLocation": "Pune, N/A",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99038",
@@ -4813,7 +4813,7 @@
       "agencyUpdatedAt": "2026-06-10",
       "processing": null,
       "firmLocation": "Lynn, MA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98714",
@@ -4849,7 +4849,7 @@
       "agencyUpdatedAt": "2026-06-10",
       "processing": null,
       "firmLocation": "Sulphur Springs, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98369",
@@ -4884,7 +4884,7 @@
       "agencyUpdatedAt": "2026-06-11",
       "processing": null,
       "firmLocation": "Garland, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98965",
@@ -4917,7 +4917,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "Rogers, MN",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98953",
@@ -5092,7 +5092,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Boise, ID",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98982",
@@ -5135,7 +5135,7 @@
       "agencyUpdatedAt": "2026-06-02",
       "processing": null,
       "firmLocation": "Petaluma, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98902",
@@ -5182,7 +5182,7 @@
       "agencyUpdatedAt": "2026-05-29",
       "processing": null,
       "firmLocation": "Watertown, WI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98925",
@@ -5220,7 +5220,7 @@
       "agencyUpdatedAt": "2026-06-04",
       "processing": null,
       "firmLocation": "Lebanon, TN",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98908",
@@ -5256,7 +5256,7 @@
       "agencyUpdatedAt": "2026-06-03",
       "processing": null,
       "firmLocation": "Eugene, OR",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98923",
@@ -5291,7 +5291,7 @@
       "agencyUpdatedAt": "2026-05-29",
       "processing": null,
       "firmLocation": "Morrisville, NC",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98943",
@@ -5328,7 +5328,7 @@
       "agencyUpdatedAt": "2026-06-02",
       "processing": null,
       "firmLocation": "Zanesville, OH",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99015",
@@ -5361,7 +5361,7 @@
       "agencyUpdatedAt": "2026-06-02",
       "processing": null,
       "firmLocation": "Scott City, MO",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98989",
@@ -5394,7 +5394,7 @@
       "agencyUpdatedAt": "2026-06-02",
       "processing": null,
       "firmLocation": "Long Island City, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98889",
@@ -5427,7 +5427,7 @@
       "agencyUpdatedAt": "2026-06-03",
       "processing": null,
       "firmLocation": "Madison Heights, MI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98949",
@@ -5462,7 +5462,7 @@
       "agencyUpdatedAt": "2026-05-29",
       "processing": null,
       "firmLocation": "Burlingame, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99030",
@@ -5495,7 +5495,7 @@
       "agencyUpdatedAt": "2026-06-02",
       "processing": null,
       "firmLocation": "Chicago, IL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98857",
@@ -5531,7 +5531,7 @@
       "agencyUpdatedAt": "2026-05-29",
       "processing": null,
       "firmLocation": "Fresno, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98887",
@@ -5567,7 +5567,7 @@
       "agencyUpdatedAt": "2026-05-29",
       "processing": null,
       "firmLocation": "Boulder, CO",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99001",
@@ -5602,7 +5602,7 @@
       "agencyUpdatedAt": "2026-06-02",
       "processing": null,
       "firmLocation": "Vernon, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99070",
@@ -5637,7 +5637,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "San Diego, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:99057",
@@ -5672,7 +5672,7 @@
       "agencyUpdatedAt": "2026-06-03",
       "processing": null,
       "firmLocation": "Pleasanton, TX",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98928",
@@ -5710,7 +5710,7 @@
       "agencyUpdatedAt": "2026-05-26",
       "processing": null,
       "firmLocation": "Waukesha, WI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98713",
@@ -5746,7 +5746,7 @@
       "agencyUpdatedAt": "2026-05-29",
       "processing": null,
       "firmLocation": "Media, PA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98841",
@@ -5781,7 +5781,7 @@
       "agencyUpdatedAt": "2026-05-22",
       "processing": null,
       "firmLocation": "Ogden, UT",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98961",
@@ -5816,7 +5816,7 @@
       "agencyUpdatedAt": "2026-05-28",
       "processing": null,
       "firmLocation": "Los Angeles, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:007-2026",
@@ -5859,7 +5859,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fda:98822",
@@ -5901,7 +5901,7 @@
       "agencyUpdatedAt": "2026-05-21",
       "processing": null,
       "firmLocation": "Iron Ridge, WI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98919",
@@ -5941,7 +5941,7 @@
       "agencyUpdatedAt": "2026-05-21",
       "processing": null,
       "firmLocation": "Elgin, IL",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98851",
@@ -5986,7 +5986,7 @@
       "agencyUpdatedAt": "2026-05-21",
       "processing": null,
       "firmLocation": "San Leandro, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98765",
@@ -6033,7 +6033,7 @@
       "agencyUpdatedAt": "2026-05-18",
       "processing": null,
       "firmLocation": "Rockville Centre, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98844",
@@ -6079,7 +6079,7 @@
       "agencyUpdatedAt": "2026-05-21",
       "processing": null,
       "firmLocation": "Eastvale, CA",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98816",
@@ -6117,7 +6117,7 @@
       "agencyUpdatedAt": "2026-05-21",
       "processing": null,
       "firmLocation": "Janesville, WI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98832",
@@ -6163,7 +6163,7 @@
       "agencyUpdatedAt": "2026-05-19",
       "processing": null,
       "firmLocation": "Chandler, AZ",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98879",
@@ -6200,7 +6200,7 @@
       "agencyUpdatedAt": "2026-05-21",
       "processing": null,
       "firmLocation": "Cudahy, WI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98934",
@@ -6236,7 +6236,7 @@
       "agencyUpdatedAt": "2026-05-21",
       "processing": null,
       "firmLocation": "Vernon Center, NY",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fda:98886",
@@ -6269,7 +6269,7 @@
       "agencyUpdatedAt": "2026-05-20",
       "processing": null,
       "firmLocation": "Detroit, MI",
-      "fetchedAt": "2026-09-18T20:58:08.891Z"
+      "fetchedAt": "2026-09-19T04:43:14.146Z"
     },
     {
       "id": "fsis:PHA-05242026-01",
@@ -6308,7 +6308,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-05092026-01",
@@ -6349,7 +6349,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-05042026-01",
@@ -6390,7 +6390,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-04302026-01",
@@ -6426,7 +6426,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-04092026-01",
@@ -6472,7 +6472,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-04012026-01",
@@ -6510,7 +6510,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-03252026-01",
@@ -6555,7 +6555,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-03232026-01",
@@ -6599,7 +6599,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-03132026-01",
@@ -6639,7 +6639,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:005-2026-EXP",
@@ -6676,7 +6676,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-03012026-01",
@@ -6717,7 +6717,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:006-2026",
@@ -6754,7 +6754,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:005-2026",
@@ -6793,7 +6793,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:004-2026",
@@ -6837,7 +6837,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:003-2026",
@@ -6880,7 +6880,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:002-2026",
@@ -6919,7 +6919,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:001-2026",
@@ -6965,7 +6965,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:042-2025",
@@ -7009,7 +7009,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:041-2025",
@@ -7047,7 +7047,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:040-2025",
@@ -7090,7 +7090,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:039-2025",
@@ -7133,7 +7133,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:038-2025",
@@ -7171,7 +7171,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:037-2025",
@@ -7214,7 +7214,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:036-2025",
@@ -7254,7 +7254,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:035-2025",
@@ -7294,7 +7294,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:034-2025",
@@ -7336,7 +7336,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:033-2025",
@@ -7371,7 +7371,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:032-2025",
@@ -7406,7 +7406,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-10072025-01",
@@ -7446,7 +7446,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-10062025-01",
@@ -7488,7 +7488,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:031-2025",
@@ -7525,7 +7525,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:030-2025",
@@ -7560,7 +7560,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-09252025-01",
@@ -7600,7 +7600,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     },
     {
       "id": "fsis:PHA-09192025-01",
@@ -7638,7 +7638,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-09-18T20:58:13.005Z"
+      "fetchedAt": "2026-09-19T04:43:17.885Z"
     }
   ]
 }
