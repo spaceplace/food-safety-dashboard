@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-19T16:11:14.233Z",
+  "generatedAt": "2026-09-20T16:12:33.859Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-12",
-  "windowTo": "2026-09-19",
+  "windowFrom": "2026-09-13",
+  "windowTo": "2026-09-20",
   "paragraphs": [
-    "Gias Foods is recalling bettergoods Authentic Italian Lemon Alfredo Fettuccine sold at Walmart nationwide due to potential Listeria monocytogenes contamination, which can cause serious and sometimes fatal infections in young children, frail or elderly people, and others [5][18]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix because they may contain undeclared wheat gluten [1]. Saratoga Potato Chips is recalling two best-if-used-by codes of 7.75-ounce packages of J. HIGGS Loaded Bacon and Cheddar Potato Chips due to potential undeclared soy allergen [3].",
-    "Additional recalls include So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on and before April 3, 2028 due to potential foreign materials [4]. A&P Creations LLC has issued a nationwide recall of biQ-FEL because it contains undeclared Sildenafil and Tadalafil, active ingredients in prescription drugs Viagra and Cialis [7]."
+    "Saratoga Potato Chips is recalling J. HIGGS Loaded Bacon and Cheddar Potato Chips (7.75-ounce packages with specific best-if-used-by codes) due to undeclared soy allergen, which poses a serious risk to people with soy allergies or sensitivities [3]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix because they may contain undeclared wheat gluten, risking adverse health effects for people with celiac disease or severe gluten intolerance [1]. Gias Foods is recalling bettergoods Authentic Italian Lemon Alfredo Fettuccine sold nationwide at Walmart due to potential Listeria monocytogenes contamination, which can cause serious or fatal infections in young children, elderly people, and others with weakened immune systems [5].",
+    "So Delicious Dairy Free® is recalling Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on or before April 3, 2028 due to potential foreign materials [4]. A&P Creations LLC is recalling biQ-FEL nationwide because it contains undeclared sildenafil and tadalafil, active ingredients in prescription drugs Viagra and Cialis that should only be used under medical supervision [7]."
   ],
   "sources": [
     {
@@ -47,20 +47,12 @@
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
       "publishedAt": "2026-09-14T19:55:00.000Z"
-    },
-    {
-      "n": 18,
-      "kind": "news",
-      "title": "Pasta sold at Walmart stores nationwide recalled because of Listeria",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/pasta-sold-at-walmart-stores-nationwide-recalled-because-of-listeria/",
-      "publishedAt": "2026-09-18T01:13:26.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 5916,
-    "outputTokens": 605
+    "inputTokens": 5728,
+    "outputTokens": 692
   }
 }
