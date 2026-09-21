@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { SITE_NAME, REPO_URL } from "../lib/constants";
+import { SITE_NAME, REPO_URL, GOATCOUNTER_CODE } from "../lib/constants";
 import { href, formatDateTime, statusFile } from "../lib/data";
 
 interface Props {
@@ -29,6 +29,13 @@ const isCurrent = (path: string) => href(path).replace(/\/$/, "") === current;
     <meta name="description" content={description} />
     <link rel="icon" href={href("/favicon.svg")} type="image/svg+xml" />
     <meta name="color-scheme" content="light dark" />
+    {GOATCOUNTER_CODE && (
+      <script
+        data-goatcounter={`https://${GOATCOUNTER_CODE}.goatcounter.com/count`}
+        async
+        src="https://gc.zgo.at/count.js"
+      ></script>
+    )}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -52,7 +59,9 @@ const isCurrent = (path: string) => href(path).replace(/\/$/, "") === current;
           See <a href={href("/methods/")}>Data and methods</a> for what every number means.
         </p>
         <p>
-          Food Safety Brief sets no cookies and runs no analytics. It is an independent project, not affiliated with any government agency.
+          Food Safety Brief sets no cookies. It counts page views with GoatCounter, which stores nothing
+          on your device and records no personal data — see <a href={href("/methods/")}>Data and methods</a>.
+          It is an independent project, not affiliated with any government agency.
           Source code: <a href={REPO_URL}>GitHub</a>.
         </p>
       </div>

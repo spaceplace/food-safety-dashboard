@@ -18,3 +18,14 @@ export const SOURCE_LINKS = {
   fsisRecalls: "https://www.fsis.usda.gov/recalls",
   fsisApi: "https://www.fsis.usda.gov/science-data/developer-resources/recall-api",
 };
+
+/**
+ * GoatCounter site code — the first part of your goatcounter.com subdomain, so
+ * "foodsafetybrief" for https://foodsafetybrief.goatcounter.com.
+ *
+ * Set this to "" to switch visitor counting off completely: the script tag is
+ * then never rendered and the site makes no third-party requests at all. The
+ * script itself already ignores localhost and private addresses, so local
+ * development and preview builds are never counted.
+ */
+export const GOATCOUNTER_CODE = "foodsafetybrief";

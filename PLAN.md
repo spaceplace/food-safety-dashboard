@@ -25,7 +25,7 @@ Written 2026-09-16 after probing every data source in the brief. Nothing has bee
 - **Data storage: JSON files committed into the repo** under `data/`. The scheduled job fetches, writes the files, and commits them. Benefits: the git history becomes a free audit trail of every change CDC and FDA ever published, and "last good data" fallback is automatic (if a fetch fails, the old file simply stays).
 - **Tests: Vitest**, running each parser against a saved copy of the real page or API response stored in `fixtures/`. A CI step also runs the parsers against the live sites daily and fails loudly if they return nothing, so we notice when CDC changes their HTML.
 - **AI summary: Claude Haiku 4.5** via the Anthropic API, called once a week inside the job, with the result cached in `data/summary.json`. Cost is roughly a cent per run. The prompt forces every sentence to end with a citation like `[3]` pointing at a numbered source; the code rejects any summary containing a citation number not in the list.
-- **No analytics, no cookies, no third-party scripts.**
+- **No cookies and no tracking networks.** One third-party script: GoatCounter (`site/src/lib/constants.ts` → `GOATCOUNTER_CODE`) counts page views without cookies or stored personal data. Setting that constant to `""` removes it and every third-party request with it.
 
 ## 3. Folder layout
 
