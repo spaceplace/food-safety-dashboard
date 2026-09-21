@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-21T12:55:41.605Z",
+  "generatedAt": "2026-09-21T15:33:15.201Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-21T12:55:41.678Z",
+      "fetchedAt": "2026-09-21T15:33:15.292Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-21T12:56:14.169Z",
+      "fetchedAt": "2026-09-21T15:33:37.275Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-09",
@@ -24,7 +24,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-21T12:56:18.756Z",
+      "fetchedAt": "2026-09-21T15:33:44.312Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-17",
@@ -8447,13 +8447,13 @@
         "detail": "CDC notice: recall issued"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Investigation open"
+        "normalized": "closed",
+        "agency": "Outbreak over"
       },
       "dates": {
         "event": "2026-07-06",
         "reported": "2026-07-06",
-        "updated": "2026-09-11",
+        "updated": "2026-09-21",
         "closed": null
       },
       "outbreak": {
@@ -8467,6 +8467,7 @@
       "relatedToOutbreak": true,
       "reasonText": null,
       "missing": [
+        "closedDate",
         "rootCause (CDC notices describe the contaminated food, not why it was contaminated)"
       ],
       "inferred": [
@@ -8475,8 +8476,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-21T15:33:15.201Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
