@@ -1,15 +1,23 @@
 {
-  "generatedAt": "2026-09-20T16:12:33.859Z",
+  "generatedAt": "2026-09-21T22:01:44.452Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-13",
-  "windowTo": "2026-09-20",
+  "windowFrom": "2026-09-14",
+  "windowTo": "2026-09-21",
   "paragraphs": [
-    "Saratoga Potato Chips is recalling J. HIGGS Loaded Bacon and Cheddar Potato Chips (7.75-ounce packages with specific best-if-used-by codes) due to undeclared soy allergen, which poses a serious risk to people with soy allergies or sensitivities [3]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix because they may contain undeclared wheat gluten, risking adverse health effects for people with celiac disease or severe gluten intolerance [1]. Gias Foods is recalling bettergoods Authentic Italian Lemon Alfredo Fettuccine sold nationwide at Walmart due to potential Listeria monocytogenes contamination, which can cause serious or fatal infections in young children, elderly people, and others with weakened immune systems [5].",
-    "So Delicious Dairy Free® is recalling Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on or before April 3, 2028 due to potential foreign materials [4]. A&P Creations LLC is recalling biQ-FEL nationwide because it contains undeclared sildenafil and tadalafil, active ingredients in prescription drugs Viagra and Cialis that should only be used under medical supervision [7]."
+    "An outbreak of E. coli O145 linked to frozen blueberries is now over [1]. The outbreak affected 17 people across two states, resulting in six hospitalizations and no deaths [1].",
+    "Gias Foods is recalling bettergoods Authentic Italian Lemon Alfredo Fettuccine sold at Walmart due to potential Listeria monocytogenes contamination [6][25]. So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on or before April 3, 2028 are being recalled for potential foreign material [5]. Saratoga Potato Chips is recalling 7.75-ounce packages of J. HIGGS Loaded Bacon and Cheddar Potato Chips because they may contain undeclared soy allergen [4][17]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix due to potential undeclared wheat gluten [2]. A&P Creations LLC is recalling biQ-FEL nationwide because it contains undeclared sildenafil and tadalafil, active ingredients in prescription drugs [8]."
   ],
   "sources": [
     {
       "n": 1,
+      "kind": "outbreak",
+      "title": "E. coli Outbreak Linked to Frozen Blueberries",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/ecoli/outbreaks/blueberries-07-26/index.html",
+      "publishedAt": "2026-09-21"
+    },
+    {
+      "n": 2,
       "kind": "agency-notice",
       "title": "GF Blends Recalls Truly AIP All Purpose Flour and Bread Mix, and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix Due to Potential Undeclared Wheat Gluten",
       "source": "FDA recall notice",
@@ -17,7 +25,7 @@
       "publishedAt": "2026-09-18T21:48:00.000Z"
     },
     {
-      "n": 3,
+      "n": 4,
       "kind": "agency-notice",
       "title": "Saratoga Potato Chips Issues Allergy Alert on Undeclared Soy in J. HIGGS Loaded Bacon and Cheddar Potato Chips",
       "source": "FDA recall notice",
@@ -25,7 +33,7 @@
       "publishedAt": "2026-09-16T15:21:00.000Z"
     },
     {
-      "n": 4,
+      "n": 5,
       "kind": "agency-notice",
       "title": "So Delicious Dairy Free® Issues Voluntary Recall of Salted Caramel Cluster Non-Dairy Frozen Dessert Pints Due to Potential Presence of Foreign Material",
       "source": "FDA recall notice",
@@ -33,7 +41,7 @@
       "publishedAt": "2026-09-15T20:31:00.000Z"
     },
     {
-      "n": 5,
+      "n": 6,
       "kind": "agency-notice",
       "title": "Gias Foods, Inc. Recalls Bettergoods Authentic Italian Lemon Alfredo Fettuccine Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -41,18 +49,34 @@
       "publishedAt": "2026-09-15T18:52:00.000Z"
     },
     {
-      "n": 7,
+      "n": 8,
       "kind": "agency-notice",
       "title": "A&P Creations LLC Issues Nationwide Recall of biQ-FEL Due to Undeclared Sildenafil and Tadalafil",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
       "publishedAt": "2026-09-14T19:55:00.000Z"
+    },
+    {
+      "n": 17,
+      "kind": "news",
+      "title": "Potato chips recalled because of undeclared soy",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/potato-chips-recalled-because-of-undeclared-soy/",
+      "publishedAt": "2026-09-19T03:05:27.000Z"
+    },
+    {
+      "n": 25,
+      "kind": "news",
+      "title": "Pasta sold at Walmart stores nationwide recalled because of Listeria",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/pasta-sold-at-walmart-stores-nationwide-recalled-because-of-listeria/",
+      "publishedAt": "2026-09-18T01:13:26.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 5728,
-    "outputTokens": 692
+    "inputTokens": 6028,
+    "outputTokens": 615
   }
 }
