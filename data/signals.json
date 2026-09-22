@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-22T11:45:17.181Z",
+  "generatedAt": "2026-09-22T17:01:02.240Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-22T11:45:17.249Z",
+      "fetchedAt": "2026-09-22T17:01:02.316Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,16 +15,16 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-22T11:45:42.000Z",
+      "fetchedAt": "2026-09-22T17:01:28.719Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-09-09",
-      "itemCount": 2634
+      "upstreamUpdated": "2026-09-16",
+      "itemCount": 2641
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-22T11:45:47.568Z",
+      "fetchedAt": "2026-09-22T17:01:33.662Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-17",
@@ -32,6 +32,412 @@
     }
   },
   "items": [
+    {
+      "id": "fda:99636",
+      "slug": "fda-99636",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99636",
+      "title": "EXOTIQUE FOODS CANADA recalls Momchipz Gluten Free Veggie Chips Broccoli Florets & Cauliflower, net wt. 3oz (85g). UPC…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=EXOTIQUE%20FOODS%20CANADA",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99636",
+      "firm": "EXOTIQUE FOODS CANADA",
+      "product": "Momchipz Gluten Free Veggie Chips Broccoli Florets & Cauliflower, net wt. 3oz (85g). UPC 6 28634 44216 6. Ingredients: Broccoli, Cauliflower, Tapioca Flour, Coconut Oil, Salt, White Pepper. Proudly M…",
+      "productCategory": "produce",
+      "foodKeys": [
+        "peppers",
+        "flour"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Wheat or gluten",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "unspecified",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Product was sold in the U.S."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-07",
+        "reported": "2026-09-16",
+        "updated": "2026-09-04",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared Wheat.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-22T17:01:02.240Z",
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99675",
+      "slug": "fda-99675",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99675",
+      "title": "L-Nutra Inc recalls Prolon Everyday Apulian Almond & Cocoa Spread, NET WT: 8.47 OZ. Product packaged in glass…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=L-Nutra%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99675",
+      "firm": "L-Nutra Inc",
+      "product": "Prolon Everyday Apulian Almond & Cocoa Spread, NET WT: 8.47 OZ. Product packaged in glass jar with white label and gold screw on closure. UPC: 50040360530",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "nuts",
+        "chocolate"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Tree nuts",
+          "group": "allergen"
+        },
+        {
+          "name": "Glass",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Product is sold exclusively from the recalling firm's online website nationwide."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-07",
+        "reported": "2026-09-16",
+        "updated": "2026-09-10",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared allergen (tree nuts): hazelnut, cashew, and pistachio.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-22T17:01:02.240Z",
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99682",
+      "slug": "fda-99682",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99682",
+      "title": "Ferrero USA recalls Fannie May & XO Marshmallow Pixie S'mores Collection, 4.47oz",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Ferrero%20USA",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99682",
+      "firm": "Ferrero USA",
+      "product": "Fannie May & XO Marshmallow Pixie S'mores Collection, 4.47oz",
+      "productCategory": "snacks-and-confectionery",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Milk",
+          "group": "allergen"
+        },
+        {
+          "name": "Tree nuts",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "IA",
+          "IL",
+          "IN",
+          "OH"
+        ],
+        "stateCount": 4,
+        "international": false,
+        "description": "IA, IL, IN, OH"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-14",
+        "reported": "2026-09-16",
+        "updated": "2026-09-09",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared milk and pecans",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-22T17:01:02.240Z",
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99684",
+      "slug": "fda-99684",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99684",
+      "title": "EURO FOODS GROUP USA NJ INC recalls Crown Farms Dried Suri Cut, 200 gm, in plastic pack, 25 packages per box, keep frozen",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=EURO%20FOODS%20GROUP%20USA%20NJ%20INC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99684",
+      "firm": "EURO FOODS GROUP USA NJ INC",
+      "product": "Crown Farms Dried Suri Cut, 200 gm, in plastic pack, 25 packages per box, keep frozen",
+      "productCategory": "other",
+      "foodKeys": [],
+      "hazardType": "physical",
+      "agents": [
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "MI",
+          "NJ",
+          "NY",
+          "VA"
+        ],
+        "stateCount": 4,
+        "international": false,
+        "description": "The adulterated product was distributed to the following states: VA, NY, NJ, MI"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-01",
+        "reported": "2026-09-16",
+        "updated": "2026-09-04",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "The firm imported and distributed dried ribbon fish that was not properly eviscerated prior to drying.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-22T17:01:02.240Z",
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99822",
+      "slug": "fda-99822",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99822",
+      "title": "International Sprout Holdings, Inc recalls Alfalfa, Net Weight 50 lbs. bag, Product of USA, International Specialty Supply 1011 Volu…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=International%20Sprout%20Holdings%2C%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99822",
+      "firm": "International Sprout Holdings, Inc",
+      "product": "Alfalfa, Net Weight 50 lbs. bag, Product of USA, International Specialty Supply 1011 Volunteer Dr. Cookeville, TN 38506",
+      "productCategory": "produce",
+      "foodKeys": [],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        },
+        {
+          "name": "E. coli (STEC)",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CA",
+          "FL",
+          "HI",
+          "IL",
+          "MA",
+          "MN",
+          "MO",
+          "MT",
+          "NY",
+          "OH",
+          "OR",
+          "PA",
+          "PR",
+          "SC",
+          "TN",
+          "TX",
+          "UT"
+        ],
+        "stateCount": 17,
+        "international": true,
+        "description": "Wholesale consignees in 16 states: CA, FL, HI, IL, MA, MN, MO, MT, NY, OH, OR, PA, TN, SC, TX, UT; Puerto Rico; Canada, Mexico, Tahiti, and Venezuela"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-23",
+        "reported": "2026-09-16",
+        "updated": "2026-09-14",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential E. coli and Salmonella contamination",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-22T17:01:02.240Z",
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "cdc:salmonella/outbreaks/broccoli-sprouts-09-26",
       "slug": "cdc-salmonella-outbreaks-broccoli-sprouts-09-26",
@@ -523,14 +929,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-08-06",
         "reported": "2026-09-09",
         "updated": "2026-08-28",
-        "closed": null
+        "closed": "2026-09-18"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -547,8 +953,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -601,14 +1007,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-08-05",
         "reported": "2026-09-09",
         "updated": "2026-09-02",
-        "closed": null
+        "closed": "2026-09-15"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -624,8 +1030,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -1682,6 +2088,94 @@
         "lastChanged": "2026-09-17T14:29:54.165Z",
         "revisions": 0,
         "backfilled": true
+      }
+    },
+    {
+      "id": "fda:99642",
+      "slug": "fda-99642",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99642",
+      "title": "Africando Foods LLC recalls Clear glass bottle with black screw lid with multi label which reads in part as \"***AFRIC…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Africando%20Foods%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99642",
+      "firm": "Africando Foods LLC",
+      "product": "Clear glass bottle with black screw lid with multi label which reads in part as \"***AFRICANDO FOODS, LLC ALFREDO HOT SAUCE, Net Weight 8 oz. ***INGREDIENTS: Habenaro Peppers, Garlic, Onions, Water, D…",
+      "productCategory": "produce",
+      "foodKeys": [
+        "peppers",
+        "onions",
+        "beverages"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Wheat or gluten",
+          "group": "allergen"
+        },
+        {
+          "name": "Soy",
+          "group": "allergen"
+        },
+        {
+          "name": "Glass",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "IA",
+          "IL",
+          "KY"
+        ],
+        "stateCount": 3,
+        "international": false,
+        "description": "8 wholesale and retail locations in IA, KY and IL"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-10",
+        "reported": "2026-09-02",
+        "updated": "2026-09-16",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Labeling, wheat not listed as sub ingredient of chicken bouillon (minor ingredient), and soybean oil missing from ingredient list",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-22T17:01:02.240Z",
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 0,
+        "backfilled": false
       }
     },
     {
@@ -3328,14 +3822,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-07-22",
         "reported": "2026-08-19",
         "updated": "2026-08-12",
-        "closed": null
+        "closed": "2026-09-18"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -3352,8 +3846,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -10728,14 +11222,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Telephone"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-03-23",
         "reported": "2026-06-17",
         "updated": "2026-06-10",
-        "closed": null
+        "closed": "2026-09-17"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -10752,8 +11246,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -11432,6 +11926,80 @@
         "lastChanged": "2026-09-17T14:29:54.165Z",
         "revisions": 0,
         "backfilled": true
+      }
+    },
+    {
+      "id": "fda:99195",
+      "slug": "fda-99195",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99195",
+      "title": "Wild Coast Brew LLC recalls The Lover Loose-Leaf Tea - Tart Chocolaty Tisane, net wt. 1.5oz (42 g). Product is packag…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Wild%20Coast%20Brew%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99195",
+      "firm": "Wild Coast Brew LLC",
+      "product": "The Lover Loose-Leaf Tea - Tart Chocolaty Tisane, net wt. 1.5oz (42 g). Product is packaged in cellophane bag within tubular container. UPC 00198168682364. Ingredients: Hibiscus, Cacao Husks, Oxidize…",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "peppers",
+        "berries",
+        "herbs",
+        "seeds",
+        "cereal"
+      ],
+      "hazardType": "undetermined",
+      "agents": [],
+      "classification": "Class III",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Distributed nationwide."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "closed",
+        "agency": "Completed"
+      },
+      "dates": {
+        "event": "2026-06-05",
+        "reported": "2026-06-17",
+        "updated": "2026-09-16",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Dry tea blends product containing Ashwagandha root which is an unsafe food additive.",
+      "missing": [
+        "closedDate",
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-22T17:01:02.240Z",
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 0,
+        "backfilled": false
       }
     },
     {
@@ -13370,19 +13938,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-05-08",
         "reported": "2026-06-03",
         "updated": "2026-05-28",
-        "closed": null
+        "closed": "2026-09-17"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Possible cross-contamination resulting in undeclared allergen ingredient (Peanut)",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -13394,8 +13961,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -19366,14 +19933,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-03-05",
         "reported": "2026-04-08",
         "updated": "2026-03-30",
-        "closed": null
+        "closed": "2026-09-17"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -19390,8 +19957,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -20911,19 +21478,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-03-06",
         "reported": "2026-04-01",
         "updated": "2026-04-03",
-        "closed": null
+        "closed": "2026-09-18"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Gorditas and Doraditas are missing the following allergens in product label: Wheat and Soy",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -20935,8 +21501,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -23634,19 +24200,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-01-15",
         "reported": "2026-03-04",
         "updated": "2026-02-24",
-        "closed": null
+        "closed": "2026-09-17"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Presence of Thiamethoxam-PESTICIDE",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -23658,8 +24223,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -26859,14 +27424,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-12-23",
         "reported": "2026-02-11",
         "updated": "2026-02-12",
-        "closed": null
+        "closed": "2026-09-18"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -26883,8 +27448,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -31627,19 +32192,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-12-13",
         "reported": "2026-01-07",
         "updated": "2026-01-12",
-        "closed": null
+        "closed": "2026-09-15"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Foreign material.",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -31651,8 +32215,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -52211,7 +52775,7 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Terminated"
+        "agency": "Completed"
       },
       "dates": {
         "event": "2025-07-10",
@@ -52234,8 +52798,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -60094,14 +60658,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-05-20",
         "reported": "2025-06-25",
         "updated": "2025-06-17",
-        "closed": null
+        "closed": "2026-09-16"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -60118,8 +60682,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -60253,19 +60817,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-05-21",
         "reported": "2025-06-25",
         "updated": "2025-06-17",
-        "closed": null
+        "closed": "2026-09-17"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Undeclared Milk Allergen",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -60277,8 +60840,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-22T17:01:02.240Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
