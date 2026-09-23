@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-09-21T22:01:44.452Z",
+  "generatedAt": "2026-09-23T04:50:50.870Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-14",
-  "windowTo": "2026-09-21",
+  "windowFrom": "2026-09-16",
+  "windowTo": "2026-09-23",
   "paragraphs": [
-    "An outbreak of E. coli O145 linked to frozen blueberries is now over [1]. The outbreak affected 17 people across two states, resulting in six hospitalizations and no deaths [1].",
-    "Gias Foods is recalling bettergoods Authentic Italian Lemon Alfredo Fettuccine sold at Walmart due to potential Listeria monocytogenes contamination [6][25]. So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on or before April 3, 2028 are being recalled for potential foreign material [5]. Saratoga Potato Chips is recalling 7.75-ounce packages of J. HIGGS Loaded Bacon and Cheddar Potato Chips because they may contain undeclared soy allergen [4][17]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix due to potential undeclared wheat gluten [2]. A&P Creations LLC is recalling biQ-FEL nationwide because it contains undeclared sildenafil and tadalafil, active ingredients in prescription drugs [8]."
+    "An E. coli outbreak linked to frozen blueberries is now over, according to an update from the CDC [1]. The outbreak affected 17 people across two states, with six hospitalizations and no deaths [1].",
+    "The FDA issued several Class I recalls this week, the most serious type of recall [2]. Crown Farms Dried Suri Cut, a dried ribbon fish product distributed in Virginia, New York, New Jersey, and Michigan, is being recalled because it was not properly eviscerated before drying [2]. Alfalfa in 50-pound bags from International Sprout Holdings, Inc., sold wholesale across 16 states and territories, is being recalled due to potential E. coli and Salmonella contamination [4]. Momchipz Gluten Free Veggie Chips Broccoli Florets & Cauliflower (3 oz packages, UPC 6 28634 44216 6) sold in the U.S. contain undeclared wheat [3].",
+    "Additional recalls include GF Blends Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix due to potential undeclared wheat gluten, which poses a risk to people with celiac disease or severe gluten intolerance [7]. J. HIGGS Loaded Bacon and Cheddar Potato Chips from Saratoga Potato Chips contain undeclared soy [9]. Prolon Everyday Apulian Almond & Cocoa Spread contains undeclared tree nuts including hazelnut, cashew, and pistachio [5], and Fannie May & XO Marshmallow Pixie S'mores Collection contains undeclared milk and pecans [6]."
   ],
   "sources": [
     {
@@ -18,6 +19,46 @@
     },
     {
       "n": 2,
+      "kind": "recall",
+      "title": "EURO FOODS GROUP USA NJ INC recalls Crown Farms Dried Suri Cut, 200 gm, in plastic pack, 25 packages per box, keep frozen",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=EURO%20FOODS%20GROUP%20USA%20NJ%20INC",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "n": 3,
+      "kind": "recall",
+      "title": "EXOTIQUE FOODS CANADA recalls Momchipz Gluten Free Veggie Chips Broccoli Florets & Cauliflower, net wt. 3oz (85g). UPC…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=EXOTIQUE%20FOODS%20CANADA",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "n": 4,
+      "kind": "recall",
+      "title": "International Sprout Holdings, Inc recalls Alfalfa, Net Weight 50 lbs. bag, Product of USA, International Specialty Supply 1011 Volu…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=International%20Sprout%20Holdings%2C%20Inc",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "n": 5,
+      "kind": "recall",
+      "title": "L-Nutra Inc recalls Prolon Everyday Apulian Almond & Cocoa Spread, NET WT: 8.47 OZ. Product packaged in glass…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=L-Nutra%20Inc",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "n": 6,
+      "kind": "recall",
+      "title": "Ferrero USA recalls Fannie May & XO Marshmallow Pixie S'mores Collection, 4.47oz",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Ferrero%20USA",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "n": 7,
       "kind": "agency-notice",
       "title": "GF Blends Recalls Truly AIP All Purpose Flour and Bread Mix, and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix Due to Potential Undeclared Wheat Gluten",
       "source": "FDA recall notice",
@@ -25,58 +66,18 @@
       "publishedAt": "2026-09-18T21:48:00.000Z"
     },
     {
-      "n": 4,
+      "n": 9,
       "kind": "agency-notice",
       "title": "Saratoga Potato Chips Issues Allergy Alert on Undeclared Soy in J. HIGGS Loaded Bacon and Cheddar Potato Chips",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
       "publishedAt": "2026-09-16T15:21:00.000Z"
-    },
-    {
-      "n": 5,
-      "kind": "agency-notice",
-      "title": "So Delicious Dairy Free® Issues Voluntary Recall of Salted Caramel Cluster Non-Dairy Frozen Dessert Pints Due to Potential Presence of Foreign Material",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
-      "publishedAt": "2026-09-15T20:31:00.000Z"
-    },
-    {
-      "n": 6,
-      "kind": "agency-notice",
-      "title": "Gias Foods, Inc. Recalls Bettergoods Authentic Italian Lemon Alfredo Fettuccine Because of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible",
-      "publishedAt": "2026-09-15T18:52:00.000Z"
-    },
-    {
-      "n": 8,
-      "kind": "agency-notice",
-      "title": "A&P Creations LLC Issues Nationwide Recall of biQ-FEL Due to Undeclared Sildenafil and Tadalafil",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
-      "publishedAt": "2026-09-14T19:55:00.000Z"
-    },
-    {
-      "n": 17,
-      "kind": "news",
-      "title": "Potato chips recalled because of undeclared soy",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/potato-chips-recalled-because-of-undeclared-soy/",
-      "publishedAt": "2026-09-19T03:05:27.000Z"
-    },
-    {
-      "n": 25,
-      "kind": "news",
-      "title": "Pasta sold at Walmart stores nationwide recalled because of Listeria",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/pasta-sold-at-walmart-stores-nationwide-recalled-because-of-listeria/",
-      "publishedAt": "2026-09-18T01:13:26.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6028,
-    "outputTokens": 615
+    "inputTokens": 7216,
+    "outputTokens": 824
   }
 }
