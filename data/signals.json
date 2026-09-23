@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-23T04:50:21.493Z",
+  "generatedAt": "2026-09-23T11:44:49.750Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-23T04:50:21.569Z",
+      "fetchedAt": "2026-09-23T11:44:49.828Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-23T04:50:43.879Z",
+      "fetchedAt": "2026-09-23T11:45:18.738Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-16",
@@ -24,14 +24,88 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-23T04:50:48.860Z",
+      "fetchedAt": "2026-09-23T11:45:23.530Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-09-17",
-      "itemCount": 494
+      "upstreamUpdated": "2026-09-22",
+      "itemCount": 495
     }
   },
   "items": [
+    {
+      "id": "fsis:022-2026",
+      "slug": "fsis-022-2026",
+      "kind": "recall",
+      "source": "FSIS",
+      "sourceId": "022-2026",
+      "title": "Star Meat Delivery Inc. Recalls Raw Pork, Beef, and Goat Products Produced Without the Benefit of Inspection",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/star-meat-delivery-inc--recalls-raw-pork-beef-and-goat-products-produced-without",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "Star Meat Delivery Inc.",
+      "product": "Various weight cardboard boxes containing individually vacuum-packed A&D Foods “GOAT CUT 1-1/2\" 10.00 LBS”",
+      "productCategory": "meat",
+      "foodKeys": [
+        "beef",
+        "pork"
+      ],
+      "hazardType": "physical",
+      "agents": [
+        {
+          "name": "Bone, shell, or pit fragments",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "unspecified",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": null
+      },
+      "rootCause": {
+        "category": "import-or-inspection-violation",
+        "basis": "agency-coded",
+        "detail": "Produced Without Benefit of Inspection"
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "FSIS recall (all FSIS recalls are voluntary)"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Active Recall"
+      },
+      "dates": {
+        "event": "2026-09-22",
+        "reported": "2026-09-22",
+        "updated": "2026-09-22",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Produced Without Benefit of Inspection",
+      "missing": [
+        "distribution"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-23T11:44:49.750Z",
+        "lastChanged": "2026-09-23T11:44:49.750Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fda:99636",
       "slug": "fda-99636",
