@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-24T11:53:11.472Z",
+  "generatedAt": "2026-09-24T17:16:15.826Z",
   "entries": [
+    {
+      "at": "2026-09-24T17:16:15.826Z",
+      "change": "updated",
+      "id": "cdc:salmonella/outbreaks/broccoli-sprouts-09-26",
+      "slug": "cdc-salmonella-outbreaks-broccoli-sprouts-09-26",
+      "title": "Salmonella Outbreak Linked to Broccoli Sprouts",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "states",
+          "from": "ID, MT, UT, WA",
+          "to": "ID, MN, MT, OR, UT, WA"
+        },
+        {
+          "field": "updated date",
+          "from": "2026-09-11",
+          "to": "2026-09-24"
+        },
+        {
+          "field": "cases",
+          "from": "22",
+          "to": "32"
+        },
+        {
+          "field": "hospitalizations",
+          "from": "2",
+          "to": "3"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-09-23T11:44:49.750Z",
       "change": "added",

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-24T11:53:11.472Z",
+  "generatedAt": "2026-09-24T17:16:15.826Z",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -13,7 +13,7 @@
     "cdc-active-counts": {
       "name": "CDC active multistate investigation counts",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-24T11:53:36.426Z",
+      "fetchedAt": "2026-09-24T17:16:46.738Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-23",
@@ -43,13 +43,17 @@
       "pathogen": "Salmonella Bovismorbificans",
       "pathogenFamily": "Salmonella",
       "status": "active",
-      "cases": 22,
-      "hospitalizations": 2,
+      "cases": 32,
+      "hospitalizations": 3,
       "deaths": 0,
-      "stateCount": 4,
+      "stateCount": 6,
       "states": [
         {
           "state": "ID",
+          "cases": 1
+        },
+        {
+          "state": "MN",
           "cases": 1
         },
         {
@@ -57,22 +61,26 @@
           "cases": 4
         },
         {
+          "state": "OR",
+          "cases": 1
+        },
+        {
           "state": "UT",
           "cases": 1
         },
         {
           "state": "WA",
-          "cases": 16
+          "cases": 24
         }
       ],
       "illnessOnsetFrom": "2026-07-07",
-      "illnessOnsetTo": "2026-08-26",
+      "illnessOnsetTo": "2026-09-03",
       "postedAt": "2026-09-09",
-      "updatedAt": "2026-09-11",
+      "updatedAt": "2026-09-24",
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -160,7 +168,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -316,7 +324,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -416,7 +424,7 @@
       "declaredOverAt": "2026-09-03",
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -528,7 +536,7 @@
       "declaredOverAt": "2026-09-11",
       "recallIssued": null,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -564,7 +572,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -604,7 +612,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -648,7 +656,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -764,7 +772,7 @@
       "declaredOverAt": "2026-07-16",
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -805,7 +813,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -865,7 +873,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1045,7 +1053,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1165,7 +1173,7 @@
       "declaredOverAt": "2026-02-24",
       "recallIssued": false,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1261,7 +1269,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1315,7 +1323,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1393,7 +1401,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1477,7 +1485,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1547,7 +1555,7 @@
       "declaredOverAt": "2025-09-25",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1649,7 +1657,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1685,7 +1693,7 @@
       "declaredOverAt": "2025-08-21",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1753,7 +1761,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1865,7 +1873,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -1901,7 +1909,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     },
     {
@@ -2013,7 +2021,7 @@
       "declaredOverAt": "2025-05-16",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-09-24T11:53:11.555Z",
+      "fetchedAt": "2026-09-24T17:16:15.887Z",
       "parseWarnings": []
     }
   ]
