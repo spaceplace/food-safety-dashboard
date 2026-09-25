@@ -1,16 +1,24 @@
 {
-  "generatedAt": "2026-09-24T04:58:44.572Z",
+  "generatedAt": "2026-09-25T05:03:33.244Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-17",
-  "windowTo": "2026-09-24",
+  "windowFrom": "2026-09-18",
+  "windowTo": "2026-09-25",
   "paragraphs": [
-    "An E. coli outbreak linked to frozen blueberries has ended [1][21]. The outbreak caused 17 cases and 6 hospitalizations across 2 states, with no deaths reported [1]. The berries were imported from Chile and sold at Walmart and Publix [21].",
-    "Star Meat Delivery Inc. is recalling more than 83 tons of raw pork, beef, and goat products that were produced without federal inspection and labeled with fake USDA inspection marks [2][12]. Berlin Seeds is recalling 950 pounds of alfalfa sprouting seed due to potential contamination with Shiga toxin-producing E. coli and Salmonella [3][11]. One illness has been reported in connection with this seed [11]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix because they may contain undeclared wheat gluten, which poses a risk to people with celiac disease or severe gluten intolerance [5].",
-    "A federal court order dated September 21, 2026, has banned Gold Star Distribution Inc. from distributing food and other FDA-regulated products until it fixes persistent insanitary warehouse conditions, including rodent infestation [4][9]. The FDA has identified two new outbreaks this week, though sources of the pathogens have not yet been identified [8]."
+    "An open Salmonella outbreak linked to broccoli sprouts has grown to 32 cases across six states, with three hospitalizations reported [1]. The outbreak is associated with recalled broccoli sprouts traced to Evergreen Fresh Sprouts LLC [11]. Consumers should avoid broccoli sprouts from this source and contact a healthcare provider if they develop symptoms [1].",
+    "A Class I recall of raw pork, beef, and goat products from Star Meat Delivery Inc. of Lucama, North Carolina involves more than 83 tons of meat produced without federal inspection and bearing fake USDA inspection marks [3][20]. Consumers who purchased A&D Foods \"GOAT CUT 1-1/2\" products or other items from this company should not consume them [3][20].",
+    "An outbreak of E. coli O145 linked to frozen blueberries is now over [2]. The outbreak affected 17 people across two states with six hospitalizations and no deaths [2]. Deano's Pasta is recalling Pear and Pecorino Triangoli Ravioli due to undeclared lobster that poses a risk to those with crustacean shellfish allergies [4]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix for potential undeclared wheat gluten [8]. Berlin Seeds is recalling 950 pounds of alfalfa sprouting seed due to potential contamination with Shiga toxin-producing E. coli and Salmonella [6]. Galil Importing Corp is recalling Lior Cinnamon Ground Seasoning due to elevated lead levels [5]."
   ],
   "sources": [
     {
       "n": 1,
+      "kind": "outbreak",
+      "title": "Salmonella Outbreak Linked to Broccoli Sprouts",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/broccoli-sprouts-09-26/index.html",
+      "publishedAt": "2026-09-24"
+    },
+    {
+      "n": 2,
       "kind": "outbreak",
       "title": "E. coli Outbreak Linked to Frozen Blueberries",
       "source": "CDC outbreak notice",
@@ -18,7 +26,7 @@
       "publishedAt": "2026-09-21"
     },
     {
-      "n": 2,
+      "n": 3,
       "kind": "recall",
       "title": "Star Meat Delivery Inc. Recalls Raw Pork, Beef, and Goat Products Produced Without the Benefit of Inspection",
       "source": "USDA FSIS recall notice",
@@ -26,7 +34,23 @@
       "publishedAt": "2026-09-22"
     },
     {
-      "n": 3,
+      "n": 4,
+      "kind": "agency-notice",
+      "title": "Deano’s Pasta Issue Allergy Alert on Undeclared Lobster in Pear and Pecorino Triangoli Ravioli",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/deanos-pasta-issue-allergy-alert-undeclared-lobster-pear-and-pecorino-triangoli-ravioli",
+      "publishedAt": "2026-09-24T21:05:00.000Z"
+    },
+    {
+      "n": 5,
+      "kind": "agency-notice",
+      "title": "Galil Importing Corp Recalls Lior Cinnamon Ground Seasoning Due to Elevated Lead Levels",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels",
+      "publishedAt": "2026-09-24T20:45:00.000Z"
+    },
+    {
+      "n": 6,
       "kind": "agency-notice",
       "title": "Berlin Seeds Recalls Alfalfa Sprouting Seed Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -34,15 +58,7 @@
       "publishedAt": "2026-09-23T21:02:00.000Z"
     },
     {
-      "n": 4,
-      "kind": "agency-notice",
-      "title": "Federal Court Enters Consent Decree Against Gold Star Distribution, Inc. Following Persistent Insanitary Warehouse Conditions",
-      "source": "FDA press release",
-      "url": "http://www.fda.gov/news-events/press-announcements/federal-court-enters-consent-decree-against-gold-star-distribution-inc-following-persistent",
-      "publishedAt": "2026-09-23T19:50:17.000Z"
-    },
-    {
-      "n": 5,
+      "n": 8,
       "kind": "agency-notice",
       "title": "GF Blends Recalls Truly AIP All Purpose Flour and Bread Mix, and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix Due to Potential Undeclared Wheat Gluten",
       "source": "FDA recall notice",
@@ -50,50 +66,26 @@
       "publishedAt": "2026-09-18T21:48:00.000Z"
     },
     {
-      "n": 8,
-      "kind": "news",
-      "title": "FDA identifies two new outbreaks",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/fda-identifies-two-new-outbreaks/",
-      "publishedAt": "2026-09-24T04:05:23.000Z"
-    },
-    {
-      "n": 9,
-      "kind": "news",
-      "title": "Consent decree bans distributor from operating because of rodent infestation, other filth",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/consent-decree-bans-distributor-from-operating-because-of-rodent-infestation-other-filth/",
-      "publishedAt": "2026-09-24T04:03:46.000Z"
-    },
-    {
       "n": 11,
       "kind": "news",
-      "title": "Sprouting seeds recalled because of link to outbreak",
+      "title": "Salmonella outbreak traced to sprouts spreads to 2 more states",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/sprouting-seeds-recalled-because-of-link-to-outbreak/",
-      "publishedAt": "2026-09-24T03:22:15.000Z"
+      "url": "https://www.foodsafetynews.com/2026/09/salmonella-outbreak-traced-to-sprouts-spreads-to-2-more-states/",
+      "publishedAt": "2026-09-25T04:03:13.000Z"
     },
     {
-      "n": 12,
+      "n": 20,
       "kind": "news",
       "title": "More than 83 tons of meat recalled because of fake inspections",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/09/more-than-83-tons-of-meat-recalled-because-of-fake-inspections/",
       "publishedAt": "2026-09-24T01:24:21.000Z"
-    },
-    {
-      "n": 21,
-      "kind": "news",
-      "title": "E. coli outbreak tied to frozen berries sold at Walmart and Publix has ended",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/e-coli-outbreak-tied-to-frozen-berries-sold-at-walmart-and-publix-has-ended/",
-      "publishedAt": "2026-09-22T04:05:48.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 5662,
-    "outputTokens": 664
+    "inputTokens": 6381,
+    "outputTokens": 797
   }
 }
