@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-25T05:03:33.244Z",
+  "generatedAt": "2026-09-26T05:06:03.997Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-18",
-  "windowTo": "2026-09-25",
+  "windowFrom": "2026-09-19",
+  "windowTo": "2026-09-26",
   "paragraphs": [
-    "An open Salmonella outbreak linked to broccoli sprouts has grown to 32 cases across six states, with three hospitalizations reported [1]. The outbreak is associated with recalled broccoli sprouts traced to Evergreen Fresh Sprouts LLC [11]. Consumers should avoid broccoli sprouts from this source and contact a healthcare provider if they develop symptoms [1].",
-    "A Class I recall of raw pork, beef, and goat products from Star Meat Delivery Inc. of Lucama, North Carolina involves more than 83 tons of meat produced without federal inspection and bearing fake USDA inspection marks [3][20]. Consumers who purchased A&D Foods \"GOAT CUT 1-1/2\" products or other items from this company should not consume them [3][20].",
-    "An outbreak of E. coli O145 linked to frozen blueberries is now over [2]. The outbreak affected 17 people across two states with six hospitalizations and no deaths [2]. Deano's Pasta is recalling Pear and Pecorino Triangoli Ravioli due to undeclared lobster that poses a risk to those with crustacean shellfish allergies [4]. GF Blends is recalling Truly AIP All Purpose Flour and Bread Mix and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix for potential undeclared wheat gluten [8]. Berlin Seeds is recalling 950 pounds of alfalfa sprouting seed due to potential contamination with Shiga toxin-producing E. coli and Salmonella [6]. Galil Importing Corp is recalling Lior Cinnamon Ground Seasoning due to elevated lead levels [5]."
+    "An ongoing Salmonella outbreak linked to broccoli sprouts has sickened 32 people across six states, with three hospitalizations reported [1]. The outbreak was first identified on September 9 and has spread to two additional states as of September 24 [18].",
+    "An E. coli outbreak tied to frozen blueberries is now over [2]. That outbreak affected 17 people across two states, with six hospitalizations and no deaths [2].",
+    "Star Meat Delivery Inc. is recalling over 83 tons of raw pork, beef, and goat products sold under the A&D Foods label because they were produced without federal inspection [3][26]. Fontanini Foods LLC is recalling 2,320 pounds of raw, frozen pork breakfast sausage that may contain clear, hard plastic [11]. Deano's Pasta is recalling approximately 20 pounds of Pear and Pecorino Triangoli Ravioli due to undeclared lobster, which poses a serious or life-threatening risk to those with crustacean shellfish allergies [4][9]. Berlin Seeds is recalling 950 pounds of alfalfa sprouting seed because it may be contaminated with Shiga toxin-producing E. coli and/or Salmonella [7]. Galil Importing Corp is recalling Lior Cinnamon Ground Seasoning for elevated lead levels [5], and G. L. Mezzetta Inc. is recalling Mezzetta Brand Golden Greek Peperoncini for a pest contaminant [6]."
   ],
   "sources": [
     {
@@ -52,21 +52,37 @@
     {
       "n": 6,
       "kind": "agency-notice",
+      "title": "G. L. Mezzetta Inc. Announces Recall of Mezzetta Brand Golden Greek Peperoncini (Medium Heat) Due to Presence of Pest Contaminant in the Jar",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
+      "publishedAt": "2026-09-23T22:17:00.000Z"
+    },
+    {
+      "n": 7,
+      "kind": "agency-notice",
       "title": "Berlin Seeds Recalls Alfalfa Sprouting Seed Because of Possible Health Risk",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/berlin-seeds-recalls-alfalfa-sprouting-seed-because-possible-health-risk",
       "publishedAt": "2026-09-23T21:02:00.000Z"
     },
     {
-      "n": 8,
-      "kind": "agency-notice",
-      "title": "GF Blends Recalls Truly AIP All Purpose Flour and Bread Mix, and EAT G.A.N.G.S.T.E.R. Flat Bread Pizza Mix Due to Potential Undeclared Wheat Gluten",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix",
-      "publishedAt": "2026-09-18T21:48:00.000Z"
+      "n": 9,
+      "kind": "news",
+      "title": "Ravioli recalled because of undeclared lobster",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/ravioli-recalled-because-of-undeclared-lobster/",
+      "publishedAt": "2026-09-26T02:50:47.000Z"
     },
     {
       "n": 11,
+      "kind": "news",
+      "title": "Frozen sausage recalled after complaints of plastic in product",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/frozen-sausage-recalled-after-complaints-of-plastic-in-product/",
+      "publishedAt": "2026-09-26T02:11:38.000Z"
+    },
+    {
+      "n": 18,
       "kind": "news",
       "title": "Salmonella outbreak traced to sprouts spreads to 2 more states",
       "source": "Food Safety News",
@@ -74,7 +90,7 @@
       "publishedAt": "2026-09-25T04:03:13.000Z"
     },
     {
-      "n": 20,
+      "n": 26,
       "kind": "news",
       "title": "More than 83 tons of meat recalled because of fake inspections",
       "source": "Food Safety News",
@@ -82,10 +98,10 @@
       "publishedAt": "2026-09-24T01:24:21.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6381,
-    "outputTokens": 797
+    "inputTokens": 6303,
+    "outputTokens": 744
   }
 }
