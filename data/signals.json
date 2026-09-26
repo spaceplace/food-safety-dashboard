@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-26T05:05:33.145Z",
+  "generatedAt": "2026-09-26T11:30:23.692Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-26T05:05:33.238Z",
+      "fetchedAt": "2026-09-26T11:30:23.783Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-26T05:05:56.818Z",
+      "fetchedAt": "2026-09-26T11:30:51.674Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-16",
@@ -24,14 +24,168 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-26T05:06:01.971Z",
+      "fetchedAt": "2026-09-26T11:30:56.515Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-09-22",
-      "itemCount": 495
+      "upstreamUpdated": "2026-09-25",
+      "itemCount": 497
     }
   },
   "items": [
+    {
+      "id": "fsis:023-2026",
+      "slug": "fsis-023-2026",
+      "kind": "recall",
+      "source": "FSIS",
+      "sourceId": "023-2026",
+      "title": "Fontanini Foods LLC Recalls Raw, Frozen Pork Sausage Products Due to Possible Foreign Matter Contamination",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fontanini-foods-llc-recalls-raw-frozen-pork-sausage-products-due-possible-foreign",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "Fontanini Foods LLC",
+      "product": "10-lb. cardboard box cases containing “Fontanini PORK SAUSAGE LINKS” with “ITEM 393” printed on the box and “PACKED ON 06/23/2026” printed on the shipping label.",
+      "productCategory": "meat",
+      "foodKeys": [
+        "pork"
+      ],
+      "hazardType": "physical",
+      "agents": [
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CA",
+          "FL",
+          "MI",
+          "NV"
+        ],
+        "stateCount": 4,
+        "international": false,
+        "description": "CA, FL, MI, NV"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "consumer-complaint",
+        "basis": "inferred",
+        "detail": "The problem was discovered after the firm received two customer complaints regarding clear, hard plastic found in the sausage product."
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "FSIS recall (all FSIS recalls are voluntary)"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Active Recall"
+      },
+      "dates": {
+        "event": "2026-09-25",
+        "reported": "2026-09-25",
+        "updated": "2026-09-25",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Product Contamination",
+      "missing": [],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-26T11:30:23.692Z",
+        "lastChanged": "2026-09-26T11:30:23.692Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fsis:024-2026",
+      "slug": "fsis-024-2026",
+      "kind": "recall",
+      "source": "FSIS",
+      "sourceId": "024-2026",
+      "title": "Sempio Food Services Inc. Recalls Ready-To-Eat Chicken Stew Products Imported Without the Benefit of Import Reinspection",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/sempio-food-services-inc--recalls-ready-eat-chicken-stew-products-imported-without",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "Sempio Food Services Inc.",
+      "product": "Cardboard boxes containing pouches of 31.75-oz (900 g) “Sempio Korean Ginseng CHICKEN STEW CLASSIC”",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "chicken",
+        "ready-to-eat meals"
+      ],
+      "hazardType": "labeling-regulatory",
+      "agents": [],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "FL",
+          "GA",
+          "IL",
+          "MD",
+          "NJ",
+          "NY",
+          "PA",
+          "VA"
+        ],
+        "stateCount": 8,
+        "international": false,
+        "description": "FL, GA, IL, MD, NJ, NY, PA, VA"
+      },
+      "rootCause": {
+        "category": "import-or-inspection-violation",
+        "basis": "agency-coded",
+        "detail": "Import Violation"
+      },
+      "detection": {
+        "category": "agency-sampling-or-inspection",
+        "basis": "inferred",
+        "detail": "The problem was discovered during routine FSIS surveillance activities."
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "FSIS recall (all FSIS recalls are voluntary)"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Active Recall"
+      },
+      "dates": {
+        "event": "2026-09-25",
+        "reported": "2026-09-25",
+        "updated": "2026-09-25",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Import Violation",
+      "missing": [],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-26T11:30:23.692Z",
+        "lastChanged": "2026-09-26T11:30:23.692Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fsis:022-2026",
       "slug": "fsis-022-2026",
