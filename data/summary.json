@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-26T05:06:03.997Z",
+  "generatedAt": "2026-09-27T05:24:33.447Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-19",
-  "windowTo": "2026-09-26",
+  "windowFrom": "2026-09-20",
+  "windowTo": "2026-09-27",
   "paragraphs": [
-    "An ongoing Salmonella outbreak linked to broccoli sprouts has sickened 32 people across six states, with three hospitalizations reported [1]. The outbreak was first identified on September 9 and has spread to two additional states as of September 24 [18].",
-    "An E. coli outbreak tied to frozen blueberries is now over [2]. That outbreak affected 17 people across two states, with six hospitalizations and no deaths [2].",
-    "Star Meat Delivery Inc. is recalling over 83 tons of raw pork, beef, and goat products sold under the A&D Foods label because they were produced without federal inspection [3][26]. Fontanini Foods LLC is recalling 2,320 pounds of raw, frozen pork breakfast sausage that may contain clear, hard plastic [11]. Deano's Pasta is recalling approximately 20 pounds of Pear and Pecorino Triangoli Ravioli due to undeclared lobster, which poses a serious or life-threatening risk to those with crustacean shellfish allergies [4][9]. Berlin Seeds is recalling 950 pounds of alfalfa sprouting seed because it may be contaminated with Shiga toxin-producing E. coli and/or Salmonella [7]. Galil Importing Corp is recalling Lior Cinnamon Ground Seasoning for elevated lead levels [5], and G. L. Mezzetta Inc. is recalling Mezzetta Brand Golden Greek Peperoncini for a pest contaminant [6]."
+    "An open Salmonella outbreak linked to broccoli sprouts has affected 32 people across six states, with three hospitalizations [1]. The outbreak, associated with Evergreen Fresh Sprouts LLC products, has grown since mid-September [20]. In other outbreak news, an E. coli O145 outbreak linked to frozen blueberries is now over; it sickened 17 people across two states with six hospitalizations [2].",
+    "Fontanini Foods LLC is recalling raw, frozen pork sausage links packed on 06/23/2026 due to possible foreign matter contamination, specifically clear, hard plastic [4][13]. Sempio Food Services Inc. is recalling ready-to-eat Korean ginseng chicken stew imported without proper inspection [3][14]. Star Meat Delivery Inc. is recalling over 83 tons of raw pork, beef, and goat products bearing fake USDA inspection marks [5][28].",
+    "Deano's Pasta is recalling Pear and Pecorino Triangoli Ravioli due to undeclared lobster, which poses a serious risk to those with crustacean shellfish allergies [7][11]. Galil Importing Corp is recalling Lior Cinnamon Ground Seasoning for elevated lead levels [8][12]. Berlin Seeds recalled 950 pounds of alfalfa sprouting seed potentially contaminated with Shiga toxin-producing E. coli and Salmonella [9][27]. G. L. Mezzetta Inc. recalled Mezzetta Golden Greek Peperoncini due to pest contamination [6]."
   ],
   "sources": [
     {
@@ -28,26 +28,26 @@
     {
       "n": 3,
       "kind": "recall",
+      "title": "Sempio Food Services Inc. Recalls Ready-To-Eat Chicken Stew Products Imported Without the Benefit of Import Reinspection",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/sempio-food-services-inc--recalls-ready-eat-chicken-stew-products-imported-without",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "n": 4,
+      "kind": "recall",
+      "title": "Fontanini Foods LLC Recalls Raw, Frozen Pork Sausage Products Due to Possible Foreign Matter Contamination",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fontanini-foods-llc-recalls-raw-frozen-pork-sausage-products-due-possible-foreign",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "n": 5,
+      "kind": "recall",
       "title": "Star Meat Delivery Inc. Recalls Raw Pork, Beef, and Goat Products Produced Without the Benefit of Inspection",
       "source": "USDA FSIS recall notice",
       "url": "https://www.fsis.usda.gov/recalls-alerts/star-meat-delivery-inc--recalls-raw-pork-beef-and-goat-products-produced-without",
       "publishedAt": "2026-09-22"
-    },
-    {
-      "n": 4,
-      "kind": "agency-notice",
-      "title": "Deano’s Pasta Issue Allergy Alert on Undeclared Lobster in Pear and Pecorino Triangoli Ravioli",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/deanos-pasta-issue-allergy-alert-undeclared-lobster-pear-and-pecorino-triangoli-ravioli",
-      "publishedAt": "2026-09-24T21:05:00.000Z"
-    },
-    {
-      "n": 5,
-      "kind": "agency-notice",
-      "title": "Galil Importing Corp Recalls Lior Cinnamon Ground Seasoning Due to Elevated Lead Levels",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels",
-      "publishedAt": "2026-09-24T20:45:00.000Z"
     },
     {
       "n": 6,
@@ -55,10 +55,26 @@
       "title": "G. L. Mezzetta Inc. Announces Recall of Mezzetta Brand Golden Greek Peperoncini (Medium Heat) Due to Presence of Pest Contaminant in the Jar",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
-      "publishedAt": "2026-09-23T22:17:00.000Z"
+      "publishedAt": "2026-09-26T22:17:00.000Z"
     },
     {
       "n": 7,
+      "kind": "agency-notice",
+      "title": "Deano’s Pasta Issue Allergy Alert on Undeclared Lobster in Pear and Pecorino Triangoli Ravioli",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/deanos-pasta-issue-allergy-alert-undeclared-lobster-pear-and-pecorino-triangoli-ravioli",
+      "publishedAt": "2026-09-24T21:05:00.000Z"
+    },
+    {
+      "n": 8,
+      "kind": "agency-notice",
+      "title": "Galil Importing Corp Recalls Lior Cinnamon Ground Seasoning Due to Elevated Lead Levels",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels",
+      "publishedAt": "2026-09-24T20:45:00.000Z"
+    },
+    {
+      "n": 9,
       "kind": "agency-notice",
       "title": "Berlin Seeds Recalls Alfalfa Sprouting Seed Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -66,7 +82,7 @@
       "publishedAt": "2026-09-23T21:02:00.000Z"
     },
     {
-      "n": 9,
+      "n": 11,
       "kind": "news",
       "title": "Ravioli recalled because of undeclared lobster",
       "source": "Food Safety News",
@@ -74,7 +90,15 @@
       "publishedAt": "2026-09-26T02:50:47.000Z"
     },
     {
-      "n": 11,
+      "n": 12,
+      "kind": "news",
+      "title": "Cinnamon recalled because of excessive lead levels",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/cinnamon-recalled-because-of-excessive-lead-levels/",
+      "publishedAt": "2026-09-26T02:41:55.000Z"
+    },
+    {
+      "n": 13,
       "kind": "news",
       "title": "Frozen sausage recalled after complaints of plastic in product",
       "source": "Food Safety News",
@@ -82,7 +106,15 @@
       "publishedAt": "2026-09-26T02:11:38.000Z"
     },
     {
-      "n": 18,
+      "n": 14,
+      "kind": "news",
+      "title": "Chicken stew from Korea recalled because of inspection problem",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/chicken-stew-from-korea-recalled-because-of-inspection-problem/",
+      "publishedAt": "2026-09-26T02:01:57.000Z"
+    },
+    {
+      "n": 20,
       "kind": "news",
       "title": "Salmonella outbreak traced to sprouts spreads to 2 more states",
       "source": "Food Safety News",
@@ -90,7 +122,15 @@
       "publishedAt": "2026-09-25T04:03:13.000Z"
     },
     {
-      "n": 26,
+      "n": 27,
+      "kind": "news",
+      "title": "Sprouting seeds recalled because of link to outbreak",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/09/sprouting-seeds-recalled-because-of-link-to-outbreak/",
+      "publishedAt": "2026-09-24T03:22:15.000Z"
+    },
+    {
+      "n": 28,
       "kind": "news",
       "title": "More than 83 tons of meat recalled because of fake inspections",
       "source": "Food Safety News",
@@ -98,10 +138,10 @@
       "publishedAt": "2026-09-24T01:24:21.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6303,
-    "outputTokens": 744
+    "inputTokens": 6871,
+    "outputTokens": 759
   }
 }
