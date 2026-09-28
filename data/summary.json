@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-27T05:24:33.447Z",
+  "generatedAt": "2026-09-28T05:30:57.437Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-20",
-  "windowTo": "2026-09-27",
+  "windowFrom": "2026-09-21",
+  "windowTo": "2026-09-28",
   "paragraphs": [
-    "An open Salmonella outbreak linked to broccoli sprouts has affected 32 people across six states, with three hospitalizations [1]. The outbreak, associated with Evergreen Fresh Sprouts LLC products, has grown since mid-September [20]. In other outbreak news, an E. coli O145 outbreak linked to frozen blueberries is now over; it sickened 17 people across two states with six hospitalizations [2].",
-    "Fontanini Foods LLC is recalling raw, frozen pork sausage links packed on 06/23/2026 due to possible foreign matter contamination, specifically clear, hard plastic [4][13]. Sempio Food Services Inc. is recalling ready-to-eat Korean ginseng chicken stew imported without proper inspection [3][14]. Star Meat Delivery Inc. is recalling over 83 tons of raw pork, beef, and goat products bearing fake USDA inspection marks [5][28].",
-    "Deano's Pasta is recalling Pear and Pecorino Triangoli Ravioli due to undeclared lobster, which poses a serious risk to those with crustacean shellfish allergies [7][11]. Galil Importing Corp is recalling Lior Cinnamon Ground Seasoning for elevated lead levels [8][12]. Berlin Seeds recalled 950 pounds of alfalfa sprouting seed potentially contaminated with Shiga toxin-producing E. coli and Salmonella [9][27]. G. L. Mezzetta Inc. recalled Mezzetta Golden Greek Peperoncini due to pest contamination [6]."
+    "An open Salmonella outbreak linked to broccoli sprouts has sickened 32 people across six states, with three hospitalizations reported [1]. The E. coli outbreak previously associated with frozen blueberries is now over, affecting 17 people across two states [2].",
+    "Sempio Food Services Inc. is recalling ready-to-eat chicken stew products imported without proper inspection; affected boxes contain 31.75-oz pouches labeled \"Sempio Korean Ginseng CHICKEN STEW CLASSIC\" and were distributed to FL, GA, IL, MD, NJ, NY, PA, and VA [3]. Fontanini Foods LLC is recalling raw, frozen pork sausage links that may contain clear, hard plastic; the 10-lb boxes are marked \"ITEM 393\" with packing dates of 06/23/2026 and reached CA, FL, MI, and NV [4][18]. Star Meat Delivery Inc. is recalling vacuum-packed A&D Foods goat products produced without inspection [5].",
+    "Additional recalls include Deano's Pasta Pear and Pecorino Triangoli Ravioli due to undeclared lobster that poses serious allergic reaction risk to those sensitive to crustacean shellfish [7][16]. Galil Importing Corp is recalling Lior Cinnamon Ground Seasoning for elevated lead levels [8][17]. G. L. Mezzetta Inc. is recalling specific lots of Golden Greek Peperoncini Medium Heat (32-ounce) due to pest contamination [6]. Berlin Seeds is recalling alfalfa sprouting seed that may be contaminated with Shiga toxin-producing E. coli or Salmonella [9]."
   ],
   "sources": [
     {
@@ -82,7 +82,7 @@
       "publishedAt": "2026-09-23T21:02:00.000Z"
     },
     {
-      "n": 11,
+      "n": 16,
       "kind": "news",
       "title": "Ravioli recalled because of undeclared lobster",
       "source": "Food Safety News",
@@ -90,7 +90,7 @@
       "publishedAt": "2026-09-26T02:50:47.000Z"
     },
     {
-      "n": 12,
+      "n": 17,
       "kind": "news",
       "title": "Cinnamon recalled because of excessive lead levels",
       "source": "Food Safety News",
@@ -98,50 +98,18 @@
       "publishedAt": "2026-09-26T02:41:55.000Z"
     },
     {
-      "n": 13,
+      "n": 18,
       "kind": "news",
       "title": "Frozen sausage recalled after complaints of plastic in product",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/09/frozen-sausage-recalled-after-complaints-of-plastic-in-product/",
       "publishedAt": "2026-09-26T02:11:38.000Z"
-    },
-    {
-      "n": 14,
-      "kind": "news",
-      "title": "Chicken stew from Korea recalled because of inspection problem",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/chicken-stew-from-korea-recalled-because-of-inspection-problem/",
-      "publishedAt": "2026-09-26T02:01:57.000Z"
-    },
-    {
-      "n": 20,
-      "kind": "news",
-      "title": "Salmonella outbreak traced to sprouts spreads to 2 more states",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/salmonella-outbreak-traced-to-sprouts-spreads-to-2-more-states/",
-      "publishedAt": "2026-09-25T04:03:13.000Z"
-    },
-    {
-      "n": 27,
-      "kind": "news",
-      "title": "Sprouting seeds recalled because of link to outbreak",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/sprouting-seeds-recalled-because-of-link-to-outbreak/",
-      "publishedAt": "2026-09-24T03:22:15.000Z"
-    },
-    {
-      "n": 28,
-      "kind": "news",
-      "title": "More than 83 tons of meat recalled because of fake inspections",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/more-than-83-tons-of-meat-recalled-because-of-fake-inspections/",
-      "publishedAt": "2026-09-24T01:24:21.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6871,
-    "outputTokens": 759
+    "inputTokens": 6874,
+    "outputTokens": 798
   }
 }
