@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-28T23:19:59.304Z",
+  "generatedAt": "2026-09-29T05:48:55.836Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-28T23:19:59.386Z",
+      "fetchedAt": "2026-09-29T05:48:55.917Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,16 +15,16 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-28T23:20:22.941Z",
+      "fetchedAt": "2026-09-29T05:49:18.189Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-09-16",
-      "itemCount": 2641
+      "upstreamUpdated": "2026-09-23",
+      "itemCount": 2653
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-28T23:20:30.842Z",
+      "fetchedAt": "2026-09-29T05:49:22.273Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-28",
@@ -182,6 +182,1091 @@
       "record": {
         "firstSeen": "2026-09-26T11:30:23.692Z",
         "lastChanged": "2026-09-26T11:30:23.692Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99572",
+      "slug": "fda-99572",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99572",
+      "title": "Elegant Foods, LLC recalls Elegant Foods Carrot Cake, 9\". 14 Servings. Keep Refrigerated/Frozen. 537 Atlas Ave., Mad…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Elegant%20Foods%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99572",
+      "firm": "Elegant Foods, LLC",
+      "product": "Elegant Foods Carrot Cake, 9\". 14 Servings. Keep Refrigerated/Frozen. 537 Atlas Ave., Madison, WI 53714.",
+      "productCategory": "produce",
+      "foodKeys": [
+        "baked goods"
+      ],
+      "hazardType": "undetermined",
+      "agents": [],
+      "classification": "Class II",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "WI"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "WI"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Telephone"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-07-24",
+        "reported": "2026-09-23",
+        "updated": "2026-09-16",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Carrot decoration contains Yellow #5 and Yellow #6 which is not listed on finished product label.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99594",
+      "slug": "fda-99594",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99594",
+      "title": "NatureBest Pre-Cut & Produce LLc recalls PICO DE GALLO-HOT-6/9oz HEB-PICO-HOT-12/14oz",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=NatureBest%20Pre-Cut%20%26%20Produce%20LLc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99594",
+      "firm": "NatureBest Pre-Cut & Produce LLc",
+      "product": "PICO DE GALLO-HOT-6/9oz HEB-PICO-HOT-12/14oz",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "peppers",
+        "mushrooms",
+        "ready-to-eat meals"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "LA",
+          "TX"
+        ],
+        "stateCount": 2,
+        "international": false,
+        "description": "Texas and Louisiana"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-05",
+        "reported": "2026-09-23",
+        "updated": "2026-09-16",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Jalapenos have the potential to be contaminated with Salmonella",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99611",
+      "slug": "fda-99611",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99611",
+      "title": "Taylor Fresh Foods Inc recalls Tomato Salsa Fresca. Ingredients: Tomatoes, Yellow Onion, Red Onion, Cilantro, Jalapeno P…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Taylor%20Fresh%20Foods%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99611",
+      "firm": "Taylor Fresh Foods Inc",
+      "product": "Tomato Salsa Fresca. Ingredients: Tomatoes, Yellow Onion, Red Onion, Cilantro, Jalapeno Pepper, Garlic, Salt, Ground Cumin, Lemon Juice. Net Wt: 4 lbs. Keep Refrigerated.",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "lettuce",
+        "tomatoes",
+        "peppers",
+        "onions",
+        "cucumbers",
+        "avocado",
+        "herbs",
+        "eggs",
+        "beef",
+        "seafood",
+        "dairy",
+        "ready-to-eat meals",
+        "beverages"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AL",
+          "AR",
+          "FL",
+          "GA",
+          "IL",
+          "IN",
+          "KS",
+          "KY",
+          "LA",
+          "MA",
+          "ME",
+          "MI",
+          "MN",
+          "MO",
+          "MS",
+          "NC",
+          "NE",
+          "NH",
+          "NY",
+          "OH",
+          "OK",
+          "SC",
+          "TN",
+          "TX",
+          "VT",
+          "WI",
+          "WV"
+        ],
+        "stateCount": 27,
+        "international": false,
+        "description": "Domestic: AL, AR, FL, GA, IL, IN, KS, KY, LA, MA, ME, MI, MN, MO, MS, NC, NE, NH, NY, OH, OK, SC, TN, TX, VT, WI, WV. Foreign: Not applicable."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-07",
+        "reported": "2026-09-23",
+        "updated": "2026-09-15",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential contamination with Salmonella.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99737",
+      "slug": "fda-99737",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99737",
+      "title": "Everything Sprouts, LLC recalls Everything Sprouts Crunchy Protein Sprout Mix, containing Alfalfa Fenugreek, Cabbage, Mun…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Everything%20Sprouts%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99737",
+      "firm": "Everything Sprouts, LLC",
+      "product": "Everything Sprouts Crunchy Protein Sprout Mix, containing Alfalfa Fenugreek, Cabbage, Mung, Adzuki, Lentils, Green Pea, Net Wt. 5.0 oz (142 g) UPC 0 87906-01018 7. everythingsprouts.com",
+      "productCategory": "produce",
+      "foodKeys": [
+        "sprouts",
+        "onions"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        },
+        {
+          "name": "E. coli (STEC)",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "MN",
+          "WI"
+        ],
+        "stateCount": 2,
+        "international": false,
+        "description": "MN, WI"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-22",
+        "reported": "2026-09-23",
+        "updated": "2026-09-14",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Sprouts may be contaminated with STEC E. coli and/or Salmonella.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99744",
+      "slug": "fda-99744",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99744",
+      "title": "Buckhead Meat Company D.B.A. Trinity Seafood recalls Buckhead, Tuna, 10lb cs, 12lb cs, 15lb cs, 3-5lb cs , Styrofoam container, Keep Refrigera…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Buckhead%20Meat%20Company%20D.B.A.%20Trinity%20Seafood",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99744",
+      "firm": "Buckhead Meat Company D.B.A. Trinity Seafood",
+      "product": "Buckhead, Tuna, 10lb cs, 12lb cs, 15lb cs, 3-5lb cs , Styrofoam container, Keep Refrigerated",
+      "productCategory": "seafood",
+      "foodKeys": [
+        "fish"
+      ],
+      "hazardType": "chemical",
+      "agents": [
+        {
+          "name": "Histamine",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CT",
+          "MD",
+          "NJ",
+          "NY",
+          "PA"
+        ],
+        "stateCount": 5,
+        "international": false,
+        "description": "The recall product was distributed to the following States: PA, MD, NY, CT, NJ"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-07-24",
+        "reported": "2026-09-23",
+        "updated": "2026-09-16",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "The Firm was notified by NJ Department of Health of two samples collected from tuna with reported high levels of scombrotoxin.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99755",
+      "slug": "fda-99755",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99755",
+      "title": "Quality Dairy Farms Inc. recalls Mercer's brand 6 ICE CREAM SANDWICHES TO GO; packaged in clear plastic; ice cream sandwic…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Quality%20Dairy%20Farms%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99755",
+      "firm": "Quality Dairy Farms Inc.",
+      "product": "Mercer's brand 6 ICE CREAM SANDWICHES TO GO; packaged in clear plastic; ice cream sandwiches may be rolled in peanuts which are visible through product packaging Ingredients: Cream, sugar, nonfat mil…",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "dairy",
+        "flour",
+        "nuts",
+        "seeds",
+        "chocolate",
+        "baked goods"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Milk",
+          "group": "allergen"
+        },
+        {
+          "name": "Peanut",
+          "group": "allergen"
+        },
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "NY"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "NY"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-25",
+        "reported": "2026-09-23",
+        "updated": "2026-09-15",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared peanuts",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99780",
+      "slug": "fda-99780",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99780",
+      "title": "Panorama Produce Sales Inc. recalls Martina brand Fresh Whole Mangoes; Individual whole mangoes, variable weight; 9 mangoes p…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Panorama%20Produce%20Sales%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99780",
+      "firm": "Panorama Produce Sales Inc.",
+      "product": "Martina brand Fresh Whole Mangoes; Individual whole mangoes, variable weight; 9 mangoes per carton box",
+      "productCategory": "produce",
+      "foodKeys": [],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CT",
+          "NJ",
+          "NY",
+          "PA"
+        ],
+        "stateCount": 4,
+        "international": false,
+        "description": "CT, NY, NJ, and PA"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Other"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-19",
+        "reported": "2026-09-23",
+        "updated": "2026-09-15",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product may be contaminated with Salmonella",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99803",
+      "slug": "fda-99803",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99803",
+      "title": "Best Friends Bakery, LLC recalls PUMPKIN SPICE NO BAKE COOKIE NET WT 3.5 oz. INGREDIENTS: WHOLE GRAIN OATS, MILK, MARGARIN…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Best%20Friends%20Bakery%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99803",
+      "firm": "Best Friends Bakery, LLC",
+      "product": "PUMPKIN SPICE NO BAKE COOKIE NET WT 3.5 oz. INGREDIENTS: WHOLE GRAIN OATS, MILK, MARGARINE***WATER, SALT, CONTAINS LESS THAN 2% OF THE FOLLOWING: SOY LECITHIN, VEGETABLE MONO & DIGLYCERIDES, POTASSIU…",
+      "productCategory": "eggs",
+      "foodKeys": [
+        "eggs",
+        "dairy",
+        "nuts",
+        "cereal",
+        "baked goods",
+        "beverages"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Milk",
+          "group": "allergen"
+        },
+        {
+          "name": "Egg",
+          "group": "allergen"
+        },
+        {
+          "name": "Peanut",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AL",
+          "FL",
+          "GA",
+          "IN",
+          "KY",
+          "MI",
+          "OH",
+          "TN",
+          "VA",
+          "WV"
+        ],
+        "stateCount": 10,
+        "international": false,
+        "description": "Product was shipped to the following states: AL, FL, GA, IN, KY, MI, OH, TN, VA & WV."
+      },
+      "rootCause": {
+        "category": "labeling-or-packaging-error",
+        "basis": "inferred",
+        "detail": "The firm list peanuts in the ingredient statement but omitted them from the contain statement."
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-17",
+        "reported": "2026-09-23",
+        "updated": "2026-09-16",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Peanuts & Eggs. The firm list peanuts in the ingredient statement but omitted them from the contain statement. They also have eggs listed in the contain statement but there are no eggs in the product.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography",
+        "rootCause"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99815",
+      "slug": "fda-99815",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99815",
+      "title": "Tiffany Food Corp recalls Hexing Haw Balls candy; packaged in 200g/0.44 lb./7.05 oz clear plastic bag; Ingredients:…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Tiffany%20Food%20Corp",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99815",
+      "firm": "Tiffany Food Corp",
+      "product": "Hexing Haw Balls candy; packaged in 200g/0.44 lb./7.05 oz clear plastic bag; Ingredients: haw, white sugar, water.; Serving suggestion: ready to eat. Storage: keep in cool and dry place and keep tigh…",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "chocolate",
+        "ready-to-eat meals",
+        "beverages"
+      ],
+      "hazardType": "physical",
+      "agents": [
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        },
+        {
+          "name": "Unapproved additive or color",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class III",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AZ",
+          "CA",
+          "FL",
+          "GA",
+          "IL",
+          "MA",
+          "MN",
+          "NC",
+          "NJ",
+          "NY",
+          "OH",
+          "PA",
+          "TN",
+          "TX",
+          "VA"
+        ],
+        "stateCount": 15,
+        "international": false,
+        "description": "AZ, NY, CA, FL, GA, IL, MA, MN, NC, NJ, OH, PA, NY, TN, TX, VA"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-28",
+        "reported": "2026-09-23",
+        "updated": "2026-09-17",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Unapproved dye Ponceau 4R",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99830",
+      "slug": "fda-99830",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99830",
+      "title": "FOODS ALIVE INC. recalls Foods Alive organic moringa leaf powder, 8oz pouch, UPC 8 91551 00092 8",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=FOODS%20ALIVE%20INC.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99830",
+      "firm": "FOODS ALIVE INC.",
+      "product": "Foods Alive organic moringa leaf powder, 8oz pouch, UPC 8 91551 00092 8",
+      "productCategory": "other",
+      "foodKeys": [],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Nationwide US and UAE. The recalled organic moringa leaf powder was distributed nationwide in retail stores and through online sellers including but not limited to www.foodsalive.com."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-26",
+        "reported": "2026-09-23",
+        "updated": "2026-09-11",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential Salmonella contamination",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99831",
+      "slug": "fda-99831",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99831",
+      "title": "Frutas y Hortalizas del Sur S.A. recalls Organic Triple Berry Blend Strawberries, Blackberries & Blueberries, NET WT 10 OZ (283g),…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Frutas%20y%20Hortalizas%20del%20Sur%20S.A.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99831",
+      "firm": "Frutas y Hortalizas del Sur S.A.",
+      "product": "Organic Triple Berry Blend Strawberries, Blackberries & Blueberries, NET WT 10 OZ (283g), packed in plastic bag, 5 bags per case of 10 OZ each. KEEP FROZEN",
+      "productCategory": "produce",
+      "foodKeys": [
+        "berries"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "E. coli (STEC)",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "AR"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "AR"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Letter"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-28",
+        "reported": "2026-09-23",
+        "updated": "2026-09-16",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential E. coli O145:H28 Contamination",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99841",
+      "slug": "fda-99841",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99841",
+      "title": "Optimus Inc. d/b/a/ Markys Caviar recalls Mon Sire Brie, soft-ripened French cheese, 1 kg, packed in carboard carton and wrapped in…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Optimus%20Inc.%20d%2Fb%2Fa%2F%20Markys%20Caviar",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99841",
+      "firm": "Optimus Inc. d/b/a/ Markys Caviar",
+      "product": "Mon Sire Brie, soft-ripened French cheese, 1 kg, packed in carboard carton and wrapped in plastic parchment paper, 2 units each, Keep Refrigerated",
+      "productCategory": "seafood",
+      "foodKeys": [
+        "dairy"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Listeria monocytogenes",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "FL"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "Florida"
+      },
+      "rootCause": {
+        "category": "supplier-ingredient",
+        "basis": "inferred",
+        "detail": "he firm was notified by their Brie Cheese supplier that sample results revealed the presence of Listeria monocytogenes."
+      },
+      "detection": {
+        "category": "agency-sampling-or-inspection",
+        "basis": "inferred",
+        "detail": "he firm was notified by their Brie Cheese supplier that sample results revealed the presence of Listeria monocytogenes."
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-25",
+        "reported": "2026-09-23",
+        "updated": "2026-09-17",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "The firm was notified by their Brie Cheese supplier that sample results revealed the presence of Listeria monocytogenes.",
+      "missing": [],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography",
+        "rootCause",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99869",
+      "slug": "fda-99869",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99869",
+      "title": "KRAFT HEINZ FOODS COMPANY recalls Heinz Real - Vraie Mayonnaise, 12.5ml single serving packet, 500 packets per case, case c…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=KRAFT%20HEINZ%20FOODS%20COMPANY",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99869",
+      "firm": "KRAFT HEINZ FOODS COMPANY",
+      "product": "Heinz Real - Vraie Mayonnaise, 12.5ml single serving packet, 500 packets per case, case code 57000 06672",
+      "productCategory": "condiments-and-spices",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Mustard",
+          "group": "allergen"
+        }
+      ],
+      "classification": null,
+      "geography": {
+        "scope": "international",
+        "states": [],
+        "stateCount": null,
+        "international": true,
+        "description": "Canada"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-03",
+        "reported": "2026-09-23",
+        "updated": null,
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "undeclared ingredients including but not limited to mustard",
+      "missing": [
+        "classification",
+        "updatedDate",
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T05:48:55.836Z",
+        "lastChanged": "2026-09-29T05:48:55.836Z",
         "revisions": 0,
         "backfilled": false
       }
@@ -977,120 +2062,6 @@
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Foreign object: metal fragments",
-      "missing": [
-        "detection (FDA enforcement reports rarely say how a problem was found)"
-      ],
-      "inferred": [
-        "hazardType",
-        "agents",
-        "productCategory",
-        "geography"
-      ],
-      "rulesVersion": "1.0",
-      "record": {
-        "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
-        "backfilled": true
-      }
-    },
-    {
-      "id": "fda:99582",
-      "slug": "fda-99582",
-      "kind": "recall",
-      "source": "FDA",
-      "sourceId": "99582",
-      "title": "Lexunder Inc recalls Food to Live Organic SuperGrass Powder; 6 oz, 12 oz, 1 lb, 4 lb",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Lexunder%20Inc",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99582",
-      "firm": "Lexunder Inc",
-      "product": "Food to Live Organic SuperGrass Powder; 6 oz, 12 oz, 1 lb, 4 lb",
-      "productCategory": "other",
-      "foodKeys": [],
-      "hazardType": "biological",
-      "agents": [
-        {
-          "name": "Salmonella",
-          "group": "organism"
-        }
-      ],
-      "classification": "Class I",
-      "geography": {
-        "scope": "multi-state",
-        "states": [
-          "AK",
-          "AR",
-          "AZ",
-          "CA",
-          "CO",
-          "CT",
-          "DE",
-          "FL",
-          "GA",
-          "HI",
-          "IA",
-          "IL",
-          "IN",
-          "KY",
-          "LA",
-          "MA",
-          "MD",
-          "MI",
-          "MN",
-          "MO",
-          "MS",
-          "NC",
-          "NE",
-          "NH",
-          "NJ",
-          "NV",
-          "NY",
-          "OH",
-          "OK",
-          "OR",
-          "PA",
-          "RI",
-          "SC",
-          "TN",
-          "TX",
-          "UT",
-          "VA",
-          "VI",
-          "WA",
-          "WI",
-          "WV"
-        ],
-        "stateCount": 41,
-        "international": false,
-        "description": "AK, AR, AZ, CA, CO, CT, DE, FL, GA, HI, IA, IL, IN, KY, LA, MA, MD, MI, MN, MO, MS, NC, NE, NH, NJ, NV, NY, OH, OK, OR, PA, RI, SC, TN, TX, UT, VA, VI, WA, WI, WV, and U.S. Virgin Islands."
-      },
-      "rootCause": {
-        "category": "not-stated",
-        "basis": "not-stated",
-        "detail": null
-      },
-      "detection": {
-        "category": "not-stated",
-        "basis": "not-stated",
-        "detail": null
-      },
-      "correctiveAction": {
-        "category": "voluntary-recall",
-        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
-      },
-      "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
-      },
-      "dates": {
-        "event": "2026-08-07",
-        "reported": "2026-09-09",
-        "updated": "2026-08-28",
-        "closed": null
-      },
-      "outbreak": null,
-      "relatedToOutbreak": null,
-      "reasonText": "Contaminated with Salmonella",
       "missing": [
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
@@ -21343,14 +22314,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-02-18",
         "reported": "2026-04-01",
         "updated": "2026-03-20",
-        "closed": null
+        "closed": "2026-09-21"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -21367,8 +22338,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -27722,19 +28693,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-09-23",
         "reported": "2026-02-11",
         "updated": "2026-02-02",
-        "closed": null
+        "closed": "2026-09-21"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "The firm initiated a voluntary recall after NSF testing showed that labeled ingredient quantities did not align with analytical test results, manganese level was below label quantity.",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -27746,8 +28716,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -31261,14 +32231,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-11-22",
         "reported": "2026-01-14",
         "updated": "2026-01-07",
-        "closed": null
+        "closed": "2026-09-22"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -31285,8 +32255,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -46287,8 +47257,8 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Completed"
       },
       "dates": {
         "event": "2025-09-09",
@@ -46300,6 +47270,7 @@
       "relatedToOutbreak": null,
       "reasonText": "Product was incorrectly labeled, resulting in undeclared wheat, sesame, and cashew.",
       "missing": [
+        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -46312,8 +47283,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -49408,8 +50379,8 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Completed"
       },
       "dates": {
         "event": "2025-08-13",
@@ -49421,6 +50392,7 @@
       "relatedToOutbreak": null,
       "reasonText": "Undeclared wheat allergen.",
       "missing": [
+        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -49432,8 +50404,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -58999,8 +59971,8 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Press Release"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Completed"
       },
       "dates": {
         "event": "2025-06-13",
@@ -59012,6 +59984,7 @@
       "relatedToOutbreak": null,
       "reasonText": "Cucumbers have the potential to be contaminated with Salmonella",
       "missing": [
+        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -59023,8 +59996,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -75687,19 +76660,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2024-11-29",
         "reported": "2025-03-12",
         "updated": "2025-02-28",
-        "closed": null
+        "closed": "2026-09-21"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Potential to be contaminated with Salmonella",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -75711,8 +76683,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -76332,8 +77304,8 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Letter"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Completed"
       },
       "dates": {
         "event": "2025-01-31",
@@ -76345,6 +77317,7 @@
       "relatedToOutbreak": null,
       "reasonText": "Undeclared Yellow #5",
       "missing": [
+        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -76356,8 +77329,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-09-29T05:48:55.836Z",
+        "revisions": 1,
         "backfilled": true
       }
     },

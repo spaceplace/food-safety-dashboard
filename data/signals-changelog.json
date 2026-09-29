@@ -1,6 +1,346 @@
 {
-  "generatedAt": "2026-09-28T23:19:59.304Z",
+  "generatedAt": "2026-09-29T05:48:55.836Z",
   "entries": [
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99737",
+      "slug": "fda-99737",
+      "title": "Everything Sprouts, LLC recalls Everything Sprouts Crunchy Protein Sprout Mix, containing Alfalfa Fenugreek, Cabbage, Mun…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99611",
+      "slug": "fda-99611",
+      "title": "Taylor Fresh Foods Inc recalls Tomato Salsa Fresca. Ingredients: Tomatoes, Yellow Onion, Red Onion, Cilantro, Jalapeno P…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99594",
+      "slug": "fda-99594",
+      "title": "NatureBest Pre-Cut & Produce LLc recalls PICO DE GALLO-HOT-6/9oz HEB-PICO-HOT-12/14oz",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99815",
+      "slug": "fda-99815",
+      "title": "Tiffany Food Corp recalls Hexing Haw Balls candy; packaged in 200g/0.44 lb./7.05 oz clear plastic bag; Ingredients:…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99780",
+      "slug": "fda-99780",
+      "title": "Panorama Produce Sales Inc. recalls Martina brand Fresh Whole Mangoes; Individual whole mangoes, variable weight; 9 mangoes p…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99744",
+      "slug": "fda-99744",
+      "title": "Buckhead Meat Company D.B.A. Trinity Seafood recalls Buckhead, Tuna, 10lb cs, 12lb cs, 15lb cs, 3-5lb cs , Styrofoam container, Keep Refrigera…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99803",
+      "slug": "fda-99803",
+      "title": "Best Friends Bakery, LLC recalls PUMPKIN SPICE NO BAKE COOKIE NET WT 3.5 oz. INGREDIENTS: WHOLE GRAIN OATS, MILK, MARGARIN…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99572",
+      "slug": "fda-99572",
+      "title": "Elegant Foods, LLC recalls Elegant Foods Carrot Cake, 9\". 14 Servings. Keep Refrigerated/Frozen. 537 Atlas Ave., Mad…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99869",
+      "slug": "fda-99869",
+      "title": "KRAFT HEINZ FOODS COMPANY recalls Heinz Real - Vraie Mayonnaise, 12.5ml single serving packet, 500 packets per case, case c…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99841",
+      "slug": "fda-99841",
+      "title": "Optimus Inc. d/b/a/ Markys Caviar recalls Mon Sire Brie, soft-ripened French cheese, 1 kg, packed in carboard carton and wrapped in…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99830",
+      "slug": "fda-99830",
+      "title": "FOODS ALIVE INC. recalls Foods Alive organic moringa leaf powder, 8oz pouch, UPC 8 91551 00092 8",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99755",
+      "slug": "fda-99755",
+      "title": "Quality Dairy Farms Inc. recalls Mercer's brand 6 ICE CREAM SANDWICHES TO GO; packaged in clear plastic; ice cream sandwic…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "added",
+      "id": "fda:99831",
+      "slug": "fda-99831",
+      "title": "Frutas y Hortalizas del Sur S.A. recalls Organic Triple Berry Blend Strawberries, Blackberries & Blueberries, NET WT 10 OZ (283g),…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "closed",
+      "id": "fda:98521",
+      "slug": "fda-98521",
+      "title": "NRS Enterprises, Inc. dba Sunflour Bakery recalls Sunflour Bakery Hamburger Bun, 18oz plastic bag containing 6 buns. UPC- 832971001522",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-21"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "updated",
+      "id": "fda:98263",
+      "slug": "fda-98263",
+      "title": "Optiwize Inc. recalls OptiWize Health OptiWize Collagen Plus 320 count bottle; White bottle with black lid.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-21"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "closed",
+      "id": "fda:98047",
+      "slug": "fda-98047",
+      "title": "GBC Food Services, LLC recalls EverRoast Chicken Caesar Salad 850042244142 Net Wt: 8.5 oz (255g)",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-22"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "closed",
+      "id": "fda:97644",
+      "slug": "fda-97644",
+      "title": "WFM Purchasing, LP recalls Whole Foods Market Blueberry Almond Granola, PLU 86032, packaged in a clear plastic conta…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "closed",
+      "id": "fda:97458",
+      "slug": "fda-97458",
+      "title": "Dollins Pecan Co, Inc recalls Product Name: Blueberry Pretzels \" Brand Name: HEB \" Description: 8oz HEB Blueberry Flavo…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "closed",
+      "id": "fda:97080",
+      "slug": "fda-97080",
+      "title": "FUENTES FARMS LLC recalls Cucumbers Box 40Lbs 1 1/9 Bushels.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "updated",
+      "id": "fda:95886",
+      "slug": "fda-95886",
+      "title": "JFE FRANCHISING INC recalls Cucumber, Lime & Tajin 19 oz Cucumber with Ranch 9 oz Cucumber Bowl with Ranch 15 oz Cucu…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-21"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "closed",
+      "id": "fda:96154",
+      "slug": "fda-96154",
+      "title": "OCBW INC recalls Beverage Base Sweet&Sour, 3 gallon, BIB: Best By 12/10/2025",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-29T05:48:55.836Z",
+      "change": "removed",
+      "id": "fda:99582",
+      "slug": "fda-99582",
+      "title": "Lexunder Inc recalls Food to Live Organic SuperGrass Powder; 6 oz, 12 oz, 1 lb, 4 lb",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": "No longer returned by the source"
+    },
     {
       "at": "2026-09-28T23:19:59.304Z",
       "change": "updated",

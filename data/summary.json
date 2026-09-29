@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-09-28T05:30:57.437Z",
+  "generatedAt": "2026-09-29T05:49:24.254Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-21",
-  "windowTo": "2026-09-28",
+  "windowFrom": "2026-09-22",
+  "windowTo": "2026-09-29",
   "paragraphs": [
-    "An open Salmonella outbreak linked to broccoli sprouts has sickened 32 people across six states, with three hospitalizations reported [1]. The E. coli outbreak previously associated with frozen blueberries is now over, affecting 17 people across two states [2].",
-    "Sempio Food Services Inc. is recalling ready-to-eat chicken stew products imported without proper inspection; affected boxes contain 31.75-oz pouches labeled \"Sempio Korean Ginseng CHICKEN STEW CLASSIC\" and were distributed to FL, GA, IL, MD, NJ, NY, PA, and VA [3]. Fontanini Foods LLC is recalling raw, frozen pork sausage links that may contain clear, hard plastic; the 10-lb boxes are marked \"ITEM 393\" with packing dates of 06/23/2026 and reached CA, FL, MI, and NV [4][18]. Star Meat Delivery Inc. is recalling vacuum-packed A&D Foods goat products produced without inspection [5].",
-    "Additional recalls include Deano's Pasta Pear and Pecorino Triangoli Ravioli due to undeclared lobster that poses serious allergic reaction risk to those sensitive to crustacean shellfish [7][16]. Galil Importing Corp is recalling Lior Cinnamon Ground Seasoning for elevated lead levels [8][17]. G. L. Mezzetta Inc. is recalling specific lots of Golden Greek Peperoncini Medium Heat (32-ounce) due to pest contamination [6]. Berlin Seeds is recalling alfalfa sprouting seed that may be contaminated with Shiga toxin-producing E. coli or Salmonella [9]."
+    "An ongoing Salmonella outbreak linked to broccoli sprouts has sickened 32 people across six states, with three hospitalizations reported [1]. Several Class I recalls this week include Sempio Food Services Inc. recalling Korean Ginseng Chicken Stew Classic pouches sold in Florida, Georgia, Illinois, Maryland, New Jersey, New York, Pennsylvania, and Virginia due to import violations [2]. Fontanini Foods LLC is recalling raw, frozen pork sausage links packed on 06/23/2026 and distributed to California, Florida, Michigan, and Nevada because of possible plastic contamination [3]. Taylor Fresh Foods Inc. is recalling Tomato Salsa Fresca sold across 26 states due to potential Salmonella contamination [5]. NatureBest Pre-Cut & Produce is recalling pico de gallo products in Texas and Louisiana because jalapeños may contain Salmonella [6].",
+    "Everything Sprouts Crunchy Protein Sprout Mix is recalled in Minnesota and Wisconsin due to potential STEC E. coli and Salmonella [4], and Organic Triple Berry Blend is recalled in Arkansas due to potential E. coli O145:H28 [9]. Mon Sire Brie soft cheese distributed in Florida is recalled for potential Listeria monocytogenes [7], and Foods Alive organic moringa leaf powder sold nationwide is recalled for potential Salmonella [8]. Star Meat Delivery Inc. is recalling A&D Foods goat products produced without inspection [10]. Additional recalls include Deano's Pasta Pear and Pecorino Triangoli Ravioli for undeclared lobster [16], Galil Lior Cinnamon Ground Seasoning for elevated lead levels [17], and Mezzetta Golden Greek Peperoncini for a pest contaminant [15]. Martina brand mangoes and Buckhead tuna are also recalled [11][12]."
   ],
   "sources": [
     {
@@ -19,14 +18,6 @@
     },
     {
       "n": 2,
-      "kind": "outbreak",
-      "title": "E. coli Outbreak Linked to Frozen Blueberries",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/ecoli/outbreaks/blueberries-07-26/index.html",
-      "publishedAt": "2026-09-21"
-    },
-    {
-      "n": 3,
       "kind": "recall",
       "title": "Sempio Food Services Inc. Recalls Ready-To-Eat Chicken Stew Products Imported Without the Benefit of Import Reinspection",
       "source": "USDA FSIS recall notice",
@@ -34,7 +25,7 @@
       "publishedAt": "2026-09-25"
     },
     {
-      "n": 4,
+      "n": 3,
       "kind": "recall",
       "title": "Fontanini Foods LLC Recalls Raw, Frozen Pork Sausage Products Due to Possible Foreign Matter Contamination",
       "source": "USDA FSIS recall notice",
@@ -42,7 +33,55 @@
       "publishedAt": "2026-09-25"
     },
     {
+      "n": 4,
+      "kind": "recall",
+      "title": "Everything Sprouts, LLC recalls Everything Sprouts Crunchy Protein Sprout Mix, containing Alfalfa Fenugreek, Cabbage, Mun…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Everything%20Sprouts%2C%20LLC",
+      "publishedAt": "2026-09-23"
+    },
+    {
       "n": 5,
+      "kind": "recall",
+      "title": "Taylor Fresh Foods Inc recalls Tomato Salsa Fresca. Ingredients: Tomatoes, Yellow Onion, Red Onion, Cilantro, Jalapeno P…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Taylor%20Fresh%20Foods%20Inc",
+      "publishedAt": "2026-09-23"
+    },
+    {
+      "n": 6,
+      "kind": "recall",
+      "title": "NatureBest Pre-Cut & Produce LLc recalls PICO DE GALLO-HOT-6/9oz HEB-PICO-HOT-12/14oz",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=NatureBest%20Pre-Cut%20%26%20Produce%20LLc",
+      "publishedAt": "2026-09-23"
+    },
+    {
+      "n": 7,
+      "kind": "recall",
+      "title": "Optimus Inc. d/b/a/ Markys Caviar recalls Mon Sire Brie, soft-ripened French cheese, 1 kg, packed in carboard carton and wrapped in…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Optimus%20Inc.%20d%2Fb%2Fa%2F%20Markys%20Caviar",
+      "publishedAt": "2026-09-23"
+    },
+    {
+      "n": 8,
+      "kind": "recall",
+      "title": "FOODS ALIVE INC. recalls Foods Alive organic moringa leaf powder, 8oz pouch, UPC 8 91551 00092 8",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=FOODS%20ALIVE%20INC.",
+      "publishedAt": "2026-09-23"
+    },
+    {
+      "n": 9,
+      "kind": "recall",
+      "title": "Frutas y Hortalizas del Sur S.A. recalls Organic Triple Berry Blend Strawberries, Blackberries & Blueberries, NET WT 10 OZ (283g),…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Frutas%20y%20Hortalizas%20del%20Sur%20S.A.",
+      "publishedAt": "2026-09-23"
+    },
+    {
+      "n": 10,
       "kind": "recall",
       "title": "Star Meat Delivery Inc. Recalls Raw Pork, Beef, and Goat Products Produced Without the Benefit of Inspection",
       "source": "USDA FSIS recall notice",
@@ -50,7 +89,23 @@
       "publishedAt": "2026-09-22"
     },
     {
-      "n": 6,
+      "n": 11,
+      "kind": "recall",
+      "title": "Panorama Produce Sales Inc. recalls Martina brand Fresh Whole Mangoes; Individual whole mangoes, variable weight; 9 mangoes p…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Panorama%20Produce%20Sales%20Inc.",
+      "publishedAt": "2026-09-23"
+    },
+    {
+      "n": 12,
+      "kind": "recall",
+      "title": "Buckhead Meat Company D.B.A. Trinity Seafood recalls Buckhead, Tuna, 10lb cs, 12lb cs, 15lb cs, 3-5lb cs , Styrofoam container, Keep Refrigera…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Buckhead%20Meat%20Company%20D.B.A.%20Trinity%20Seafood",
+      "publishedAt": "2026-09-23"
+    },
+    {
+      "n": 15,
       "kind": "agency-notice",
       "title": "G. L. Mezzetta Inc. Announces Recall of Mezzetta Brand Golden Greek Peperoncini (Medium Heat) Due to Presence of Pest Contaminant in the Jar",
       "source": "FDA recall notice",
@@ -58,7 +113,7 @@
       "publishedAt": "2026-09-26T22:17:00.000Z"
     },
     {
-      "n": 7,
+      "n": 16,
       "kind": "agency-notice",
       "title": "Deano’s Pasta Issue Allergy Alert on Undeclared Lobster in Pear and Pecorino Triangoli Ravioli",
       "source": "FDA recall notice",
@@ -66,50 +121,18 @@
       "publishedAt": "2026-09-24T21:05:00.000Z"
     },
     {
-      "n": 8,
+      "n": 17,
       "kind": "agency-notice",
       "title": "Galil Importing Corp Recalls Lior Cinnamon Ground Seasoning Due to Elevated Lead Levels",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels",
       "publishedAt": "2026-09-24T20:45:00.000Z"
-    },
-    {
-      "n": 9,
-      "kind": "agency-notice",
-      "title": "Berlin Seeds Recalls Alfalfa Sprouting Seed Because of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/berlin-seeds-recalls-alfalfa-sprouting-seed-because-possible-health-risk",
-      "publishedAt": "2026-09-23T21:02:00.000Z"
-    },
-    {
-      "n": 16,
-      "kind": "news",
-      "title": "Ravioli recalled because of undeclared lobster",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/ravioli-recalled-because-of-undeclared-lobster/",
-      "publishedAt": "2026-09-26T02:50:47.000Z"
-    },
-    {
-      "n": 17,
-      "kind": "news",
-      "title": "Cinnamon recalled because of excessive lead levels",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/cinnamon-recalled-because-of-excessive-lead-levels/",
-      "publishedAt": "2026-09-26T02:41:55.000Z"
-    },
-    {
-      "n": 18,
-      "kind": "news",
-      "title": "Frozen sausage recalled after complaints of plastic in product",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/09/frozen-sausage-recalled-after-complaints-of-plastic-in-product/",
-      "publishedAt": "2026-09-26T02:11:38.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6874,
-    "outputTokens": 798
+    "inputTokens": 10001,
+    "outputTokens": 899
   }
 }
