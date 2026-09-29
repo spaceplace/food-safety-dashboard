@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-29T12:59:45.838Z",
+  "generatedAt": "2026-09-29T22:20:22.490Z",
   "entries": [
+    {
+      "at": "2026-09-29T22:20:22.490Z",
+      "change": "added",
+      "id": "cdc:ecoli/outbreaks/raw-milk-cheese-09-26",
+      "slug": "cdc-ecoli-outbreaks-raw-milk-cheese-09-26",
+      "title": "E. coli Outbreak Linked to Raw Milk Cheese",
+      "source": "CDC",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-09-29T05:48:55.836Z",
       "change": "added",

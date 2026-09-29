@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-29T12:59:45.838Z",
+  "generatedAt": "2026-09-29T22:20:22.490Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-09-29T12:59:45.906Z",
+      "fetchedAt": "2026-09-29T22:20:22.551Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
-      "itemCount": 76
+      "itemCount": 77
     },
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-09-29T13:00:15.452Z",
+      "fetchedAt": "2026-09-29T22:20:57.852Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-23",
@@ -24,7 +24,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-09-29T13:00:22.176Z",
+      "fetchedAt": "2026-09-29T22:21:03.405Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-28",
@@ -32,6 +32,95 @@
     }
   },
   "items": [
+    {
+      "id": "cdc:ecoli/outbreaks/raw-milk-cheese-09-26",
+      "slug": "cdc-ecoli-outbreaks-raw-milk-cheese-09-26",
+      "kind": "outbreak",
+      "source": "CDC",
+      "sourceId": "ecoli/outbreaks/raw-milk-cheese-09-26",
+      "title": "E. coli Outbreak Linked to Raw Milk Cheese",
+      "url": "https://www.cdc.gov/ecoli/outbreaks/raw-milk-cheese-09-26/index.html",
+      "sourceRecordUrl": null,
+      "firm": null,
+      "product": "Raw Milk Cheese",
+      "productCategory": "dairy",
+      "foodKeys": [
+        "dairy",
+        "raw milk"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "E. coli (STEC)",
+          "group": "organism"
+        }
+      ],
+      "classification": null,
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CA",
+          "CO",
+          "GA",
+          "KY",
+          "MI",
+          "NV",
+          "OR",
+          "TN",
+          "UT"
+        ],
+        "stateCount": 9,
+        "international": false,
+        "description": "9 states"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "illness-report-or-outbreak",
+        "basis": "agency-coded",
+        "detail": "CDC outbreak investigation"
+      },
+      "correctiveAction": {
+        "category": "investigation-with-recall",
+        "detail": "CDC notice: recall issued"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Investigation open"
+      },
+      "dates": {
+        "event": "2026-09-25",
+        "reported": "2026-09-25",
+        "updated": "2026-09-25",
+        "closed": null
+      },
+      "outbreak": {
+        "pathogen": "E. coli O26",
+        "cases": 13,
+        "hospitalizations": 8,
+        "deaths": 0,
+        "illnessOnsetFrom": "2026-07-07",
+        "illnessOnsetTo": "2026-08-26"
+      },
+      "relatedToOutbreak": true,
+      "reasonText": null,
+      "missing": [
+        "rootCause (CDC notices describe the contaminated food, not why it was contaminated)"
+      ],
+      "inferred": [
+        "productCategory"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-09-29T22:20:22.490Z",
+        "lastChanged": "2026-09-29T22:20:22.490Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fsis:023-2026",
       "slug": "fsis-023-2026",
