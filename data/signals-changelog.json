@@ -1,6 +1,89 @@
 {
-  "generatedAt": "2026-09-29T22:20:22.490Z",
+  "generatedAt": "2026-09-30T05:38:37.293Z",
   "entries": [
+    {
+      "at": "2026-09-30T05:38:37.293Z",
+      "change": "updated",
+      "id": "fsis:019-020-2026",
+      "slug": "fsis-019-020-2026",
+      "title": "Prime Line Distributors, Inc. and Ferrarini USA, Inc. Recall Imported Ready-To-Eat Pork Guanciale Products Due to Possible Listeria Contamination",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "updated date",
+          "from": "2026-09-06",
+          "to": "2026-09-29"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-30T05:38:37.293Z",
+      "change": "closed",
+      "id": "fsis:018-2026",
+      "slug": "fsis-018-2026",
+      "title": "Shanghai Ravioli Corporation Recalls Not Ready-To-Eat Frozen Buffalo Chicken Products Produced Without the Benefit of Inspection",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Active Recall",
+          "to": "Closed Recall (2026)"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-30T05:38:37.293Z",
+      "change": "closed",
+      "id": "fsis:012-2026",
+      "slug": "fsis-012-2026",
+      "title": "Ukrop's Homestyle Foods Recalls Spaghetti and Chicken Products Due to Possible Foreign Matter Contamination",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Active Recall",
+          "to": "Closed Recall (2026)"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-09-30T05:38:37.293Z",
+      "change": "closed",
+      "id": "fsis:009-2026",
+      "slug": "fsis-009-2026",
+      "title": "Reser’s Fine Foods, Inc. Recalls Ready-To-Eat Pasta Salad Product Due to Misbranding and Undeclared Allergens",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Active Recall",
+          "to": "Closed Recall (2026)"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-09-29T22:20:22.490Z",
       "change": "added",
