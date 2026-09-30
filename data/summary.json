@@ -130,7 +130,7 @@
       "publishedAt": "2026-09-30T04:03:55.000Z"
     }
   ],
-  "status": "ok",
+  "status": "cached",
   "note": null,
   "usage": {
     "inputTokens": 10380,
