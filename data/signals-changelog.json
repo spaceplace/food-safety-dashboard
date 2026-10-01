@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-10-01T13:25:33.806Z",
+  "generatedAt": "2026-10-01T22:44:33.983Z",
   "entries": [
+    {
+      "at": "2026-10-01T22:44:33.983Z",
+      "change": "updated",
+      "id": "cdc:ecoli/outbreaks/alfalfa-sprouts-08-26",
+      "slug": "cdc-ecoli-outbreaks-alfalfa-sprouts-08-26",
+      "title": "E. coli and Salmonella Outbreak Linked to Alfalfa Sprouts",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "states",
+          "from": "FL, IA, IN, KS, MI, MN, NC, ND, NH, NY, PA, SC, SD, WA, WI",
+          "to": "FL, IA, IN, KS, MI, MN, NC, ND, NH, NY, OR, PA, SC, SD, WA, WI"
+        },
+        {
+          "field": "updated date",
+          "from": "2026-09-01",
+          "to": "2026-10-01"
+        },
+        {
+          "field": "cases",
+          "from": "55",
+          "to": "76"
+        },
+        {
+          "field": "hospitalizations",
+          "from": "4",
+          "to": "6"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-09-30T05:38:37.293Z",
       "change": "updated",

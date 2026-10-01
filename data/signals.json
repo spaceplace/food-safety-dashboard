@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-01T13:25:33.806Z",
+  "generatedAt": "2026-10-01T22:44:33.983Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-01T13:26:11.434Z",
+      "fetchedAt": "2026-10-01T22:45:04.152Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-23",
@@ -24,7 +24,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-01T13:26:15.739Z",
+      "fetchedAt": "2026-10-01T22:45:08.698Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-29",
@@ -4730,15 +4730,16 @@
           "ND",
           "NH",
           "NY",
+          "OR",
           "PA",
           "SC",
           "SD",
           "WA",
           "WI"
         ],
-        "stateCount": 15,
+        "stateCount": 16,
         "international": false,
-        "description": "15 states"
+        "description": "16 states"
       },
       "rootCause": {
         "category": "not-stated",
@@ -4761,16 +4762,16 @@
       "dates": {
         "event": "2026-08-21",
         "reported": "2026-08-21",
-        "updated": "2026-09-01",
+        "updated": "2026-10-01",
         "closed": null
       },
       "outbreak": {
         "pathogen": "E. coli O26:H11, O103:H25, and O168:H8 and Salmonella Agona",
-        "cases": 55,
-        "hospitalizations": 4,
+        "cases": 76,
+        "hospitalizations": 6,
         "deaths": 0,
         "illnessOnsetFrom": "2026-05-31",
-        "illnessOnsetTo": "2026-08-08"
+        "illnessOnsetTo": "2026-09-07"
       },
       "relatedToOutbreak": true,
       "reasonText": null,
@@ -4783,8 +4784,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-01T22:44:33.983Z",
+        "revisions": 1,
         "backfilled": true
       }
     },

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-01T13:25:33.806Z",
+  "generatedAt": "2026-10-01T22:44:33.983Z",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -13,7 +13,7 @@
     "cdc-active-counts": {
       "name": "CDC active multistate investigation counts",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-01T13:26:10.782Z",
+      "fetchedAt": "2026-10-01T22:45:04.058Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-30",
@@ -93,7 +93,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -145,7 +145,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -160,10 +160,10 @@
       "pathogen": "E. coli O26:H11, O103:H25, and O168:H8 and Salmonella Agona",
       "pathogenFamily": "E. coli",
       "status": "active",
-      "cases": 55,
-      "hospitalizations": 4,
+      "cases": 76,
+      "hospitalizations": 6,
       "deaths": 0,
-      "stateCount": 15,
+      "stateCount": 16,
       "states": [
         {
           "state": "FL",
@@ -171,7 +171,7 @@
         },
         {
           "state": "IA",
-          "cases": 1
+          "cases": 2
         },
         {
           "state": "IN",
@@ -187,15 +187,15 @@
         },
         {
           "state": "MN",
-          "cases": 21
+          "cases": 28
         },
         {
           "state": "NC",
-          "cases": 2
+          "cases": 3
         },
         {
           "state": "ND",
-          "cases": 2
+          "cases": 3
         },
         {
           "state": "NH",
@@ -204,6 +204,10 @@
         {
           "state": "NY",
           "cases": 2
+        },
+        {
+          "state": "OR",
+          "cases": 1
         },
         {
           "state": "PA",
@@ -223,17 +227,17 @@
         },
         {
           "state": "WI",
-          "cases": 17
+          "cases": 27
         }
       ],
       "illnessOnsetFrom": "2026-05-31",
-      "illnessOnsetTo": "2026-08-08",
+      "illnessOnsetTo": "2026-09-07",
       "postedAt": "2026-08-21",
-      "updatedAt": "2026-09-01",
+      "updatedAt": "2026-10-01",
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -389,7 +393,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -489,7 +493,7 @@
       "declaredOverAt": "2026-09-03",
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -601,7 +605,7 @@
       "declaredOverAt": "2026-09-11",
       "recallIssued": null,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -637,7 +641,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -677,7 +681,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -721,7 +725,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -837,7 +841,7 @@
       "declaredOverAt": "2026-07-16",
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -878,7 +882,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -938,7 +942,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1118,7 +1122,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1238,7 +1242,7 @@
       "declaredOverAt": "2026-02-24",
       "recallIssued": false,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1334,7 +1338,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1388,7 +1392,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1466,7 +1470,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1550,7 +1554,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1620,7 +1624,7 @@
       "declaredOverAt": "2025-09-25",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1722,7 +1726,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1758,7 +1762,7 @@
       "declaredOverAt": "2025-08-21",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1826,7 +1830,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1938,7 +1942,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -1974,7 +1978,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     },
     {
@@ -2086,7 +2090,7 @@
       "declaredOverAt": "2025-05-16",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T13:25:33.880Z",
+      "fetchedAt": "2026-10-01T22:44:34.021Z",
       "parseWarnings": []
     }
   ]
