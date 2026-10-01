@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-30T12:42:41.516Z",
+  "generatedAt": "2026-10-01T13:26:17.867Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-23",
-  "windowTo": "2026-09-30",
+  "windowFrom": "2026-09-24",
+  "windowTo": "2026-10-01",
   "paragraphs": [
-    "An E. coli O26 outbreak linked to raw milk cheese has caused 13 cases and 8 hospitalizations across 9 states [1]. A Salmonella outbreak linked to broccoli sprouts has sickened 32 people with 3 hospitalizations across 6 states [2]. The CDC has declared an earlier Salmonella outbreak from backyard poultry flocks over, with 1,253 total infections [23].",
-    "Do not consume Sempio Korean Ginseng Chicken Stew Classic in 31.75-oz pouches distributed to FL, GA, IL, MD, NJ, NY, PA, and VA due to import violations [3]. Fontanini Pork Sausage Links (10-lb boxes, item 393, packed 06/23/2026) in CA, FL, MI, and NV are recalled for possible foreign matter contamination [4]. Everything Sprouts Crunchy Protein Sprout Mix (5.0 oz) distributed to MN and WI may contain STEC E. coli or Salmonella [5]. Taylor Fresh Foods Tomato Salsa Fresca (4 lbs, refrigerated) sold across 26 states may be contaminated with Salmonella [6]. NatureBest Pico de Gallo Hot in TX and LA is recalled due to potential Salmonella in jalapeños [7]. Markys Caviar Mon Sire Brie (1 kg, soft-ripened French cheese) in Florida may contain Listeria monocytogenes [8]. Foods Alive organic moringa leaf powder (8oz, UPC 8 91551 00092 8) sold nationwide has potential Salmonella contamination [9]. Frutas y Hortalizas Organic Triple Berry Blend (10 oz frozen) in Arkansas may contain E. coli O145:H28 [10].",
-    "Sierra Nevada Cheese Company is voluntarily recalling all Graziers Raw Milk Cheese due to potential E. coli O26:H11 contamination [16]. Mezzetta Golden Greek Peperoncini (32-oz, medium heat) is recalled for a dead mouse found in a jar [17]. Deano's Pear and Pecorino Triangoli Ravioli is recalled for undeclared lobster [18]. Galil Lior Cinnamon Ground Seasoning is recalled for elevated lead levels [19]."
+    "An E. coli O26 outbreak linked to raw milk cheese has sickened 13 people with 8 hospitalizations across 9 states [1]. A Salmonella outbreak connected to broccoli sprouts has caused 32 illnesses and 3 hospitalizations in 6 states [2]. Sierra Nevada Cheese Company is voluntarily recalling all Graziers Raw Milk Cheese due to potential contamination with E. coli O26:H11 [7].",
+    "Sempio Food Services Inc. is recalling Sempio Korean Ginseng Chicken Stew Classic in 31.75-oz pouches sold in Florida, Georgia, Illinois, Maryland, New Jersey, New York, Pennsylvania, and Virginia due to import violations [3]. Fontanini Foods LLC is recalling 10-lb. boxes of Fontanini Pork Sausage Links (Item 393, packed on 06/23/2026) sold in California, Florida, Michigan, and Nevada because of possible foreign matter contamination [4].",
+    "Other recalls include Mezzetta Golden Greek Peperoncini Medium Heat (32-ounce) due to a pest contaminant [8], Deano's Pasta Pear and Pecorino Triangoli Ravioli due to undeclared lobster [9], and Lior Cinnamon Ground Seasoning due to elevated lead levels [10]. The CDC has declared the Salmonella outbreak from backyard poultry flocks over, with 1,253 people infected [16]."
   ],
   "sources": [
     {
@@ -42,55 +42,7 @@
       "publishedAt": "2026-09-25"
     },
     {
-      "n": 5,
-      "kind": "recall",
-      "title": "Everything Sprouts, LLC recalls Everything Sprouts Crunchy Protein Sprout Mix, containing Alfalfa Fenugreek, Cabbage, Mun…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Everything%20Sprouts%2C%20LLC",
-      "publishedAt": "2026-09-23"
-    },
-    {
-      "n": 6,
-      "kind": "recall",
-      "title": "Taylor Fresh Foods Inc recalls Tomato Salsa Fresca. Ingredients: Tomatoes, Yellow Onion, Red Onion, Cilantro, Jalapeno P…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Taylor%20Fresh%20Foods%20Inc",
-      "publishedAt": "2026-09-23"
-    },
-    {
       "n": 7,
-      "kind": "recall",
-      "title": "NatureBest Pre-Cut & Produce LLc recalls PICO DE GALLO-HOT-6/9oz HEB-PICO-HOT-12/14oz",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=NatureBest%20Pre-Cut%20%26%20Produce%20LLc",
-      "publishedAt": "2026-09-23"
-    },
-    {
-      "n": 8,
-      "kind": "recall",
-      "title": "Optimus Inc. d/b/a/ Markys Caviar recalls Mon Sire Brie, soft-ripened French cheese, 1 kg, packed in carboard carton and wrapped in…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Optimus%20Inc.%20d%2Fb%2Fa%2F%20Markys%20Caviar",
-      "publishedAt": "2026-09-23"
-    },
-    {
-      "n": 9,
-      "kind": "recall",
-      "title": "FOODS ALIVE INC. recalls Foods Alive organic moringa leaf powder, 8oz pouch, UPC 8 91551 00092 8",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=FOODS%20ALIVE%20INC.",
-      "publishedAt": "2026-09-23"
-    },
-    {
-      "n": 10,
-      "kind": "recall",
-      "title": "Frutas y Hortalizas del Sur S.A. recalls Organic Triple Berry Blend Strawberries, Blackberries & Blueberries, NET WT 10 OZ (283g),…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Frutas%20y%20Hortalizas%20del%20Sur%20S.A.",
-      "publishedAt": "2026-09-23"
-    },
-    {
-      "n": 16,
       "kind": "agency-notice",
       "title": "Sierra Nevada Cheese Company Recalls Graziers Raw Milk Cheese Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -98,7 +50,7 @@
       "publishedAt": "2026-09-28T14:26:00.000Z"
     },
     {
-      "n": 17,
+      "n": 8,
       "kind": "agency-notice",
       "title": "G. L. Mezzetta Inc. Announces Recall of Mezzetta Brand Golden Greek Peperoncini (Medium Heat) Due to Presence of Pest Contaminant in the Jar",
       "source": "FDA recall notice",
@@ -106,7 +58,7 @@
       "publishedAt": "2026-09-26T22:17:00.000Z"
     },
     {
-      "n": 18,
+      "n": 9,
       "kind": "agency-notice",
       "title": "Deano’s Pasta Issue Allergy Alert on Undeclared Lobster in Pear and Pecorino Triangoli Ravioli",
       "source": "FDA recall notice",
@@ -114,7 +66,7 @@
       "publishedAt": "2026-09-24T21:05:00.000Z"
     },
     {
-      "n": 19,
+      "n": 10,
       "kind": "agency-notice",
       "title": "Galil Importing Corp Recalls Lior Cinnamon Ground Seasoning Due to Elevated Lead Levels",
       "source": "FDA recall notice",
@@ -122,7 +74,7 @@
       "publishedAt": "2026-09-24T20:45:00.000Z"
     },
     {
-      "n": 23,
+      "n": 16,
       "kind": "news",
       "title": "CDC declares end to Salmonella outbreak traced to backyard flocks",
       "source": "Food Safety News",
@@ -130,10 +82,10 @@
       "publishedAt": "2026-09-30T04:03:55.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 10380,
-    "outputTokens": 1150
+    "inputTokens": 6155,
+    "outputTokens": 743
   }
 }
