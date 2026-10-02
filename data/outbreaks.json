@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-01T22:44:33.983Z",
+  "generatedAt": "2026-10-02T05:46:05.482Z",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -13,7 +13,7 @@
     "cdc-active-counts": {
       "name": "CDC active multistate investigation counts",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-01T22:45:04.058Z",
+      "fetchedAt": "2026-10-02T05:46:30.782Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-30",
@@ -93,7 +93,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -145,7 +145,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -237,7 +237,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -393,7 +393,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -493,7 +493,7 @@
       "declaredOverAt": "2026-09-03",
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -605,7 +605,7 @@
       "declaredOverAt": "2026-09-11",
       "recallIssued": null,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -641,7 +641,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -681,7 +681,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -725,7 +725,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -841,7 +841,7 @@
       "declaredOverAt": "2026-07-16",
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -882,7 +882,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -942,7 +942,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1122,7 +1122,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1242,7 +1242,7 @@
       "declaredOverAt": "2026-02-24",
       "recallIssued": false,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1338,7 +1338,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1392,7 +1392,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1470,7 +1470,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1554,7 +1554,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1624,7 +1624,7 @@
       "declaredOverAt": "2025-09-25",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1726,7 +1726,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1762,7 +1762,7 @@
       "declaredOverAt": "2025-08-21",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1830,7 +1830,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1942,7 +1942,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -1978,7 +1978,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     },
     {
@@ -2090,7 +2090,7 @@
       "declaredOverAt": "2025-05-16",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-01T22:44:34.021Z",
+      "fetchedAt": "2026-10-02T05:46:05.577Z",
       "parseWarnings": []
     }
   ]
