@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-02T12:44:06.180Z",
+  "generatedAt": "2026-10-02T22:18:14.372Z",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -13,7 +13,7 @@
     "cdc-active-counts": {
       "name": "CDC active multistate investigation counts",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-02T12:44:29.431Z",
+      "fetchedAt": "2026-10-02T22:18:41.136Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-30",
@@ -93,7 +93,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -145,7 +145,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -237,7 +237,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -251,15 +251,15 @@
       ],
       "pathogen": "Salmonella",
       "pathogenFamily": "Salmonella",
-      "status": "active",
-      "cases": 431,
-      "hospitalizations": 57,
+      "status": "over",
+      "cases": 488,
+      "hospitalizations": 65,
       "deaths": 0,
-      "stateCount": 32,
+      "stateCount": 34,
       "states": [
         {
           "state": "AL",
-          "cases": 2
+          "cases": 7
         },
         {
           "state": "AR",
@@ -267,11 +267,11 @@
         },
         {
           "state": "CA",
-          "cases": 1
+          "cases": 2
         },
         {
           "state": "CO",
-          "cases": 118
+          "cases": 132
         },
         {
           "state": "FL",
@@ -279,11 +279,19 @@
         },
         {
           "state": "GA",
-          "cases": 28
+          "cases": 43
+        },
+        {
+          "state": "HI",
+          "cases": 1
+        },
+        {
+          "state": "IA",
+          "cases": 1
         },
         {
           "state": "IL",
-          "cases": 33
+          "cases": 35
         },
         {
           "state": "IN",
@@ -295,7 +303,7 @@
         },
         {
           "state": "KY",
-          "cases": 1
+          "cases": 2
         },
         {
           "state": "LA",
@@ -307,11 +315,11 @@
         },
         {
           "state": "MN",
-          "cases": 129
+          "cases": 133
         },
         {
           "state": "MO",
-          "cases": 8
+          "cases": 9
         },
         {
           "state": "MT",
@@ -319,7 +327,7 @@
         },
         {
           "state": "NC",
-          "cases": 3
+          "cases": 6
         },
         {
           "state": "ND",
@@ -335,11 +343,11 @@
         },
         {
           "state": "NM",
-          "cases": 4
+          "cases": 6
         },
         {
           "state": "OH",
-          "cases": 3
+          "cases": 4
         },
         {
           "state": "OK",
@@ -347,7 +355,7 @@
         },
         {
           "state": "PA",
-          "cases": 2
+          "cases": 3
         },
         {
           "state": "SC",
@@ -355,11 +363,11 @@
         },
         {
           "state": "TN",
-          "cases": 8
+          "cases": 9
         },
         {
           "state": "TX",
-          "cases": 4
+          "cases": 5
         },
         {
           "state": "UT",
@@ -367,7 +375,7 @@
         },
         {
           "state": "VA",
-          "cases": 2
+          "cases": 3
         },
         {
           "state": "WA",
@@ -383,17 +391,17 @@
         },
         {
           "state": "WY",
-          "cases": 7
+          "cases": 9
         }
       ],
-      "illnessOnsetFrom": "2026-06-19",
-      "illnessOnsetTo": "2026-08-02",
+      "illnessOnsetFrom": "2026-06-16",
+      "illnessOnsetTo": "2026-08-26",
       "postedAt": "2026-08-05",
-      "updatedAt": "2026-08-21",
+      "updatedAt": "2026-10-02",
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -493,7 +501,7 @@
       "declaredOverAt": "2026-09-03",
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -605,7 +613,7 @@
       "declaredOverAt": "2026-09-11",
       "recallIssued": null,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -641,7 +649,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -681,7 +689,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -725,7 +733,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -841,7 +849,7 @@
       "declaredOverAt": "2026-07-16",
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -882,7 +890,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -942,7 +950,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1122,7 +1130,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2026,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1242,7 +1250,7 @@
       "declaredOverAt": "2026-02-24",
       "recallIssued": false,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1338,7 +1346,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1392,7 +1400,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1470,7 +1478,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1554,7 +1562,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1624,7 +1632,7 @@
       "declaredOverAt": "2025-09-25",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1726,7 +1734,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1762,7 +1770,7 @@
       "declaredOverAt": "2025-08-21",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1830,7 +1838,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1942,7 +1950,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -1978,7 +1986,7 @@
       "declaredOverAt": null,
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     },
     {
@@ -2090,7 +2098,7 @@
       "declaredOverAt": "2025-05-16",
       "recallIssued": true,
       "year": 2025,
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "parseWarnings": []
     }
   ]

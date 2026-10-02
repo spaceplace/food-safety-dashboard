@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-02T12:44:06.180Z",
+  "generatedAt": "2026-10-02T22:18:14.372Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-02T12:44:06.269Z",
+      "fetchedAt": "2026-10-02T22:18:14.442Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-02T12:44:29.751Z",
+      "fetchedAt": "2026-10-02T22:18:41.804Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-23",
@@ -24,7 +24,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-02T12:44:33.475Z",
+      "fetchedAt": "2026-10-02T22:18:46.437Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-29",
@@ -7035,6 +7035,8 @@
           "CO",
           "FL",
           "GA",
+          "HI",
+          "IA",
           "IL",
           "IN",
           "KS",
@@ -7062,9 +7064,9 @@
           "WV",
           "WY"
         ],
-        "stateCount": 32,
+        "stateCount": 34,
         "international": false,
-        "description": "32 states"
+        "description": "34 states"
       },
       "rootCause": {
         "category": "not-stated",
@@ -7081,26 +7083,27 @@
         "detail": "CDC notice: recall issued"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Investigation open"
+        "normalized": "closed",
+        "agency": "Outbreak over"
       },
       "dates": {
         "event": "2026-08-05",
         "reported": "2026-08-05",
-        "updated": "2026-08-21",
+        "updated": "2026-10-02",
         "closed": null
       },
       "outbreak": {
         "pathogen": "Salmonella",
-        "cases": 431,
-        "hospitalizations": 57,
+        "cases": 488,
+        "hospitalizations": 65,
         "deaths": 0,
-        "illnessOnsetFrom": "2026-06-19",
-        "illnessOnsetTo": "2026-08-02"
+        "illnessOnsetFrom": "2026-06-16",
+        "illnessOnsetTo": "2026-08-26"
       },
       "relatedToOutbreak": true,
       "reasonText": null,
       "missing": [
+        "closedDate",
         "rootCause (CDC notices describe the contaminated food, not why it was contaminated)"
       ],
       "inferred": [
@@ -7109,8 +7112,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-02T22:18:14.372Z",
+        "revisions": 1,
         "backfilled": true
       }
     },

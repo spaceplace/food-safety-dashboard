@@ -1,6 +1,48 @@
 {
-  "generatedAt": "2026-10-02T12:44:06.180Z",
+  "generatedAt": "2026-10-02T22:18:14.372Z",
   "entries": [
+    {
+      "at": "2026-10-02T22:18:14.372Z",
+      "change": "closed",
+      "id": "cdc:salmonella/outbreaks/javiana-08-26",
+      "slug": "cdc-salmonella-outbreaks-javiana-08-26",
+      "title": "Salmonella Outbreak Linked to Jalapeños",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Investigation open",
+          "to": "Outbreak over"
+        },
+        {
+          "field": "states",
+          "from": "AL, AR, CA, CO, FL, GA, IL, IN, KS, KY, LA, MI, MN, MO, MT, NC, ND, NE, NJ, NM, OH, OK, PA, SC, TN, TX, UT, VA, WA, WI, WV, WY",
+          "to": "AL, AR, CA, CO, FL, GA, HI, IA, IL, IN, KS, KY, LA, MI, MN, MO, MT, NC, ND, NE, NJ, NM, OH, OK, PA, SC, TN, TX, UT, VA, WA, WI, WV, WY"
+        },
+        {
+          "field": "updated date",
+          "from": "2026-08-21",
+          "to": "2026-10-02"
+        },
+        {
+          "field": "cases",
+          "from": "431",
+          "to": "488"
+        },
+        {
+          "field": "hospitalizations",
+          "from": "57",
+          "to": "65"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-10-01T22:44:33.983Z",
       "change": "updated",
