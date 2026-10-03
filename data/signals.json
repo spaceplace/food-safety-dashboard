@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-02T22:18:14.372Z",
+  "generatedAt": "2026-10-03T05:23:46.255Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-02T22:18:14.442Z",
+      "fetchedAt": "2026-10-03T05:23:46.356Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-02T22:18:41.804Z",
+      "fetchedAt": "2026-10-03T05:24:11.595Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-23",
@@ -24,14 +24,89 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-02T22:18:46.437Z",
+      "fetchedAt": "2026-10-03T05:24:16.496Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-09-29",
-      "itemCount": 497
+      "upstreamUpdated": "2026-10-02",
+      "itemCount": 498
     }
   },
   "items": [
+    {
+      "id": "fsis:025-2026",
+      "slug": "fsis-025-2026",
+      "kind": "recall",
+      "source": "FSIS",
+      "sourceId": "025-2026",
+      "title": "Inexport Logistics LLC Recalls Ineligible Pork Cracklings Products Imported From The Republic of Colombia",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/inexport-logistics-llc-recalls-ineligible-pork-cracklings-products-imported-republic",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "Inexport Logistics LLC",
+      "product": "60-g. foil bags of “YUPI GOLPE CON TODO SABOR BBQ” mixed chips with “Clásicas,” “PLATANOS,” and “Chicharrón Fred.”",
+      "productCategory": "meat",
+      "foodKeys": [
+        "pork"
+      ],
+      "hazardType": "labeling-regulatory",
+      "agents": [],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AZ",
+          "CA",
+          "CO",
+          "FL",
+          "IL",
+          "KY",
+          "MN",
+          "TX"
+        ],
+        "stateCount": 8,
+        "international": false,
+        "description": "AZ, CA, CO, FL, IL, KY, MN, TX"
+      },
+      "rootCause": {
+        "category": "import-or-inspection-violation",
+        "basis": "agency-coded",
+        "detail": "Import Violation"
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "FSIS recall (all FSIS recalls are voluntary)"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Active Recall"
+      },
+      "dates": {
+        "event": "2026-10-02",
+        "reported": "2026-10-02",
+        "updated": "2026-10-02",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Import Violation",
+      "missing": [],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-03T05:23:46.255Z",
+        "lastChanged": "2026-10-03T05:23:46.255Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "cdc:ecoli/outbreaks/raw-milk-cheese-09-26",
       "slug": "cdc-ecoli-outbreaks-raw-milk-cheese-09-26",

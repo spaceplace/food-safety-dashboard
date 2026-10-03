@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-02T22:18:14.372Z",
+  "generatedAt": "2026-10-03T05:23:46.255Z",
   "entries": [
+    {
+      "at": "2026-10-03T05:23:46.255Z",
+      "change": "added",
+      "id": "fsis:025-2026",
+      "slug": "fsis-025-2026",
+      "title": "Inexport Logistics LLC Recalls Ineligible Pork Cracklings Products Imported From The Republic of Colombia",
+      "source": "FSIS",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-10-02T22:18:14.372Z",
       "change": "closed",
