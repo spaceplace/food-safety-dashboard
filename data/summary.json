@@ -1,24 +1,16 @@
 {
-  "generatedAt": "2026-10-02T22:18:50.648Z",
+  "generatedAt": "2026-10-04T06:01:07.273Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-25",
-  "windowTo": "2026-10-02",
+  "windowFrom": "2026-09-27",
+  "windowTo": "2026-10-04",
   "paragraphs": [
-    "An E. coli outbreak linked to alfalfa sprouts has grown to 76 cases across 16 states, with 6 hospitalizations [2]. A separate E. coli O26 outbreak linked to raw milk cheese has sickened 13 people across 9 states, with 8 hospitalizations [1]. The Salmonella outbreak traced to jalapeños has ended after affecting 488 people across 34 states [3].",
-    "Sempio Food Services Inc. recalled Korean Ginseng Chicken Stew Classic products sold in Florida, Georgia, Illinois, Maryland, New Jersey, New York, Pennsylvania, and Virginia due to import violations [4]. Fontanini Foods LLC recalled Pork Sausage Links packed on 06/23/2026 distributed to California, Florida, Michigan, and Nevada due to possible foreign matter contamination [5]. Sierra Nevada Cheese Company recalled all Graziers Raw Milk Cheese currently in the market due to potential E. coli O26:H11 contamination [12].",
-    "Additional recalls include frozen organic berry products from Frutas y Hortalizas del Sur S.A., including Great Value Triple Berry Blend and Blueberries, and Trader Joe's Frozen Organic Mixed Berry Blend due to potential E. coli O145 contamination [7]. WinCo Foods recalled Salsa Bean Dip Trays containing recalled peperoncini [8]. EAK Distribution recalled HOME GROWN Green Sprouting Calabrese Broccoli Seeds due to possible Salmonella contamination [6]. G.L. Mezzetta recalled Golden Greek Peperoncini Medium Heat due to pest contamination [13]."
+    "An ongoing outbreak linked to alfalfa sprouts has sickened 76 people across 16 states, with 6 hospitalizations reported [1]. The outbreak involves multiple strains of E. coli and Salmonella Agona [1]. In better news, the Salmonella outbreak linked to jalapeños that sickened 488 people across 34 states is now over [2].",
+    "Stewart's Shops Corp. is recalling Heavenly Medley and Vanilla-Chocolate-Strawberry half-gallon ice cream due to possible metal contamination [4]. WinCo Foods is recalling Salsa Bean Dip Trays because they contain recalled peperoncini from G.L. Mezzetta [7]. Saint Francis Apizza LLC is recalling frozen pizzas in Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion varieties because soy allergen labeling is missing [9]. Sierra Nevada Cheese Company is recalling all Graziers Raw Milk Cheese due to potential E. coli O26:H11 contamination [12].",
+    "Frutas y Hortalizas del Sur S.A. is recalling additional lots of Great Value Frozen Organic Triple Berry Blend and Blueberries, plus one lot of Trader Joe's Frozen Organic Mixed Berry Blend, due to potential E. coli O145 contamination [6]. EAK Distribution is recalling HOME GROWN Green Sprouting Calabrese Broccoli Seeds because of possible Salmonella contamination [5]. Todd's Seeds LLC is recalling sprouting seeds sold via Amazon and direct to consumers because they may be contaminated with Salmonella and E. coli [15]."
   ],
   "sources": [
     {
       "n": 1,
-      "kind": "outbreak",
-      "title": "E. coli Outbreak Linked to Raw Milk Cheese",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/ecoli/outbreaks/raw-milk-cheese-09-26/index.html",
-      "publishedAt": "2026-09-25"
-    },
-    {
-      "n": 2,
       "kind": "outbreak",
       "title": "E. coli and Salmonella Outbreak Linked to Alfalfa Sprouts",
       "source": "CDC outbreak notice",
@@ -26,7 +18,7 @@
       "publishedAt": "2026-10-01"
     },
     {
-      "n": 3,
+      "n": 2,
       "kind": "outbreak",
       "title": "Salmonella Outbreak Linked to Jalapeños",
       "source": "CDC outbreak notice",
@@ -35,22 +27,14 @@
     },
     {
       "n": 4,
-      "kind": "recall",
-      "title": "Sempio Food Services Inc. Recalls Ready-To-Eat Chicken Stew Products Imported Without the Benefit of Import Reinspection",
-      "source": "USDA FSIS recall notice",
-      "url": "https://www.fsis.usda.gov/recalls-alerts/sempio-food-services-inc--recalls-ready-eat-chicken-stew-products-imported-without",
-      "publishedAt": "2026-09-25"
+      "kind": "agency-notice",
+      "title": "Stewart’s Shop Corp. Recalls Heavenly Medley and Vanilla-Chocolate-Strawberry Due to Possible Foreign Object",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign",
+      "publishedAt": "2026-10-02T22:02:00.000Z"
     },
     {
       "n": 5,
-      "kind": "recall",
-      "title": "Fontanini Foods LLC Recalls Raw, Frozen Pork Sausage Products Due to Possible Foreign Matter Contamination",
-      "source": "USDA FSIS recall notice",
-      "url": "https://www.fsis.usda.gov/recalls-alerts/fontanini-foods-llc-recalls-raw-frozen-pork-sausage-products-due-possible-foreign",
-      "publishedAt": "2026-09-25"
-    },
-    {
-      "n": 6,
       "kind": "agency-notice",
       "title": "EAK Distribution LLC Recalls HOME GROWN Green Sprouting Calabrese Broccoli Seeds, 8 oz, Heirloom Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -58,7 +42,7 @@
       "publishedAt": "2026-10-02T20:37:00.000Z"
     },
     {
-      "n": 7,
+      "n": 6,
       "kind": "agency-notice",
       "title": "Frutas y Hortalizas del Sur S.A. Expands Recalls to Include Additional Lots of Great Value Frozen Organic Triple Berry Blend 10 OZ, Great Value Frozen Organic Blueberries 10 OZ and One Lot of Trader Joe’s Frozen Organic Mixed Berry Blend 12 OZ Because of Potential Contamination with E. coli O145",
       "source": "FDA recall notice",
@@ -66,12 +50,20 @@
       "publishedAt": "2026-10-02T19:06:00.000Z"
     },
     {
-      "n": 8,
+      "n": 7,
       "kind": "agency-notice",
       "title": "WinCo Foods of Boise, ID is Recalling the Following Salsa Bean Dip Trays Due to the Inclusion of Recalled Peperoncini from G.L. Mezzetta",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
       "publishedAt": "2026-10-01T20:03:00.000Z"
+    },
+    {
+      "n": 9,
+      "kind": "agency-notice",
+      "title": "Saint Francis Apizza LLC Issues a Voluntary Recall of its Frozen Pizzas for Missing Sub Ingredients on the Label for Soy Which Includes Soybean Oil and Soy Lecithin, an Allergen",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
+      "publishedAt": "2026-10-01T04:00:00.000Z"
     },
     {
       "n": 12,
@@ -82,18 +74,18 @@
       "publishedAt": "2026-09-28T14:26:00.000Z"
     },
     {
-      "n": 13,
-      "kind": "agency-notice",
-      "title": "G. L. Mezzetta Inc. Announces Recall of Mezzetta Brand Golden Greek Peperoncini (Medium Heat) Due to Presence of Pest Contaminant in the Jar",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
-      "publishedAt": "2026-09-26T22:17:00.000Z"
+      "n": 15,
+      "kind": "news",
+      "title": "Sprouting seeds recalled because of potential contamination with Salmonella, E. coli",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-potential-contamination-with-salmonella-e-coli/",
+      "publishedAt": "2026-10-03T03:11:22.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6704,
-    "outputTokens": 784
+    "inputTokens": 6700,
+    "outputTokens": 783
   }
 }
