@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-04T06:01:07.273Z",
+  "generatedAt": "2026-10-05T14:49:55.426Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-27",
-  "windowTo": "2026-10-04",
+  "windowFrom": "2026-09-28",
+  "windowTo": "2026-10-05",
   "paragraphs": [
-    "An ongoing outbreak linked to alfalfa sprouts has sickened 76 people across 16 states, with 6 hospitalizations reported [1]. The outbreak involves multiple strains of E. coli and Salmonella Agona [1]. In better news, the Salmonella outbreak linked to jalapeños that sickened 488 people across 34 states is now over [2].",
-    "Stewart's Shops Corp. is recalling Heavenly Medley and Vanilla-Chocolate-Strawberry half-gallon ice cream due to possible metal contamination [4]. WinCo Foods is recalling Salsa Bean Dip Trays because they contain recalled peperoncini from G.L. Mezzetta [7]. Saint Francis Apizza LLC is recalling frozen pizzas in Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion varieties because soy allergen labeling is missing [9]. Sierra Nevada Cheese Company is recalling all Graziers Raw Milk Cheese due to potential E. coli O26:H11 contamination [12].",
-    "Frutas y Hortalizas del Sur S.A. is recalling additional lots of Great Value Frozen Organic Triple Berry Blend and Blueberries, plus one lot of Trader Joe's Frozen Organic Mixed Berry Blend, due to potential E. coli O145 contamination [6]. EAK Distribution is recalling HOME GROWN Green Sprouting Calabrese Broccoli Seeds because of possible Salmonella contamination [5]. Todd's Seeds LLC is recalling sprouting seeds sold via Amazon and direct to consumers because they may be contaminated with Salmonella and E. coli [15]."
+    "An ongoing outbreak linked to alfalfa sprouts has sickened 76 people across 16 states, with 6 hospitalizations and no deaths reported [1]. The outbreak involves multiple strains of E. coli (O26:H11, O103:H25, and O168:H8) and Salmonella Agona [1]. In separate news, a Salmonella outbreak previously linked to jalapeños has ended; it affected 488 people across 34 states with 65 hospitalizations [2].",
+    "Inexport Logistics LLC is recalling YUPI GOLPE CON TODO SABOR BBQ mixed chips with chicharrón (pork cracklings) imported from Colombia in 60-gram foil bags as a Class I recall due to an import violation; the product was sold in Arizona, California, Colorado, Florida, Illinois, Kentucky, Minnesota, and Texas [3]. Stewart's Shops Corp. is recalling Heavenly Medley and Vanilla-Chocolate-Strawberry ice cream in half-gallon sizes due to potential metal contamination [4]. WinCo Foods is recalling Salsa Bean Dip Trays because they contain recalled peperoncini from G.L. Mezzetta [7]. Saint Francis Apizza LLC is recalling frozen pizzas in Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion varieties due to undeclared soy allergens on labels [9].",
+    "Additional recalls include HOME GROWN Green Sprouting Calabrese Broccoli Seeds from EAK Distribution due to potential Salmonella contamination [5], expanded recalls of frozen organic berries from Great Value and Trader Joe's due to potential E. coli O145 contamination [6], and Sierra Nevada Cheese Company's Graziers Raw Milk Cheese due to potential E. coli O26:H11 contamination [12]."
   ],
   "sources": [
     {
@@ -23,6 +23,14 @@
       "title": "Salmonella Outbreak Linked to Jalapeños",
       "source": "CDC outbreak notice",
       "url": "https://www.cdc.gov/salmonella/outbreaks/javiana-08-26/index.html",
+      "publishedAt": "2026-10-02"
+    },
+    {
+      "n": 3,
+      "kind": "recall",
+      "title": "Inexport Logistics LLC Recalls Ineligible Pork Cracklings Products Imported From The Republic of Colombia",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/inexport-logistics-llc-recalls-ineligible-pork-cracklings-products-imported-republic",
       "publishedAt": "2026-10-02"
     },
     {
@@ -72,20 +80,12 @@
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk",
       "publishedAt": "2026-09-28T14:26:00.000Z"
-    },
-    {
-      "n": 15,
-      "kind": "news",
-      "title": "Sprouting seeds recalled because of potential contamination with Salmonella, E. coli",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-potential-contamination-with-salmonella-e-coli/",
-      "publishedAt": "2026-10-03T03:11:22.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6700,
-    "outputTokens": 783
+    "inputTokens": 6825,
+    "outputTokens": 869
   }
 }
