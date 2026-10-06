@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-05T14:49:55.426Z",
+  "generatedAt": "2026-10-06T18:26:49.108Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-28",
-  "windowTo": "2026-10-05",
+  "windowFrom": "2026-09-29",
+  "windowTo": "2026-10-06",
   "paragraphs": [
-    "An ongoing outbreak linked to alfalfa sprouts has sickened 76 people across 16 states, with 6 hospitalizations and no deaths reported [1]. The outbreak involves multiple strains of E. coli (O26:H11, O103:H25, and O168:H8) and Salmonella Agona [1]. In separate news, a Salmonella outbreak previously linked to jalapeños has ended; it affected 488 people across 34 states with 65 hospitalizations [2].",
-    "Inexport Logistics LLC is recalling YUPI GOLPE CON TODO SABOR BBQ mixed chips with chicharrón (pork cracklings) imported from Colombia in 60-gram foil bags as a Class I recall due to an import violation; the product was sold in Arizona, California, Colorado, Florida, Illinois, Kentucky, Minnesota, and Texas [3]. Stewart's Shops Corp. is recalling Heavenly Medley and Vanilla-Chocolate-Strawberry ice cream in half-gallon sizes due to potential metal contamination [4]. WinCo Foods is recalling Salsa Bean Dip Trays because they contain recalled peperoncini from G.L. Mezzetta [7]. Saint Francis Apizza LLC is recalling frozen pizzas in Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion varieties due to undeclared soy allergens on labels [9].",
-    "Additional recalls include HOME GROWN Green Sprouting Calabrese Broccoli Seeds from EAK Distribution due to potential Salmonella contamination [5], expanded recalls of frozen organic berries from Great Value and Trader Joe's due to potential E. coli O145 contamination [6], and Sierra Nevada Cheese Company's Graziers Raw Milk Cheese due to potential E. coli O26:H11 contamination [12]."
+    "An E. coli and Salmonella outbreak linked to alfalfa sprouts remains open, with 76 cases across 16 states and 6 hospitalizations reported as of October 1 [1]. Two outbreaks have ended: a Salmonella outbreak tied to jalapeños sickened 488 people across 34 states with 65 hospitalizations before concluding October 2 [2], and an E. coli O145 outbreak from frozen blueberries affected 17 people in 2 states with 6 hospitalizations before ending October 5 [3].",
+    "Do not consume bettergoods Lemon Alfredo Fettuccine (22 oz, made in Italy, sold at Walmart nationwide) due to Listeria monocytogenes contamination [6]. Avoid Evergreen Fresh Sprouts LLC Broccoli Sprouts (4 oz clear plastic bags, UPC 838796001051) distributed in Washington due to Salmonella [7]. Stop using Great Value Frozen Organic Triple Berry Blend and Blueberries (10 oz) and Trader Joe's Frozen Organic Mixed Berry Blend (12 oz) because of potential E. coli O145 contamination [17]. Fromagerie Coop de Mean and Belgium Cabricharme cheeses (sliced, through 10/7/2026) contain undeclared egg allergen and were sold in CA, AZ, NJ, MA, RI, CT, and NY [5]. YUPI GOLPE CON TODO SABOR BBQ mixed chips imported from Colombia (60 g foil bags) are recalled for import violations and were found in AZ, CA, CO, FL, IL, KY, MN, and TX [4].",
+    "Additional recalls include Nature's Own Hawaiian Bread (20 and 40 oz bags) for undeclared milk [18], Home Grown Green Sprouting Calabrese Broccoli Seeds (8 oz) for potential Salmonella [16], Stewart's Shops ice cream (Heavenly Medley and Vanilla-Chocolate-Strawberry half-gallons) for possible metal [15], Saint Francis frozen pizzas for undeclared soy [21], and WinCo Salsa Bean Dip Trays for recalled peperoncini ingredients [19]."
   ],
   "sources": [
     {
@@ -27,6 +27,14 @@
     },
     {
       "n": 3,
+      "kind": "outbreak",
+      "title": "E. coli Outbreak Linked to Frozen Blueberries",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/ecoli/outbreaks/blueberries-07-26/index.html",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "n": 4,
       "kind": "recall",
       "title": "Inexport Logistics LLC Recalls Ineligible Pork Cracklings Products Imported From The Republic of Colombia",
       "source": "USDA FSIS recall notice",
@@ -34,7 +42,31 @@
       "publishedAt": "2026-10-02"
     },
     {
-      "n": 4,
+      "n": 5,
+      "kind": "recall",
+      "title": "WFM Purchasing, LP recalls Fromagerie Coop de Mean Cabricharme and Belgium Cabricharme Shelf life: 30 days, all date…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=WFM%20Purchasing%2C%20LP",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "n": 6,
+      "kind": "recall",
+      "title": "GIAS FOOD INC. recalls Lemon Alfredo Fettuccine packed in a yellow plastic sealed bag with pink and black letter…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=GIAS%20FOOD%20INC.",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "n": 7,
+      "kind": "recall",
+      "title": "Evergreen Fresh Sprouts LLC recalls Evergreen Fresh Sprouts LLC, Broccoli Sprouts, packaged in clear plastic zip lock bag, ne…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Evergreen%20Fresh%20Sprouts%20LLC",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "n": 15,
       "kind": "agency-notice",
       "title": "Stewart’s Shop Corp. Recalls Heavenly Medley and Vanilla-Chocolate-Strawberry Due to Possible Foreign Object",
       "source": "FDA recall notice",
@@ -42,7 +74,7 @@
       "publishedAt": "2026-10-02T22:02:00.000Z"
     },
     {
-      "n": 5,
+      "n": 16,
       "kind": "agency-notice",
       "title": "EAK Distribution LLC Recalls HOME GROWN Green Sprouting Calabrese Broccoli Seeds, 8 oz, Heirloom Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -50,7 +82,7 @@
       "publishedAt": "2026-10-02T20:37:00.000Z"
     },
     {
-      "n": 6,
+      "n": 17,
       "kind": "agency-notice",
       "title": "Frutas y Hortalizas del Sur S.A. Expands Recalls to Include Additional Lots of Great Value Frozen Organic Triple Berry Blend 10 OZ, Great Value Frozen Organic Blueberries 10 OZ and One Lot of Trader Joe’s Frozen Organic Mixed Berry Blend 12 OZ Because of Potential Contamination with E. coli O145",
       "source": "FDA recall notice",
@@ -58,7 +90,15 @@
       "publishedAt": "2026-10-02T19:06:00.000Z"
     },
     {
-      "n": 7,
+      "n": 18,
+      "kind": "agency-notice",
+      "title": "Flowers Foods Issues Recall of Nature’s Own Hawaiian Bread Due to Undeclared Milk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
+      "publishedAt": "2026-10-02T16:31:00.000Z"
+    },
+    {
+      "n": 19,
       "kind": "agency-notice",
       "title": "WinCo Foods of Boise, ID is Recalling the Following Salsa Bean Dip Trays Due to the Inclusion of Recalled Peperoncini from G.L. Mezzetta",
       "source": "FDA recall notice",
@@ -66,26 +106,18 @@
       "publishedAt": "2026-10-01T20:03:00.000Z"
     },
     {
-      "n": 9,
+      "n": 21,
       "kind": "agency-notice",
       "title": "Saint Francis Apizza LLC Issues a Voluntary Recall of its Frozen Pizzas for Missing Sub Ingredients on the Label for Soy Which Includes Soybean Oil and Soy Lecithin, an Allergen",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
       "publishedAt": "2026-10-01T04:00:00.000Z"
-    },
-    {
-      "n": 12,
-      "kind": "agency-notice",
-      "title": "Sierra Nevada Cheese Company Recalls Graziers Raw Milk Cheese Because of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk",
-      "publishedAt": "2026-09-28T14:26:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6825,
-    "outputTokens": 869
+    "inputTokens": 10265,
+    "outputTokens": 1082
   }
 }
