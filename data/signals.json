@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-06T00:06:53.756Z",
+  "generatedAt": "2026-10-06T06:27:45.972Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-06T00:06:53.825Z",
+      "fetchedAt": "2026-10-06T06:27:46.070Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,16 +15,16 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-06T00:07:28.370Z",
+      "fetchedAt": "2026-10-06T06:28:14.333Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-09-23",
-      "itemCount": 2653
+      "upstreamUpdated": "2026-09-30",
+      "itemCount": 2660
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-06T00:07:32.272Z",
+      "fetchedAt": "2026-10-06T06:28:19.258Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-02",
@@ -103,6 +103,654 @@
       "record": {
         "firstSeen": "2026-10-03T05:23:46.255Z",
         "lastChanged": "2026-10-03T05:23:46.255Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99702",
+      "slug": "fda-99702",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99702",
+      "title": "Elegant Foods, LLC recalls Pecorino Toscano D.O.P. STAGIONATO cheese wheels. Product of Italy. Each cheese wheel is…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Elegant%20Foods%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99702",
+      "firm": "Elegant Foods, LLC",
+      "product": "Pecorino Toscano D.O.P. STAGIONATO cheese wheels. Product of Italy. Each cheese wheel is approximately 3-4 lbs. Wheels contain a wax rind. Keep Refrigerated. Produced by Soc. Cooperativa Val D'Orcia…",
+      "productCategory": "dairy",
+      "foodKeys": [
+        "dairy"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Listeria monocytogenes",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "WI"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "WI"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Telephone"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-07-27",
+        "reported": "2026-09-30",
+        "updated": "2026-09-18",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential Listeria contamination from dripping condensation in cooler.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-06T06:27:45.972Z",
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99717",
+      "slug": "fda-99717",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99717",
+      "title": "United Sugar Producers and Refiners recalls Light Brown Sugar, Packaged in he follow configurations: 1. United, Net Wt. 50 lbs., (22.…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=United%20Sugar%20Producers%20and%20Refiners",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99717",
+      "firm": "United Sugar Producers and Refiners",
+      "product": "Light Brown Sugar, Packaged in he follow configurations: 1. United, Net Wt. 50 lbs., (22.68kg). Item Number 810051. Distributed By: United Sugar Producers & Refiners, Minneapolis, MN 55439. 2. Good &…",
+      "productCategory": "produce",
+      "foodKeys": [],
+      "hazardType": "undetermined",
+      "agents": [],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "IA",
+          "IL",
+          "IN",
+          "KS",
+          "MN",
+          "PA",
+          "TX"
+        ],
+        "stateCount": 7,
+        "international": false,
+        "description": "IA, IL, IN, KS, MN, OH PA, TX"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Letter"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-19",
+        "reported": "2026-09-30",
+        "updated": "2026-09-21",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential Wheat Kernel contamination.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-06T06:27:45.972Z",
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99757",
+      "slug": "fda-99757",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99757",
+      "title": "Unilever North America Supply Chain Company, LLC recalls Almond Joy Ice Cream Bar, 2.0 fl. oz. ice cream bars, paper cartons containing individual…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Unilever%20North%20America%20Supply%20Chain%20Company%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99757",
+      "firm": "Unilever North America Supply Chain Company, LLC",
+      "product": "Almond Joy Ice Cream Bar, 2.0 fl. oz. ice cream bars, paper cartons containing individually wrapped ice cream bars . 6 bars per carton. Keep frozen",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "dairy",
+        "nuts"
+      ],
+      "hazardType": "labeling-regulatory",
+      "agents": [],
+      "classification": null,
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AK",
+          "AL",
+          "AZ",
+          "CA",
+          "CO",
+          "FL",
+          "GA",
+          "HI",
+          "IA",
+          "IL",
+          "KS",
+          "LA",
+          "MD",
+          "ME",
+          "MI",
+          "MN",
+          "MO",
+          "MS",
+          "NH",
+          "NJ",
+          "NM",
+          "NV",
+          "NY",
+          "OH",
+          "OK",
+          "OR",
+          "PA",
+          "SC",
+          "TN",
+          "TX",
+          "UT",
+          "VA",
+          "WA",
+          "WI"
+        ],
+        "stateCount": 34,
+        "international": false,
+        "description": "The adulterated product was distributed to the following states: AZ,MD,NM,WI,CO,HI,MO, IA, GA, SC, WA,PA, IL, CA, OR, TX,FL, NH,LA,KS,MS, OK,MO,MN, MI, TN, NY, NV, UT, OH, NJ, AK,VA, AL, ME"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-11",
+        "reported": "2026-09-30",
+        "updated": null,
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Inaccurate Nutrition Facts information listed on product",
+      "missing": [
+        "classification",
+        "updatedDate",
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-06T06:27:45.972Z",
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99842",
+      "slug": "fda-99842",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99842",
+      "title": "Evergreen Fresh Sprouts LLC recalls Evergreen Fresh Sprouts LLC, Broccoli Sprouts, packaged in clear plastic zip lock bag, ne…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Evergreen%20Fresh%20Sprouts%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99842",
+      "firm": "Evergreen Fresh Sprouts LLC",
+      "product": "Evergreen Fresh Sprouts LLC, Broccoli Sprouts, packaged in clear plastic zip lock bag, net wt. 4oz, UPC 8 38796 00105 1. Firm distributed cases (6/4oz. bags per case) to distributor.",
+      "productCategory": "produce",
+      "foodKeys": [
+        "sprouts"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        },
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "WA"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "Distributed in WA"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-04",
+        "reported": "2026-09-30",
+        "updated": "2026-09-18",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Salmonella",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-06T06:27:45.972Z",
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99853",
+      "slug": "fda-99853",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99853",
+      "title": "GIAS FOOD INC. recalls Lemon Alfredo Fettuccine packed in a yellow plastic sealed bag with pink and black letter…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=GIAS%20FOOD%20INC.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99853",
+      "firm": "GIAS FOOD INC.",
+      "product": "Lemon Alfredo Fettuccine packed in a yellow plastic sealed bag with pink and black lettering; label reads in part as \"bettergoods Lemon Alfredo Fettuccine, MADE IN ITALY, NET WT 22 OZ, BEST if Used B…",
+      "productCategory": "produce",
+      "foodKeys": [],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Listeria monocytogenes",
+          "group": "organism"
+        },
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Walmart DCs and retail locations nationwide."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-03",
+        "reported": "2026-09-30",
+        "updated": "2026-09-24",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Contamination with Listeria monocytogenes",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-06T06:27:45.972Z",
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99859",
+      "slug": "fda-99859",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99859",
+      "title": "Kwok Shing, Inc. recalls American Ginsengs. PRODUCT OF WISCONSIN. NET WT: 4 oz. NET WT. 8 oz.",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Kwok%20Shing%2C%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99859",
+      "firm": "Kwok Shing, Inc.",
+      "product": "American Ginsengs. PRODUCT OF WISCONSIN. NET WT: 4 oz. NET WT. 8 oz.",
+      "productCategory": "other",
+      "foodKeys": [],
+      "hazardType": "chemical",
+      "agents": [
+        {
+          "name": "Pesticide residue",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class III",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "CA"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "Domestic: CA. Foreign: Not Applicable."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Letter"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-08",
+        "reported": "2026-09-30",
+        "updated": "2026-09-22",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential contamination with pesticides.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-06T06:27:45.972Z",
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99874",
+      "slug": "fda-99874",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99874",
+      "title": "WFM Purchasing, LP recalls Fromagerie Coop de Mean Cabricharme and Belgium Cabricharme Shelf life: 30 days, all date…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=WFM%20Purchasing%2C%20LP",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99874",
+      "firm": "WFM Purchasing, LP",
+      "product": "Fromagerie Coop de Mean Cabricharme and Belgium Cabricharme Shelf life: 30 days, all dates through and including 10/7/2026 Packaging: Plastic wrapped by slice Net Wt.: Various, cut from whole wheel a…",
+      "productCategory": "other",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Egg",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AZ",
+          "CA",
+          "CT",
+          "MA",
+          "NJ",
+          "NY",
+          "RI"
+        ],
+        "stateCount": 7,
+        "international": false,
+        "description": "CA, AZ, NJ, MA, RI, CT, NY"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-08",
+        "reported": "2026-09-30",
+        "updated": "2026-09-22",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared Egg Allergen",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-06T06:27:45.972Z",
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99884",
+      "slug": "fda-99884",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99884",
+      "title": "WWF Operating Company recalls So Delicious Dairy Free Salted Caramel Cluster Cashewmilk, Non-Dairy Frozen Dessert. 16 o…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=WWF%20Operating%20Company",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99884",
+      "firm": "WWF Operating Company",
+      "product": "So Delicious Dairy Free Salted Caramel Cluster Cashewmilk, Non-Dairy Frozen Dessert. 16 oz paper tub with an attached paper lid. Sold as a single unit multi serving tub. UPC 744473 476138. Distribute…",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Milk",
+          "group": "allergen"
+        },
+        {
+          "name": "Tree nuts",
+          "group": "allergen"
+        },
+        {
+          "name": "Bone, shell, or pit fragments",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Product was distributed nationwide."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-15",
+        "reported": "2026-09-30",
+        "updated": "2026-09-22",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product may contain foreign material: small stones and other hard objects.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-06T06:27:45.972Z",
+        "lastChanged": "2026-10-06T06:27:45.972Z",
         "revisions": 0,
         "backfilled": false
       }
@@ -5282,88 +5930,6 @@
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Label declares cream and cheese, but Milk is not declared",
-      "missing": [
-        "detection (FDA enforcement reports rarely say how a problem was found)"
-      ],
-      "inferred": [
-        "hazardType",
-        "agents",
-        "productCategory",
-        "geography"
-      ],
-      "rulesVersion": "1.0",
-      "record": {
-        "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
-        "backfilled": true
-      }
-    },
-    {
-      "id": "fda:99517",
-      "slug": "fda-99517",
-      "kind": "recall",
-      "source": "FDA",
-      "sourceId": "99517",
-      "title": "Lyle Style recalls Lyle Style Mild Bloody Mary Mix, 32oz. glass bottle. UPC code 7 84762 03730 3. The label…",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Lyle%20Style",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99517",
-      "firm": "Lyle Style",
-      "product": "Lyle Style Mild Bloody Mary Mix, 32oz. glass bottle. UPC code 7 84762 03730 3. The label declares \"***Ingredients***Tomato Juice ***lemon***Worcestershire sauce (vinegar, molasses, water, corn sweete…",
-      "productCategory": "seafood",
-      "foodKeys": [
-        "tomatoes",
-        "beverages"
-      ],
-      "hazardType": "allergen",
-      "agents": [
-        {
-          "name": "Soy",
-          "group": "allergen"
-        },
-        {
-          "name": "Glass",
-          "group": "physical"
-        }
-      ],
-      "classification": "Class II",
-      "geography": {
-        "scope": "multi-state",
-        "states": [
-          "OR",
-          "WA"
-        ],
-        "stateCount": 2,
-        "international": false,
-        "description": "Distributed in Oregon and Washington"
-      },
-      "rootCause": {
-        "category": "not-stated",
-        "basis": "not-stated",
-        "detail": null
-      },
-      "detection": {
-        "category": "not-stated",
-        "basis": "not-stated",
-        "detail": null
-      },
-      "correctiveAction": {
-        "category": "voluntary-recall",
-        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
-      },
-      "status": {
-        "normalized": "closed",
-        "agency": "Terminated"
-      },
-      "dates": {
-        "event": "2026-07-28",
-        "reported": "2026-08-19",
-        "updated": "2026-08-07",
-        "closed": "2026-09-01"
-      },
-      "outbreak": null,
-      "relatedToOutbreak": null,
-      "reasonText": "Undeclared Soy. Finished product ingredients statement declares Worcestershire sauce but does not declare sub-ingredients Soy Flavoring and Soy Lecithin.",
       "missing": [
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
@@ -21382,14 +21948,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2026-03-11",
         "reported": "2026-04-08",
         "updated": "2026-03-31",
-        "closed": null
+        "closed": "2026-10-01"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -21406,8 +21972,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -31935,14 +32501,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-12-31",
         "reported": "2026-01-21",
         "updated": "2026-01-14",
-        "closed": null
+        "closed": "2026-10-01"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -31959,8 +32525,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -40397,14 +40963,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-10-07",
         "reported": "2025-11-12",
         "updated": "2025-11-06",
-        "closed": null
+        "closed": "2026-10-01"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -40421,8 +40987,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -47432,19 +47998,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-09-09",
         "reported": "2025-10-08",
         "updated": "2025-10-02",
-        "closed": null
+        "closed": "2026-10-01"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Product was incorrectly labeled, resulting in undeclared wheat, sesame, and cashew.",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -47457,8 +48022,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-29T05:48:55.836Z",
-        "revisions": 1,
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 2,
         "backfilled": true
       }
     },
@@ -50554,19 +51119,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-08-13",
         "reported": "2025-09-10",
         "updated": "2025-08-29",
-        "closed": null
+        "closed": "2026-09-30"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Undeclared wheat allergen.",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -50578,8 +51142,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-29T05:48:55.836Z",
-        "revisions": 1,
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 2,
         "backfilled": true
       }
     },
@@ -60146,19 +60710,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-06-13",
         "reported": "2025-07-09",
         "updated": "2025-07-08",
-        "closed": null
+        "closed": "2026-10-01"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Cucumbers have the potential to be contaminated with Salmonella",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -60170,8 +60733,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-29T05:48:55.836Z",
-        "revisions": 1,
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 2,
         "backfilled": true
       }
     },
@@ -77395,19 +77958,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2024-12-20",
         "reported": "2025-03-05",
         "updated": "2025-02-27",
-        "closed": null
+        "closed": "2026-09-30"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Undeclared milk",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -77419,8 +77981,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -77479,19 +78041,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-01-31",
         "reported": "2025-03-05",
         "updated": "2025-02-25",
-        "closed": null
+        "closed": "2026-09-30"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Undeclared Yellow #5",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -77503,8 +78064,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-29T05:48:55.836Z",
-        "revisions": 1,
+        "lastChanged": "2026-10-06T06:27:45.972Z",
+        "revisions": 2,
         "backfilled": true
       }
     },

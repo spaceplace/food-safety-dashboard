@@ -1,6 +1,296 @@
 {
-  "generatedAt": "2026-10-06T00:06:53.756Z",
+  "generatedAt": "2026-10-06T06:27:45.972Z",
   "entries": [
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "added",
+      "id": "fda:99874",
+      "slug": "fda-99874",
+      "title": "WFM Purchasing, LP recalls Fromagerie Coop de Mean Cabricharme and Belgium Cabricharme Shelf life: 30 days, all date…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "added",
+      "id": "fda:99853",
+      "slug": "fda-99853",
+      "title": "GIAS FOOD INC. recalls Lemon Alfredo Fettuccine packed in a yellow plastic sealed bag with pink and black letter…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "added",
+      "id": "fda:99859",
+      "slug": "fda-99859",
+      "title": "Kwok Shing, Inc. recalls American Ginsengs. PRODUCT OF WISCONSIN. NET WT: 4 oz. NET WT. 8 oz.",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "added",
+      "id": "fda:99717",
+      "slug": "fda-99717",
+      "title": "United Sugar Producers and Refiners recalls Light Brown Sugar, Packaged in he follow configurations: 1. United, Net Wt. 50 lbs., (22.…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "added",
+      "id": "fda:99757",
+      "slug": "fda-99757",
+      "title": "Unilever North America Supply Chain Company, LLC recalls Almond Joy Ice Cream Bar, 2.0 fl. oz. ice cream bars, paper cartons containing individual…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "added",
+      "id": "fda:99884",
+      "slug": "fda-99884",
+      "title": "WWF Operating Company recalls So Delicious Dairy Free Salted Caramel Cluster Cashewmilk, Non-Dairy Frozen Dessert. 16 o…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "added",
+      "id": "fda:99842",
+      "slug": "fda-99842",
+      "title": "Evergreen Fresh Sprouts LLC recalls Evergreen Fresh Sprouts LLC, Broccoli Sprouts, packaged in clear plastic zip lock bag, ne…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "added",
+      "id": "fda:99702",
+      "slug": "fda-99702",
+      "title": "Elegant Foods, LLC recalls Pecorino Toscano D.O.P. STAGIONATO cheese wheels. Product of Italy. Each cheese wheel is…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "closed",
+      "id": "fda:98582",
+      "slug": "fda-98582",
+      "title": "Lone Star Dairy Products LLC recalls Spray Dried Dairy Powder 25 kg bags or 1 metric ton totes",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-01"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "closed",
+      "id": "fda:98249",
+      "slug": "fda-98249",
+      "title": "WFM Purchasing, LP recalls Brussel Sprouts & Kale Slaw",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-01"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "closed",
+      "id": "fda:97775",
+      "slug": "fda-97775",
+      "title": "Kenz Henz LLC recalls \" Product Name: Pastured Grade AA Large Eggs \" Product Description: Egg Carton, 12 eggs p…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-01"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "updated",
+      "id": "fda:97644",
+      "slug": "fda-97644",
+      "title": "WFM Purchasing, LP recalls Whole Foods Market Blueberry Almond Granola, PLU 86032, packaged in a clear plastic conta…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-01"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "updated",
+      "id": "fda:97458",
+      "slug": "fda-97458",
+      "title": "Dollins Pecan Co, Inc recalls Product Name: Blueberry Pretzels \" Brand Name: HEB \" Description: 8oz HEB Blueberry Flavo…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-30"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "updated",
+      "id": "fda:97080",
+      "slug": "fda-97080",
+      "title": "FUENTES FARMS LLC recalls Cucumbers Box 40Lbs 1 1/9 Bushels.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-01"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "updated",
+      "id": "fda:96038",
+      "slug": "fda-96038",
+      "title": "Rajbhog Distributors TX Inc. recalls Rajbhog Sweets Jelebi Jaggery, 9.5 oz packages and sold by weight from bulk trays.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-30"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "updated",
+      "id": "fda:96154",
+      "slug": "fda-96154",
+      "title": "OCBW INC recalls Beverage Base Sweet&Sour, 3 gallon, BIB: Best By 12/10/2025",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-30"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-06T06:27:45.972Z",
+      "change": "removed",
+      "id": "fda:99517",
+      "slug": "fda-99517",
+      "title": "Lyle Style recalls Lyle Style Mild Bloody Mary Mix, 32oz. glass bottle. UPC code 7 84762 03730 3. The label…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": "No longer returned by the source"
+    },
     {
       "at": "2026-10-06T00:06:53.756Z",
       "change": "updated",
