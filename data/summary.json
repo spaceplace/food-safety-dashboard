@@ -82,7 +82,7 @@
       "publishedAt": "2026-09-28T14:26:00.000Z"
     }
   ],
-  "status": "ok",
+  "status": "cached",
   "note": null,
   "usage": {
     "inputTokens": 6825,

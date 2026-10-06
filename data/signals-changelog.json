@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-05T14:49:22.612Z",
+  "generatedAt": "2026-10-06T00:06:53.756Z",
   "entries": [
+    {
+      "at": "2026-10-06T00:06:53.756Z",
+      "change": "updated",
+      "id": "cdc:ecoli/outbreaks/blueberries-07-26",
+      "slug": "cdc-ecoli-outbreaks-blueberries-07-26",
+      "title": "E. coli Outbreak Linked to Frozen Blueberries",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "updated date",
+          "from": "2026-09-21",
+          "to": "2026-10-05"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-10-03T05:23:46.255Z",
       "change": "added",
