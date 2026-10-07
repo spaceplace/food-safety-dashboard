@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-06T18:26:49.108Z",
+  "generatedAt": "2026-10-07T23:09:29.754Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-09-29",
-  "windowTo": "2026-10-06",
+  "windowFrom": "2026-09-30",
+  "windowTo": "2026-10-07",
   "paragraphs": [
-    "An E. coli and Salmonella outbreak linked to alfalfa sprouts remains open, with 76 cases across 16 states and 6 hospitalizations reported as of October 1 [1]. Two outbreaks have ended: a Salmonella outbreak tied to jalapeños sickened 488 people across 34 states with 65 hospitalizations before concluding October 2 [2], and an E. coli O145 outbreak from frozen blueberries affected 17 people in 2 states with 6 hospitalizations before ending October 5 [3].",
-    "Do not consume bettergoods Lemon Alfredo Fettuccine (22 oz, made in Italy, sold at Walmart nationwide) due to Listeria monocytogenes contamination [6]. Avoid Evergreen Fresh Sprouts LLC Broccoli Sprouts (4 oz clear plastic bags, UPC 838796001051) distributed in Washington due to Salmonella [7]. Stop using Great Value Frozen Organic Triple Berry Blend and Blueberries (10 oz) and Trader Joe's Frozen Organic Mixed Berry Blend (12 oz) because of potential E. coli O145 contamination [17]. Fromagerie Coop de Mean and Belgium Cabricharme cheeses (sliced, through 10/7/2026) contain undeclared egg allergen and were sold in CA, AZ, NJ, MA, RI, CT, and NY [5]. YUPI GOLPE CON TODO SABOR BBQ mixed chips imported from Colombia (60 g foil bags) are recalled for import violations and were found in AZ, CA, CO, FL, IL, KY, MN, and TX [4].",
-    "Additional recalls include Nature's Own Hawaiian Bread (20 and 40 oz bags) for undeclared milk [18], Home Grown Green Sprouting Calabrese Broccoli Seeds (8 oz) for potential Salmonella [16], Stewart's Shops ice cream (Heavenly Medley and Vanilla-Chocolate-Strawberry half-gallons) for possible metal [15], Saint Francis frozen pizzas for undeclared soy [21], and WinCo Salsa Bean Dip Trays for recalled peperoncini ingredients [19]."
+    "An E. coli and Salmonella outbreak linked to alfalfa sprouts remains ongoing, with 76 cases and 6 hospitalizations across 16 states as of October 1 [1]. Two other recent outbreaks have ended: a Salmonella outbreak linked to jalapeños affected 488 people across 34 states with 65 hospitalizations [2], and an E. coli O145 outbreak linked to frozen blueberries sickened 17 people across 2 states with 6 hospitalizations [3].",
+    "Do not consume Lemon Alfredo Fettuccine by bettergoods sold at Walmart nationwide due to potential Listeria contamination [6]. Avoid Fromagerie Coop de Mean and Belgium Cabricharme cheeses sold in CA, AZ, NJ, MA, RI, CT, and NY because they may contain undeclared egg allergen [5]. Broccoli sprouts by Evergreen Fresh Sprouts distributed in Washington may contain Salmonella [7]. Grace Ready to Eat Chicken Vienna Sausages (140-g cans) illegally imported from Jamaica were found in AL, FL, GA, MD, and TX [12].",
+    "Additional recalls include YUPI pork cracklings from Colombia found in eight states [4]. Two broccoli seed products were recalled for potential Salmonella: HOME GROWN Green Sprouting Calabrese Broccoli Seeds sold nationwide [18] and Calabrese Broccoli Seeds by Eden Brothers in 1-ounce and 1-pound packets [14]. Nature's Own Hawaiian Bread contains undeclared milk [20], and frozen pizzas by Saint Francis Apizza lack soy allergen labeling [23]. Stewart's ice cream flavors Heavenly Medley and Vanilla-Chocolate-Strawberry may contain metal pieces [17]."
   ],
   "sources": [
     {
@@ -66,7 +66,23 @@
       "publishedAt": "2026-09-30"
     },
     {
-      "n": 15,
+      "n": 12,
+      "kind": "recall",
+      "title": "FSIS Issues Public Health Alert for Ineligible Chicken Vienna-Style Sausage Products Illegally Imported From Jamaica",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ineligible-chicken-vienna-style-sausage-products",
+      "publishedAt": "2026-10-06"
+    },
+    {
+      "n": 14,
+      "kind": "agency-notice",
+      "title": "Eden Brothers Recalls Calabrese Broccoli Seeds Due to Possible Salmonella Contamination",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
+      "publishedAt": "2026-10-07T20:19:00.000Z"
+    },
+    {
+      "n": 17,
       "kind": "agency-notice",
       "title": "Stewart’s Shop Corp. Recalls Heavenly Medley and Vanilla-Chocolate-Strawberry Due to Possible Foreign Object",
       "source": "FDA recall notice",
@@ -74,7 +90,7 @@
       "publishedAt": "2026-10-02T22:02:00.000Z"
     },
     {
-      "n": 16,
+      "n": 18,
       "kind": "agency-notice",
       "title": "EAK Distribution LLC Recalls HOME GROWN Green Sprouting Calabrese Broccoli Seeds, 8 oz, Heirloom Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -82,15 +98,7 @@
       "publishedAt": "2026-10-02T20:37:00.000Z"
     },
     {
-      "n": 17,
-      "kind": "agency-notice",
-      "title": "Frutas y Hortalizas del Sur S.A. Expands Recalls to Include Additional Lots of Great Value Frozen Organic Triple Berry Blend 10 OZ, Great Value Frozen Organic Blueberries 10 OZ and One Lot of Trader Joe’s Frozen Organic Mixed Berry Blend 12 OZ Because of Potential Contamination with E. coli O145",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic",
-      "publishedAt": "2026-10-02T19:06:00.000Z"
-    },
-    {
-      "n": 18,
+      "n": 20,
       "kind": "agency-notice",
       "title": "Flowers Foods Issues Recall of Nature’s Own Hawaiian Bread Due to Undeclared Milk",
       "source": "FDA recall notice",
@@ -98,15 +106,7 @@
       "publishedAt": "2026-10-02T16:31:00.000Z"
     },
     {
-      "n": 19,
-      "kind": "agency-notice",
-      "title": "WinCo Foods of Boise, ID is Recalling the Following Salsa Bean Dip Trays Due to the Inclusion of Recalled Peperoncini from G.L. Mezzetta",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
-      "publishedAt": "2026-10-01T20:03:00.000Z"
-    },
-    {
-      "n": 21,
+      "n": 23,
       "kind": "agency-notice",
       "title": "Saint Francis Apizza LLC Issues a Voluntary Recall of its Frozen Pizzas for Missing Sub Ingredients on the Label for Soy Which Includes Soybean Oil and Soy Lecithin, an Allergen",
       "source": "FDA recall notice",
@@ -114,10 +114,10 @@
       "publishedAt": "2026-10-01T04:00:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 10265,
-    "outputTokens": 1082
+    "inputTokens": 10703,
+    "outputTokens": 872
   }
 }
