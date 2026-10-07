@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-06T18:26:13.440Z",
+  "generatedAt": "2026-10-07T06:06:51.049Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-06T18:26:13.518Z",
+      "fetchedAt": "2026-10-07T06:06:51.129Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-06T18:26:42.487Z",
+      "fetchedAt": "2026-10-07T06:07:24.559Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-30",
@@ -24,14 +24,96 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-06T18:26:46.900Z",
+      "fetchedAt": "2026-10-07T06:07:29.395Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-10-02",
-      "itemCount": 498
+      "upstreamUpdated": "2026-10-06",
+      "itemCount": 499
     }
   },
   "items": [
+    {
+      "id": "fsis:PHA-10062026-01",
+      "slug": "fsis-pha-10062026-01",
+      "kind": "public-health-alert",
+      "source": "FSIS",
+      "sourceId": "PHA-10062026-01",
+      "title": "FSIS Issues Public Health Alert for Ineligible Chicken Vienna-Style Sausage Products Illegally Imported From Jamaica",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ineligible-chicken-vienna-style-sausage-products",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "Not named (public health alert)",
+      "product": "140-g. cans of “GRACE READY TO EAT CHICKEN VIENNA SAUSAGES.”",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "chicken",
+        "pork",
+        "ready-to-eat meals"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Egg",
+          "group": "allergen"
+        }
+      ],
+      "classification": null,
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AL",
+          "FL",
+          "GA",
+          "MD",
+          "TX"
+        ],
+        "stateCount": 5,
+        "international": false,
+        "description": "AL, FL, GA, MD, TX"
+      },
+      "rootCause": {
+        "category": "import-or-inspection-violation",
+        "basis": "agency-coded",
+        "detail": "Produced Without Benefit of Inspection"
+      },
+      "detection": {
+        "category": "agency-sampling-or-inspection",
+        "basis": "inferred",
+        "detail": "The problem was discovered during routine FSIS surveillance activities of imported products in commerce."
+      },
+      "correctiveAction": {
+        "category": "public-health-alert",
+        "detail": "FSIS issued a public health alert instead of requesting a recall"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Public Health Alert (active)"
+      },
+      "dates": {
+        "event": "2026-10-06",
+        "reported": "2026-10-06",
+        "updated": "2026-10-06",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Produced Without Benefit of Inspection",
+      "missing": [
+        "classification"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-07T06:06:51.049Z",
+        "lastChanged": "2026-10-07T06:06:51.049Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fsis:025-2026",
       "slug": "fsis-025-2026",

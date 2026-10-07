@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-06T18:26:13.440Z",
+  "generatedAt": "2026-10-07T06:06:51.049Z",
   "entries": [
+    {
+      "at": "2026-10-07T06:06:51.049Z",
+      "change": "added",
+      "id": "fsis:PHA-10062026-01",
+      "slug": "fsis-pha-10062026-01",
+      "title": "FSIS Issues Public Health Alert for Ineligible Chicken Vienna-Style Sausage Products Illegally Imported From Jamaica",
+      "source": "FSIS",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-10-06T06:27:45.972Z",
       "change": "added",
