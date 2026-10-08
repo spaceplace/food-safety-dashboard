@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-08T13:37:37.397Z",
+  "generatedAt": "2026-10-08T23:24:37.418Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-08T13:37:37.515Z",
+      "fetchedAt": "2026-10-08T23:24:37.501Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-08T13:38:05.535Z",
+      "fetchedAt": "2026-10-08T23:24:57.352Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-30",
@@ -24,10 +24,10 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-08T13:38:10.686Z",
+      "fetchedAt": "2026-10-08T23:25:01.006Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-10-06",
+      "upstreamUpdated": "2026-10-08",
       "itemCount": 499
     }
   },
@@ -169,7 +169,7 @@
       "dates": {
         "event": "2026-10-02",
         "reported": "2026-10-02",
-        "updated": "2026-10-02",
+        "updated": "2026-10-08",
         "closed": null
       },
       "outbreak": null,
@@ -184,8 +184,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-10-03T05:23:46.255Z",
-        "lastChanged": "2026-10-03T05:23:46.255Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-08T23:24:37.418Z",
+        "revisions": 1,
         "backfilled": false
       }
     },
@@ -982,7 +982,7 @@
       "dates": {
         "event": "2026-09-25",
         "reported": "2026-09-25",
-        "updated": "2026-09-25",
+        "updated": "2026-10-08",
         "closed": null
       },
       "outbreak": null,
@@ -998,8 +998,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-26T11:30:23.692Z",
-        "lastChanged": "2026-09-26T11:30:23.692Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-08T23:24:37.418Z",
+        "revisions": 1,
         "backfilled": false
       }
     },
@@ -1059,7 +1059,7 @@
       "dates": {
         "event": "2026-09-25",
         "reported": "2026-09-25",
-        "updated": "2026-09-25",
+        "updated": "2026-10-08",
         "closed": null
       },
       "outbreak": null,
@@ -1075,8 +1075,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-26T11:30:23.692Z",
-        "lastChanged": "2026-09-26T11:30:23.692Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-08T23:24:37.418Z",
+        "revisions": 1,
         "backfilled": false
       }
     },

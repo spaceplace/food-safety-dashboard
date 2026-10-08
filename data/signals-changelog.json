@@ -1,6 +1,57 @@
 {
-  "generatedAt": "2026-10-08T13:37:37.397Z",
+  "generatedAt": "2026-10-08T23:24:37.418Z",
   "entries": [
+    {
+      "at": "2026-10-08T23:24:37.418Z",
+      "change": "updated",
+      "id": "fsis:025-2026",
+      "slug": "fsis-025-2026",
+      "title": "Inexport Logistics LLC Recalls Ineligible Pork Cracklings Products Imported From The Republic of Colombia",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "updated date",
+          "from": "2026-10-02",
+          "to": "2026-10-08"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-08T23:24:37.418Z",
+      "change": "updated",
+      "id": "fsis:024-2026",
+      "slug": "fsis-024-2026",
+      "title": "Sempio Food Services Inc. Recalls Ready-To-Eat Chicken Stew Products Imported Without the Benefit of Import Reinspection",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "updated date",
+          "from": "2026-09-25",
+          "to": "2026-10-08"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-08T23:24:37.418Z",
+      "change": "updated",
+      "id": "fsis:023-2026",
+      "slug": "fsis-023-2026",
+      "title": "Fontanini Foods LLC Recalls Raw, Frozen Pork Sausage Products Due to Possible Foreign Matter Contamination",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "updated date",
+          "from": "2026-09-25",
+          "to": "2026-10-08"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-10-07T23:08:57.214Z",
       "change": "updated",
