@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-08T23:24:37.418Z",
+  "generatedAt": "2026-10-09T06:15:39.707Z",
   "sources": {
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-08T23:24:57.352Z",
+      "fetchedAt": "2026-10-09T06:16:04.917Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-09-30",
@@ -13,7 +13,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-08T23:25:01.006Z",
+      "fetchedAt": "2026-10-09T06:16:09.197Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-08",
@@ -65,7 +65,7 @@
         "Unknown"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:025-2026",
@@ -111,7 +111,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99874",
@@ -144,7 +144,7 @@
       "agencyUpdatedAt": "2026-09-22",
       "processing": null,
       "firmLocation": "Austin, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99853",
@@ -177,7 +177,7 @@
       "agencyUpdatedAt": "2026-09-24",
       "processing": null,
       "firmLocation": "New York, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99859",
@@ -210,7 +210,7 @@
       "agencyUpdatedAt": "2026-09-22",
       "processing": null,
       "firmLocation": "San Francisco, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99717",
@@ -244,7 +244,7 @@
       "agencyUpdatedAt": "2026-09-21",
       "processing": null,
       "firmLocation": "Minneapolis, MN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99757",
@@ -280,7 +280,7 @@
       "agencyUpdatedAt": null,
       "processing": null,
       "firmLocation": "Englewood Cliffs, NJ",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99884",
@@ -313,7 +313,7 @@
       "agencyUpdatedAt": "2026-09-22",
       "processing": null,
       "firmLocation": "Louisville, CO",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99842",
@@ -348,7 +348,7 @@
       "agencyUpdatedAt": "2026-09-18",
       "processing": null,
       "firmLocation": "Moyie Springs, ID",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99702",
@@ -383,7 +383,7 @@
       "agencyUpdatedAt": "2026-09-18",
       "processing": null,
       "firmLocation": "Madison, WI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:024-2026",
@@ -431,7 +431,7 @@
         "Thermally Processed - Commercially Sterile"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:023-2026",
@@ -473,7 +473,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99737",
@@ -512,7 +512,7 @@
       "agencyUpdatedAt": "2026-09-14",
       "processing": null,
       "firmLocation": "Minneapolis, MN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99611",
@@ -583,7 +583,7 @@
       "agencyUpdatedAt": "2026-09-15",
       "processing": null,
       "firmLocation": "Salinas, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99594",
@@ -627,7 +627,7 @@
       "agencyUpdatedAt": "2026-09-16",
       "processing": null,
       "firmLocation": "Missouri City, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99815",
@@ -664,7 +664,7 @@
       "agencyUpdatedAt": "2026-09-17",
       "processing": null,
       "firmLocation": "Brooklyn, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99780",
@@ -697,7 +697,7 @@
       "agencyUpdatedAt": "2026-09-15",
       "processing": null,
       "firmLocation": "Mamaroneck, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99744",
@@ -732,7 +732,7 @@
       "agencyUpdatedAt": "2026-09-16",
       "processing": null,
       "firmLocation": "Lakewood, NJ",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99803",
@@ -772,7 +772,7 @@
       "agencyUpdatedAt": "2026-09-16",
       "processing": null,
       "firmLocation": "Connelly Springs, NC",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99572",
@@ -809,7 +809,7 @@
       "agencyUpdatedAt": "2026-09-16",
       "processing": null,
       "firmLocation": "Madison, WI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99869",
@@ -842,7 +842,7 @@
       "agencyUpdatedAt": null,
       "processing": null,
       "firmLocation": "Chicago, IL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99841",
@@ -877,7 +877,7 @@
       "agencyUpdatedAt": "2026-09-17",
       "processing": null,
       "firmLocation": "Miami Gardens, FL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99830",
@@ -910,7 +910,7 @@
       "agencyUpdatedAt": "2026-09-11",
       "processing": null,
       "firmLocation": "Angola, IN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99755",
@@ -950,7 +950,7 @@
       "agencyUpdatedAt": "2026-09-15",
       "processing": null,
       "firmLocation": "Boonville, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99831",
@@ -985,7 +985,7 @@
       "agencyUpdatedAt": "2026-09-16",
       "processing": null,
       "firmLocation": "San Carlos, N/A",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:022-2026",
@@ -1045,7 +1045,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99684",
@@ -1078,7 +1078,7 @@
       "agencyUpdatedAt": "2026-09-04",
       "processing": null,
       "firmLocation": "Totowa, NJ",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99675",
@@ -1114,7 +1114,7 @@
       "agencyUpdatedAt": "2026-09-10",
       "processing": null,
       "firmLocation": "Los Angeles, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99636",
@@ -1150,7 +1150,7 @@
       "agencyUpdatedAt": "2026-09-04",
       "processing": null,
       "firmLocation": "Etobicoke",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99822",
@@ -1183,7 +1183,7 @@
       "agencyUpdatedAt": "2026-09-14",
       "processing": null,
       "firmLocation": "Cookeville, TN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99682",
@@ -1216,7 +1216,7 @@
       "agencyUpdatedAt": "2026-09-09",
       "processing": null,
       "firmLocation": "North Canton, OH",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99646",
@@ -1258,7 +1258,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Bronx, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99548",
@@ -1294,7 +1294,7 @@
       "agencyUpdatedAt": "2026-09-02",
       "processing": null,
       "firmLocation": "North Chesterfield, VA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99508",
@@ -1332,7 +1332,7 @@
       "agencyUpdatedAt": "2026-09-02",
       "processing": null,
       "firmLocation": "Brooklyn, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99368",
@@ -1367,7 +1367,7 @@
       "agencyUpdatedAt": "2026-09-02",
       "processing": null,
       "firmLocation": "Sacramento, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99638",
@@ -1403,7 +1403,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Sunbury, PA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99615",
@@ -1436,7 +1436,7 @@
       "agencyUpdatedAt": "2026-09-02",
       "processing": null,
       "firmLocation": "Laval, N/A",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99656",
@@ -1476,7 +1476,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Montauk, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99587",
@@ -1510,7 +1510,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Houston, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99644",
@@ -1543,7 +1543,7 @@
       "agencyUpdatedAt": "2026-08-28",
       "processing": null,
       "firmLocation": "Batavia, OH",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:021-2026",
@@ -1588,7 +1588,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:019-020-2026",
@@ -1640,7 +1640,7 @@
         "Products with Secondary Inhibitors - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99571",
@@ -1673,7 +1673,7 @@
       "agencyUpdatedAt": "2026-08-21",
       "processing": null,
       "firmLocation": "Honolulu, HI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99424",
@@ -1709,7 +1709,7 @@
       "agencyUpdatedAt": "2026-08-21",
       "processing": null,
       "firmLocation": "Union City, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99716",
@@ -1751,7 +1751,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Laurel, MD",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99690",
@@ -1787,7 +1787,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Savage, MD",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99493",
@@ -1825,7 +1825,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Arlington, VA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99605",
@@ -1860,7 +1860,7 @@
       "agencyUpdatedAt": "2026-09-08",
       "processing": null,
       "firmLocation": "Broomfield, CO",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99575",
@@ -1895,7 +1895,7 @@
       "agencyUpdatedAt": "2026-08-27",
       "processing": null,
       "firmLocation": "Austin, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99695",
@@ -1930,7 +1930,7 @@
       "agencyUpdatedAt": "2026-08-21",
       "processing": null,
       "firmLocation": "Ravenna, OH",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99619",
@@ -1965,7 +1965,7 @@
       "agencyUpdatedAt": "2026-09-04",
       "processing": null,
       "firmLocation": "Lancaster, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99538",
@@ -2000,7 +2000,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Hauppauge, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99642",
@@ -2037,7 +2037,7 @@
       "agencyUpdatedAt": "2026-09-16",
       "processing": null,
       "firmLocation": "Iowa City, IA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99640",
@@ -2083,7 +2083,7 @@
       "agencyUpdatedAt": "2026-08-20",
       "processing": null,
       "firmLocation": "Austin, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99434",
@@ -2122,7 +2122,7 @@
       "agencyUpdatedAt": "2026-08-14",
       "processing": null,
       "firmLocation": "Ridgefield, CT",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99542",
@@ -2160,7 +2160,7 @@
       "agencyUpdatedAt": "2026-08-18",
       "processing": null,
       "firmLocation": "Lakeland, FL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99580",
@@ -2197,7 +2197,7 @@
       "agencyUpdatedAt": "2026-08-14",
       "processing": null,
       "firmLocation": "Reno, NV",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99663",
@@ -2232,7 +2232,7 @@
       "agencyUpdatedAt": "2026-08-19",
       "processing": null,
       "firmLocation": "Skowhegan, ME",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99639",
@@ -2267,7 +2267,7 @@
       "agencyUpdatedAt": "2026-08-19",
       "processing": null,
       "firmLocation": "Portland, OR",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99635",
@@ -2302,7 +2302,7 @@
       "agencyUpdatedAt": "2026-08-20",
       "processing": null,
       "firmLocation": "Dallas, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99618",
@@ -2335,7 +2335,7 @@
       "agencyUpdatedAt": "2026-08-18",
       "processing": null,
       "firmLocation": "Arlington, VA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99650",
@@ -2370,7 +2370,7 @@
       "agencyUpdatedAt": "2026-08-20",
       "processing": null,
       "firmLocation": "Bartlett, IL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99569",
@@ -2405,7 +2405,7 @@
       "agencyUpdatedAt": "2026-08-18",
       "processing": null,
       "firmLocation": "San Diego, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:018-2026",
@@ -2450,7 +2450,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99479",
@@ -2487,7 +2487,7 @@
       "agencyUpdatedAt": "2026-08-12",
       "processing": null,
       "firmLocation": "N Manchester, IN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99453",
@@ -2542,7 +2542,7 @@
       "agencyUpdatedAt": "2026-08-27",
       "processing": null,
       "firmLocation": "Doctor Mora",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99097",
@@ -2578,7 +2578,7 @@
       "agencyUpdatedAt": "2026-08-12",
       "processing": null,
       "firmLocation": "Allentown, PA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99540",
@@ -2613,7 +2613,7 @@
       "agencyUpdatedAt": "2026-08-07",
       "processing": null,
       "firmLocation": "Diamond Bar, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99516",
@@ -2648,7 +2648,7 @@
       "agencyUpdatedAt": "2026-08-07",
       "processing": null,
       "firmLocation": "Venice, FL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99519",
@@ -2681,7 +2681,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Parkland, FL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99470",
@@ -2717,7 +2717,7 @@
       "agencyUpdatedAt": "2026-08-27",
       "processing": null,
       "firmLocation": "Noblesville, IN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:017-2026",
@@ -2758,7 +2758,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:016-2026",
@@ -2801,7 +2801,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99325",
@@ -2839,7 +2839,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Rockville, MD",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99211",
@@ -2893,7 +2893,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Mechanicsville, MD",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99458",
@@ -2931,7 +2931,7 @@
       "agencyUpdatedAt": "2026-08-03",
       "processing": null,
       "firmLocation": "Charlotte, NC",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99448",
@@ -2966,7 +2966,7 @@
       "agencyUpdatedAt": "2026-08-06",
       "processing": null,
       "firmLocation": "Lake Oswego, OR",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99539",
@@ -3001,7 +3001,7 @@
       "agencyUpdatedAt": "2026-08-18",
       "processing": null,
       "firmLocation": "Beloit, WI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99444",
@@ -3036,7 +3036,7 @@
       "agencyUpdatedAt": "2026-08-03",
       "processing": null,
       "firmLocation": "West Bridgewater, MA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98392",
@@ -3069,7 +3069,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Lorton, VA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99513",
@@ -3102,7 +3102,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Pomona, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99351",
@@ -3136,7 +3136,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Gangseo",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99560",
@@ -3169,7 +3169,7 @@
       "agencyUpdatedAt": "2026-08-26",
       "processing": null,
       "firmLocation": "Ann Arbor, MI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99460",
@@ -3204,7 +3204,7 @@
       "agencyUpdatedAt": "2026-08-04",
       "processing": null,
       "firmLocation": "Grand Prairie, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99451",
@@ -3239,7 +3239,7 @@
       "agencyUpdatedAt": "2026-08-17",
       "processing": null,
       "firmLocation": "Metairie, LA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99358",
@@ -3272,7 +3272,7 @@
       "agencyUpdatedAt": "2026-08-05",
       "processing": null,
       "firmLocation": "Gyeongju",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:PHA-08082026-01",
@@ -3308,7 +3308,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:015-2026",
@@ -3349,7 +3349,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:014-2026",
@@ -3398,7 +3398,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:013-2026",
@@ -3442,7 +3442,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99081",
@@ -3478,7 +3478,7 @@
       "agencyUpdatedAt": "2026-07-28",
       "processing": null,
       "firmLocation": "Altoona, PA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99142",
@@ -3511,7 +3511,7 @@
       "agencyUpdatedAt": "2026-07-27",
       "processing": null,
       "firmLocation": "Bay Shore, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:012-2026",
@@ -3555,7 +3555,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-07302026-01",
@@ -3596,7 +3596,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99387",
@@ -3629,7 +3629,7 @@
       "agencyUpdatedAt": "2026-07-21",
       "processing": null,
       "firmLocation": "Cerritos, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99355",
@@ -3662,7 +3662,7 @@
       "agencyUpdatedAt": "2026-07-21",
       "processing": null,
       "firmLocation": "Brooklyn, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99386",
@@ -3696,7 +3696,7 @@
       "agencyUpdatedAt": "2026-07-23",
       "processing": null,
       "firmLocation": "San Gabriel, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99354",
@@ -3733,7 +3733,7 @@
       "agencyUpdatedAt": "2026-07-17",
       "processing": null,
       "firmLocation": "Conrad, MT",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99215",
@@ -3773,7 +3773,7 @@
       "agencyUpdatedAt": "2026-07-21",
       "processing": null,
       "firmLocation": "Rizhao, N/A",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99357",
@@ -3808,7 +3808,7 @@
       "agencyUpdatedAt": "2026-07-23",
       "processing": null,
       "firmLocation": "Elizabeth, NJ",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:PHA-07292026-01",
@@ -3851,7 +3851,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:011-2026",
@@ -3894,7 +3894,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:010-2026",
@@ -3933,7 +3933,7 @@
         "Thermally Processed - Commercially Sterile"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:99040",
@@ -3984,7 +3984,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "Paterson, NJ",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99074",
@@ -4021,7 +4021,7 @@
       "agencyUpdatedAt": "2026-07-13",
       "processing": null,
       "firmLocation": "White Plains, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99282",
@@ -4054,7 +4054,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "Sacramento, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99055",
@@ -4087,7 +4087,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "Elizabeth, NJ",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99373",
@@ -4122,7 +4122,7 @@
       "agencyUpdatedAt": "2026-07-21",
       "processing": null,
       "firmLocation": "San Carlos",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99306",
@@ -4155,7 +4155,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "Petaluma, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99238",
@@ -4188,7 +4188,7 @@
       "agencyUpdatedAt": "2026-07-14",
       "processing": null,
       "firmLocation": "North Bergen, NJ",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98931",
@@ -4223,7 +4223,7 @@
       "agencyUpdatedAt": "2026-07-13",
       "processing": null,
       "firmLocation": "Houston, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99293",
@@ -4260,7 +4260,7 @@
       "agencyUpdatedAt": "2026-07-13",
       "processing": null,
       "firmLocation": "Golden Valley, MN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98988",
@@ -4301,7 +4301,7 @@
       "agencyUpdatedAt": "2026-07-06",
       "processing": null,
       "firmLocation": "Gonzales, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99327",
@@ -4339,7 +4339,7 @@
       "agencyUpdatedAt": "2026-07-06",
       "processing": null,
       "firmLocation": "Chicago, IL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99124",
@@ -4374,7 +4374,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Berwick, PA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99314",
@@ -4407,7 +4407,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Chicopee, MA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99253",
@@ -4440,7 +4440,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Marysville, PA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99335",
@@ -4477,7 +4477,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Renton, WA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99235",
@@ -4510,7 +4510,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Sanford, FL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99324",
@@ -4546,7 +4546,7 @@
       "agencyUpdatedAt": "2026-07-07",
       "processing": null,
       "firmLocation": "Mesa, AZ",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99292",
@@ -4582,7 +4582,7 @@
       "agencyUpdatedAt": "2026-07-01",
       "processing": null,
       "firmLocation": "Chicago, IL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99275",
@@ -4615,7 +4615,7 @@
       "agencyUpdatedAt": "2026-07-01",
       "processing": null,
       "firmLocation": "Lancaster, OH",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99255",
@@ -4654,7 +4654,7 @@
       "agencyUpdatedAt": "2026-06-26",
       "processing": null,
       "firmLocation": "Ontario, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99242",
@@ -4690,7 +4690,7 @@
       "agencyUpdatedAt": "2026-07-01",
       "processing": null,
       "firmLocation": "New York, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99231",
@@ -4725,7 +4725,7 @@
       "agencyUpdatedAt": "2026-07-13",
       "processing": null,
       "firmLocation": "Le Mars, IA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:PHA-07032026-01",
@@ -4765,7 +4765,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:98975",
@@ -4814,7 +4814,7 @@
       "agencyUpdatedAt": "2026-06-23",
       "processing": null,
       "firmLocation": "Maspeth, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99147",
@@ -4849,7 +4849,7 @@
       "agencyUpdatedAt": "2026-06-22",
       "processing": null,
       "firmLocation": "Brooklyn, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98864",
@@ -4890,7 +4890,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Hanover, PA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99082",
@@ -4933,7 +4933,7 @@
       "agencyUpdatedAt": "2026-07-01",
       "processing": null,
       "firmLocation": "Berkeley, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99120",
@@ -4969,7 +4969,7 @@
       "agencyUpdatedAt": "2026-06-23",
       "processing": null,
       "firmLocation": "New Boston, MI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98281",
@@ -5016,7 +5016,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Raleigh, NC",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98867",
@@ -5057,7 +5057,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Grove City, PA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99099",
@@ -5094,7 +5094,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Norwalk, IA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99198",
@@ -5129,7 +5129,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Bronx, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99118",
@@ -5162,7 +5162,7 @@
       "agencyUpdatedAt": "2026-06-24",
       "processing": null,
       "firmLocation": "Santo Domingo, N/A",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:PHA-06252026-02",
@@ -5209,7 +5209,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:009-2026",
@@ -5255,7 +5255,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-06252026-01",
@@ -5296,7 +5296,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:98926",
@@ -5330,7 +5330,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "Belpasso",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99018",
@@ -5368,7 +5368,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Hazelwood, MO",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98984",
@@ -5401,7 +5401,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Sheridan, WY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99208",
@@ -5436,7 +5436,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "Taylor, MI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99020",
@@ -5471,7 +5471,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "Eugene, OR",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99117",
@@ -5504,7 +5504,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Hayward, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99009",
@@ -5537,7 +5537,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Houston, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99056",
@@ -5570,7 +5570,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Fairhope, AL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98973",
@@ -5606,7 +5606,7 @@
       "agencyUpdatedAt": "2026-06-18",
       "processing": null,
       "firmLocation": "Milwaukee, WI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99218",
@@ -5641,7 +5641,7 @@
       "agencyUpdatedAt": "2026-06-16",
       "processing": null,
       "firmLocation": "Fort Washington, PA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:008-2026",
@@ -5680,7 +5680,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fda:98732",
@@ -5739,7 +5739,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "Miami, FL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99195",
@@ -5780,7 +5780,7 @@
       "agencyUpdatedAt": "2026-09-16",
       "processing": null,
       "firmLocation": "Coquille, OR",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99037",
@@ -5815,7 +5815,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "Bayamon, PR",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99155",
@@ -5850,7 +5850,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "New Orleans, LA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99017",
@@ -5883,7 +5883,7 @@
       "agencyUpdatedAt": "2026-06-10",
       "processing": null,
       "firmLocation": "Hayward, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99022",
@@ -5918,7 +5918,7 @@
       "agencyUpdatedAt": "2026-06-09",
       "processing": null,
       "firmLocation": "Buffalo, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98993",
@@ -5953,7 +5953,7 @@
       "agencyUpdatedAt": "2026-06-10",
       "processing": null,
       "firmLocation": "Los Angeles, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98850",
@@ -5986,7 +5986,7 @@
       "agencyUpdatedAt": "2026-06-08",
       "processing": null,
       "firmLocation": "Pune, N/A",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:99038",
@@ -6019,7 +6019,7 @@
       "agencyUpdatedAt": "2026-06-10",
       "processing": null,
       "firmLocation": "Lynn, MA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98714",
@@ -6055,7 +6055,7 @@
       "agencyUpdatedAt": "2026-06-10",
       "processing": null,
       "firmLocation": "Sulphur Springs, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fda:98369",
@@ -6090,795 +6090,7 @@
       "agencyUpdatedAt": "2026-06-11",
       "processing": null,
       "firmLocation": "Garland, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98965",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=J%20and%20J%20Bunting%2C%20Inc",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98965",
-      "title": "J and J Bunting, Inc recalls Lunds & Byerly's Curry Powder Sweet",
-      "firm": "J and J Bunting, Inc",
-      "product": "Lunds & Byerly's Curry Powder Sweet",
-      "products": [
-        "Lunds & Byerly's Curry Powder Sweet"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [],
-      "reason": "Sesame Seeds White were labeled as Curry Powder Sweet.",
-      "reasonCategory": "undeclared-allergen",
-      "classification": "Class II",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "WI",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-08",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "E-Mail",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-06-09",
-      "processing": null,
-      "firmLocation": "Rogers, MN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98953",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Albertsons%20Companies%20LLC",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98953",
-      "title": "Albertsons Companies LLC recalls UPC 29604300000 SALMON WASABI GRILLED FS COLD This is Albertson's store-made item and sol…",
-      "firm": "Albertsons Companies LLC",
-      "product": "UPC 29604300000 SALMON WASABI GRILLED FS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-      "products": [
-        "UPC 29604300000 SALMON WASABI GRILLED FS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21163600000 Ready Meals SALAD WALDORF SS This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 29120700000 Ready Meals SALAD SMOKED SALMON & FETA PASTA SS UPC 29137800000 SALAD SMOKED SALMON & FETA PASTA FS COLD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 25185700000 COOKIE GOURMET DUBAI 1CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29153000000 SAMPLER TRAY ITALIAN 16 INCH This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29168800000 CARVING TRAY 16IN FS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21195200000 READY MEALS SALAD FRESH BERRY & CHICKEN SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21292200000 SALMON CAJUN PREMIUM FS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23180600000 SALMON KABOB With CITRUS LEMON MARINADE This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 28848900000 Cake Yellow Fudge Pecan 1/2 8IN This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21494500000 Ready Meals MEAL SALMON With LEMON CAPELLINI PASTA SS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29133000000 TRAY COCKTAIL This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21877300000 SALMON SWEET CHILI KOSHER PO SS COLD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23285300000 IMITATION CRAB AND SHRIMP SALAD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 21330300000 Ready Meals BAKED POLLOCK 4CT SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25317100000 CROISSANTS ALMOND RASPBERRY FILLED 4CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23077600000 SALMON FILLET CARNE ASADA MARINADE This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 29433900000 Kitchen SALAD CHICKEN STRIP This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 28832500000 Cake Yellow Caramel Pecan 1/2 8IN UPC 28831600000 Cake Yellow Caramel Pecan 2-Layer These are Albertson's store-made items and sold by unit at point of sale with grocery store's scale labels.",
-        "UPC 23043800000 SHRIMP 16-20 KABOB POLLO ASADA MARINADE This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23100200000 SALMON ATLANTIC PORTION PIRI PIRI MARINADE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21425300000 READY MEALS SALAD KALE MANGO & COCONUT SS UPC 21042400000 SALAD KALE MANGO & COCONUT FS This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 29787500000 KITCHEN SALAD SPRING LARGE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21234900000 TILAPIA PARMESAN CRUSTED SS COLD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 27841000000 Ready Meals TRAY BRIE & BLEU CHEESE LARGE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21788400000 Ready Meals SANDWICH TUNA SALAD CROISSANT SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21299900000 LOX AVOCADO TOAST FS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22321200000 MUFFINS PISTACHIO 2CT UPC 22770600000 MUFFINS PISTACHIO 4CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21963800000 Ready Meals CHIMICHURRI SHRIMP BOWL SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23036500000 SHRIMP P&D OLD BAY SEASONED This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23070400000 SHRIMP SKEWER MEDIUM RAW CILANTRO LIME This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 25047100000 ANDRONICO'S SWEET START CATERING TRAY LARGE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21497700000 Ready Meals SALMON POT ROSETTES & ROSEMARY SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29472300000 SALAD KALE BERRY FETA FS COLD UPC 29472100000 Ready Meals SALAD KALE BERRY FETA SS COLD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 22304700000 PLATTER SNACK CHEWIE SUSANS THUMBPRINTS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21500300000 READY MEALS QUAD TUNA SALAD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 24144500000 Ready Meals PEANUT BUTTER CHOCOLATE CHIP BAR With PRETZEL This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23258300000 BURGER WILD SALMON FETA SPINACH This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 21495100000 Ready Meals MEAL SALMON CAJUN SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 27183100000 Ready Meals DUO SEAFOOD SALAD W/CRACKERS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21535300000 TEMPURA SHRIMP THAI SWEET CHILI SAUCE SS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21914600000 KITCHEN SANDWICH CROISSANT CHICKEN CASHEW SS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25139500000 Cake Cakerie Strawberry Shortcake Triangle. This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29132100000 KITCHEN SNACKER SALAD TUNA PICKLE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23285600000 IMITATION CRAB AND SHRIMP SALAD SRIRACHA This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 28994500000 PAVILIONS MUFFINS BANANA NUT SINGLE SERVE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 27852000000 Ready Meals BRIE ALMOND TRAY SMALL COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 24512800000 SALAD CHICKEN CAESAR UPC 29854600000 Kitchen SALAD CHICKEN CAESAR This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21919300000 SALMON LEMON PEPPER KOSHER PO SS COLD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23098000000 SALMON ATLANTIC PORTION CA ORANGE MARINADE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23090400000 SALMON FILLET POLLO ASADO MARINADE This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 25814700000 CAKE BOSTON CREME DUBAI 5IN This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21379600000 Ready Meals WOK PAD THAI CHICKEN WITH EGG ROLL SS COLD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 21477700000 Ready Meals SALAD FRESH BERRY & SALMON SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29502200000 Ready Meals BOWL GRAIN SALMON QUINOA LENTIL SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29361000000 KITCHEN SALAD TURKEY POPPYSEED SS COLD UPC 29360900000 KITCHEN SALAD TURKEY POPPYSEED FS COLD This is Albertson's store-made item and sold by random at point of sale with grocery store's scale label.",
-        "UPC 22655200000 CAKE CARROT 8IN 2-Layer UPC 27813200000 CAKE CARROT 8IN 2-Layer These are Albertson's store-made items and sold by unit at point of sale with grocery store's scale labels.",
-        "UPC 25678000000 CROISSANTS DUBAI CHOCOLATE 2CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22253500000 Cake Bar Artisan White Strawberry Small. This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22394700000 Cake Almond Raspberry Pavillions 2-layer This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25394400000 CAKE PISTACHIO SHAPED DESSERT 1CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23952700000 POKE AHI LIMU UPC 23506700000 POKE AHI LIMU PREVIOUSLY FROZEN - CO UPC 23958200000 POKE AHI SALT & PEPPER This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23152800000 SHRIMP 41-50 P&D With JAMAICAN JERK MARINADE 5% This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23168600000 SHRIMP 41-50 P&D With CILANTRO LIME MARINADE 5% This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23245700000 SHRIMP & SURIMI CEVICHE FRESH This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 25312600000 MUFFINS BANANA NUT CREAM CHEESE FILLED 2CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21467900000 Ready Meals BOWL SOUTHWEST SHRIMP LARGE SS COLD UPC 21963600000 Ready Meals SOUTHWEST SHRIMP BOWL SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25524000000 MUFFINS STICKY BRAN 4CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22730900000 COOKIES COWBOY 18CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21843300000 READY MEALS TUNA SALAD & MUENSTER CHEESE SNACK PACK This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 28586600000 CROISSANT ALMOND UPC 22102100000 CROISSANTS ALMOND 4 CT UPC 29671400000 HGN CROISSANTS ALMOND 3CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 27837800000 PLATTER CHEESES OF FRANCE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29473400000 SALAD LEMON CAPELLINI With GRILLED SHRIMP FS This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 22749800000 CAKE BOSTON ALMOND This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21478000000 Ready Meals SALAD FRESH BERRY & SWEET CHILI Salmon SS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21382900000 Ready Meals SALMON PESTO With ASPARAGUS SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22650200000 PLATTER LOAF SLC 20CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29259700000 KITCHEN TRAY SUB SANDWICH SS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29251100000 Ready Meals TUNA SALAD & PEPPER JACK CHEESE SNACKER This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25748400000 STICKY BUNS GOURMET WALNUT 4CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25800800000 POP DOTS COCO & HAZELNUT 6CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25491700000 Cake Pav Chocolate Lady Madeleines Strawberry. This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25688000000 PIE PEACH MELBA 9IN This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23151700000 SALMON FILLET With CITRUS LEMON MARINADE This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 21380100000 Ready Meals WOK PAD THAI CHICKEN WITH POT STICKERS SS This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29787600000 Kitchen SALAD CAESAR LARGE SS COLD UPC 21543200000 Kitchen SALAD CAESAR SMALL SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22418000000 Platter Catering Loaf Cake Slice. This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25216200000 Cheesecake Slice Colossal Dubai. This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23150400000 SHRIMP 41-50 P&D With CITRUS LEMON MARINADE 5% This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23044100000 SHRIMP P&D CAJUN SEASONED This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 25081900000 PLATTER PASTRY MINI BREAKFAST 28CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21208300000 Ready Meals WOK PAD THAI CHICKEN SS COLD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 21136500000 Ready Meals BOWL SALMON TERIYAKI SS COLD UPC 21477800000 Ready Meals BOWL TERIYAKI SALMON LARGE SS COLD UPC 21502100000 Ready Meals MEAL SALMON TERIYAKI SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22358600000 COOKIES MEXICAN WEDDING 8 CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29477800000 Ready Meals SALAD SEAFOOD CAJUN SS COLD UPC 29477600000 SALAD SEAFOOD CAJUN FS COLD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23041600000 SALMON COHO FILLET GARLIC HERB SEASONED This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 27163100000 Kitchen SALAD GRILLED CHICKEN SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 29138800000 TRAY CHARCUTERIE ELEGANT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22019700000 PAVILIONS CHOCOLATE COVERED STRAWBERRY 1 CT UPC 22117700000 PAVILIONS CHOCOLATE COVERED STRAWBERRY 4 CT UPC 22482400000 PAVILIONS CHOCOLATE COVERED STRAWBERRY 10 CT UPC 22126600000 PAVILIONS CHOCOLATE COVERED STRAWBERRY 12 CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22679400000 CAKE CRAVIN CARROT 8IN 1-layer This is Albertson's store-made item and is sold by each unit at point of sale with grocery store's scale label.",
-        "UPC 29219100000 Ready Meals SANDWICH HAGGIE STORE CLASSIC TUNA SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23625000000 FISH HOUSE PREMIUM SEAFOOD SALAD UPC 21431200000 Ready Meals SALAD SEAFOOD SS UPC 21878600000 SALAD SEAFOOD This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 23025600000 SHRIMP MEDIUM SWEET CHILI MARINADE This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 29344500000 TWISTED BLISS PRETZEL TRAY This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23308200000 TILAPIA TORTILLA CRUSTED This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 25811100000 CAKE RASPBERRY MOON 8IN 2-layer. This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21176300000 MEAT PIE PORK 4CT SS COLD UPC 21025900000 PIE PORK FS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23180100000 SHRIMP KABOB 16-20 CT W/KUNG PAO MRND This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 22761900000 MUFFINS ALMOND POPPYSEED 4CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21243500000 KITCHEN SANDWICH ITALIAN SUPER SUB SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 22454900000 MUFFINS BANANA NUT 2CT UPC 22120200000 MUFFINS BANANA NUT 4CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 26911700000 COOKIES OATMEAL RAISIN 10CT This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 25511500000 PLATTER BROWNIES ASSORTED SEASONAL This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21633500000 READY MEALS SALAD APPLE WALDORF SS UPC 29824500000 Kitchen SALAD APPLE WALDORF FS UPC 27169500000 Kitchen SALAD APPLE WALDORF LRG UPC 27170300000 Kitchen SALAD APPLE WALDORF MED UPC 27169300000 Kitchen SALAD APPLE WALDORF SM This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 21142400000 MEAL CAJUN SALMON & SPANISH RICE SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21870200000 KITCHEN SALAD SESAME ASIAN LARGE SS COLD UPC 27817500000 Ready Meals SALAD MANDARIN SESAME NOODLE SS UPC 29326100000 SALAD SESAME MANDARIN FS COLD This is Albertson's store-made item and sold by unit or random weight at point of sale with grocery store's scale label.",
-        "UPC 23179700000 SHRIMP KABOB 16-20 CT With JAMAICAN JRK MARINADE This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 21409600000 READY MEALS MEATLOAF SS COLD This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 21600500000 READY MEALS SALAD PREMIUM BROCCOLI SS This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label.",
-        "UPC 25606600000 PARFAIT CUP DUBAI CHOCOLATE This is Albertson's store-made item and sold by unit at point of sale with grocery store's scale label.",
-        "UPC 23114800000 SEAFOOD SALAD IMITATION CAJUN CRAB This is Albertson's store-made item and sold by random weight at point of sale with grocery store's scale label."
-      ],
-      "productCount": 121,
-      "category": "human-food",
-      "foodKeys": [
-        "lettuce",
-        "spinach",
-        "peppers",
-        "berries",
-        "stone fruit",
-        "apples",
-        "avocado",
-        "herbs",
-        "eggs",
-        "chicken",
-        "turkey",
-        "pork",
-        "deli meat",
-        "seafood",
-        "fish",
-        "dairy",
-        "nuts",
-        "seeds",
-        "chocolate",
-        "baked goods",
-        "ready-to-eat meals"
-      ],
-      "reason": "Contains statement does not declare Salmon",
-      "reasonCategory": "undeclared-allergen",
-      "classification": "Class III",
-      "status": "Terminated",
-      "states": null,
-      "distributionPattern": "Nationwide.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-06",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "E-Mail",
-      "summary": null,
-      "closedDate": "2026-07-02",
-      "closedYear": "2026",
-      "agencyUpdatedAt": "2026-06-18",
-      "processing": null,
-      "firmLocation": "Boise, ID",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98982",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Straus%20Family%20Creamery",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98982",
-      "title": "Straus Family Creamery recalls STRAUS FAMILY CREAMERY Cookie Dough ORGANIC SUPER PREMIUM ICE CREAM ONE PINT (473mL) Prod…",
-      "firm": "Straus Family Creamery",
-      "product": "STRAUS FAMILY CREAMERY Cookie Dough ORGANIC SUPER PREMIUM ICE CREAM ONE PINT (473mL) Produced and Distributed by Straus Family Creamery, Petaluma, CA 94952 UPC: 784830101044",
-      "products": [
-        "STRAUS FAMILY CREAMERY Cookie Dough ORGANIC SUPER PREMIUM ICE CREAM ONE PINT (473mL) Produced and Distributed by Straus Family Creamery, Petaluma, CA 94952 UPC: 784830101044",
-        "STRAUS FAMILY CREAMERY Mint Chip ORGANIC SUPER PREMIUM ICE CREAM ONE PINT (473mL) Produced and Distributed by Straus Family Creamery, Petaluma, CA 94952 UPC: 784830100504",
-        "STRAUS FAMILY CREAMERY Strawberry ORGANIC SUPER PREMIUM ICE CREAM ONE QUART (946mL) ONE PINT (473mL) Produced and Distributed by Straus Family Creamery, Petaluma, CA 94952 UPC for QUART: 784830100979 UPC for PINT: 784830100955",
-        "STRAUS FAMILY CREAMERY Vanilla Bean ORGANIC SUPER PREMIUM ICE CREAM ONE PINT (473mL) Produced and Distributed by Straus Family Creamery, Petaluma, CA 94952 UPC: 784830100306",
-        "STRAUS FAMILY CREAMERY Dutch Chocolate ORGANIC SUPER PREMIUM ICE CREAM ONE QUART (946mL) Produced and Distributed by Straus Family Creamery, Petaluma, CA 94952 UPC: 784830100122"
-      ],
-      "productCount": 5,
-      "category": "human-food",
-      "foodKeys": [
-        "berries",
-        "dairy",
-        "flour",
-        "chocolate",
-        "baked goods"
-      ],
-      "reason": "Potential contamination with foreign objects (metal pieces).",
-      "reasonCategory": "other-pathogen",
-      "classification": "Class II",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "Domestic: CA, CO, AZ, CT, FL, GA, IA, IL, IN, MD, NJ, OR, PA, SC, TX, WA, WI. Foreign: Not Applicable.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-12",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Letter",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-06-02",
-      "processing": null,
-      "firmLocation": "Petaluma, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98902",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=JCB%20Flavors%2C%20LLC",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98902",
-      "title": "JCB Flavors, LLC recalls White Cheddar Seasoning packaged in the following sized containers: 1. Net Wt. 1.2 oz (34…",
-      "firm": "JCB Flavors, LLC",
-      "product": "White Cheddar Seasoning packaged in the following sized containers: 1. Net Wt. 1.2 oz (34g) Distributed by: Fireworks Popcorn, Division of Jonco Industries, Milwaukee, WI 53218. Sold in a Fireworks P…",
-      "products": [
-        "White Cheddar Seasoning packaged in the following sized containers: 1. Net Wt. 1.2 oz (34g) Distributed by: Fireworks Popcorn, Division of Jonco Industries, Milwaukee, WI 53218. Sold in a Fireworks Popcorn Popping & Toppings gift set. 2. Net Wt. 1.6 oz. (45g) UPC 7 36659-26501 8. Distributed by: Fireworks Popcorn, Division of Jonco Industries, Milwaukee, WI 53218. Sold at West Allis Cheese and Sausage retail store. 3. Net Wt 0.7 oz (19g) Williams Sonoma, Not for Retail Sale. Sold in a Williams Sonoma branded Popcorn Sampler Gift Box.",
-        "Karlsburger Kitchens Garlic N Cheese Topper, Net Wt: 20 oz. (567g). Distributed by: Karlsburger Foods, Inc., Monticello, MN 55362",
-        "#003020 Sour Cream & Onion, Net Wt: 10 lbs. JCB Flavors, 1224 Clark St. Watertown, WI 53094.",
-        "#003740 Dill & Garlic Seasoning, Net Wt: 10 lbs. JCB Flavors, 1224 Clark St. Watertown, WI 53094.",
-        "#0083004 Ranch Seasoning, Net Wt: 25 lbs. JCB Flavors, 1224 Clark St. Watertown, WI 53094.",
-        "#007560 Fiery Hot Seasoning (Reduced Salt), Net Wt: 25 lbs. JCB Flavors, 1224 Clark Street, Watertown, WI 53094",
-        "#009530 Ranch Seasoning, Net Wt: 50 lbs. JCB Flavors, 1224 Clark Street, Watertown, WI 53094.",
-        "#800414/003729Butter Parsley, Net Wt: 50 lbs. JCB Flavors, 1224 Clark St. Watertown, WI 53094",
-        "Popping Topping, Sour Cream & Onion Flavored Popcorn Seasoning, Net Wt: 1.6oz. UPC 0 31851-01001 6. Distributed By: Butler's Pantry, 1224 Clark St. Watertown, WI 53094.",
-        "#007415 Fiery Hot, Net Wt: 25 lbs. JCB Flavors, 1224 Clark Street, Watertown, WI 53094."
-      ],
-      "productCount": 10,
-      "category": "human-food",
-      "foodKeys": [
-        "onions",
-        "herbs",
-        "pork",
-        "dairy"
-      ],
-      "reason": "Products may be potentially contaminated with Salmonella.",
-      "reasonCategory": "salmonella",
-      "classification": "Class I",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "KS, MN, NY, WI",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-01",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "E-Mail",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-05-29",
-      "processing": null,
-      "firmLocation": "Watertown, WI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98925",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=The%20Coffee%20Connexion%20Co.%2C%20Inc",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98925",
-      "title": "The Coffee Connexion Co., Inc recalls Aramark Cheese Sauce New & Improved, 25 lb., packaged in a tied poly bag and packed 2 bag…",
-      "firm": "The Coffee Connexion Co., Inc",
-      "product": "Aramark Cheese Sauce New & Improved, 25 lb., packaged in a tied poly bag and packed 2 bags per case, UPC 0039954925121",
-      "products": [
-        "Aramark Cheese Sauce New & Improved, 25 lb., packaged in a tied poly bag and packed 2 bags per case, UPC 0039954925121",
-        "1) Cheese Sauce Mix, 25.5 oz., packaged in a sealed poly bag and packed 12 bags per case, UPC 0399549125016 2) Cheese Sauce Mix, 25 lb., packaged in a tied poly bag and packed 1 bag per case, UPC 0039954924308 3) Creamier Cheese Sauce Mix, 25 lb., packaged in a tied poly bag and packed 2 bags per case, UPC 0039954924483",
-        "Alfredo Sauce, 3 lb. 7 oz., packaged in a sealed poly bag and packed 12 bags per case, UPC 0039954921963",
-        "Cold Prep Cream Sauce, 20 lb., packaged in a tied poly bag and packed 1 bag per case, UPC 0039954922458"
-      ],
-      "productCount": 4,
-      "category": "human-food",
-      "foodKeys": [
-        "dairy"
-      ],
-      "reason": "Product contains dry milk powder ingredient recalled by the supplier due to potential Salmonella contamination",
-      "reasonCategory": "salmonella",
-      "classification": "Class I",
-      "status": "Completed",
-      "states": null,
-      "distributionPattern": "AL, AR, AZ, CA, CO, FL, GA, IL, IN, IA, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, NE, NH, NJ, NM, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, WA, WI, WY",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-06",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-06-04",
-      "processing": null,
-      "firmLocation": "Lebanon, TN",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98908",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Market%20of%20Choice%20Inc",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98908",
-      "title": "Market of Choice Inc recalls Market of Choice Vegan Kale Caesar Salad, Net Wt. 9.5oz. Finished product is pre-packaged…",
-      "firm": "Market of Choice Inc",
-      "product": "Market of Choice Vegan Kale Caesar Salad, Net Wt. 9.5oz. Finished product is pre-packaged into a clear flexible plastic clamshell container. Label has UPC 0 210126 01099 3. Market Central Kitchen 115…",
-      "products": [
-        "Market of Choice Vegan Kale Caesar Salad, Net Wt. 9.5oz. Finished product is pre-packaged into a clear flexible plastic clamshell container. Label has UPC 0 210126 01099 3. Market Central Kitchen 1150 Owen Loop S. Eugene, OR 97402 The Za'atar spice, which contains Sesame Seeds, is mixed with chickpeas and packaged into a 2-oz plastic cup. This 2-oz. cup with chickpeas is then assembled into the finished product: a 9.5oz flexible clear plastic clamshell container of Vegan Kale Caesar Salad."
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [
-        "lettuce",
-        "seeds"
-      ],
-      "reason": "Undeclared allergen (sesame). Ingredients panel does not list sesame as sub-ingredient of Za'atar spice and Contains statement does not declare sesame.",
-      "reasonCategory": "undeclared-allergen",
-      "classification": "Class II",
-      "status": "Terminated",
-      "states": null,
-      "distributionPattern": "Only in OR state.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-04",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": "2026-06-08",
-      "closedYear": "2026",
-      "agencyUpdatedAt": "2026-06-03",
-      "processing": null,
-      "firmLocation": "Eugene, OR",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98923",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Nassar%20Investment%20Company%20LLC",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98923",
-      "title": "Nassar Investment Company LLC recalls Malazi 100% PURE SUDANESE SESAME Tahina G.W.: 1K.g UPC 6 224011 088244 Produced by: AL-MA…",
-      "firm": "Nassar Investment Company LLC",
-      "product": "Malazi 100% PURE SUDANESE SESAME Tahina G.W.: 1K.g UPC 6 224011 088244 Produced by: AL-MALAZ COMPANY FOR TRADE AND INDUSTRY Piece No. 110-250 acres area Badr City - Egypt",
-      "products": [
-        "Malazi 100% PURE SUDANESE SESAME Tahina G.W.: 1K.g UPC 6 224011 088244 Produced by: AL-MALAZ COMPANY FOR TRADE AND INDUSTRY Piece No. 110-250 acres area Badr City - Egypt"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [
-        "seeds"
-      ],
-      "reason": "Salmonella. The firm was notified by the North Carolina Department of Agriculture that the product test positive for Salmonella.",
-      "reasonCategory": "salmonella",
-      "classification": "Class I",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "Product was shipped to MI & NC.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-04-30",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Telephone",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-05-29",
-      "processing": null,
-      "firmLocation": "Morrisville, NC",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98943",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Jesse%20Withrow",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98943",
-      "title": "Jesse Withrow recalls My Wife's Slaw Jalapeno Heat, packaged in 8 oz. and 16 oz. glass mason jars with metal li…",
-      "firm": "Jesse Withrow",
-      "product": "My Wife's Slaw Jalapeno Heat, packaged in 8 oz. and 16 oz. glass mason jars with metal lids/bands, MyWifeslaw.web.app, Zanesville, Ohio. Ingredients: Cabbage, Sugar, Vinegar, Mustard, Carrots, Onion,…",
-      "products": [
-        "My Wife's Slaw Jalapeno Heat, packaged in 8 oz. and 16 oz. glass mason jars with metal lids/bands, MyWifeslaw.web.app, Zanesville, Ohio. Ingredients: Cabbage, Sugar, Vinegar, Mustard, Carrots, Onion, Bell Pepper, Salt, Black Pepper, Cayenne Pepper, Jalapenos, Red Pepper Flakes.",
-        "My Wife's Slaw, packaged in 8 oz. and 16 oz. glass mason jars with metal lids/bands, MyWifeslaw.web.app, Zanesville, Ohio. Ingredients: Cabbage, Sugar, Vinegar, Mustard, Carrots, Onion, Bell Pepper, Salt, Black Pepper, Cayenne Pepper."
-      ],
-      "productCount": 2,
-      "category": "human-food",
-      "foodKeys": [
-        "peppers",
-        "onions"
-      ],
-      "reason": "Product was manufactured and distributed without the benefit of an approved food establishment inspection and the required regulatory safety parameters could not be verified.",
-      "reasonCategory": "other",
-      "classification": "Class II",
-      "status": "Terminated",
-      "states": null,
-      "distributionPattern": "Products distributed directly to end consumers in AL, OH, TX, WV.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-05",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": "2026-06-26",
-      "closedYear": "2026",
-      "agencyUpdatedAt": "2026-06-02",
-      "processing": null,
-      "firmLocation": "Zanesville, OH",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:99015",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Creative%20Compounds%2C%20LLC",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99015",
-      "title": "Creative Compounds, LLC recalls Betaine Anhydrous, 2055kg, material packed in foil bags inside 15kg cardboard box Label r…",
-      "firm": "Creative Compounds, LLC",
-      "product": "Betaine Anhydrous, 2055kg, material packed in foil bags inside 15kg cardboard box Label reads in part as \"***BETAINE ANHYDROUS 98%***Distributed by Creative Compounds, LLC Scott City, Missouri USA 63…",
-      "products": [
-        "Betaine Anhydrous, 2055kg, material packed in foil bags inside 15kg cardboard box Label reads in part as \"***BETAINE ANHYDROUS 98%***Distributed by Creative Compounds, LLC Scott City, Missouri USA 63780***\""
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [],
-      "reason": "Possible carbon steel foreign material (1-2mm)",
-      "reasonCategory": "foreign-material",
-      "classification": "Class II",
-      "status": "Terminated",
-      "states": null,
-      "distributionPattern": "5 direct accounts located in FL, NJ, TX, GA and OR",
-      "relatedToOutbreak": null,
-      "recallDate": "2025-12-15",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "E-Mail",
-      "summary": null,
-      "closedDate": "2026-06-22",
-      "closedYear": "2026",
-      "agencyUpdatedAt": "2026-06-02",
-      "processing": null,
-      "firmLocation": "Scott City, MO",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98989",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Terra%20Medi%20LLC",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98989",
-      "title": "Terra Medi LLC recalls Hellas Meze Golden Smoked Whole Herring",
-      "firm": "Terra Medi LLC",
-      "product": "Hellas Meze Golden Smoked Whole Herring",
-      "products": [
-        "Hellas Meze Golden Smoked Whole Herring"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [],
-      "reason": "Un-eviscerated fish may be contaminated with clostridium botulinum",
-      "reasonCategory": "other-pathogen",
-      "classification": "Class I",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "MA, NJ, IL, and NY",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-13",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-06-02",
-      "processing": null,
-      "firmLocation": "Long Island City, NY",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98889",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=SECOND%20NATURE%20BRAND",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98889",
-      "title": "SECOND NATURE BRAND recalls SECOND NATURE KETO CRUNCH SMART MIX, 10-ounce retail-sized plastic pouch, UPC 07703401340…",
-      "firm": "SECOND NATURE BRAND",
-      "product": "SECOND NATURE KETO CRUNCH SMART MIX, 10-ounce retail-sized plastic pouch, UPC 077034013405, 6-10oz units per case.",
-      "products": [
-        "SECOND NATURE KETO CRUNCH SMART MIX, 10-ounce retail-sized plastic pouch, UPC 077034013405, 6-10oz units per case."
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [],
-      "reason": "The product may contain undeclared allergens (cashews, pistachios), and dried cherries.",
-      "reasonCategory": "undeclared-allergen",
-      "classification": "Class II",
-      "status": "Terminated",
-      "states": null,
-      "distributionPattern": "Distributed nationwide in retail stores and through online orders.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-01",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": "2026-08-21",
-      "closedYear": "2026",
-      "agencyUpdatedAt": "2026-06-03",
-      "processing": null,
-      "firmLocation": "Madison Heights, MI",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98949",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Guittard%20Chocolate%20Company",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98949",
-      "title": "Guittard Chocolate Company recalls 72% CACAO CHOCOLATE WITH DATE SUGAR WAFERS Ingredients: Cacao Beans, Organic Date Powder,…",
-      "firm": "Guittard Chocolate Company",
-      "product": "72% CACAO CHOCOLATE WITH DATE SUGAR WAFERS Ingredients: Cacao Beans, Organic Date Powder, Organic Cocoa Powder Net Wt 25lb (11.3kg) Made in the USA GUITTARD CHOCOLATE COMPANY Burlingame, CA 94010 Ite…",
-      "products": [
-        "72% CACAO CHOCOLATE WITH DATE SUGAR WAFERS Ingredients: Cacao Beans, Organic Date Powder, Organic Cocoa Powder Net Wt 25lb (11.3kg) Made in the USA GUITTARD CHOCOLATE COMPANY Burlingame, CA 94010 Item: 0568C25 UPC: 00071818367654"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [
-        "chocolate"
-      ],
-      "reason": "Potential contamination with Salmonella",
-      "reasonCategory": "salmonella",
-      "classification": "Class I",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "Domestic Distribution: OH. Foreign Distribution: N/A.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-05",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Letter",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-05-29",
-      "processing": null,
-      "firmLocation": "Burlingame, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:99030",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Hometown%20Food%20Company",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99030",
-      "title": "Hometown Food Company recalls Birch Benders Sweet Potato Pancake and Waffle Mix 12oz bag, UPC 8 1000156076 8, 6 bags pe…",
-      "firm": "Hometown Food Company",
-      "product": "Birch Benders Sweet Potato Pancake and Waffle Mix 12oz bag, UPC 8 1000156076 8, 6 bags per case",
-      "products": [
-        "Birch Benders Sweet Potato Pancake and Waffle Mix 12oz bag, UPC 8 1000156076 8, 6 bags per case"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [],
-      "reason": "Undeclared egg",
-      "reasonCategory": "undeclared-allergen",
-      "classification": "Class I",
-      "status": "Terminated",
-      "states": null,
-      "distributionPattern": "AZ CA CO CT FL GA IA IL IN KY MD NH NJ NV NY OR PA TX WA WI",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-20",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": "2026-07-31",
-      "closedYear": "2026",
-      "agencyUpdatedAt": "2026-06-02",
-      "processing": null,
-      "firmLocation": "Chicago, IL",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98857",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=The%20Brownie%20Baker%20Inc.",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98857",
-      "title": "The Brownie Baker Inc. recalls cafe nouria blueberry muffin NET WT. 6 OZ (170g) UPC: 811070033986",
-      "firm": "The Brownie Baker Inc.",
-      "product": "cafe nouria blueberry muffin NET WT. 6 OZ (170g) UPC: 811070033986",
-      "products": [
-        "cafe nouria blueberry muffin NET WT. 6 OZ (170g) UPC: 811070033986"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [
-        "berries",
-        "baked goods"
-      ],
-      "reason": "Undeclared walnuts",
-      "reasonCategory": "undeclared-allergen",
-      "classification": "Class II",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "U.S. Distribution: IL Foreign Distribution: Not Applicable",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-04-27",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Letter",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-05-29",
-      "processing": null,
-      "firmLocation": "Fresno, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:98887",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=The%20a2%20Milk%20Company",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98887",
-      "title": "The a2 Milk Company recalls a2 Platinum Premium infant formula Milk-based Powder with Iron 31.7oz (900g) Intended use…",
-      "firm": "The a2 Milk Company",
-      "product": "a2 Platinum Premium infant formula Milk-based Powder with Iron 31.7oz (900g) Intended use: infant formula (0 12 months). Condition: shelf stable product Type of packaging: metal tin with plastic dust…",
-      "products": [
-        "a2 Platinum Premium infant formula Milk-based Powder with Iron 31.7oz (900g) Intended use: infant formula (0 12 months). Condition: shelf stable product Type of packaging: metal tin with plastic dust cap. Net weight: 31.7oz (900gm). UPC: 813267020335. Firm name listed on label: The a2 Milk Company. 4909 Pearl East Circle, Suite 300 Boulder CO 80301."
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [
-        "dairy",
-        "infant formula"
-      ],
-      "reason": "Possible contamination with Cereulide toxin.",
-      "reasonCategory": "other-pathogen",
-      "classification": "Class I",
-      "status": "Terminated",
-      "states": null,
-      "distributionPattern": "The recalled product was distributed throughout the United States.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-01",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": "2026-07-31",
-      "closedYear": "2026",
-      "agencyUpdatedAt": "2026-05-29",
-      "processing": null,
-      "firmLocation": "Boulder, CO",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:99001",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=IQ%20PRODUCE%2C%20LLC",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99001",
-      "title": "IQ PRODUCE, LLC recalls Enoki Mushroom, Net Weight 150g; Product of Korea; Distributed by IQ Produce UPC: 8809316…",
-      "firm": "IQ PRODUCE, LLC",
-      "product": "Enoki Mushroom, Net Weight 150g; Product of Korea; Distributed by IQ Produce UPC: 8809316 814286",
-      "products": [
-        "Enoki Mushroom, Net Weight 150g; Product of Korea; Distributed by IQ Produce UPC: 8809316 814286"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [
-        "mushrooms"
-      ],
-      "reason": "Imported Enoki Mushrooms samples collected by Florida Department of Health tested positive for Listeria Monocytogenes.",
-      "reasonCategory": "listeria",
-      "classification": "Class I",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "Product was distributed to 3 California customers.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-14",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-06-02",
-      "processing": null,
-      "firmLocation": "Vernon, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:99070",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=University%20of%20California%20Health%20Milk%20Bank",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99070",
-      "title": "University of California Health Milk Bank recalls 001165: Standard Pasteurized Donor Human Milk; 100 mL bottles 001198: Pediatric Pasteuriz…",
-      "firm": "University of California Health Milk Bank",
-      "product": "001165: Standard Pasteurized Donor Human Milk; 100 mL bottles 001198: Pediatric Pasteurized Donor Human Milk; 200 mL bottles No UPC",
-      "products": [
-        "001165: Standard Pasteurized Donor Human Milk; 100 mL bottles 001198: Pediatric Pasteurized Donor Human Milk; 200 mL bottles No UPC"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [
-        "dairy"
-      ],
-      "reason": "Product is potentially contaminated with foreign material (plastic particles).",
-      "reasonCategory": "other-pathogen",
-      "classification": "Class II",
-      "status": "Terminated",
-      "states": null,
-      "distributionPattern": "Product is distributed to medical facilities and direct to consumer through medical facility. All facilities and consumers are located in CA.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-22",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
-      "summary": null,
-      "closedDate": "2026-07-10",
-      "closedYear": "2026",
-      "agencyUpdatedAt": "2026-06-16",
-      "processing": null,
-      "firmLocation": "San Diego, CA",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
-    },
-    {
-      "id": "fda:99057",
-      "agency": "FDA",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Wilco%20Peanut%20Co",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99057",
-      "title": "Wilco Peanut Co recalls Raw Shelled Peanuts (Runner Type) 2,200 lb. Poly Tote Bags and 50kg Poly Bags",
-      "firm": "Wilco Peanut Co",
-      "product": "Raw Shelled Peanuts (Runner Type) 2,200 lb. Poly Tote Bags and 50kg Poly Bags",
-      "products": [
-        "Raw Shelled Peanuts (Runner Type) 2,200 lb. Poly Tote Bags and 50kg Poly Bags"
-      ],
-      "productCount": 1,
-      "category": "human-food",
-      "foodKeys": [
-        "nuts"
-      ],
-      "reason": "Undeclared Tree Nut Allergen",
-      "reasonCategory": "undeclared-allergen",
-      "classification": "Class I",
-      "status": "Ongoing",
-      "states": null,
-      "distributionPattern": "Texas, California, Illinois, and New York. Two vessels in route to Korea.",
-      "relatedToOutbreak": null,
-      "recallDate": "2026-05-18",
-      "reportDate": "2026-06-10",
-      "initiatedBy": "Voluntary: Firm initiated",
-      "notificationMethod": "E-Mail",
-      "summary": null,
-      "closedDate": null,
-      "closedYear": null,
-      "agencyUpdatedAt": "2026-06-03",
-      "processing": null,
-      "firmLocation": "Pleasanton, TX",
-      "fetchedAt": "2026-10-08T23:24:57.352Z"
+      "fetchedAt": "2026-10-09T06:16:04.917Z"
     },
     {
       "id": "fsis:007-2026",
@@ -6921,7 +6133,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-05242026-01",
@@ -6960,7 +6172,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-05092026-01",
@@ -7001,7 +6213,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-05042026-01",
@@ -7042,7 +6254,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-04302026-01",
@@ -7078,7 +6290,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-04092026-01",
@@ -7124,7 +6336,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-04012026-01",
@@ -7162,7 +6374,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-03252026-01",
@@ -7207,7 +6419,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-03232026-01",
@@ -7251,7 +6463,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-03132026-01",
@@ -7291,7 +6503,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:005-2026-EXP",
@@ -7328,7 +6540,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:PHA-03012026-01",
@@ -7369,7 +6581,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:006-2026",
@@ -7406,7 +6618,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:005-2026",
@@ -7445,7 +6657,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:004-2026",
@@ -7489,7 +6701,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:003-2026",
@@ -7532,7 +6744,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:002-2026",
@@ -7571,7 +6783,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:001-2026",
@@ -7617,7 +6829,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:042-2025",
@@ -7661,7 +6873,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:041-2025",
@@ -7699,7 +6911,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:040-2025",
@@ -7742,7 +6954,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:039-2025",
@@ -7785,7 +6997,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:038-2025",
@@ -7823,7 +7035,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:037-2025",
@@ -7866,7 +7078,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:036-2025",
@@ -7906,7 +7118,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:035-2025",
@@ -7946,7 +7158,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:034-2025",
@@ -7988,7 +7200,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:033-2025",
@@ -8023,7 +7235,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     },
     {
       "id": "fsis:032-2025",
@@ -8058,7 +7270,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-10-08T23:25:01.006Z"
+      "fetchedAt": "2026-10-09T06:16:09.197Z"
     }
   ]
 }
