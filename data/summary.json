@@ -1,32 +1,16 @@
 {
-  "generatedAt": "2026-10-08T23:25:03.139Z",
+  "generatedAt": "2026-10-10T05:59:25.381Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-01",
-  "windowTo": "2026-10-08",
+  "windowFrom": "2026-10-03",
+  "windowTo": "2026-10-10",
   "paragraphs": [
-    "An outbreak of E. coli and Salmonella linked to alfalfa sprouts remains ongoing, with 76 cases and 6 hospitalizations reported across 16 states [1]. Two other outbreaks have ended: a Salmonella outbreak tied to jalapeños affected 488 people across 34 states [2], and an E. coli O145 outbreak from frozen blueberries sickened 17 people in 2 states [3].",
-    "A Class I recall for ineligible pork cracklings has been issued for 60-gram foil bags of \"YUPI GOLPE CON TODO SABOR BBQ\" mixed chips sold in Arizona, California, Colorado, Florida, Illinois, Kentucky, Minnesota, and Texas [4]. The USDA also issued a public health alert for 140-gram cans of \"GRACE READY TO EAT CHICKEN VIENNA SAUSAGES\" imported illegally from Jamaica and found in Alabama, Florida, Georgia, Maryland, and Texas [5].",
-    "Eden Brothers is recalling Calabrese Broccoli Seeds in 1-ounce and 1-pound packet sizes due to possible Salmonella contamination [6]. EAK Distribution recalled HOME GROWN Green Sprouting Calabrese Broccoli Seeds, 8 ounces, for the same reason [10]. Additional lots of frozen berry products have been recalled for potential E. coli O145 contamination, including Great Value Frozen Organic Triple Berry Blend and Blueberries, and Trader Joe's Frozen Organic Mixed Berry Blend [11]. Nature's Own Hawaiian Bread in 20 and 40 ounce bags has been recalled for undeclared milk [12], Saint Francis Apizza frozen pizzas for undeclared soy allergen [15], and Stewart's Shops ice cream in Heavenly Medley and Vanilla-Chocolate-Strawberry flavors (half-gallon size) for potential metal contamination [9]."
+    "An E. coli O145 outbreak linked to frozen blueberries is now over, according to an update this week [1]. The outbreak affected 17 people across two states, with six hospitalizations and no deaths [1].",
+    "Walker's Wine Juice LLC is recalling pumpkin juice due to possible botulism contamination, which can cause weakness, dizziness, double vision, and trouble speaking or swallowing [10]. Krasnyi Oktyabr Inc. is recalling Starfish Seafood Trio cold-smoked salmon, halibut, and trout packages because they may contain Listeria monocytogenes [4]. Oliva LLC is recalling Riad's Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus due to undeclared sesame, a serious concern for people with sesame allergies [3].",
+    "Two separate recalls involve sprouting seeds with possible Salmonella contamination: Gardeners Basics is recalling one-pound bags of Waltham 29 broccoli sprouting seeds [5], and Eden Brothers LLC is recalling Calabrese Broccoli Seeds in one-ounce and one-pound packet sizes [6]. LEASA Industries Co. Inc. of Miami is recalling alfalfa sprouts due to possible E. coli contamination [16]. The USDA also issued a public health alert for 140-gram cans of Grace Ready to Eat Chicken Vienna Sausages that were illegally imported from Jamaica and found in Alabama, Florida, Georgia, Maryland, and Texas [2]."
   ],
   "sources": [
     {
       "n": 1,
-      "kind": "outbreak",
-      "title": "E. coli and Salmonella Outbreak Linked to Alfalfa Sprouts",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/ecoli/outbreaks/alfalfa-sprouts-08-26/index.html",
-      "publishedAt": "2026-10-01"
-    },
-    {
-      "n": 2,
-      "kind": "outbreak",
-      "title": "Salmonella Outbreak Linked to Jalapeños",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/salmonella/outbreaks/javiana-08-26/index.html",
-      "publishedAt": "2026-10-02"
-    },
-    {
-      "n": 3,
       "kind": "outbreak",
       "title": "E. coli Outbreak Linked to Frozen Blueberries",
       "source": "CDC outbreak notice",
@@ -34,20 +18,36 @@
       "publishedAt": "2026-10-05"
     },
     {
-      "n": 4,
-      "kind": "recall",
-      "title": "Inexport Logistics LLC Recalls Ineligible Pork Cracklings Products Imported From The Republic of Colombia",
-      "source": "USDA FSIS recall notice",
-      "url": "https://www.fsis.usda.gov/recalls-alerts/inexport-logistics-llc-recalls-ineligible-pork-cracklings-products-imported-republic",
-      "publishedAt": "2026-10-02"
-    },
-    {
-      "n": 5,
+      "n": 2,
       "kind": "recall",
       "title": "FSIS Issues Public Health Alert for Ineligible Chicken Vienna-Style Sausage Products Illegally Imported From Jamaica",
       "source": "USDA FSIS recall notice",
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ineligible-chicken-vienna-style-sausage-products",
       "publishedAt": "2026-10-06"
+    },
+    {
+      "n": 3,
+      "kind": "agency-notice",
+      "title": "Oliva LLC Issues Allergy Alert on Undeclared Sesame in Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
+      "publishedAt": "2026-10-09T19:08:00.000Z"
+    },
+    {
+      "n": 4,
+      "kind": "agency-notice",
+      "title": "Krasnyi Oktyabr Inc. Recalls Starfish Seafood Trio Because of Possible Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
+      "publishedAt": "2026-10-09T18:41:00.000Z"
+    },
+    {
+      "n": 5,
+      "kind": "agency-notice",
+      "title": "Gardeners Basics Recalls Waltham 29 Broccoli Sprouting Seeds Due to Possible Salmonella Contamination",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination",
+      "publishedAt": "2026-10-08T23:51:00.000Z"
     },
     {
       "n": 6,
@@ -58,50 +58,26 @@
       "publishedAt": "2026-10-07T20:19:00.000Z"
     },
     {
-      "n": 9,
-      "kind": "agency-notice",
-      "title": "Stewart’s Shop Corp. Recalls Heavenly Medley and Vanilla-Chocolate-Strawberry Due to Possible Foreign Object",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign",
-      "publishedAt": "2026-10-02T22:02:00.000Z"
-    },
-    {
       "n": 10,
-      "kind": "agency-notice",
-      "title": "EAK Distribution LLC Recalls HOME GROWN Green Sprouting Calabrese Broccoli Seeds, 8 oz, Heirloom Because of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eak-distribution-llc-recalls-home-grown-green-sprouting-calabrese-broccoli-seeds-8-oz-heirloom",
-      "publishedAt": "2026-10-02T20:37:00.000Z"
+      "kind": "news",
+      "title": "Pumpkin juice recalled because of botulism risk",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/pumpkin-juice-recalled-because-of-botulism-risk/",
+      "publishedAt": "2026-10-09T23:51:37.000Z"
     },
     {
-      "n": 11,
-      "kind": "agency-notice",
-      "title": "Frutas y Hortalizas del Sur S.A. Expands Recalls to Include Additional Lots of Great Value Frozen Organic Triple Berry Blend 10 OZ, Great Value Frozen Organic Blueberries 10 OZ and One Lot of Trader Joe’s Frozen Organic Mixed Berry Blend 12 OZ Because of Potential Contamination with E. coli O145",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic",
-      "publishedAt": "2026-10-02T19:06:00.000Z"
-    },
-    {
-      "n": 12,
-      "kind": "agency-notice",
-      "title": "Flowers Foods Issues Recall of Nature’s Own Hawaiian Bread Due to Undeclared Milk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
-      "publishedAt": "2026-10-02T16:31:00.000Z"
-    },
-    {
-      "n": 15,
-      "kind": "agency-notice",
-      "title": "Saint Francis Apizza LLC Issues a Voluntary Recall of its Frozen Pizzas for Missing Sub Ingredients on the Label for Soy Which Includes Soybean Oil and Soy Lecithin, an Allergen",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
-      "publishedAt": "2026-10-01T04:00:00.000Z"
+      "n": 16,
+      "kind": "news",
+      "title": "Miami company recalls sprouts in Florida, New Hampshire because of E. coli contamination",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/miami-company-recalls-sprouts-in-florida-new-hampshire-because-of-e-coli-contamination/",
+      "publishedAt": "2026-10-09T01:42:50.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 7883,
-    "outputTokens": 909
+    "inputTokens": 6065,
+    "outputTokens": 751
   }
 }
