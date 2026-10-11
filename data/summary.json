@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-10T05:59:25.381Z",
+  "generatedAt": "2026-10-11T12:58:50.239Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-03",
-  "windowTo": "2026-10-10",
+  "windowFrom": "2026-10-04",
+  "windowTo": "2026-10-11",
   "paragraphs": [
-    "An E. coli O145 outbreak linked to frozen blueberries is now over, according to an update this week [1]. The outbreak affected 17 people across two states, with six hospitalizations and no deaths [1].",
-    "Walker's Wine Juice LLC is recalling pumpkin juice due to possible botulism contamination, which can cause weakness, dizziness, double vision, and trouble speaking or swallowing [10]. Krasnyi Oktyabr Inc. is recalling Starfish Seafood Trio cold-smoked salmon, halibut, and trout packages because they may contain Listeria monocytogenes [4]. Oliva LLC is recalling Riad's Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus due to undeclared sesame, a serious concern for people with sesame allergies [3].",
-    "Two separate recalls involve sprouting seeds with possible Salmonella contamination: Gardeners Basics is recalling one-pound bags of Waltham 29 broccoli sprouting seeds [5], and Eden Brothers LLC is recalling Calabrese Broccoli Seeds in one-ounce and one-pound packet sizes [6]. LEASA Industries Co. Inc. of Miami is recalling alfalfa sprouts due to possible E. coli contamination [16]. The USDA also issued a public health alert for 140-gram cans of Grace Ready to Eat Chicken Vienna Sausages that were illegally imported from Jamaica and found in Alabama, Florida, Georgia, Maryland, and Texas [2]."
+    "An E. coli O145 outbreak linked to frozen blueberries is now over [1]. The outbreak sickened 17 people across 2 states, with 6 hospitalizations and no deaths [1].",
+    "Krasnyi Oktyabr Inc. of Brooklyn, New York, is recalling Starfish Seafood Trio – Cold Smoked Salmon, Halibut, and Trout (8 oz packages) because the product has the potential to be contaminated with Listeria monocytogenes [4]. Gardeners Basics of Spanish Fork, Utah, is recalling one-pound bags of Waltham 29 Broccoli Sprouting Seeds because they may be contaminated with Salmonella [5]. Eden Brothers LLC is recalling Calabrese Broccoli Seeds in 1-ounce and 1-pound sizes (lots 1022067 and 1022068) due to possible Salmonella contamination [6]. Oliva LLC of Bethlehem, Connecticut, is recalling approximately 250 units of Riad's Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus because it may contain undeclared sesame [3].",
+    "The USDA issued a public health alert for 140-gram cans of Grace Ready to Eat Chicken Vienna Sausages illegally imported from Jamaica, found in Alabama, Florida, Georgia, Maryland, and Texas [2]."
   ],
   "sources": [
     {
@@ -56,28 +56,12 @@
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
       "publishedAt": "2026-10-07T20:19:00.000Z"
-    },
-    {
-      "n": 10,
-      "kind": "news",
-      "title": "Pumpkin juice recalled because of botulism risk",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/pumpkin-juice-recalled-because-of-botulism-risk/",
-      "publishedAt": "2026-10-09T23:51:37.000Z"
-    },
-    {
-      "n": 16,
-      "kind": "news",
-      "title": "Miami company recalls sprouts in Florida, New Hampshire because of E. coli contamination",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/miami-company-recalls-sprouts-in-florida-new-hampshire-because-of-e-coli-contamination/",
-      "publishedAt": "2026-10-09T01:42:50.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6065,
-    "outputTokens": 751
+    "inputTokens": 6104,
+    "outputTokens": 699
   }
 }
