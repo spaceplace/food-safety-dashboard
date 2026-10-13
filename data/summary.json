@@ -1,32 +1,56 @@
 {
-  "generatedAt": "2026-10-12T15:36:12.443Z",
+  "generatedAt": "2026-10-13T22:50:32.050Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-05",
-  "windowTo": "2026-10-12",
+  "windowFrom": "2026-10-06",
+  "windowTo": "2026-10-13",
   "paragraphs": [
-    "An E. coli outbreak linked to frozen blueberries is now over, the CDC reported [1]. The outbreak affected 17 people across 2 states, resulting in 6 hospitalizations and no deaths [1].",
-    "Krasnyi Oktyabr Inc. is recalling Starfish Seafood Trio—Cold Smoked Salmon, Halibut, and Trout (8 oz packages) because the product may be contaminated with Listeria monocytogenes [4]. Two broccoli sprouting seed companies have recalled their products due to possible Salmonella contamination: Gardeners Basics is recalling one-pound bags of Waltham 29 Broccoli Sprouting Seeds [5], and Eden Brothers LLC is recalling Calabrese Broccoli Seeds in 1-ounce and 1-pound packet sizes [6]. Oliva LLC is recalling approximately 250 units of Riad's Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus because they may contain undeclared sesame, which poses a risk to people with sesame allergies or sensitivities [3].",
-    "The USDA has issued a public health alert for 140-gram cans of Grace Ready to Eat Chicken Vienna Sausages that were illegally imported from Jamaica; the products were distributed in Alabama, Florida, Georgia, Maryland, and Texas [2]."
+    "Todd's Seeds Salad Sprouting Mixture containing broccoli, mustard, alfalfa, and cabbage is recalled nationwide for possible E. coli and Salmonella from contaminated alfalfa seed [1]. If you purchased this product from Amazon or direct consumer sales, do not use it [1]. Coco G's Courmet Flaming Cheddar Hots popcorn in 2.5 oz and 4.15 oz bags is recalled in Illinois and Wisconsin for potential Salmonella [2]. Salata Salad Kitchen Jalapeño Avocado Dressing in 12.5 fl. oz. bottles and gallon jugs is recalled in Georgia, North Carolina, and Texas due to possible Salmonella in supplier ingredients [3]. Starfish Seafood Trio cold smoked salmon, halibut, and trout in 8 oz packages is recalled because it may be contaminated with Listeria monocytogenes [11].",
+    "Sprouting seed recalls continue with potential Salmonella contamination [12][13]. Gardeners Basics Waltham 29 Broccoli Sprouting Seeds in one-pound bags may contain Salmonella [12]. Eden Brothers Calabrese Broccoli Seeds in 1 ounce and 1 pound sizes are recalled due to possible Salmonella [13]. Walker's Wine Juice LLC pumpkin juice is recalled for potential botulism contamination, which can cause serious illness [30].",
+    "Oliva LLC recalls Riad's Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus for undeclared sesame that could cause serious allergic reactions [10]. Lior brand Cinnamon Ground Seasoning contains elevated lead levels [4]. Kofinas Garlic Mediterranean Infused Extra Virgin Olive Oil contains unapproved garlic essential oil [5]."
   ],
   "sources": [
     {
       "n": 1,
-      "kind": "outbreak",
-      "title": "E. coli Outbreak Linked to Frozen Blueberries",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/ecoli/outbreaks/blueberries-07-26/index.html",
-      "publishedAt": "2026-10-05"
+      "kind": "recall",
+      "title": "TODD'S SEEDS LLC recalls Todd's Seeds Salad Sprouting Mixture - Broccoli, Mustard, Alfalfa and Cabbage, packaged i…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=TODD'S%20SEEDS%20LLC",
+      "publishedAt": "2026-10-07"
     },
     {
       "n": 2,
       "kind": "recall",
-      "title": "FSIS Issues Public Health Alert for Ineligible Chicken Vienna-Style Sausage Products Illegally Imported From Jamaica",
-      "source": "USDA FSIS recall notice",
-      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ineligible-chicken-vienna-style-sausage-products",
-      "publishedAt": "2026-10-06"
+      "title": "Coco G's Snack Foods, Inc. recalls Coco G's Courmet Flaming Cheddar Hots, Spicy Cheddar Cheese Popcorn. Packaged in the foll…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Coco%20G's%20Snack%20Foods%2C%20Inc.",
+      "publishedAt": "2026-10-07"
     },
     {
       "n": 3,
+      "kind": "recall",
+      "title": "Salata Dressings, LLC recalls Salata Salad Kitchen Jalapen¿o Avocado Dressing. Keep Refrigerated. Packaged in the follo…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Salata%20Dressings%2C%20LLC",
+      "publishedAt": "2026-10-07"
+    },
+    {
+      "n": 4,
+      "kind": "recall",
+      "title": "Galil Importing Corp recalls Lior brand Cinnamon Ground Seasoning; 90g transparent plastic container; UPC 794711005484.",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Galil%20Importing%20Corp",
+      "publishedAt": "2026-10-07"
+    },
+    {
+      "n": 5,
+      "kind": "recall",
+      "title": "LMSI, LLC recalls Kofinas Garlic Mediterranean Infused Extra Virgin Olive Oil, packaged in 3.4 fl oz (100mL…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=LMSI%2C%20LLC",
+      "publishedAt": "2026-10-07"
+    },
+    {
+      "n": 10,
       "kind": "agency-notice",
       "title": "Oliva LLC Issues Allergy Alert on Undeclared Sesame in Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
       "source": "FDA recall notice",
@@ -34,7 +58,7 @@
       "publishedAt": "2026-10-09T19:08:00.000Z"
     },
     {
-      "n": 4,
+      "n": 11,
       "kind": "agency-notice",
       "title": "Krasnyi Oktyabr Inc. Recalls Starfish Seafood Trio Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -42,7 +66,7 @@
       "publishedAt": "2026-10-09T18:41:00.000Z"
     },
     {
-      "n": 5,
+      "n": 12,
       "kind": "agency-notice",
       "title": "Gardeners Basics Recalls Waltham 29 Broccoli Sprouting Seeds Due to Possible Salmonella Contamination",
       "source": "FDA recall notice",
@@ -50,18 +74,26 @@
       "publishedAt": "2026-10-08T23:51:00.000Z"
     },
     {
-      "n": 6,
+      "n": 13,
       "kind": "agency-notice",
       "title": "Eden Brothers Recalls Calabrese Broccoli Seeds Due to Possible Salmonella Contamination",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
       "publishedAt": "2026-10-07T20:19:00.000Z"
+    },
+    {
+      "n": 30,
+      "kind": "news",
+      "title": "Pumpkin juice recalled because of botulism risk",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/pumpkin-juice-recalled-because-of-botulism-risk/",
+      "publishedAt": "2026-10-09T23:51:37.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 6006,
-    "outputTokens": 671
+    "inputTokens": 8361,
+    "outputTokens": 901
   }
 }
