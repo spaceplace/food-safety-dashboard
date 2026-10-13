@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-12T15:35:48.859Z",
+  "generatedAt": "2026-10-13T00:46:47.199Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-12T15:35:48.935Z",
+      "fetchedAt": "2026-10-13T00:46:47.274Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,16 +15,16 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-12T15:36:06.197Z",
+      "fetchedAt": "2026-10-13T00:47:15.278Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-09-30",
-      "itemCount": 2660
+      "upstreamUpdated": "2026-10-07",
+      "itemCount": 2668
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-12T15:36:10.584Z",
+      "fetchedAt": "2026-10-13T00:47:18.763Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-08",
@@ -32,6 +32,662 @@
     }
   },
   "items": [
+    {
+      "id": "fda:98954",
+      "slug": "fda-98954",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "98954",
+      "title": "Coco G's Snack Foods, Inc. recalls Coco G's Courmet Flaming Cheddar Hots, Spicy Cheddar Cheese Popcorn. Packaged in the foll…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Coco%20G's%20Snack%20Foods%2C%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98954",
+      "firm": "Coco G's Snack Foods, Inc.",
+      "product": "Coco G's Courmet Flaming Cheddar Hots, Spicy Cheddar Cheese Popcorn. Packaged in the following sized plastic bags: 1. 2.5 oz (81g), UPC 6 94161-25911 9. 2. 4.15 oz (118g), UPC 6 94161-38911 3. 3. 5 o…",
+      "productCategory": "dairy",
+      "foodKeys": [
+        "dairy"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "IL",
+          "WI"
+        ],
+        "stateCount": 2,
+        "international": false,
+        "description": "IL, WI"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-05-05",
+        "reported": "2026-10-07",
+        "updated": "2026-09-29",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential Salmonella contamination.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-13T00:46:47.199Z",
+        "lastChanged": "2026-10-13T00:46:47.199Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99602",
+      "slug": "fda-99602",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99602",
+      "title": "Salata Dressings, LLC recalls Salata Salad Kitchen Jalapen¿o Avocado Dressing. Keep Refrigerated. Packaged in the follo…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Salata%20Dressings%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99602",
+      "firm": "Salata Dressings, LLC",
+      "product": "Salata Salad Kitchen Jalapen¿o Avocado Dressing. Keep Refrigerated. Packaged in the following sizes: 1. 12.5 fl. oz. (369 mL), UPC 8 50043-70646 5. 2. 1 gallon jugs, 4 per shipping case. Made by Sala…",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "lettuce",
+        "avocado"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "GA",
+          "NC",
+          "TX"
+        ],
+        "stateCount": 3,
+        "international": false,
+        "description": "GA, NC, TX"
+      },
+      "rootCause": {
+        "category": "supplier-ingredient",
+        "basis": "inferred",
+        "detail": "his recall was initiated due to potential Salmonella contamination in diced jalape¿no received from the supplier"
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-06",
+        "reported": "2026-10-07",
+        "updated": "2026-09-29",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "This recall was initiated due to potential Salmonella contamination in diced jalape¿no received from the supplier",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography",
+        "rootCause"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-13T00:46:47.199Z",
+        "lastChanged": "2026-10-13T00:46:47.199Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99735",
+      "slug": "fda-99735",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99735",
+      "title": "Admiral Beverage Corporation recalls 7up Tropical beverage, shelf stable, 12oz can in a 12pk wrap, labeled as 7 up Tropical Be…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Admiral%20Beverage%20Corporation",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99735",
+      "firm": "Admiral Beverage Corporation",
+      "product": "7up Tropical beverage, shelf stable, 12oz can in a 12pk wrap, labeled as 7 up Tropical Beverage containing cans that are labeled as 7Up Tropical Zero Sugar which contain full sugar soda. 12 fl oz, UP…",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "peppers",
+        "ready-to-eat meals",
+        "beverages"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "UT"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "Product was distributed to Utah."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "closed",
+        "agency": "Completed"
+      },
+      "dates": {
+        "event": "2026-08-20",
+        "reported": "2026-10-07",
+        "updated": "2026-09-29",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product may contain undeclared sugar.",
+      "missing": [
+        "closedDate",
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-13T00:46:47.199Z",
+        "lastChanged": "2026-10-13T00:46:47.199Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99805",
+      "slug": "fda-99805",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99805",
+      "title": "LMSI, LLC recalls Kofinas Garlic Mediterranean Infused Extra Virgin Olive Oil, packaged in 3.4 fl oz (100mL…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=LMSI%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99805",
+      "firm": "LMSI, LLC",
+      "product": "Kofinas Garlic Mediterranean Infused Extra Virgin Olive Oil, packaged in 3.4 fl oz (100mL), 8.5 fl oz (250mL), and 17 fl oz (500mL) glass bottles, UPC: 799475717185 (on 8.5 fl oz/250mL), 799475717178…",
+      "productCategory": "produce",
+      "foodKeys": [],
+      "hazardType": "chemical",
+      "agents": [
+        {
+          "name": "Unapproved additive or color",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CA",
+          "FL",
+          "IL",
+          "KY",
+          "MO",
+          "NC",
+          "OH",
+          "OR",
+          "TN",
+          "TX",
+          "VA",
+          "WA",
+          "WV"
+        ],
+        "stateCount": 13,
+        "international": false,
+        "description": "Distributed directly to consumers in CA, FL, IL, KY, MO, NC, OH, OR, TN, TX, VA, WA, and WV"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Press Release"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-29",
+        "reported": "2026-10-07",
+        "updated": "2026-09-29",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product contains garlic essential oil not approved for culinary use",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-13T00:46:47.199Z",
+        "lastChanged": "2026-10-13T00:46:47.199Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99887",
+      "slug": "fda-99887",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99887",
+      "title": "TODD'S SEEDS LLC recalls Todd's Seeds Salad Sprouting Mixture - Broccoli, Mustard, Alfalfa and Cabbage, packaged i…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=TODD'S%20SEEDS%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99887",
+      "firm": "TODD'S SEEDS LLC",
+      "product": "Todd's Seeds Salad Sprouting Mixture - Broccoli, Mustard, Alfalfa and Cabbage, packaged in heat-sealed resealable bags in the following sizes: 1/4 lb., 1/2 lb., and 1 lb.",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "lettuce",
+        "seeds"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        },
+        {
+          "name": "E. coli (STEC)",
+          "group": "organism"
+        },
+        {
+          "name": "Fish",
+          "group": "allergen"
+        },
+        {
+          "name": "Mustard",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Nationwide; through Amazon or direct to consumer"
+      },
+      "rootCause": {
+        "category": "supplier-ingredient",
+        "basis": "inferred",
+        "detail": "roducts contain alfalfa seed recalled by the supplier and may be contaminated with E."
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-11",
+        "reported": "2026-10-07",
+        "updated": "2026-09-30",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Products contain alfalfa seed recalled by the supplier and may be contaminated with E. coli and/or Salmonella (downstream recall)",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography",
+        "rootCause"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-13T00:46:47.199Z",
+        "lastChanged": "2026-10-13T00:46:47.199Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99929",
+      "slug": "fda-99929",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99929",
+      "title": "TOJI CO. recalls Cloud Cafe branded Collagen Milk; Strawberry Milk Zero; Caffeine Free; 10pc/box",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=TOJI%20CO.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99929",
+      "firm": "TOJI CO.",
+      "product": "Cloud Cafe branded Collagen Milk; Strawberry Milk Zero; Caffeine Free; 10pc/box",
+      "productCategory": "dairy",
+      "foodKeys": [
+        "berries",
+        "dairy"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Milk",
+          "group": "allergen"
+        },
+        {
+          "name": "Fish",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "unspecified",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Product was sold to a single distributor located in Los Angeles."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-15",
+        "reported": "2026-10-07",
+        "updated": "2026-09-29",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared allergen ingredient (fish)",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-13T00:46:47.199Z",
+        "lastChanged": "2026-10-13T00:46:47.199Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99954",
+      "slug": "fda-99954",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99954",
+      "title": "Galil Importing Corp recalls Lior brand Cinnamon Ground Seasoning; 90g transparent plastic container; UPC 794711005484.",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Galil%20Importing%20Corp",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99954",
+      "firm": "Galil Importing Corp",
+      "product": "Lior brand Cinnamon Ground Seasoning; 90g transparent plastic container; UPC 794711005484.",
+      "productCategory": "condiments-and-spices",
+      "foodKeys": [],
+      "hazardType": "physical",
+      "agents": [
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        },
+        {
+          "name": "Lead",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "FL",
+          "IL",
+          "NJ",
+          "NY",
+          "PA",
+          "TX"
+        ],
+        "stateCount": 6,
+        "international": false,
+        "description": "NY, NJ, PA, TX, FL, IL"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Press Release"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-24",
+        "reported": "2026-10-07",
+        "updated": "2026-09-29",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product contains elevated levels of lead.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-13T00:46:47.199Z",
+        "lastChanged": "2026-10-13T00:46:47.199Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99962",
+      "slug": "fda-99962",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99962",
+      "title": "SLT Foods Inc. recalls Khazana The Treasure Spice Magic Fennel Candy, 5 lbs., Poly Plastic Bag, 4 per case",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=SLT%20Foods%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99962",
+      "firm": "SLT Foods Inc.",
+      "product": "Khazana The Treasure Spice Magic Fennel Candy, 5 lbs., Poly Plastic Bag, 4 per case",
+      "productCategory": "snacks-and-confectionery",
+      "foodKeys": [
+        "chocolate"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        },
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        },
+        {
+          "name": "Unapproved additive or color",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "NY"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "The product was distributed to: NY"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-07-10",
+        "reported": "2026-10-07",
+        "updated": "2026-10-01",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared Yellow 5 & 6, Red 3, and Blue 1",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-13T00:46:47.199Z",
+        "lastChanged": "2026-10-13T00:46:47.199Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fsis:PHA-10062026-01",
       "slug": "fsis-pha-10062026-01",
