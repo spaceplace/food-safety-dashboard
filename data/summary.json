@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-10-15T04:48:38.619Z",
+  "generatedAt": "2026-10-16T11:31:35.413Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-08",
-  "windowTo": "2026-10-15",
+  "windowFrom": "2026-10-09",
+  "windowTo": "2026-10-16",
   "paragraphs": [
-    "Oliva LLC is recalling approximately 250 units of Riad's Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus because they may contain undeclared sesame, which poses a serious or life-threatening risk to people with sesame allergies [4]. Pan Pepin Inc. is recalling certain lots of Para Bien Al Grano due to undeclared sesame [2]. Krasnyi Oktyabr Inc. of Brooklyn, New York is recalling Starfish Seafood Trio – Cold Smoked Salmon, Halibut, and Trout (8 oz packages) because the product may be contaminated with Listeria monocytogenes, which can cause serious and sometimes fatal infections [5]. Gardeners Basics of Spanish Fork, Utah is recalling one-pound bags of Waltham 29 Broccoli Sprouting Seeds due to possible Salmonella contamination, which can cause serious infections in young children, elderly people, and others with weakened immune systems [6]."
+    "Family Farmstead Dairy of Worcester, NY is recalling raw mild cheddar cheese due to potential E. coli O157:H7 contamination [1][10]. E. coli O157:H7 causes diarrheal illness often with bloody stools [1]. The cheese was distributed to grocers in New York and New Jersey [10].",
+    "Oliva LLC is recalling Riad's Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus due to undeclared sesame [5]. People with sesame allergies or severe sensitivity run the risk of serious or life-threatening allergic reactions [5]. Pan Pepín Inc. is also recalling certain lots of Para Bien Al Grano because it contains undeclared sesame [3]. Additionally, Krasnyi Oktyabr Inc. of Brooklyn, New York is recalling STARFISH SEAFOOD PREMIUM COLD SMOKED NORWEGIAN SALMON SLICED (227g/8oz) packages due to potential Listeria monocytogenes contamination, which can cause serious and sometimes fatal infections [6].",
+    "An E. coli outbreak linked to chicken wraps is growing, though the FDA and USDA have not revealed the brand [7]. The USDA is expanding testing for Listeria in deli meat processors following changes to oversight of ready-to-eat facilities [18]."
   ],
   "sources": [
     {
-      "n": 2,
+      "n": 1,
+      "kind": "agency-notice",
+      "title": "Family Farmstead Dairy Announces Recall of Raw Mild Cheddar Cheese Due to Potential E. coli O157:H7 Contamination",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o157h7",
+      "publishedAt": "2026-10-15T20:04:00.000Z"
+    },
+    {
+      "n": 3,
       "kind": "agency-notice",
       "title": "Pan Pepin Inc. Issues Allergy Alert of Para Bien Al Grano Due to Undeclared Sesame",
       "source": "FDA recall notice",
@@ -16,7 +26,7 @@
       "publishedAt": "2026-10-13T18:07:00.000Z"
     },
     {
-      "n": 4,
+      "n": 5,
       "kind": "agency-notice",
       "title": "Oliva LLC Issues Allergy Alert on Undeclared Sesame in Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
       "source": "FDA recall notice",
@@ -24,26 +34,42 @@
       "publishedAt": "2026-10-09T19:08:00.000Z"
     },
     {
-      "n": 5,
+      "n": 6,
       "kind": "agency-notice",
-      "title": "Krasnyi Oktyabr Inc. Recalls Starfish Seafood Trio Because of Possible Health Risk",
+      "title": "Krasnyi Oktyabr Inc. Recalls Starfish Seafood Premium Cold Smoked Norwegian Salmon Sliced (227g/8oz) Because of Possible Health Risk",
       "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
       "publishedAt": "2026-10-09T18:41:00.000Z"
     },
     {
-      "n": 6,
-      "kind": "agency-notice",
-      "title": "Gardeners Basics Recalls Waltham 29 Broccoli Sprouting Seeds Due to Possible Salmonella Contamination",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination",
-      "publishedAt": "2026-10-08T23:51:00.000Z"
+      "n": 7,
+      "kind": "news",
+      "title": "Patient count in E. coli outbreak traced to chicken wraps growing",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/patient-count-in-e-coli-outbreak-traced-to-chicken-wraps-growing/",
+      "publishedAt": "2026-10-16T04:05:00.000Z"
+    },
+    {
+      "n": 10,
+      "kind": "news",
+      "title": "Raw milk cheese recalled after testing finds E. coli",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/raw-milk-cheese-recalled-after-testing-finds-e-coli/",
+      "publishedAt": "2026-10-16T02:19:11.000Z"
+    },
+    {
+      "n": 18,
+      "kind": "news",
+      "title": "USDA to expand testing for deli meat processors",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/usda-to-expand-testing-at-deli-counters/",
+      "publishedAt": "2026-10-13T04:05:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 5394,
-    "outputTokens": 540
+    "inputTokens": 5305,
+    "outputTokens": 657
   }
 }
