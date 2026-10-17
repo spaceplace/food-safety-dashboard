@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-16T11:31:35.413Z",
+  "generatedAt": "2026-10-17T15:41:08.558Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-09",
-  "windowTo": "2026-10-16",
+  "windowFrom": "2026-10-10",
+  "windowTo": "2026-10-17",
   "paragraphs": [
-    "Family Farmstead Dairy of Worcester, NY is recalling raw mild cheddar cheese due to potential E. coli O157:H7 contamination [1][10]. E. coli O157:H7 causes diarrheal illness often with bloody stools [1]. The cheese was distributed to grocers in New York and New Jersey [10].",
-    "Oliva LLC is recalling Riad's Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus due to undeclared sesame [5]. People with sesame allergies or severe sensitivity run the risk of serious or life-threatening allergic reactions [5]. Pan Pepín Inc. is also recalling certain lots of Para Bien Al Grano because it contains undeclared sesame [3]. Additionally, Krasnyi Oktyabr Inc. of Brooklyn, New York is recalling STARFISH SEAFOOD PREMIUM COLD SMOKED NORWEGIAN SALMON SLICED (227g/8oz) packages due to potential Listeria monocytogenes contamination, which can cause serious and sometimes fatal infections [6].",
-    "An E. coli outbreak linked to chicken wraps is growing, though the FDA and USDA have not revealed the brand [7]. The USDA is expanding testing for Listeria in deli meat processors following changes to oversight of ready-to-eat facilities [18]."
+    "Family Farmstead Dairy of Worcester, NY is recalling raw mild cheddar cheese that may be contaminated with E. coli O157:H7, which causes diarrheal illness often with bloody stools [1][10]. The product was distributed to grocers in New York and New Jersey [10]. The cheese is packaged in clear plastic with green, red, and white labeling [10].",
+    "Pan Pepín Inc. is recalling certain lots of Para Bien Al Grano due to undeclared sesame, which is an allergen [3]. People with sesame allergies should not consume this product [3].",
+    "An E. coli outbreak linked to chicken wraps is growing [7]. The FDA and USDA have not revealed the brand of the wraps [7]."
   ],
   "sources": [
     {
       "n": 1,
       "kind": "agency-notice",
-      "title": "Family Farmstead Dairy Announces Recall of Raw Mild Cheddar Cheese Due to Potential E. coli O157:H7 Contamination",
+      "title": "Family Farmstead Dairy Announces Recall of Raw Mild Cheddar Cheese Due to Potential E. coli O26:H11 and O45:H2 Contamination",
       "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o157h7",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and",
       "publishedAt": "2026-10-15T20:04:00.000Z"
     },
     {
@@ -24,22 +24,6 @@
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-issues-allergy-alert-para-bien-al-grano-due-undeclared-sesame",
       "publishedAt": "2026-10-13T18:07:00.000Z"
-    },
-    {
-      "n": 5,
-      "kind": "agency-notice",
-      "title": "Oliva LLC Issues Allergy Alert on Undeclared Sesame in Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
-      "publishedAt": "2026-10-09T19:08:00.000Z"
-    },
-    {
-      "n": 6,
-      "kind": "agency-notice",
-      "title": "Krasnyi Oktyabr Inc. Recalls Starfish Seafood Premium Cold Smoked Norwegian Salmon Sliced (227g/8oz) Because of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
-      "publishedAt": "2026-10-09T18:41:00.000Z"
     },
     {
       "n": 7,
@@ -56,20 +40,12 @@
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/10/raw-milk-cheese-recalled-after-testing-finds-e-coli/",
       "publishedAt": "2026-10-16T02:19:11.000Z"
-    },
-    {
-      "n": 18,
-      "kind": "news",
-      "title": "USDA to expand testing for deli meat processors",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/usda-to-expand-testing-at-deli-counters/",
-      "publishedAt": "2026-10-13T04:05:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 5305,
-    "outputTokens": 657
+    "inputTokens": 4522,
+    "outputTokens": 369
   }
 }
