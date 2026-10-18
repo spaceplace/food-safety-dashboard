@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-18T04:40:26.263Z",
+  "generatedAt": "2026-10-18T11:15:25.827Z",
   "entries": [
+    {
+      "at": "2026-10-18T11:15:25.827Z",
+      "change": "added",
+      "id": "fsis:026-2026",
+      "slug": "fsis-026-2026",
+      "title": "Kayem Foods Inc. Recalls Meat and Poultry Products Due to Possible Temperature Abuse",
+      "source": "FSIS",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-10-13T00:46:47.199Z",
       "change": "added",

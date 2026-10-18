@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-18T04:40:26.263Z",
+  "generatedAt": "2026-10-18T11:15:25.827Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-18T04:40:26.366Z",
+      "fetchedAt": "2026-10-18T11:15:25.906Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-18T04:40:47.662Z",
+      "fetchedAt": "2026-10-18T11:15:52.777Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-07",
@@ -24,14 +24,88 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-18T04:40:52.808Z",
+      "fetchedAt": "2026-10-18T11:16:09.748Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-10-08",
-      "itemCount": 499
+      "upstreamUpdated": "2026-10-17",
+      "itemCount": 500
     }
   },
   "items": [
+    {
+      "id": "fsis:026-2026",
+      "slug": "fsis-026-2026",
+      "kind": "recall",
+      "source": "FSIS",
+      "sourceId": "026-2026",
+      "title": "Kayem Foods Inc. Recalls Meat and Poultry Products Due to Possible Temperature Abuse",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/kayem-foods-inc--recalls-meat-and-poultry-products-due-possible-temperature-abuse",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "Kayem Foods Inc.",
+      "product": "Full product list available in PDF format - Various RTE meat and poultry products bearing “EST. M/P 7839,” “EST. P 20935A” and “EST. M 9520” inside the USDA mark of inspection.",
+      "productCategory": "poultry",
+      "foodKeys": [
+        "poultry"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Unspecified microbial",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "unspecified",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": null
+      },
+      "rootCause": {
+        "category": "process-deviation",
+        "basis": "agency-coded",
+        "detail": "Processing Defect"
+      },
+      "detection": {
+        "category": "consumer-complaint",
+        "basis": "inferred",
+        "detail": "The problem was discovered after the firm received a retail customer complaint regarding warm product temperatures at point of delivery on October 1, 2026."
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "FSIS recall (all FSIS recalls are voluntary)"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Active Recall"
+      },
+      "dates": {
+        "event": "2026-10-17",
+        "reported": "2026-10-17",
+        "updated": "2026-10-17",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Processing Defect",
+      "missing": [
+        "distribution"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-18T11:15:25.827Z",
+        "lastChanged": "2026-10-18T11:15:25.827Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fda:98954",
       "slug": "fda-98954",
