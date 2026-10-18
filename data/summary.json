@@ -42,8 +42,8 @@
       "publishedAt": "2026-10-16T02:19:11.000Z"
     }
   ],
-  "status": "cached",
-  "note": null,
+  "status": "failed",
+  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"The products bear establishment numbers \"EST.\"; paragraph 1: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 1: uncited sentence: \"P 20935A,\" and \"EST.\"",
   "usage": {
     "inputTokens": 4522,
     "outputTokens": 369
