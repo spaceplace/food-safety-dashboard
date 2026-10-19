@@ -1,16 +1,32 @@
 {
-  "generatedAt": "2026-10-17T15:41:08.558Z",
+  "generatedAt": "2026-10-19T13:28:04.874Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-10",
-  "windowTo": "2026-10-17",
+  "windowFrom": "2026-10-12",
+  "windowTo": "2026-10-19",
   "paragraphs": [
-    "Family Farmstead Dairy of Worcester, NY is recalling raw mild cheddar cheese that may be contaminated with E. coli O157:H7, which causes diarrheal illness often with bloody stools [1][10]. The product was distributed to grocers in New York and New Jersey [10]. The cheese is packaged in clear plastic with green, red, and white labeling [10].",
-    "Pan Pepín Inc. is recalling certain lots of Para Bien Al Grano due to undeclared sesame, which is an allergen [3]. People with sesame allergies should not consume this product [3].",
-    "An E. coli outbreak linked to chicken wraps is growing [7]. The FDA and USDA have not revealed the brand of the wraps [7]."
+    "Kayem Foods Inc. is recalling more than 1.5 million pounds of ready-to-eat meat and poultry products, including hot dogs, bacon, sausage, and turkey breasts, due to possible temperature abuse during storage [1][14]. Consumers should not eat these products and should discard them or return them to the store [14].",
+    "Lidl US is recalling Gelatelli Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces (16 FL OZ, UPC 4 0564897 22458, Lot 085261, Best By MAR/26/2028) because it may be contaminated with Listeria monocytogenes [2][11]. The product was distributed to all Lidl US retail locations between July 19 and October 15, 2026 [11].",
+    "Family Farmstead Dairy is recalling raw mild cheddar cheese that may be contaminated with E. coli O157:H7 bacteria, which causes diarrheal illness often with bloody stools [3][19]. The affected cheese was distributed to grocers in New York and New Jersey [19]. Pan Pepin Inc. is also recalling certain lots of Para Bien Al Grano due to undeclared sesame, an allergen [5]."
   ],
   "sources": [
     {
       "n": 1,
+      "kind": "recall",
+      "title": "Kayem Foods Inc. Recalls Meat and Poultry Products Due to Possible Temperature Abuse",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/kayem-foods-inc--recalls-meat-and-poultry-products-due-possible-temperature-abuse",
+      "publishedAt": "2026-10-17"
+    },
+    {
+      "n": 2,
+      "kind": "agency-notice",
+      "title": "Lidl US Recalls Gelatelli Coffee & Vanilla Gelato Due to Possible Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk",
+      "publishedAt": "2026-10-16T04:00:00.000Z"
+    },
+    {
+      "n": 3,
       "kind": "agency-notice",
       "title": "Family Farmstead Dairy Announces Recall of Raw Mild Cheddar Cheese Due to Potential E. coli O26:H11 and O45:H2 Contamination",
       "source": "FDA recall notice",
@@ -18,7 +34,7 @@
       "publishedAt": "2026-10-15T20:04:00.000Z"
     },
     {
-      "n": 3,
+      "n": 5,
       "kind": "agency-notice",
       "title": "Pan Pepin Inc. Issues Allergy Alert of Para Bien Al Grano Due to Undeclared Sesame",
       "source": "FDA recall notice",
@@ -26,15 +42,23 @@
       "publishedAt": "2026-10-13T18:07:00.000Z"
     },
     {
-      "n": 7,
+      "n": 11,
       "kind": "news",
-      "title": "Patient count in E. coli outbreak traced to chicken wraps growing",
+      "title": "Lidl recalls gelato because of Listeria contamination",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/patient-count-in-e-coli-outbreak-traced-to-chicken-wraps-growing/",
-      "publishedAt": "2026-10-16T04:05:00.000Z"
+      "url": "https://www.foodsafetynews.com/2026/10/lidl-recalls-gelato-because-of-listeria-contamination/",
+      "publishedAt": "2026-10-18T22:19:57.000Z"
     },
     {
-      "n": 10,
+      "n": 14,
+      "kind": "news",
+      "title": "More than 1.5 million pounds of hot dogs, bacon, sausage, turkey breasts and more meat products of various brands recalled",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/more-than-1-5-million-pounds-of-hot-dogs-bacon-sausage-turkey-breasts-and-more-meat-products-of-various-brands-recalled/",
+      "publishedAt": "2026-10-17T23:10:40.000Z"
+    },
+    {
+      "n": 19,
       "kind": "news",
       "title": "Raw milk cheese recalled after testing finds E. coli",
       "source": "Food Safety News",
@@ -42,10 +66,10 @@
       "publishedAt": "2026-10-16T02:19:11.000Z"
     }
   ],
-  "status": "failed",
-  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"The recalled products include various brands of bacon, hot dogs, sausage, turkey\"; paragraph 1: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 1: uncited sentence: \"P 20935A,\" and \"EST.\"",
+  "status": "ok",
+  "note": null,
   "usage": {
-    "inputTokens": 4522,
-    "outputTokens": 369
+    "inputTokens": 5136,
+    "outputTokens": 636
   }
 }
