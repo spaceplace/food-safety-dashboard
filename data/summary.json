@@ -43,7 +43,7 @@
     }
   ],
   "status": "failed",
-  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"The products bearing \"EST.\"; paragraph 1: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 1: uncited sentence: \"P 20935A,\" and \"EST.\"",
+  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"The recalled products include various brands of bacon, hot dogs, sausage, turkey\"; paragraph 1: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 1: uncited sentence: \"P 20935A,\" and \"EST.\"",
   "usage": {
     "inputTokens": 4522,
     "outputTokens": 369
