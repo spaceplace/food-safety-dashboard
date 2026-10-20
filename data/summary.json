@@ -66,8 +66,8 @@
       "publishedAt": "2026-10-16T02:19:11.000Z"
     }
   ],
-  "status": "cached",
-  "note": null,
+  "status": "failed",
+  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"The recall affects various RTE meat and poultry products including hot dogs, bac\"; paragraph 1: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 1: uncited sentence: \"P 20935A,\" and \"EST.\"",
   "usage": {
     "inputTokens": 5136,
     "outputTokens": 636
