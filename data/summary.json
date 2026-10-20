@@ -1,16 +1,24 @@
 {
-  "generatedAt": "2026-10-19T13:28:04.874Z",
+  "generatedAt": "2026-10-20T21:41:54.041Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-12",
-  "windowTo": "2026-10-19",
+  "windowFrom": "2026-10-13",
+  "windowTo": "2026-10-20",
   "paragraphs": [
-    "Kayem Foods Inc. is recalling more than 1.5 million pounds of ready-to-eat meat and poultry products, including hot dogs, bacon, sausage, and turkey breasts, due to possible temperature abuse during storage [1][14]. Consumers should not eat these products and should discard them or return them to the store [14].",
-    "Lidl US is recalling Gelatelli Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces (16 FL OZ, UPC 4 0564897 22458, Lot 085261, Best By MAR/26/2028) because it may be contaminated with Listeria monocytogenes [2][11]. The product was distributed to all Lidl US retail locations between July 19 and October 15, 2026 [11].",
-    "Family Farmstead Dairy is recalling raw mild cheddar cheese that may be contaminated with E. coli O157:H7 bacteria, which causes diarrheal illness often with bloody stools [3][19]. The affected cheese was distributed to grocers in New York and New Jersey [19]. Pan Pepin Inc. is also recalling certain lots of Para Bien Al Grano due to undeclared sesame, an allergen [5]."
+    "A Salmonella outbreak linked to raw oysters is ongoing, with 27 cases across 12 states and 5 hospitalizations reported as of October 19 [1]. A major Class I recall from Kayem Foods Inc. affects more than 1.5 million pounds of ready-to-eat meat and poultry products including hot dogs, bacon, sausage, and turkey breasts due to possible temperature abuse during storage [2][25].",
+    "Lidl US is recalling Gelatelli Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces (16 FL OZ, UPC 4 0564897 22458, Lot 085261, Best By MAR/26/2028) because it may be contaminated with Listeria monocytogenes [6]. Family Farmstead Dairy is recalling Raw Mild Cheddar Cheese due to potential E. coli O157:H7 contamination [7]. Krasnyi Oktyabr Inc. is recalling STARFISH SEAFOOD PREMIUM COLD SMOKED NORWEGIAN SALMON SLICED after testing positive for Listeria monocytogenes [15].",
+    "Pan Pepin Inc. is recalling certain lots of Para Bien Al Grano due to undeclared sesame, which poses a risk to consumers with sesame allergies [9]."
   ],
   "sources": [
     {
       "n": 1,
+      "kind": "outbreak",
+      "title": "Salmonella Outbreak Linked to Raw Oysters",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/oysters-10-26/index.html",
+      "publishedAt": "2026-10-19"
+    },
+    {
+      "n": 2,
       "kind": "recall",
       "title": "Kayem Foods Inc. Recalls Meat and Poultry Products Due to Possible Temperature Abuse",
       "source": "USDA FSIS recall notice",
@@ -18,7 +26,7 @@
       "publishedAt": "2026-10-17"
     },
     {
-      "n": 2,
+      "n": 6,
       "kind": "agency-notice",
       "title": "Lidl US Recalls Gelatelli Coffee & Vanilla Gelato Due to Possible Health Risk",
       "source": "FDA recall notice",
@@ -26,7 +34,7 @@
       "publishedAt": "2026-10-16T04:00:00.000Z"
     },
     {
-      "n": 3,
+      "n": 7,
       "kind": "agency-notice",
       "title": "Family Farmstead Dairy Announces Recall of Raw Mild Cheddar Cheese Due to Potential E. coli O26:H11 and O45:H2 Contamination",
       "source": "FDA recall notice",
@@ -34,7 +42,7 @@
       "publishedAt": "2026-10-15T20:04:00.000Z"
     },
     {
-      "n": 5,
+      "n": 9,
       "kind": "agency-notice",
       "title": "Pan Pepin Inc. Issues Allergy Alert of Para Bien Al Grano Due to Undeclared Sesame",
       "source": "FDA recall notice",
@@ -42,34 +50,26 @@
       "publishedAt": "2026-10-13T18:07:00.000Z"
     },
     {
-      "n": 11,
+      "n": 15,
       "kind": "news",
-      "title": "Lidl recalls gelato because of Listeria contamination",
+      "title": "Frozen smoked salmon recalled after positive test for Listeria",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/lidl-recalls-gelato-because-of-listeria-contamination/",
-      "publishedAt": "2026-10-18T22:19:57.000Z"
+      "url": "https://www.foodsafetynews.com/2026/10/frozen-smoked-salmon-recalled-after-positive-test-for-listeria/",
+      "publishedAt": "2026-10-20T00:47:21.000Z"
     },
     {
-      "n": 14,
+      "n": 25,
       "kind": "news",
       "title": "More than 1.5 million pounds of hot dogs, bacon, sausage, turkey breasts and more meat products of various brands recalled",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/10/more-than-1-5-million-pounds-of-hot-dogs-bacon-sausage-turkey-breasts-and-more-meat-products-of-various-brands-recalled/",
       "publishedAt": "2026-10-17T23:10:40.000Z"
-    },
-    {
-      "n": 19,
-      "kind": "news",
-      "title": "Raw milk cheese recalled after testing finds E. coli",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/raw-milk-cheese-recalled-after-testing-finds-e-coli/",
-      "publishedAt": "2026-10-16T02:19:11.000Z"
     }
   ],
-  "status": "failed",
-  "note": "Generated text failed the citation check twice: paragraph 1: uncited sentence: \"The recall affects various RTE meat and poultry products including hot dogs, bac\"; paragraph 1: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 1: uncited sentence: \"P 20935A,\" and \"EST.\"",
+  "status": "ok",
+  "note": null,
   "usage": {
-    "inputTokens": 5136,
-    "outputTokens": 636
+    "inputTokens": 6100,
+    "outputTokens": 665
   }
 }
