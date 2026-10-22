@@ -33,6 +33,13 @@ describe("citation check", () => {
     expect(splitSentences(paragraph)).toHaveLength(3);
     expect(checkCitations([paragraph], 2).ok).toBe(true);
   });
+  it("does not split on capitalized FSIS establishment numbers or month abbreviations", () => {
+    const paragraph =
+      "Kayem Foods Inc. is recalling ready-to-eat meat and poultry products bearing “EST. M/P 7839,” “EST. P 20935A,” and “EST. M 9520” [1]. " +
+      "The recall was announced on Oct. 17 [2].";
+    expect(splitSentences(paragraph)).toHaveLength(2);
+    expect(checkCitations([paragraph], 2).ok).toBe(true);
+  });
   it("still catches an uncited sentence that follows a brand name with initials", () => {
     const r = checkCitations(["J. HIGGS chips were recalled [1]. Shoppers should be very worried."], 1);
     expect(r.ok).toBe(false);

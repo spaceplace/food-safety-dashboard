@@ -9,6 +9,12 @@ const ABBREVIATIONS = [
   "Inc", "Co", "Corp", "Cos", "Bros", "Ltd", "LLC", "LLP", "Mfg", "Dept", "Univ",
   "St", "Ste", "Ave", "Rd", "Blvd", "Mt", "Ft", "Dr", "Mr", "Mrs", "Ms", "Jr", "Sr",
   "No", "Nos", "vs", "etc", "approx", "est",
+  "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec",
+];
+// FSIS notices print some of these in capitals ("EST. M/P 7839" is a USDA establishment
+// number), so each is matched as written, in lower case, and in upper case.
+const ABBREVIATION_FORMS = [
+  ...new Set(ABBREVIATIONS.flatMap((a) => [a, a.toLowerCase(), a.toUpperCase()])),
 ];
 
 // A sentence ends at . ! or ? that is followed by whitespace and the start of a new sentence,
@@ -16,7 +22,7 @@ const ABBREVIATIONS = [
 const SENTENCE_BREAK = new RegExp(
   `(?<=[.!?]["')\\]]*(?:\\s*\\[\\d+(?:,\\s*\\d+)*\\])*)` + // ...after end punctuation, citations may trail
   `(?<!\\b[A-Za-z]\\.)` + // but not after a lone initial: "J. HIGGS", or the last letter of "G.A.N.G.S.T.E.R."
-  `(?<!\\b(?:${ABBREVIATIONS.join("|")})\\.)` + // nor after a common abbreviation: "Smith Bros. Dairy"
+  `(?<!\\b(?:${ABBREVIATION_FORMS.join("|")})\\.)` + // nor after a common abbreviation: "Smith Bros. Dairy"
   `\\s+(?=[A-Z0-9"(])`,
 );
 
