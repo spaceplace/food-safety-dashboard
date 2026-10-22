@@ -67,7 +67,7 @@
     }
   ],
   "status": "failed",
-  "note": "Generated text failed the citation check twice: paragraph 2: uncited sentence: \"Consumers should look for products bearing establishment numbers \"EST.\"; paragraph 2: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 2: uncited sentence: \"P 20935A,\" or \"EST.\"",
+  "note": "Generated text failed the citation check twice: paragraph 2: uncited sentence: \"Kayem Foods Inc. is recalling various ready-to-eat meat and poultry products bea\"; paragraph 2: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 2: uncited sentence: \"P 20935A,\" and \"EST.\"",
   "usage": {
     "inputTokens": 6100,
     "outputTokens": 665
