@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-20T21:41:54.041Z",
+  "generatedAt": "2026-10-22T13:18:33.894Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-13",
-  "windowTo": "2026-10-20",
+  "windowFrom": "2026-10-15",
+  "windowTo": "2026-10-22",
   "paragraphs": [
-    "A Salmonella outbreak linked to raw oysters is ongoing, with 27 cases across 12 states and 5 hospitalizations reported as of October 19 [1]. A major Class I recall from Kayem Foods Inc. affects more than 1.5 million pounds of ready-to-eat meat and poultry products including hot dogs, bacon, sausage, and turkey breasts due to possible temperature abuse during storage [2][25].",
-    "Lidl US is recalling Gelatelli Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces (16 FL OZ, UPC 4 0564897 22458, Lot 085261, Best By MAR/26/2028) because it may be contaminated with Listeria monocytogenes [6]. Family Farmstead Dairy is recalling Raw Mild Cheddar Cheese due to potential E. coli O157:H7 contamination [7]. Krasnyi Oktyabr Inc. is recalling STARFISH SEAFOOD PREMIUM COLD SMOKED NORWEGIAN SALMON SLICED after testing positive for Listeria monocytogenes [15].",
-    "Pan Pepin Inc. is recalling certain lots of Para Bien Al Grano due to undeclared sesame, which poses a risk to consumers with sesame allergies [9]."
+    "A Salmonella outbreak linked to raw oysters remains ongoing, with 27 cases reported across 12 states and 5 hospitalizations as of October 19 [1]. Virginia is reporting more patients than the CDC has counted in this outbreak [8], and the state has temporarily closed Little Wicomico River to shellfish harvesting [19].",
+    "Kayem Foods Inc. is recalling various ready-to-eat meat and poultry products due to possible temperature abuse [2]. The recall is a Class I, meaning there is a reasonable probability that the products could cause serious adverse health consequences [2]. Consumers should check their freezers for products bearing \"EST. M/P 7839,\" \"EST. P 20935A,\" or \"EST. M 9520\" inside the USDA mark of inspection [2].",
+    "Two additional recalls pose health risks: Lidl US is recalling Gelatelli Coffee & Vanilla Gelato (Lot 085261, Best By MAR/26/2028) due to possible Listeria monocytogenes contamination [6], and Family Farmstead Dairy is recalling raw mild cheddar cheese that may be contaminated with E. coli O157:H7 [7]. Krasnyi Oktyabr Inc. is also recalling STARFISH SEAFOOD PREMIUM COLD SMOKED NORWEGIAN SALMON SLICED after it tested positive for Listeria monocytogenes [20]."
   ],
   "sources": [
     {
@@ -42,34 +42,34 @@
       "publishedAt": "2026-10-15T20:04:00.000Z"
     },
     {
-      "n": 9,
-      "kind": "agency-notice",
-      "title": "Pan Pepin Inc. Issues Allergy Alert of Para Bien Al Grano Due to Undeclared Sesame",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-issues-allergy-alert-para-bien-al-grano-due-undeclared-sesame",
-      "publishedAt": "2026-10-13T18:07:00.000Z"
+      "n": 8,
+      "kind": "news",
+      "title": "Virginia reporting more patients than CDC in outbreak traced to oysters",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/virginia-reporting-more-patients-than-cdc-in-outbreak-traced-to-oysters/",
+      "publishedAt": "2026-10-22T04:05:00.000Z"
     },
     {
-      "n": 15,
+      "n": 19,
+      "kind": "news",
+      "title": "More than 2 dozen patients identified in outbreak linked to oysters",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/more-than-2-dozen-patients-identified-in-outbreak-linked-to-oysters/",
+      "publishedAt": "2026-10-20T01:03:58.000Z"
+    },
+    {
+      "n": 20,
       "kind": "news",
       "title": "Frozen smoked salmon recalled after positive test for Listeria",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/10/frozen-smoked-salmon-recalled-after-positive-test-for-listeria/",
       "publishedAt": "2026-10-20T00:47:21.000Z"
-    },
-    {
-      "n": 25,
-      "kind": "news",
-      "title": "More than 1.5 million pounds of hot dogs, bacon, sausage, turkey breasts and more meat products of various brands recalled",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/more-than-1-5-million-pounds-of-hot-dogs-bacon-sausage-turkey-breasts-and-more-meat-products-of-various-brands-recalled/",
-      "publishedAt": "2026-10-17T23:10:40.000Z"
     }
   ],
-  "status": "failed",
-  "note": "Generated text failed the citation check twice: paragraph 2: uncited sentence: \"Kayem Foods Inc. is recalling various ready-to-eat meat and poultry products bea\"; paragraph 2: uncited sentence: \"M/P 7839,\" \"EST.\"; paragraph 2: uncited sentence: \"P 20935A,\" and \"EST.\"",
+  "status": "ok",
+  "note": null,
   "usage": {
-    "inputTokens": 6100,
-    "outputTokens": 665
+    "inputTokens": 2567,
+    "outputTokens": 328
   }
 }
