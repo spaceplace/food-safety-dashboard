@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-10-22T13:18:33.894Z",
+  "generatedAt": "2026-10-23T17:14:21.570Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-15",
-  "windowTo": "2026-10-22",
+  "windowFrom": "2026-10-16",
+  "windowTo": "2026-10-23",
   "paragraphs": [
-    "A Salmonella outbreak linked to raw oysters remains ongoing, with 27 cases reported across 12 states and 5 hospitalizations as of October 19 [1]. Virginia is reporting more patients than the CDC has counted in this outbreak [8], and the state has temporarily closed Little Wicomico River to shellfish harvesting [19].",
-    "Kayem Foods Inc. is recalling various ready-to-eat meat and poultry products due to possible temperature abuse [2]. The recall is a Class I, meaning there is a reasonable probability that the products could cause serious adverse health consequences [2]. Consumers should check their freezers for products bearing \"EST. M/P 7839,\" \"EST. P 20935A,\" or \"EST. M 9520\" inside the USDA mark of inspection [2].",
-    "Two additional recalls pose health risks: Lidl US is recalling Gelatelli Coffee & Vanilla Gelato (Lot 085261, Best By MAR/26/2028) due to possible Listeria monocytogenes contamination [6], and Family Farmstead Dairy is recalling raw mild cheddar cheese that may be contaminated with E. coli O157:H7 [7]. Krasnyi Oktyabr Inc. is also recalling STARFISH SEAFOOD PREMIUM COLD SMOKED NORWEGIAN SALMON SLICED after it tested positive for Listeria monocytogenes [20]."
+    "A Salmonella outbreak linked to raw oysters remains open with 27 cases across 12 states and 5 hospitalizations reported [1]. Kayem Foods Inc. is recalling over 1.5 million pounds of ready-to-eat meat and poultry products due to possible temperature abuse, a Class I recall indicating serious health risk [2]. Consumers should not consume products bearing establishment numbers \"EST. M/P 7839,\" \"EST. P 20935A,\" or \"EST. M 9520\" [2].",
+    "Three additional recalls were issued this week [3][4][8]. Lidl US recalled Gelatelli Coffee & Vanilla Gelato due to potential Listeria monocytogenes contamination [8]. Natural Grocers is recalling Natural Grocers Brand Organic 2-Pound Mung Beans for potential glass fragments [3]. WinCo Foods recalled WinCo Foods Brand Hoagie Rolls due to undeclared sesame [4]. Wild West Seed Inc. is recalling broccoli sprouting seeds for Salmonella contamination [10]."
   ],
   "sources": [
     {
@@ -26,7 +25,23 @@
       "publishedAt": "2026-10-17"
     },
     {
-      "n": 6,
+      "n": 3,
+      "kind": "agency-notice",
+      "title": "Natural Grocers Recalls Natural Grocers Brand Organic 2 Pound Mung Beans Due to Potential Presence of Foreign Material",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
+      "publishedAt": "2026-10-22T22:59:00.000Z"
+    },
+    {
+      "n": 4,
+      "kind": "agency-notice",
+      "title": "WinCo Foods LLC Issues Allergy Alert on Undeclared Sesame in Hoagie Rolls",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "publishedAt": "2026-10-22T19:42:00.000Z"
+    },
+    {
+      "n": 8,
       "kind": "agency-notice",
       "title": "Lidl US Recalls Gelatelli Coffee & Vanilla Gelato Due to Possible Health Risk",
       "source": "FDA recall notice",
@@ -34,42 +49,18 @@
       "publishedAt": "2026-10-16T04:00:00.000Z"
     },
     {
-      "n": 7,
-      "kind": "agency-notice",
-      "title": "Family Farmstead Dairy Announces Recall of Raw Mild Cheddar Cheese Due to Potential E. coli O26:H11 and O45:H2 Contamination",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and",
-      "publishedAt": "2026-10-15T20:04:00.000Z"
-    },
-    {
-      "n": 8,
+      "n": 10,
       "kind": "news",
-      "title": "Virginia reporting more patients than CDC in outbreak traced to oysters",
+      "title": "Sprouting seeds recalled because of Salmonella contamination",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/virginia-reporting-more-patients-than-cdc-in-outbreak-traced-to-oysters/",
-      "publishedAt": "2026-10-22T04:05:00.000Z"
-    },
-    {
-      "n": 19,
-      "kind": "news",
-      "title": "More than 2 dozen patients identified in outbreak linked to oysters",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/more-than-2-dozen-patients-identified-in-outbreak-linked-to-oysters/",
-      "publishedAt": "2026-10-20T01:03:58.000Z"
-    },
-    {
-      "n": 20,
-      "kind": "news",
-      "title": "Frozen smoked salmon recalled after positive test for Listeria",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/frozen-smoked-salmon-recalled-after-positive-test-for-listeria/",
-      "publishedAt": "2026-10-20T00:47:21.000Z"
+      "url": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-salmonella-contamination/",
+      "publishedAt": "2026-10-23T04:18:29.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 2567,
-    "outputTokens": 328
+    "inputTokens": 5823,
+    "outputTokens": 569
   }
 }
