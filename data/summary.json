@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-23T17:14:21.570Z",
+  "generatedAt": "2026-10-24T20:55:14.731Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-16",
-  "windowTo": "2026-10-23",
+  "windowFrom": "2026-10-17",
+  "windowTo": "2026-10-24",
   "paragraphs": [
-    "A Salmonella outbreak linked to raw oysters remains open with 27 cases across 12 states and 5 hospitalizations reported [1]. Kayem Foods Inc. is recalling over 1.5 million pounds of ready-to-eat meat and poultry products due to possible temperature abuse, a Class I recall indicating serious health risk [2]. Consumers should not consume products bearing establishment numbers \"EST. M/P 7839,\" \"EST. P 20935A,\" or \"EST. M 9520\" [2].",
-    "Three additional recalls were issued this week [3][4][8]. Lidl US recalled Gelatelli Coffee & Vanilla Gelato due to potential Listeria monocytogenes contamination [8]. Natural Grocers is recalling Natural Grocers Brand Organic 2-Pound Mung Beans for potential glass fragments [3]. WinCo Foods recalled WinCo Foods Brand Hoagie Rolls due to undeclared sesame [4]. Wild West Seed Inc. is recalling broccoli sprouting seeds for Salmonella contamination [10]."
+    "A Salmonella outbreak linked to raw oysters is ongoing, with 27 cases, 5 hospitalizations, and no deaths reported across 12 states as of October 19 [1]. Kayem Foods Inc. issued a Class I recall of various ready-to-eat meat and poultry products due to possible temperature abuse; consumers should check for products bearing \"EST. M/P 7839,\" \"EST. P 20935A,\" or \"EST. M 9520\" inside the USDA inspection mark and avoid them [2]. The FDA issued a public warning about cold smoked sprats from D&M Smoked Fish Inc. (operating as Haifa Smoked Fish Inc.) because the product was produced without controls for Clostridium botulinum; the company has refused to recall the item [8].",
+    "Natural Grocers Brand Organic 2-Pound Mung Beans are being recalled due to potential glass contamination [3]. WinCo Foods is recalling WinCo Foods Brand Hoagie Rolls because they contain undeclared sesame [4]. Wild West Seed Inc. is recalling nearly 10,000 pounds of broccoli sprouting seeds in two lots due to Salmonella contamination [10]."
   ],
   "sources": [
     {
@@ -42,11 +42,11 @@
     },
     {
       "n": 8,
-      "kind": "agency-notice",
-      "title": "Lidl US Recalls Gelatelli Coffee & Vanilla Gelato Due to Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk",
-      "publishedAt": "2026-10-16T04:00:00.000Z"
+      "kind": "news",
+      "title": "FDA issues warning about cold smoked fish because of botulism risk; company refuses to recall product",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/fda-issues-warning-about-cold-smoked-fish-because-of-botulism-risk-company-refuses-to-recall-product/",
+      "publishedAt": "2026-10-24T00:53:47.000Z"
     },
     {
       "n": 10,
@@ -57,10 +57,10 @@
       "publishedAt": "2026-10-23T04:18:29.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 5823,
-    "outputTokens": 569
+    "inputTokens": 2490,
+    "outputTokens": 284
   }
 }
