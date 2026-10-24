@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-23T21:28:18.764Z",
+  "generatedAt": "2026-10-24T04:43:26.626Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-23T21:28:18.844Z",
+      "fetchedAt": "2026-10-24T04:43:26.685Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-23T21:28:47.618Z",
+      "fetchedAt": "2026-10-24T04:43:54.118Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-14",
@@ -24,7 +24,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-23T21:28:53.619Z",
+      "fetchedAt": "2026-10-24T04:43:57.897Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-17",
