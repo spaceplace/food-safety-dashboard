@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-25T04:49:46.202Z",
+  "generatedAt": "2026-10-25T11:39:25.808Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-25T04:49:46.290Z",
+      "fetchedAt": "2026-10-25T11:39:25.883Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-25T04:50:07.636Z",
+      "fetchedAt": "2026-10-25T11:39:49.763Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-14",
@@ -24,14 +24,102 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-25T04:50:12.372Z",
+      "fetchedAt": "2026-10-25T11:39:52.699Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-10-17",
-      "itemCount": 500
+      "upstreamUpdated": "2026-10-24",
+      "itemCount": 501
     }
   },
   "items": [
+    {
+      "id": "fsis:027-2026",
+      "slug": "fsis-027-2026",
+      "kind": "recall",
+      "source": "FSIS",
+      "sourceId": "027-2026",
+      "title": "Imperio Distribution LLC Recalls Beef Jerky Products Produced Without the Benefit of Inspection",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/imperio-distribution-llc-recalls-beef-jerky-products-produced-without-benefit",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "Imperio Distribution LLC",
+      "product": "2 oz. sealed bag of \"IMPERIO FUEGO BEEF JERKY (CARNE SECA).\"",
+      "productCategory": "meat",
+      "foodKeys": [
+        "beef"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Unspecified microbial",
+          "group": "organism"
+        },
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        },
+        {
+          "name": "Unapproved additive or color",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "IA",
+          "IL",
+          "IN",
+          "MI",
+          "MN",
+          "MS",
+          "WI"
+        ],
+        "stateCount": 7,
+        "international": false,
+        "description": "IL, IN, IA, MI, MN, MS, WI"
+      },
+      "rootCause": {
+        "category": "import-or-inspection-violation",
+        "basis": "agency-coded",
+        "detail": "Produced Without Benefit of Inspection"
+      },
+      "detection": {
+        "category": "agency-sampling-or-inspection",
+        "basis": "inferred",
+        "detail": "The problem was discovered during FSIS surveillance activities."
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "FSIS recall (all FSIS recalls are voluntary)"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Active Recall"
+      },
+      "dates": {
+        "event": "2026-10-24",
+        "reported": "2026-10-24",
+        "updated": "2026-10-24",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Produced Without Benefit of Inspection",
+      "missing": [],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-25T11:39:25.808Z",
+        "lastChanged": "2026-10-25T11:39:25.808Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "cdc:salmonella/outbreaks/oysters-10-26",
       "slug": "cdc-salmonella-outbreaks-oysters-10-26",
