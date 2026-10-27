@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T12:20:01.754Z",
+  "generatedAt": "2026-10-27T18:04:15.257Z",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-27T12:20:01.843Z",
+      "fetchedAt": "2026-10-27T18:04:15.336Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -13,7 +13,7 @@
     "cdc-active-counts": {
       "name": "CDC active multistate investigation counts",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-27T12:20:27.446Z",
+      "fetchedAt": "2026-10-27T18:04:45.960Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-21",
@@ -22,7 +22,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-27T12:20:28.171Z",
+      "fetchedAt": "2026-10-27T18:04:46.598Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-21",
@@ -31,7 +31,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-27T12:20:34.963Z",
+      "fetchedAt": "2026-10-27T18:04:51.633Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-24",
@@ -40,7 +40,7 @@
     "news-foodsafetynews": {
       "name": "Food Safety News",
       "url": "https://www.foodsafetynews.com/feed/",
-      "fetchedAt": "2026-10-27T12:20:35.557Z",
+      "fetchedAt": "2026-10-27T18:04:52.404Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -49,16 +49,16 @@
     "news-fda-recalls": {
       "name": "FDA recall notice",
       "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/food-safety-recalls/rss.xml",
-      "fetchedAt": "2026-10-27T12:20:35.558Z",
+      "fetchedAt": "2026-10-27T18:04:52.405Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
-      "itemCount": 19
+      "itemCount": 20
     },
     "news-fda-outbreaks": {
       "name": "FDA outbreak notice",
       "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/fda-outbreaks/rss.xml",
-      "fetchedAt": "2026-10-27T12:20:35.559Z",
+      "fetchedAt": "2026-10-27T18:04:52.406Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -67,7 +67,7 @@
     "news-fda-press": {
       "name": "FDA press release",
       "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml",
-      "fetchedAt": "2026-10-27T12:20:35.559Z",
+      "fetchedAt": "2026-10-27T18:04:52.407Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -76,11 +76,11 @@
     "news-google-news": {
       "name": "Google News",
       "url": "https://news.google.com/rss/search?q=%22foodborne+outbreak%22+OR+%22food+recall%22&hl=en-US&gl=US&ceid=US:en",
-      "fetchedAt": "2026-10-27T12:20:35.560Z",
+      "fetchedAt": "2026-10-27T18:04:52.407Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
-      "itemCount": 18
+      "itemCount": 5
     }
   }
 }

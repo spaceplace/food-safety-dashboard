@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T12:20:01.754Z",
+  "generatedAt": "2026-10-27T18:04:15.257Z",
   "sources": {
     "news-foodsafetynews": {
       "name": "Food Safety News",
       "url": "https://www.foodsafetynews.com/feed/",
-      "fetchedAt": "2026-10-27T12:20:35.557Z",
+      "fetchedAt": "2026-10-27T18:04:52.404Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -13,16 +13,16 @@
     "news-fda-recalls": {
       "name": "FDA recall notice",
       "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/food-safety-recalls/rss.xml",
-      "fetchedAt": "2026-10-27T12:20:35.558Z",
+      "fetchedAt": "2026-10-27T18:04:52.405Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
-      "itemCount": 19
+      "itemCount": 20
     },
     "news-fda-outbreaks": {
       "name": "FDA outbreak notice",
       "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/fda-outbreaks/rss.xml",
-      "fetchedAt": "2026-10-27T12:20:35.559Z",
+      "fetchedAt": "2026-10-27T18:04:52.406Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -31,7 +31,7 @@
     "news-fda-press": {
       "name": "FDA press release",
       "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml",
-      "fetchedAt": "2026-10-27T12:20:35.559Z",
+      "fetchedAt": "2026-10-27T18:04:52.407Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -40,14 +40,36 @@
     "news-google-news": {
       "name": "Google News",
       "url": "https://news.google.com/rss/search?q=%22foodborne+outbreak%22+OR+%22food+recall%22&hl=en-US&gl=US&ceid=US:en",
-      "fetchedAt": "2026-10-27T12:20:35.560Z",
+      "fetchedAt": "2026-10-27T18:04:52.407Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
-      "itemCount": 18
+      "itemCount": 5
     }
   },
   "items": [
+    {
+      "id": "4f2eb2f0e283e486",
+      "feed": "google-news",
+      "source": "Fast Company",
+      "kind": "news",
+      "title": "Walmart's Great Value brand is facing a major food recall. Here's what shoppers need to know",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMm9NV0dORkJKTkpPVXV3WmxIOE9LUFlaTlR2aExfMW83a0s3NFRmZTRtUmx6RmQxdE9ZektjVksydGdEbkxXeVNuLUswLUx6S3VWS2tzWHU0WU0zaVdrMzdiQzdYREFLR21QcmdIREtSck4zTmZHSWU3ZWFDcHRaTDA1bnpOa0V4R2hteUhVX0tWMzZ4MlBsRDd5MVljbzc3OEtZMU4wUjRDUDdNMHowRDIwN0tOaWxWTzhMYXpXMVl5aTZz?oc=5",
+      "publishedAt": "2026-10-27T16:10:40.000Z",
+      "excerpt": "",
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
+    },
+    {
+      "id": "f33551a6e0d31e6d",
+      "feed": "fda-recalls",
+      "source": "FDA recall notice",
+      "kind": "agency-notice",
+      "title": "HAIFA SMOKED FISH Recalls Cold Smoked Sprats Due to Potential Health Risk",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
+      "publishedAt": "2026-10-27T15:15:00.000Z",
+      "excerpt": "HAIFA SMOKED FISH of QUEENS NY is recalling approximately 560 lbs. of Cold Smoked Sprats, due to potential contamination with Clostridium botulinum, a bacterium which can cause life-threatening illness. Consumers are warned not to use the product even if it does not look or smell spoiled.",
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
+    },
     {
       "id": "8f57ac5b58cd5c91",
       "feed": "foodsafetynews",
@@ -57,7 +79,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/scientists-looking-at-how-imperfections-in-produce-impact-safety/",
       "publishedAt": "2026-10-27T04:05:00.000Z",
       "excerpt": "In the past, physical damage or defects — such as those caused by machines, freezes or pests — were typically viewed separately from food safety risks.",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "ebff29f5c6e4ff6a",
@@ -68,7 +90,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/researchers-assess-antimicrobial-resistance-in-salmonella/",
       "publishedAt": "2026-10-27T04:03:00.000Z",
       "excerpt": "Scientists have identified certain antimicrobial resistance traits likely to spread through China’s food chain over the next 25 years.Research by King’s College London and the Chinese Center for Disease Control and Prevention (China CDC) analyzed genetic traits linked to antimicrobial resistance in…",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "025767d7da6ff662",
@@ -79,7 +101,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/bill-marler-to-be-honored-at-international-conference/",
       "publishedAt": "2026-10-27T04:00:00.000Z",
       "excerpt": "On Oct. 28, the China International Food Safety & Quality Conference (CIFSQ) opens in Shanghai for its 20th year. It will honor Bill Marler as a Distinguished Contributor.Marler is a food safety expert, Seattle food safety attorney and Publisher of Food Safety News.Also being honored this",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "0e1f3f7534c28a03",
@@ -90,18 +112,18 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQktLWlZCdmNaRGNaeUs3Q2hwS0o1MTNYa2EzZWRvRzZ2enZRWVMxRUZLRU1HWmoxNFIzeElGMDdhekN3ZzVjc0d1Q3RtYy1qSFNnMkhMNlZxcVZmMi1SaENyajg1X3YyYUcxRWZWM0lKa1A5NXpoVkd1SFd6TS0tdFIxbWxLRGxCckItNEpXTXUtenZUZ0lnV2UwSVFMN3M2WWVUTEU3ZmF0MlAwdzl2Rg?oc=5",
       "publishedAt": "2026-10-26T21:47:36.000Z",
       "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
-      "id": "a91c8f3247fcfc46",
+      "id": "4fc75e70babce43a",
       "feed": "google-news",
       "source": "WRIC ABC 8News",
       "kind": "news",
       "title": "Kids These Days RVA: Another food recall? How to keep your kids safe",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSTJsWm83SVVSYThMdDFFT0hOcllhbHlva3pGV3RBLXh2aTJqQWZUamlncG4tTzVEZU9IbXl0RjZuNVFwTWl3Nm9aMVc5ZDRiNTFYNXpMWkhSMldGLVFkT0VCbnJiT18zY1cyczlzV1ViWG83OHIyY280U09UQ2Jvd2Y0WVJMQ0U5MV9JSDRxVklfS3ByeVc4cW0wd3ZNbXZYczRHMXV3?oc=5",
-      "publishedAt": "2026-10-26T15:39:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNa05hMmViSnlJTUhuQ0tJdzV2ZnVtdGhLdTE2Wk5DdWhkOFIwY2Etd1o5bkNxQ0ppMWxLLW10clJnYk9XM1lPVWhpUnBzcURtNmZLNWhXTlM3eUJIc0E3eXVZWnkxRGw2VUo4WVBVU0lGcHZpY0RlOVJVV3JrRGpQLVRLSTYtNVp4VkJ4Q3JXTU5Bd05XbnNJaHFsalRLdWF6dHfSAacBQVVfeXFMTmZwQkVKUGp2ZzR2NmNfQnFoazYxZnpzYVNMRklKc0lBQ2tOWUtIa3hfZDl0VVplT044UTV0dUp5QWs0Q1FsWkdUV3dVVUhQTVc0bVZ2bFhBWXZsaFdXQTRTNkJRZFlPU0lTUFpoMXMzOWE1M05jWWNzdGtVYU5mclR5NFVEUkd6dFhjNHlnLUN1OG1DbmRsdDlSNU5NQktkbjJVZW53bG8?oc=5",
+      "publishedAt": "2026-10-26T16:18:29.000Z",
       "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "76febfe7b317a755",
@@ -112,7 +134,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/tomato-use-suspended-as-italy-tackles-salmonella-outbreak/",
       "publishedAt": "2026-10-26T04:05:00.000Z",
       "excerpt": "Since July 2026, more than 160 infections have been recorded in 10 European countries.",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "7dd6d19156476b61",
@@ -123,7 +145,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/fda-warns-fermented-cabbage-maker-about-pathogen-risks-labeling-violations/",
       "publishedAt": "2026-10-26T04:03:00.000Z",
       "excerpt": "As part of its enforcement activities, the Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. Business owners have 15 days to respond to FDA warning letters. Warning letters of…",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "63bb091e4eb71778",
@@ -134,7 +156,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/campylobacter-response-in-chickens-not-enough-for-elimination/",
       "publishedAt": "2026-10-26T04:01:00.000Z",
       "excerpt": "Results from a study in Italy could help explain why Campylobacter jejuni colonizes the intestines of chickens without causing major symptoms.Campylobacteriosis is the most frequent bacterial cause of illness in the European Union. The infection can be transmitted to humans through contaminated foo…",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "c0a950228faf0807",
@@ -145,18 +167,7 @@
       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNVFhIWWcxb2ppWE1FYlpwOElWbE5EUlExUnhWMFdzSVpBanB5VHFJQklaZWdRNFktWWJ2WDh6T3NOZTVPWmU0cXhFODdTb3JuWWhIck5VbzhHVmJlUVZ4Z21VVEMtUGVWSlU4N0cxUWxvYWhfemZnbU5yQ1dVamhtTFdvU2M2T3BjQTl2Mjlsc3RVd19IOGN6bGhhSGZPZGFkR25vNlF0M29vdVVtSnZSaFk4SFRkNVJ0YjNtLWhMVGRlRmpsdWpTOWFyU0kzbUN4RGtVY204eVVBSzdxZVFidWxrVm5qTWNj?oc=5",
       "publishedAt": "2026-10-25T22:01:01.000Z",
       "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
-    },
-    {
-      "id": "afe3b7ff80fa64ae",
-      "feed": "google-news",
-      "source": "Cornwall Seaway News",
-      "kind": "news",
-      "title": "Baby food recall expanded",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Vc2ptSGlrYzFBbXJQRzRGclVZNGNUMW9FOWVhT21UUHhWMURQMFNEWl9EYXZiM0pfVlZLeHBJS3FEWjUtak5GNTc1anZ5MFlJbVlkOWxsNENXcDJQM3JHd0hTR2Q4N3dVVV82OXpzUHJqX0c4OUE?oc=5",
-      "publishedAt": "2026-10-25T12:20:07.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "e50e01c00b068337",
@@ -167,7 +178,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/the-sunday-edition-upf-defined/",
       "publishedAt": "2026-10-25T12:00:00.000Z",
       "excerpt": "The FDA has already missed last April’s deadline for coming up with a definition.",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "ac65ae08f9be8b2a",
@@ -178,7 +189,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/publishers-platform-usda-finally-on-the-record-names-trader-joes-in-e-coli-outbreak/",
       "publishedAt": "2026-10-25T01:49:05.000Z",
       "excerpt": "Naming the product cost the government nothing on Oct. 23. It would have cost nothing on Sept. 23.",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "0248549a9ea151cd",
@@ -189,7 +200,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/beef-jerky-recalled-because-of-lack-of-inspection-illegal-use-of-usda-seal/",
       "publishedAt": "2026-10-25T01:36:26.000Z",
       "excerpt": "Imperio Distribution LLC of Elgin, IL, is recalling 946 pounds of ready-to-eat beef jerky products that were produced without the benefit of federal inspection and misbranded because of the unauthorized use of a USDA mark of inspection, the USDA's Food Safety and Inspection Service (FSIS) announced",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "4e89bd48014a68f7",
@@ -200,7 +211,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/fda-issues-warning-about-cold-smoked-fish-because-of-botulism-risk-company-refuses-to-recall-product/",
       "publishedAt": "2026-10-24T00:53:47.000Z",
       "excerpt": "The FDA has issued a public warning about cold smoked sprats from D&M Smoked Fish Inc. because the company has refused to recall the item that was produced without controls for the control of Clostridium botulinum.The company, doing business as Haifa Smoked Fish Inc., is located",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "aeeb33d146a195b7",
@@ -211,7 +222,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/fifty-people-sick-a-known-supplier-and-fda-still-wont-say-its-name-that-is-wrong-and-here-is-how-we-fix-it/",
       "publishedAt": "2026-10-23T05:18:52.000Z",
       "excerpt": "The public learned these were Trader Joe’s Tarragon Chicken Salad Wraps from a federal lawsuit, not from either agency charged with protecting it.",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "a60ac30b434d4af7",
@@ -222,7 +233,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-salmonella-contamination/",
       "publishedAt": "2026-10-23T04:18:29.000Z",
       "excerpt": "Wild West Seed Inc. is recalling almost 10,000 pounds of broccoli sprouting seeds because of Salmonella contamination.The Albany, OR, firm reports that 9,476 pounds of its Broccoli Seeds Green Sprouting Calabrese lot #4105 in 50-pound bags and Wild West Seeds Broccoli Waltham29 Seeds lot #4475 in",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "78b056da679dbf5e",
@@ -233,7 +244,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/publishers-platform-the-food-traceability-rule-has-been-law-since-2022-nobody-has-to-follow-it-until-2028-here-is-how-that-happened-and-what-fda-is-doing-with-the-time/",
       "publishedAt": "2026-10-23T04:05:00.000Z",
       "excerpt": "– OPINION –",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "7442174d1656b19a",
@@ -244,7 +255,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/judge-delays-usdas-reorganization-plan/",
       "publishedAt": "2026-10-23T04:04:00.000Z",
       "excerpt": "A federal judge has stopped the USDA from a reorganization that was to close some offices, cut some staff and relocate some others. The stay is in effect for at least two months.The department’s reorganization efforts stopped Cyclospora research at the Agricultural Research Center just prior",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "fa9ddc9d2a0d41ea",
@@ -255,7 +266,7 @@
       "url": "https://www.foodsafetynews.com/2026/10/outbreaks-in-france-still-high-despite-decline/",
       "publishedAt": "2026-10-23T04:03:00.000Z",
       "excerpt": "Salmonella was the most frequently confirmed pathogen with 176 outbreaks",
-      "fetchedAt": "2026-10-27T12:20:35.557Z"
+      "fetchedAt": "2026-10-27T18:04:52.404Z"
     },
     {
       "id": "203aae9c9123e7d0",
@@ -266,7 +277,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
       "publishedAt": "2026-10-22T22:59:00.000Z",
       "excerpt": "10/22/2026, Vitamin Cottage Natural Food Markets, Inc., Lakewood, Colorado, is recalling Natural Grocers Brand Organic 2-Pound Mung Beans due to the potential presence of glass.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "90d109e2ddd44cc2",
@@ -277,7 +288,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
       "publishedAt": "2026-10-22T19:42:00.000Z",
       "excerpt": "October 22, 2026 - WinCo Foods of Boise, ID is recalling the following WinCo Foods Brand Hoagie Rolls due to undeclared sesame.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "74cd769500c69929",
@@ -288,7 +299,7 @@
       "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
       "publishedAt": "2026-10-20T15:57:36.000Z",
       "excerpt": "Today, the U.S. Food and Drug Administration approved the first generic of Climara Pro (estradiol and levonorgestrel transdermal system, 0.045 mg per day/0.015 mg), a transdermal hormone therapy patch for women with an intact uterus applied once a week.",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "f226566ac341d635",
@@ -299,7 +310,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNS1N5c2FBYUdIRjlnM0lSOXVFNWt2aFA3dmc2dmhweVFYRmlCb2JoazR6TlNpX1pCeFo0MXJSSFNDSkh0eFYyUWN2QTA0akJsZk5pNExsckhLaUlLVmZkZ0hMcTdvUEpiOHhzNkU2dTNtaURXZFAtS3VVbkRORGwwd2F2Q0t1UUNEVFBiSlRhMHk1Rl9a?oc=5",
       "publishedAt": "2026-10-20T15:51:14.000Z",
       "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "0e04529dd228d5d5",
@@ -310,29 +321,7 @@
       "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
       "publishedAt": "2026-10-20T13:03:14.000Z",
       "excerpt": "The U.S. Food and Drug Administration today released final guidance establishing a clear framework for how drug companies can develop, distribute, and label apps used alongside their prescription medicines.",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
-    },
-    {
-      "id": "35a2fa2dddf697ba",
-      "feed": "google-news",
-      "source": "Buttondown",
-      "kind": "news",
-      "title": "Food Recall Digest weekly - Oct 12 to Oct 18 (5 recalls)",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMDZTNW05QmF2QUxUS0xhWTUxLWRqOS1XVS1qa0loSmR5TG03cDRMQ05zUE9HaF91RlJkczdvMjRMM2l6YkJRYTJtTjZiRFdkaF94aGdPTmtKZGE3TjRCWWpnQ2VuUGVGck5vUThLMGlUSERlM2ZrTjdXS05qV0txOWY2bGh3dGZITkg2WGFIeWdwcFJNY1ozOQ?oc=5",
-      "publishedAt": "2026-10-20T00:22:31.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
-    },
-    {
-      "id": "e1769512f4f8ae54",
-      "feed": "google-news",
-      "source": "AOL.com",
-      "kind": "news",
-      "title": "Huge food recall includes these meats. What to do if you bought some",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVDBLWmg2OEF6eE1ZUzF1VUhlaDgtWVBlb2QyMDBlZ20zUkRSbE5EWVdwcFN3akg3NU00MTNRUTk5OEJERkdkaFlfcld0QXA5dkpkT0tZemNhT256emFTMmw2aXczZ3MwQXR4aXNxWXBFRVUxX01nM3JGeXpURHB3Vg?oc=5",
-      "publishedAt": "2026-10-19T18:15:59.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "6d0cd74885ee35ba",
@@ -343,7 +332,7 @@
       "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
       "publishedAt": "2026-10-19T16:19:38.000Z",
       "excerpt": "The U.S. Food and Drug Administration today granted accelerated approval for a new use of the immunotherapy Jemperli (dostarlimab-gxly) that may allow some patients with locally advanced rectal cancer to avoid common treatments that can have a lasting impact on their daily life.",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "ea9c3b1805bf213c",
@@ -354,7 +343,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk",
       "publishedAt": "2026-10-16T04:00:00.000Z",
       "excerpt": "ARLINGTON, VA – OCTOBER 16, 2026 – Lidl US is recalling one lot of Gelatelli Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces 16 FL OZ (1 PT) UPC 4 0564897 22458 Lot: 085261 Best By MAR/26/2028 because it has the potential to be contaminated with Listeria monocytogenes, an organism which ca",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "a0bb24b0ca6443a0",
@@ -365,7 +354,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and",
       "publishedAt": "2026-10-15T20:04:00.000Z",
       "excerpt": "WORCESTER, NY, October 15, 2026 - Family Farmstead Dairy of Worcester, NY is recalling specific lot of cheddar cheese because it may be contaminated with Escherichia coli O157:H7 bacteria (E. Coli O157:H7). E. coli O157:H7 causes a diarrheal illness often with bloody stools. Although most healthy ad",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "0c0396fb48a06ec9",
@@ -376,7 +365,7 @@
       "url": "http://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
       "publishedAt": "2026-10-14T15:50:52.000Z",
       "excerpt": "The U.S. Food and Drug Administration, a division within the U.S. Department of Health and Human Services (HHS), today announced the Rare Disease Framework Initiative to reimagine the development of drugs and biologics for rare diseases.",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "b2ecdbe4bde83bad",
@@ -387,7 +376,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-issues-allergy-alert-para-bien-al-grano-due-undeclared-sesame",
       "publishedAt": "2026-10-13T18:07:00.000Z",
       "excerpt": "Pan Pepin Inc. of Bayamón, Puerto Rico is recalling certain lots of Para Bien Al Grano because the product contain sesame.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "40e8a2c0550ac778",
@@ -398,29 +387,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de",
       "publishedAt": "2026-10-13T18:00:00.000Z",
       "excerpt": "Bayamón, Puerto Rico - Pan Pepín Inc., con sede en Bayamón, Puerto Rico, está retirando voluntariamente del mercado ciertos lotes del producto Para Bien Al Grano debido a que contiene sésamo (ajonjolí), un alérgeno que no fue declarado en su etiqueta.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
-    },
-    {
-      "id": "667b6185e8ff6f10",
-      "feed": "google-news",
-      "source": "Food Safety News",
-      "kind": "news",
-      "title": "Oregon public health officials investigating possible foodborne outbreak",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWDhHSGt5OFJta2FNRFZURXNWV2JBUWhwcm1nbUVWN3VCQTFma0FtOGJNVExEXzR4bHdSTkhNenE3MWVUVFdRVzN1eHZIYzVKODFqX19MN2xNdW5nSzJUT3pnNHVBdFRHTmE0QzdOQWNCbU5GcS1Ed1M2Skg2MjFkcnRhZzhPLTI5azZyQ1drOWlQcTFyU0hKQXBGVFhqTlVNQjNYREtuVHBhRGU2ZDZ0TWFB?oc=5",
-      "publishedAt": "2026-10-12T04:09:34.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
-    },
-    {
-      "id": "c4300e0fd8f7a0d5",
-      "feed": "google-news",
-      "source": "Abasto, Food and Beverage Industry News",
-      "kind": "news",
-      "title": "What Consumers Do After a Food Recall in the USA",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBIU1JpNGZPMFJJOTg3a0k4b0RXa2xRdUphSEtzT0xZMG52WDZodElfbERMZEhncWJxOFRqb0M5SDVYYk5PZzJGUm04SEVfbGYxbl9fdl9JWWczcnRndFpvZWVKUGtlUnNUaXlQWUZ4TUdqQmc?oc=5",
-      "publishedAt": "2026-10-11T07:00:00.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "94bc7d2f9c3b994e",
@@ -431,7 +398,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
       "publishedAt": "2026-10-09T19:08:00.000Z",
       "excerpt": "Oliva LLC of Bethlehem, CT is recalling approximately 250 units of Riad’s Oliva to Go Baba Ghanouj, Spicy Baba Ghanouj, and Hummus, because it may contain undeclared sesame. People who have an allergy or severe sensitivity to sesame run the risk of serious or life-threatening allergic reaction if th",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "f7d701e29c01a87f",
@@ -442,18 +409,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
       "publishedAt": "2026-10-09T18:41:00.000Z",
       "excerpt": "Krasnyi Oktyabr Inc. of Brooklyn, New York, is voluntarily recalling Starfish Seafood Trio – Cold Smoked Salmon, Halibut, and Trout, 8 oz (227 g) packages, because the product has the potential to be contaminated with Listeria monocytogenes, an organism which can cause serious and sometimes fatal in",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
-    },
-    {
-      "id": "18e2225a01284db3",
-      "feed": "google-news",
-      "source": "cbs19.tv",
-      "kind": "news",
-      "title": "FDA links parasite outbreak to recalled lettuce as food recall concerns grow",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQd19QUllGZ3p0TnViaVlvTFgzTDJTRkY1VjZybmdkUFlIR1pJZ3RCSTczeDZVaHF0UjJsLVFCdTByZWhMVGswbmljclc3a1NTQkE2WmhRMXhacDFJbE5GM3ZzZlBDNE16SEt3WXp0Mm1CWlZwNXpFR2VXRy1tNkZSTDV6M2REUHRHUW83aXFKdk5tN1V0T2xPUnYwZDcxQXRLeHBYVm9DX24xWmNTZDFBbXRmOWhXcmctXzhhckRQNEI3enJ6QVVSQXNiaXJxN3lTVFdXLXR4aWwwOU9RT3BOUkc5Skg1S1VobGpZ?oc=5",
-      "publishedAt": "2026-10-09T07:00:00.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "4a4a717957c690b8",
@@ -464,7 +420,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
       "publishedAt": "2026-10-09T04:00:00.000Z",
       "excerpt": "Krasnyi Oktyabr Inc. of Brooklyn, New York, is voluntarily recalling STARFISH SEAFOOD PREMIUM COLD SMOKED NORWEGIAN SALMON SLICED (227g/8oz) packages, because the product has the potential to be contaminated with Listeria monocytogenes, an organism which can cause serious and sometimes fatal infecti",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "0cbe875e70db1d4e",
@@ -475,18 +431,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination",
       "publishedAt": "2026-10-08T23:51:00.000Z",
       "excerpt": "October 8, 2026, Gardeners Basics of Spanish Fork, Utah, is recalling one-pound bags of broccoli sprouting seeds because they may be contaminated with Salmonella, an organism which can cause serious and sometimes fatal infections in young children, frail or elderly people, and others with weakened i",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
-    },
-    {
-      "id": "733c2a0451267221",
-      "feed": "google-news",
-      "source": "Food Processing",
-      "kind": "news",
-      "title": "When a Food Recall Hits, What Will Insurance Actually Cover?",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRVhzaUQ2Y2NTYUFOSWZ6T201Sjk0TzBVdEkweEkxU1VZMmhMbTFHOGNCVU5UXzRZSjg5ZTF4ZW5vanpEWlJaYlhrY2R1N2lJZFpvRFltMzBJMDdRVlMtWmdoSEhqam1tOWFUdndCdzNPQTN2aFZSN21YdGdGLXZFOHFxYmFta25rYnRTUTRsSTE5d2xIQVlFVy0zUDFHSk1TTFljZVhkeWJOcUtSb3NsejY4QlZkY0VhWVE?oc=5",
-      "publishedAt": "2026-10-08T07:00:00.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "97b9a77dfdd5fe73",
@@ -497,7 +442,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
       "publishedAt": "2026-10-07T20:19:00.000Z",
       "excerpt": "Arden, NC – October 7th 2026 – Eden Brothers LLC is recalling Calabrese Broccoli Seeds in Packet, 1 Ounce and 1 Pound sizes (Eden Brothers lots 1022067 and 1022068; supplier lot W4105) because we were informed by our supplier that they may be contaminated with Salmonella.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "2c22e2f9517ad56b",
@@ -508,18 +453,7 @@
       "url": "http://www.fda.gov/food/outbreaks-foodborne-illness/core-annual-reports",
       "publishedAt": "2026-10-06T15:42:43.000Z",
       "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
-    },
-    {
-      "id": "a201914239757a4b",
-      "feed": "google-news",
-      "source": "Daily Voice",
-      "kind": "news",
-      "title": "New Frozen Food Recall: What Shoppers Should Check",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTUo1ZWdNLUpib25Fejl5b1Q0TWhieFRHcTdfenlXcW51aVc3UGI1Sm9NZFFwRlU2LVJ3bjB4VmVuY1FQNmo5bG9lUmU4RHJ0MXpDRGQ4a1RBakJoZlR5RDRxVEFBXzd6QWpDMlppcFc2bFZCaHJWaGVuQnVGSkVtOVBUVk1Ob0Et?oc=5",
-      "publishedAt": "2026-10-06T07:00:00.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.406Z"
     },
     {
       "id": "032c3f6919fb9654",
@@ -530,18 +464,7 @@
       "url": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-input-support-ibogaine-research",
       "publishedAt": "2026-10-05T13:02:06.000Z",
       "excerpt": "The U.S. Food and Drug Administration today announced a request for information (RFI) describing approaches the agency is considering for the design of early-phase clinical trials of ibogaine drug products and seeking public input on those approaches.",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
-    },
-    {
-      "id": "25c25bf89aecca79",
-      "feed": "google-news",
-      "source": "U.S. Food and Drug Administration (.gov)",
-      "kind": "news",
-      "title": "Outbreak Investigation of E. coli O145:H28: Frozen Blueberries (July 2026)",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMFBlMFg4UU1DSUxIdDhRQnpSc0F5RjBmTWE3Z0NMcGlvVEo5azJKdmR2T2t3N0RoRHpWTGJtZFRldkgtRWx4UnhKYUJNbUxCMEhDWW1kUFhFa1VoVmsxazFqLUFTdXdGYjYwUEp6XzNHMFptSDhjUGNNdmxjdjVSWDJya2FBUVgwUlFZd2E1Z0lHZDg2ZDZsOHp5YVZUS3BiVDFtZ0E0QTJZelZDMTRocERmMUw0UFEtcEZ3?oc=5",
-      "publishedAt": "2026-10-05T07:00:00.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "8bf0ab3fadc272df",
@@ -552,7 +475,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign",
       "publishedAt": "2026-10-02T22:02:00.000Z",
       "excerpt": "October 2, 2026, Stewart’s Shops Corp. of Saratoga Springs, NY is recalling two flavors, Heavenly Medley and Vanilla-Chocolate-Strawberry, of half-gallon ice cream due to the potential presence of metal.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "a067672726f49bd7",
@@ -563,7 +486,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eak-distribution-llc-recalls-home-grown-green-sprouting-calabrese-broccoli-seeds-8-oz-heirloom",
       "publishedAt": "2026-10-02T20:37:00.000Z",
       "excerpt": "October 2nd, 2026 - EAK Distribution of Casper, WY is recalling HOME GROWN Green Sprouting Calabrese Broccoli Seeds, 8 oz, Heirloom, because it has the potential to be contaminated with Salmonella, an organism which can cause serious and sometimes fatal infections in young children, frail or elderly",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "d6e84157c00479ce",
@@ -574,7 +497,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic",
       "publishedAt": "2026-10-02T19:06:00.000Z",
       "excerpt": "October 02, 2026. Frutas y Hortalizas del Sur S.A., San Carlos, Chile expands its previously initiated recalls on July 3, 2026 and September 3,2026 recall of frozen organic IQF blueberries and berry blends to include additional lots of Great Value frozen Organic Triple Berry Blend 10 OZ, Great Value",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "03512078022fde56",
@@ -585,7 +508,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
       "publishedAt": "2026-10-02T16:31:00.000Z",
       "excerpt": "THOMASVILLE, GA., October 2, 2026 – Flowers Foods, Inc. (NYSE: FLO) is recalling Nature’s Own® Hawaiian Bread, 20 oz. and 40 oz. bags, due to undeclared milk. People who have an allergy or severe sensitivity to milk may run the risk of an allergic reaction if they consume this product.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "2a9ee1865ceb9703",
@@ -596,7 +519,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
       "publishedAt": "2026-10-01T20:03:00.000Z",
       "excerpt": "October 1, 2026 - WinCo Foods of Boise, ID is recalling the following Salsa Bean Dip Trays due to the inclusion of ecalled peperoncini from G.L. Mezzetta.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "3d7c05b94897e722",
@@ -607,29 +530,7 @@
       "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children",
       "publishedAt": "2026-10-01T19:02:08.000Z",
       "excerpt": "The U.S. Food and Drug Administration today approved the Autus Size-Adjustable Valve, a surgically implanted pulmonary heart valve for pediatric patients with congenital pulmonary valve disease.",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
-    },
-    {
-      "id": "2e36922acabccb8f",
-      "feed": "google-news",
-      "source": "The Detroit News",
-      "kind": "news",
-      "title": "Food recall tips and what to check before you eat",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTVp0STU4UTM2TmV1Z1BINEhWS2cxNTNCb3dGekF1M0J1dkRoVF9BRERIWlEtVEJpZEFNRGFsbnJIX3prb1pobWtZQ0x3enhldXhnUkpnRVFwZGdjMklXVXNfVEZINTNaYXA2R3Z4VmZwdkRTejU4VGU0RXFiNXlrOVpqVUdtTDJFOHVnR2NmMXdTLWFlUDhCR3FldUF6aE1wTDM3VEVxdk1Cdm44b2hXcjk0djMyRnhMUFE?oc=5",
-      "publishedAt": "2026-10-01T07:00:00.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
-    },
-    {
-      "id": "be5b51dee529753b",
-      "feed": "google-news",
-      "source": "USA Today",
-      "kind": "news",
-      "title": "What to do during a food recall before you eat",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUS13WmhnamQ0SjNCS1p1d3l3emsySnpvMHctdUxNQjdNaC0xNFktOHJHMzBrb3RweDNzQk0wOE5CN2M4bHBwa0VIbUdHVlh4VkpxaUxxSEFicEFZQkp6LTlOVl9keWZDSEVHWnA2d21pb2h2Ymc0ZmpBSDJ1QVh6UlZNamdFYVl1Q1JsckFFSzdQY2xaTFMwQlUwZUZsRlJmckN6QjZXaVA0dXVScmdPRmhJRQ?oc=5",
-      "publishedAt": "2026-10-01T07:00:00.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "c0f85533bad88b43",
@@ -640,7 +541,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
       "publishedAt": "2026-10-01T04:00:00.000Z",
       "excerpt": "Cincinnati, Ohio October 1, 2026. Saint Francis Apizza LLC is issuing a voluntary recall on their frozen pizzas for misbranding due to the soy allergen not being declared on the label. The frozen pizzas were sold in ‘Pepperoni,’ ‘Plain Cheese,’ ‘Supreme,’ and ‘Mushroom and Onion’ varieties.",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "c34d67d481107139",
@@ -651,18 +552,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible-0",
       "publishedAt": "2026-10-01T04:00:00.000Z",
       "excerpt": "Gias Foods of New York, NY is recalling all lot codes of bettergoods Authentic Italian Lemon Alfredo Fettuccine, because it has the potential to be contaminated with Listeria monocytogenes, an organism which can cause serious and sometimes fatal infections in young children, frail or elderly people,",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
-    },
-    {
-      "id": "1e714f3e14502889",
-      "feed": "google-news",
-      "source": "Powder & Bulk Solids",
-      "kind": "news",
-      "title": "Pet Food Recall Responsibility Spans Entire Supply Chain",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPakw5RFdzcEM0ajJiWDNKMWRKTDlfT0F1aTFBa21uVWE1M2hpWW5odjdwZGc5ajdIb2JFbzJWYmk0WUNpUDZramZuV1NPLW11SnNXdGlhUTF0ZmJSX3VqR25ESEhpMFVqd0NhVTBKYnZLdWREbUgta2FlMnRrbGJEVC1IN3I1WDZDYUE?oc=5",
-      "publishedAt": "2026-09-30T17:10:18.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     },
     {
       "id": "4211c746e29273a7",
@@ -673,7 +563,7 @@
       "url": "http://www.fda.gov/news-events/press-announcements/fda-launches-nationwide-effort-expand-scientific-expertise-and-consumer-voices-advisory-committees",
       "publishedAt": "2026-09-30T13:26:33.000Z",
       "excerpt": "The U.S. Food and Drug Administration today announced a broad, nationwide recruitment effort to expand the range of qualified voices and perspectives on its advisory committees— the independent bodies that inform some of the most consequential decisions in American public health.",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "9ad410e2d3f09495",
@@ -684,7 +574,7 @@
       "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-mct8-deficiency",
       "publishedAt": "2026-09-28T21:43:18.000Z",
       "excerpt": "The U.S. Food and Drug Administration today approved Emcitate (tiratricol) tablets for oral suspension to treat peripheral thyrotoxicosis (excess thyroid hormone levels in the blood that causes symptoms, such as rapid heart rate, increased blood pressure and adverse effects on metabolism) in patient",
-      "fetchedAt": "2026-10-27T12:20:35.559Z"
+      "fetchedAt": "2026-10-27T18:04:52.407Z"
     },
     {
       "id": "15083eb0d34a5c78",
@@ -695,18 +585,7 @@
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk",
       "publishedAt": "2026-09-28T14:26:00.000Z",
       "excerpt": "Sierra Nevada Cheese Company of Willows, California, is voluntarily recalling all Graziers Raw Milk Cheese currently in the market because due to potential contamination with Escherichia coli O26:H11 (E. coli O26:H11).",
-      "fetchedAt": "2026-10-27T12:20:35.558Z"
-    },
-    {
-      "id": "283b6ba8524c10a1",
-      "feed": "google-news",
-      "source": "CBS News",
-      "kind": "news",
-      "title": "Food safety becomes an election issue as major outbreaks and recalls cause concern",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTWdhQVNQbDh1ZkxNX3JHRGljLU9BSGo3SGFydFJvUXZEVlVjWkZ6QjBNS0V2eTlseWdRLUtjWjFyQ1ZQUHVKWXZFbUlxTDI2XzBBV1VqeHlubks5SDdKLWhza2hHbzFTX0NlblVZY19aMzQyT2FoVHlEaHRHYWpnb01xSQ?oc=5",
-      "publishedAt": "2026-09-28T07:00:00.000Z",
-      "excerpt": "",
-      "fetchedAt": "2026-10-27T12:20:35.560Z"
+      "fetchedAt": "2026-10-27T18:04:52.405Z"
     }
   ]
 }
