@@ -1,6 +1,138 @@
 {
-  "generatedAt": "2026-10-26T22:43:34.772Z",
+  "generatedAt": "2026-10-27T05:12:15.543Z",
   "entries": [
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "added",
+      "id": "fda:100041",
+      "slug": "fda-100041",
+      "title": "Stewart's Shops Corp. recalls Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "added",
+      "id": "fda:99898",
+      "slug": "fda-99898",
+      "title": "Saratoga Potato Chips LLC recalls J. HIGGS Loaded Bacon & Cheddar Potato Chips, NET WT 7.75 OZ (219.7g) bag, UPC 0519333164…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "added",
+      "id": "fda:100096",
+      "slug": "fda-100096",
+      "title": "Refresco Beverages US Inc recalls Pur Aqua Sparkling Frost Cherry Limeade 17 oz., UPC: 4099100167023",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "added",
+      "id": "fda:99833",
+      "slug": "fda-99833",
+      "title": "Made Fresh Salads Inc recalls Made Fresh brand Black Bean and Corn Salad; 5lb white plastic tub",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "added",
+      "id": "fda:99992",
+      "slug": "fda-99992",
+      "title": "DARING FOODS INC recalls Made From Plants; Daring; Plant Steak Bites; Ready in 4 Mins Microwaveable Pouch; UPC: 86…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "added",
+      "id": "fda:100002",
+      "slug": "fda-100002",
+      "title": "Holsum De Puerto Rico, Inc. recalls Holsum Spinach Flour Tortillas Large, 8 count (20 oz.) UPC: 810023430629",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "added",
+      "id": "fda:99966",
+      "slug": "fda-99966",
+      "title": "DEANO'S PASTA recalls Deano's Pasta; Pear and Pecorino Triangoli Ravioli, 1lb.; Ingredients: Dough: Semolina (W…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "updated",
+      "id": "fda:90030",
+      "slug": "fda-90030",
+      "title": "World Variety Produce Inc dba Melissa's recalls Organic Marketside Zucchini 2 Count packages/8 per case Ingredients: Organic Zucchini New…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": "2022-06-15",
+          "to": "2026-10-21"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "updated",
+      "id": "fda:88017",
+      "slug": "fda-88017",
+      "title": "Concord Farms recalls Concord Farms Fresh Enoki Mushrooms; 5.25 oz. (150g) or 7 oz. (200g) packages UPC: 049995…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": "2021-08-10",
+          "to": "2026-10-21"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-10-27T05:12:15.543Z",
+      "change": "removed",
+      "id": "fda:99757",
+      "slug": "fda-99757",
+      "title": "Unilever North America Supply Chain Company, LLC recalls Almond Joy Ice Cream Bar, 2.0 fl. oz. ice cream bars, paper cartons containing individual…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": "No longer returned by the source"
+    },
     {
       "at": "2026-10-25T11:39:25.808Z",
       "change": "added",

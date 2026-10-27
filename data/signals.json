@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-26T22:43:34.772Z",
+  "generatedAt": "2026-10-27T05:12:15.543Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-26T22:43:34.821Z",
+      "fetchedAt": "2026-10-27T05:12:15.622Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,16 +15,16 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-26T22:44:05.327Z",
+      "fetchedAt": "2026-10-27T05:12:46.100Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-10-14",
-      "itemCount": 2681
+      "upstreamUpdated": "2026-10-21",
+      "itemCount": 2687
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-26T22:44:09.800Z",
+      "fetchedAt": "2026-10-27T05:12:49.431Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-24",
@@ -116,6 +116,559 @@
       "record": {
         "firstSeen": "2026-10-25T11:39:25.808Z",
         "lastChanged": "2026-10-25T11:39:25.808Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100002",
+      "slug": "fda-100002",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100002",
+      "title": "Holsum De Puerto Rico, Inc. recalls Holsum Spinach Flour Tortillas Large, 8 count (20 oz.) UPC: 810023430629",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Holsum%20De%20Puerto%20Rico%2C%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100002",
+      "firm": "Holsum De Puerto Rico, Inc.",
+      "product": "Holsum Spinach Flour Tortillas Large, 8 count (20 oz.) UPC: 810023430629",
+      "productCategory": "produce",
+      "foodKeys": [
+        "spinach",
+        "flour"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        },
+        {
+          "name": "Unapproved additive or color",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "PR",
+          "VI"
+        ],
+        "stateCount": 2,
+        "international": false,
+        "description": "PR, US Virgin Islands"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-28",
+        "reported": "2026-10-21",
+        "updated": "2026-10-14",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared colors (FD&C Blue No. 1 and FD&C Yellow No. 5)",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-27T05:12:15.543Z",
+        "lastChanged": "2026-10-27T05:12:15.543Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100041",
+      "slug": "fda-100041",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100041",
+      "title": "Stewart's Shops Corp. recalls Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Stewart's%20Shops%20Corp.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100041",
+      "firm": "Stewart's Shops Corp.",
+      "product": "Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
+      "productCategory": "dairy",
+      "foodKeys": [
+        "berries",
+        "dairy",
+        "chocolate"
+      ],
+      "hazardType": "physical",
+      "agents": [
+        {
+          "name": "Metal",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "NH",
+          "NY",
+          "VT"
+        ],
+        "stateCount": 3,
+        "international": false,
+        "description": "NY, VT, NH"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-02",
+        "reported": "2026-10-21",
+        "updated": "2026-10-15",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Foreign object: May contain pieces of metal",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-27T05:12:15.543Z",
+        "lastChanged": "2026-10-27T05:12:15.543Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100096",
+      "slug": "fda-100096",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100096",
+      "title": "Refresco Beverages US Inc recalls Pur Aqua Sparkling Frost Cherry Limeade 17 oz., UPC: 4099100167023",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Refresco%20Beverages%20US%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100096",
+      "firm": "Refresco Beverages US Inc",
+      "product": "Pur Aqua Sparkling Frost Cherry Limeade 17 oz., UPC: 4099100167023",
+      "productCategory": "produce",
+      "foodKeys": [
+        "stone fruit"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class III",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "FL"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "Florida with further downstream distribution to retail stores"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-07",
+        "reported": "2026-10-21",
+        "updated": "2026-10-15",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "May contain undeclared aspartame.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-27T05:12:15.543Z",
+        "lastChanged": "2026-10-27T05:12:15.543Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99833",
+      "slug": "fda-99833",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99833",
+      "title": "Made Fresh Salads Inc recalls Made Fresh brand Black Bean and Corn Salad; 5lb white plastic tub",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Made%20Fresh%20Salads%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99833",
+      "firm": "Made Fresh Salads Inc",
+      "product": "Made Fresh brand Black Bean and Corn Salad; 5lb white plastic tub",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "lettuce"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Listeria monocytogenes",
+          "group": "organism"
+        },
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "NY"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "NY"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Telephone"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-04",
+        "reported": "2026-10-21",
+        "updated": "2026-10-14",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Products may be contaminated with Listeria monocytogenes.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-27T05:12:15.543Z",
+        "lastChanged": "2026-10-27T05:12:15.543Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99898",
+      "slug": "fda-99898",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99898",
+      "title": "Saratoga Potato Chips LLC recalls J. HIGGS Loaded Bacon & Cheddar Potato Chips, NET WT 7.75 OZ (219.7g) bag, UPC 0519333164…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Saratoga%20Potato%20Chips%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99898",
+      "firm": "Saratoga Potato Chips LLC",
+      "product": "J. HIGGS Loaded Bacon & Cheddar Potato Chips, NET WT 7.75 OZ (219.7g) bag, UPC 051933316454. Sold as 13 (7.75oz) bags per case.",
+      "productCategory": "meat",
+      "foodKeys": [
+        "pork"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Soy",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "FL",
+          "IN",
+          "KY",
+          "MD",
+          "OH",
+          "TN"
+        ],
+        "stateCount": 6,
+        "international": false,
+        "description": "The recalled J. HIGGS Loaded Bacon and Cheddar Potato Chips were distributed in the states of Florida, Indiana, Kentucky, Ohio, Tennessee, and Maryland and sold in Save A Lot stores."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-15",
+        "reported": "2026-10-21",
+        "updated": "2026-10-14",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared soy.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-27T05:12:15.543Z",
+        "lastChanged": "2026-10-27T05:12:15.543Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99966",
+      "slug": "fda-99966",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99966",
+      "title": "DEANO'S PASTA recalls Deano's Pasta; Pear and Pecorino Triangoli Ravioli, 1lb.; Ingredients: Dough: Semolina (W…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=DEANO'S%20PASTA",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99966",
+      "firm": "DEANO'S PASTA",
+      "product": "Deano's Pasta; Pear and Pecorino Triangoli Ravioli, 1lb.; Ingredients: Dough: Semolina (Wheat, Niacin, Thiamine, Mononitrate, Riboflavin, Folic Acid), Water, Fresh Eggs, Salt. Filling: Pears, Ricotta…",
+      "productCategory": "eggs",
+      "foodKeys": [
+        "peppers",
+        "eggs",
+        "dairy",
+        "flour",
+        "baked goods",
+        "beverages"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Shellfish",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "MA",
+          "NH"
+        ],
+        "stateCount": 2,
+        "international": false,
+        "description": "MA, NH"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-23",
+        "reported": "2026-10-21",
+        "updated": "2026-10-15",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared Lobster",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-27T05:12:15.543Z",
+        "lastChanged": "2026-10-27T05:12:15.543Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99992",
+      "slug": "fda-99992",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99992",
+      "title": "DARING FOODS INC recalls Made From Plants; Daring; Plant Steak Bites; Ready in 4 Mins Microwaveable Pouch; UPC: 86…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=DARING%20FOODS%20INC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99992",
+      "firm": "DARING FOODS INC",
+      "product": "Made From Plants; Daring; Plant Steak Bites; Ready in 4 Mins Microwaveable Pouch; UPC: 86001124319",
+      "productCategory": "meat",
+      "foodKeys": [
+        "beef"
+      ],
+      "hazardType": "undetermined",
+      "agents": [],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "FL",
+          "NC"
+        ],
+        "stateCount": 2,
+        "international": false,
+        "description": "Product was distributed to a single retail grocery chain customer with multiple locations in Florida and one location in North Carolina. A total of 6 locations received recalled product."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-24",
+        "reported": "2026-10-21",
+        "updated": "2026-10-15",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "defective packaging; packaging can rupture/explode during cooking.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-10-27T05:12:15.543Z",
+        "lastChanged": "2026-10-27T05:12:15.543Z",
         "revisions": 0,
         "backfilled": false
       }
@@ -2394,113 +2947,6 @@
       "relatedToOutbreak": null,
       "reasonText": "Potential Wheat Kernel contamination.",
       "missing": [
-        "detection (FDA enforcement reports rarely say how a problem was found)"
-      ],
-      "inferred": [
-        "hazardType",
-        "agents",
-        "productCategory",
-        "geography"
-      ],
-      "rulesVersion": "1.0",
-      "record": {
-        "firstSeen": "2026-10-06T06:27:45.972Z",
-        "lastChanged": "2026-10-06T06:27:45.972Z",
-        "revisions": 0,
-        "backfilled": false
-      }
-    },
-    {
-      "id": "fda:99757",
-      "slug": "fda-99757",
-      "kind": "recall",
-      "source": "FDA",
-      "sourceId": "99757",
-      "title": "Unilever North America Supply Chain Company, LLC recalls Almond Joy Ice Cream Bar, 2.0 fl. oz. ice cream bars, paper cartons containing individual…",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Unilever%20North%20America%20Supply%20Chain%20Company%2C%20LLC",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99757",
-      "firm": "Unilever North America Supply Chain Company, LLC",
-      "product": "Almond Joy Ice Cream Bar, 2.0 fl. oz. ice cream bars, paper cartons containing individually wrapped ice cream bars . 6 bars per carton. Keep frozen",
-      "productCategory": "nuts-and-seeds",
-      "foodKeys": [
-        "dairy",
-        "nuts"
-      ],
-      "hazardType": "labeling-regulatory",
-      "agents": [],
-      "classification": null,
-      "geography": {
-        "scope": "multi-state",
-        "states": [
-          "AK",
-          "AL",
-          "AZ",
-          "CA",
-          "CO",
-          "FL",
-          "GA",
-          "HI",
-          "IA",
-          "IL",
-          "KS",
-          "LA",
-          "MD",
-          "ME",
-          "MI",
-          "MN",
-          "MO",
-          "MS",
-          "NH",
-          "NJ",
-          "NM",
-          "NV",
-          "NY",
-          "OH",
-          "OK",
-          "OR",
-          "PA",
-          "SC",
-          "TN",
-          "TX",
-          "UT",
-          "VA",
-          "WA",
-          "WI"
-        ],
-        "stateCount": 34,
-        "international": false,
-        "description": "The adulterated product was distributed to the following states: AZ,MD,NM,WI,CO,HI,MO, IA, GA, SC, WA,PA, IL, CA, OR, TX,FL, NH,LA,KS,MS, OK,MO,MN, MI, TN, NY, NV, UT, OH, NJ, AK,VA, AL, ME"
-      },
-      "rootCause": {
-        "category": "not-stated",
-        "basis": "not-stated",
-        "detail": null
-      },
-      "detection": {
-        "category": "not-stated",
-        "basis": "not-stated",
-        "detail": null
-      },
-      "correctiveAction": {
-        "category": "voluntary-recall",
-        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
-      },
-      "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
-      },
-      "dates": {
-        "event": "2026-08-11",
-        "reported": "2026-09-30",
-        "updated": null,
-        "closed": null
-      },
-      "outbreak": null,
-      "relatedToOutbreak": null,
-      "reasonText": "Inaccurate Nutrition Facts information listed on product",
-      "missing": [
-        "classification",
-        "updatedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -205849,13 +206295,13 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2022-04-18",
         "reported": "2022-05-04",
         "updated": "2022-05-03",
-        "closed": "2022-06-15"
+        "closed": "2026-10-21"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -205872,8 +206318,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T15:08:28.150Z",
-        "lastChanged": "2026-09-17T15:08:28.150Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-27T05:12:15.543Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -239735,13 +240181,13 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2021-05-28",
         "reported": "2021-06-30",
         "updated": "2021-06-29",
-        "closed": "2021-08-10"
+        "closed": "2026-10-21"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -239758,8 +240204,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T15:08:28.150Z",
-        "lastChanged": "2026-09-17T15:08:28.150Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-27T05:12:15.543Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
