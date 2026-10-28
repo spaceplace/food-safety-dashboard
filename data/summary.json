@@ -1,24 +1,16 @@
 {
-  "generatedAt": "2026-10-26T22:44:11.361Z",
+  "generatedAt": "2026-10-28T05:51:13.034Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-19",
-  "windowTo": "2026-10-26",
+  "windowFrom": "2026-10-21",
+  "windowTo": "2026-10-28",
   "paragraphs": [
-    "A Salmonella outbreak linked to raw oysters remains ongoing, with 27 cases reported across 12 states and 5 hospitalizations as of October 19 [1]. Consumers who purchased raw oysters should be cautious, though specific brands or suppliers have not been identified in available reports [1].",
-    "Imperio Distribution LLC recalled 2 oz. sealed bags of \"IMPERIO FUEGO BEEF JERKY (CARNE SECA)\" produced without federal inspection in Illinois, Indiana, Iowa, Michigan, Minnesota, Mississippi, and Wisconsin [2][16]. Natural Grocers Brand Organic 2-Pound Mung Beans are being recalled due to potential glass contamination [3]. WinCo Foods is recalling WinCo Foods Brand Hoagie Rolls because they contain undeclared sesame [4].",
-    "The FDA issued a public warning about cold smoked sprats from D&M Smoked Fish Inc. (doing business as Haifa Smoked Fish Inc.) due to botulism risk; the company refused to recall the product [17]. Wild West Seed Inc. is recalling approximately 10,000 pounds of broccoli sprouting seeds—both Broccoli Seeds Green Sprouting Calabrese lot #4105 in 50-pound bags and Wild West Seeds Broccoli Waltham29 Seeds lot #4475—because of Salmonella contamination [19]."
+    "Imperio Distribution LLC recalled 2 oz. bags of IMPERIO FUEGO BEEF JERKY (CARNE SECA) distributed in Illinois, Indiana, Iowa, Michigan, Minnesota, Mississippi, and Wisconsin because the product was produced without federal inspection [1][32]. Made Fresh Salads Inc recalled 5 lb. white plastic tubs of Made Fresh brand Black Bean and Corn Salad sold in New York due to potential Listeria monocytogenes contamination [2]. Deano's Pasta recalled 1 lb. packages of Pear and Pecorino Triangoli Ravioli in Massachusetts and New Hampshire because the product contains undeclared lobster [3]. These are Class I recalls [1][2][3].",
+    "Taylor Farms issued a recall for H-E-B Backyard BBQ Chop Salad kits due to potential undeclared soy and tree nuts (almonds) [9][18]. HAIFA SMOKED FISH recalled approximately 560 pounds of Cold Smoked Sprats due to potential contamination with Clostridium botulinum, a bacterium which can cause life-threatening illness, and consumers are warned not to use the product even if it does not look or smell spoiled [10].",
+    "Additional Class II recalls included Stewart's Shops Vanilla Heavenly Medley ice cream with potential metal pieces [4], J. HIGGS Loaded Bacon & Cheddar Potato Chips with undeclared soy [5], Daring Plant Steak Bites with defective packaging that can rupture during cooking [6], and Holsum Spinach Flour Tortillas with undeclared food colors [7]. Natural Grocers Brand Organic 2 Pound Mung Beans were recalled for potential glass contamination [11], and WinCo Foods Brand Hoagie Rolls were recalled for undeclared sesame [12]."
   ],
   "sources": [
     {
       "n": 1,
-      "kind": "outbreak",
-      "title": "Salmonella Outbreak Linked to Raw Oysters",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/salmonella/outbreaks/oysters-10-26/index.html",
-      "publishedAt": "2026-10-19"
-    },
-    {
-      "n": 2,
       "kind": "recall",
       "title": "Imperio Distribution LLC Recalls Beef Jerky Products Produced Without the Benefit of Inspection",
       "source": "USDA FSIS recall notice",
@@ -26,7 +18,71 @@
       "publishedAt": "2026-10-24"
     },
     {
+      "n": 2,
+      "kind": "recall",
+      "title": "Made Fresh Salads Inc recalls Made Fresh brand Black Bean and Corn Salad; 5lb white plastic tub",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Made%20Fresh%20Salads%20Inc",
+      "publishedAt": "2026-10-21"
+    },
+    {
       "n": 3,
+      "kind": "recall",
+      "title": "DEANO'S PASTA recalls Deano's Pasta; Pear and Pecorino Triangoli Ravioli, 1lb.; Ingredients: Dough: Semolina (W…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=DEANO'S%20PASTA",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "n": 4,
+      "kind": "recall",
+      "title": "Stewart's Shops Corp. recalls Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Stewart's%20Shops%20Corp.",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "n": 5,
+      "kind": "recall",
+      "title": "Saratoga Potato Chips LLC recalls J. HIGGS Loaded Bacon & Cheddar Potato Chips, NET WT 7.75 OZ (219.7g) bag, UPC 0519333164…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Saratoga%20Potato%20Chips%20LLC",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "n": 6,
+      "kind": "recall",
+      "title": "DARING FOODS INC recalls Made From Plants; Daring; Plant Steak Bites; Ready in 4 Mins Microwaveable Pouch; UPC: 86…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=DARING%20FOODS%20INC",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "n": 7,
+      "kind": "recall",
+      "title": "Holsum De Puerto Rico, Inc. recalls Holsum Spinach Flour Tortillas Large, 8 count (20 oz.) UPC: 810023430629",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Holsum%20De%20Puerto%20Rico%2C%20Inc.",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "n": 9,
+      "kind": "agency-notice",
+      "title": "Taylor Farms Issues Recall for H-E-B Backyard BBQ Chop Salad Kit Due to the Potential Undeclared Soy and Tree Nuts(Almonds)",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
+      "publishedAt": "2026-10-27T18:18:00.000Z"
+    },
+    {
+      "n": 10,
+      "kind": "agency-notice",
+      "title": "HAIFA SMOKED FISH Recalls Cold Smoked Sprats Due to Potential Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
+      "publishedAt": "2026-10-27T15:15:00.000Z"
+    },
+    {
+      "n": 11,
       "kind": "agency-notice",
       "title": "Natural Grocers Recalls Natural Grocers Brand Organic 2 Pound Mung Beans Due to Potential Presence of Foreign Material",
       "source": "FDA recall notice",
@@ -34,7 +90,7 @@
       "publishedAt": "2026-10-22T22:59:00.000Z"
     },
     {
-      "n": 4,
+      "n": 12,
       "kind": "agency-notice",
       "title": "WinCo Foods LLC Issues Allergy Alert on Undeclared Sesame in Hoagie Rolls",
       "source": "FDA recall notice",
@@ -42,34 +98,26 @@
       "publishedAt": "2026-10-22T19:42:00.000Z"
     },
     {
-      "n": 16,
+      "n": 18,
+      "kind": "news",
+      "title": "Taylor Farms recalls salad kits because of undeclared allergens",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/10/taylor-farms-recalls-salad-kits-because-of-undeclared-allergens-2/",
+      "publishedAt": "2026-10-28T02:33:43.000Z"
+    },
+    {
+      "n": 32,
       "kind": "news",
       "title": "Beef jerky recalled because of lack of inspection, illegal use of USDA seal",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/10/beef-jerky-recalled-because-of-lack-of-inspection-illegal-use-of-usda-seal/",
       "publishedAt": "2026-10-25T01:36:26.000Z"
-    },
-    {
-      "n": 17,
-      "kind": "news",
-      "title": "FDA issues warning about cold smoked fish because of botulism risk; company refuses to recall product",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/fda-issues-warning-about-cold-smoked-fish-because-of-botulism-risk-company-refuses-to-recall-product/",
-      "publishedAt": "2026-10-24T00:53:47.000Z"
-    },
-    {
-      "n": 19,
-      "kind": "news",
-      "title": "Sprouting seeds recalled because of Salmonella contamination",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-salmonella-contamination/",
-      "publishedAt": "2026-10-23T04:18:29.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 5335,
-    "outputTokens": 651
+    "inputTokens": 7386,
+    "outputTokens": 866
   }
 }
