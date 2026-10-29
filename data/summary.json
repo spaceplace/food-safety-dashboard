@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-28T05:51:13.034Z",
+  "generatedAt": "2026-10-29T05:54:45.695Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-21",
-  "windowTo": "2026-10-28",
+  "windowFrom": "2026-10-22",
+  "windowTo": "2026-10-29",
   "paragraphs": [
-    "Imperio Distribution LLC recalled 2 oz. bags of IMPERIO FUEGO BEEF JERKY (CARNE SECA) distributed in Illinois, Indiana, Iowa, Michigan, Minnesota, Mississippi, and Wisconsin because the product was produced without federal inspection [1][32]. Made Fresh Salads Inc recalled 5 lb. white plastic tubs of Made Fresh brand Black Bean and Corn Salad sold in New York due to potential Listeria monocytogenes contamination [2]. Deano's Pasta recalled 1 lb. packages of Pear and Pecorino Triangoli Ravioli in Massachusetts and New Hampshire because the product contains undeclared lobster [3]. These are Class I recalls [1][2][3].",
-    "Taylor Farms issued a recall for H-E-B Backyard BBQ Chop Salad kits due to potential undeclared soy and tree nuts (almonds) [9][18]. HAIFA SMOKED FISH recalled approximately 560 pounds of Cold Smoked Sprats due to potential contamination with Clostridium botulinum, a bacterium which can cause life-threatening illness, and consumers are warned not to use the product even if it does not look or smell spoiled [10].",
-    "Additional Class II recalls included Stewart's Shops Vanilla Heavenly Medley ice cream with potential metal pieces [4], J. HIGGS Loaded Bacon & Cheddar Potato Chips with undeclared soy [5], Daring Plant Steak Bites with defective packaging that can rupture during cooking [6], and Holsum Spinach Flour Tortillas with undeclared food colors [7]. Natural Grocers Brand Organic 2 Pound Mung Beans were recalled for potential glass contamination [11], and WinCo Foods Brand Hoagie Rolls were recalled for undeclared sesame [12]."
+    "A Class I recall of Imperio Fuego Beef Jerky is underway after the product was produced without inspection [1]. The 2 oz. sealed bags were distributed in Illinois, Indiana, Iowa, Michigan, Minnesota, Mississippi, and Wisconsin; consumers should not eat this product [1].",
+    "Taylor Farms is recalling H-E-B Backyard BBQ Chop Salad kits due to undeclared soy and almonds, which may cause serious reactions in people with allergies to these allergens [2]. HAIFA SMOKED FISH is recalling approximately 560 pounds of Cold Smoked Sprats because of potential contamination with Clostridium botulinum, a bacterium that can cause life-threatening illness; consumers should not use the product even if it looks or smells normal [3]. WinCo Foods is recalling WinCo Foods Brand Hoagie Rolls for undeclared sesame [5], and Natural Grocers is recalling Natural Grocers Brand Organic 2-Pound Mung Beans due to potential glass contamination [4].",
+    "The FDA has declared an outbreak linked to Trader Joe's chicken wraps over [6]. Five cases of Shiga toxin-producing E. coli infection have been confirmed in San Luis Obispo County, California, with a suspected link to Brookshire Farms during October 16-26 [15]."
   ],
   "sources": [
     {
@@ -19,54 +19,6 @@
     },
     {
       "n": 2,
-      "kind": "recall",
-      "title": "Made Fresh Salads Inc recalls Made Fresh brand Black Bean and Corn Salad; 5lb white plastic tub",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Made%20Fresh%20Salads%20Inc",
-      "publishedAt": "2026-10-21"
-    },
-    {
-      "n": 3,
-      "kind": "recall",
-      "title": "DEANO'S PASTA recalls Deano's Pasta; Pear and Pecorino Triangoli Ravioli, 1lb.; Ingredients: Dough: Semolina (W…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=DEANO'S%20PASTA",
-      "publishedAt": "2026-10-21"
-    },
-    {
-      "n": 4,
-      "kind": "recall",
-      "title": "Stewart's Shops Corp. recalls Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Stewart's%20Shops%20Corp.",
-      "publishedAt": "2026-10-21"
-    },
-    {
-      "n": 5,
-      "kind": "recall",
-      "title": "Saratoga Potato Chips LLC recalls J. HIGGS Loaded Bacon & Cheddar Potato Chips, NET WT 7.75 OZ (219.7g) bag, UPC 0519333164…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Saratoga%20Potato%20Chips%20LLC",
-      "publishedAt": "2026-10-21"
-    },
-    {
-      "n": 6,
-      "kind": "recall",
-      "title": "DARING FOODS INC recalls Made From Plants; Daring; Plant Steak Bites; Ready in 4 Mins Microwaveable Pouch; UPC: 86…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=DARING%20FOODS%20INC",
-      "publishedAt": "2026-10-21"
-    },
-    {
-      "n": 7,
-      "kind": "recall",
-      "title": "Holsum De Puerto Rico, Inc. recalls Holsum Spinach Flour Tortillas Large, 8 count (20 oz.) UPC: 810023430629",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Holsum%20De%20Puerto%20Rico%2C%20Inc.",
-      "publishedAt": "2026-10-21"
-    },
-    {
-      "n": 9,
       "kind": "agency-notice",
       "title": "Taylor Farms Issues Recall for H-E-B Backyard BBQ Chop Salad Kit Due to the Potential Undeclared Soy and Tree Nuts(Almonds)",
       "source": "FDA recall notice",
@@ -74,7 +26,7 @@
       "publishedAt": "2026-10-27T18:18:00.000Z"
     },
     {
-      "n": 10,
+      "n": 3,
       "kind": "agency-notice",
       "title": "HAIFA SMOKED FISH Recalls Cold Smoked Sprats Due to Potential Health Risk",
       "source": "FDA recall notice",
@@ -82,7 +34,7 @@
       "publishedAt": "2026-10-27T15:15:00.000Z"
     },
     {
-      "n": 11,
+      "n": 4,
       "kind": "agency-notice",
       "title": "Natural Grocers Recalls Natural Grocers Brand Organic 2 Pound Mung Beans Due to Potential Presence of Foreign Material",
       "source": "FDA recall notice",
@@ -90,7 +42,7 @@
       "publishedAt": "2026-10-22T22:59:00.000Z"
     },
     {
-      "n": 12,
+      "n": 5,
       "kind": "agency-notice",
       "title": "WinCo Foods LLC Issues Allergy Alert on Undeclared Sesame in Hoagie Rolls",
       "source": "FDA recall notice",
@@ -98,26 +50,26 @@
       "publishedAt": "2026-10-22T19:42:00.000Z"
     },
     {
-      "n": 18,
+      "n": 6,
       "kind": "news",
-      "title": "Taylor Farms recalls salad kits because of undeclared allergens",
+      "title": "FDA declares end to outbreak linked to Trader Joe's chicken wraps; a new outbreak is under investigation",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/taylor-farms-recalls-salad-kits-because-of-undeclared-allergens-2/",
-      "publishedAt": "2026-10-28T02:33:43.000Z"
+      "url": "https://www.foodsafetynews.com/2026/10/fda-report-says-outbreak-linked-to-trader-joes-chicken-wraps-has-ended-a-new-outbreak-is-under-investigation/",
+      "publishedAt": "2026-10-29T04:05:00.000Z"
     },
     {
-      "n": 32,
+      "n": 15,
       "kind": "news",
-      "title": "Beef jerky recalled because of lack of inspection, illegal use of USDA seal",
+      "title": "E. coli infections reported among children who visited pumpkin patches, petting zoos",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/beef-jerky-recalled-because-of-lack-of-inspection-illegal-use-of-usda-seal/",
-      "publishedAt": "2026-10-25T01:36:26.000Z"
+      "url": "https://www.foodsafetynews.com/2026/10/e-coli-infections-reported-among-children-who-visited-pumpkin-patches-petting-zoos/",
+      "publishedAt": "2026-10-28T02:57:11.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 7386,
-    "outputTokens": 866
+    "inputTokens": 2291,
+    "outputTokens": 316
   }
 }
