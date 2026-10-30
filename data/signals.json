@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-30T13:03:13.758Z",
+  "generatedAt": "2026-10-30T22:25:53.178Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-10-30T13:03:13.817Z",
+      "fetchedAt": "2026-10-30T22:25:53.228Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-10-30T13:03:35.781Z",
+      "fetchedAt": "2026-10-30T22:26:21.111Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-21",
@@ -24,10 +24,10 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-10-30T13:03:40.400Z",
+      "fetchedAt": "2026-10-30T22:26:25.453Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-10-24",
+      "upstreamUpdated": "2026-10-30",
       "itemCount": 501
     }
   },
@@ -707,14 +707,15 @@
           "IN",
           "KY",
           "MD",
+          "MI",
           "NJ",
           "NY",
           "PA",
           "VA"
         ],
-        "stateCount": 12,
+        "stateCount": 13,
         "international": false,
-        "description": "12 states"
+        "description": "13 states"
       },
       "rootCause": {
         "category": "not-stated",
@@ -737,16 +738,16 @@
       "dates": {
         "event": "2026-10-19",
         "reported": "2026-10-19",
-        "updated": "2026-10-19",
+        "updated": "2026-10-30",
         "closed": null
       },
       "outbreak": {
         "pathogen": "Salmonella Telelkebir",
-        "cases": 27,
+        "cases": 28,
         "hospitalizations": 5,
         "deaths": 0,
         "illnessOnsetFrom": "2026-05-29",
-        "illnessOnsetTo": "2026-09-14"
+        "illnessOnsetTo": "2026-10-06"
       },
       "relatedToOutbreak": true,
       "reasonText": null,
@@ -759,8 +760,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-10-20T21:41:21.954Z",
-        "lastChanged": "2026-10-20T21:41:21.954Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-30T22:25:53.178Z",
+        "revisions": 1,
         "backfilled": false
       }
     },
@@ -3492,19 +3493,21 @@
         "detail": "FSIS recall (all FSIS recalls are voluntary)"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Active Recall"
+        "normalized": "closed",
+        "agency": "Closed Recall (2026)"
       },
       "dates": {
         "event": "2026-09-25",
         "reported": "2026-09-25",
-        "updated": "2026-10-08",
+        "updated": "2026-10-30",
         "closed": null
       },
       "outbreak": null,
       "relatedToOutbreak": false,
       "reasonText": "Product Contamination",
-      "missing": [],
+      "missing": [
+        "closedDate (year only)"
+      ],
       "inferred": [
         "hazardType",
         "agents",
@@ -3514,8 +3517,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-26T11:30:23.692Z",
-        "lastChanged": "2026-10-08T23:24:37.418Z",
-        "revisions": 1,
+        "lastChanged": "2026-10-30T22:25:53.178Z",
+        "revisions": 2,
         "backfilled": false
       }
     },
@@ -10059,19 +10062,21 @@
         "detail": "FSIS recall (all FSIS recalls are voluntary)"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Active Recall"
+        "normalized": "closed",
+        "agency": "Closed Recall (2026)"
       },
       "dates": {
         "event": "2026-08-07",
         "reported": "2026-08-07",
-        "updated": "2026-08-24",
+        "updated": "2026-10-30",
         "closed": null
       },
       "outbreak": null,
       "relatedToOutbreak": false,
       "reasonText": "Import Violation",
-      "missing": [],
+      "missing": [
+        "closedDate (year only)"
+      ],
       "inferred": [
         "hazardType",
         "agents",
@@ -10081,8 +10086,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-30T22:25:53.178Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -11298,8 +11303,8 @@
         "detail": "FSIS recall (all FSIS recalls are voluntary)"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Active Recall"
+        "normalized": "closed",
+        "agency": "Closed Recall (2026)"
       },
       "dates": {
         "event": "2026-07-24",
@@ -11310,7 +11315,9 @@
       "outbreak": null,
       "relatedToOutbreak": false,
       "reasonText": "Import Violation",
-      "missing": [],
+      "missing": [
+        "closedDate (year only)"
+      ],
       "inferred": [
         "hazardType",
         "agents",
@@ -11320,8 +11327,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-30T22:25:53.178Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -11367,19 +11374,21 @@
         "detail": "FSIS recall (all FSIS recalls are voluntary)"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Active Recall"
+        "normalized": "closed",
+        "agency": "Closed Recall (2026)"
       },
       "dates": {
         "event": "2026-07-23",
         "reported": "2026-07-23",
-        "updated": "2026-07-23",
+        "updated": "2026-10-30",
         "closed": null
       },
       "outbreak": null,
       "relatedToOutbreak": false,
       "reasonText": "Import Violation",
-      "missing": [],
+      "missing": [
+        "closedDate (year only)"
+      ],
       "inferred": [
         "hazardType",
         "agents",
@@ -11389,8 +11398,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-10-30T22:25:53.178Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
