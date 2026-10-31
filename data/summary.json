@@ -1,17 +1,24 @@
 {
-  "generatedAt": "2026-10-30T05:56:05.717Z",
+  "generatedAt": "2026-10-31T12:41:52.435Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-23",
-  "windowTo": "2026-10-30",
+  "windowFrom": "2026-10-24",
+  "windowTo": "2026-10-31",
   "paragraphs": [
-    "A Class I recall of Imperio Fuego Beef Jerky poses a serious safety risk [1]. The 2 oz. sealed bags were produced without inspection and have been distributed in Illinois, Indiana, Iowa, Michigan, Minnesota, Mississippi, and Wisconsin [1]. Consumers should not eat this product [1].",
-    "HAIFA SMOKED FISH is recalling Cold Smoked Sprats due to potential contamination with Clostridium botulinum, a bacterium that can cause life-threatening illness [4]. Consumers are warned not to use the product even if it does not look or smell spoiled [4]. Approximately 560 lbs. were affected [4].",
-    "Taylor Farms is recalling H-E-B Backyard BBQ Chop Salad kits due to undeclared soy and almonds [3]. People with sensitivity or allergy to these ingredients may face serious adverse reactions [3]. SLR Food Distribution Inc. is recalling Wise Wife Brand Ground Cinnamon because it potentially contains elevated levels of lead [2].",
-    "The FDA has declared an end to an outbreak linked to Trader Joe's chicken wraps, though a new outbreak is under investigation [9]. Five children in San Luis Obispo County, California, have been infected with Shiga toxin-producing E. coli following visits to Brookshire Farms between October 16 and 26 [17]."
+    "A Salmonella outbreak linked to raw oysters remains open across 13 states, with 28 cases and 5 hospitalizations reported as of October 30 [1]. A Class I recall of Imperio Fuego Beef Jerky has been issued because the product was produced without inspection; affected 2 oz. sealed bags were sold in Illinois, Indiana, Iowa, Michigan, Minnesota, Mississippi, and Wisconsin [2].",
+    "Vitality Works Inc. is recalling 365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules (lot number 2025-26227) due to potential Salmonella contamination [4]. SLR Food Distribution Inc. recalls Wise Wife Brand Ground Cinnamon because it may contain elevated lead levels [5]. Taylor Farms is recalling H-E-B Backyard BBQ Chop Salad kits due to potential undeclared soy and almonds, which can cause serious reactions or death in people with allergies [6]. HAIFA SMOKED FISH is recalling Cold Smoked Sprats due to potential Clostridium botulinum contamination; consumers should not use the product even if it appears normal [7].",
+    "The FDA has warned against Once Upon a Farm Tractor Wheels Organic Toddler Soft-Baked Bars in all flavors and lot numbers due to reports of infants choking [8]."
   ],
   "sources": [
     {
       "n": 1,
+      "kind": "outbreak",
+      "title": "Salmonella Outbreak Linked to Raw Oysters",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/oysters-10-26/index.html",
+      "publishedAt": "2026-10-30"
+    },
+    {
+      "n": 2,
       "kind": "recall",
       "title": "Imperio Distribution LLC Recalls Beef Jerky Products Produced Without the Benefit of Inspection",
       "source": "USDA FSIS recall notice",
@@ -19,7 +26,15 @@
       "publishedAt": "2026-10-24"
     },
     {
-      "n": 2,
+      "n": 4,
+      "kind": "agency-notice",
+      "title": "Vitality Works Inc. Recalls 365 Whole Foods Market Ashwagandha Capsules Sold Nationwide Due to Potential Salmonella Contamination",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitality-works-inc-recalls-365-whole-foods-market-ashwagandha-capsules-sold-nationwide-due-potential",
+      "publishedAt": "2026-10-30T16:16:00.000Z"
+    },
+    {
+      "n": 5,
       "kind": "agency-notice",
       "title": "SLR Food Distribution Inc. Recalls Wise Wife Brand Ground Cinnamon Due to Elevated Lead Levels",
       "source": "FDA recall notice",
@@ -27,7 +42,7 @@
       "publishedAt": "2026-10-29T21:26:00.000Z"
     },
     {
-      "n": 3,
+      "n": 6,
       "kind": "agency-notice",
       "title": "Taylor Farms Issues Recall for H-E-B Backyard BBQ Chop Salad Kit Due to the Potential Undeclared Soy and Tree Nuts(Almonds)",
       "source": "FDA recall notice",
@@ -35,7 +50,7 @@
       "publishedAt": "2026-10-27T18:18:00.000Z"
     },
     {
-      "n": 4,
+      "n": 7,
       "kind": "agency-notice",
       "title": "HAIFA SMOKED FISH Recalls Cold Smoked Sprats Due to Potential Health Risk",
       "source": "FDA recall notice",
@@ -43,26 +58,18 @@
       "publishedAt": "2026-10-27T15:15:00.000Z"
     },
     {
-      "n": 9,
+      "n": 8,
       "kind": "news",
-      "title": "FDA declares end to outbreak linked to Trader Joe's chicken wraps; a new outbreak is under investigation",
+      "title": "Reports of infants choking result in FDA warning about Once Upon a Time snacks",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/fda-report-says-outbreak-linked-to-trader-joes-chicken-wraps-has-ended-a-new-outbreak-is-under-investigation/",
-      "publishedAt": "2026-10-29T04:05:00.000Z"
-    },
-    {
-      "n": 17,
-      "kind": "news",
-      "title": "E. coli infections reported among children who visited pumpkin patches, petting zoos",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/e-coli-infections-reported-among-children-who-visited-pumpkin-patches-petting-zoos/",
-      "publishedAt": "2026-10-28T02:57:11.000Z"
+      "url": "https://www.foodsafetynews.com/2026/10/reports-of-infants-choking-result-in-fda-warning-about-once-upon-a-time-snacks/",
+      "publishedAt": "2026-10-31T02:16:09.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 2213,
-    "outputTokens": 313
+    "inputTokens": 5377,
+    "outputTokens": 669
   }
 }
