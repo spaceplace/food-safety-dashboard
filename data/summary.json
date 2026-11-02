@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-11-01T13:32:15.173Z",
+  "generatedAt": "2026-11-02T16:07:00.782Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-25",
-  "windowTo": "2026-11-01",
+  "windowFrom": "2026-10-26",
+  "windowTo": "2026-11-02",
   "paragraphs": [
-    "An outbreak of Salmonella Telelkebir linked to raw oysters remains ongoing, with 28 cases reported across 13 states and 5 hospitalizations as of October 30 [1]. Several food recalls are in effect: Vitality Works is recalling 365 Whole Foods Market Ashwagandha Capsules (lot 2025-26227) due to potential Salmonella contamination [3]; HAIFA SMOKED FISH is recalling Cold Smoked Sprats because of potential Clostridium botulinum contamination, which can cause life-threatening illness [6]; and Taylor Farms is recalling H-E-B Backyard BBQ Chop Salad kits due to undeclared soy and almonds [5]. Additionally, SLR Food Distribution is recalling Wise Wife Brand Ground Cinnamon because of elevated lead levels [4].",
-    "An FDA warning covers all flavors, quantities, lots, and dates of Once Upon A Farm Tractor Wheels Organic Toddler Soft-Baked Bars after reports of infants choking [9]. The FDA declared an end to the Salmonella outbreak linked to Trader Joe's chicken wraps, though a new outbreak is under investigation [14]."
+    "An outbreak of Salmonella Telelkebir linked to raw oysters remains ongoing, with 28 cases across 13 states and 5 hospitalizations reported as of October 30 [1]. Consumers should consult CDC guidance or their local health department regarding raw oyster consumption [1].",
+    "Vitality Works Inc. is recalling one lot of 365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules (lot number 2025-26227) due to potential Salmonella contamination [4]. HAIFA SMOKED FISH is recalling approximately 560 pounds of Cold Smoked Sprats due to potential contamination with Clostridium botulinum, a bacterium that can cause life-threatening illness; consumers should not use the product even if it looks or smells normal [7]. SLR Food Distribution Inc. is recalling Wise Wife Brand Ground Cinnamon because of elevated lead levels [5]. Taylor Farms is recalling H-E-B Backyard BBQ Chop Salad Kit due to undeclared soy and tree nuts (almonds) [6].",
+    "The FDA issued a warning about Once Upon A Farm Tractor Wheels Organic Toddler Soft-Baked Bars, covering all flavors, quantities, lots, and dates, following reports of infants choking [17]."
   ],
   "sources": [
     {
@@ -17,7 +18,7 @@
       "publishedAt": "2026-10-30"
     },
     {
-      "n": 3,
+      "n": 4,
       "kind": "agency-notice",
       "title": "Vitality Works Inc. Recalls 365 Whole Foods Market Ashwagandha Capsules Sold Nationwide Due to Potential Salmonella Contamination",
       "source": "FDA recall notice",
@@ -25,7 +26,7 @@
       "publishedAt": "2026-10-30T16:16:00.000Z"
     },
     {
-      "n": 4,
+      "n": 5,
       "kind": "agency-notice",
       "title": "SLR Food Distribution Inc. Recalls Wise Wife Brand Ground Cinnamon Due to Elevated Lead Levels",
       "source": "FDA recall notice",
@@ -33,7 +34,7 @@
       "publishedAt": "2026-10-29T21:26:00.000Z"
     },
     {
-      "n": 5,
+      "n": 6,
       "kind": "agency-notice",
       "title": "Taylor Farms Issues Recall for H-E-B Backyard BBQ Chop Salad Kit Due to the Potential Undeclared Soy and Tree Nuts(Almonds)",
       "source": "FDA recall notice",
@@ -41,7 +42,7 @@
       "publishedAt": "2026-10-27T18:18:00.000Z"
     },
     {
-      "n": 6,
+      "n": 7,
       "kind": "agency-notice",
       "title": "HAIFA SMOKED FISH Recalls Cold Smoked Sprats Due to Potential Health Risk",
       "source": "FDA recall notice",
@@ -49,26 +50,18 @@
       "publishedAt": "2026-10-27T15:15:00.000Z"
     },
     {
-      "n": 9,
+      "n": 17,
       "kind": "news",
       "title": "Reports of infants choking result in FDA warning about Once Upon a Farm snacks",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/10/reports-of-infants-choking-result-in-fda-warning-about-once-upon-a-time-snacks/",
       "publishedAt": "2026-10-31T02:16:09.000Z"
-    },
-    {
-      "n": 14,
-      "kind": "news",
-      "title": "FDA declares end to outbreak linked to Trader Joe's chicken wraps; a new outbreak is under investigation",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/10/fda-report-says-outbreak-linked-to-trader-joes-chicken-wraps-has-ended-a-new-outbreak-is-under-investigation/",
-      "publishedAt": "2026-10-29T04:05:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 2337,
-    "outputTokens": 289
+    "inputTokens": 5316,
+    "outputTokens": 638
   }
 }
