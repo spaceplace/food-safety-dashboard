@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-02T16:06:28.611Z",
+  "generatedAt": "2026-11-03T01:02:05.289Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-11-02T16:06:28.678Z",
+      "fetchedAt": "2026-11-03T01:02:05.336Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,16 +15,16 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-11-02T16:06:53.763Z",
+      "fetchedAt": "2026-11-03T01:02:35.516Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-10-21",
-      "itemCount": 2687
+      "upstreamUpdated": "2026-10-28",
+      "itemCount": 2697
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-11-02T16:06:59.085Z",
+      "fetchedAt": "2026-11-03T01:02:39.878Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-30",
@@ -32,6 +32,836 @@
     }
   },
   "items": [
+    {
+      "id": "fda:100040",
+      "slug": "fda-100040",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100040",
+      "title": "EAK Distribution LLC recalls Heirloom Homegrown Green Sprouting Calabrese Broccoli Sprouts Seed. Net wt. 8oz ASIN #B09…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=EAK%20Distribution%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100040",
+      "firm": "EAK Distribution LLC",
+      "product": "Heirloom Homegrown Green Sprouting Calabrese Broccoli Sprouts Seed. Net wt. 8oz ASIN #B09P49WHHP, UPC 8 50056 62744 3. EAK Distribution LLC 5830 E. 2nd St. PMB 91446 Casper, WY 82609 Label with Growi…",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "sprouts",
+        "seeds"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "sold on Amazon nationwide"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-01",
+        "reported": "2026-10-28",
+        "updated": "2026-10-22",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Salmonella.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100052",
+      "slug": "fda-100052",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100052",
+      "title": "Trader Joe's Company recalls Trader Joe's Crispy Rice Milk Chocolate Bar; Imported from Belgium, 3- 1.75 oz bars. Pack…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Trader%20Joe's%20Company",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100052",
+      "firm": "Trader Joe's Company",
+      "product": "Trader Joe's Crispy Rice Milk Chocolate Bar; Imported from Belgium, 3- 1.75 oz bars. Package contains 3 individually wrapped bars packaged together within one outer label. UPC: 00515092",
+      "productCategory": "grains-and-bakery",
+      "foodKeys": [
+        "chocolate"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Milk",
+          "group": "allergen"
+        },
+        {
+          "name": "Wheat or gluten",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CT",
+          "FL",
+          "GA",
+          "MA",
+          "ME",
+          "NH",
+          "NJ",
+          "NY",
+          "PA",
+          "RI",
+          "SC",
+          "VT"
+        ],
+        "stateCount": 12,
+        "international": false,
+        "description": "Firm received and distributed to Distribution Centers all product received from contract manufacturer. DCs further distributed to stores located in the following states: CT, FL, GA, MA, ME, NH, NJ, NY, PA, RI, SC, VT."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-03",
+        "reported": "2026-10-28",
+        "updated": "2026-10-20",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared wheat. Product outer label incorrect; contains wrong allergen ingredients.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100060",
+      "slug": "fda-100060",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100060",
+      "title": "Voila Juice Company recalls Voila! juice 100% SQUEEZED ORANGE VOILA! OAKLAND, CA 94601 16 OZ: UPC 701725001074 32 OZ:…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Voila%20Juice%20Company",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100060",
+      "firm": "Voila Juice Company",
+      "product": "Voila! juice 100% SQUEEZED ORANGE VOILA! OAKLAND, CA 94601 16 OZ: UPC 701725001074 32 OZ: UPC 701725001081 64 OZ: UPC 701725001098 128 OZ: UPC 701725001104",
+      "productCategory": "produce",
+      "foodKeys": [
+        "beverages"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Unspecified microbial",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "CA"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "Domestic: CA. Foreign: Not applicable."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-02",
+        "reported": "2026-10-28",
+        "updated": "2026-10-20",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product not processed to achieve 5-log pathogen reduction.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100077",
+      "slug": "fda-100077",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100077",
+      "title": "Gardeners Basics recalls Gardners Basics brand Waltham 29 Broccoli Sprouting Seeds packaged in a white and green r…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Gardeners%20Basics",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100077",
+      "firm": "Gardeners Basics",
+      "product": "Gardners Basics brand Waltham 29 Broccoli Sprouting Seeds packaged in a white and green resealable pouch, net weight 1 pound (454 g), with UPC: 848137042889. The bag is marked with Packed for 2027.",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "seeds"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Distributed nationwide via online sales."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-30",
+        "reported": "2026-10-28",
+        "updated": "2026-10-22",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Salmonella",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100125",
+      "slug": "fda-100125",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100125",
+      "title": "Pacific Coast Producers recalls Great Value Fruit Cocktail in Fruit Juice from Concentrate NET WT 15 OZ (425g) DISTRIBUTE…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Pacific%20Coast%20Producers",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100125",
+      "firm": "Pacific Coast Producers",
+      "product": "Great Value Fruit Cocktail in Fruit Juice from Concentrate NET WT 15 OZ (425g) DISTRIBUTED BY: Walmart Inc., Bentonville, AR 72716 UPC: 078742369570",
+      "productCategory": "produce",
+      "foodKeys": [
+        "beverages"
+      ],
+      "hazardType": "chemical",
+      "agents": [
+        {
+          "name": "Lead",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AL",
+          "AZ",
+          "LA",
+          "NM",
+          "PA",
+          "WA",
+          "WY"
+        ],
+        "stateCount": 7,
+        "international": false,
+        "description": "Domestic: AL, AZ, LA, NM, PA, WA, WY. Foreign: Not applicable."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-01",
+        "reported": "2026-10-28",
+        "updated": "2026-10-20",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential contamination with elevated levels of lead.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99727",
+      "slug": "fda-99727",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99727",
+      "title": "El Ruisenor De Mexico, Inc. recalls Jovy Gummy Worms Neon; packaged in 1lb plastic units. UPC 712199083411",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=El%20Ruisenor%20De%20Mexico%2C%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99727",
+      "firm": "El Ruisenor De Mexico, Inc.",
+      "product": "Jovy Gummy Worms Neon; packaged in 1lb plastic units. UPC 712199083411",
+      "productCategory": "seafood",
+      "foodKeys": [
+        "melon",
+        "stone fruit",
+        "apples",
+        "seafood",
+        "fish",
+        "dairy",
+        "flour",
+        "nuts",
+        "seeds",
+        "cereal",
+        "chocolate",
+        "baked goods",
+        "beverages"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        },
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CA",
+          "HI",
+          "IL",
+          "KS",
+          "NV",
+          "OR",
+          "WA"
+        ],
+        "stateCount": 7,
+        "international": false,
+        "description": "Recalling firm distributes primarily to California customers both retail and wholesale. Additional distribution to limited customers in Hawaii, Illinois, Kansas, Nevada, Oregon, and Washington."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-24",
+        "reported": "2026-10-28",
+        "updated": "2026-10-20",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "undeclared allergen ingredient (Red#40, Yellow#5, Yellow#6, Blue#1)",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99944",
+      "slug": "fda-99944",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99944",
+      "title": "Gearharts Fine Chocolates, Inc. recalls GEARHARTS FINE CHOCOLATES Net Wt. 4oz UPC 8 98111 00205 7; Net Wt. 8oz UPC 8 98111 00206;…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Gearharts%20Fine%20Chocolates%2C%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99944",
+      "firm": "Gearharts Fine Chocolates, Inc.",
+      "product": "GEARHARTS FINE CHOCOLATES Net Wt. 4oz UPC 8 98111 00205 7; Net Wt. 8oz UPC 8 98111 00206; Gearharts Fine Chocolates 243B Ridge McIntire Rd, Charlottesville, VA 22902",
+      "productCategory": "snacks-and-confectionery",
+      "foodKeys": [],
+      "hazardType": "physical",
+      "agents": [
+        {
+          "name": "Glass",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CA",
+          "CT",
+          "GA",
+          "IL",
+          "KY",
+          "MA",
+          "MD",
+          "ME",
+          "MN",
+          "NC",
+          "NJ",
+          "NY",
+          "OH",
+          "SC",
+          "TX",
+          "VA",
+          "WA"
+        ],
+        "stateCount": 17,
+        "international": false,
+        "description": "Product was shipped to the following states: CA, CT, GA, IL, KY, MA, MD, ME, MN, NC, NJ, NY, OH, SC, TX, VA & WA."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-22",
+        "reported": "2026-10-28",
+        "updated": "2026-10-16",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Foreign Object - Broken glass was found in a piece of finished product.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99958",
+      "slug": "fda-99958",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99958",
+      "title": "Walker Foods, Inc recalls Marca El Pato Salsa para Enchiladas; 28 ounce Can: 0 72360 00208 6 Case: 0 72360 20612 5",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Walker%20Foods%2C%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99958",
+      "firm": "Walker Foods, Inc",
+      "product": "Marca El Pato Salsa para Enchiladas; 28 ounce Can: 0 72360 00208 6 Case: 0 72360 20612 5",
+      "productCategory": "prepared-foods",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Product was shipped to 32 direct account customers across the country. 15 of those are distributors, with the remaining 17 being retail groceries."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-21",
+        "reported": "2026-10-28",
+        "updated": "2026-10-21",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared salt, garlic, and onions",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99981",
+      "slug": "fda-99981",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99981",
+      "title": "Sempio Food Services, Inc recalls Sempio Yellow Peach; Product of Korea; NET WT. 14.10 oz. UPC: 8801005320825",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Sempio%20Food%20Services%2C%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99981",
+      "firm": "Sempio Food Services, Inc",
+      "product": "Sempio Yellow Peach; Product of Korea; NET WT. 14.10 oz. UPC: 8801005320825",
+      "productCategory": "produce",
+      "foodKeys": [
+        "stone fruit"
+      ],
+      "hazardType": "chemical",
+      "agents": [
+        {
+          "name": "Lead",
+          "group": "chemical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AZ",
+          "CA",
+          "GA",
+          "HI",
+          "IL",
+          "MD",
+          "NJ",
+          "NV",
+          "NY",
+          "VA",
+          "WA"
+        ],
+        "stateCount": 11,
+        "international": false,
+        "description": "Product was primarily distributed to Asian grocery stores in California, Washington, Nevada, Arizona, Hawaii, New Jersey, Georgia, Maryland, New York, Illinois, and Virginia."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-24",
+        "reported": "2026-10-28",
+        "updated": "2026-10-19",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "elevated level of lead in canned peaches",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99985",
+      "slug": "fda-99985",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99985",
+      "title": "Wild West Seed Inc recalls Wild West Seeds Broccoli Seeds Green Sprouting Calabrese lot #4105. Net Wt. 50lb. Wild We…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Wild%20West%20Seed%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99985",
+      "firm": "Wild West Seed Inc",
+      "product": "Wild West Seeds Broccoli Seeds Green Sprouting Calabrese lot #4105. Net Wt. 50lb. Wild West Seeds Broccoli Waltham29 Seeds lot #4475 (this lot was sent to only one consignee). Net Wt. 50lb.",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "seeds"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CA",
+          "FL",
+          "GA",
+          "ID",
+          "MD",
+          "ME",
+          "NC",
+          "OR",
+          "PA",
+          "TX",
+          "UT"
+        ],
+        "stateCount": 11,
+        "international": true,
+        "description": "Distributed in CA, FL, GA, ID, MD, ME, NC, OR, PA, TX, UT, and United Kingdom."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Letter"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-25",
+        "reported": "2026-10-28",
+        "updated": "2026-10-21",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Salmonella",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-03T01:02:05.289Z",
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fsis:027-2026",
       "slug": "fsis-027-2026",
@@ -50440,14 +51270,14 @@
         "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-09-10",
         "reported": "2025-10-08",
         "updated": "2025-09-30",
-        "closed": null
+        "closed": "2026-10-30"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -50464,8 +51294,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
@@ -57248,13 +58078,13 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2025-07-10",
         "reported": "2025-08-13",
         "updated": "2025-08-01",
-        "closed": "2026-09-11"
+        "closed": "2026-10-21"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
@@ -57271,8 +58101,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-22T17:01:02.240Z",
-        "revisions": 1,
+        "lastChanged": "2026-11-03T01:02:05.289Z",
+        "revisions": 2,
         "backfilled": true
       }
     },

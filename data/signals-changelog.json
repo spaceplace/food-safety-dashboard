@@ -1,6 +1,165 @@
 {
-  "generatedAt": "2026-11-02T16:06:28.611Z",
+  "generatedAt": "2026-11-03T01:02:05.289Z",
   "entries": [
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:99727",
+      "slug": "fda-99727",
+      "title": "El Ruisenor De Mexico, Inc. recalls Jovy Gummy Worms Neon; packaged in 1lb plastic units. UPC 712199083411",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:100060",
+      "slug": "fda-100060",
+      "title": "Voila Juice Company recalls Voila! juice 100% SQUEEZED ORANGE VOILA! OAKLAND, CA 94601 16 OZ: UPC 701725001074 32 OZ:…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:100125",
+      "slug": "fda-100125",
+      "title": "Pacific Coast Producers recalls Great Value Fruit Cocktail in Fruit Juice from Concentrate NET WT 15 OZ (425g) DISTRIBUTE…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:100040",
+      "slug": "fda-100040",
+      "title": "EAK Distribution LLC recalls Heirloom Homegrown Green Sprouting Calabrese Broccoli Sprouts Seed. Net wt. 8oz ASIN #B09…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:100052",
+      "slug": "fda-100052",
+      "title": "Trader Joe's Company recalls Trader Joe's Crispy Rice Milk Chocolate Bar; Imported from Belgium, 3- 1.75 oz bars. Pack…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:99944",
+      "slug": "fda-99944",
+      "title": "Gearharts Fine Chocolates, Inc. recalls GEARHARTS FINE CHOCOLATES Net Wt. 4oz UPC 8 98111 00205 7; Net Wt. 8oz UPC 8 98111 00206;…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:100077",
+      "slug": "fda-100077",
+      "title": "Gardeners Basics recalls Gardners Basics brand Waltham 29 Broccoli Sprouting Seeds packaged in a white and green r…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:99958",
+      "slug": "fda-99958",
+      "title": "Walker Foods, Inc recalls Marca El Pato Salsa para Enchiladas; 28 ounce Can: 0 72360 00208 6 Case: 0 72360 20612 5",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:99985",
+      "slug": "fda-99985",
+      "title": "Wild West Seed Inc recalls Wild West Seeds Broccoli Seeds Green Sprouting Calabrese lot #4105. Net Wt. 50lb. Wild We…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "added",
+      "id": "fda:99981",
+      "slug": "fda-99981",
+      "title": "Sempio Food Services, Inc recalls Sempio Yellow Peach; Product of Korea; NET WT. 14.10 oz. UPC: 8801005320825",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "closed",
+      "id": "fda:97642",
+      "slug": "fda-97642",
+      "title": "GOOT ESSA, LLC recalls Goot Essa, Der Mutterschaf Cheese, Sheep Tomme Style. 4 and 8 OZ. ( Pasteurized Sheep Mil…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-30"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-03T01:02:05.289Z",
+      "change": "updated",
+      "id": "fda:97235",
+      "slug": "fda-97235",
+      "title": "Navarro Pecan Holdings, LLC recalls FANCY MEDIUM PECAN PIECES 81124 561958 554707 6/13/2025 SDC1645 90 FANCY MEDIUM PECAN PIE…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": "2026-09-11",
+          "to": "2026-10-21"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-10-30T22:25:53.178Z",
       "change": "closed",
