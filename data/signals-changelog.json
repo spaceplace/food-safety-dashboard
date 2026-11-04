@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-11-04T06:33:55.623Z",
+  "generatedAt": "2026-11-04T19:49:42.238Z",
   "entries": [
+    {
+      "at": "2026-11-04T19:49:42.238Z",
+      "change": "closed",
+      "id": "cdc:salmonella/outbreaks/broccoli-sprouts-09-26",
+      "slug": "cdc-salmonella-outbreaks-broccoli-sprouts-09-26",
+      "title": "Salmonella Outbreak Linked to Broccoli Sprouts",
+      "source": "CDC",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Investigation open",
+          "to": "Outbreak over"
+        },
+        {
+          "field": "updated date",
+          "from": "2026-09-24",
+          "to": "2026-11-04"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-04"
+        },
+        {
+          "field": "cases",
+          "from": "32",
+          "to": "34"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-11-03T01:02:05.289Z",
       "change": "added",
