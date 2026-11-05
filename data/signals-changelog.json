@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-11-05T06:55:37.654Z",
+  "generatedAt": "2026-11-05T20:01:37.811Z",
   "entries": [
+    {
+      "at": "2026-11-05T20:01:37.811Z",
+      "change": "updated",
+      "id": "fsis:027-2026",
+      "slug": "fsis-027-2026",
+      "title": "Imperio Distribution LLC Recalls Beef Jerky Products Produced Without the Benefit of Inspection",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "updated date",
+          "from": "2026-10-24",
+          "to": "2026-11-05"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-11-04T19:49:42.238Z",
       "change": "closed",
