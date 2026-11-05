@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-03T23:28:36.836Z",
+  "generatedAt": "2026-11-05T06:56:13.360Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-27",
-  "windowTo": "2026-11-03",
+  "windowFrom": "2026-10-29",
+  "windowTo": "2026-11-05",
   "paragraphs": [
-    "A Salmonella outbreak linked to raw oysters remains open with 28 cases across 13 states and 5 hospitalizations reported as of October 30 [1]. Three Class I recalls of broccoli sprouting seeds sold nationwide have been issued due to Salmonella contamination: Heirloom Homegrown Green Sprouting Calabrese Broccoli Sprouts Seed (8oz, ASIN #B09P49WHHP, sold on Amazon) [2], Gardeners Basics Waltham 29 Broccoli Sprouting Seeds (1 pound, UPC 848137042889, sold online) [3], and Wild West Seeds Broccoli Seeds Green Sprouting Calabrese lot #4105 (50lb) and Waltham29 Seeds lot #4475 (50lb) distributed in multiple states [4]. Additionally, Vitality Works is recalling one lot (2025-26227) of 365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules (120 count) due to potential Salmonella contamination [16].",
-    "HAIFA SMOKED FISH is recalling approximately 560 pounds of Cold Smoked Sprats due to potential contamination with Clostridium botulinum, which can cause life-threatening illness; consumers should not use the product even if it appears normal [19]. Once Upon a Farm is recalling all lots and varieties of Tractor Wheels Organic Toddler Soft-Baked Bars due to choking hazards, as the product can rapidly become dense, dry, and sticky when exposed to saliva [14].",
-    "Several Class II recalls address allergen concerns: Trader Joe's Crispy Rice Milk Chocolate Bar (UPC 00515092, distributed to eastern and southern states) contains undeclared wheat [8], Taylor Farms' H-E-B Backyard BBQ Chop Salad Kit contains undeclared soy and tree nuts (almonds) [18], and Jovy Gummy Worms Neon (1lb, UPC 712199083411) contain undeclared color additives [5]. Additional recalls include Wise Wife Brand Ground Cinnamon for elevated lead levels [17] and Brad's Plant Based Crunchy Kale and Veggie Chips Kale products for potential thallium contamination [12]."
+    "A Salmonella outbreak linked to raw oysters remains active across 13 states, with 28 cases and 5 hospitalizations reported as of October 30 [1]. Consumers should be cautious when consuming raw oysters [1]. The Salmonella Bovismorbificans outbreak linked to broccoli sprouts is now over, according to the CDC and FDA [2][10]. That outbreak affected 34 people across 6 states with 3 hospitalizations [2].",
+    "Once Upon a Farm is recalling all lots and varieties of Tractor Wheel Organic Toddler Soft-Baked bars because the snack can rapidly form a dense, sticky mass when chewed, posing a choking hazard [5]. Snack Right Super Foods (Brad's Raw Chips) is recalling Brad's Plant Based Crunchy Kale and Brad's Veggie Chips Kale products due to potential thallium contamination [3]. Vitality Works Inc. is recalling one lot (2025-26227) of 365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules due to potential Salmonella contamination [7]. SLR Food Distribution Inc. is recalling Wise Wife Brand Ground Cinnamon because of elevated lead levels [8].",
+    "The FDA has expanded its alert on cinnamon products with dangerously high lead levels to include 21 products total [13]."
   ],
   "sources": [
     {
@@ -19,46 +19,14 @@
     },
     {
       "n": 2,
-      "kind": "recall",
-      "title": "EAK Distribution LLC recalls Heirloom Homegrown Green Sprouting Calabrese Broccoli Sprouts Seed. Net wt. 8oz ASIN #B09…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=EAK%20Distribution%20LLC",
-      "publishedAt": "2026-10-28"
+      "kind": "outbreak",
+      "title": "Salmonella Outbreak Linked to Broccoli Sprouts",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/salmonella/outbreaks/broccoli-sprouts-09-26/index.html",
+      "publishedAt": "2026-11-04"
     },
     {
       "n": 3,
-      "kind": "recall",
-      "title": "Gardeners Basics recalls Gardners Basics brand Waltham 29 Broccoli Sprouting Seeds packaged in a white and green r…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Gardeners%20Basics",
-      "publishedAt": "2026-10-28"
-    },
-    {
-      "n": 4,
-      "kind": "recall",
-      "title": "Wild West Seed Inc recalls Wild West Seeds Broccoli Seeds Green Sprouting Calabrese lot #4105. Net Wt. 50lb. Wild We…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Wild%20West%20Seed%20Inc",
-      "publishedAt": "2026-10-28"
-    },
-    {
-      "n": 5,
-      "kind": "recall",
-      "title": "El Ruisenor De Mexico, Inc. recalls Jovy Gummy Worms Neon; packaged in 1lb plastic units. UPC 712199083411",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=El%20Ruisenor%20De%20Mexico%2C%20Inc.",
-      "publishedAt": "2026-10-28"
-    },
-    {
-      "n": 8,
-      "kind": "recall",
-      "title": "Trader Joe's Company recalls Trader Joe's Crispy Rice Milk Chocolate Bar; Imported from Belgium, 3- 1.75 oz bars. Pack…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Trader%20Joe's%20Company",
-      "publishedAt": "2026-10-28"
-    },
-    {
-      "n": 12,
       "kind": "agency-notice",
       "title": "Snack Right Super Foods, Inc. dba Brad's Raw Chips Recalls Brad's Crunchy Kale & Veggie Chips Due to Potential Thallium Contamination",
       "source": "FDA recall notice",
@@ -66,7 +34,7 @@
       "publishedAt": "2026-11-02T17:19:00.000Z"
     },
     {
-      "n": 14,
+      "n": 5,
       "kind": "agency-notice",
       "title": "Once Upon A Farm Recalls All Lots and Varieties of Tractor Wheels Organic Toddler Soft-Baked Bars Due to Potential Choking Hazard",
       "source": "FDA recall notice",
@@ -74,7 +42,7 @@
       "publishedAt": "2026-10-30T23:59:00.000Z"
     },
     {
-      "n": 16,
+      "n": 7,
       "kind": "agency-notice",
       "title": "Vitality Works Inc. Recalls 365 Whole Foods Market Ashwagandha Capsules Sold Nationwide Due to Potential Salmonella Contamination",
       "source": "FDA recall notice",
@@ -82,7 +50,7 @@
       "publishedAt": "2026-10-30T16:16:00.000Z"
     },
     {
-      "n": 17,
+      "n": 8,
       "kind": "agency-notice",
       "title": "SLR Food Distribution Inc. Recalls Wise Wife Brand Ground Cinnamon Due to Elevated Lead Levels",
       "source": "FDA recall notice",
@@ -90,26 +58,26 @@
       "publishedAt": "2026-10-29T21:26:00.000Z"
     },
     {
-      "n": 18,
-      "kind": "agency-notice",
-      "title": "Taylor Farms Issues Recall for H-E-B Backyard BBQ Chop Salad Kit Due to the Potential Undeclared Soy and Tree Nuts(Almonds)",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
-      "publishedAt": "2026-10-27T18:18:00.000Z"
+      "n": 10,
+      "kind": "news",
+      "title": "Public health officials say sprout outbreak is over; won't name seed supplier",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/11/public-health-officials-say-sprout-outbreak-is-over-wont-name-seed-supplier/",
+      "publishedAt": "2026-11-05T05:05:00.000Z"
     },
     {
-      "n": 19,
-      "kind": "agency-notice",
-      "title": "HAIFA SMOKED FISH Recalls Cold Smoked Sprats Due to Potential Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
-      "publishedAt": "2026-10-27T15:15:00.000Z"
+      "n": 13,
+      "kind": "news",
+      "title": "FDA updates list of cinnamon with high lead levels to include 21st product",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/11/fda-updates-list-of-cinnamon-with-high-lead-levels-to-include-21st-product/",
+      "publishedAt": "2026-11-05T01:48:19.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 4586,
-    "outputTokens": 554
+    "inputTokens": 5996,
+    "outputTokens": 702
   }
 }
