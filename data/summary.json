@@ -1,30 +1,29 @@
 {
-  "generatedAt": "2026-11-06T19:29:01.648Z",
+  "generatedAt": "2026-11-07T21:56:25.134Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-30",
-  "windowTo": "2026-11-06",
+  "windowFrom": "2026-10-31",
+  "windowTo": "2026-11-07",
   "paragraphs": [
-    "An open Salmonella outbreak linked to raw oysters continues across 13 states, with 28 cases and 5 hospitalizations reported as of October 30 [1]. The outbreak is caused by Salmonella Telelkebir, and consumers should avoid raw oysters until further guidance is provided [1].",
-    "The broccoli sprouts Salmonella outbreak is now over, the CDC reported [2][17]. That outbreak, caused by Salmonella Bovismorbificans, sickened 34 people across 6 states with 3 hospitalizations [2].",
-    "Brad's Raw Chips is recalling Brad's Plant Based Crunchy Kale and Brad's Veggie Chips Kale products because they may contain thallium, a naturally occurring metal [4][26]. Consumers who purchased these items should stop eating them and consider returning them [4].",
-    "Once Upon a Farm is recalling all lots and varieties of Tractor Wheel Organic Toddler Soft-Baked bars due to choking hazard risk; the bars can rapidly hydrate into a dense, sticky mass when chewed [6]. Vitality Works Inc. is also recalling 365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules (lot number 2025-26227) due to potential Salmonella contamination [8]. The FDA has added a 21st cinnamon product—Wise Wife brand ground cinnamon from SLR Food Distribution Inc.—to its list of products with dangerously high lead levels [20]."
+    "A Salmonella outbreak linked to broccoli sprouts is now over, the CDC reported this week [1]. The outbreak caused 34 illnesses across six states with three hospitalizations and no deaths [1]. The sprouts were grown from a contaminated seed lot imported from New Zealand, though authorities did not name the seed supplier [16].",
+    "The USDA issued a public health alert for Betterballen Foods LLC \"Bami Rolls\" sold in Georgia and South Carolina due to undeclared sesame allergen [2][9]. Consumers with these products should not eat them if they have a sesame allergy [9].",
+    "Brad's Raw Chips is recalling certain Brad's Crunchy Kale & Veggie Chips products because they may contain thallium [4]. The FDA also updated its list of cinnamon products with dangerously high lead levels, adding Wise Wife brand ground cinnamon from SLR Food Distribution Inc. to bring the total to 21 affected products [19]."
   ],
   "sources": [
     {
       "n": 1,
       "kind": "outbreak",
-      "title": "Salmonella Outbreak Linked to Raw Oysters",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/salmonella/outbreaks/oysters-10-26/index.html",
-      "publishedAt": "2026-10-30"
-    },
-    {
-      "n": 2,
-      "kind": "outbreak",
       "title": "Salmonella Outbreak Linked to Broccoli Sprouts",
       "source": "CDC outbreak notice",
       "url": "https://www.cdc.gov/salmonella/outbreaks/broccoli-sprouts-09-26/index.html",
       "publishedAt": "2026-11-04"
+    },
+    {
+      "n": 2,
+      "kind": "recall",
+      "title": "FSIS Issues Public Health Alert for Meat and Poultry Products Due to Misbranding and Undeclared Allergens",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-meat-and-poultry-products-due-misbranding-and",
+      "publishedAt": "2026-11-06"
     },
     {
       "n": 4,
@@ -35,23 +34,15 @@
       "publishedAt": "2026-11-02T17:19:00.000Z"
     },
     {
-      "n": 6,
-      "kind": "agency-notice",
-      "title": "Once Upon A Farm Recalls All Lots and Varieties of Tractor Wheels Organic Toddler Soft-Baked Bars Due to Potential Choking Hazard",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/once-upon-farm-recalls-all-lots-and-varieties-tractor-wheels-organic-toddler-soft-baked-bars-due",
-      "publishedAt": "2026-10-30T23:59:00.000Z"
+      "n": 9,
+      "kind": "news",
+      "title": "USDA issues warning about Betterballen beef and chicken products because of undeclared allergens",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/11/usda-issues-warning-about-betterballen-beef-and-chicken-products-because-of-undeclared-allergens/",
+      "publishedAt": "2026-11-07T02:36:12.000Z"
     },
     {
-      "n": 8,
-      "kind": "agency-notice",
-      "title": "Vitality Works Inc. Recalls 365 Whole Foods Market Ashwagandha Capsules Sold Nationwide Due to Potential Salmonella Contamination",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitality-works-inc-recalls-365-whole-foods-market-ashwagandha-capsules-sold-nationwide-due-potential",
-      "publishedAt": "2026-10-30T16:16:00.000Z"
-    },
-    {
-      "n": 17,
+      "n": 16,
       "kind": "news",
       "title": "Public health officials say sprout outbreak is over; won't name seed supplier",
       "source": "Food Safety News",
@@ -59,26 +50,18 @@
       "publishedAt": "2026-11-05T05:05:00.000Z"
     },
     {
-      "n": 20,
+      "n": 19,
       "kind": "news",
       "title": "FDA updates list of cinnamon with high lead levels to include 21st product",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/11/fda-updates-list-of-cinnamon-with-high-lead-levels-to-include-21st-product/",
       "publishedAt": "2026-11-05T01:48:19.000Z"
-    },
-    {
-      "n": 26,
-      "kind": "news",
-      "title": "Kale chips recalled because of thallium contamination",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/kale-chips-recalled-because-of-thallium-contamination/",
-      "publishedAt": "2026-11-04T01:54:10.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 2806,
-    "outputTokens": 360
+    "inputTokens": 2516,
+    "outputTokens": 226
   }
 }
