@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-06T19:28:26.771Z",
+  "generatedAt": "2026-11-07T06:06:04.496Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-11-06T19:28:26.844Z",
+      "fetchedAt": "2026-11-07T06:06:04.550Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-11-06T19:28:56.091Z",
+      "fetchedAt": "2026-11-07T06:06:31.418Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-28",
@@ -24,14 +24,95 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-11-06T19:28:59.927Z",
+      "fetchedAt": "2026-11-07T06:06:34.723Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-11-05",
-      "itemCount": 501
+      "upstreamUpdated": "2026-11-06",
+      "itemCount": 502
     }
   },
   "items": [
+    {
+      "id": "fsis:PHA-11062026-01",
+      "slug": "fsis-pha-11062026-01",
+      "kind": "public-health-alert",
+      "source": "FSIS",
+      "sourceId": "PHA-11062026-01",
+      "title": "FSIS Issues Public Health Alert for Meat and Poultry Products Due to Misbranding and Undeclared Allergens",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-meat-and-poultry-products-due-misbranding-and",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "BETTERBALLEN FOODS LLC",
+      "product": "Clear vacuum-packed packages of 6-piece “Bami Rolls” with “BEST BY” October 2027 and lot codes BR-2026-01 and BR-2026-02.",
+      "productCategory": "poultry",
+      "foodKeys": [
+        "poultry"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Fish",
+          "group": "allergen"
+        },
+        {
+          "name": "Sesame",
+          "group": "allergen"
+        }
+      ],
+      "classification": null,
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "GA",
+          "SC"
+        ],
+        "stateCount": 2,
+        "international": false,
+        "description": "GA, SC"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "agency-sampling-or-inspection",
+        "basis": "inferred",
+        "detail": "The problem was discovered during a routine FSIS label review."
+      },
+      "correctiveAction": {
+        "category": "public-health-alert",
+        "detail": "FSIS issued a public health alert instead of requesting a recall"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Public Health Alert (active)"
+      },
+      "dates": {
+        "event": "2026-11-06",
+        "reported": "2026-11-06",
+        "updated": "2026-11-06",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Unreported Allergens",
+      "missing": [
+        "classification"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-07T06:06:04.496Z",
+        "lastChanged": "2026-11-07T06:06:04.496Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fda:100040",
       "slug": "fda-100040",
