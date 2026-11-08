@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2026-11-07T21:56:25.134Z",
+  "generatedAt": "2026-11-08T22:12:45.142Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-10-31",
-  "windowTo": "2026-11-07",
+  "windowFrom": "2026-11-01",
+  "windowTo": "2026-11-08",
   "paragraphs": [
-    "A Salmonella outbreak linked to broccoli sprouts is now over, the CDC reported this week [1]. The outbreak caused 34 illnesses across six states with three hospitalizations and no deaths [1]. The sprouts were grown from a contaminated seed lot imported from New Zealand, though authorities did not name the seed supplier [16].",
-    "The USDA issued a public health alert for Betterballen Foods LLC \"Bami Rolls\" sold in Georgia and South Carolina due to undeclared sesame allergen [2][9]. Consumers with these products should not eat them if they have a sesame allergy [9].",
-    "Brad's Raw Chips is recalling certain Brad's Crunchy Kale & Veggie Chips products because they may contain thallium [4]. The FDA also updated its list of cinnamon products with dangerously high lead levels, adding Wise Wife brand ground cinnamon from SLR Food Distribution Inc. to bring the total to 21 affected products [19]."
+    "A Salmonella outbreak linked to broccoli sprouts is now over, according to the CDC [1]. The outbreak affected 34 people across 6 states, resulting in 3 hospitalizations and no deaths [1]. The CDC and FDA determined that the sprouts were grown from a contaminated seed lot imported from New Zealand [18].",
+    "Consumers should check their kitchens for Brad's Crunchy Kale & Veggie Chips due to potential thallium contamination [4]. The recall includes Brad's Plant Based Crunchy Kale (2 oz) and Brad's Veggie Chips Kale (3 oz) products [4].",
+    "The USDA is issuing a public health alert for Betterballen Foods LLC Bami Rolls sold in Georgia and South Carolina [2]. The frozen 6-piece packages with \"BEST BY\" dates of October 2027 and lot codes BR-2026-01 and BR-2026-02 contain undeclared sesame allergen [2][11]. Consumers with these products should not eat them [11].",
+    "An E. coli O157:H7 outbreak investigation linked to Brookshire Farms pumpkin patch in San Luis Obispo County, California is being wrapped up by local health officials [7]. The outbreak included 15 people, with 5 laboratory-confirmed cases [7]."
   ],
   "sources": [
     {
@@ -34,7 +35,15 @@
       "publishedAt": "2026-11-02T17:19:00.000Z"
     },
     {
-      "n": 9,
+      "n": 7,
+      "kind": "news",
+      "title": "County closes investigation into pumpkin patch linked to E. coli outbreak",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/11/county-closes-investigation-into-pumpkin-patch-linked-to-e-coli-outbreak/",
+      "publishedAt": "2026-11-08T02:48:15.000Z"
+    },
+    {
+      "n": 11,
       "kind": "news",
       "title": "USDA issues warning about Betterballen beef and chicken products because of undeclared allergens",
       "source": "Food Safety News",
@@ -42,26 +51,18 @@
       "publishedAt": "2026-11-07T02:36:12.000Z"
     },
     {
-      "n": 16,
+      "n": 18,
       "kind": "news",
       "title": "Public health officials say sprout outbreak is over; won't name seed supplier",
       "source": "Food Safety News",
       "url": "https://www.foodsafetynews.com/2026/11/public-health-officials-say-sprout-outbreak-is-over-wont-name-seed-supplier/",
       "publishedAt": "2026-11-05T05:05:00.000Z"
-    },
-    {
-      "n": 19,
-      "kind": "news",
-      "title": "FDA updates list of cinnamon with high lead levels to include 21st product",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/fda-updates-list-of-cinnamon-with-high-lead-levels-to-include-21st-product/",
-      "publishedAt": "2026-11-05T01:48:19.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 2516,
-    "outputTokens": 226
+    "inputTokens": 2558,
+    "outputTokens": 313
   }
 }
