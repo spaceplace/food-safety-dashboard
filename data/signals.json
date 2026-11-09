@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-09T06:44:33.335Z",
+  "generatedAt": "2026-11-09T22:26:42.759Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-11-09T06:44:33.431Z",
+      "fetchedAt": "2026-11-09T22:26:42.823Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-11-09T06:45:00.482Z",
+      "fetchedAt": "2026-11-09T22:27:05.542Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-10-28",
@@ -24,7 +24,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-11-09T06:45:07.850Z",
+      "fetchedAt": "2026-11-09T22:27:10.752Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-11-06",
@@ -8917,26 +8917,27 @@
         "detail": "CDC notice: recall issued"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Investigation open"
+        "normalized": "closed",
+        "agency": "Outbreak over"
       },
       "dates": {
         "event": "2026-08-21",
         "reported": "2026-08-21",
-        "updated": "2026-10-01",
+        "updated": "2026-11-09",
         "closed": null
       },
       "outbreak": {
         "pathogen": "E. coli O26:H11, O103:H25, and O168:H8 and Salmonella Agona",
-        "cases": 76,
+        "cases": 77,
         "hospitalizations": 6,
         "deaths": 0,
         "illnessOnsetFrom": "2026-05-31",
-        "illnessOnsetTo": "2026-09-07"
+        "illnessOnsetTo": "2026-10-19"
       },
       "relatedToOutbreak": true,
       "reasonText": null,
       "missing": [
+        "closedDate",
         "rootCause (CDC notices describe the contaminated food, not why it was contaminated)"
       ],
       "inferred": [
@@ -8945,8 +8946,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-10-01T22:44:33.983Z",
-        "revisions": 1,
+        "lastChanged": "2026-11-09T22:26:42.759Z",
+        "revisions": 2,
         "backfilled": true
       }
     },
