@@ -1,6 +1,116 @@
 {
-  "generatedAt": "2026-11-09T22:26:42.759Z",
+  "generatedAt": "2026-11-10T07:25:27.070Z",
   "entries": [
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "added",
+      "id": "fda:99914",
+      "slug": "fda-99914",
+      "title": "GF Blends Inc recalls Gluten Free Truly AIP Rustic Bread Mix, 14 oz",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "added",
+      "id": "fda:99993",
+      "slug": "fda-99993",
+      "title": "EDEN BROTHERS recalls EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "added",
+      "id": "fda:99871",
+      "slug": "fda-99871",
+      "title": "Prosperity Organic Foods Inc recalls Miyoko's Creamery European Style Salted Plant Milk Butter, Net Wt. 8 OZ (227G). UPC 85755…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "added",
+      "id": "fda:100088",
+      "slug": "fda-100088",
+      "title": "Oliva on Main recalls Riad's Oliva to Go Hummus",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "added",
+      "id": "fda:100118",
+      "slug": "fda-100118",
+      "title": "FORTUNA MARKETING, INC recalls ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 8 OZ; Heirloom Broccoli Seeds. SK…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "added",
+      "id": "fda:99881",
+      "slug": "fda-99881",
+      "title": "Sunny Sky Products, LLC recalls Sunny Sky Non-Dairy French Vanilla Creamer, 96oz , bag in box, 3 per case, refrigerate af…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "added",
+      "id": "fda:99495",
+      "slug": "fda-99495",
+      "title": "JXK Enterprises, Inc. recalls Boner Bears CHOCOLATE, 3 DOSES PER BAR, NET WT. 22g, MALE ENHANCEMENT, DOSAGE: Consume 1…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "added",
+      "id": "fda:99961",
+      "slug": "fda-99961",
+      "title": "Pink House Alchemy, LLC recalls Blue Bottle Coffee 4oz Sweet Blossom Simple Syrup in a glass boston round bottle with met…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-10T07:25:27.070Z",
+      "change": "closed",
+      "id": "fda:95029",
+      "slug": "fda-95029",
+      "title": "Izzio Artisan Bakery, LLC recalls Izzio Everything Roll packaged in 12oz plastic bag, 6 rolls per bag - 16 bags per case.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-11-09T22:26:42.759Z",
       "change": "closed",

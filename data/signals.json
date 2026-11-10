@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-09T22:26:42.759Z",
+  "generatedAt": "2026-11-10T07:25:27.070Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-11-09T22:26:42.823Z",
+      "fetchedAt": "2026-11-10T07:25:27.123Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,16 +15,16 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-11-09T22:27:05.542Z",
+      "fetchedAt": "2026-11-10T07:25:56.902Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-10-28",
-      "itemCount": 2697
+      "upstreamUpdated": "2026-11-04",
+      "itemCount": 2705
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-11-09T22:27:10.752Z",
+      "fetchedAt": "2026-11-10T07:26:01.353Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-11-06",
@@ -109,6 +109,672 @@
       "record": {
         "firstSeen": "2026-11-07T06:06:04.496Z",
         "lastChanged": "2026-11-07T06:06:04.496Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100088",
+      "slug": "fda-100088",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100088",
+      "title": "Oliva on Main recalls Riad's Oliva to Go Hummus",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Oliva%20on%20Main",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100088",
+      "firm": "Oliva on Main",
+      "product": "Riad's Oliva to Go Hummus",
+      "productCategory": "prepared-foods",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Sesame",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CT",
+          "MA"
+        ],
+        "stateCount": 2,
+        "international": false,
+        "description": "MA, CT"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-09",
+        "reported": "2026-11-04",
+        "updated": "2026-10-30",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "contains undeclared sesame",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-10T07:25:27.070Z",
+        "lastChanged": "2026-11-10T07:25:27.070Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100118",
+      "slug": "fda-100118",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100118",
+      "title": "FORTUNA MARKETING, INC recalls ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 8 OZ; Heirloom Broccoli Seeds. SK…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=FORTUNA%20MARKETING%2C%20INC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100118",
+      "firm": "FORTUNA MARKETING, INC",
+      "product": "ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 8 OZ; Heirloom Broccoli Seeds. SKU: X004IOM4AJ ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 16 OZ; Heirloom Broccoli Seeds. SKU: B0D…",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "seeds"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "unspecified",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Product was primarily distributed to Amazon fulfillment center. Customers were notified directly by the recalling firm. Amazon was notified and placed a stop on the product SKU. Additional product was sold and shipped to a co-packer. That product was never repackaged and was destroyed."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-29",
+        "reported": "2026-11-04",
+        "updated": "2026-10-23",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Broccoli seeds potentially contaminated with Salmonella",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-10T07:25:27.070Z",
+        "lastChanged": "2026-11-10T07:25:27.070Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99495",
+      "slug": "fda-99495",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99495",
+      "title": "JXK Enterprises, Inc. recalls Boner Bears CHOCOLATE, 3 DOSES PER BAR, NET WT. 22g, MALE ENHANCEMENT, DOSAGE: Consume 1…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=JXK%20Enterprises%2C%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99495",
+      "firm": "JXK Enterprises, Inc.",
+      "product": "Boner Bears CHOCOLATE, 3 DOSES PER BAR, NET WT. 22g, MALE ENHANCEMENT, DOSAGE: Consume 1 piece at least 1 hour prior to activity. Do not exceed 1 piece in any 48 hour period. Serving size about 7 g",
+      "productCategory": "snacks-and-confectionery",
+      "foodKeys": [
+        "chocolate"
+      ],
+      "hazardType": "physical",
+      "agents": [
+        {
+          "name": "Bone, shell, or pit fragments",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Boner Bears Chocolate is marketed as a sexual enhancement product and was distributed nationwide via online sales through www.elyxr.com."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "agency-sampling-or-inspection",
+        "basis": "inferred",
+        "detail": "XK Enterprises, Inc is voluntarily recalling Boner Bears Chocolate, Lot #BB21125, after being notified that FDA laboratory analysis confirm…"
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Press Release"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-05-21",
+        "reported": "2026-11-04",
+        "updated": "2026-10-28",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "JXK Enterprises, Inc is voluntarily recalling Boner Bears Chocolate, Lot #BB21125, after being notified that FDA laboratory analysis confirmed the presence of sildenafil, an active ingredient in the FDA-approved prescription drug Viagra, which is not declared on the product label.",
+      "missing": [],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-10T07:25:27.070Z",
+        "lastChanged": "2026-11-10T07:25:27.070Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99871",
+      "slug": "fda-99871",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99871",
+      "title": "Prosperity Organic Foods Inc recalls Miyoko's Creamery European Style Salted Plant Milk Butter, Net Wt. 8 OZ (227G). UPC 85755…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Prosperity%20Organic%20Foods%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99871",
+      "firm": "Prosperity Organic Foods Inc",
+      "product": "Miyoko's Creamery European Style Salted Plant Milk Butter, Net Wt. 8 OZ (227G). UPC 857554005773. Distributed By: Prosperity Organic Foods, Inc. Boise, Idaho 83702. Product is perishable and stored r…",
+      "productCategory": "dairy",
+      "foodKeys": [
+        "dairy"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "E. coli (STEC)",
+          "group": "organism"
+        },
+        {
+          "name": "Mold or yeast",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CT",
+          "FL",
+          "GA",
+          "IA",
+          "IL",
+          "IN",
+          "MD",
+          "NH",
+          "NJ",
+          "WI"
+        ],
+        "stateCount": 10,
+        "international": false,
+        "description": "Distributed in CT, FL, GA, IA, IL, IN, MD, NJ, NH, and WI."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-11",
+        "reported": "2026-11-04",
+        "updated": "2026-10-23",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product recalled due to yeast, mold, and E. coli.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-10T07:25:27.070Z",
+        "lastChanged": "2026-11-10T07:25:27.070Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99881",
+      "slug": "fda-99881",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99881",
+      "title": "Sunny Sky Products, LLC recalls Sunny Sky Non-Dairy French Vanilla Creamer, 96oz , bag in box, 3 per case, refrigerate af…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Sunny%20Sky%20Products%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99881",
+      "firm": "Sunny Sky Products, LLC",
+      "product": "Sunny Sky Non-Dairy French Vanilla Creamer, 96oz , bag in box, 3 per case, refrigerate after opening.",
+      "productCategory": "dairy",
+      "foodKeys": [],
+      "hazardType": "undetermined",
+      "agents": [],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AR",
+          "CA",
+          "GA",
+          "KY",
+          "MN",
+          "NC",
+          "NM",
+          "NV",
+          "OH",
+          "TX",
+          "UT"
+        ],
+        "stateCount": 11,
+        "international": false,
+        "description": "The adulterated product was distributed to the following States: GA, TX, UT, MN, NM, OH, NC, CA, KY, AR, NV,"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-02",
+        "reported": "2026-11-04",
+        "updated": "2026-10-28",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product sterility was potentially compromised.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-10T07:25:27.070Z",
+        "lastChanged": "2026-11-10T07:25:27.070Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99914",
+      "slug": "fda-99914",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99914",
+      "title": "GF Blends Inc recalls Gluten Free Truly AIP Rustic Bread Mix, 14 oz",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=GF%20Blends%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99914",
+      "firm": "GF Blends Inc",
+      "product": "Gluten Free Truly AIP Rustic Bread Mix, 14 oz",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "flour",
+        "baked goods"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Wheat or gluten",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Sold nationwide online at eatgangster.com, trulyaip.com, and Amazon.com"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-08",
+        "reported": "2026-11-04",
+        "updated": "2026-10-28",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Products are recalled due to potential undeclared wheat gluten",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-10T07:25:27.070Z",
+        "lastChanged": "2026-11-10T07:25:27.070Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99961",
+      "slug": "fda-99961",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99961",
+      "title": "Pink House Alchemy, LLC recalls Blue Bottle Coffee 4oz Sweet Blossom Simple Syrup in a glass boston round bottle with met…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Pink%20House%20Alchemy%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99961",
+      "firm": "Pink House Alchemy, LLC",
+      "product": "Blue Bottle Coffee 4oz Sweet Blossom Simple Syrup in a glass boston round bottle with metal and plastisol cap. The label reads in part as \"***BLUE BOTTLE COFFEE SWEET BLOSSOM SMALL BATCH SYRUP 4 FL O…",
+      "productCategory": "condiments-and-spices",
+      "foodKeys": [],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Mold or yeast",
+          "group": "organism"
+        },
+        {
+          "name": "Glass",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class II",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "CA"
+        ],
+        "stateCount": 1,
+        "international": false,
+        "description": "Sole consignee: Blue Bottle Coffee LLC, 476 9th Steet Oakland, CA 94607"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-09-10",
+        "reported": "2026-11-04",
+        "updated": "2026-10-23",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential contamination with mold (Aspergillus niger)",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-10T07:25:27.070Z",
+        "lastChanged": "2026-11-10T07:25:27.070Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99993",
+      "slug": "fda-99993",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99993",
+      "title": "EDEN BROTHERS recalls EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=EDEN%20BROTHERS",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99993",
+      "firm": "EDEN BROTHERS",
+      "product": "EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO111 -qb2 & 1 Pound pouches UPC SVBRO111 -qb4.",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "seeds"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Salmonella",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AK",
+          "AL",
+          "AR",
+          "AZ",
+          "CA",
+          "CO",
+          "CT",
+          "DC",
+          "DE",
+          "FL",
+          "GA",
+          "HI",
+          "IA",
+          "ID",
+          "IL",
+          "IN",
+          "KS",
+          "KY",
+          "LA",
+          "MA",
+          "MD",
+          "ME",
+          "MI",
+          "MN",
+          "MO",
+          "MS",
+          "MT",
+          "NC",
+          "NJ",
+          "NM",
+          "NV",
+          "NY",
+          "OH",
+          "OK",
+          "OR",
+          "PA",
+          "RI",
+          "SC",
+          "SD",
+          "TN",
+          "TX",
+          "UT",
+          "VA",
+          "VT",
+          "WA",
+          "WI",
+          "WV",
+          "WY"
+        ],
+        "stateCount": 48,
+        "international": false,
+        "description": "Product was distributed to the following states: AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV & WY."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Press Release"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-07",
+        "reported": "2026-11-04",
+        "updated": "2026-10-23",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Salmonella",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-10T07:25:27.070Z",
+        "lastChanged": "2026-11-10T07:25:27.070Z",
         "revisions": 0,
         "backfilled": false
       }
@@ -107301,8 +107967,8 @@
         "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
       },
       "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
+        "normalized": "closed",
+        "agency": "Completed"
       },
       "dates": {
         "event": "2024-07-20",
@@ -107314,6 +107980,7 @@
       "relatedToOutbreak": null,
       "reasonText": "Potential foreign material - plastic",
       "missing": [
+        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -107325,8 +107992,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-09-17T14:29:54.165Z",
-        "revisions": 0,
+        "lastChanged": "2026-11-10T07:25:27.070Z",
+        "revisions": 1,
         "backfilled": true
       }
     },
