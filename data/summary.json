@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-09T22:27:12.504Z",
+  "generatedAt": "2026-11-11T06:35:30.038Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-11-02",
-  "windowTo": "2026-11-09",
+  "windowFrom": "2026-11-04",
+  "windowTo": "2026-11-11",
   "paragraphs": [
-    "Two sprout-related outbreaks have ended [1][2]. A Salmonella outbreak linked to broccoli sprouts affected 34 people across 6 states with 3 hospitalizations [1]. A separate outbreak involving E. coli and Salmonella in alfalfa sprouts was larger, sickening 77 people across 16 states with 6 hospitalizations [2]. Neither outbreak resulted in deaths [1][2].",
-    "Check your freezer for Betterballen brand \"Bami Rolls\" with \"BEST BY\" October 2027 and lot codes BR-2026-01 or BR-2026-02 [3]. These products contain undeclared sesame allergen and have been recalled [3][19]. If you have them, do not eat them [3]. The affected products were sold in Georgia and South Carolina [3].",
-    "Fresh & Ready Foods LLC is recalling 2,414 Fresh To You Sausage, Egg & Cheese Biscuit Sandwiches (4.6 oz) due to potential Listeria monocytogenes contamination [4]. Do not eat these products [4]. Brad's Raw Chips is recalling certain Brad's Plant Based Crunchy Kale (2 oz) and Brad's Veggie Chips Kale (3 oz) products because they may contain thallium [6]."
+    "Two major sprout-related outbreaks have ended [1][2]. A Salmonella outbreak linked to broccoli sprouts affected 34 people across 6 states with 3 hospitalizations [1]. An E. coli and Salmonella outbreak linked to alfalfa sprouts sickened 77 people across 16 states with 6 hospitalizations [2].",
+    "EDEN BROTHERS is recalling Broccoli Seeds - Calabrese due to Salmonella contamination, distributed nationwide [4]. FORTUNA MARKETING is recalling ZestiGreens Broccoli Seeds for Sprouting & Microgreens due to potential Salmonella contamination, primarily distributed through Amazon [6]. GF Blends Inc is recalling Gluten Free Truly AIP Rustic Bread Mix (14 oz) sold online at eatgangster.com, trulyaip.com, and Amazon.com due to undeclared wheat gluten [3]. Oliva on Main is recalling Riad's Oliva to Go Hummus sold in Massachusetts and Connecticut due to undeclared sesame [5]. JXK Enterprises is recalling Boner Bears Chocolate distributed nationwide via elyxr.com because it contains the prescription drug sildenafil not listed on the label [7].",
+    "Family Farmstead Dairy recalled all cheddar cheese products due to potential Listeria monocytogenes contamination [12]. Fresh & Ready Foods recalled 2,414 Fresh To You Sausage, Egg & Cheese Biscuit Sandwiches (4.6 oz) due to potential Listeria monocytogenes contamination [13]."
   ],
   "sources": [
     {
@@ -28,40 +28,64 @@
     {
       "n": 3,
       "kind": "recall",
-      "title": "FSIS Issues Public Health Alert for Meat and Poultry Products Due to Misbranding and Undeclared Allergens",
-      "source": "USDA FSIS recall notice",
-      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-meat-and-poultry-products-due-misbranding-and",
-      "publishedAt": "2026-11-06"
+      "title": "GF Blends Inc recalls Gluten Free Truly AIP Rustic Bread Mix, 14 oz",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=GF%20Blends%20Inc",
+      "publishedAt": "2026-11-04"
     },
     {
       "n": 4,
+      "kind": "recall",
+      "title": "EDEN BROTHERS recalls EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=EDEN%20BROTHERS",
+      "publishedAt": "2026-11-04"
+    },
+    {
+      "n": 5,
+      "kind": "recall",
+      "title": "Oliva on Main recalls Riad's Oliva to Go Hummus",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Oliva%20on%20Main",
+      "publishedAt": "2026-11-04"
+    },
+    {
+      "n": 6,
+      "kind": "recall",
+      "title": "FORTUNA MARKETING, INC recalls ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 8 OZ; Heirloom Broccoli Seeds. SK…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=FORTUNA%20MARKETING%2C%20INC",
+      "publishedAt": "2026-11-04"
+    },
+    {
+      "n": 7,
+      "kind": "recall",
+      "title": "JXK Enterprises, Inc. recalls Boner Bears CHOCOLATE, 3 DOSES PER BAR, NET WT. 22g, MALE ENHANCEMENT, DOSAGE: Consume 1…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=JXK%20Enterprises%2C%20Inc.",
+      "publishedAt": "2026-11-04"
+    },
+    {
+      "n": 12,
+      "kind": "agency-notice",
+      "title": "Family Farmstead Dairy Announces Recall of All Cheddar Cheese Products Because of Possible Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk",
+      "publishedAt": "2026-11-10T05:00:00.000Z"
+    },
+    {
+      "n": 13,
       "kind": "agency-notice",
       "title": "Fresh & Ready Foods LLC Recalls Fresh To You Brand Sausage, Egg & Cheese Biscuit Sandwich due to Possible Health Risk",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible",
       "publishedAt": "2026-11-08T05:00:00.000Z"
-    },
-    {
-      "n": 6,
-      "kind": "agency-notice",
-      "title": "Snack Right Super Foods, Inc. dba Brad's Raw Chips Recalls Brad's Crunchy Kale & Veggie Chips Due to Potential Thallium Contamination",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/snack-right-super-foods-inc-dba-brads-raw-chips-recalls-brads-crunchy-kale-veggie-chips-due",
-      "publishedAt": "2026-11-02T17:19:00.000Z"
-    },
-    {
-      "n": 19,
-      "kind": "news",
-      "title": "USDA issues warning about Betterballen beef and chicken products because of undeclared allergens",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/usda-issues-warning-about-betterballen-beef-and-chicken-products-because-of-undeclared-allergens/",
-      "publishedAt": "2026-11-07T02:36:12.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 2884,
-    "outputTokens": 316
+    "inputTokens": 8707,
+    "outputTokens": 805
   }
 }
