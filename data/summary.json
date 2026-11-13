@@ -1,16 +1,24 @@
 {
-  "generatedAt": "2026-11-12T07:19:32.327Z",
+  "generatedAt": "2026-11-13T19:48:47.874Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-11-05",
-  "windowTo": "2026-11-12",
+  "windowFrom": "2026-11-06",
+  "windowTo": "2026-11-13",
   "paragraphs": [
-    "The E. coli and Salmonella outbreak linked to alfalfa sprouts has ended [1]. The outbreak caused 77 illnesses and 6 hospitalizations across 16 states, with no deaths reported [1].",
-    "Family Farmstead Dairy is recalling all cheddar cheese products due to potential Listeria monocytogenes contamination [3]. Fresh & Ready Foods LLC is recalling 2,414 Fresh To You Sausage, Egg & Cheese Biscuit Sandwiches (4.6 oz) for potential Listeria monocytogenes contamination [4]. Listeria can cause serious infections in young children, elderly people, and those with weakened immune systems [3][4].",
-    "BETTERBALLEN FOODS LLC issued a public health alert for Clear vacuum-packed 6-piece Bami Rolls with \"BEST BY\" October 2027 and lot codes BR-2026-01 and BR-2026-02 sold in Georgia and South Carolina due to unreported allergens [2]. Oysters from Little Wicomico Oyster Company in Virginia continue testing positive for Salmonella, with a third round of samples from November 2 showing contamination [7]. Sprouting seeds sold under Country Creek Acres and Francisco Family Foods brands have been recalled for possible Salmonella or E. coli contamination [10]."
+    "Two E. coli and Salmonella outbreaks have ended [1][2]. An E. coli O26 outbreak linked to raw milk cheese affected 18 people across 10 states, with 9 hospitalizations and no deaths [1]. A separate outbreak involving E. coli O26, O103, and O168 strains plus Salmonella Agona linked to alfalfa sprouts sickened 77 people across 16 states, with 6 hospitalizations and no deaths [2].",
+    "Family Farmstead Dairy is recalling all cheddar cheese products due to potential Listeria monocytogenes contamination [4]. Fresh & Ready Foods LLC is recalling Fresh To You Sausage, Egg & Cheese Biscuit Sandwiches (4.6 oz) for the same reason [5]. Listeria can cause serious and sometimes fatal infections in young children, elderly people, and those with weakened immune systems [4][5].",
+    "BETTERBALLEN FOODS LLC is recalling Clear vacuum-packed 6-piece \"Bami Rolls\" packages with \"BEST BY\" October 2027 and lot codes BR-2026-01 or BR-2026-02 due to unreported allergens [3]. The affected products were distributed in Georgia and South Carolina [3]. Sprouting seeds sold under Country Creek LLC's Country Creek Acres brand and the Francisco Family Foods brand are being recalled for possible Salmonella or E. coli contamination [17]."
   ],
   "sources": [
     {
       "n": 1,
+      "kind": "outbreak",
+      "title": "E. coli Outbreak Linked to Raw Milk Cheese",
+      "source": "CDC outbreak notice",
+      "url": "https://www.cdc.gov/ecoli/outbreaks/raw-milk-cheese-09-26/index.html",
+      "publishedAt": "2026-11-13"
+    },
+    {
+      "n": 2,
       "kind": "outbreak",
       "title": "E. coli and Salmonella Outbreak Linked to Alfalfa Sprouts",
       "source": "CDC outbreak notice",
@@ -18,7 +26,7 @@
       "publishedAt": "2026-11-09"
     },
     {
-      "n": 2,
+      "n": 3,
       "kind": "recall",
       "title": "FSIS Issues Public Health Alert for Meat and Poultry Products Due to Misbranding and Undeclared Allergens",
       "source": "USDA FSIS recall notice",
@@ -26,7 +34,7 @@
       "publishedAt": "2026-11-06"
     },
     {
-      "n": 3,
+      "n": 4,
       "kind": "agency-notice",
       "title": "Family Farmstead Dairy Announces Recall of All Cheddar Cheese Products Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -34,7 +42,7 @@
       "publishedAt": "2026-11-10T05:00:00.000Z"
     },
     {
-      "n": 4,
+      "n": 5,
       "kind": "agency-notice",
       "title": "Fresh & Ready Foods LLC Recalls Fresh To You Brand Sausage, Egg & Cheese Biscuit Sandwich due to Possible Health Risk",
       "source": "FDA recall notice",
@@ -42,15 +50,7 @@
       "publishedAt": "2026-11-08T05:00:00.000Z"
     },
     {
-      "n": 7,
-      "kind": "news",
-      "title": "Oysters from Virginia river continue to test positive for Salmonella",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/oysters-from-virginia-river-continue-to-test-positive-for-salmonella/",
-      "publishedAt": "2026-11-12T05:04:00.000Z"
-    },
-    {
-      "n": 10,
+      "n": 17,
       "kind": "news",
       "title": "More sprouting seeds recalled because of possible contamination with E. coli and Salmonella",
       "source": "Food Safety News",
@@ -58,10 +58,10 @@
       "publishedAt": "2026-11-12T04:42:35.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 5286,
-    "outputTokens": 639
+    "inputTokens": 2489,
+    "outputTokens": 343
   }
 }
