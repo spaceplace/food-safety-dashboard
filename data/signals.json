@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-14T22:30:21.150Z",
+  "generatedAt": "2026-11-15T06:42:13.600Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-11-14T22:30:21.242Z",
+      "fetchedAt": "2026-11-15T06:42:13.667Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-11-14T22:30:50.338Z",
+      "fetchedAt": "2026-11-15T06:42:38.443Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-11-04",
@@ -24,14 +24,100 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-11-14T22:30:53.964Z",
+      "fetchedAt": "2026-11-15T06:42:41.662Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-11-06",
-      "itemCount": 502
+      "upstreamUpdated": "2026-11-14",
+      "itemCount": 503
     }
   },
   "items": [
+    {
+      "id": "fsis:PHA-11142026",
+      "slug": "fsis-pha-11142026",
+      "kind": "public-health-alert",
+      "source": "FSIS",
+      "sourceId": "PHA-11142026",
+      "title": "FSIS Issues Public Health Alert for Ready-to-Eat Meat Products Containing Biscuits Recalled Due to Possible Listeria Contamination",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-meat-products-containing-biscuits-recalled",
+      "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "firm": "Fresh & Ready Foods LLC",
+      "product": "9.5 oz Biscuit & Sausage Gravy",
+      "productCategory": "prepared-foods",
+      "foodKeys": [
+        "pork",
+        "ready-to-eat meals"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Listeria monocytogenes",
+          "group": "organism"
+        },
+        {
+          "name": "Drug or veterinary residue",
+          "group": "chemical"
+        }
+      ],
+      "classification": null,
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AR",
+          "LA",
+          "MS",
+          "OK",
+          "TN",
+          "TX"
+        ],
+        "stateCount": 6,
+        "international": false,
+        "description": "AR, LA, MS, OK, TN, TX"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "firm-self-reported",
+        "basis": "inferred",
+        "detail": "The problem was discovered when a firm notified FSIS that they had received FDA-regulated biscuits that had been recalled by C."
+      },
+      "correctiveAction": {
+        "category": "public-health-alert",
+        "detail": "FSIS issued a public health alert instead of requesting a recall"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Public Health Alert (active)"
+      },
+      "dates": {
+        "event": "2026-11-14",
+        "reported": "2026-11-14",
+        "updated": "2026-11-14",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": false,
+      "reasonText": "Product Contamination",
+      "missing": [
+        "classification"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "detection"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-15T06:42:13.600Z",
+        "lastChanged": "2026-11-15T06:42:13.600Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
     {
       "id": "fsis:PHA-11062026-01",
       "slug": "fsis-pha-11062026-01",
