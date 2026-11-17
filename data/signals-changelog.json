@@ -1,6 +1,149 @@
 {
-  "generatedAt": "2026-11-16T22:12:32.317Z",
+  "generatedAt": "2026-11-17T08:00:23.537Z",
   "entries": [
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:100137",
+      "slug": "fda-100137",
+      "title": "Family Farmstead Dairy, LLC recalls Raw milk cheddar cheese packed in vacuum sealed clear plastic with a white, red and green…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:100089",
+      "slug": "fda-100089",
+      "title": "Krasnyi Oktyabr Inc recalls Starfish Seafood Cold Smoked Norwegian Salmon",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:99783",
+      "slug": "fda-99783",
+      "title": "Crystal Temptations recalls Little Temptations, Chocolatey Eyeballs (Hazelnut Praline Chocolatey Eyeballs ) Spooks an…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:100138",
+      "slug": "fda-100138",
+      "title": "Lidl US TRADING recalls Gelatelli NATURALLY FLAVORED COFFEE & VANILLA GELATO WITH COFFEE SAUCE & COOKIE PIECES 16…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:98489",
+      "slug": "fda-98489",
+      "title": "Lockout Industries, LLC recalls Boner Bears Chocolate Syrup, Serving size 15g, Dosage: Consume 1 Piece At Least 1 Hour Pr…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:100193",
+      "slug": "fda-100193",
+      "title": "WinCo Foods LLC recalls WinCo Foods Hoagie Rolls, 6 rolls/bag. Product is packaged in clear plastic bag with red…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:100122",
+      "slug": "fda-100122",
+      "title": "Pan Pepin, Inc. recalls ParaBien Al Grano with UPC: 0 21425 01513 4",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:100223",
+      "slug": "fda-100223",
+      "title": "Ethel's Bakery, LLC recalls Ethel's Gluten Free Turtle Dandy Dessert Bars 6oz, UPC 8 50054 16601 2, 6 retail units pe…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:100127",
+      "slug": "fda-100127",
+      "title": "House Foods America Corporation recalls Bulk packaged Seitan Cubes; 2/ 5-pound vacuumed seal packages per case. Case is generic b…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "added",
+      "id": "fda:98760",
+      "slug": "fda-98760",
+      "title": "NALPAC LTD. recalls DTF SEXUAL CHOCOLATES, UPC CODE: 757817783069, Supplier Part Number: DTF-BAR-20CT, Manufa…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "updated",
+      "id": "fda:95029",
+      "slug": "fda-95029",
+      "title": "Izzio Artisan Bakery, LLC recalls Izzio Everything Roll packaged in 12oz plastic bag, 6 rolls per bag - 16 bags per case.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-12"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-17T08:00:23.537Z",
+      "change": "removed",
+      "id": "fda:99833",
+      "slug": "fda-99833",
+      "title": "Made Fresh Salads Inc recalls Made Fresh brand Black Bean and Corn Salad; 5lb white plastic tub",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": "No longer returned by the source"
+    },
     {
       "at": "2026-11-15T06:42:13.600Z",
       "change": "added",

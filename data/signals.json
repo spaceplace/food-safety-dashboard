@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-16T22:12:32.317Z",
+  "generatedAt": "2026-11-17T08:00:23.537Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-11-16T22:12:32.371Z",
+      "fetchedAt": "2026-11-17T08:00:23.634Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,16 +15,16 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-11-16T22:13:07.522Z",
+      "fetchedAt": "2026-11-17T08:00:58.125Z",
       "ok": true,
       "error": null,
-      "upstreamUpdated": "2026-11-04",
-      "itemCount": 2705
+      "upstreamUpdated": "2026-11-11",
+      "itemCount": 2714
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-11-16T22:13:10.646Z",
+      "fetchedAt": "2026-11-17T08:01:08.411Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-11-14",
@@ -114,6 +114,814 @@
       "record": {
         "firstSeen": "2026-11-15T06:42:13.600Z",
         "lastChanged": "2026-11-15T06:42:13.600Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100089",
+      "slug": "fda-100089",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100089",
+      "title": "Krasnyi Oktyabr Inc recalls Starfish Seafood Cold Smoked Norwegian Salmon",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Krasnyi%20Oktyabr%20Inc",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100089",
+      "firm": "Krasnyi Oktyabr Inc",
+      "product": "Starfish Seafood Cold Smoked Norwegian Salmon",
+      "productCategory": "seafood",
+      "foodKeys": [
+        "seafood",
+        "fish"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Listeria monocytogenes",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "FL",
+          "GA",
+          "MA",
+          "NC",
+          "NJ",
+          "NV",
+          "NY",
+          "OH",
+          "SC"
+        ],
+        "stateCount": 9,
+        "international": false,
+        "description": "NY, MA, SC, FL, GA, NV, NJ, OH, NC, SC, OH"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Letter"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-06",
+        "reported": "2026-11-11",
+        "updated": "2026-11-03",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Contaminated with Listeria monocytogenes",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100122",
+      "slug": "fda-100122",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100122",
+      "title": "Pan Pepin, Inc. recalls ParaBien Al Grano with UPC: 0 21425 01513 4",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Pan%20Pepin%2C%20Inc.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100122",
+      "firm": "Pan Pepin, Inc.",
+      "product": "ParaBien Al Grano with UPC: 0 21425 01513 4",
+      "productCategory": "other",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Sesame",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "single-state",
+        "states": [
+          "PR"
+        ],
+        "stateCount": 1,
+        "international": true,
+        "description": "All customers located in Puerto Rico"
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Press Release"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-13",
+        "reported": "2026-11-11",
+        "updated": "2026-10-30",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Contains undeclared sesame",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100127",
+      "slug": "fda-100127",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100127",
+      "title": "House Foods America Corporation recalls Bulk packaged Seitan Cubes; 2/ 5-pound vacuumed seal packages per case. Case is generic b…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=House%20Foods%20America%20Corporation",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100127",
+      "firm": "House Foods America Corporation",
+      "product": "Bulk packaged Seitan Cubes; 2/ 5-pound vacuumed seal packages per case. Case is generic brown cardboard with product and company information label on the outside. (Keep Refrigerated) No SKU",
+      "productCategory": "other",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Wheat or gluten",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "nationwide",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Product was distributed to 9 different distribution centers across the country."
+      },
+      "rootCause": {
+        "category": "labeling-or-packaging-error",
+        "basis": "inferred",
+        "detail": "roduct label missing ingredient statement and allergen ingredient (wheat)"
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-14",
+        "reported": "2026-11-11",
+        "updated": "2026-10-30",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product label missing ingredient statement and allergen ingredient (wheat)",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography",
+        "rootCause"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100137",
+      "slug": "fda-100137",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100137",
+      "title": "Family Farmstead Dairy, LLC recalls Raw milk cheddar cheese packed in vacuum sealed clear plastic with a white, red and green…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Family%20Farmstead%20Dairy%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100137",
+      "firm": "Family Farmstead Dairy, LLC",
+      "product": "Raw milk cheddar cheese packed in vacuum sealed clear plastic with a white, red and green label which reads in part as, \"FAMILY FARMSTEAD MILD RAW CHEDDAR - AGED 3+ MONTHS - 100% GRASS FED, 8oz. (226…",
+      "productCategory": "dairy",
+      "foodKeys": [
+        "dairy",
+        "raw milk"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "E. coli (STEC)",
+          "group": "organism"
+        },
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CT",
+          "MA",
+          "MD",
+          "NJ",
+          "NY",
+          "PA",
+          "VA"
+        ],
+        "stateCount": 7,
+        "international": false,
+        "description": "Distributors located in CT, MA, MD, NJ, NY, PA, and VA. Product may be further distributed."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "closed",
+        "agency": "Completed"
+      },
+      "dates": {
+        "event": "2026-10-14",
+        "reported": "2026-11-11",
+        "updated": "2026-11-05",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Potential contamination with E. coli (pathogenic non-O157 STEC).",
+      "missing": [
+        "closedDate",
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100138",
+      "slug": "fda-100138",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100138",
+      "title": "Lidl US TRADING recalls Gelatelli NATURALLY FLAVORED COFFEE & VANILLA GELATO WITH COFFEE SAUCE & COOKIE PIECES 16…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Lidl%20US%20TRADING",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100138",
+      "firm": "Lidl US TRADING",
+      "product": "Gelatelli NATURALLY FLAVORED COFFEE & VANILLA GELATO WITH COFFEE SAUCE & COOKIE PIECES 16FL OZ (1PT) 475 mL UPC 4 056489 722458 DISTRIBUTED BY: LIDL US, LLC, ARLINGTON, VA 22202 PRODUCT OF ITALY",
+      "productCategory": "dairy",
+      "foodKeys": [
+        "baked goods"
+      ],
+      "hazardType": "biological",
+      "agents": [
+        {
+          "name": "Listeria monocytogenes",
+          "group": "organism"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "DC",
+          "DE",
+          "GA",
+          "MD",
+          "NC",
+          "NJ",
+          "NY",
+          "PA",
+          "SC",
+          "VA"
+        ],
+        "stateCount": 10,
+        "international": false,
+        "description": "Product was shipped to the following states: DC, DE, GA, MD, NC, NJ, NY, PA, SC & VA."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-16",
+        "reported": "2026-11-11",
+        "updated": "2026-11-03",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Listeria monocytogenes. The firm received positive test result of Listeria monocytogenes in the product.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100193",
+      "slug": "fda-100193",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100193",
+      "title": "WinCo Foods LLC recalls WinCo Foods Hoagie Rolls, 6 rolls/bag. Product is packaged in clear plastic bag with red…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=WinCo%20Foods%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100193",
+      "firm": "WinCo Foods LLC",
+      "product": "WinCo Foods Hoagie Rolls, 6 rolls/bag. Product is packaged in clear plastic bag with red banner. Net Wt. 16oz (1LB) 454g. UPC 0 70552 00649 2. Distributed By: WinCo Foods, LLC, Boise, ID 83704.",
+      "productCategory": "other",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Sesame",
+          "group": "allergen"
+        },
+        {
+          "name": "Plastic or rubber",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "CA",
+          "ID",
+          "MT",
+          "NV",
+          "OR",
+          "UT",
+          "WA"
+        ],
+        "stateCount": 7,
+        "international": false,
+        "description": "Distributed in CA, ID, MT, NV, OR, UT, and WA."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-21",
+        "reported": "2026-11-11",
+        "updated": "2026-11-05",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Undeclared Sesame",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:100223",
+      "slug": "fda-100223",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "100223",
+      "title": "Ethel's Bakery, LLC recalls Ethel's Gluten Free Turtle Dandy Dessert Bars 6oz, UPC 8 50054 16601 2, 6 retail units pe…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Ethel's%20Bakery%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:100223",
+      "firm": "Ethel's Bakery, LLC",
+      "product": "Ethel's Gluten Free Turtle Dandy Dessert Bars 6oz, UPC 8 50054 16601 2, 6 retail units per case",
+      "productCategory": "grains-and-bakery",
+      "foodKeys": [],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Wheat or gluten",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class III",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AZ",
+          "CO",
+          "IL",
+          "IN",
+          "MD",
+          "MI",
+          "NH",
+          "NY",
+          "OR",
+          "PA"
+        ],
+        "stateCount": 10,
+        "international": false,
+        "description": "Arizona, Colorado, Illinois, Indiana, Maryland, Michigan, New Hampshire, New York, Oregon, and Pennsylvania."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-10-26",
+        "reported": "2026-11-11",
+        "updated": "2026-11-05",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product mix-up resulting in incorrect product identity, inaccurate ingredient declaration (extra ingredients declared that are not present in the product), and inaccurate Nutrition Facts.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:98489",
+      "slug": "fda-98489",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "98489",
+      "title": "Lockout Industries, LLC recalls Boner Bears Chocolate Syrup, Serving size 15g, Dosage: Consume 1 Piece At Least 1 Hour Pr…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Lockout%20Industries%2C%20LLC",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98489",
+      "firm": "Lockout Industries, LLC",
+      "product": "Boner Bears Chocolate Syrup, Serving size 15g, Dosage: Consume 1 Piece At Least 1 Hour Prior To Activity. Do Not Exceed 1 Piece In Any 48 Hour Period, MANUFACTURED IN: FLORIDA",
+      "productCategory": "snacks-and-confectionery",
+      "foodKeys": [
+        "chocolate"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        },
+        {
+          "name": "Bone, shell, or pit fragments",
+          "group": "physical"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "unspecified",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "The product was sold to consumers through the firm's website."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Press Release"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-02-25",
+        "reported": "2026-11-11",
+        "updated": "2026-11-03",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "FDA analysis revealed the presence of undeclared sildenafil.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:98760",
+      "slug": "fda-98760",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "98760",
+      "title": "NALPAC LTD. recalls DTF SEXUAL CHOCOLATES, UPC CODE: 757817783069, Supplier Part Number: DTF-BAR-20CT, Manufa…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=NALPAC%20LTD.",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:98760",
+      "firm": "NALPAC LTD.",
+      "product": "DTF SEXUAL CHOCOLATES, UPC CODE: 757817783069, Supplier Part Number: DTF-BAR-20CT, Manufactured by or for Megladon, LLC. 2 bars per package, 22 packages per box; Serving size: 1/2 bar. Each package i…",
+      "productCategory": "produce",
+      "foodKeys": [
+        "chocolate"
+      ],
+      "hazardType": "allergen",
+      "agents": [
+        {
+          "name": "Unspecified allergen",
+          "group": "allergen"
+        }
+      ],
+      "classification": "Class I",
+      "geography": {
+        "scope": "unspecified",
+        "states": [],
+        "stateCount": null,
+        "international": false,
+        "description": "Nalpac sold to approximately 16 customers, some of whom have multiple stores."
+      },
+      "rootCause": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-04-06",
+        "reported": "2026-11-11",
+        "updated": "2026-11-04",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product contains undeclared sildenafil and tadalafil.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 0,
+        "backfilled": false
+      }
+    },
+    {
+      "id": "fda:99783",
+      "slug": "fda-99783",
+      "kind": "recall",
+      "source": "FDA",
+      "sourceId": "99783",
+      "title": "Crystal Temptations recalls Little Temptations, Chocolatey Eyeballs (Hazelnut Praline Chocolatey Eyeballs ) Spooks an…",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Crystal%20Temptations",
+      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99783",
+      "firm": "Crystal Temptations",
+      "product": "Little Temptations, Chocolatey Eyeballs (Hazelnut Praline Chocolatey Eyeballs ) Spooks and Spells, The product comes in the following sizes: Card Header Bag - 10 oz. Acrylic Box - 7 oz. Eyeball Jar -…",
+      "productCategory": "nuts-and-seeds",
+      "foodKeys": [
+        "nuts"
+      ],
+      "hazardType": "undetermined",
+      "agents": [],
+      "classification": "Class II",
+      "geography": {
+        "scope": "multi-state",
+        "states": [
+          "AZ",
+          "CA",
+          "CT",
+          "GA",
+          "IN",
+          "MA",
+          "NC",
+          "NJ",
+          "NV",
+          "OH",
+          "TX",
+          "VA",
+          "WY"
+        ],
+        "stateCount": 13,
+        "international": false,
+        "description": "AZ, TX, VA, GA, MA, NC, IN, NV, CA, NJ, CT, OH, WY"
+      },
+      "rootCause": {
+        "category": "labeling-or-packaging-error",
+        "basis": "inferred",
+        "detail": "roduct packaging mix-up."
+      },
+      "detection": {
+        "category": "not-stated",
+        "basis": "not-stated",
+        "detail": null
+      },
+      "correctiveAction": {
+        "category": "voluntary-recall",
+        "detail": "Voluntary: Firm initiated; customers first notified by E-Mail"
+      },
+      "status": {
+        "normalized": "open",
+        "agency": "Ongoing"
+      },
+      "dates": {
+        "event": "2026-08-24",
+        "reported": "2026-11-11",
+        "updated": "2026-11-03",
+        "closed": null
+      },
+      "outbreak": null,
+      "relatedToOutbreak": null,
+      "reasonText": "Product packaging mix-up. Product containing whey (milk), were distributed in packaging that did not reveal the presence of milk.",
+      "missing": [
+        "detection (FDA enforcement reports rarely say how a problem was found)"
+      ],
+      "inferred": [
+        "hazardType",
+        "agents",
+        "productCategory",
+        "geography",
+        "rootCause"
+      ],
+      "rulesVersion": "1.0",
+      "record": {
+        "firstSeen": "2026-11-17T08:00:23.537Z",
+        "lastChanged": "2026-11-17T08:00:23.537Z",
         "revisions": 0,
         "backfilled": false
       }
@@ -2004,86 +2812,6 @@
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "May contain undeclared aspartame.",
-      "missing": [
-        "detection (FDA enforcement reports rarely say how a problem was found)"
-      ],
-      "inferred": [
-        "hazardType",
-        "agents",
-        "productCategory",
-        "geography"
-      ],
-      "rulesVersion": "1.0",
-      "record": {
-        "firstSeen": "2026-10-27T05:12:15.543Z",
-        "lastChanged": "2026-10-27T05:12:15.543Z",
-        "revisions": 0,
-        "backfilled": false
-      }
-    },
-    {
-      "id": "fda:99833",
-      "slug": "fda-99833",
-      "kind": "recall",
-      "source": "FDA",
-      "sourceId": "99833",
-      "title": "Made Fresh Salads Inc recalls Made Fresh brand Black Bean and Corn Salad; 5lb white plastic tub",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Made%20Fresh%20Salads%20Inc",
-      "sourceRecordUrl": "https://api.fda.gov/food/enforcement.json?search=event_id:99833",
-      "firm": "Made Fresh Salads Inc",
-      "product": "Made Fresh brand Black Bean and Corn Salad; 5lb white plastic tub",
-      "productCategory": "prepared-foods",
-      "foodKeys": [
-        "lettuce"
-      ],
-      "hazardType": "biological",
-      "agents": [
-        {
-          "name": "Listeria monocytogenes",
-          "group": "organism"
-        },
-        {
-          "name": "Plastic or rubber",
-          "group": "physical"
-        }
-      ],
-      "classification": "Class I",
-      "geography": {
-        "scope": "single-state",
-        "states": [
-          "NY"
-        ],
-        "stateCount": 1,
-        "international": false,
-        "description": "NY"
-      },
-      "rootCause": {
-        "category": "not-stated",
-        "basis": "not-stated",
-        "detail": null
-      },
-      "detection": {
-        "category": "not-stated",
-        "basis": "not-stated",
-        "detail": null
-      },
-      "correctiveAction": {
-        "category": "voluntary-recall",
-        "detail": "Voluntary: Firm initiated; customers first notified by Telephone"
-      },
-      "status": {
-        "normalized": "open",
-        "agency": "Ongoing"
-      },
-      "dates": {
-        "event": "2026-09-04",
-        "reported": "2026-10-21",
-        "updated": "2026-10-14",
-        "closed": null
-      },
-      "outbreak": null,
-      "relatedToOutbreak": null,
-      "reasonText": "Products may be contaminated with Listeria monocytogenes.",
       "missing": [
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
@@ -108056,19 +108784,18 @@
       },
       "status": {
         "normalized": "closed",
-        "agency": "Completed"
+        "agency": "Terminated"
       },
       "dates": {
         "event": "2024-07-20",
         "reported": "2024-08-14",
         "updated": "2024-08-05",
-        "closed": null
+        "closed": "2026-11-12"
       },
       "outbreak": null,
       "relatedToOutbreak": null,
       "reasonText": "Potential foreign material - plastic",
       "missing": [
-        "closedDate",
         "detection (FDA enforcement reports rarely say how a problem was found)"
       ],
       "inferred": [
@@ -108080,8 +108807,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-09-17T14:29:54.165Z",
-        "lastChanged": "2026-11-10T07:25:27.070Z",
-        "revisions": 1,
+        "lastChanged": "2026-11-17T08:00:23.537Z",
+        "revisions": 2,
         "backfilled": true
       }
     },
