@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-17T08:01:10.887Z",
+  "generatedAt": "2026-11-18T20:38:27.390Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-11-10",
-  "windowTo": "2026-11-17",
+  "windowFrom": "2026-11-11",
+  "windowTo": "2026-11-18",
   "paragraphs": [
-    "A raw milk cheddar cheese outbreak caused by E. coli O26 has ended, with 18 cases and 9 hospitalizations across 10 states [1]. However, Family Farmstead Dairy, LLC is recalling Raw milk cheddar cheese with a white, red and green label due to potential E. coli contamination; the product was distributed to stores in CT, MA, MD, NJ, NY, PA, and VA [2]. Consumers should discard this product and check their refrigerators [2].",
-    "This week brought multiple Class I recalls for Listeria and other serious hazards [3][4][6][8]. Krasnyi Oktyabr Inc recalls Starfish Seafood Cold Smoked Norwegian Salmon contaminated with Listeria monocytogenes, distributed across NY, MA, SC, FL, GA, NV, NJ, OH, and NC [3]. Lidl US TRADING recalls Gelatelli coffee and vanilla gelato with cookie pieces (16 fl oz) contaminated with Listeria, shipped to DC, DE, GA, MD, NC, NJ, NY, PA, SC and VA [4]. WinCo Foods LLC recalls WinCo Foods Hoagie Rolls (6 rolls/bag, 16 oz) for undeclared sesame in CA, ID, MT, NV, OR, UT, and WA [6]. House Foods America Corporation recalls bulk packaged Seitan Cubes due to missing ingredient statement and undeclared wheat allergen [8].",
-    "An E. coli outbreak is ongoing at Ohio University, with 16 confirmed cases as of November 16, up from 11 cases on November 13 [15]. A source of the pathogen has not been identified [15]. The FDA is investigating two new Salmonella Enteritidis outbreaks affecting 31 and 14 people respectively, with traceback efforts underway [24]."
+    "An E. coli outbreak linked to raw milk cheese is now over [1]. The outbreak caused 18 cases and 9 hospitalizations across 10 states [1]. Family Farmstead Dairy, LLC is recalling Raw milk cheddar cheese due to potential E. coli contamination [2]. The recalled cheese was distributed to stores in Connecticut, Massachusetts, Maryland, New Jersey, New York, Pennsylvania, and Virginia [2].",
+    "Multiple Class I recalls were issued this week for serious bacterial contamination [3][4][12][14]. Krasnyi Oktyabr Inc is recalling Starfish Seafood Cold Smoked Norwegian Salmon for Listeria monocytogenes contamination, distributed across multiple states including New York, Massachusetts, Florida, and others [3]. Lidl US TRADING is recalling Gelatelli coffee and vanilla gelato with cookie pieces due to Listeria monocytogenes, sold in the Northeast and Mid-Atlantic [4]. Fresh & Ready Foods LLC expanded its recall to include Fresh to You brand Sausage, Egg & Cheese Biscuit Sandwiches and Meals Made in Minutes brand Biscuit & Sausage Gravy due to possible Listeria contamination [14].",
+    "Additional recalls include WinCo Foods Hoagie Rolls for undeclared sesame distributed in Western states [6], House Foods America seitan cubes for missing wheat allergen labeling distributed nationwide [8], and Naia Chocolate Banana Bar Sorbetto for undeclared tree nuts, milk, and eggs [16]. ALDI is recalling Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni because improper temperature storage may have allowed pathogenic growth [15]. Two new Salmonella Enteritidis outbreaks are under FDA investigation, affecting 31 people in one outbreak and 14 in another [33]."
   ],
   "sources": [
     {
@@ -58,15 +58,39 @@
       "publishedAt": "2026-11-11"
     },
     {
-      "n": 15,
-      "kind": "news",
-      "title": "More E. coli patients confirmed in Ohio University outbreak",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/more-e-coli-patients-confirmed-in-ohio-university-outbreak/",
-      "publishedAt": "2026-11-17T05:04:00.000Z"
+      "n": 12,
+      "kind": "recall",
+      "title": "FSIS Issues Public Health Alert for Ready-to-Eat Meat Products Containing Biscuits Recalled Due to Possible Listeria Contamination",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-meat-products-containing-biscuits-recalled",
+      "publishedAt": "2026-11-14"
     },
     {
-      "n": 24,
+      "n": 14,
+      "kind": "agency-notice",
+      "title": "Fresh & Ready Foods LLC Expands Recall to Include Fresh to You Brand Sausage, Egg & Cheese Biscuit Sandwich and Meals Made in Minutes Brand Biscuit & Sausage Gravy Due to Possible Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and",
+      "publishedAt": "2026-11-17T16:18:00.000Z"
+    },
+    {
+      "n": 15,
+      "kind": "agency-notice",
+      "title": "ALDI Recalls Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni Because Of Possible Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "publishedAt": "2026-11-16T16:20:00.000Z"
+    },
+    {
+      "n": 16,
+      "kind": "agency-notice",
+      "title": "Naia, Inc. Recalls Chocolate Banana Bar Sorbetto Because of Undeclared Milk, Eggs, and Nuts",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts",
+      "publishedAt": "2026-11-16T14:18:00.000Z"
+    },
+    {
+      "n": 33,
       "kind": "news",
       "title": "FDA investigating two new Salmonella outbreaks",
       "source": "Food Safety News",
@@ -74,10 +98,10 @@
       "publishedAt": "2026-11-16T05:05:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 8569,
-    "outputTokens": 879
+    "inputTokens": 4537,
+    "outputTokens": 437
   }
 }
