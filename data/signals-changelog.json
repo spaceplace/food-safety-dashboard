@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-11-19T07:33:04.531Z",
+  "generatedAt": "2026-11-19T20:43:05.168Z",
   "entries": [
+    {
+      "at": "2026-11-19T20:43:05.168Z",
+      "change": "closed",
+      "id": "fsis:021-2026",
+      "slug": "fsis-021-2026",
+      "title": "El Eden Import Distributor Corp Recalls Ineligible Pork Cracklings Products Imported from The Republic of Colombia",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Active Recall",
+          "to": "Closed Recall (2026)"
+        },
+        {
+          "field": "updated date",
+          "from": "2026-09-17",
+          "to": "2026-11-19"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-11-17T21:00:06.124Z",
       "change": "closed",

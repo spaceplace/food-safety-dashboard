@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-18T20:38:27.390Z",
+  "generatedAt": "2026-11-19T20:43:37.916Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-11-11",
-  "windowTo": "2026-11-18",
+  "windowFrom": "2026-11-12",
+  "windowTo": "2026-11-19",
   "paragraphs": [
-    "An E. coli outbreak linked to raw milk cheese is now over [1]. The outbreak caused 18 cases and 9 hospitalizations across 10 states [1]. Family Farmstead Dairy, LLC is recalling Raw milk cheddar cheese due to potential E. coli contamination [2]. The recalled cheese was distributed to stores in Connecticut, Massachusetts, Maryland, New Jersey, New York, Pennsylvania, and Virginia [2].",
-    "Multiple Class I recalls were issued this week for serious bacterial contamination [3][4][12][14]. Krasnyi Oktyabr Inc is recalling Starfish Seafood Cold Smoked Norwegian Salmon for Listeria monocytogenes contamination, distributed across multiple states including New York, Massachusetts, Florida, and others [3]. Lidl US TRADING is recalling Gelatelli coffee and vanilla gelato with cookie pieces due to Listeria monocytogenes, sold in the Northeast and Mid-Atlantic [4]. Fresh & Ready Foods LLC expanded its recall to include Fresh to You brand Sausage, Egg & Cheese Biscuit Sandwiches and Meals Made in Minutes brand Biscuit & Sausage Gravy due to possible Listeria contamination [14].",
-    "Additional recalls include WinCo Foods Hoagie Rolls for undeclared sesame distributed in Western states [6], House Foods America seitan cubes for missing wheat allergen labeling distributed nationwide [8], and Naia Chocolate Banana Bar Sorbetto for undeclared tree nuts, milk, and eggs [16]. ALDI is recalling Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni because improper temperature storage may have allowed pathogenic growth [15]. Two new Salmonella Enteritidis outbreaks are under FDA investigation, affecting 31 people in one outbreak and 14 in another [33]."
+    "An outbreak of E. coli O26 linked to raw milk cheese has ended, according to the FDA [16]. The outbreak sickened 18 people across 10 states, with 9 hospitalizations and no deaths [1]. The outbreak was traced to Sierra Nevada Graziers grass-fed raw milk cheeses [16].",
+    "Multiple breakfast sandwich and sausage products are being recalled due to Listeria contamination [2][3][5]. Fresh & Ready Foods LLC recalled its 9.5 oz Biscuit & Sausage Gravy product sold in Arkansas, Louisiana, Mississippi, Oklahoma, Tennessee, and Texas [2]. The company expanded this recall on November 17 to include Fresh To You brand sausage, egg & cheese biscuit sandwiches and Meals Made in Minutes brand biscuit & sausage gravy [5]. Additionally, Grand Strand Sandwich Company recalled four Lunch Box biscuit products due to Listeria monocytogenes contamination [3]. If you purchased these products, do not eat them and discard them or return them to the store [2][3][5].",
+    "Other recalls this week include ALDI's Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni due to potential botulism risk from improper storage temperatures [6]. Naia Inc. recalled Chocolate Banana Bar Sorbetto with certain code dates because they may contain undeclared tree nuts, milk, and eggs [7]. Larbi Inc. recalled Herb To Body Yellow Dock Root C/S 4oz due to possible Salmonella contamination [4]."
   ],
   "sources": [
     {
@@ -20,53 +20,29 @@
     {
       "n": 2,
       "kind": "recall",
-      "title": "Family Farmstead Dairy, LLC recalls Raw milk cheddar cheese packed in vacuum sealed clear plastic with a white, red and green…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Family%20Farmstead%20Dairy%2C%20LLC",
-      "publishedAt": "2026-11-11"
-    },
-    {
-      "n": 3,
-      "kind": "recall",
-      "title": "Krasnyi Oktyabr Inc recalls Starfish Seafood Cold Smoked Norwegian Salmon",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Krasnyi%20Oktyabr%20Inc",
-      "publishedAt": "2026-11-11"
-    },
-    {
-      "n": 4,
-      "kind": "recall",
-      "title": "Lidl US TRADING recalls Gelatelli NATURALLY FLAVORED COFFEE & VANILLA GELATO WITH COFFEE SAUCE & COOKIE PIECES 16…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Lidl%20US%20TRADING",
-      "publishedAt": "2026-11-11"
-    },
-    {
-      "n": 6,
-      "kind": "recall",
-      "title": "WinCo Foods LLC recalls WinCo Foods Hoagie Rolls, 6 rolls/bag. Product is packaged in clear plastic bag with red…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=WinCo%20Foods%20LLC",
-      "publishedAt": "2026-11-11"
-    },
-    {
-      "n": 8,
-      "kind": "recall",
-      "title": "House Foods America Corporation recalls Bulk packaged Seitan Cubes; 2/ 5-pound vacuumed seal packages per case. Case is generic b…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=House%20Foods%20America%20Corporation",
-      "publishedAt": "2026-11-11"
-    },
-    {
-      "n": 12,
-      "kind": "recall",
       "title": "FSIS Issues Public Health Alert for Ready-to-Eat Meat Products Containing Biscuits Recalled Due to Possible Listeria Contamination",
       "source": "USDA FSIS recall notice",
       "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-meat-products-containing-biscuits-recalled",
       "publishedAt": "2026-11-14"
     },
     {
-      "n": 14,
+      "n": 3,
+      "kind": "agency-notice",
+      "title": "Grand Strand Sandwich Company Recalls Lunch Box Bacon Egg and Cheese Biscuit, Lunch Box Jumbo Sausage Biscuit, Lunch Box Sausage Egg and Cheese Biscuit, Lunch Box Chicken Sausage Biscuit Due to Listeria Monocytogenes Contamination",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-strand-sandwich-company-recalls-lunch-box-bacon-egg-and-cheese-biscuit-lunch-box-jumbo-sausage",
+      "publishedAt": "2026-11-19T05:00:00.000Z"
+    },
+    {
+      "n": 4,
+      "kind": "agency-notice",
+      "title": "Larbi Inc. Recalls Yellow Dock Root Because of Possible Health Risk",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
+      "publishedAt": "2026-11-17T23:30:00.000Z"
+    },
+    {
+      "n": 5,
       "kind": "agency-notice",
       "title": "Fresh & Ready Foods LLC Expands Recall to Include Fresh to You Brand Sausage, Egg & Cheese Biscuit Sandwich and Meals Made in Minutes Brand Biscuit & Sausage Gravy Due to Possible Health Risk",
       "source": "FDA recall notice",
@@ -74,7 +50,7 @@
       "publishedAt": "2026-11-17T16:18:00.000Z"
     },
     {
-      "n": 15,
+      "n": 6,
       "kind": "agency-notice",
       "title": "ALDI Recalls Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni Because Of Possible Health Risk",
       "source": "FDA recall notice",
@@ -82,7 +58,7 @@
       "publishedAt": "2026-11-16T16:20:00.000Z"
     },
     {
-      "n": 16,
+      "n": 7,
       "kind": "agency-notice",
       "title": "Naia, Inc. Recalls Chocolate Banana Bar Sorbetto Because of Undeclared Milk, Eggs, and Nuts",
       "source": "FDA recall notice",
@@ -90,18 +66,18 @@
       "publishedAt": "2026-11-16T14:18:00.000Z"
     },
     {
-      "n": 33,
+      "n": 16,
       "kind": "news",
-      "title": "FDA investigating two new Salmonella outbreaks",
+      "title": "FDA reports one outbreak has ended; investigations into others continue",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/fda-investigating-two-new-salmonella-outbreaks/",
-      "publishedAt": "2026-11-16T05:05:00.000Z"
+      "url": "https://www.foodsafetynews.com/2026/11/fda-reports-one-outbreak-has-ended-investigations-into-others-continue/",
+      "publishedAt": "2026-11-19T05:03:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 4537,
-    "outputTokens": 437
+    "inputTokens": 3149,
+    "outputTokens": 372
   }
 }
