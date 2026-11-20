@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-19T20:43:05.168Z",
+  "generatedAt": "2026-11-20T07:24:37.226Z",
   "sources": {
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
       "fetchedAt": "2026-11-19T20:43:32.307Z",
-      "ok": true,
-      "error": null,
+      "ok": false,
+      "error": "HTTP 500 for https://api.fda.gov/food/enforcement.json?search=product_type:\"Food\"+AND+report_date:[20210101+TO+20261121]&limit=1000&skip=0",
       "upstreamUpdated": "2026-11-11",
       "itemCount": 2714
     },
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-11-19T20:43:36.078Z",
+      "fetchedAt": "2026-11-20T07:25:59.599Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-11-19",
@@ -64,7 +64,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:100137",
@@ -451,7 +451,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99914",
@@ -1197,7 +1197,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:100041",
@@ -1453,7 +1453,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99933",
@@ -2283,7 +2283,7 @@
         "Unknown"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:025-2026",
@@ -2329,7 +2329,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99874",
@@ -2613,7 +2613,7 @@
         "Thermally Processed - Commercially Sterile"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:023-2026",
@@ -2655,7 +2655,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99737",
@@ -3194,7 +3194,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99684",
@@ -3737,7 +3737,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:019-020-2026",
@@ -3789,7 +3789,7 @@
         "Products with Secondary Inhibitors - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99571",
@@ -4599,7 +4599,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99479",
@@ -4907,7 +4907,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:016-2026",
@@ -4950,7 +4950,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99325",
@@ -5457,7 +5457,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:015-2026",
@@ -5498,7 +5498,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:014-2026",
@@ -5547,7 +5547,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:013-2026",
@@ -5591,7 +5591,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99081",
@@ -5704,7 +5704,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-07302026-01",
@@ -5745,7 +5745,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99387",
@@ -6000,7 +6000,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:011-2026",
@@ -6043,7 +6043,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:010-2026",
@@ -6082,7 +6082,7 @@
         "Thermally Processed - Commercially Sterile"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fda:99040",
@@ -6449,7 +6449,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-06252026-02",
@@ -6496,7 +6496,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:009-2026",
@@ -6542,7 +6542,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-06252026-01",
@@ -6583,7 +6583,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:008-2026",
@@ -6622,7 +6622,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:007-2026",
@@ -6665,7 +6665,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-05242026-01",
@@ -6704,7 +6704,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-05092026-01",
@@ -6745,7 +6745,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-05042026-01",
@@ -6786,7 +6786,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-04302026-01",
@@ -6822,7 +6822,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-04092026-01",
@@ -6868,7 +6868,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-04012026-01",
@@ -6906,7 +6906,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-03252026-01",
@@ -6951,7 +6951,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-03232026-01",
@@ -6995,7 +6995,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-03132026-01",
@@ -7035,7 +7035,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:005-2026-EXP",
@@ -7072,7 +7072,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:PHA-03012026-01",
@@ -7113,7 +7113,7 @@
         "Heat Treated - Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:006-2026",
@@ -7150,7 +7150,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:005-2026",
@@ -7189,7 +7189,7 @@
         "Heat Treated - Not Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:004-2026",
@@ -7233,7 +7233,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:003-2026",
@@ -7276,7 +7276,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:002-2026",
@@ -7315,7 +7315,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:001-2026",
@@ -7361,7 +7361,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:042-2025",
@@ -7405,7 +7405,7 @@
         "Raw - Non Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:041-2025",
@@ -7443,7 +7443,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:040-2025",
@@ -7486,7 +7486,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:039-2025",
@@ -7529,7 +7529,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:038-2025",
@@ -7567,7 +7567,7 @@
         "Fully Cooked - Not Shelf Stable"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     },
     {
       "id": "fsis:037-2025",
@@ -7610,7 +7610,7 @@
         "Raw - Intact"
       ],
       "firmLocation": null,
-      "fetchedAt": "2026-11-19T20:43:36.078Z"
+      "fetchedAt": "2026-11-20T07:25:59.599Z"
     }
   ]
 }
