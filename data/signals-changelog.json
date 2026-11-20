@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-11-20T07:24:37.226Z",
+  "generatedAt": "2026-11-20T20:28:08.764Z",
   "entries": [
+    {
+      "at": "2026-11-20T20:28:08.764Z",
+      "change": "updated",
+      "id": "fsis:PHA-11142026",
+      "slug": "fsis-pha-11142026",
+      "title": "FSIS Issues Public Health Alert for Ready-to-Eat Meat Products Containing Biscuits Recalled Due to Possible Listeria Contamination",
+      "source": "FSIS",
+      "fields": [
+        {
+          "field": "updated date",
+          "from": "2026-11-14",
+          "to": "2026-11-20"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-11-19T20:43:05.168Z",
       "change": "closed",
