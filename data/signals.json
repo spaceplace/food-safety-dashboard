@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-20T20:28:08.764Z",
+  "generatedAt": "2026-11-21T07:17:21.129Z",
   "rulesVersion": "1.0",
   "windowStart": "2021-01-01",
   "sources": {
     "cdc-outbreaks": {
       "name": "CDC multistate foodborne outbreak notices",
       "url": "https://www.cdc.gov/foodborne-outbreaks/outbreaks/",
-      "fetchedAt": "2026-11-20T20:28:08.820Z",
+      "fetchedAt": "2026-11-21T07:17:21.179Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": null,
@@ -15,7 +15,7 @@
     "fda-openfda": {
       "name": "FDA food recalls (openFDA enforcement reports)",
       "url": "https://api.fda.gov/food/enforcement.json",
-      "fetchedAt": "2026-11-20T20:28:32.625Z",
+      "fetchedAt": "2026-11-21T07:17:48.499Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-11-11",
@@ -24,7 +24,7 @@
     "fsis-recalls": {
       "name": "USDA FSIS recalls (recall API)",
       "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
-      "fetchedAt": "2026-11-20T20:28:37.240Z",
+      "fetchedAt": "2026-11-21T07:17:55.940Z",
       "ok": true,
       "error": null,
       "upstreamUpdated": "2026-11-20",
@@ -38,15 +38,15 @@
       "kind": "public-health-alert",
       "source": "FSIS",
       "sourceId": "PHA-11142026",
-      "title": "FSIS Issues Public Health Alert for Ready-to-Eat Meat Products Containing Biscuits Recalled Due to Possible Listeria Contamination",
-      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-meat-products-containing-biscuits-recalled",
+      "title": "FSIS Issues Public Health Alert For Meat And Poultry Products Containing Biscuits Recalled Due to Possible Listeria Contamination",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-meat-and-poultry-products-containing-biscuits",
       "sourceRecordUrl": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
       "firm": "Fresh & Ready Foods LLC",
       "product": "9.5 oz Biscuit & Sausage Gravy",
-      "productCategory": "prepared-foods",
+      "productCategory": "poultry",
       "foodKeys": [
-        "pork",
-        "ready-to-eat meals"
+        "poultry",
+        "pork"
       ],
       "hazardType": "biological",
       "agents": [
@@ -113,8 +113,8 @@
       "rulesVersion": "1.0",
       "record": {
         "firstSeen": "2026-11-15T06:42:13.600Z",
-        "lastChanged": "2026-11-20T20:28:08.764Z",
-        "revisions": 1,
+        "lastChanged": "2026-11-21T07:17:21.129Z",
+        "revisions": 2,
         "backfilled": false
       }
     },

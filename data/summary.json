@@ -1,29 +1,30 @@
 {
-  "generatedAt": "2026-11-19T20:43:37.916Z",
+  "generatedAt": "2026-11-21T07:17:57.498Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-11-12",
-  "windowTo": "2026-11-19",
+  "windowFrom": "2026-11-14",
+  "windowTo": "2026-11-21",
   "paragraphs": [
-    "An outbreak of E. coli O26 linked to raw milk cheese has ended, according to the FDA [16]. The outbreak sickened 18 people across 10 states, with 9 hospitalizations and no deaths [1]. The outbreak was traced to Sierra Nevada Graziers grass-fed raw milk cheeses [16].",
-    "Multiple breakfast sandwich and sausage products are being recalled due to Listeria contamination [2][3][5]. Fresh & Ready Foods LLC recalled its 9.5 oz Biscuit & Sausage Gravy product sold in Arkansas, Louisiana, Mississippi, Oklahoma, Tennessee, and Texas [2]. The company expanded this recall on November 17 to include Fresh To You brand sausage, egg & cheese biscuit sandwiches and Meals Made in Minutes brand biscuit & sausage gravy [5]. Additionally, Grand Strand Sandwich Company recalled four Lunch Box biscuit products due to Listeria monocytogenes contamination [3]. If you purchased these products, do not eat them and discard them or return them to the store [2][3][5].",
-    "Other recalls this week include ALDI's Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni due to potential botulism risk from improper storage temperatures [6]. Naia Inc. recalled Chocolate Banana Bar Sorbetto with certain code dates because they may contain undeclared tree nuts, milk, and eggs [7]. Larbi Inc. recalled Herb To Body Yellow Dock Root C/S 4oz due to possible Salmonella contamination [4]."
+    "Multiple biscuit and sandwich products are being recalled this week due to Listeria contamination risks [1][3][5]. Fresh & Ready Foods LLC expanded its recall to include Meals Made in Minutes Brand Biscuit & Sausage Gravy and additional Fresh To You Brand Sausage, Egg & Cheese Biscuit Sandwiches produced at its Longview, Texas facility [5]. Grand Strand Sandwich Company is recalling Lunch Box brand biscuit sandwiches, including Chicken Sausage, Sausage Egg and Cheese, Jumbo Sausage, and Bacon Egg and Cheese varieties, distributed between March 2 and November 10 [3][10]. If you purchased these products, do not eat them and discard or return them to the store [1][3][5].",
+    "An E. coli outbreak at Ohio University has grown to 17 confirmed cases among students [14]. Separately, an outbreak of E. coli infections is under investigation at Tufts University with five confirmed cases as of November 19, with Fresh at Carmichael Dining Center as the suspected source [8].",
+    "The FDA has issued additional recalls for allergen concerns [2][7]. Shanghai San Niu Food Co. is recalling Sanniu Evergreen Biscuits and Salt and Pepper Soda Biscuits due to undeclared milk and milk with shrimp [2]. Naia Inc. is recalling Chocolate Banana Bar Sorbetto with specific code dates because it may contain undeclared tree nuts, milk, and eggs [7].",
+    "An outbreak of cryptosporidiosis linked to raw milk from Wethington Farms near Amarillo, Texas is under investigation, with three of six confirmed patients reporting consumption of raw milk from that source [18]."
   ],
   "sources": [
     {
       "n": 1,
-      "kind": "outbreak",
-      "title": "E. coli Outbreak Linked to Raw Milk Cheese",
-      "source": "CDC outbreak notice",
-      "url": "https://www.cdc.gov/ecoli/outbreaks/raw-milk-cheese-09-26/index.html",
-      "publishedAt": "2026-11-13"
+      "kind": "recall",
+      "title": "FSIS Issues Public Health Alert For Meat And Poultry Products Containing Biscuits Recalled Due to Possible Listeria Contamination",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-meat-and-poultry-products-containing-biscuits",
+      "publishedAt": "2026-11-14"
     },
     {
       "n": 2,
-      "kind": "recall",
-      "title": "FSIS Issues Public Health Alert for Ready-to-Eat Meat Products Containing Biscuits Recalled Due to Possible Listeria Contamination",
-      "source": "USDA FSIS recall notice",
-      "url": "https://www.fsis.usda.gov/recalls-alerts/fsis-issues-public-health-alert-ready-eat-meat-products-containing-biscuits-recalled",
-      "publishedAt": "2026-11-14"
+      "kind": "agency-notice",
+      "title": "Shanghai San Niu Food Co., LTD. Is Recalling Sanniu Evergeen Biscuits Due to Undeclared Milk and Sanniu Salt and Pepper Soda Biscuits Due to Undeclared Milk and Shrimp",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/shanghai-san-niu-food-co-ltd-recalling-sanniu-evergeen-biscuits-due-undeclared-milk-and-sanniu-salt",
+      "publishedAt": "2026-11-20T17:58:00.000Z"
     },
     {
       "n": 3,
@@ -34,28 +35,12 @@
       "publishedAt": "2026-11-19T05:00:00.000Z"
     },
     {
-      "n": 4,
-      "kind": "agency-notice",
-      "title": "Larbi Inc. Recalls Yellow Dock Root Because of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
-      "publishedAt": "2026-11-17T23:30:00.000Z"
-    },
-    {
       "n": 5,
       "kind": "agency-notice",
       "title": "Fresh & Ready Foods LLC Expands Recall to Include Fresh to You Brand Sausage, Egg & Cheese Biscuit Sandwich and Meals Made in Minutes Brand Biscuit & Sausage Gravy Due to Possible Health Risk",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and",
       "publishedAt": "2026-11-17T16:18:00.000Z"
-    },
-    {
-      "n": 6,
-      "kind": "agency-notice",
-      "title": "ALDI Recalls Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni Because Of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
-      "publishedAt": "2026-11-16T16:20:00.000Z"
     },
     {
       "n": 7,
@@ -66,18 +51,42 @@
       "publishedAt": "2026-11-16T14:18:00.000Z"
     },
     {
-      "n": 16,
+      "n": 8,
       "kind": "news",
-      "title": "FDA reports one outbreak has ended; investigations into others continue",
+      "title": "E. coli infections documented at Tufts University",
       "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/fda-reports-one-outbreak-has-ended-investigations-into-others-continue/",
-      "publishedAt": "2026-11-19T05:03:00.000Z"
+      "url": "https://www.foodsafetynews.com/2026/11/e-coli-infections-documented-at-tufts-university/",
+      "publishedAt": "2026-11-21T03:51:10.000Z"
+    },
+    {
+      "n": 10,
+      "kind": "news",
+      "title": "Lunch Box brand biscuit sandwiches recalled because of Listeria risk",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/11/lunch-box-brand-biscuit-sandwiches-recalled-because-of-listeria-risk/",
+      "publishedAt": "2026-11-21T01:43:43.000Z"
+    },
+    {
+      "n": 14,
+      "kind": "news",
+      "title": "E. coli outbreak at Ohio University continues to grow",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/11/e-coli-outbreak-at-ohio-university-continues-to-grow/",
+      "publishedAt": "2026-11-20T05:04:00.000Z"
+    },
+    {
+      "n": 18,
+      "kind": "news",
+      "title": "Health officials issue warning about parasites in Wethington Farms raw milk amid outbreak",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/11/health-officials-issue-warning-about-parasites-in-wethington-farms-raw-milk/",
+      "publishedAt": "2026-11-20T02:02:05.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 3149,
-    "outputTokens": 372
+    "inputTokens": 7129,
+    "outputTokens": 832
   }
 }
