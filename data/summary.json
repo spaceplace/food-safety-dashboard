@@ -1,16 +1,24 @@
 {
-  "generatedAt": "2026-11-22T19:46:50.504Z",
+  "generatedAt": "2026-11-23T23:59:01.918Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-11-15",
-  "windowTo": "2026-11-22",
+  "windowFrom": "2026-11-16",
+  "windowTo": "2026-11-23",
   "paragraphs": [
-    "Grand Strand Sandwich Company is recalling four biscuit sandwich products due to potential Listeria monocytogenes contamination: Lunch Box Chicken Sausage Biscuit (3.75 oz), Lunch Box Sausage Egg & Cheese Biscuit (5 oz), Lunch Box Jumbo Sausage Biscuit (4 oz), and Lunch Box Bacon Egg and Cheese Biscuit (4 oz) [2]. Fresh & Ready Foods LLC has expanded its recall to include Fresh To You Sausage, Egg & Cheese Biscuit Sandwiches and Meals Made in Minutes Biscuit & Sausage Gravy, also due to potential Listeria contamination from products made at its Longview, Texas facility [4].",
-    "Shanghai San Niu Food Co., Ltd. is recalling Sanniu Evergreen Biscuits due to undeclared milk and Sanniu Salt and Pepper Soda Biscuits due to undeclared milk and shrimp [1]. ALDI is recalling Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni because they may not have been stored at appropriate temperatures, potentially allowing pathogen growth including Clostridium botulinum [5]. Naia, Inc. is recalling Chocolate Banana Bar Sorbetto with code dates of 10/5/2027, 10/6/2027, 10/7/2027, and 10/8/2026 due to undeclared tree nuts (pistachio), milk, and eggs [6].",
-    "Larbi Inc. is recalling three lots of Herb To Body Yellow Dock Root C/S 4oz due to potential Salmonella contamination [3]. An E. coli outbreak at Ohio University has grown to 17 confirmed cases among students [13], and an E. coli outbreak at Tufts University had five confirmed cases as of November 19 [8]."
+    "Brett Anthony Foods is recalling WOW BAO CHEESEBURGER BAO BUNS with use-by date 10.01.27 and lot #26243 due to undeclared allergens [1]. The 10-ounce boxes were distributed in Alabama, Colorado, Connecticut, Georgia, Iowa, Maine, Massachusetts, and Michigan [1].",
+    "Multiple breakfast sandwich products face Listeria monocytogenes contamination recalls [4][6]. Grand Strand Sandwich Company is recalling Lunch Box Chicken Sausage Biscuit, Sausage Egg & Cheese Biscuit, Jumbo Sausage Biscuit, and Bacon Egg and Cheese Biscuit packages distributed between March 2 and November 10 [4]. Fresh & Ready Foods LLC expanded its recall to include Fresh to You Sausage, Egg & Cheese Biscuit Sandwiches and Meals Made in Minutes Biscuit & Sausage Gravy from its Longview, Texas facility [6].",
+    "Additional recalls this week include ALDI's Priano Protein Carbonara and Herb & Cheese Tortelloni with code dates 10/5/2027 through 10/8/2026 due to potential pathogenic growth from improper temperature storage [7], Naia's Chocolate Banana Bar Sorbetto with code dates 10/5/2027 through 10/8/2026 for undeclared tree nuts, milk, and eggs [8], Shanghai San Niu's Evergreen and Salt and Pepper Soda Biscuits for undeclared milk and shrimp [3], and Larbi's Herb To Body Yellow Dock Root for possible Salmonella contamination [5]."
   ],
   "sources": [
     {
       "n": 1,
+      "kind": "recall",
+      "title": "Brett Anthony Foods Recalls Frozen Fully Cooked Cheeseburger Products Due to Misbranding And Undeclared Allergens",
+      "source": "USDA FSIS recall notice",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/brett-anthony-foods-recalls-frozen-fully-cooked-cheeseburger-products-due",
+      "publishedAt": "2026-11-22"
+    },
+    {
+      "n": 3,
       "kind": "agency-notice",
       "title": "Shanghai San Niu Food Co., LTD. Is Recalling Sanniu Evergeen Biscuits Due to Undeclared Milk and Sanniu Salt and Pepper Soda Biscuits Due to Undeclared Milk and Shrimp",
       "source": "FDA recall notice",
@@ -18,7 +26,7 @@
       "publishedAt": "2026-11-20T17:58:00.000Z"
     },
     {
-      "n": 2,
+      "n": 4,
       "kind": "agency-notice",
       "title": "Grand Strand Sandwich Company Recalls Lunch Box Bacon Egg and Cheese Biscuit, Lunch Box Jumbo Sausage Biscuit, Lunch Box Sausage Egg and Cheese Biscuit, Lunch Box Chicken Sausage Biscuit Due to Listeria Monocytogenes Contamination",
       "source": "FDA recall notice",
@@ -26,7 +34,7 @@
       "publishedAt": "2026-11-19T05:00:00.000Z"
     },
     {
-      "n": 3,
+      "n": 5,
       "kind": "agency-notice",
       "title": "Larbi Inc. Recalls Yellow Dock Root Because of Possible Health Risk",
       "source": "FDA recall notice",
@@ -34,7 +42,7 @@
       "publishedAt": "2026-11-17T23:30:00.000Z"
     },
     {
-      "n": 4,
+      "n": 6,
       "kind": "agency-notice",
       "title": "Fresh & Ready Foods LLC Expands Recall to Include Fresh to You Brand Sausage, Egg & Cheese Biscuit Sandwich and Meals Made in Minutes Brand Biscuit & Sausage Gravy Due to Possible Health Risk",
       "source": "FDA recall notice",
@@ -42,7 +50,7 @@
       "publishedAt": "2026-11-17T16:18:00.000Z"
     },
     {
-      "n": 5,
+      "n": 7,
       "kind": "agency-notice",
       "title": "ALDI Recalls Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni Because Of Possible Health Risk",
       "source": "FDA recall notice",
@@ -50,34 +58,18 @@
       "publishedAt": "2026-11-16T16:20:00.000Z"
     },
     {
-      "n": 6,
+      "n": 8,
       "kind": "agency-notice",
       "title": "Naia, Inc. Recalls Chocolate Banana Bar Sorbetto Because of Undeclared Milk, Eggs, and Nuts",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts",
       "publishedAt": "2026-11-16T14:18:00.000Z"
-    },
-    {
-      "n": 8,
-      "kind": "news",
-      "title": "E. coli infections documented at Tufts University",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/e-coli-infections-documented-at-tufts-university/",
-      "publishedAt": "2026-11-21T03:51:10.000Z"
-    },
-    {
-      "n": 13,
-      "kind": "news",
-      "title": "E. coli outbreak at Ohio University continues to grow",
-      "source": "Food Safety News",
-      "url": "https://www.foodsafetynews.com/2026/11/e-coli-outbreak-at-ohio-university-continues-to-grow/",
-      "publishedAt": "2026-11-20T05:04:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 3103,
-    "outputTokens": 468
+    "inputTokens": 7228,
+    "outputTokens": 832
   }
 }
