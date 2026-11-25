@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-11-23T23:59:01.918Z",
+  "generatedAt": "2026-11-25T08:44:25.907Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-11-16",
-  "windowTo": "2026-11-23",
+  "windowFrom": "2026-11-18",
+  "windowTo": "2026-11-25",
   "paragraphs": [
-    "Brett Anthony Foods is recalling WOW BAO CHEESEBURGER BAO BUNS with use-by date 10.01.27 and lot #26243 due to undeclared allergens [1]. The 10-ounce boxes were distributed in Alabama, Colorado, Connecticut, Georgia, Iowa, Maine, Massachusetts, and Michigan [1].",
-    "Multiple breakfast sandwich products face Listeria monocytogenes contamination recalls [4][6]. Grand Strand Sandwich Company is recalling Lunch Box Chicken Sausage Biscuit, Sausage Egg & Cheese Biscuit, Jumbo Sausage Biscuit, and Bacon Egg and Cheese Biscuit packages distributed between March 2 and November 10 [4]. Fresh & Ready Foods LLC expanded its recall to include Fresh to You Sausage, Egg & Cheese Biscuit Sandwiches and Meals Made in Minutes Biscuit & Sausage Gravy from its Longview, Texas facility [6].",
-    "Additional recalls this week include ALDI's Priano Protein Carbonara and Herb & Cheese Tortelloni with code dates 10/5/2027 through 10/8/2026 due to potential pathogenic growth from improper temperature storage [7], Naia's Chocolate Banana Bar Sorbetto with code dates 10/5/2027 through 10/8/2026 for undeclared tree nuts, milk, and eggs [8], Shanghai San Niu's Evergreen and Salt and Pepper Soda Biscuits for undeclared milk and shrimp [3], and Larbi's Herb To Body Yellow Dock Root for possible Salmonella contamination [5]."
+    "Brett Anthony Foods recalled frozen WOW BAO Cheeseburger Bao Buns due to unreported allergens, distributed in Alabama, Colorado, Connecticut, Georgia, Iowa, Maine, Massachusetts, and Michigan [1]. Fresh & Ready Foods recalled Fresh To You Sausage, Egg & Cheese Biscuit Sandwiches in Oregon and Washington due to possible Listeria monocytogenes contamination [4]. Grand Strand Sandwich Company recalled four Lunch Box breakfast sandwich products—Bacon Egg and Cheese Biscuit, Sausage Egg and Cheese Biscuit, Jumbo Sausage Biscuit, and Chicken Sausage Biscuit—due to potential Listeria monocytogenes contamination [13]. Country Creek LLC recalled Country Creek Acres Alfalfa Sprout Seeds sold nationwide via e-commerce because they may be contaminated with E. coli and Salmonella [2]. D & M Smoked Fish recalled Cold Smoked Sprats distributed in New York, New Jersey, and Pennsylvania due to potential Clostridium botulinum contamination [3].",
+    "Francisco Family Foods recalled hydroponically grown Alfalfa Sprouts packaged in 4-ounce and 1-pound bags sold in Montana due to potential E. coli and Salmonella contamination [5]. Prime Food Processing LLC issued a voluntary recall of Dried Herring Fish because the product was not adequately eviscerated [10]. Shanghai San Niu Food Co. recalled Sanniu Evergreen Biscuits and Salt and Pepper Soda Biscuits for undeclared milk and shrimp [12]. Several Class II recalls included Ground Up Nut Butter Cups for plastic fiber contamination, NAGAI SOYEAT GREEN soy paper wrap for undeclared Yellow #5, Brad's Crunchy Kale for elevated thallium levels in Illinois and Rhode Island, and Mana Bakery Peperecha for undeclared FD&C Yellow 5 in New Jersey, New York, and Connecticut [6][7][8][9]."
   ],
   "sources": [
     {
@@ -18,7 +17,79 @@
       "publishedAt": "2026-11-22"
     },
     {
+      "n": 2,
+      "kind": "recall",
+      "title": "Country Creek LLC recalls Country Creek Acres Alfalfa Sprout Seeds packed in a clear and silver poly bag, 16 oz, wi…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Country%20Creek%20LLC",
+      "publishedAt": "2026-11-18"
+    },
+    {
       "n": 3,
+      "kind": "recall",
+      "title": "D & M Smoked Fish, Inc. recalls Cold Smoked Sprats, 5 lbs.",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=D%20%26%20M%20Smoked%20Fish%2C%20Inc.",
+      "publishedAt": "2026-11-18"
+    },
+    {
+      "n": 4,
+      "kind": "recall",
+      "title": "Fresh & Ready Foods LLC recalls Fresh To You Sausage, Egg & Cheese Biscuit Sandwich, net weight. 4.6 oz (131g). Refrigera…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Fresh%20%26%20Ready%20Foods%20LLC",
+      "publishedAt": "2026-11-18"
+    },
+    {
+      "n": 5,
+      "kind": "recall",
+      "title": "Francisco Family Foods recalls Alfalfa Sprouts hydroponically grown. 4oz Alfalfa Sprouts were packaged in zip lock style…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Francisco%20Family%20Foods",
+      "publishedAt": "2026-11-18"
+    },
+    {
+      "n": 6,
+      "kind": "recall",
+      "title": "Breath of Fresh Air PDX LLC recalls Ground Up Nut Butter Cups filled with Almond & Cashew Butter Dark Chocolate Two Pack. Net…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Breath%20of%20Fresh%20Air%20PDX%20LLC",
+      "publishedAt": "2026-11-18"
+    },
+    {
+      "n": 7,
+      "kind": "recall",
+      "title": "J F C International Inc recalls NAGAI SOYEAT GREEN branded soy paper wrap; 10- 2.5OZ containers in vacuumed sealed contai…",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=J%20F%20C%20International%20Inc",
+      "publishedAt": "2026-11-18"
+    },
+    {
+      "n": 8,
+      "kind": "recall",
+      "title": "Snack Right Super Foods, Inc. recalls Brad's Crunchy Kale Original, 2 oz (57g) bags with UPC 813104021679.",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Snack%20Right%20Super%20Foods%2C%20Inc.",
+      "publishedAt": "2026-11-18"
+    },
+    {
+      "n": 9,
+      "kind": "recall",
+      "title": "Mana Bakery recalls Mana Bakery Peperecha, 8 oz., with UPC: 8-5000973405-1.",
+      "source": "FDA enforcement report",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Mana%20Bakery",
+      "publishedAt": "2026-11-18"
+    },
+    {
+      "n": 10,
+      "kind": "agency-notice",
+      "title": "Prime Food Processing LLC Issues Safety Warning Regarding Uneviscerated “Dried Herring Fish”",
+      "source": "FDA recall notice",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
+      "publishedAt": "2026-11-23T23:57:00.000Z"
+    },
+    {
+      "n": 12,
       "kind": "agency-notice",
       "title": "Shanghai San Niu Food Co., LTD. Is Recalling Sanniu Evergeen Biscuits Due to Undeclared Milk and Sanniu Salt and Pepper Soda Biscuits Due to Undeclared Milk and Shrimp",
       "source": "FDA recall notice",
@@ -26,50 +97,18 @@
       "publishedAt": "2026-11-20T17:58:00.000Z"
     },
     {
-      "n": 4,
+      "n": 13,
       "kind": "agency-notice",
       "title": "Grand Strand Sandwich Company Recalls Lunch Box Bacon Egg and Cheese Biscuit, Lunch Box Jumbo Sausage Biscuit, Lunch Box Sausage Egg and Cheese Biscuit, Lunch Box Chicken Sausage Biscuit Due to Listeria Monocytogenes Contamination",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-strand-sandwich-company-recalls-lunch-box-bacon-egg-and-cheese-biscuit-lunch-box-jumbo-sausage",
       "publishedAt": "2026-11-19T05:00:00.000Z"
-    },
-    {
-      "n": 5,
-      "kind": "agency-notice",
-      "title": "Larbi Inc. Recalls Yellow Dock Root Because of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
-      "publishedAt": "2026-11-17T23:30:00.000Z"
-    },
-    {
-      "n": 6,
-      "kind": "agency-notice",
-      "title": "Fresh & Ready Foods LLC Expands Recall to Include Fresh to You Brand Sausage, Egg & Cheese Biscuit Sandwich and Meals Made in Minutes Brand Biscuit & Sausage Gravy Due to Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and",
-      "publishedAt": "2026-11-17T16:18:00.000Z"
-    },
-    {
-      "n": 7,
-      "kind": "agency-notice",
-      "title": "ALDI Recalls Priano Protein Carbonara Tortelloni and Priano Protein Herb & Cheese Tortelloni Because Of Possible Health Risk",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
-      "publishedAt": "2026-11-16T16:20:00.000Z"
-    },
-    {
-      "n": 8,
-      "kind": "agency-notice",
-      "title": "Naia, Inc. Recalls Chocolate Banana Bar Sorbetto Because of Undeclared Milk, Eggs, and Nuts",
-      "source": "FDA recall notice",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts",
-      "publishedAt": "2026-11-16T14:18:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 7228,
-    "outputTokens": 832
+    "inputTokens": 8578,
+    "outputTokens": 988
   }
 }

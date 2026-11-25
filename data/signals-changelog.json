@@ -1,6 +1,2175 @@
 {
-  "generatedAt": "2026-11-24T22:31:01.829Z",
+  "generatedAt": "2026-11-25T08:43:48.578Z",
   "entries": [
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100258",
+      "slug": "fda-100258",
+      "title": "Breath of Fresh Air PDX LLC recalls Ground Up Nut Butter Cups filled with Almond & Cashew Butter Dark Chocolate Two Pack. Net…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100225",
+      "slug": "fda-100225",
+      "title": "J F C International Inc recalls NAGAI SOYEAT GREEN branded soy paper wrap; 10- 2.5OZ containers in vacuumed sealed contai…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100177",
+      "slug": "fda-100177",
+      "title": "Snack Right Super Foods, Inc. recalls Brad's Crunchy Kale Original, 2 oz (57g) bags with UPC 813104021679.",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100206",
+      "slug": "fda-100206",
+      "title": "Country Creek LLC recalls Country Creek Acres Alfalfa Sprout Seeds packed in a clear and silver poly bag, 16 oz, wi…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:99997",
+      "slug": "fda-99997",
+      "title": "Mana Bakery recalls Mana Bakery Peperecha, 8 oz., with UPC: 8-5000973405-1.",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100220",
+      "slug": "fda-100220",
+      "title": "D & M Smoked Fish, Inc. recalls Cold Smoked Sprats, 5 lbs.",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100316",
+      "slug": "fda-100316",
+      "title": "Fresh & Ready Foods LLC recalls Fresh To You Sausage, Egg & Cheese Biscuit Sandwich, net weight. 4.6 oz (131g). Refrigera…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100236",
+      "slug": "fda-100236",
+      "title": "Francisco Family Foods recalls Alfalfa Sprouts hydroponically grown. 4oz Alfalfa Sprouts were packaged in zip lock style…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:100137",
+      "slug": "fda-100137",
+      "title": "Family Farmstead Dairy, LLC recalls Raw milk cheddar cheese packed in vacuum sealed clear plastic with a white, red and green…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-20"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100144",
+      "slug": "fda-100144",
+      "title": "SLR Food Distribution, Inc. recalls Wise Wife ground cinnamon in plastic container with black screw top cap, 3.88 oz",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:100191",
+      "slug": "fda-100191",
+      "title": "Sunny Sky Products, LLC recalls - Product Name: 7-Eleven Horchata FD 4:1 BIB - Brand: 7-Eleven -Item Number: L0496F010201…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99727",
+      "slug": "fda-99727",
+      "title": "El Ruisenor De Mexico, Inc. recalls Jovy Gummy Worms Neon; packaged in 1lb plastic units. UPC 712199083411",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-06"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99944",
+      "slug": "fda-99944",
+      "title": "Gearharts Fine Chocolates, Inc. recalls GEARHARTS FINE CHOCOLATES Net Wt. 4oz UPC 8 98111 00205 7; Net Wt. 8oz UPC 8 98111 00206;…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99985",
+      "slug": "fda-99985",
+      "title": "Wild West Seed Inc recalls Wild West Seeds Broccoli Seeds Green Sprouting Calabrese lot #4105. Net Wt. 50lb. Wild We…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:100041",
+      "slug": "fda-100041",
+      "title": "Stewart's Shops Corp. recalls Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-19"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99898",
+      "slug": "fda-99898",
+      "title": "Saratoga Potato Chips LLC recalls J. HIGGS Loaded Bacon & Cheddar Potato Chips, NET WT 7.75 OZ (219.7g) bag, UPC 0519333164…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-23"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99966",
+      "slug": "fda-99966",
+      "title": "DEANO'S PASTA recalls Deano's Pasta; Pear and Pecorino Triangoli Ravioli, 1lb.; Ingredients: Dough: Semolina (W…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99823",
+      "slug": "fda-99823",
+      "title": "J K Patisserie & Bakery LLC recalls Chocolate Chip Cookies packaged in a cardboard box; Ingredients: King Midas Special (Whea…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-20"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99946",
+      "slug": "fda-99946",
+      "title": "WinCo Foods LLC recalls WinCo Foods Salsa Bean Dip Express Tray is packaged in a foil bottom container with clear…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-23"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99986",
+      "slug": "fda-99986",
+      "title": "Sierra Nevada Cheese Company, Inc recalls SIERRA NEVADA GRAZIERS RAW MONTEREY JACK NET WT. 8oz. (225g) ITEM 6400 Plant No. 06-325 W…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "classification",
+          "from": null,
+          "to": "Class I"
+        },
+        {
+          "field": "updated date",
+          "from": null,
+          "to": "2026-10-19"
+        },
+        {
+          "field": "product",
+          "from": "SIERRA NEVADA CHEESE GRAZIERS RAW MILK SHARP CHEDDAR NET WT. 40 LBS Item 6516",
+          "to": "SIERRA NEVADA GRAZIERS RAW MONTEREY JACK NET WT. 8oz. (225g) ITEM 6400 Plant No. 06-325 Willows, California 95988 UPC: 687652164009 ----- SIERRA NEVADA GRAZIERS RAW MONTEREY JACK NET WT. 5 LBS Item 6…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99686",
+      "slug": "fda-99686",
+      "title": "The Better Bakehouse Snack Company recalls Donutful Chocolate Dipped Vanilla Cake Donuts - 7.05oz/10ct.Case Configuration 5 count ca…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-27"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99954",
+      "slug": "fda-99954",
+      "title": "Galil Importing Corp recalls Lior brand Cinnamon Ground Seasoning; 90g transparent plastic container; UPC 794711005484.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-20"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99735",
+      "slug": "fda-99735",
+      "title": "Admiral Beverage Corporation recalls 7up Tropical beverage, shelf stable, 12oz can in a 12pk wrap, labeled as 7 up Tropical Be…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-09"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99602",
+      "slug": "fda-99602",
+      "title": "Salata Dressings, LLC recalls Salata Salad Kitchen JalapenÂ¿o Avocado Dressing. Keep Refrigerated. Packaged in the foll…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        },
+        {
+          "field": "product",
+          "from": "Salata Salad Kitchen Jalapen¿o Avocado Dressing. Keep Refrigerated. Packaged in the following sizes: 1. 12.5 fl. oz. (369 mL), UPC 8 50043-70646 5. 2. 1 gallon jugs, 4 per shipping case. Made by Sala…",
+          "to": "Salata Salad Kitchen JalapenÂ¿o Avocado Dressing. Keep Refrigerated. Packaged in the following sizes: 1. 12.5 fl. oz. (369 mL), UPC 8 50043-70646 5. 2. 1 gallon jugs, 4 per shipping case. Made by Sal…"
+        },
+        {
+          "field": "reason",
+          "from": "This recall was initiated due to potential Salmonella contamination in diced jalape¿no received from the supplier",
+          "to": "This recall was initiated due to potential Salmonella contamination in diced jalapeÂ¿no received from the supplier"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:99757",
+      "slug": "fda-99757",
+      "title": "Unilever North America Supply Chain Company, LLC recalls Almond Joy Ice Cream Bar, 2.0 fl. oz. ice cream bars, paper cartons containing individual…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99717",
+      "slug": "fda-99717",
+      "title": "United Sugar Producers and Refiners recalls Light Brown Sugar, Packaged in the following configurations: 1. United, Net Wt. 50 lbs.,…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Light Brown Sugar, Packaged in he follow configurations: 1. United, Net Wt. 50 lbs., (22.68kg). Item Number 810051. Distributed By: United Sugar Producers & Refiners, Minneapolis, MN 55439. 2. Good &…",
+          "to": "Light Brown Sugar, Packaged in the following configurations: 1. United, Net Wt. 50 lbs., (22.68kg). Item Number 810051. UPC 0 11110-11888 2. Distributed By: United Sugar Producers & Refiners, Minneap…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99737",
+      "slug": "fda-99737",
+      "title": "Everything Sprouts, LLC recalls Everything Sprouts Crunchy Protein Sprout Mix, containing Alfalfa Fenugreek, Cabbage, Mun…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-07"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99594",
+      "slug": "fda-99594",
+      "title": "NatureBest Pre-Cut & Produce LLc recalls PICO DE GALLO-HOT-6/9oz HEB-PICO-HOT-12/14oz",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99815",
+      "slug": "fda-99815",
+      "title": "Tiffany Food Corp recalls Hexing Haw Balls candy; packaged in 200g/0.44 lb./7.05 oz clear plastic bag; Ingredients:…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-19"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99780",
+      "slug": "fda-99780",
+      "title": "Panorama Produce Sales Inc. recalls Martina brand Fresh Whole Mangoes; Individual whole mangoes, variable weight; 9 mangoes p…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-29"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:99869",
+      "slug": "fda-99869",
+      "title": "KRAFT HEINZ FOODS COMPANY recalls Heinz Real - Vraie Mayonnaise, 12.5ml single serving packet, 500 packets per case, case c…",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99636",
+      "slug": "fda-99636",
+      "title": "EXOTIQUE FOODS CANADA recalls Momchipz Gluten Free Veggie Chips Broccoli Florets & Cauliflower, net wt. 3oz (85g). UPC…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-01"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99682",
+      "slug": "fda-99682",
+      "title": "Ferrero USA recalls Fannie May & XO Marshmallow Pixie S'mores Collection, 4.47oz",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "added",
+      "id": "fda:99582",
+      "slug": "fda-99582",
+      "title": "Lexunder Inc recalls Food to Live Organic SuperGrass Powder; 6 oz, 12 oz, 1 lb, 4 lb",
+      "source": "FDA",
+      "fields": [],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99644",
+      "slug": "fda-99644",
+      "title": "Savor Seasonings LLC recalls Organic Cheddar Type Seasoning, NET WT: 50 lbs. Product is packaged in bulk poly-lined pa…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99605",
+      "slug": "fda-99605",
+      "title": "Horizon Organic Dairy, LLC recalls Horizon Organic ORG ASEP CHOC MILK 1% 8OZ 12 CT (Item 136990, UPC 742365002700) and 18 CT…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99695",
+      "slug": "fda-99695",
+      "title": "Sirna and Sons Produce, Inc recalls Sirna & Sons Produce PEPPER JALAPENO BREAK 1LB, repackaged into 1 lb. plastic bags, Produ…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-04"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99619",
+      "slug": "fda-99619",
+      "title": "UPSTATE NIAGARA COOPERATIVE recalls Mehadrin Chocolate Leben; 6 OZ (170g) CUPS, UPC: 070784023144",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-28"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99640",
+      "slug": "fda-99640",
+      "title": "WFM Purchasing, LP recalls Whole Foods Medium Pico de Gallo Guacamole Dip, Keep Refrigerated. Packed in various size…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-01"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99434",
+      "slug": "fda-99434",
+      "title": "Prospector Popcorn, LLC recalls Prospector Popcorn Fudge Brownie Gourmet Popcorn 1.5oz and 3.5oz",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-20"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99580",
+      "slug": "fda-99580",
+      "title": "Nutrient Foods, LLC recalls Protein Cereal Cocoa Crunch. Shelf stable, ready to eat cereal product. 25-year shelf lif…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-20"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99663",
+      "slug": "fda-99663",
+      "title": "Gifford's Dairy, Inc. recalls Gifford's HomeMaine ice cream brand POWER PLAY FUDGE; ONE QUART (946 mL); UPC: 8 60864 00…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-28"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99639",
+      "slug": "fda-99639",
+      "title": "Grand Central Bakery - Oregon Inc. dba Grand Central Bakery, Inc. recalls Product is Potato Sourdough Bread and sold under three following names: Potato Market Loa…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-23"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99650",
+      "slug": "fda-99650",
+      "title": "GET FRESH PRODUCE recalls Get Fresh Produce Jalapeno Peppers. Item 01896 - 2 lb. box; Item 01894 - 10 lb. box",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-16"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99569",
+      "slug": "fda-99569",
+      "title": "Coast Citrus Distributors recalls Jalapeno Pepper packaged in bulk generic Coast Tropical cardboard packaging. Packaged in…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-29"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99097",
+      "slug": "fda-99097",
+      "title": "Bazzini LLC recalls Dark Chocolate Coconut Almond Bites, 3.17oz, Plastic Pouches, 10 Packages per case.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-23"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99451",
+      "slug": "fda-99451",
+      "title": "CAMPO RICO FOODS LLC recalls Kanni Delight 31/40 Fresh Frozen Vannamei White Shrimp IQF, Raw Peeled & Deveined Tail Of…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-26"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99357",
+      "slug": "fda-99357",
+      "title": "GELLERT GLOBAL GROUP recalls Fusia, Asian Inspirations, Kimchi & Tofu Kimbap, 8.1 OZ (230 g), Paper Film Wrapper, 12 p…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-22"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99124",
+      "slug": "fda-99124",
+      "title": "Wise Foods Inc recalls Wise Onion Rings, 3.75 oz, metalized film in cardboard cartons, 14 bags per case,",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-29"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99235",
+      "slug": "fda-99235",
+      "title": "Wondermade LLC recalls Alabama Banana Pudding Marshmallow, 4 ounce 16 pieces of individual marshmallows packaged…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-14"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99292",
+      "slug": "fda-99292",
+      "title": "MARS SNACKING recalls MorningStar Farms Buffalo Chik'n Nuggets, 100% Plant Protein Vegan Nuggets, Net Wt. 10.5…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-03"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98864",
+      "slug": "fda-98864",
+      "title": "Utz Quality Foods, LLC recalls 1.5oz, 2oz Dirty Brand Salt and Vinegar Potato Chips , Plastic Bag.",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-06"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98926",
+      "slug": "fda-98926",
+      "title": "MID DOLCIARIA SRL recalls .155 CRUNCHY CANNOLI GLUTEN FREE intended use: DESSERT condition: shelf stable shelf life…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98984",
+      "slug": "fda-98984",
+      "title": "Dkiru LLC recalls Adndale Magnesium Glycinate Gummies 400 mg. Plastic bottle containing 90 gummies. Net wei…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-09"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99020",
+      "slug": "fda-99020",
+      "title": "United States Bakery recalls Great Value Hawaiian Roll 4pk, Item # F63384. Product is perishable dinner roll ready to…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-29"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:99195",
+      "slug": "fda-99195",
+      "title": "Wild Coast Brew LLC recalls The Lover Loose-Leaf Tea - Tart Chocolaty Tisane, net wt. 1.5oz (42 g). Product is packag…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-29"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:99017",
+      "slug": "fda-99017",
+      "title": "U.S. Tov, Inc. dba U.S. Trading Company recalls DRAGONFLY Thai Ginger Powder Net Weight: 4.37 oz (125 g) PRODUCT OF THAILAND Packed for:…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-21"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98369",
+      "slug": "fda-98369",
+      "title": "E & S Grocery & Bakery Inc. recalls Taro Cakes UPC CODE #652565100055",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-09-22"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98713",
+      "slug": "fda-98713",
+      "title": "Wawa Beverage Company recalls Wawa Diet Iced Tea Lemon Pint (16oz),Plastic bottle",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-04"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98919",
+      "slug": "fda-98919",
+      "title": "JOHN B SANFILIPPO & SONS INC recalls Good & Gather Mexican Street Corn Trail Mix 8 oz bag UPC 085239270240, 8 bags per case",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-05"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98844",
+      "slug": "fda-98844",
+      "title": "Solina U.S. Holding recalls Solina 6036195 Ranch Seasoning, 50lb bag",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-05"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98825",
+      "slug": "fda-98825",
+      "title": "Prospector Popcorn, LLC recalls Prospector Popcorn brand Belgian Chocolate Toffee flavored popcorn; Ingredients: Non-GMO…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-28"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98726",
+      "slug": "fda-98726",
+      "title": "Walker Honey Co recalls Fain s Blackberry Honey Spread, 12oz net wt., UPC 01832213862",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98756",
+      "slug": "fda-98756",
+      "title": "Ganesha Enterprises LLC recalls KLG, Kesar Mukhwas, perishable, 24 months, flexible plastic, 200 gm, 818812022208, Ganesh…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-01"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98725",
+      "slug": "fda-98725",
+      "title": "HEMU TRADING INC recalls Black label with blue lettering. FOOD Korean Food, ENOKI MUSHROOM, 150g clear plastic pac…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-13"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98382",
+      "slug": "fda-98382",
+      "title": "Mondelez Global Llc recalls CHIPS AHOY! Baked Bites Brookie .22.4 oz Carton ( 2.8 oz pouch ) and 7.7 oz Carton ( 1.4…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-23"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98592",
+      "slug": "fda-98592",
+      "title": "Pure Vitamins and Natural Supplements, LLC recalls Blue Bull Extreme Male Enhancement Supplement, total of 15 pouches per box, Net Wt 15 G e…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-09"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98669",
+      "slug": "fda-98669",
+      "title": "HEYTEA USA INC recalls Coconut Drink 1; NET VOLUME: 1L; Ingredients: Coconut water, freshly squeezed coconut gra…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-29"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98501",
+      "slug": "fda-98501",
+      "title": "House Of Flavors, Inc. recalls House of Flavors 4893 Chicago Vanilla Naturally Flavored Ice Cream, 3 GAL tub",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-07"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98406",
+      "slug": "fda-98406",
+      "title": "Cocos Wholesale and Imports, LLC recalls Coco's Italian Market Cannoli Making Kit with 6 Cannoli Shells & Cream, Net Wt. 8 oz. (22…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-03"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98196",
+      "slug": "fda-98196",
+      "title": "Prima Foods International, Inc. recalls BarbaCuban 455 Everything Sauce (Original), Net Wt 12 oz (355 ml) glass bottle and 1 gall…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "BarbaCuban 455 Everything Sauce (Original), Net Wt 12 oz (355 ml) glass bottle and 1 gallon HDPE Industrial Plastic Jugs, ¿ gallon HDPE Industrial Plastic Jugs. packaged in 12x12 fl oz, 6x12 fl oz, 4…",
+          "to": "BarbaCuban 455 Everything Sauce (Original), Net Wt 12 oz (355 ml) glass bottle and 1 gallon HDPE Industrial Plastic Jugs, Â¿ gallon HDPE Industrial Plastic Jugs. packaged in 12x12 fl oz, 6x12 fl oz,…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98318",
+      "slug": "fda-98318",
+      "title": "Tradin Organics USA LLC recalls Organic Chia Seed Black Origin: PARAGUAY Net weight: 55.12 LBS Produced for: Tradin Organ…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:98093",
+      "slug": "fda-98093",
+      "title": "Fazt & Loud LLC recalls Lost and Found Energy, Sour Gummy Bear, 12pck, 16oz Cans Case UPC: 850075595655 Can UPC:…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-30"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98153",
+      "slug": "fda-98153",
+      "title": "House Of Flavors, Inc. recalls 1972 Banana Pudding Ice Cream, 3 GAL, UPC 0 75196 00556 6",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-07"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:98018",
+      "slug": "fda-98018",
+      "title": "JR Simplot Company recalls SimplotÂ¿ Traditional Reduced Sodium Tater GemsÂ¿ , formed frozen potatoes, 6/5lb bags pe…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Simplot¿ Traditional Reduced Sodium Tater Gems¿ , formed frozen potatoes, 6/5lb bags per case, foodservice item, master case UPC 100 71179 00418 9. Distributed by Simplot Global Food, LLC, P.O. Box 9…",
+          "to": "SimplotÂ¿ Traditional Reduced Sodium Tater GemsÂ¿ , formed frozen potatoes, 6/5lb bags per case, foodservice item, master case UPC 100 71179 00418 9. Distributed by Simplot Global Food, LLC, P.O. Box…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:97940",
+      "slug": "fda-97940",
+      "title": "African Food on Wheels Inc. recalls Oven Dried Fish (SCOMBEROMORUS CAVALLA); distributed to walk-in customers of African Food…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-10-30"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:97836",
+      "slug": "fda-97836",
+      "title": "Haitai, Inc. recalls Cinnamon Powder; 8oz clear plastic container. Distributed by Haitai Inc. UPC: 0 20914 814…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-03"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:97818",
+      "slug": "fda-97818",
+      "title": "Dr. Praeger's Sensible Foods Inc. recalls Dr. Praeger's, California Veggie Burgers, 10oz, Plastic wrapped burgers inside of a retai…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "agency status",
+          "from": "Completed",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-17"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:97701",
+      "slug": "fda-97701",
+      "title": "Georgia Nut Co recalls tru fru Dark + White Chocolate Freeze-Dried Strawberries. 1.7oz retail pouch UPC 85004835…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:97722",
+      "slug": "fda-97722",
+      "title": "Vicky IT Inc. recalls Bona Fish",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Completed"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:97593",
+      "slug": "fda-97593",
+      "title": "EdenÂ¿Â¿Â¿s Elixirs, LLC recalls Eskay Brands Mint flavored tablets. 40mg 7OH/550mg Tablet- Eskay Brands-Mint, Chewable ta…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "firm",
+          "from": "Eden¿¿¿s Elixirs, LLC",
+          "to": "EdenÂ¿Â¿Â¿s Elixirs, LLC"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:97346",
+      "slug": "fda-97346",
+      "title": "Tropicale Foods, LLC recalls La Michoacana Coconut Con Crema Single Serve Paleta 3.75oz UPC: 7-67778-00001-3",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-23"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:97088",
+      "slug": "fda-97088",
+      "title": "Prestige Brands Holdings recalls Little RemediesÂ¿ Honey Cough 4 FL OZ (118 mL)",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Little Remedies¿ Honey Cough 4 FL OZ (118 mL)",
+          "to": "Little RemediesÂ¿ Honey Cough 4 FL OZ (118 mL)"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:97062",
+      "slug": "fda-97062",
+      "title": "Vita Warehouse Corp. recalls 1. Welby Vitamin B12 Adult Gummies 140 Count 2. Berkely JensenÂ¿ Vitamin B12 1000 mcg Gum…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "1. Welby Vitamin B12 Adult Gummies 140 Count 2. Berkely Jensen¿ Vitamin B12 1000 mcg Gummies 250 count 3. VitaGlobe\" Vitamin B12 Extra Strength Gummies 140 count 3. Vita Labs Vitamin B-12 Gummies Bul…",
+          "to": "1. Welby Vitamin B12 Adult Gummies 140 Count 2. Berkely JensenÂ¿ Vitamin B12 1000 mcg Gummies 250 count 3. VitaGlobe\" Vitamin B12 Extra Strength Gummies 140 count 3. Vita Labs Vitamin B-12 Gummies Bu…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:96623",
+      "slug": "fda-96623",
+      "title": "Dr. Praeger's Sensible Foods Inc. recalls Dr. Praeger s California Veggie Fries 8oz,",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-20"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "closed",
+      "id": "fda:96264",
+      "slug": "fda-96264",
+      "title": "Growland Inc recalls Dried Longan Pulp- Made in China, 8oz(227g), GROWLAND INC. rear panel- Organic Planted, S…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "status",
+          "from": "open",
+          "to": "closed"
+        },
+        {
+          "field": "agency status",
+          "from": "Ongoing",
+          "to": "Terminated"
+        },
+        {
+          "field": "closed date",
+          "from": null,
+          "to": "2026-11-23"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:95875",
+      "slug": "fda-95875",
+      "title": "GBC Food Services, LLC dba Yummi Sushi recalls Multiple varieties of sushi: CheetosÂ¿ Flamin' HotÂ¿ California Roll UPC: 85005520995 Net…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Multiple varieties of sushi: Cheetos¿ Flamin' Hot¿ California Roll UPC: 85005520995 Net Wt: 10.1 oz (286g) 11/22 to 11/29/2024 Spicy Crunchy Yummi Roll UPC: 85375900882 Qty: 1 Tray, Net Wt: 11oz (312…",
+          "to": "Multiple varieties of sushi: CheetosÂ¿ Flamin' HotÂ¿ California Roll UPC: 85005520995 Net Wt: 10.1 oz (286g) 11/22 to 11/29/2024 Spicy Crunchy Yummi Roll UPC: 85375900882 Qty: 1 Tray, Net Wt: 11oz (3…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:95717",
+      "slug": "fda-95717",
+      "title": "Las Delicias Distributors, LLC recalls El Gallo JalapeÂ¿o Queso salsa",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "El Gallo Jalape¿o Queso salsa",
+          "to": "El Gallo JalapeÂ¿o Queso salsa"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:94558",
+      "slug": "fda-94558",
+      "title": "Hormel Foods Corporation recalls PLANTERSÂ¿ Deluxe Lightly Salted Mixed Nuts 8.75 oz. UPC 2900001621. Packaged in a metal…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "PLANTERS¿ Deluxe Lightly Salted Mixed Nuts 8.75 oz. UPC 2900001621. Packaged in a metal corrugate can with plastic lid. 12 cans per case.",
+          "to": "PLANTERSÂ¿ Deluxe Lightly Salted Mixed Nuts 8.75 oz. UPC 2900001621. Packaged in a metal corrugate can with plastic lid. 12 cans per case."
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:94538",
+      "slug": "fda-94538",
+      "title": "DANONE US LLC recalls YoCrunchÂ¿ Vanilla Lowfat Yogurt with M&Ms 18 6oz cups per case",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "YoCrunch¿ Vanilla Lowfat Yogurt with M&Ms 18 6oz cups per case",
+          "to": "YoCrunchÂ¿ Vanilla Lowfat Yogurt with M&Ms 18 6oz cups per case"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:94361",
+      "slug": "fda-94361",
+      "title": "Reposteria Artesanal Laura recalls Bizcocho de Boda PuertorriqueÂ¿o Naked \"Puerto Rican wedding cake naked\", packaged in alu…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Bizcocho de Boda Puertorrique¿o Naked \"Puerto Rican wedding cake naked\", packaged in aluminum mold/plastic showcase, 24 Pack per case of 10 oz / 6 pack per case of 32 oz/ 4 pack per case of 51.2 oz,…",
+          "to": "Bizcocho de Boda PuertorriqueÂ¿o Naked \"Puerto Rican wedding cake naked\", packaged in aluminum mold/plastic showcase, 24 Pack per case of 10 oz / 6 pack per case of 32 oz/ 4 pack per case of 51.2 oz,…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:93854",
+      "slug": "fda-93854",
+      "title": "Bluebonnet Nutrition Corporation (Dairy Ashford) recalls EarthSweetÂ¿ Chewables CellularActiveÂ¿ Methylfolate 1000 mcg; 90 chewable tablets packag…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "EarthSweet¿ Chewables CellularActive¿ Methylfolate 1000 mcg; 90 chewable tablets packaged in an amber glass botte with purple lid",
+          "to": "EarthSweetÂ¿ Chewables CellularActiveÂ¿ Methylfolate 1000 mcg; 90 chewable tablets packaged in an amber glass botte with purple lid"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:92075",
+      "slug": "fda-92075",
+      "title": "Cargill Cocoa & Chocolate, Inc. recalls WilburÂ¿ Dark Chocolate Covered Cashews Net Wt.16 oz (1 LB) 454g Packaged in plastic bag",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Wilbur¿ Dark Chocolate Covered Cashews Net Wt.16 oz (1 LB) 454g Packaged in plastic bag",
+          "to": "WilburÂ¿ Dark Chocolate Covered Cashews Net Wt.16 oz (1 LB) 454g Packaged in plastic bag"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:92052",
+      "slug": "fda-92052",
+      "title": "Weleda Inc recalls HepatodoronÂ¿ tablets, 200 pcs",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Hepatodoron¿ tablets, 200 pcs",
+          "to": "HepatodoronÂ¿ tablets, 200 pcs"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:92022",
+      "slug": "fda-92022",
+      "title": "Wellness Natural USA Inc. recalls SimplyProteinÂ¿ Peanut Butter Chocolate Crispy 15-1.41 OZ (40 g) bar. (UPC 6 86207 00914…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "SimplyProtein¿ Peanut Butter Chocolate Crispy 15-1.41 OZ (40 g) bar. (UPC 6 86207 00914 7) Sold in 15-count variety pack with two other flavors (Lemon Coconut and Chocolate Sea Salt) NET WT 21/16 OZ…",
+          "to": "SimplyProteinÂ¿ Peanut Butter Chocolate Crispy 15-1.41 OZ (40 g) bar. (UPC 6 86207 00914 7) Sold in 15-count variety pack with two other flavors (Lemon Coconut and Chocolate Sea Salt) NET WT 21/16 OZ…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:91605",
+      "slug": "fda-91605",
+      "title": "Epic Baking recalls Cafe' Intermezzo Strawberry CrÂ¿me Torte 5.5 lbs Ingredients: White Cake, Water, Vegetabl…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Cafe' Intermezzo Strawberry Cr¿me Torte 5.5 lbs Ingredients: White Cake, Water, Vegetable Oil, Strawberry Buttercream (Sugar, Shortening, Strawberry Jell-O, Vanilla Extract, Salt), Chocolate Pudding…",
+          "to": "Cafe' Intermezzo Strawberry CrÂ¿me Torte 5.5 lbs Ingredients: White Cake, Water, Vegetable Oil, Strawberry Buttercream (Sugar, Shortening, Strawberry Jell-O, Vanilla Extract, Salt), Chocolate Pudding…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:89531",
+      "slug": "fda-89531",
+      "title": "El Chavito recalls El ChavitoÂ¿ Saladitos Dried Salted Plums, net wt. 1.7 oz bag, Individual UPC 85947000604…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "El Chavito¿ Saladitos Dried Salted Plums, net wt. 1.7 oz bag, Individual UPC 859470006049, Master Case UPC 859470006629. El Chavito¿ Saladitos Dried Salted Plums, net wt. 1.7 oz bag, Individual UPC 8…",
+          "to": "El ChavitoÂ¿ Saladitos Dried Salted Plums, net wt. 1.7 oz bag, Individual UPC 859470006049, Master Case UPC 859470006629. El ChavitoÂ¿ Saladitos Dried Salted Plums, net wt. 1.7 oz bag, Individual UPC…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:89251",
+      "slug": "fda-89251",
+      "title": "Bosket Bread Company, LLC recalls JalapeÂ¿o Cheese Bread, Bosket Bread brand. The Net weight of the products range from 1-1…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Jalape¿o Cheese Bread, Bosket Bread brand. The Net weight of the products range from 1-1.5 lbs. No UPC. Product is packaged in food grade plastic bag with the black Bosket Bread logo sticker on the f…",
+          "to": "JalapeÂ¿o Cheese Bread, Bosket Bread brand. The Net weight of the products range from 1-1.5 lbs. No UPC. Product is packaged in food grade plastic bag with the black Bosket Bread logo sticker on the…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:87806",
+      "slug": "fda-87806",
+      "title": "Genpak recalls Bake n ShowÂ¿ Muffin Tray 4 Cavity Large, Bake n ShowÂ¿ Muffin Tray 4 Cavity Large Shallo…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Bake n Show¿ Muffin Tray 4 Cavity Large, Bake n Show¿ Muffin Tray 4 Cavity Large Shallow & Bake n Show¿ Muffin Tray 6 Cavity",
+          "to": "Bake n ShowÂ¿ Muffin Tray 4 Cavity Large, Bake n ShowÂ¿ Muffin Tray 4 Cavity Large Shallow & Bake n ShowÂ¿ Muffin Tray 6 Cavity"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:87841",
+      "slug": "fda-87841",
+      "title": "Brill Inc recalls 10194739 TranSmart\" 12 INCH CHOCOLATE CHIP MESSAGE COOKIE 24/24 OUNCE CHOCOLATE CHIP COOK…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "10194739 TranSmart\" 12 INCH CHOCOLATE CHIP MESSAGE COOKIE 24/24 OUNCE CHOCOLATE CHIP COOKIES IN BAKEABLE PLASTIC PANS WITH DOMES KEEP FROZEN AT 0¿F OR BELOW Net weight: 36 lb (16.33 kg) (24 x 24 oz (…",
+          "to": "10194739 TranSmart\" 12 INCH CHOCOLATE CHIP MESSAGE COOKIE 24/24 OUNCE CHOCOLATE CHIP COOKIES IN BAKEABLE PLASTIC PANS WITH DOMES KEEP FROZEN AT 0Â¿F OR BELOW Net weight: 36 lb (16.33 kg) (24 x 24 oz…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
+    {
+      "at": "2026-11-25T08:43:48.578Z",
+      "change": "updated",
+      "id": "fda:87369",
+      "slug": "fda-87369",
+      "title": "El Abuelito Cheese, Inc. recalls Quseo Fresco sold under the following brands and container sizes - El Abuelito Cheese Bra…",
+      "source": "FDA",
+      "fields": [
+        {
+          "field": "product",
+          "from": "Quseo Fresco sold under the following brands and container sizes - El Abuelito Cheese Brand - Queso Fresco Regular 12 oz.Plastic Container673130100003 Queso Fresco Promoci¿n 10 oz.Plastic Container67…",
+          "to": "Quseo Fresco sold under the following brands and container sizes - El Abuelito Cheese Brand - Queso Fresco Regular 12 oz.Plastic Container673130100003 Queso Fresco PromociÂ¿n 10 oz.Plastic Container6…"
+        }
+      ],
+      "count": null,
+      "note": null
+    },
     {
       "at": "2026-11-23T07:47:38.941Z",
       "change": "added",
