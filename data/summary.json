@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-11-25T08:44:25.907Z",
+  "generatedAt": "2026-11-26T21:40:02.543Z",
   "model": "claude-haiku-4-5",
-  "windowFrom": "2026-11-18",
-  "windowTo": "2026-11-25",
+  "windowFrom": "2026-11-19",
+  "windowTo": "2026-11-26",
   "paragraphs": [
-    "Brett Anthony Foods recalled frozen WOW BAO Cheeseburger Bao Buns due to unreported allergens, distributed in Alabama, Colorado, Connecticut, Georgia, Iowa, Maine, Massachusetts, and Michigan [1]. Fresh & Ready Foods recalled Fresh To You Sausage, Egg & Cheese Biscuit Sandwiches in Oregon and Washington due to possible Listeria monocytogenes contamination [4]. Grand Strand Sandwich Company recalled four Lunch Box breakfast sandwich products—Bacon Egg and Cheese Biscuit, Sausage Egg and Cheese Biscuit, Jumbo Sausage Biscuit, and Chicken Sausage Biscuit—due to potential Listeria monocytogenes contamination [13]. Country Creek LLC recalled Country Creek Acres Alfalfa Sprout Seeds sold nationwide via e-commerce because they may be contaminated with E. coli and Salmonella [2]. D & M Smoked Fish recalled Cold Smoked Sprats distributed in New York, New Jersey, and Pennsylvania due to potential Clostridium botulinum contamination [3].",
-    "Francisco Family Foods recalled hydroponically grown Alfalfa Sprouts packaged in 4-ounce and 1-pound bags sold in Montana due to potential E. coli and Salmonella contamination [5]. Prime Food Processing LLC issued a voluntary recall of Dried Herring Fish because the product was not adequately eviscerated [10]. Shanghai San Niu Food Co. recalled Sanniu Evergreen Biscuits and Salt and Pepper Soda Biscuits for undeclared milk and shrimp [12]. Several Class II recalls included Ground Up Nut Butter Cups for plastic fiber contamination, NAGAI SOYEAT GREEN soy paper wrap for undeclared Yellow #5, Brad's Crunchy Kale for elevated thallium levels in Illinois and Rhode Island, and Mana Bakery Peperecha for undeclared FD&C Yellow 5 in New Jersey, New York, and Connecticut [6][7][8][9]."
+    "A Class I recall is underway for Wow Bao cheeseburger bao buns sold in eight states due to undeclared allergens [1]. The 10-ounce boxes with \"USE BY 10.01.27 LOT #26243 EST 40001\" were distributed in Alabama, Colorado, Connecticut, Georgia, Iowa, Maine, Massachusetts, and Michigan; consumers with this product should not eat it [1].",
+    "Grand Strand Sandwich Company is recalling four frozen breakfast sandwich products—Lunch Box Bacon Egg and Cheese Biscuit, Lunch Box Sausage Egg and Cheese Biscuit, Lunch Box Jumbo Sausage Biscuit, and Lunch Box Chicken Sausage Biscuit—due to potential Listeria monocytogenes contamination [5]. Prime Food Processing LLC is recalling 225 cases of Dried Herring Fish because the product was not adequately eviscerated, which violates New York State regulations and poses a risk of Clostridium botulinum spores [2].",
+    "Shanghai San Niu Food Co., Ltd. is recalling Sanniu Evergreen Biscuits and Sanniu Salt and Pepper Soda Biscuits because they may contain undeclared milk, and the soda biscuits may also contain undeclared shrimp [4]. As the holiday season continues, the USDA reminds consumers that leftovers require careful handling to stay safe [7]."
   ],
   "sources": [
     {
@@ -18,70 +19,6 @@
     },
     {
       "n": 2,
-      "kind": "recall",
-      "title": "Country Creek LLC recalls Country Creek Acres Alfalfa Sprout Seeds packed in a clear and silver poly bag, 16 oz, wi…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Country%20Creek%20LLC",
-      "publishedAt": "2026-11-18"
-    },
-    {
-      "n": 3,
-      "kind": "recall",
-      "title": "D & M Smoked Fish, Inc. recalls Cold Smoked Sprats, 5 lbs.",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=D%20%26%20M%20Smoked%20Fish%2C%20Inc.",
-      "publishedAt": "2026-11-18"
-    },
-    {
-      "n": 4,
-      "kind": "recall",
-      "title": "Fresh & Ready Foods LLC recalls Fresh To You Sausage, Egg & Cheese Biscuit Sandwich, net weight. 4.6 oz (131g). Refrigera…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Fresh%20%26%20Ready%20Foods%20LLC",
-      "publishedAt": "2026-11-18"
-    },
-    {
-      "n": 5,
-      "kind": "recall",
-      "title": "Francisco Family Foods recalls Alfalfa Sprouts hydroponically grown. 4oz Alfalfa Sprouts were packaged in zip lock style…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Francisco%20Family%20Foods",
-      "publishedAt": "2026-11-18"
-    },
-    {
-      "n": 6,
-      "kind": "recall",
-      "title": "Breath of Fresh Air PDX LLC recalls Ground Up Nut Butter Cups filled with Almond & Cashew Butter Dark Chocolate Two Pack. Net…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Breath%20of%20Fresh%20Air%20PDX%20LLC",
-      "publishedAt": "2026-11-18"
-    },
-    {
-      "n": 7,
-      "kind": "recall",
-      "title": "J F C International Inc recalls NAGAI SOYEAT GREEN branded soy paper wrap; 10- 2.5OZ containers in vacuumed sealed contai…",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=J%20F%20C%20International%20Inc",
-      "publishedAt": "2026-11-18"
-    },
-    {
-      "n": 8,
-      "kind": "recall",
-      "title": "Snack Right Super Foods, Inc. recalls Brad's Crunchy Kale Original, 2 oz (57g) bags with UPC 813104021679.",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Snack%20Right%20Super%20Foods%2C%20Inc.",
-      "publishedAt": "2026-11-18"
-    },
-    {
-      "n": 9,
-      "kind": "recall",
-      "title": "Mana Bakery recalls Mana Bakery Peperecha, 8 oz., with UPC: 8-5000973405-1.",
-      "source": "FDA enforcement report",
-      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts?search_api_views_fulltext=Mana%20Bakery",
-      "publishedAt": "2026-11-18"
-    },
-    {
-      "n": 10,
       "kind": "agency-notice",
       "title": "Prime Food Processing LLC Issues Safety Warning Regarding Uneviscerated “Dried Herring Fish”",
       "source": "FDA recall notice",
@@ -89,7 +26,7 @@
       "publishedAt": "2026-11-23T23:57:00.000Z"
     },
     {
-      "n": 12,
+      "n": 4,
       "kind": "agency-notice",
       "title": "Shanghai San Niu Food Co., LTD. Is Recalling Sanniu Evergeen Biscuits Due to Undeclared Milk and Sanniu Salt and Pepper Soda Biscuits Due to Undeclared Milk and Shrimp",
       "source": "FDA recall notice",
@@ -97,18 +34,26 @@
       "publishedAt": "2026-11-20T17:58:00.000Z"
     },
     {
-      "n": 13,
+      "n": 5,
       "kind": "agency-notice",
       "title": "Grand Strand Sandwich Company Recalls Lunch Box Bacon Egg and Cheese Biscuit, Lunch Box Jumbo Sausage Biscuit, Lunch Box Sausage Egg and Cheese Biscuit, Lunch Box Chicken Sausage Biscuit Due to Listeria Monocytogenes Contamination",
       "source": "FDA recall notice",
       "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-strand-sandwich-company-recalls-lunch-box-bacon-egg-and-cheese-biscuit-lunch-box-jumbo-sausage",
       "publishedAt": "2026-11-19T05:00:00.000Z"
+    },
+    {
+      "n": 7,
+      "kind": "news",
+      "title": "Leftovers can be dangerous; prolong the feast safely",
+      "source": "Food Safety News",
+      "url": "https://www.foodsafetynews.com/2026/11/leftovers-can-be-dangerous-prolong-the-feast-safely/",
+      "publishedAt": "2026-11-26T05:04:00.000Z"
     }
   ],
-  "status": "cached",
+  "status": "ok",
   "note": null,
   "usage": {
-    "inputTokens": 8578,
-    "outputTokens": 988
+    "inputTokens": 2583,
+    "outputTokens": 341
   }
 }
